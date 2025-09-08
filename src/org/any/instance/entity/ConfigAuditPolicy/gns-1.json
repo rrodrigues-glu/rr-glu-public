@@ -1,0 +1,80 @@
+{
+  "tid": "f64a4932-903e-452a-813a-e434e30f51b5",
+  "id": "e27eb980-7eef-42c0-b5c7-c7aa8f8f862e",
+  "createdOn": 1757330985746,
+  "createdBy": "admin",
+  "createdIp": "172.16.0.57",
+  "updatedOn": 1757330994230,
+  "updatedBy": "admin",
+  "updatedIp": "172.16.0.57",
+  "description": "",
+  "name": "gns-1",
+  "permissionLevel": "auditManageLevel1",
+  "rules": [
+    {
+      "severity": "CRITICAL",
+      "name": "New rule1",
+      "os": "ios",
+      "source": "LATEST",
+      "commandSet": "all",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "type": "SIMPLE",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": false,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "ip domain name nuc.lab"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "New rule2",
+      "os": "ios",
+      "source": "LATEST",
+      "commandSet": "all",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "type": "SIMPLE",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": false,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "interface Tunnel159001"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "conceptItemId": null
+    }
+  ],
+  "runLevel": "auditRunLevel1"
+}
