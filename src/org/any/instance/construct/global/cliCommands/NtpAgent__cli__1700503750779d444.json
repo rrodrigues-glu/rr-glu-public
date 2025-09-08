@@ -1,18 +1,22 @@
 {
-    "@type": {
-        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_NtpAgent.json"
     },
-    "@id": "c57620cc-653d-45fe-9b0d-686cc2409570",
-    "item": {},
     "cliCommands": [
         "ntp source Loopback11",
         "ntp access-group peer 13",
-        "ntp server vrf FVRF 54.174.226.160",
+        "ntp server vrf FVRF 54.174.225.160",
         "ntp server vrf FVRF 54.200.78.189 prefer",
         "clock timezone PST -7 0",
         "clock summer-time PDT recurring"
     ],
-    "@exportedInstanceId": "c57620cc-653d-45fe-9b0d-686cc2409570",
+    "advanced": {
+        "filter": null
+    },
+    "@id": "c57620cc-653d-45fe-9b0d-686cc2409570",
     "@name": "NtpAgent__cli__1700503750779d444",
-    "@description": ""
+    "@description": "",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    }
 }
