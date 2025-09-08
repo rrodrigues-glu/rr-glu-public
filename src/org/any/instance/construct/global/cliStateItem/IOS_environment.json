@@ -1,0 +1,43 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show env all",
+    "rootEntry": "yes",
+    "groupName": "environment",
+    "discover": {
+        "fan": {
+            "expressions": [
+                "FAN is (?<fanStatus>OK)"
+            ],
+            "localKey": "fanStatus",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        },
+        "temp": {
+            "expressions": [
+                "TEMPERATURE is (?<tempStatus>OK)"
+            ],
+            "localKey": "tempStatus",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        },
+        "power": {
+            "expressions": [
+                "((?<switchId>\\d )\\s|POWER)\\s*([a-zA-Z-])*\\s*(?<powerStatus>(Good|OK))"
+            ],
+            "localKey": "powerStatus",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {},
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "IOS_environment"
+    },
+    "@exportedInstanceId": "e70bab28-4cb8-4926-9cf3-bda97a51cfb5",
+    "@id": "e70bab28-4cb8-4926-9cf3-bda97a51cfb5",
+    "@name": "IOS_environment",
+    "@description": ""
+}

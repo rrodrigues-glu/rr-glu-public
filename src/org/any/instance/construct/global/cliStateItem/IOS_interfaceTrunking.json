@@ -1,0 +1,27 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show interface trunk",
+    "rootEntry": "yes",
+    "groupName": "interfacesTrunking",
+    "discover": {
+        "trunkStatus": {
+            "expressions": [
+                "(?<trunkPort>^[a-zA-Z0-9\\\\/]+)\\\\s+(?<mode>on)\\\\s+802.1q\\\\s+trunking"
+            ],
+            "localKey": "trunkPort",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {},
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "IOS_interfaceTrunking"
+    },
+    "@exportedInstanceId": "22f6efcf-1f12-4675-b36a-3edab67b3dc2",
+    "@id": "22f6efcf-1f12-4675-b36a-3edab67b3dc2",
+    "@name": "IOS_interfaceTrunking",
+    "@description": ""
+}

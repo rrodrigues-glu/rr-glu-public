@@ -1,0 +1,27 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show vlan",
+    "rootEntry": "yes",
+    "groupName": "vlans",
+    "discover": {
+        "vlan": {
+            "expressions": [
+                "(?<vlanId>^\\d+)\\s+(?<vlanName>\\w+)\\s+(?<status>active)\\s+(?<vlanPort>G[a-zA-Z0-9\\/, ]+)"
+            ],
+            "localKey": "vlanId",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {},
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "IOS_vlans"
+    },
+    "@exportedInstanceId": "54da01eb-46b1-48a2-a505-9fe70e1ec23f",
+    "@id": "54da01eb-46b1-48a2-a505-9fe70e1ec23f",
+    "@name": "IOS_vlans",
+    "@description": ""
+}

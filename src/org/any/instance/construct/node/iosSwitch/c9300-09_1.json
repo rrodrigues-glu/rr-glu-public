@@ -1,0 +1,44 @@
+{
+    "configState": "managed",
+    "entryConnection": {
+        "connectionMethod": "cliConnection",
+        "ip": "10.150.1.9",
+        "credentials": {
+            "@ref": "/secret/sys/credentials/deviceUserPass/admin.json"
+        },
+        "type": "ssh",
+        "port": 22,
+        "terminalType": "xterm"
+    },
+    "associations": {
+        "provider": "local"
+    },
+    "hardware": {
+        "vendor": "auto",
+        "expectedSerialNumber": "auto"
+    },
+    "persona": {
+        "type": "none"
+    },
+    "provisioning": {
+        "type": "advanced"
+    },
+    "iosSwitch": {
+        "enabled": true
+    },
+    "options": {
+        "connectionEnabled": true,
+        "previewMode": false,
+        "forcedAttachedStorage": false
+    },
+    "campusSwitch": {
+        "enabled": true
+    },
+    "@exportedInstanceId": "3a7610f9-16b7-4f5a-b889-4f12c2756e09",
+    "@id": "3a7610f9-16b7-4f5a-b889-4f12c2756e09",
+    "@type": {
+        "ref": "/sys/type/construct/node/iosSwitch.jtype"
+    },
+    "@name": "c9300-09_1",
+    "@description": ""
+}

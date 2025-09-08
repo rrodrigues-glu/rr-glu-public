@@ -1,0 +1,1383 @@
+{
+    "hostname": "cat1040rjr0",
+    "vendor": "cisco",
+    "os": "ios",
+    "path": "/sys/jnib/features/deviceDetect/cisco/ios/",
+    "sku": "WS-C3750-24PS-S",
+    "software": {
+        "version": "12.2(55)SE11",
+        "major": "12",
+        "minor": "2",
+        "revision": "55",
+        "train": "SE",
+        "build": "11",
+        "patch": "",
+        "apiVersion": "12.2(55)SE11",
+        "image": "c3750-ipbasek9-mz.122-55.SE11.bin",
+        "drive": "flash:"
+    },
+    "hardware": {
+        "serialNumber": "CAT1040RGP8",
+        "sku": "WS-C3750-24PS-S",
+        "stack": {
+            "1": {
+                "sku": "WS-C3750-24P",
+                "version": "12.2(55)SE11",
+                "serialNumber": "CAT1040RJR0"
+            },
+            "2": {
+                "sku": "WS-C3750-24P",
+                "version": "12.2(55)SE11",
+                "master": true,
+                "serialNumber": "CAT1040RGP8"
+            }
+        },
+        "components": {},
+        "family": "3700",
+        "series": "3750"
+    },
+    "detectedSerialNumber": "CAT1040RGP8",
+    "uptime": "35w6d18h0m",
+    "stack": {
+        "1": {
+            "sku": "WS-C3750-24P",
+            "version": "12.2(55)SE11",
+            "serialNumber": "CAT1040RJR0"
+        },
+        "2": {
+            "sku": "WS-C3750-24P",
+            "version": "12.2(55)SE11",
+            "master": true,
+            "serialNumber": "CAT1040RGP8"
+        }
+    },
+    "type": {
+        "name": "iosSwitch",
+        "base": "campusSwitch"
+    },
+    "licenses": [
+        {
+            "name": "ipbase",
+            "eval": false,
+            "rtu": true,
+            "k9": true,
+            "inUse": true
+        }
+    ],
+    "ignoreDups": true,
+    "portsInfo": {
+        "ports": {
+            "FastEthernet1/0/1": {
+                "operational": {
+                    "status": "up",
+                    "duplex": "a-full",
+                    "mtu": "1500",
+                    "speed": "100000 Kbit",
+                    "macAddress": "00:19:aa:43:54:41",
+                    "phyMacAddress": "00:19:aa:43:54:41",
+                    "ipv4Address": "10.150.1.81/27"
+                },
+                "description": "testSyslog",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.150.1.81/27",
+                    "enabled": true
+                },
+                "neighbors": [
+                    {
+                        "ip": "10.150.200.51",
+                        "systemName": "GNSW-QTS-LAB-HR51.gluware.com",
+                        "discoveryType": "CDP",
+                        "vendor": "cisco",
+                        "platform": "cisco WS-C3650-48PS",
+                        "remoteInterface": "GigabitEthernet1/0/7"
+                    },
+                    {
+                        "macAddress": "00:19:aa:43:54:41",
+                        "destinationIpv4Address": "10.150.1.81",
+                        "discoveryType": "ARP",
+                        "ip": "10.150.1.81"
+                    },
+                    {
+                        "macAddress": "50:3d:e5:4e:3b:b7",
+                        "destinationIpv4Address": "10.150.1.77",
+                        "discoveryType": "ARP",
+                        "ip": "10.150.1.77"
+                    },
+                    {
+                        "macAddress": "00:1b:17:00:01:30",
+                        "destinationIpv4Address": "10.150.1.65",
+                        "discoveryType": "ARP",
+                        "ip": "10.150.1.65"
+                    }
+                ]
+            },
+            "FastEthernet1/0/2": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:84",
+                    "phyMacAddress": "00:19:aa:b4:d2:84",
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    }
+                },
+                "description": "this is a test",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    },
+                    "enabled": true
+                }
+            },
+            "FastEthernet1/0/3": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:85",
+                    "phyMacAddress": "00:19:aa:b4:d2:85",
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    },
+                    "enabled": true
+                }
+            },
+            "FastEthernet1/0/4": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:86",
+                    "phyMacAddress": "00:19:aa:b4:d2:86",
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    },
+                    "enabled": true
+                }
+            },
+            "FastEthernet1/0/5": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:87",
+                    "phyMacAddress": "00:19:aa:b4:d2:87",
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    },
+                    "enabled": true
+                }
+            },
+            "FastEthernet1/0/6": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:88",
+                    "phyMacAddress": "00:19:aa:b4:d2:88",
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    },
+                    "enabled": true
+                }
+            },
+            "FastEthernet1/0/7": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:89",
+                    "phyMacAddress": "00:19:aa:b4:d2:89",
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    },
+                    "enabled": true
+                }
+            },
+            "FastEthernet1/0/8": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:8a",
+                    "phyMacAddress": "00:19:aa:b4:d2:8a",
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    },
+                    "enabled": true
+                }
+            },
+            "FastEthernet1/0/9": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:8b",
+                    "phyMacAddress": "00:19:aa:b4:d2:8b",
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    },
+                    "enabled": true
+                }
+            },
+            "FastEthernet1/0/10": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:8c",
+                    "phyMacAddress": "00:19:aa:b4:d2:8c",
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    }
+                },
+                "description": "This is the interface 1.0.10 not 1.0.12",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    },
+                    "enabled": true
+                }
+            },
+            "FastEthernet1/0/11": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:8d",
+                    "phyMacAddress": "00:19:aa:b4:d2:8d",
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    }
+                },
+                "description": "This is interface 1-11- with Scan check",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    },
+                    "enabled": true
+                }
+            },
+            "FastEthernet1/0/12": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:8e",
+                    "phyMacAddress": "00:19:aa:b4:d2:8e",
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    },
+                    "enabled": true
+                }
+            },
+            "FastEthernet1/0/13": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:8f",
+                    "phyMacAddress": "00:19:aa:b4:d2:8f",
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    },
+                    "enabled": true
+                }
+            },
+            "FastEthernet1/0/14": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:90",
+                    "phyMacAddress": "00:19:aa:b4:d2:90",
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    },
+                    "enabled": true
+                }
+            },
+            "FastEthernet1/0/15": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:91",
+                    "phyMacAddress": "00:19:aa:b4:d2:91",
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    },
+                    "enabled": true
+                }
+            },
+            "FastEthernet1/0/16": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:92",
+                    "phyMacAddress": "00:19:aa:b4:d2:92",
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    },
+                    "enabled": true
+                }
+            },
+            "FastEthernet1/0/17": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:93",
+                    "phyMacAddress": "00:19:aa:b4:d2:93",
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    },
+                    "enabled": true
+                }
+            },
+            "FastEthernet1/0/18": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:94",
+                    "phyMacAddress": "00:19:aa:b4:d2:94",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {},
+                    "enabled": true
+                }
+            },
+            "FastEthernet1/0/19": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:95",
+                    "phyMacAddress": "00:19:aa:b4:d2:95",
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    },
+                    "enabled": true
+                }
+            },
+            "FastEthernet1/0/20": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:96",
+                    "phyMacAddress": "00:19:aa:b4:d2:96",
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    },
+                    "enabled": true
+                }
+            },
+            "FastEthernet1/0/21": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:97",
+                    "phyMacAddress": "00:19:aa:b4:d2:97",
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    },
+                    "enabled": true
+                }
+            },
+            "FastEthernet1/0/22": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:98",
+                    "phyMacAddress": "00:19:aa:b4:d2:98",
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    },
+                    "enabled": true
+                }
+            },
+            "FastEthernet1/0/23": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:99",
+                    "phyMacAddress": "00:19:aa:b4:d2:99",
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {
+                        "vlanId": "610",
+                        "vlanName": "VLAN0610"
+                    },
+                    "enabled": true
+                }
+            },
+            "FastEthernet1/0/24": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:9a",
+                    "phyMacAddress": "00:19:aa:b4:d2:9a"
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "trunk": {
+                        "type": "dot1q",
+                        "vlans": "150"
+                    },
+                    "enabled": true
+                }
+            },
+            "GigabitEthernet1/0/1": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:81",
+                    "phyMacAddress": "00:19:aa:b4:d2:81",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "GigabitEthernet1/0/2": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:b4:d2:82",
+                    "phyMacAddress": "00:19:aa:b4:d2:82",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "FastEthernet2/0/1": {
+                "operational": {
+                    "status": "adminShut",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:42",
+                    "phyMacAddress": "00:19:aa:43:54:42",
+                    "ipv4Address": "10.111.111.1/24"
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.111.111.1/24",
+                    "enabled": false
+                }
+            },
+            "FastEthernet2/0/2": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:04",
+                    "phyMacAddress": "00:19:aa:43:54:04",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {},
+                    "enabled": true
+                }
+            },
+            "FastEthernet2/0/3": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:05",
+                    "phyMacAddress": "00:19:aa:43:54:05",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {},
+                    "enabled": true
+                }
+            },
+            "FastEthernet2/0/4": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:06",
+                    "phyMacAddress": "00:19:aa:43:54:06",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {},
+                    "enabled": true
+                }
+            },
+            "FastEthernet2/0/5": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:07",
+                    "phyMacAddress": "00:19:aa:43:54:07",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {},
+                    "enabled": true
+                }
+            },
+            "FastEthernet2/0/6": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:08",
+                    "phyMacAddress": "00:19:aa:43:54:08",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {},
+                    "enabled": true
+                }
+            },
+            "FastEthernet2/0/7": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:09",
+                    "phyMacAddress": "00:19:aa:43:54:09",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {},
+                    "enabled": true
+                }
+            },
+            "FastEthernet2/0/8": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:0a",
+                    "phyMacAddress": "00:19:aa:43:54:0a",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {},
+                    "enabled": true
+                }
+            },
+            "FastEthernet2/0/9": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:0b",
+                    "phyMacAddress": "00:19:aa:43:54:0b",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {},
+                    "enabled": true
+                }
+            },
+            "FastEthernet2/0/10": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:0c",
+                    "phyMacAddress": "00:19:aa:43:54:0c",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {},
+                    "enabled": true
+                }
+            },
+            "FastEthernet2/0/11": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:0d",
+                    "phyMacAddress": "00:19:aa:43:54:0d",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {},
+                    "enabled": true
+                }
+            },
+            "FastEthernet2/0/12": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:0e",
+                    "phyMacAddress": "00:19:aa:43:54:0e",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {},
+                    "enabled": true
+                }
+            },
+            "FastEthernet2/0/13": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:0f",
+                    "phyMacAddress": "00:19:aa:43:54:0f",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {},
+                    "enabled": true
+                }
+            },
+            "FastEthernet2/0/14": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:10",
+                    "phyMacAddress": "00:19:aa:43:54:10",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {},
+                    "enabled": true
+                }
+            },
+            "FastEthernet2/0/15": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:11",
+                    "phyMacAddress": "00:19:aa:43:54:11",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {},
+                    "enabled": true
+                }
+            },
+            "FastEthernet2/0/16": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:12",
+                    "phyMacAddress": "00:19:aa:43:54:12",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {},
+                    "enabled": true
+                }
+            },
+            "FastEthernet2/0/17": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:13",
+                    "phyMacAddress": "00:19:aa:43:54:13",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {},
+                    "enabled": true
+                }
+            },
+            "FastEthernet2/0/18": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:14",
+                    "phyMacAddress": "00:19:aa:43:54:14",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {},
+                    "enabled": true
+                }
+            },
+            "FastEthernet2/0/19": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:15",
+                    "phyMacAddress": "00:19:aa:43:54:15",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {},
+                    "enabled": true
+                }
+            },
+            "FastEthernet2/0/20": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:16",
+                    "phyMacAddress": "00:19:aa:43:54:16",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {},
+                    "enabled": true
+                }
+            },
+            "FastEthernet2/0/21": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:17",
+                    "phyMacAddress": "00:19:aa:43:54:17",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {},
+                    "enabled": true
+                }
+            },
+            "FastEthernet2/0/22": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:18",
+                    "phyMacAddress": "00:19:aa:43:54:18",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {},
+                    "enabled": true
+                }
+            },
+            "FastEthernet2/0/23": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:19",
+                    "phyMacAddress": "00:19:aa:43:54:19",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "access": {},
+                    "enabled": true
+                }
+            },
+            "FastEthernet2/0/24": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:1a",
+                    "phyMacAddress": "00:19:aa:43:54:1a"
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100BaseTX",
+                "type": "l2",
+                "configured": {
+                    "trunk": {
+                        "type": "dot1q",
+                        "vlans": "150"
+                    },
+                    "enabled": true
+                }
+            },
+            "GigabitEthernet2/0/1": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:01",
+                    "phyMacAddress": "00:19:aa:43:54:01"
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2",
+                "configured": {
+                    "trunk": {
+                        "type": "dot1q",
+                        "nativeVlanId": "666",
+                        "nativeVlanName": "native",
+                        "vlans": ""
+                    },
+                    "enabled": true
+                }
+            },
+            "GigabitEthernet2/0/2": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:19:aa:43:54:02",
+                    "phyMacAddress": "00:19:aa:43:54:02"
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2",
+                "configured": {
+                    "trunk": {
+                        "type": "dot1q",
+                        "nativeVlanId": "666",
+                        "nativeVlanName": "native",
+                        "vlans": ""
+                    },
+                    "enabled": true
+                }
+            },
+            "Port-channel26": {
+                "operational": {
+                    "status": "down",
+                    "mtu": "1500",
+                    "speed": "10000 Kbit",
+                    "macAddress": "00:00:00:00:00:00",
+                    "phyMacAddress": "00:00:00:00:00:00"
+                },
+                "description": "",
+                "phyVirt": "virtual",
+                "type": "l2",
+                "configured": {
+                    "trunk": {
+                        "type": "dot1q",
+                        "vlans": ""
+                    },
+                    "enabled": true,
+                    "memberInterfaces": [
+                        "GigabitEthernet2/0/1",
+                        "GigabitEthernet2/0/2"
+                    ]
+                }
+            },
+            "Vlan610": {
+                "phyVirt": "virtual",
+                "type": "l3",
+                "operational": {
+                    "status": "down",
+                    "memberInterfaces": [
+                        "FastEthernet1/0/2",
+                        "FastEthernet1/0/3",
+                        "FastEthernet1/0/4",
+                        "FastEthernet1/0/5",
+                        "FastEthernet1/0/6",
+                        "FastEthernet1/0/7",
+                        "FastEthernet1/0/8",
+                        "FastEthernet1/0/9",
+                        "FastEthernet1/0/10",
+                        "FastEthernet1/0/11",
+                        "FastEthernet1/0/12",
+                        "FastEthernet1/0/13",
+                        "FastEthernet1/0/14",
+                        "FastEthernet1/0/15",
+                        "FastEthernet1/0/16",
+                        "FastEthernet1/0/17",
+                        "FastEthernet1/0/19",
+                        "FastEthernet1/0/20",
+                        "FastEthernet1/0/21",
+                        "FastEthernet1/0/22",
+                        "FastEthernet1/0/23"
+                    ]
+                }
+            },
+            "Vlan620": {
+                "phyVirt": "virtual",
+                "type": "l3",
+                "operational": {
+                    "status": "down",
+                    "memberInterfaces": [
+                        "FastEthernet1/0/2",
+                        "FastEthernet1/0/3",
+                        "FastEthernet1/0/4",
+                        "FastEthernet1/0/5",
+                        "FastEthernet1/0/6",
+                        "FastEthernet1/0/7",
+                        "FastEthernet1/0/8",
+                        "FastEthernet1/0/9",
+                        "FastEthernet1/0/10",
+                        "FastEthernet1/0/11",
+                        "FastEthernet1/0/12",
+                        "FastEthernet1/0/13",
+                        "FastEthernet1/0/14",
+                        "FastEthernet1/0/15",
+                        "FastEthernet1/0/16",
+                        "FastEthernet1/0/17",
+                        "FastEthernet1/0/19",
+                        "FastEthernet1/0/20",
+                        "FastEthernet1/0/21",
+                        "FastEthernet1/0/22",
+                        "FastEthernet1/0/23"
+                    ]
+                }
+            }
+        },
+        "portSummary": {
+            "switchports": {
+                "total": 51,
+                "use": 21,
+                "free": 30
+            }
+        },
+        "recordTime": {
+            "utcTime": 1739210591610,
+            "utcDateTime": "Mon, 10 Feb 2025 18:03:11 GMT"
+        }
+    }
+}

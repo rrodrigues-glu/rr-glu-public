@@ -1,0 +1,27 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show interface status",
+    "rootEntry": "yes",
+    "groupName": "interfacesConnected",
+    "discover": {
+        "connected": {
+            "expressions": [
+                "(?<conPort>^[a-zA-Z0-9\\/]+)\\s*(?<name>[ a-zA-Z0-9\\/#]+)(?<connectedStatus>connected)"
+            ],
+            "localKey": "conPort",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {},
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "IOS_interfaceStatus"
+    },
+    "@exportedInstanceId": "4f00dcd4-fb69-4c72-b7e8-a182b6fc2a21",
+    "@id": "4f00dcd4-fb69-4c72-b7e8-a182b6fc2a21",
+    "@name": "IOS_interfaceStatus",
+    "@description": ""
+}

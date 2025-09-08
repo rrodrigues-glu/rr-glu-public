@@ -1,0 +1,15 @@
+{
+    "ip": "10.1.100.118",
+    "userName": "sduser",
+    "password": {
+        "@ref": "/secret/sys/credentials/secret/sduser.json"
+    },
+    "type": "scp",
+    "@exportedInstanceId": "b23a66e9-d4ab-4339-8b8f-477fe4059a7c",
+    "@id": "b23a66e9-d4ab-4339-8b8f-477fe4059a7c",
+    "@type": {
+        "ref": "/sys/type/construct/global/scriptServer.jtype"
+    },
+    "@name": "sd-control",
+    "@description": ""
+}

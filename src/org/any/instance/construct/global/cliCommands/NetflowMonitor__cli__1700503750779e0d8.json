@@ -1,0 +1,15 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "576eeaf6-10b8-423c-b363-f7e46891711b",
+    "item": {},
+    "cliCommands": [
+        "flow monitor FLOWMONITOR",
+        " exporter SEVONE-FLOWEXPORTER",
+        " cache timeout inactive 10"
+    ],
+    "@exportedInstanceId": "576eeaf6-10b8-423c-b363-f7e46891711b",
+    "@name": "NetflowMonitor__cli__1700503750779e0d8",
+    "@description": ""
+}

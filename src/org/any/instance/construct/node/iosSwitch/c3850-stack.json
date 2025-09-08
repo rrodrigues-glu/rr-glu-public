@@ -1,0 +1,44 @@
+{
+    "configState": "managed",
+    "entryConnection": {
+        "connectionMethod": "cliConnection",
+        "ip": "10.150.1.12",
+        "credentials": {
+            "@ref": "/secret/sys/credentials/deviceUserPass/cisco01.json"
+        },
+        "type": "ssh",
+        "port": 22,
+        "terminalType": "xterm"
+    },
+    "associations": {
+        "provider": "local"
+    },
+    "hardware": {
+        "vendor": "auto",
+        "expectedSerialNumber": "auto"
+    },
+    "persona": {
+        "type": "none"
+    },
+    "provisioning": {
+        "type": "advanced"
+    },
+    "iosSwitch": {
+        "enabled": true
+    },
+    "options": {
+        "connectionEnabled": true,
+        "previewMode": false,
+        "forcedAttachedStorage": false
+    },
+    "campusSwitch": {
+        "enabled": true
+    },
+    "@exportedInstanceId": "a534bc35-b7c0-49db-a517-062929bfdcfe",
+    "@id": "a534bc35-b7c0-49db-a517-062929bfdcfe",
+    "@type": {
+        "ref": "/sys/type/construct/node/iosSwitch.jtype"
+    },
+    "@name": "c3850-stack",
+    "@description": ""
+}

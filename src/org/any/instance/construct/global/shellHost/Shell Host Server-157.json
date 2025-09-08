@@ -1,0 +1,15 @@
+{
+    "ip": "10.1.100.157",
+    "userName": "sdadmin",
+    "password": {
+        "@ref": "/secret/sys/credentials/secret/sdadmin.json"
+    },
+    "type": "ssh",
+    "@exportedInstanceId": "91be80be-349f-451a-b7dc-1a5e78b91c31",
+    "@id": "91be80be-349f-451a-b7dc-1a5e78b91c31",
+    "@type": {
+        "ref": "/sys/type/construct/global/shellHost.jtype"
+    },
+    "@name": "Shell Host Server-157",
+    "@description": ""
+}

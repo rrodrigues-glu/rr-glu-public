@@ -1,0 +1,48 @@
+{
+    "options": {
+        "connectionEnabled": true,
+        "previewMode": false,
+        "forcedAttachedStorage": false
+    },
+    "campusSwitch": {
+        "enabled": true
+    },
+    "configState": "managed",
+    "entryConnection": {
+        "connectionMethod": "cliConnection",
+        "ip": "10.150.1.81",
+        "credentials": {
+            "@ref": "/secret/sys/credentials/deviceUserPass/cisco01.json"
+        },
+        "port": 22,
+        "type": "ssh",
+        "terminalType": "xterm"
+    },
+    "associations": {
+        "assembly": {
+            "@ref": "/org/instance/construct/domain/iosSwitchAssembly/2960Assembly.json"
+        },
+        "provider": "local"
+    },
+    "hardware": {
+        "vendor": "auto",
+        "expectedSerialNumber": "auto"
+    },
+    "personae": {},
+    "provisioning": {
+        "type": "advanced"
+    },
+    "persona": {
+        "type": "none"
+    },
+    "iosSwitch": {
+        "enabled": true
+    },
+    "@exportedInstanceId": "36da02c1-4aaf-4f83-9829-b128f339aa2d",
+    "@id": "36da02c1-4aaf-4f83-9829-b128f339aa2d",
+    "@type": {
+        "ref": "/sys/type/construct/node/iosSwitch.jtype"
+    },
+    "@name": "cat1040rjr0",
+    "@description": ""
+}

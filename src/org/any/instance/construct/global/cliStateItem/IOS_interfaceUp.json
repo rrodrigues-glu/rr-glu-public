@@ -1,0 +1,27 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show ip interface brief",
+    "rootEntry": "yes",
+    "groupName": "interfacesUp",
+    "discover": {
+        "intStatus": {
+            "expressions": [
+                "(?<intUp>^[a-zA-Z0-9\\/-]+)\\s+[a-z0-9\\.]+\\s+\\w+\\s+\\w+\\s+(?<status>up)\\s+(?<protocol>up)"
+            ],
+            "localKey": "intUp",
+            "preserveLocalKey": false,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {},
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "IOS_interfaceUp"
+    },
+    "@exportedInstanceId": "30fb306e-1ad3-4e60-99db-0a3499be3ff1",
+    "@id": "30fb306e-1ad3-4e60-99db-0a3499be3ff1",
+    "@name": "IOS_interfaceUp",
+    "@description": ""
+}

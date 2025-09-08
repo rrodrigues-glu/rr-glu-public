@@ -1,0 +1,20 @@
+{
+    "list": [
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/IOS_cdp-neighborCompare.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        }
+    ],
+    "privilegeMode": false,
+    "@exportedInstanceId": "9b4782fb-d278-4211-8413-49afad277883",
+    "@id": "9b4782fb-d278-4211-8413-49afad277883",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStatePolicy.jtype"
+    },
+    "@name": "Test-Assessment",
+    "@description": ""
+}

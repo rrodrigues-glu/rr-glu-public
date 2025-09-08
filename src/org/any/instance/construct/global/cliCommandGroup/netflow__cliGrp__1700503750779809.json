@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@id": "5070e4af-e5c6-4936-ac98-7fe06c7abea1",
+    "ignoreDelete": true,
+    "regEx": "SEVONE-FLOWEXPORTER|ARBOR-FLOWEXPORTER|TEST-ONLY|test",
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/NetflowExporter__cli__1700503750779bf1b.json"
+        ]
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "5070e4af-e5c6-4936-ac98-7fe06c7abea1",
+    "@name": "netflow__cliGrp__1700503750779809",
+    "@description": ""
+}

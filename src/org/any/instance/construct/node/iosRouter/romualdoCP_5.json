@@ -1,0 +1,63 @@
+{
+    "configState": "managed",
+    "entryConnection": {
+        "connectionMethod": "cliConnection",
+        "ip": "10.1.100.155",
+        "credentials": {
+            "@ref": "/secret/sys/credentials/deviceUserPass/Cisco.json"
+        },
+        "type": "ssh",
+        "port": 22,
+        "terminalType": "xterm"
+    },
+    "associations": {
+        "provider": "local",
+        "assembly": {
+            "@ref": "/org/instance/construct/domain/iosRouterAssembly/iosRouter__1700503750779.json"
+        }
+    },
+    "persona": {
+        "type": "none",
+        "id": 0
+    },
+    "hardware": {
+        "vendor": "auto",
+        "expectedSerialNumber": "auto"
+    },
+    "provisioning": {
+        "type": "advanced"
+    },
+    "iosRouter": {
+        "enabled": true
+    },
+    "options": {
+        "connectionEnabled": true,
+        "previewMode": false,
+        "forcedAttachedStorage": false
+    },
+    "wanRouter": {
+        "enabled": true
+    },
+    "@id": "d77c4db8-6c25-4be7-8339-7c112f28f04f",
+    "@source": {
+        "instanceKey": "/org/RomOrg03/instance/construct/node/iosRouter/CSR",
+        "typeKey": "/org/RomOrg03/type/construct/node/iosRouter.jtype",
+        "type": "iosRouter",
+        "typeName": "IOS Router",
+        "typeId": "31c0fee9-a498-4a1e-87c8-bf73c2155d35",
+        "typeVersionId": "ab41060a-705e-488e-92dd-f3ce143220b0",
+        "typeVersion": "1.0.0",
+        "instanceName": "CSR",
+        "instanceId": "d77c4db8-6c25-4be7-8339-7c112f28f04f",
+        "construct": "node",
+        "organizationId": "f64a4932-903e-452a-813a-e434e30f51b5",
+        "instanceVersionId": "01352271-c801-4e5f-aa2b-238de4aee5bf",
+        "instanceVersion": "1.0.0"
+    },
+    "@exportedInstanceId": "d77c4db8-6c25-4be7-8339-7c112f28f04f",
+    "@type": {
+        "ref": "/sys/type/construct/node/iosRouter.jtype"
+    },
+    "@name": "romualdoCP_5",
+    "@description": ""
+}

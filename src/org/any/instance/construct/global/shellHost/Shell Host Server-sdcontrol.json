@@ -1,0 +1,15 @@
+{
+    "ip": "10.1.100.118",
+    "userName": "sduser",
+    "password": {
+        "@ref": "/secret/sys/credentials/secret/sduser.json"
+    },
+    "type": "ssh",
+    "@exportedInstanceId": "017f7f2e-a614-4950-a941-7203458e93ed",
+    "@id": "017f7f2e-a614-4950-a941-7203458e93ed",
+    "@type": {
+        "ref": "/sys/type/construct/global/shellHost.jtype"
+    },
+    "@name": "Shell Host Server-sdcontrol",
+    "@description": ""
+}

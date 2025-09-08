@@ -1,0 +1,17 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/dns.jtype"
+    },
+    "@id": "786ae621-5138-46cd-a146-f106e80521cf",
+    "featureConcept": {
+        "name": "DNS Feature",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/dns__cliGrp__17005037507794bc.json"
+            ]
+        }
+    },
+    "@exportedInstanceId": "786ae621-5138-46cd-a146-f106e80521cf",
+    "@name": "dns__1700503750779",
+    "@description": ""
+}

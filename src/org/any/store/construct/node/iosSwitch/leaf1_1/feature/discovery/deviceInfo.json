@@ -1,0 +1,1045 @@
+{
+    "hostname": "leaf1",
+    "vendor": "cisco",
+    "os": "ios",
+    "path": "/sys/jnib/features/deviceDetect/cisco/ios/",
+    "sku": "C9300-24UX",
+    "software": {
+        "version": "17.12.1",
+        "major": "17",
+        "minor": "12",
+        "revision": "1",
+        "train": "",
+        "build": "",
+        "patch": "",
+        "apiVersion": "17.12.1",
+        "image": "packages.conf",
+        "drive": "flash:"
+    },
+    "hardware": {
+        "serialNumber": "FJC2337S09K",
+        "sku": "C9300-24UX",
+        "stack": {
+            "1": {
+                "sku": "C9300-24UX",
+                "version": "17.12.01",
+                "master": true,
+                "serialNumber": "FJC2337S09K"
+            }
+        },
+        "components": {
+            "networkModules": [
+                {
+                    "description": "xMGig Uplink Module",
+                    "label": "Network Module",
+                    "location": {
+                        "path": "1",
+                        "type": "module"
+                    },
+                    "serialNumber": "FOC22206U9K",
+                    "sku": "C9300-NM-4M"
+                }
+            ],
+            "powerSupplies": [
+                {
+                    "description": "Switch 1 - Power Supply B",
+                    "label": "Power Supply",
+                    "location": {
+                        "path": "B",
+                        "type": "psu"
+                    },
+                    "serialNumber": "LIT20472XDH",
+                    "sku": "PWR-C1-1100WAC"
+                }
+            ]
+        },
+        "family": "9300",
+        "series": "9300"
+    },
+    "detectedSerialNumber": "FJC2337S09K",
+    "uptime": "9w3d18h57m",
+    "stack": {
+        "1": {
+            "sku": "C9300-24UX",
+            "version": "17.12.01",
+            "master": true,
+            "serialNumber": "FJC2337S09K"
+        }
+    },
+    "type": {
+        "name": "iosSwitch",
+        "base": "campusSwitch"
+    },
+    "licenses": [],
+    "ignoreDups": true,
+    "portsInfo": {
+        "ports": {
+            "Vlan100": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:d1",
+                    "phyMacAddress": "4c:71:0c:3c:15:d1",
+                    "ipv4Address": "10.238.0.1/23"
+                },
+                "description": "Data",
+                "phyVirt": "virtual",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.238.0.1/23",
+                    "enabled": true
+                }
+            },
+            "Vlan101": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:c1",
+                    "phyMacAddress": "4c:71:0c:3c:15:c1",
+                    "ipv4Address": "10.250.128.1/24"
+                },
+                "description": "AP",
+                "phyVirt": "virtual",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.250.128.1/24",
+                    "enabled": true
+                },
+                "neighbors": [
+                    {
+                        "macAddress": "4c:71:0c:3c:15:c1",
+                        "destinationIpv4Address": "10.250.128.1",
+                        "discoveryType": "ARP",
+                        "ip": "10.250.128.1"
+                    }
+                ]
+            },
+            "Vlan200": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:e2",
+                    "phyMacAddress": "4c:71:0c:3c:15:e2",
+                    "ipv4Address": "10.239.0.1/23"
+                },
+                "description": "Voice",
+                "phyVirt": "virtual",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.239.0.1/23",
+                    "enabled": true
+                }
+            },
+            "Vlan300": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:c7",
+                    "phyMacAddress": "4c:71:0c:3c:15:c7",
+                    "ipv4Address": "192.168.30.1/28"
+                },
+                "description": "Pmon1",
+                "phyVirt": "virtual",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "192.168.30.1/28",
+                    "enabled": true
+                }
+            },
+            "Vlan301": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:e2",
+                    "phyMacAddress": "4c:71:0c:3c:15:e2",
+                    "ipv4Address": "192.168.31.1/28"
+                },
+                "description": "Pmon2",
+                "phyVirt": "virtual",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "192.168.31.1/28",
+                    "enabled": true
+                }
+            },
+            "Vlan400": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:d2",
+                    "phyMacAddress": "4c:71:0c:3c:15:d2",
+                    "ipv4Address": "10.10.40.1/24"
+                },
+                "description": "BAS",
+                "phyVirt": "virtual",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.10.40.1/24",
+                    "enabled": true
+                }
+            },
+            "Vlan600": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:d6",
+                    "phyMacAddress": "4c:71:0c:3c:15:d6",
+                    "ipv4Address": "10.10.60.1/24"
+                },
+                "description": "Guest",
+                "phyVirt": "virtual",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.10.60.1/24",
+                    "enabled": true
+                }
+            },
+            "Vlan601": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:fd",
+                    "phyMacAddress": "4c:71:0c:3c:15:fd"
+                },
+                "description": "CORE_VNI_EVPN_VRF_DPScam",
+                "phyVirt": "virtual",
+                "configured": {
+                    "enabled": true
+                }
+            },
+            "Vlan602": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:e9",
+                    "phyMacAddress": "4c:71:0c:3c:15:e9"
+                },
+                "description": "CORE_VNI_EVPN_VRF_IPTV",
+                "phyVirt": "virtual",
+                "configured": {
+                    "enabled": true
+                }
+            },
+            "Vlan603": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:e8",
+                    "phyMacAddress": "4c:71:0c:3c:15:e8"
+                },
+                "description": "CORE_VNI_EVPN_VRF_Guest",
+                "phyVirt": "virtual",
+                "configured": {
+                    "enabled": true
+                }
+            },
+            "Vlan610": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:ec",
+                    "phyMacAddress": "4c:71:0c:3c:15:ec"
+                },
+                "description": "CORE_VNI_EVPN_VRF_Prod",
+                "phyVirt": "virtual",
+                "configured": {
+                    "enabled": true
+                }
+            },
+            "Vlan611": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:c4",
+                    "phyMacAddress": "4c:71:0c:3c:15:c4"
+                },
+                "description": "CORE_VNI_EVPN_VRF_PMon",
+                "phyVirt": "virtual",
+                "configured": {
+                    "enabled": true
+                }
+            },
+            "Vlan800": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:d2",
+                    "phyMacAddress": "4c:71:0c:3c:15:d2",
+                    "ipv4Address": "172.18.64.1/26"
+                },
+                "description": "IPTV",
+                "phyVirt": "virtual",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "172.18.64.1/26",
+                    "enabled": true
+                }
+            },
+            "Vlan900": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:c5",
+                    "phyMacAddress": "4c:71:0c:3c:15:c5",
+                    "ipv4Address": "172.16.2.1/26"
+                },
+                "description": "DPScam",
+                "phyVirt": "virtual",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "172.16.2.1/26",
+                    "enabled": true
+                }
+            },
+            "GigabitEthernet0/0": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:80",
+                    "phyMacAddress": "4c:71:0c:3c:15:80",
+                    "ipv4Address": "10.150.1.121/27"
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.150.1.121/27",
+                    "enabled": true
+                },
+                "neighbors": [
+                    {
+                        "ip": "10.150.90.54",
+                        "systemName": "GNSW-QTS-LAB-HR54.gluware.com",
+                        "discoveryType": "CDP",
+                        "vendor": "cisco",
+                        "platform": "cisco WS-C3650-48PS",
+                        "remoteInterface": "GigabitEthernet1/0/30"
+                    },
+                    {
+                        "macAddress": "00:1b:17:00:01:30",
+                        "destinationIpv4Address": "10.150.1.97",
+                        "discoveryType": "ARP",
+                        "ip": "10.150.1.97"
+                    },
+                    {
+                        "macAddress": "00:26:0b:79:de:9c",
+                        "destinationIpv4Address": "10.150.1.100",
+                        "discoveryType": "ARP",
+                        "ip": "10.150.1.100"
+                    },
+                    {
+                        "macAddress": "e4:1f:7b:d7:3c:c0",
+                        "destinationIpv4Address": "10.150.1.111",
+                        "discoveryType": "ARP",
+                        "ip": "10.150.1.111"
+                    },
+                    {
+                        "macAddress": "e4:1f:7b:d7:3f:00",
+                        "destinationIpv4Address": "10.150.1.112",
+                        "discoveryType": "ARP",
+                        "ip": "10.150.1.112"
+                    },
+                    {
+                        "macAddress": "4c:71:0c:3c:15:80",
+                        "destinationIpv4Address": "10.150.1.121",
+                        "discoveryType": "ARP",
+                        "ip": "10.150.1.121"
+                    }
+                ]
+            },
+            "TenGigabitEthernet1/0/1": {
+                "operational": {
+                    "status": "up",
+                    "duplex": "a-full",
+                    "mtu": "9100",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:e4",
+                    "phyMacAddress": "4c:71:0c:3c:15:e4",
+                    "ipv4Address": "10.33.112.1/31"
+                },
+                "description": "SPINE1",
+                "phyVirt": "physical",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.33.112.1/31",
+                    "enabled": true
+                },
+                "neighbors": [
+                    {
+                        "ip": "10.33.112.0",
+                        "systemName": "spine1.gluware.dev",
+                        "discoveryType": "CDP",
+                        "vendor": "cisco",
+                        "platform": "cisco C9300-24UX",
+                        "remoteInterface": "TenGigabitEthernet1/0/1"
+                    },
+                    {
+                        "macAddress": "4c:bc:48:8c:01:e4",
+                        "destinationIpv4Address": "10.33.112.0",
+                        "discoveryType": "ARP",
+                        "ip": "10.33.112.0"
+                    },
+                    {
+                        "macAddress": "4c:71:0c:3c:15:e4",
+                        "destinationIpv4Address": "10.33.112.1",
+                        "discoveryType": "ARP",
+                        "ip": "10.33.112.1"
+                    }
+                ]
+            },
+            "TenGigabitEthernet1/0/2": {
+                "operational": {
+                    "status": "up",
+                    "duplex": "a-full",
+                    "mtu": "9100",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:d6",
+                    "phyMacAddress": "4c:71:0c:3c:15:d6",
+                    "ipv4Address": "10.33.116.1/31"
+                },
+                "description": "SPINE2",
+                "phyVirt": "physical",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.33.116.1/31",
+                    "enabled": true
+                },
+                "neighbors": [
+                    {
+                        "ip": "10.33.116.2",
+                        "systemName": "spine2.gluware.dev",
+                        "discoveryType": "CDP",
+                        "vendor": "cisco",
+                        "platform": "cisco C9300-24UX",
+                        "remoteInterface": "TenGigabitEthernet1/0/1"
+                    },
+                    {
+                        "macAddress": "4c:71:0c:3c:15:d6",
+                        "destinationIpv4Address": "10.33.116.1",
+                        "discoveryType": "ARP",
+                        "ip": "10.33.116.1"
+                    }
+                ]
+            },
+            "TenGigabitEthernet1/0/3": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:83",
+                    "phyMacAddress": "4c:71:0c:3c:15:83",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/0/4": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:84",
+                    "phyMacAddress": "4c:71:0c:3c:15:84",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/0/5": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:85",
+                    "phyMacAddress": "4c:71:0c:3c:15:85",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/0/6": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:86",
+                    "phyMacAddress": "4c:71:0c:3c:15:86",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/0/7": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:87",
+                    "phyMacAddress": "4c:71:0c:3c:15:87",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/0/8": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:88",
+                    "phyMacAddress": "4c:71:0c:3c:15:88",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/0/9": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:89",
+                    "phyMacAddress": "4c:71:0c:3c:15:89",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/0/10": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:8a",
+                    "phyMacAddress": "4c:71:0c:3c:15:8a",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/0/11": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:8b",
+                    "phyMacAddress": "4c:71:0c:3c:15:8b",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/0/12": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:8c",
+                    "phyMacAddress": "4c:71:0c:3c:15:8c",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/0/13": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:8d",
+                    "phyMacAddress": "4c:71:0c:3c:15:8d",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/0/14": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:8e",
+                    "phyMacAddress": "4c:71:0c:3c:15:8e",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/0/15": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:8f",
+                    "phyMacAddress": "4c:71:0c:3c:15:8f",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/0/16": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:90",
+                    "phyMacAddress": "4c:71:0c:3c:15:90",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/0/17": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:91",
+                    "phyMacAddress": "4c:71:0c:3c:15:91",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/0/18": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:92",
+                    "phyMacAddress": "4c:71:0c:3c:15:92",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/0/19": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:93",
+                    "phyMacAddress": "4c:71:0c:3c:15:93",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/0/20": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:94",
+                    "phyMacAddress": "4c:71:0c:3c:15:94",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/0/21": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:95",
+                    "phyMacAddress": "4c:71:0c:3c:15:95",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/0/22": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:96",
+                    "phyMacAddress": "4c:71:0c:3c:15:96",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/0/23": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:97",
+                    "phyMacAddress": "4c:71:0c:3c:15:97",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/0/24": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:98",
+                    "phyMacAddress": "4c:71:0c:3c:15:98",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/1/1": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:9d",
+                    "phyMacAddress": "4c:71:0c:3c:15:9d",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/1/2": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:9e",
+                    "phyMacAddress": "4c:71:0c:3c:15:9e",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/1/3": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:9f",
+                    "phyMacAddress": "4c:71:0c:3c:15:9f",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet1/1/4": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:a0",
+                    "phyMacAddress": "4c:71:0c:3c:15:a0",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "AppGigabitEthernet1/0/1": {
+                "operational": {
+                    "status": "up",
+                    "duplex": "a-full",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:a9",
+                    "phyMacAddress": "4c:71:0c:3c:15:a9",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "nve1": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "9216",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:71:0c:3c:15:80",
+                    "phyMacAddress": "4c:71:0c:3c:15:80"
+                },
+                "description": "LEAF-EVPN-PEER session based template",
+                "phyVirt": "virtual",
+                "configured": {
+                    "ipv4Address": "prefix",
+                    "enabled": true
+                },
+                "type": "l3"
+            },
+            "Loopback0": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1514",
+                    "speed": "8000000 Kbit/sec",
+                    "macAddress": "",
+                    "phyMacAddress": "",
+                    "ipv4Address": "10.33.128.2/32"
+                },
+                "description": "LB0",
+                "phyVirt": "virtual",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.33.128.2/32",
+                    "enabled": true
+                }
+            },
+            "Loopback11": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1514",
+                    "speed": "8000000 Kbit/sec",
+                    "macAddress": "",
+                    "phyMacAddress": "",
+                    "ipv4Address": "10.33.129.1/32"
+                },
+                "description": "LB11",
+                "phyVirt": "virtual",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.33.129.1/32",
+                    "enabled": true
+                }
+            },
+            "Loopback12": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1514",
+                    "speed": "8000000 Kbit/sec",
+                    "macAddress": "",
+                    "phyMacAddress": "",
+                    "ipv4Address": "10.33.130.1/32"
+                },
+                "description": "LB12",
+                "phyVirt": "virtual",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.33.130.1/32",
+                    "enabled": true
+                }
+            },
+            "Loopback13": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1514",
+                    "speed": "8000000 Kbit/sec",
+                    "macAddress": "",
+                    "phyMacAddress": "",
+                    "ipv4Address": "10.33.131.1/32"
+                },
+                "description": "LB13",
+                "phyVirt": "virtual",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.33.131.1/32",
+                    "enabled": true
+                }
+            },
+            "Loopback110": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1514",
+                    "speed": "8000000 Kbit/sec",
+                    "macAddress": "",
+                    "phyMacAddress": "",
+                    "ipv4Address": "10.33.132.1/32"
+                },
+                "description": "LB110",
+                "phyVirt": "virtual",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.33.132.1/32",
+                    "enabled": true
+                }
+            },
+            "Tunnel0": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "17864",
+                    "speed": "100 Kbit/sec",
+                    "macAddress": "",
+                    "phyMacAddress": ""
+                },
+                "description": "Pim Register Tunnel (Encap) for RP 10.33.133.0",
+                "phyVirt": "virtual"
+            },
+            "Tunnel1": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "17864",
+                    "speed": "100 Kbit/sec",
+                    "macAddress": "",
+                    "phyMacAddress": ""
+                },
+                "description": "Pim Register Tunnel (Encap) for RP 10.33.127.16 on VRF IPTV",
+                "phyVirt": "virtual"
+            },
+            "Tunnel2": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "17864",
+                    "speed": "100 Kbit/sec",
+                    "macAddress": "",
+                    "phyMacAddress": ""
+                },
+                "description": "",
+                "phyVirt": "virtual"
+            }
+        },
+        "portSummary": {
+            "switchports": {
+                "total": 27,
+                "use": 1,
+                "free": 26
+            }
+        },
+        "recordTime": {
+            "utcTime": 1739210451029,
+            "utcDateTime": "Mon, 10 Feb 2025 18:00:51 GMT"
+        }
+    }
+}

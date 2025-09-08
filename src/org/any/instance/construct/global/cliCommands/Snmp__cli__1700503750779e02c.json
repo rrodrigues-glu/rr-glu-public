@@ -1,0 +1,22 @@
+{
+    "item": {},
+    "cliCommands": [
+        "snmp-server group REDACTEDOOOOOOO_VERSION_3 v3 auth",
+        "snmp-server community NOTREDACTEDOOOOOOO RO",
+        "snmp-server location India-Mumbai",
+        "snmp-server contact OperatorName",
+        "snmp-server host 1.1.1.1 version 2c NOTREDACTEDOOOOOOO_VERSION_2",
+        "snmp-server host 1.1.1.2 version 2c NOTREDACTEDOOOOOOO_VERSION_2",
+        "snmp-server host 1.1.1.5 version 3 auth NOTREDACTEDOOOOOOO_VERSION_3"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "82962b5d-625f-4b95-ad4e-ecf8d32f38cc",
+    "@id": "82962b5d-625f-4b95-ad4e-ecf8d32f38cc",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "Snmp__cli__1700503750779e02c",
+    "@description": ""
+}

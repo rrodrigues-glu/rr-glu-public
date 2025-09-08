@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show spanning-tree",
+    "rootEntry": "yes",
+    "groupName": "tree",
+    "discover": {
+        "span": {
+            "expressions": [
+                "(?:<spanName>^[a-zA-Z0-9]+$)",
+                "(?<spanInt>^[a-zA-Z0-9\\/]+\\s+Desg)"
+            ],
+            "localKey": "spanInt",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {},
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "IOS_spanningTree"
+    },
+    "@exportedInstanceId": "76deb156-6830-4225-9d92-456a456ffcb0",
+    "@id": "76deb156-6830-4225-9d92-456a456ffcb0",
+    "@name": "IOS_spanningTree",
+    "@description": ""
+}

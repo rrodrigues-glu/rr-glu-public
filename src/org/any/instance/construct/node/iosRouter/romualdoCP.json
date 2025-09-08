@@ -1,0 +1,48 @@
+{
+    "configState": "managed",
+    "entryConnection": {
+        "connectionMethod": "cliConnection",
+        "ip": "10.1.100.155",
+        "credentials": {
+            "@ref": "/secret/sys/credentials/deviceUserPass/admin.json"
+        },
+        "type": "ssh",
+        "port": 22,
+        "terminalType": "xterm"
+    },
+    "associations": {
+        "provider": "local",
+        "assembly": {
+            "@ref": "/org/instance/construct/domain/iosRouterAssembly/iosRouter__1700503750779.json"
+        }
+    },
+    "persona": {
+        "type": "none",
+        "id": 0
+    },
+    "hardware": {
+        "vendor": "auto",
+        "expectedSerialNumber": "auto"
+    },
+    "provisioning": {
+        "type": "advanced"
+    },
+    "iosRouter": {
+        "enabled": true
+    },
+    "options": {
+        "connectionEnabled": true,
+        "previewMode": false,
+        "forcedAttachedStorage": false
+    },
+    "wanRouter": {
+        "enabled": true
+    },
+    "@exportedInstanceId": "fa9b14c3-0857-4eb9-b7a7-afceddc8011d",
+    "@id": "fa9b14c3-0857-4eb9-b7a7-afceddc8011d",
+    "@type": {
+        "ref": "/sys/type/construct/node/iosRouter.jtype"
+    },
+    "@name": "romualdoCP",
+    "@description": ""
+}

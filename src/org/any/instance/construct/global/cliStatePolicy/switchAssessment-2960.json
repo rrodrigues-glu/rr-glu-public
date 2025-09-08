@@ -1,0 +1,72 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStatePolicy.jtype"
+    },
+    "list": [
+        {
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": null,
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/IOS_environment.json"
+            }
+        },
+        {
+            "params": "",
+            "includePattern": "",
+            "excludePattern": "",
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/IOS_interfaceStatus.json"
+            }
+        },
+        {
+            "params": "",
+            "includePattern": "",
+            "excludePattern": "",
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/IOS_interfaceTrunking.json"
+            }
+        },
+        {
+            "params": "",
+            "includePattern": "",
+            "excludePattern": "",
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/IOS_interfaceUp.json"
+            }
+        },
+        {
+            "params": "",
+            "includePattern": "",
+            "excludePattern": "",
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/IOS_cdp-neighborCompare.json"
+            }
+        },
+        {
+            "params": "",
+            "includePattern": "",
+            "excludePattern": "",
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/IOS_spanningTree.json"
+            }
+        },
+        {
+            "params": "",
+            "includePattern": "",
+            "excludePattern": "",
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/IOS_vlans.json"
+            }
+        }
+    ],
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "switchAssessment-2960"
+    },
+    "privilegeMode": false,
+    "@exportedInstanceId": "abce1a44-3803-46dc-a3c3-0dca8e3c90e0",
+    "@id": "abce1a44-3803-46dc-a3c3-0dca8e3c90e0",
+    "@name": "switchAssessment-2960",
+    "@description": ""
+}

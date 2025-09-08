@@ -1,0 +1,17 @@
+{
+    "item": {},
+    "cliCommands": [
+        "username admin privilege 15 secret 9 $9$WRiiAn/KbgWXtk$F.o7.UO9gqJ57kBvQ2YV8bCUuYjap5eVB7RC99qrrcM",
+        "username yusaf password 7 023201481F575D72181B"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "dd4db162-2dd6-4100-9621-45712831be74",
+    "@id": "dd4db162-2dd6-4100-9621-45712831be74",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "Username__cli__1700503750779d81d",
+    "@description": ""
+}

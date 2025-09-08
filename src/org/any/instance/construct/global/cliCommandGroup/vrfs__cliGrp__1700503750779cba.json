@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@id": "893c16af-9d1b-473b-a653-056764dee671",
+    "ignoreDelete": true,
+    "regEx": "FVRF",
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/Vrf__cli__17005037507794c0d.json"
+        ]
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "893c16af-9d1b-473b-a653-056764dee671",
+    "@name": "vrfs__cliGrp__1700503750779cba",
+    "@description": ""
+}

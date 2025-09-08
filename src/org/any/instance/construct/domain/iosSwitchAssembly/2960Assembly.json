@@ -1,0 +1,38 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosSwitchAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "nsa": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/nsa/NSA-SA.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "agents": {
+        "watchdog": {}
+    },
+    "state": {
+        "assessment": {
+            "boot": {
+                "policy": {
+                    "@ref": "/org/instance/construct/global/cliStatePolicy/switchAssessment-2960.json"
+                },
+                "schedule": "both",
+                "compare": true,
+                "action": "abort"
+            }
+        }
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "2960Assembly"
+    },
+    "@exportedInstanceId": "b2e6e2cd-46c9-4145-9c2a-76cd7bfc5da5",
+    "@id": "b2e6e2cd-46c9-4145-9c2a-76cd7bfc5da5",
+    "@name": "2960Assembly",
+    "@description": ""
+}

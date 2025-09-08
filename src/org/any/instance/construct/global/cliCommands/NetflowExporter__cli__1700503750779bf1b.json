@@ -1,0 +1,32 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "eb5cf5bb-1ba7-4916-b529-28d77740ba76",
+    "item": {},
+    "cliCommands": [
+        "flow exporter SEVONE-FLOWEXPORTER",
+        " description DO NOT MODIFY. USED BY SEVONE.",
+        " destination 54.120.24.87",
+        " transport udp 9995",
+        " option interface-table",
+        " option application-table",
+        "flow exporter ARBOR-FLOWEXPORTER",
+        " description DO NOT MODIFY. USED BY ARBOR.",
+        " destination 54.17.3.209",
+        " transport udp 9996",
+        " option interface-table",
+        " option application-table",
+        "flow exporter TEST-ONLY",
+        " description testOnly",
+        " destination 1.1.1.1",
+        " source Loopback1111",
+        "flow exporter test",
+        " description tstOnly",
+        " destination 1.2.3.4",
+        " source Loopback1111"
+    ],
+    "@exportedInstanceId": "eb5cf5bb-1ba7-4916-b529-28d77740ba76",
+    "@name": "NetflowExporter__cli__1700503750779bf1b",
+    "@description": ""
+}

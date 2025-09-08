@@ -1,0 +1,21 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "e9a635f2-f685-42d3-a2f5-855bec2a6e0e",
+    "item": {},
+    "cliCommands": [
+        "banner login ^C",
+        "  ######################################################",
+        "  |This a Security Page|",
+        "  |Please stop if you are not Authorized|",
+        "  12345",
+        "  56789",
+        "  cisco",
+        "  ######################################################",
+        "^C"
+    ],
+    "@exportedInstanceId": "e9a635f2-f685-42d3-a2f5-855bec2a6e0e",
+    "@name": "Banner__cli__170050375077944b5",
+    "@description": ""
+}

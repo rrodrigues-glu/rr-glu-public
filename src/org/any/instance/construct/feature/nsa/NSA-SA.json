@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/nsa.jtype"
+    },
+    "featureConcept": {
+        "name": "nsa",
+        "cliCommandGroups": {}
+    },
+    "form": {
+        "comment": "no parameters"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "NSA-SA"
+    },
+    "@exportedInstanceId": "fd1d4be0-7822-4074-a23e-61c956931651",
+    "@id": "fd1d4be0-7822-4074-a23e-61c956931651",
+    "@name": "NSA-SA",
+    "@description": ""
+}

@@ -1,0 +1,80 @@
+{
+  "permissionLevel": "auditManageLevel1",
+  "rules": [
+    {
+      "severity": "INFO",
+      "name": "New rule",
+      "os": "arubaos",
+      "source": "LATEST",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "type": "SIMPLE",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": false,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "test"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "INFO",
+      "name": "New rule3",
+      "os": "arubaos",
+      "source": "LATEST",
+      "commandSet": "all",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "type": "SIMPLE",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": false,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "test 3"
+            ]
+          }
+        ],
+        "valid": true
+      }
+    }
+  ],
+  "runLevel": "auditRunLevel1",
+  "name": "stx",
+  "description": "",
+  "tid": "f64a4932-903e-452a-813a-e434e30f51b5",
+  "id": "d8dfa9e8-8338-461f-a574-b974b28c719f",
+  "createdBy": "admin",
+  "createdOn": 1717184275161,
+  "updatedBy": "admin",
+  "updatedOn": 1717184291619,
+  "lastAuditErrorMsg": "",
+  "lastAuditDevicesSkippedCount": 1
+}

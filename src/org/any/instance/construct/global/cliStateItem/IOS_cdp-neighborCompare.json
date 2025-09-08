@@ -1,0 +1,27 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show cdp neighbors",
+    "rootEntry": "yes",
+    "groupName": "cdp",
+    "discover": {
+        "neighbors": {
+            "expressions": [
+                "(?<neighborId>^[a-zA-Z0-9-\\.x]+)\\s+(?<locIntType>[a-zA-Z0-9]+)\\s(?<locIntName>[0-9\\/]+)\\s+"
+            ],
+            "localKey": "neighborId",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {},
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "IOS_cdp-neighborCompare"
+    },
+    "@exportedInstanceId": "522457e7-4a04-46e0-ac72-441a1c0de3b5",
+    "@id": "522457e7-4a04-46e0-ac72-441a1c0de3b5",
+    "@name": "IOS_cdp-neighborCompare",
+    "@description": ""
+}

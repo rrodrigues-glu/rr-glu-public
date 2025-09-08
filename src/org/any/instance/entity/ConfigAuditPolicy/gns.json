@@ -1,0 +1,109 @@
+{
+  "permissionLevel": "auditManageLevel1",
+  "rules": [
+    {
+      "severity": "CRITICAL",
+      "name": "New rule1",
+      "os": "ios",
+      "source": "LATEST",
+      "commandSet": "all",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "type": "SIMPLE",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": false,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "ip domain name nuc.lab"
+            ]
+          }
+        ],
+        "valid": true
+      }
+    },
+    {
+      "severity": "MAJOR",
+      "name": "New rule2",
+      "os": "ios",
+      "source": "LATEST",
+      "commandSet": "all",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "type": "SIMPLE",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": false,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "interface Tunnel159001"
+            ]
+          }
+        ],
+        "valid": true
+      }
+    },
+    {
+      "severity": "MINOR",
+      "name": "New rule3",
+      "os": "ios",
+      "source": "LATEST",
+      "commandSet": "all",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "type": "SIMPLE",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": false,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "router ospf 200"
+            ]
+          }
+        ],
+        "valid": true
+      }
+    }
+  ],
+  "runLevel": "auditRunLevel1",
+  "name": "gns",
+  "description": "",
+  "tid": "f64a4932-903e-452a-813a-e434e30f51b5",
+  "id": "9b457cd5-4434-4015-8468-312ac744056f",
+  "createdBy": "admin",
+  "createdOn": 1739182199374,
+  "updatedBy": "admin",
+  "updatedOn": 1739182373697,
+  "lastAuditErrorMsg": "",
+  "lastAuditDevicesSkippedCount": 0
+}

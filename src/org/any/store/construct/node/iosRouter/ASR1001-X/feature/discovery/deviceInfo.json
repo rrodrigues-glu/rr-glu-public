@@ -1,0 +1,248 @@
+{
+    "hostname": "ASR1001-X",
+    "vendor": "cisco",
+    "os": "ios",
+    "path": "/sys/jnib/features/deviceDetect/cisco/ios/",
+    "sku": "ASR1001-X",
+    "software": {
+        "version": "15.4(3)S3",
+        "major": "15",
+        "minor": "4",
+        "revision": "3",
+        "train": "S",
+        "build": "3",
+        "patch": "",
+        "apiVersion": "15.4(3)S3",
+        "image": "asr1001x-universalk9.03.13.03.S.154-3.S3-ext.SPA.bin",
+        "drive": "bootflash:",
+        "routingMode": "autonomous"
+    },
+    "hardware": {
+        "serialNumber": "FXS1943Q0CG",
+        "sku": "ASR1001-X",
+        "chassis": {
+            "R0": {
+                "sku": "ASR1001-X",
+                "serialNumber": "JAE20320417",
+                "active": true
+            }
+        },
+        "components": {
+            "fans": [
+                {
+                    "description": "Cisco ASR1001-X Fan Tray",
+                    "label": "Fan",
+                    "location": {
+                        "path": "n/s",
+                        "type": "n/s"
+                    },
+                    "serialNumber": "none",
+                    "sku": "ASR1001-X-FANTRAY"
+                }
+            ],
+            "powerSupplies": [
+                {
+                    "description": "Cisco ASR1001-X AC Power Supply",
+                    "label": "Power Supply",
+                    "location": {
+                        "path": "0",
+                        "type": "module"
+                    },
+                    "serialNumber": "LIT20280DY6",
+                    "sku": "ASR1001-X-PWR-AC"
+                },
+                {
+                    "description": "Cisco ASR1001-X AC Power Supply",
+                    "label": "Power Supply",
+                    "location": {
+                        "path": "1",
+                        "type": "module"
+                    },
+                    "serialNumber": "LIT20280DZL",
+                    "sku": "ASR1001-X-PWR-AC"
+                }
+            ]
+        },
+        "family": "ASR",
+        "series": "1000"
+    },
+    "detectedSerialNumber": "FXS1943Q0CG",
+    "uptime": "1y31w2d22h40m",
+    "chassis": {
+        "R0": {
+            "sku": "ASR1001-X",
+            "serialNumber": "JAE20320417",
+            "active": true
+        }
+    },
+    "type": {
+        "name": "iosRouter",
+        "base": "wanRouter"
+    },
+    "licenses": [
+        {
+            "name": "advipservices",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true
+        },
+        {
+            "name": "adventerprise",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "avc",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "fwnat_red",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "ipsec",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "lawful_intr",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "lisp",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "otv",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "sw_redundancy",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "throughput_5g",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "throughput_10g",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "throughput_20g",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "vpls",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "interface_10g",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        }
+    ],
+    "ignoreDups": true,
+    "portsInfo": {
+        "ports": {
+            "GigabitEthernet0": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "00:a2:ee:48:e3:40",
+                    "phyMacAddress": "00:a2:ee:48:e3:40",
+                    "ipv4Address": "10.150.1.15/27"
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.150.1.15/27",
+                    "enabled": true
+                },
+                "neighbors": [
+                    {
+                        "macAddress": "00:1b:17:00:01:30",
+                        "destinationIpv4Address": "10.150.1.1",
+                        "discoveryType": "ARP",
+                        "ip": "10.150.1.1"
+                    },
+                    {
+                        "macAddress": "48:2e:72:11:63:f0",
+                        "destinationIpv4Address": "10.150.1.2",
+                        "discoveryType": "ARP",
+                        "ip": "10.150.1.2"
+                    },
+                    {
+                        "macAddress": "00:a2:ee:48:e3:40",
+                        "destinationIpv4Address": "10.150.1.15",
+                        "discoveryType": "ARP",
+                        "ip": "10.150.1.15"
+                    }
+                ]
+            }
+        },
+        "portSummary": {
+            "switchports": {
+                "total": 0,
+                "use": 0,
+                "free": 0
+            }
+        },
+        "recordTime": {
+            "utcTime": 1739210427484,
+            "utcDateTime": "Mon, 10 Feb 2025 18:00:27 GMT"
+        }
+    }
+}

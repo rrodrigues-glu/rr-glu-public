@@ -1,0 +1,49 @@
+{
+    "options": {
+        "connectionEnabled": true,
+        "previewMode": false,
+        "forcedAttachedStorage": false
+    },
+    "wanRouter": {
+        "enabled": true
+    },
+    "configState": "managed",
+    "entryConnection": {
+        "connectionMethod": "cliConnection",
+        "ip": "10.1.100.155",
+        "credentials": {
+            "@ref": "/secret/sys/credentials/deviceUserPass/admin.json"
+        },
+        "port": 22,
+        "type": "ssh",
+        "terminalType": "xterm"
+    },
+    "associations": {
+        "assembly": {
+            "@ref": "/org/instance/construct/domain/iosRouterAssembly/iosRouter__1700503750779.json"
+        },
+        "provider": "local"
+    },
+    "personae": {},
+    "hardware": {
+        "vendor": "auto",
+        "expectedSerialNumber": "auto"
+    },
+    "provisioning": {
+        "type": "advanced"
+    },
+    "persona": {
+        "id": 0,
+        "type": "none"
+    },
+    "iosRouter": {
+        "enabled": true
+    },
+    "@exportedInstanceId": "771c461a-6f8c-4324-b32a-90016973a163",
+    "@id": "771c461a-6f8c-4324-b32a-90016973a163",
+    "@type": {
+        "ref": "/sys/type/construct/node/iosRouter.jtype"
+    },
+    "@name": "Romualdo",
+    "@description": "Cisco CSR Romualdo Test ISR Router"
+}

@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@id": "bcba4724-9435-4849-81f4-5098fe953eab",
+    "ignoreDelete": true,
+    "regEx": "Loopback11|Loopback44|Tunnel159001|GigabitEthernet1|GigabitEthernet2|GigabitEthernet2.10|GigabitEthernet2.20|GigabitEthernet2.30|GigabitEthernet3",
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/Intf__cli__170050375077976db.json"
+        ]
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "bcba4724-9435-4849-81f4-5098fe953eab",
+    "@name": "netflow__cliGrp__170050375077953c",
+    "@description": ""
+}

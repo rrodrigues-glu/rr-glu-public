@@ -1,0 +1,22 @@
+{
+    "domains": {
+        "modules": {
+            "ntp": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/ntp/ntp__1700503750779.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "state": {
+        "assessment": {}
+    },
+    "@exportedInstanceId": "43dc0f06-5416-4509-8ead-478cdafe5a72",
+    "@id": "43dc0f06-5416-4509-8ead-478cdafe5a72",
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosRouterAssembly.jtype"
+    },
+    "@name": "iosRouter__1700503750779",
+    "@description": ""
+}

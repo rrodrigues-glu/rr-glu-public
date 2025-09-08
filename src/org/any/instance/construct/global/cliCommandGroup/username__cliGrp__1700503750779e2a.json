@@ -1,0 +1,21 @@
+{
+    "regEx": ".+",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/Username__cli__1700503750779d81d.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "bc9c6749-ea73-4e5c-b69f-81dc736b1f2a",
+    "@id": "bc9c6749-ea73-4e5c-b69f-81dc736b1f2a",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@name": "username__cliGrp__1700503750779e2a",
+    "@description": ""
+}

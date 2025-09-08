@@ -1,0 +1,27 @@
+{
+    "regEx": "group|community|location|contact|host",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/Snmp__cli__1700503750779e02c.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [
+        "snmp-server group",
+        "snmp-server community",
+        "snmp-server location",
+        "snmp-server contact",
+        "snmp-server host"
+    ],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "a8e61ee6-49d2-458d-88e0-382d871ccb59",
+    "@id": "a8e61ee6-49d2-458d-88e0-382d871ccb59",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@name": "snmp__cliGrp__1700503750779b19",
+    "@description": ""
+}

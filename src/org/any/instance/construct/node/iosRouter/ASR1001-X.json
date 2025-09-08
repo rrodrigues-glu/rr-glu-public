@@ -1,0 +1,48 @@
+{
+    "configState": "managed",
+    "entryConnection": {
+        "connectionMethod": "cliConnection",
+        "ip": "10.150.1.15",
+        "credentials": {
+            "@ref": "/secret/sys/credentials/deviceUserPass/admin.json"
+        },
+        "type": "ssh",
+        "port": 22,
+        "terminalType": "xterm"
+    },
+    "associations": {
+        "provider": "local",
+        "assembly": {
+            "@ref": "/org/instance/construct/domain/iosRouterAssembly/iosRouter__1700503750779.json"
+        }
+    },
+    "persona": {
+        "type": "none",
+        "id": 0
+    },
+    "hardware": {
+        "vendor": "auto",
+        "expectedSerialNumber": "auto"
+    },
+    "provisioning": {
+        "type": "advanced"
+    },
+    "iosRouter": {
+        "enabled": true
+    },
+    "options": {
+        "connectionEnabled": true,
+        "previewMode": false,
+        "forcedAttachedStorage": false
+    },
+    "wanRouter": {
+        "enabled": true
+    },
+    "@exportedInstanceId": "1752136d-14d9-4680-9ae4-70b01dcc190d",
+    "@id": "1752136d-14d9-4680-9ae4-70b01dcc190d",
+    "@type": {
+        "ref": "/sys/type/construct/node/iosRouter.jtype"
+    },
+    "@name": "ASR1001-X",
+    "@description": ""
+}

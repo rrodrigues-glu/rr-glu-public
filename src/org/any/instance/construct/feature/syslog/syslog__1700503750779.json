@@ -1,0 +1,17 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/syslog.jtype"
+    },
+    "@id": "968008af-5b9c-4c75-a2a1-d53358a01989",
+    "featureConcept": {
+        "name": "Syslog Feature",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/syslog__cliGrp__170050375077983b.json"
+            ]
+        }
+    },
+    "@exportedInstanceId": "968008af-5b9c-4c75-a2a1-d53358a01989",
+    "@name": "syslog__1700503750779",
+    "@description": ""
+}

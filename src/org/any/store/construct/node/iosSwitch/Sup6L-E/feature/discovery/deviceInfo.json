@@ -1,0 +1,314 @@
+{
+    "hostname": "Sup6L-E",
+    "vendor": "cisco",
+    "os": "ios",
+    "path": "/sys/jnib/features/deviceDetect/cisco/ios/",
+    "sku": "WS-C4507R-E",
+    "software": {
+        "version": "15.0(2)SG11",
+        "major": "15",
+        "minor": "0",
+        "revision": "2",
+        "train": "SG",
+        "build": "11",
+        "patch": "",
+        "apiVersion": "15.0(2)SG11",
+        "image": "cat4500e-lanbasek9-mz.150-2.SG11.bin",
+        "drive": "bootflash:"
+    },
+    "hardware": {
+        "serialNumber": "FOX1216G8MC",
+        "sku": "WS-C4507R-E",
+        "chassis": {
+            "3": {
+                "sku": "WS-X45-SUP6L-E",
+                "serialNumber": "JAE14430K5V",
+                "active": true,
+                "vssActive": false,
+                "role": "active",
+                "mode": "rpr",
+                "software": {
+                    "version": "15.0(2)SG11",
+                    "rommon": "12.2(44r)SG5"
+                },
+                "hardware": {
+                    "version": "2.0"
+                },
+                "drive": "bootflash:",
+                "status": "Ok"
+            }
+        },
+        "supervisors": 1,
+        "components": {
+            "clock": [
+                {
+                    "description": "Clock Module",
+                    "label": "Clock Module",
+                    "location": {
+                        "path": "n/s",
+                        "type": "n/s"
+                    },
+                    "serialNumber": "JAE1216FI9Q",
+                    "sku": "WS-X4K-CLOCK-E"
+                }
+            ],
+            "fans": [
+                {
+                    "description": "FanTray",
+                    "label": "Fan",
+                    "location": {
+                        "path": "n/s",
+                        "type": "n/s"
+                    },
+                    "serialNumber": "FOX1216G7KM",
+                    "sku": "WS-X4597-E"
+                }
+            ],
+            "muxBuffer": [
+                {
+                    "description": "Mux Buffers for Redundancy Logic",
+                    "label": "Mux Buffer",
+                    "location": {
+                        "path": "n/s",
+                        "type": "n/s"
+                    },
+                    "serialNumber": "JAE1221J5UI",
+                    "sku": "WS-X4590-E"
+                },
+                {
+                    "description": "Mux Buffers for Redundancy Logic",
+                    "label": "Mux Buffer",
+                    "location": {
+                        "path": "n/s",
+                        "type": "n/s"
+                    },
+                    "serialNumber": "JAE1221J2E8",
+                    "sku": "WS-X4590-E"
+                },
+                {
+                    "description": "Mux Buffers for Redundancy Logic",
+                    "label": "Mux Buffer",
+                    "location": {
+                        "path": "n/s",
+                        "type": "n/s"
+                    },
+                    "serialNumber": "JAE1221J4VG",
+                    "sku": "WS-X4590-E"
+                },
+                {
+                    "description": "Mux Buffers for Redundancy Logic",
+                    "label": "Mux Buffer",
+                    "location": {
+                        "path": "n/s",
+                        "type": "n/s"
+                    },
+                    "serialNumber": "JAE1221J4OO",
+                    "sku": "WS-X4590-E"
+                }
+            ],
+            "powerSupplies": [
+                {
+                    "description": "Power Supply ( AC 1400W )",
+                    "label": "Power Supply",
+                    "location": {
+                        "path": "1",
+                        "type": "psu"
+                    },
+                    "serialNumber": "ABC08467298",
+                    "sku": "PWR-C45-1400AC"
+                }
+            ],
+            "supervisors": [
+                {
+                    "description": "Supervisor 6L-E 10GE (X2), 1000BaseX (SFP) with 2 10GE X2 ports",
+                    "label": "Supervisor Engine",
+                    "location": {
+                        "path": "3",
+                        "type": "slot"
+                    },
+                    "serialNumber": "JAE14430K5V",
+                    "sku": "WS-X45-SUP6L-E"
+                }
+            ]
+        },
+        "family": "4500",
+        "series": "4507"
+    },
+    "detectedSerialNumber": "FOX1216G8MC",
+    "uptime": "41w5d21m",
+    "chassis": {
+        "3": {
+            "sku": "WS-X45-SUP6L-E",
+            "serialNumber": "JAE14430K5V",
+            "active": true,
+            "vssActive": false,
+            "role": "active",
+            "mode": "rpr",
+            "software": {
+                "version": "15.0(2)SG11",
+                "rommon": "12.2(44r)SG5"
+            },
+            "hardware": {
+                "version": "2.0"
+            },
+            "drive": "bootflash:",
+            "status": "Ok"
+        }
+    },
+    "type": {
+        "name": "iosSwitch",
+        "base": "campusSwitch"
+    },
+    "licenses": [
+        {
+            "name": "lanbase",
+            "eval": false,
+            "rtu": true,
+            "k9": true,
+            "inUse": true
+        }
+    ],
+    "ignoreDups": true,
+    "portsInfo": {
+        "ports": {
+            "FastEthernet1": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "speed": "100000 Kbit",
+                    "macAddress": "00:25:84:1e:8b:cb",
+                    "phyMacAddress": "00:25:84:1e:8b:cb",
+                    "ipv4Address": "10.150.1.108/27"
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l3",
+                "configured": {
+                    "speed": "auto",
+                    "duplex": "auto",
+                    "ipv4Address": "10.150.1.108/27",
+                    "enabled": true
+                },
+                "neighbors": [
+                    {
+                        "ip": "10.150.200.57",
+                        "systemName": "GNSW-QTS-LAB-HR57.gluware.com",
+                        "discoveryType": "CDP",
+                        "vendor": "cisco",
+                        "platform": "cisco WS-C3560G-48TS",
+                        "remoteInterface": "GigabitEthernet0/19"
+                    }
+                ]
+            },
+            "TenGigabitEthernet3/1": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "full",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit",
+                    "macAddress": "00:21:d8:cd:bb:00",
+                    "phyMacAddress": "00:21:d8:cd:bb:00",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "TenGigabitEthernet3/2": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "full",
+                    "mtu": "1500",
+                    "speed": "10000000 Kbit",
+                    "macAddress": "00:21:d8:cd:bb:01",
+                    "phyMacAddress": "00:21:d8:cd:bb:01",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "GigabitEthernet3/3": {
+                "operational": {
+                    "status": "down",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit",
+                    "macAddress": "00:21:d8:cd:bb:02",
+                    "phyMacAddress": "00:21:d8:cd:bb:02",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "GigabitEthernet3/4": {
+                "operational": {
+                    "status": "down",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit",
+                    "macAddress": "00:21:d8:cd:bb:03",
+                    "phyMacAddress": "00:21:d8:cd:bb:03",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "GigabitEthernet3/5": {
+                "operational": {
+                    "status": "down",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit",
+                    "macAddress": "00:21:d8:cd:bb:04",
+                    "phyMacAddress": "00:21:d8:cd:bb:04",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "GigabitEthernet3/6": {
+                "operational": {
+                    "status": "down",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit",
+                    "macAddress": "00:21:d8:cd:bb:05",
+                    "phyMacAddress": "00:21:d8:cd:bb:05",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            }
+        },
+        "portSummary": {
+            "switchports": {
+                "total": 6,
+                "use": 0,
+                "free": 6
+            }
+        },
+        "recordTime": {
+            "utcTime": 1739210436651,
+            "utcDateTime": "Mon, 10 Feb 2025 18:00:36 GMT"
+        }
+    }
+}

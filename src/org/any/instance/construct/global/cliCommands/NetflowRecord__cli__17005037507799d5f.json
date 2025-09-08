@@ -1,0 +1,15 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "a591f3cb-7eb7-4e48-8367-931b306df02f",
+    "item": {},
+    "cliCommands": [
+        "flow record FlowRecord",
+        " match ipv4 protocol",
+        " match ipv4 source address"
+    ],
+    "@exportedInstanceId": "a591f3cb-7eb7-4e48-8367-931b306df02f",
+    "@name": "NetflowRecord__cli__17005037507799d5f",
+    "@description": ""
+}

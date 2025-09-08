@@ -1,0 +1,16 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "1c9f2e81-0f26-4ed8-a54a-e9deb020be4d",
+    "item": {},
+    "cliCommands": [
+        "logging buffered 51200",
+        "logging source-interface GigabitEthernet1 vrf FVRF",
+        "logging host 10.255.150.100 transport udp port 32000",
+        "logging host 10.1.100.116 vrf FVRF transport udp port 32006"
+    ],
+    "@exportedInstanceId": "1c9f2e81-0f26-4ed8-a54a-e9deb020be4d",
+    "@name": "SyslogServer__cli__17005037507796afa",
+    "@description": ""
+}
