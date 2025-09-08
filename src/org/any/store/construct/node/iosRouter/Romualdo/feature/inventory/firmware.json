@@ -4,5 +4,7 @@
     },
     "version": {
         "detected": "16.12.1a"
-    }
+    },
+    "@id": "771c461a-6f8c-4324-b32a-90016973a163",
+    "@lastCommitHash": "4d91391c2e474b3b51946322d55f9c3f361c19bf"
 }

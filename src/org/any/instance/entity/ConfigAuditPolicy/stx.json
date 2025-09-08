@@ -76,5 +76,6 @@
   "updatedBy": "admin",
   "updatedOn": 1717184291619,
   "lastAuditErrorMsg": "",
-  "lastAuditDevicesSkippedCount": 1
+  "lastAuditDevicesSkippedCount": 1,
+  "lastCommitHash": "4d91391c2e474b3b51946322d55f9c3f361c19bf"
 }
