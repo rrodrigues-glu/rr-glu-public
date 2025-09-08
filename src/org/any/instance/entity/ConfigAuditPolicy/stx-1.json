@@ -1,0 +1,81 @@
+{
+  "tid": "f64a4932-903e-452a-813a-e434e30f51b5",
+  "id": "c264e4c5-553c-4778-b42e-6fe3d64200cd",
+  "createdOn": 1757337868837,
+  "createdBy": "admin",
+  "createdIp": "172.16.0.57",
+  "updatedOn": 1757337893351,
+  "updatedBy": "admin",
+  "updatedIp": "172.16.0.57",
+  "description": "",
+  "name": "stx-1",
+  "permissionLevel": "auditManageLevel1",
+  "rules": [
+    {
+      "severity": "INFO",
+      "name": "Test02",
+      "os": "arubaos",
+      "source": "LATEST",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "type": "SIMPLE",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": false,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "test"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "INFO",
+      "name": "Test01",
+      "os": "arubaos",
+      "source": "LATEST",
+      "commandSet": "all",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "type": "SIMPLE",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": false,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "test 3"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "conceptItemId": null
+    }
+  ],
+  "runLevel": "auditRunLevel1"
+}
