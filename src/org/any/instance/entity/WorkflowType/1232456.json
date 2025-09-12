@@ -1,0 +1,92 @@
+[
+    {
+        "name": "1232456",
+        "actionAuth": "Level1",
+        "description": "",
+        "bpmnJSON": {
+            "name": "1232456",
+            "elements": [
+                {
+                    "id": "start",
+                    "type": "startEvent",
+                    "name": "start",
+                    "fields": {
+                        "jtype": {}
+                    },
+                    "connectTo": "wt-2007ecd4-0cb0-4575-a590-5f8784998285"
+                },
+                {
+                    "id": "end",
+                    "type": "endEvent",
+                    "name": "end"
+                },
+                {
+                    "id": "wt-2007ecd4-0cb0-4575-a590-5f8784998285",
+                    "type": "serviceTask",
+                    "action": "selectDevices",
+                    "name": "Select targets",
+                    "pack": "deviceManager",
+                    "uniqueName": "deviceManager_selectDevices-0",
+                    "connectTo": "wt-30b3ac6d-ac36-48e4-8634-04066ae4f939"
+                },
+                {
+                    "id": "wt-7effde93-b977-4ef8-be18-ec91e1818dce",
+                    "type": "serviceTask",
+                    "action": "setExitStatus",
+                    "name": "setExitStatus",
+                    "connectTo": "end",
+                    "fields": {
+                        "status": "ok"
+                    }
+                },
+                {
+                    "id": "wt-30b3ac6d-ac36-48e4-8634-04066ae4f939",
+                    "type": "inclusiveGateway",
+                    "name": "IF condition-1",
+                    "conditions": [
+                        {
+                            "name": "Then",
+                            "expression": {
+                                "logic": "and",
+                                "filters": [
+                                    {
+                                        "field": "detectedOs",
+                                        "operator": "equal",
+                                        "value": "ACI",
+                                        "variableId": null
+                                    },
+                                    {
+                                        "field": "detectedOs",
+                                        "operator": "equal",
+                                        "value": "ACI",
+                                        "variableId": null
+                                    },
+                                    {
+                                        "field": "accessStatus",
+                                        "operator": "equal",
+                                        "value": "OK",
+                                        "variableId": null
+                                    }
+                                ]
+                            },
+                            "connectTo": "wt-4c1fbb96-d4c6-41b7-b22f-3f9afdf36629"
+                        },
+                        {
+                            "name": "Else",
+                            "expression": "ELSE",
+                            "connectTo": "wt-4c1fbb96-d4c6-41b7-b22f-3f9afdf36629"
+                        }
+                    ]
+                },
+                {
+                    "id": "wt-4c1fbb96-d4c6-41b7-b22f-3f9afdf36629",
+                    "type": "inclusiveGateway",
+                    "connectTo": "wt-7effde93-b977-4ef8-be18-ec91e1818dce",
+                    "connectionGroupId": "wt-30b3ac6d-ac36-48e4-8634-04066ae4f939"
+                }
+            ]
+        },
+        "variables": [],
+        "references": []
+    }
+]
