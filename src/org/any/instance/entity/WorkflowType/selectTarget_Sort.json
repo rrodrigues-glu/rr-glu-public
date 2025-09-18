@@ -27,7 +27,7 @@
                     "name": "Select targets",
                     "pack": "deviceManager",
                     "uniqueName": "deviceManager_selectDevices-0",
-                    "connectTo": "wt-a52e04a5-85a1-4e7e-94b6-9ad23dbf5ed3"
+                    "connectTo": "wt-d15054ac-33d6-487d-89cb-0828a359ca23"
                 },
                 {
                     "id": "wt-527b728e-a4d0-4679-993e-2fc764e2cefb",
@@ -58,6 +58,15 @@
                         "notifyRoles": [],
                         "message": "{{device.name}}"
                     }
+                },
+                {
+                    "id": "wt-d15054ac-33d6-487d-89cb-0828a359ca23",
+                    "type": "serviceTask",
+                    "action": "deviceDiscovery",
+                    "name": "Run device discovery",
+                    "pack": "deviceManager",
+                    "uniqueName": "deviceManager_deviceDiscovery-0",
+                    "connectTo": "wt-a52e04a5-85a1-4e7e-94b6-9ad23dbf5ed3"
                 }
             ]
         },
