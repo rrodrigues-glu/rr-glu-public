@@ -1,4 +1,17 @@
 {
+  "tid": "f64a4932-903e-452a-813a-e434e30f51b5",
+  "id": "9b457cd5-4434-4015-8468-312ac744056f",
+  "createdOn": 1739182199374,
+  "createdBy": "admin",
+  "createdIp": "172.16.0.44",
+  "updatedOn": 1758189869057,
+  "updatedBy": "admin",
+  "updatedIp": "172.16.0.57",
+  "description": "",
+  "lastAuditDevicesSkippedCount": 0,
+  "lastAuditErrorMsg": "",
+  "lastCommitHash": "b8defbc6a7c19e4106a7507aea9b88014799d9ae",
+  "name": "gns",
   "permissionLevel": "auditManageLevel1",
   "rules": [
     {
@@ -30,7 +43,8 @@
           }
         ],
         "valid": true
-      }
+      },
+      "conceptItemId": null
     },
     {
       "severity": "MAJOR",
@@ -61,7 +75,8 @@
           }
         ],
         "valid": true
-      }
+      },
+      "conceptItemId": null
     },
     {
       "severity": "MINOR",
@@ -87,24 +102,15 @@
             "input": "textarea",
             "operator": "must_contain_regex",
             "value": [
-              "router ospf 200"
+              "router ospf 200",
+              "router ospf 2001"
             ]
           }
         ],
         "valid": true
-      }
+      },
+      "conceptItemId": null
     }
   ],
-  "runLevel": "auditRunLevel1",
-  "name": "gns",
-  "description": "",
-  "tid": "f64a4932-903e-452a-813a-e434e30f51b5",
-  "id": "9b457cd5-4434-4015-8468-312ac744056f",
-  "createdBy": "admin",
-  "createdOn": 1739182199374,
-  "updatedBy": "admin",
-  "updatedOn": 1739182373697,
-  "lastAuditErrorMsg": "",
-  "lastAuditDevicesSkippedCount": 0,
-  "lastCommitHash": "4d91391c2e474b3b51946322d55f9c3f361c19bf"
+  "runLevel": "auditRunLevel1"
 }
