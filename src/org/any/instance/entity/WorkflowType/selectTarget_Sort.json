@@ -1,0 +1,67 @@
+[
+    {
+        "name": "selectTarget_Sort",
+        "actionAuth": "Level1",
+        "description": "",
+        "bpmnJSON": {
+            "name": "selectTarget_Sort",
+            "elements": [
+                {
+                    "id": "start",
+                    "type": "startEvent",
+                    "name": "start",
+                    "fields": {
+                        "jtype": {}
+                    },
+                    "connectTo": "wt-703a7bb5-ccb9-4197-b8f9-ebe171ef13c4"
+                },
+                {
+                    "id": "end",
+                    "type": "endEvent",
+                    "name": "end"
+                },
+                {
+                    "id": "wt-703a7bb5-ccb9-4197-b8f9-ebe171ef13c4",
+                    "type": "serviceTask",
+                    "action": "selectDevices",
+                    "name": "Select targets",
+                    "pack": "deviceManager",
+                    "uniqueName": "deviceManager_selectDevices-0",
+                    "connectTo": "wt-a52e04a5-85a1-4e7e-94b6-9ad23dbf5ed3"
+                },
+                {
+                    "id": "wt-527b728e-a4d0-4679-993e-2fc764e2cefb",
+                    "type": "serviceTask",
+                    "action": "setExitStatus",
+                    "name": "setExitStatus",
+                    "connectTo": "end",
+                    "fields": {
+                        "status": "ok"
+                    }
+                },
+                {
+                    "id": "wt-a52e04a5-85a1-4e7e-94b6-9ad23dbf5ed3",
+                    "type": "serviceTask",
+                    "action": "notificationViaEmail",
+                    "name": "Send email",
+                    "pack": "notification",
+                    "displayName": "Send email",
+                    "uniqueName": "notification_notificationViaEmail-0",
+                    "connectTo": "wt-527b728e-a4d0-4679-993e-2fc764e2cefb",
+                    "fields": {
+                        "title": "Test00000",
+                        "notifyJobRunner": false,
+                        "otherRecipients": [
+                            "rrodrigues@gluware.com"
+                        ],
+                        "perTargetMessage": true,
+                        "notifyRoles": [],
+                        "message": "{{device.name}}"
+                    }
+                }
+            ]
+        },
+        "variables": [],
+        "references": []
+    }
+]
