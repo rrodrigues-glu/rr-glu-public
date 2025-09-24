@@ -1,0 +1,215 @@
+[
+    {
+        "name": "James NXOS OS Plan001-1",
+        "actionAuth": "Level1",
+        "description": "Feature - Prettying up email. ",
+        "bpmnJSON": {
+            "name": "James NXOS OS Plan001-1",
+            "elements": [
+                {
+                    "id": "start",
+                    "type": "startEvent",
+                    "name": "start",
+                    "fields": {
+                        "jtype": {}
+                    },
+                    "connectTo": "wt-001bbbcf-08ec-477c-b127-19927b6774ab"
+                },
+                {
+                    "id": "end",
+                    "type": "endEvent",
+                    "name": "end"
+                },
+                {
+                    "id": "wt-708feb67-e58e-4763-917e-d5f9c69226f6",
+                    "type": "serviceTask",
+                    "action": "setExitStatus",
+                    "name": "setExitStatus",
+                    "connectTo": "end",
+                    "fields": {
+                        "status": "ok"
+                    }
+                },
+                {
+                    "id": "wt-6d867d4b-4313-4e0b-94f8-629a1f371a4e",
+                    "type": "inclusiveGateway",
+                    "name": "IF condition-1",
+                    "conditions": [
+                        {
+                            "name": "Then",
+                            "expression": {
+                                "logic": "and",
+                                "filters": [
+                                    {
+                                        "field": "layer2_switch",
+                                        "operator": "string_contains_regex",
+                                        "value": "No\\sspanning\\stree.*",
+                                        "variableId": "8b6532de-5ad6-43ca-942a-860fea108309"
+                                    }
+                                ]
+                            },
+                            "connectTo": "wt-7b4fea91-19a1-468d-afde-de4a21038dd4"
+                        },
+                        {
+                            "name": "Else",
+                            "expression": "ELSE",
+                            "connectTo": "wt-377783c3-5299-42a6-9ff2-7f1916ea1add"
+                        }
+                    ]
+                },
+                {
+                    "id": "wt-890cb415-aa57-4d93-9f5a-2a82dfc47b8a",
+                    "type": "inclusiveGateway",
+                    "connectTo": "wt-1e2001fa-e0d6-4e8c-aeb9-61675dbf5db7",
+                    "connectionGroupId": "wt-6d867d4b-4313-4e0b-94f8-629a1f371a4e"
+                },
+                {
+                    "id": "wt-1e2001fa-e0d6-4e8c-aeb9-61675dbf5db7",
+                    "type": "serviceTask",
+                    "connectTo": "wt-708feb67-e58e-4763-917e-d5f9c69226f6",
+                    "action": "notificationViaEmail",
+                    "name": "Send email",
+                    "pack": "notification",
+                    "displayName": "FinalEmailTask ",
+                    "uniqueName": "notification_notificationViaEmail-4",
+                    "fields": {
+                        "title": "Before Show Commands",
+                        "notifyJobRunner": true,
+                        "otherRecipients": [],
+                        "perTargetMessage": true,
+                        "notifyRoles": [],
+                        "message": "<span style=\"font-weight: bold; font-size: 22px;\">Device: {{ device.name }}</span><br><br>\n<br><br>"
+                    }
+                },
+                {
+                    "id": "wt-c7add8a9-11e7-4e8c-951c-1eb1c16f959c",
+                    "type": "serviceTask",
+                    "connectTo": "wt-6d867d4b-4313-4e0b-94f8-629a1f371a4e",
+                    "action": "publicAdHocQuery",
+                    "name": "Run ad hoc query",
+                    "pack": "deviceExplorer",
+                    "displayName": "Run ad hoc query - 9",
+                    "uniqueName": "deviceExplorer_publicAdHocQuery-9",
+                    "fields": {
+                        "source": "DEVICE",
+                        "filter": "SHOW",
+                        "conceptItemId": null,
+                        "query": ".*",
+                        "queryId": null,
+                        "showCommands": [
+                            "show spanning-tree"
+                        ]
+                    }
+                },
+                {
+                    "id": "wt-377783c3-5299-42a6-9ff2-7f1916ea1add",
+                    "type": "serviceTask",
+                    "name": "Send email",
+                    "action": "notificationViaEmail",
+                    "pack": "notification",
+                    "displayName": "Else Block Pass",
+                    "uniqueName": "notification_notificationViaEmail-5",
+                    "connectTo": "wt-890cb415-aa57-4d93-9f5a-2a82dfc47b8a",
+                    "fields": {
+                        "title": "James Testing",
+                        "notifyJobRunner": true,
+                        "otherRecipients": [],
+                        "perTargetMessage": true,
+                        "notifyRoles": [],
+                        "message": "{{device.name}} is a layer 2 switch"
+                    }
+                },
+                {
+                    "id": "wt-d09e6044-a4bf-493e-8b22-36b067bf3f5b",
+                    "type": "inclusiveGateway",
+                    "name": "IF condition-1",
+                    "conditions": [
+                        {
+                            "name": "Then",
+                            "expression": {
+                                "logic": "and",
+                                "filters": [
+                                    {
+                                        "field": "layer2_switch",
+                                        "operator": "equal",
+                                        "value": "up",
+                                        "variableId": "8b6532de-5ad6-43ca-942a-860fea108309"
+                                    }
+                                ]
+                            },
+                            "connectTo": "wt-09da1f00-85a7-4fa4-85d2-d8b21896425c"
+                        },
+                        {
+                            "name": "Else",
+                            "expression": "ELSE",
+                            "connectTo": "wt-5a783dc1-6bf4-4904-ad1b-687884aceb8a"
+                        }
+                    ]
+                },
+                {
+                    "id": "wt-09da1f00-85a7-4fa4-85d2-d8b21896425c",
+                    "type": "inclusiveGateway",
+                    "connectTo": "wt-890cb415-aa57-4d93-9f5a-2a82dfc47b8a",
+                    "connectionGroupId": "wt-d09e6044-a4bf-493e-8b22-36b067bf3f5b"
+                },
+                {
+                    "id": "wt-d93d3464-d14a-4f2c-8c60-c78323493e94",
+                    "type": "endEvent",
+                    "connectionGroupId": "wt-d09e6044-a4bf-493e-8b22-36b067bf3f5b",
+                    "name": "wt-d93d3464-d14a-4f2c-8c60-c78323493e94"
+                },
+                {
+                    "id": "wt-5a783dc1-6bf4-4904-ad1b-687884aceb8a",
+                    "type": "serviceTask",
+                    "name": "setExitStatus",
+                    "action": "setExitStatus",
+                    "connectTo": "wt-d93d3464-d14a-4f2c-8c60-c78323493e94",
+                    "fields": {
+                        "status": "ok"
+                    }
+                },
+                {
+                    "id": "wt-001bbbcf-08ec-477c-b127-19927b6774ab",
+                    "name": "Select targets",
+                    "type": "serviceTask",
+                    "action": "selectDevices",
+                    "connectTo": "wt-c7add8a9-11e7-4e8c-951c-1eb1c16f959c",
+                    "pack": "deviceManager",
+                    "uniqueName": "deviceManager_selectDevices-0"
+                },
+                {
+                    "id": "wt-7b4fea91-19a1-468d-afde-de4a21038dd4",
+                    "type": "serviceTask",
+                    "action": "notificationViaEmail",
+                    "name": "Send email",
+                    "connectTo": "wt-d09e6044-a4bf-493e-8b22-36b067bf3f5b",
+                    "pack": "notification",
+                    "uniqueName": "notification_notificationViaEmail-6",
+                    "displayName": "IF Blocck Pass",
+                    "fields": {
+                        "title": "IFBlockPass",
+                        "notifyJobRunner": true,
+                        "otherRecipients": [],
+                        "perTargetMessage": true,
+                        "notifyRoles": [],
+                        "message": "{{device.name}}"
+                    }
+                }
+            ]
+        },
+        "variables": [
+            {
+                "id": "8b6532de-5ad6-43ca-942a-860fea108309",
+                "dataType": "string",
+                "name": "layer2_switch",
+                "value": "{{targetResponse.queriedData}}",
+                "initialTask": "wt-c7add8a9-11e7-4e8c-951c-1eb1c16f959c",
+                "tasks": {
+                    "wt-c7add8a9-11e7-4e8c-951c-1eb1c16f959c": "{{targetResponse.queriedData}}"
+                },
+                "targetVariable": true
+            }
+        ],
+        "references": []
+    }
+]

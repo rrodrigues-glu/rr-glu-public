@@ -1,0 +1,343 @@
+[
+    {
+        "name": "James-nxos-QTS-Julie",
+        "actionAuth": "Level1",
+        "description": "",
+        "bpmnJSON": {
+            "name": "James-nxos-QTS-Julie",
+            "elements": [
+                {
+                    "id": "start",
+                    "type": "startEvent",
+                    "name": "start",
+                    "fields": {
+                        "jtype": {}
+                    },
+                    "connectTo": "wt-9bf59d35-be76-4e66-89fb-2441f27e8d83"
+                },
+                {
+                    "id": "end",
+                    "type": "endEvent",
+                    "name": "end"
+                },
+                {
+                    "id": "wt-9bf59d35-be76-4e66-89fb-2441f27e8d83",
+                    "type": "serviceTask",
+                    "action": "filterDevices",
+                    "name": "Filter targets",
+                    "pack": "deviceManager",
+                    "displayName": "Filter targets",
+                    "uniqueName": "deviceManager_filterDevices-0",
+                    "connectTo": "wt-c1ba06b1-c236-45a6-868a-a7e454cf50a4",
+                    "fields": {
+                        "deviceFilter": {
+                            "logic": "and",
+                            "filters": [
+                                {
+                                    "field": "detectedOs",
+                                    "operator": "equal",
+                                    "value": "NX-OS",
+                                    "variableId": null
+                                },
+                                {
+                                    "field": "connectionInformation.ip",
+                                    "operator": "equal",
+                                    "value": "10.150.1.4",
+                                    "variableId": null
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": "wt-e5c0320b-a390-47ef-b5c8-9aeccf75e538",
+                    "type": "serviceTask",
+                    "action": "setExitStatus",
+                    "name": "setExitStatus",
+                    "connectTo": "end",
+                    "fields": {
+                        "status": "ok"
+                    }
+                },
+                {
+                    "id": "wt-c1ba06b1-c236-45a6-868a-a7e454cf50a4",
+                    "type": "serviceTask",
+                    "action": "publicAdHocQuery",
+                    "name": "Run ad hoc query",
+                    "pack": "deviceExplorer",
+                    "displayName": "Run ad hoc query",
+                    "uniqueName": "deviceExplorer_publicAdHocQuery-0",
+                    "connectTo": "wt-86041d45-fdd9-420e-937e-afac6fb8d692",
+                    "fields": {
+                        "source": "DEVICE",
+                        "filter": "SHOW",
+                        "query": ".*",
+                        "showCommands": [
+                            "show spanning-tree"
+                        ]
+                    }
+                },
+                {
+                    "id": "wt-86041d45-fdd9-420e-937e-afac6fb8d692",
+                    "type": "inclusiveGateway",
+                    "name": "IF condition-1",
+                    "conditions": [
+                        {
+                            "name": "Then",
+                            "expression": {
+                                "logic": "and",
+                                "filters": [
+                                    {
+                                        "field": "layer2_switch",
+                                        "operator": "string_contains_regex",
+                                        "value": "No\\sspanning\\stree.*",
+                                        "variableId": "af6bb5dc-99af-4cd5-80f0-a10cbac008a4"
+                                    }
+                                ]
+                            },
+                            "connectTo": "wt-20fe775d-671a-4b56-9784-43fe00729703"
+                        },
+                        {
+                            "name": "Else",
+                            "expression": "ELSE",
+                            "connectTo": "wt-7ea2ba17-f5ed-4f73-a378-40131bf4b97e"
+                        }
+                    ]
+                },
+                {
+                    "id": "wt-e84e5d22-2680-47df-9672-6041eee9948e",
+                    "type": "inclusiveGateway",
+                    "connectTo": "wt-bb8cc37e-3022-4ed5-b58d-af11b113a22f",
+                    "connectionGroupId": "wt-86041d45-fdd9-420e-937e-afac6fb8d692"
+                },
+                {
+                    "id": "wt-20fe775d-671a-4b56-9784-43fe00729703",
+                    "type": "serviceTask",
+                    "action": "jnib",
+                    "name": "Assess Node State - Per Target Execution",
+                    "pack": "|nodeStateAssessment",
+                    "displayName": "Assess Node State - Per Target Execution",
+                    "uniqueName": "/sys/jnib/rpa/tasks/nodeStateAssessment_targetOnly.rpaTask.jnib_|nodeStateAssessment_nodeStateAssessment_targetOnly-0",
+                    "connectTo": "wt-5f831dfa-d3e6-4269-ac4c-798956ab817d",
+                    "fields": {
+                        "action": "/sys/jnib/rpa/tasks/nodeStateAssessment_targetOnly.rpaTask.jnib",
+                        "executionMode": "targetOnly",
+                        "targetsRequired": true
+                    },
+                    "properties": {
+                        "policies": {
+                            "@ref": null
+                        },
+                        "referencedFields": {}
+                    }
+                },
+                {
+                    "id": "wt-7ea2ba17-f5ed-4f73-a378-40131bf4b97e",
+                    "type": "serviceTask",
+                    "action": "notificationViaEmail",
+                    "name": "Send email",
+                    "pack": "notification",
+                    "displayName": "Send email",
+                    "uniqueName": "notification_notificationViaEmail-0",
+                    "connectTo": "wt-e84e5d22-2680-47df-9672-6041eee9948e",
+                    "fields": {
+                        "title": "Julie Testing",
+                        "notifyJobRunner": true,
+                        "otherRecipients": [],
+                        "perTargetMessage": true,
+                        "notifyRoles": [],
+                        "message": "{{device.name}} is a layer 2 switch"
+                    }
+                },
+                {
+                    "id": "wt-bb8cc37e-3022-4ed5-b58d-af11b113a22f",
+                    "type": "serviceTask",
+                    "action": "notificationViaEmail",
+                    "name": "Send email",
+                    "pack": "notification",
+                    "displayName": "Send email - 1",
+                    "uniqueName": "notification_notificationViaEmail-1",
+                    "connectTo": "wt-e5c0320b-a390-47ef-b5c8-9aeccf75e538",
+                    "fields": {
+                        "title": "Before Show Commands",
+                        "notifyJobRunner": true,
+                        "otherRecipients": [],
+                        "perTargetMessage": true,
+                        "notifyRoles": [],
+                        "message": "<span style=\"font-weight: bold; font-size: 22px;\">Device: {{ device.name }}</span><br><br>\n<br><br>"
+                    }
+                },
+                {
+                    "id": "wt-5f831dfa-d3e6-4269-ac4c-798956ab817d",
+                    "type": "inclusiveGateway",
+                    "name": "IF condition-1",
+                    "conditions": [
+                        {
+                            "name": "Then",
+                            "expression": {
+                                "logic": "and",
+                                "filters": [
+                                    {
+                                        "field": "bgp_state",
+                                        "operator": "equal",
+                                        "value": "Up",
+                                        "variableId": "45eaa14a-0beb-466b-9ed7-e590e22725fe"
+                                    }
+                                ]
+                            },
+                            "connectTo": "wt-e327aade-6dfa-43fb-abd7-117ef8d6b48d"
+                        },
+                        {
+                            "name": "Else",
+                            "expression": "ELSE",
+                            "connectTo": "wt-e4ec7e5b-b345-4b25-a42b-24757b01c03d"
+                        }
+                    ]
+                },
+                {
+                    "id": "wt-0def0039-ca36-47b9-92fd-03b2dc472059",
+                    "type": "inclusiveGateway",
+                    "connectTo": "wt-e84e5d22-2680-47df-9672-6041eee9948e",
+                    "connectionGroupId": "wt-5f831dfa-d3e6-4269-ac4c-798956ab817d"
+                },
+                {
+                    "id": "wt-0b4f439a-f53c-4859-96f0-67a528731f59",
+                    "name": "wt-0b4f439a-f53c-4859-96f0-67a528731f59",
+                    "type": "endEvent",
+                    "connectionGroupId": "wt-5f831dfa-d3e6-4269-ac4c-798956ab817d"
+                },
+                {
+                    "id": "wt-587cefd1-b2a2-435a-a2b8-3e6e4d152cb3",
+                    "type": "serviceTask",
+                    "action": "setExitStatus",
+                    "name": "setExitStatus",
+                    "connectTo": "wt-0b4f439a-f53c-4859-96f0-67a528731f59",
+                    "fields": {
+                        "status": "ok"
+                    }
+                },
+                {
+                    "id": "wt-e327aade-6dfa-43fb-abd7-117ef8d6b48d",
+                    "type": "inclusiveGateway",
+                    "name": "IF condition-1",
+                    "conditions": [
+                        {
+                            "name": "Then",
+                            "expression": {
+                                "logic": "and",
+                                "filters": [
+                                    {
+                                        "field": "ospf_state",
+                                        "operator": "equal",
+                                        "value": "Up",
+                                        "variableId": "09308869-baef-4160-a9da-c5ffe986426a"
+                                    }
+                                ]
+                            },
+                            "connectTo": "wt-8b0828b1-c72d-4ce4-8a02-ef3304044552"
+                        },
+                        {
+                            "name": "Else",
+                            "expression": "ELSE",
+                            "connectTo": "wt-ddde6b0c-23dd-46bd-8238-d7ed2a383e04"
+                        }
+                    ]
+                },
+                {
+                    "id": "wt-8b0828b1-c72d-4ce4-8a02-ef3304044552",
+                    "type": "inclusiveGateway",
+                    "connectTo": "wt-0def0039-ca36-47b9-92fd-03b2dc472059",
+                    "connectionGroupId": "wt-e327aade-6dfa-43fb-abd7-117ef8d6b48d"
+                },
+                {
+                    "id": "wt-7c2d3292-f9da-4629-90ab-86d9bc0d1317",
+                    "name": "wt-7c2d3292-f9da-4629-90ab-86d9bc0d1317",
+                    "type": "endEvent",
+                    "connectionGroupId": "wt-e327aade-6dfa-43fb-abd7-117ef8d6b48d"
+                },
+                {
+                    "id": "wt-da1405d5-91f5-4444-b811-f8c6fdc9cb5f",
+                    "type": "serviceTask",
+                    "action": "setExitStatus",
+                    "name": "setExitStatus",
+                    "connectTo": "wt-7c2d3292-f9da-4629-90ab-86d9bc0d1317",
+                    "fields": {
+                        "status": "ok"
+                    }
+                },
+                {
+                    "id": "wt-e4ec7e5b-b345-4b25-a42b-24757b01c03d",
+                    "type": "serviceTask",
+                    "action": "notificationViaEmail",
+                    "name": "Send email",
+                    "pack": "notification",
+                    "displayName": "Send email - 3",
+                    "uniqueName": "notification_notificationViaEmail-3",
+                    "connectTo": "wt-587cefd1-b2a2-435a-a2b8-3e6e4d152cb3",
+                    "fields": {
+                        "title": "BGP Session Down - {{environment.workflow.name}}",
+                        "notifyJobRunner": true,
+                        "otherRecipients": [],
+                        "perTargetMessage": true,
+                        "notifyRoles": [],
+                        "message": "{% for device in devices %}\n\n    Device: {{device.name}}<br>\n    Device IP: {{device.connectionInformation.ip }}: <br>\n    Date: {{'now' | date: \"%Y-%m-%d %H:%M\" }}<br>\n    At least one BGP Session is Down on this device. \n\n    <br><br>\n\n{% endfor %}"
+                    }
+                },
+                {
+                    "id": "wt-ddde6b0c-23dd-46bd-8238-d7ed2a383e04",
+                    "type": "serviceTask",
+                    "action": "notificationViaEmail",
+                    "name": "Send email",
+                    "pack": "notification",
+                    "displayName": "Send email - 4",
+                    "uniqueName": "notification_notificationViaEmail-4",
+                    "connectTo": "wt-da1405d5-91f5-4444-b811-f8c6fdc9cb5f",
+                    "fields": {
+                        "title": "OSPF Session Down - {{environment.workflow.name}}",
+                        "notifyJobRunner": true,
+                        "otherRecipients": [],
+                        "perTargetMessage": true,
+                        "notifyRoles": [],
+                        "message": "{% for device in devices %}\n\n    Device: {{device.name}}<br>\n    Device IP: {{device.connectionInformation.ip }}: <br>\n    Date: {{'now' | date: \"%Y-%m-%d %H:%M\" }}<br>\n    At least one OSPF Session is Down on this device.\n\n    <br><br>\n\n{% endfor %}"
+                    }
+                }
+            ]
+        },
+        "variables": [
+            {
+                "id": "45eaa14a-0beb-466b-9ed7-e590e22725fe",
+                "dataType": "string",
+                "name": "bgp_state",
+                "value": "{% assign bgp_dict = targetResponse.assessedNodeState[1].result.state.internetconnect.bgp %}{% if bgp_dict[\"Idle\"] or if bgp_dict[\"Active\"] or if bgp_dict[\"Admin\"] %}Down{% else %}Up{% endif %}",
+                "initialTask": "wt-20fe775d-671a-4b56-9784-43fe00729703",
+                "tasks": {
+                    "wt-20fe775d-671a-4b56-9784-43fe00729703": "{% assign bgp_dict = targetResponse.assessedNodeState[1].result.state.internetconnect.bgp %}{% if bgp_dict[\"Idle\"] or if bgp_dict[\"Active\"] or if bgp_dict[\"Admin\"] %}Down{% else %}Up{% endif %}"
+                },
+                "targetVariable": true
+            },
+            {
+                "id": "09308869-baef-4160-a9da-c5ffe986426a",
+                "dataType": "string",
+                "name": "ospf_state",
+                "value": "{% assign ospf_list = targetResponse.assessedNodeState[0].result.state.internetconnect.ospf.FULL %}{% assign ospf_up = true %}{% for entry in ospf_list %}{% if entry.ospfstate != \"FULL\" %}{% assign ospf_up = false %}{% endif %}{% endfor %}{% if ospf_up %}Up{% else %}Down{% endif %}",
+                "initialTask": "wt-20fe775d-671a-4b56-9784-43fe00729703",
+                "tasks": {
+                    "wt-20fe775d-671a-4b56-9784-43fe00729703": "{% assign ospf_list = targetResponse.assessedNodeState[0].result.state.internetconnect.ospf.FULL %}{% assign ospf_up = true %}{% for entry in ospf_list %}{% if entry.ospfstate != \"FULL\" %}{% assign ospf_up = false %}{% endif %}{% endfor %}{% if ospf_up %}Up{% else %}Down{% endif %}"
+                },
+                "targetVariable": true
+            },
+            {
+                "id": "af6bb5dc-99af-4cd5-80f0-a10cbac008a4",
+                "dataType": "string",
+                "name": "layer2_switch",
+                "value": "{{targetResponse.queriedData}}",
+                "initialTask": "wt-c1ba06b1-c236-45a6-868a-a7e454cf50a4",
+                "tasks": {
+                    "wt-c1ba06b1-c236-45a6-868a-a7e454cf50a4": "{{targetResponse.queriedData}}"
+                },
+                "targetVariable": true
+            }
+        ],
+        "references": []
+    }
+]

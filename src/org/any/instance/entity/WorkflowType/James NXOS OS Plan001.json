@@ -1,10 +1,10 @@
 [
     {
-        "name": "James NXOS OS Plan Workflow2.0",
+        "name": "James NXOS OS Plan001",
         "actionAuth": "Level1",
         "description": "Feature - Prettying up email. ",
         "bpmnJSON": {
-            "name": "James NXOS OS Plan Workflow2.0",
+            "name": "James NXOS OS Plan001",
             "elements": [
                 {
                     "id": "start",
@@ -48,7 +48,7 @@
                                     }
                                 ]
                             },
-                            "connectTo": "wt-8b1cc413-521a-4a63-a6fe-23b4c269a005"
+                            "connectTo": "wt-7b4fea91-19a1-468d-afde-de4a21038dd4"
                         },
                         {
                             "name": "Else",
@@ -64,34 +64,13 @@
                     "connectionGroupId": "wt-6d867d4b-4313-4e0b-94f8-629a1f371a4e"
                 },
                 {
-                    "id": "wt-8b1cc413-521a-4a63-a6fe-23b4c269a005",
-                    "type": "serviceTask",
-                    "connectTo": "wt-d09e6044-a4bf-493e-8b22-36b067bf3f5b",
-                    "action": "jnib",
-                    "name": "Assess Node State - Per Target Execution",
-                    "pack": "|nodeStateAssessment",
-                    "displayName": "Assess Node State - Per Target Execution - 2",
-                    "uniqueName": "/sys/jnib/rpa/tasks/nodeStateAssessment_targetOnly.rpaTask.jnib_|nodeStateAssessment_nodeStateAssessment_targetOnly-2",
-                    "fields": {
-                        "action": "/sys/jnib/rpa/tasks/nodeStateAssessment_targetOnly.rpaTask.jnib",
-                        "executionMode": "targetOnly",
-                        "targetsRequired": true
-                    },
-                    "properties": {
-                        "policies": {
-                            "@ref": null
-                        },
-                        "referencedFields": {}
-                    }
-                },
-                {
                     "id": "wt-1e2001fa-e0d6-4e8c-aeb9-61675dbf5db7",
                     "type": "serviceTask",
                     "connectTo": "wt-708feb67-e58e-4763-917e-d5f9c69226f6",
                     "action": "notificationViaEmail",
                     "name": "Send email",
                     "pack": "notification",
-                    "displayName": "Send Show Commands email",
+                    "displayName": "FinalEmailTask ",
                     "uniqueName": "notification_notificationViaEmail-4",
                     "fields": {
                         "title": "Before Show Commands",
@@ -105,12 +84,12 @@
                 {
                     "id": "wt-c7add8a9-11e7-4e8c-951c-1eb1c16f959c",
                     "type": "serviceTask",
-                    "name": "Run ad hoc query",
+                    "connectTo": "wt-6d867d4b-4313-4e0b-94f8-629a1f371a4e",
                     "action": "publicAdHocQuery",
+                    "name": "Run ad hoc query",
                     "pack": "deviceExplorer",
                     "displayName": "Run ad hoc query - 9",
                     "uniqueName": "deviceExplorer_publicAdHocQuery-9",
-                    "connectTo": "wt-6d867d4b-4313-4e0b-94f8-629a1f371a4e",
                     "fields": {
                         "source": "DEVICE",
                         "filter": "SHOW",
@@ -125,12 +104,12 @@
                 {
                     "id": "wt-377783c3-5299-42a6-9ff2-7f1916ea1add",
                     "type": "serviceTask",
-                    "connectTo": "wt-890cb415-aa57-4d93-9f5a-2a82dfc47b8a",
-                    "action": "notificationViaEmail",
                     "name": "Send email",
+                    "action": "notificationViaEmail",
                     "pack": "notification",
-                    "displayName": "Send email - 5",
+                    "displayName": "Else Block Pass",
                     "uniqueName": "notification_notificationViaEmail-5",
+                    "connectTo": "wt-890cb415-aa57-4d93-9f5a-2a82dfc47b8a",
                     "fields": {
                         "title": "James Testing",
                         "notifyJobRunner": true,
@@ -174,8 +153,8 @@
                 },
                 {
                     "id": "wt-5a783dc1-6bf4-4904-ad1b-687884aceb8a",
-                    "name": "setExitStatus",
                     "type": "serviceTask",
+                    "name": "setExitStatus",
                     "action": "setExitStatus",
                     "connectTo": "wt-d93d3464-d14a-4f2c-8c60-c78323493e94",
                     "fields": {
@@ -184,38 +163,34 @@
                 },
                 {
                     "id": "wt-001bbbcf-08ec-477c-b127-19927b6774ab",
+                    "name": "Select targets",
                     "type": "serviceTask",
                     "action": "selectDevices",
-                    "name": "Select targets",
                     "connectTo": "wt-c7add8a9-11e7-4e8c-951c-1eb1c16f959c",
                     "pack": "deviceManager",
                     "uniqueName": "deviceManager_selectDevices-0"
+                },
+                {
+                    "id": "wt-7b4fea91-19a1-468d-afde-de4a21038dd4",
+                    "type": "serviceTask",
+                    "action": "notificationViaEmail",
+                    "name": "Send email",
+                    "connectTo": "wt-d09e6044-a4bf-493e-8b22-36b067bf3f5b",
+                    "pack": "notification",
+                    "uniqueName": "notification_notificationViaEmail-6",
+                    "displayName": "IF Blocck Pass",
+                    "fields": {
+                        "title": "IFBlockPass",
+                        "notifyJobRunner": true,
+                        "otherRecipients": [],
+                        "perTargetMessage": true,
+                        "notifyRoles": [],
+                        "message": "{{device.name}}"
+                    }
                 }
             ]
         },
         "variables": [
-            {
-                "id": "fe2bc719-f190-433a-b376-5a5957c06630",
-                "dataType": "string",
-                "name": "bgp_state",
-                "value": "{% assign bgp_dict = targetResponse.assessedNodeState[1].result.state.internetconnect.bgp %}{% if bgp_dict[\"Idle\"] or if bgp_dict[\"Active\"] or if bgp_dict[\"Admin\"] %}Down{% else %}Up{% endif %}",
-                "initialTask": "wt-8b1cc413-521a-4a63-a6fe-23b4c269a005",
-                "tasks": {
-                    "wt-8b1cc413-521a-4a63-a6fe-23b4c269a005": "{% assign bgp_dict = targetResponse.assessedNodeState[1].result.state.internetconnect.bgp %}{% if bgp_dict[\"Idle\"] or if bgp_dict[\"Active\"] or if bgp_dict[\"Admin\"] %}Down{% else %}Up{% endif %}"
-                },
-                "targetVariable": true
-            },
-            {
-                "id": "bf801e43-67d2-4836-9e4b-33f0eeaaa8e6",
-                "dataType": "string",
-                "name": "ospf_state",
-                "value": "{% assign ospf_list = targetResponse.assessedNodeState[0].result.state.internetconnect.ospf.FULL %}{% assign ospf_up = true %}{% for entry in ospf_list %}{% if entry.ospfstate != \"FULL\" %}{% assign ospf_up = false %}{% endif %}{% endfor %}{% if ospf_up %}Up{% else %}Down{% endif %}",
-                "initialTask": "wt-8b1cc413-521a-4a63-a6fe-23b4c269a005",
-                "tasks": {
-                    "wt-8b1cc413-521a-4a63-a6fe-23b4c269a005": "{% assign ospf_list = targetResponse.assessedNodeState[0].result.state.internetconnect.ospf.FULL %}{% assign ospf_up = true %}{% for entry in ospf_list %}{% if entry.ospfstate != \"FULL\" %}{% assign ospf_up = false %}{% endif %}{% endfor %}{% if ospf_up %}Up{% else %}Down{% endif %}"
-                },
-                "targetVariable": true
-            },
             {
                 "id": "8b6532de-5ad6-43ca-942a-860fea108309",
                 "dataType": "string",
