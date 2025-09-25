@@ -1,0 +1,77 @@
+[
+    {
+        "name": "backup",
+        "actionAuth": "Level1",
+        "description": "",
+        "bpmnJSON": {
+            "name": "backup",
+            "elements": [
+                {
+                    "id": "start",
+                    "type": "startEvent",
+                    "name": "start",
+                    "fields": {
+                        "jtype": {
+                            "name": "",
+                            "name@Display.label": "name"
+                        }
+                    },
+                    "connectTo": "wt-9ec752d8-62e2-41c6-b7c4-5748e02486f4"
+                },
+                {
+                    "id": "end",
+                    "type": "endEvent",
+                    "name": "end"
+                },
+                {
+                    "id": "wt-9ec752d8-62e2-41c6-b7c4-5748e02486f4",
+                    "type": "serviceTask",
+                    "action": "filterDevices",
+                    "name": "Filter targets",
+                    "pack": "deviceManager",
+                    "displayName": "Filter targets",
+                    "uniqueName": "deviceManager_filterDevices-0",
+                    "connectTo": "wt-c3edc4ae-b817-49e5-8298-dd989891eeba",
+                    "fields": {
+                        "deviceFilter": {
+                            "logic": "and",
+                            "filters": [
+                                {
+                                    "field": "name",
+                                    "operator": "equal",
+                                    "value": "{{startObj.name}}",
+                                    "variableId": null
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": "wt-a3889040-6987-47ab-87e0-83fe0b7c7c52",
+                    "type": "serviceTask",
+                    "action": "setExitStatus",
+                    "name": "setExitStatus",
+                    "connectTo": "end",
+                    "fields": {
+                        "status": "ok"
+                    }
+                },
+                {
+                    "id": "wt-c3edc4ae-b817-49e5-8298-dd989891eeba",
+                    "type": "serviceTask",
+                    "action": "runBackup",
+                    "name": "Backup device",
+                    "pack": "backupAndRestore",
+                    "uniqueName": "backupAndRestore_runBackup-0",
+                    "connectTo": "wt-a3889040-6987-47ab-87e0-83fe0b7c7c52",
+                    "fields": {
+                        "backupName": "Backup-{{ \"now\" | date }}",
+                        "runCapture": false
+                    }
+                }
+            ]
+        },
+        "variables": [],
+        "references": []
+    }
+]
