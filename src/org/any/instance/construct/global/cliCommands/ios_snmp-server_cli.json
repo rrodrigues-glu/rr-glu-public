@@ -1,0 +1,30 @@
+{
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Snmp.json"
+    },
+    "cliCommands": [
+        "snmp-server group TESTGROUP v3 auth",
+        "snmp-server group NOTREDACTED_VERSION_3 v3 auth",
+        "snmp-server community NOTREDACTED RO",
+        "snmp-server location India-Mumbai",
+        "snmp-server contact OperatorName1",
+        "snmp-server host 1.1.1.1 version 2c NOTREDACTED_VERSION_2",
+        "snmp-server host 1.1.1.2 version 2c NOTREDACTED_VERSION_2",
+        "snmp-server host 1.1.1.5 version 3 auth NOTREDACTED_VERSION_3",
+        "snmp-server host 1.1.7.5 version 3 auth NOTREDACTED_VERSION_3",
+        "snmp-server host 1.13.1.15 version 3 auth NOTREDACTED_VERSION_3",
+        "snmp-server host 1.13.1.25 version 3 auth NOTREDACTED_VERSION_3",
+        "snmp-server host 1.13.1.35 version 3 auth NOTREDACTED_VERSION_3",
+        "snmp-server host 1.13.1.5 version 3 auth NOTREDACTED_VERSION_3",
+        "snmp-server user mstrcardv3 MCv3Read v3 auth sha FDzQt6snd96drd6pU priv aes 128 9AJvcrpXye4gfg"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@id": "da3eb4d2-2ed6-42b1-8dfc-5daf6a6da73e",
+    "@name": "ios_snmp-server_cli",
+    "@description": "",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    }
+}
