@@ -6,7 +6,7 @@
         "snmp-server group TESTGROUP v3 auth",
         "snmp-server group NOTREDACTED_VERSION_3 v3 auth",
         "snmp-server community NOTREDACTED RO",
-        "snmp-server location India-Mumbai2525",
+        "snmp-server location India-Mumbai",
         "snmp-server contact OperatorName",
         "snmp-server host 1.1.1.1 version 2c NOTREDACTED_VERSION_2",
         "snmp-server host 1.1.1.2 version 2c NOTREDACTED_VERSION_2",
