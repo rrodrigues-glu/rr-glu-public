@@ -4,7 +4,8 @@
     },
     "cliCommands": [
         "{{test}}",
-        "{{test123}}"
+        "{{test123}}",
+        "{{test345}}"
     ],
     "advanced": {
         "filter": null
