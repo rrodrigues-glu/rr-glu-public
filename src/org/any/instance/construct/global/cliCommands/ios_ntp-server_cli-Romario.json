@@ -3,8 +3,7 @@
         "@ref": "/org/instance/construct/global/conceptItem/IOS_NtpAgent-Romario.json"
     },
     "cliCommands": [
-        "ntp source $discover.Intf.up.pop",
-        "111111"
+        "ntp source $discover.Intf.up.pop"
     ],
     "advanced": {
         "filter": null
