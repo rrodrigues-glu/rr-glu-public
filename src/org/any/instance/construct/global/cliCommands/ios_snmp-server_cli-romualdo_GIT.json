@@ -1,0 +1,30 @@
+{
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Snmp.json"
+    },
+    "cliCommands": [
+        "snmp-server group TESTGROUP v3 auth",
+        "snmp-server group NOTREDACTED_VERSION_3 v3 auth",
+        "snmp-server community NOTREDACTED RO",
+        "snmp-server location India-Mumbai",
+        "snmp-server contact OperatorName",
+        "snmp-server host 1.1.1.1 version 2c NOTREDACTED_VERSION_2",
+        "snmp-server host 1.1.1.2 version 2c NOTREDACTED_VERSION_2",
+        "snmp-server host 1.1.1.5 version 3 auth NOTREDACTED_VERSION_3",
+        "snmp-server host 1.1.7.5 version 3 auth NOTREDACTED_VERSION_3",
+        "snmp-server host 1.13.1.15 version 3 auth NOTREDACTED_VERSION_3",
+        "snmp-server host 1.13.1.25 version 3 auth NOTREDACTED_VERSION_3",
+        "snmp-server host 1.13.1.35 version 3 auth NOTREDACTED_VERSION_3",
+        "snmp-server host 1.13.1.5 version 3 auth NOTREDACTED_VERSION_3",
+        "snmp-server user mstrcardv3 MCv3Read v3 auth sha FDzQt6snd96drd6pU priv aes 128 9AJvcrpXye4gfg"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@id": "2e90dd68-04f9-425d-9f89-d46e1b5fee6a",
+    "@name": "ios_snmp-server_cli-romualdo_GIT",
+    "@description": "",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    }
+}
