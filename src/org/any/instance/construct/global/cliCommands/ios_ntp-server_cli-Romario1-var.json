@@ -3,7 +3,8 @@
         "@ref": "/org/instance/construct/global/conceptItem/IOS_NtpAgent-Romario.json"
     },
     "cliCommands": [
-        "{{test}}"
+        "{{test}}",
+        "{{test123}}"
     ],
     "advanced": {
         "filter": null
