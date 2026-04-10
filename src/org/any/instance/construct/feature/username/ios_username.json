@@ -1,0 +1,33 @@
+{
+    "featureConcept": {
+        "name": "Local Users",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_username_grp-Copy-1.json"
+            ]
+        }
+    },
+    "form": {
+        "user": [
+            {
+                "name": "testUser",
+                "hash": "cleartext",
+                "view": "",
+                "privilege": "15"
+            },
+            {
+                "name": "gluUser",
+                "hash": "cleartext",
+                "view": "",
+                "privilege": "15"
+            }
+        ]
+    },
+    "@exportedInstanceId": "d94257be-a7d4-467a-b564-b17a97c89a05",
+    "@id": "d94257be-a7d4-467a-b564-b17a97c89a05",
+    "@type": {
+        "ref": "/sys/type/construct/feature/username.jtype"
+    },
+    "@name": "ios_username",
+    "@description": ""
+}

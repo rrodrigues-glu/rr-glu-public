@@ -1,0 +1,37 @@
+{
+    "name": "Banner",
+    "vendors": {
+        "cisco": {
+            "type": [
+                "ios"
+            ],
+            "level": null
+        }
+    },
+    "showCmds": [
+        "sh run | beg banner"
+    ],
+    "keyCliLine": "banner (motd|login|exec) .+",
+    "rootEntryFlag": true,
+    "keyLineDepth": 1,
+    "keyGroup": 1,
+    "mode": "advanced",
+    "boundaries": {
+        "start": null
+    },
+    "discover": {
+        "content": {
+            "expressions": [
+                "(^((?!\\^|^banner).)+)"
+            ]
+        }
+    },
+    "removeSyntax": {},
+    "@exportedInstanceId": "13cd509b-3d2c-4f95-a68f-56dc71043d3a",
+    "@id": "13cd509b-3d2c-4f95-a68f-56dc71043d3a",
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "@name": "IOS_Banner-Common",
+    "@description": "Displays the running configuration beginning at the banner section."
+}

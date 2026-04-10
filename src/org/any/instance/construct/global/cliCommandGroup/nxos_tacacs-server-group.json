@@ -1,0 +1,27 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": ".+",
+    "ignoreDelete": false,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/nxos_tacacs-server-cli.json"
+        ]
+    },
+    "maskCommands": [],
+    "advanced": {
+        "renderingConditions": []
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "nxos_tacacs-server-group"
+    },
+    "@description": "",
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "4c4b9d94-5893-4acb-87cc-274c932c7f8d",
+    "@id": "4c4b9d94-5893-4acb-87cc-274c932c7f8d",
+    "@name": "nxos_tacacs-server-group"
+}

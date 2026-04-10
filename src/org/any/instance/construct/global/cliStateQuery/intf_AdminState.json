@@ -1,0 +1,31 @@
+{
+    "table": [
+        {
+            "fields": [
+                {
+                    "keyType": "regex",
+                    "key": ".+",
+                    "category": "status",
+                    "field": "adminState",
+                    "value": "up"
+                },
+                {
+                    "keyType": "regex",
+                    "key": ".+",
+                    "category": "status",
+                    "field": "ipAddress",
+                    "value": "^(?:[8-9]\\d|\\d{3,})$"
+                }
+            ],
+            "type": "lookup"
+        }
+    ],
+    "mode": "advanced",
+    "@exportedInstanceId": "b2611e00-7911-45cc-894b-895ea7156cd1",
+    "@id": "b2611e00-7911-45cc-894b-895ea7156cd1",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateQuery.jtype"
+    },
+    "@name": "intf_AdminState",
+    "@description": ""
+}

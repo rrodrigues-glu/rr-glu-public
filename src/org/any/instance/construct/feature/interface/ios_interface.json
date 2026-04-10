@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/interface.jtype"
+    },
+    "featureConcept": {
+        "name": " ",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_intf-mgmt_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_intf-lan_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_intf-wan_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "comment": null
+    },
+    "@source": {
+        "instanceName": "ios_interface"
+    },
+    "@exportedInstanceId": "d24e278d-bf87-42fc-b6e5-d5ef35809e99",
+    "@id": "d24e278d-bf87-42fc-b6e5-d5ef35809e99",
+    "@name": "ios_interface",
+    "@description": ""
+}

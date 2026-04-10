@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": "vty|con",
+    "ignoreDelete": false,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_line-vty-con_cli.json"
+        ]
+    },
+    "maskCommands": [],
+    "advanced": {
+        "renderingConditions": []
+    },
+    "@source": {
+        "instanceName": "ios_line-vty-con_grp"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "d573abcb-3e6b-4b8e-b891-d0d6db0c31d2",
+    "@id": "d573abcb-3e6b-4b8e-b891-d0d6db0c31d2",
+    "@name": "ios_line-vty-con_grp",
+    "@description": ""
+}

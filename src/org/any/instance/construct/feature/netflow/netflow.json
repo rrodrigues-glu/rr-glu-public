@@ -1,0 +1,32 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/netflow.jtype"
+    },
+    "featureConcept": {
+        "name": "Flow",
+        "cliCommandGroups": {}
+    },
+    "form": {
+        "flow": {
+            "record": {
+                "name": "",
+                "description": ""
+            },
+            "exporter": [],
+            "monitor": {
+                "name": "",
+                "description": "",
+                "inactive": null,
+                "active": null,
+                "entries": null
+            }
+        }
+    },
+    "@source": {
+        "instanceName": "netflow"
+    },
+    "@exportedInstanceId": "c8639c9f-af7d-40d9-80fd-fcf0b1f8f429",
+    "@id": "c8639c9f-af7d-40d9-80fd-fcf0b1f8f429",
+    "@name": "netflow",
+    "@description": ""
+}

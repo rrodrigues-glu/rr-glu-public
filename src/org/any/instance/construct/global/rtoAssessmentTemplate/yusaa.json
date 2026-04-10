@@ -1,0 +1,21 @@
+{
+    "assess": {
+        "firmwareCheck": {
+            "policy": {},
+            "nodeTypes": [
+                "iosRouter",
+                "iosSwitch",
+                "aireosWirelessController",
+                "iosWirelessController",
+                "nxosSwitch"
+            ]
+        }
+    },
+    "@type": {
+        "ref": "/sys/type/construct/global/rtoAssessmentTemplate.jtype"
+    },
+    "@id": "58b01ca2-8a47-4329-a431-6cb625cb0758",
+    "@exportedInstanceId": "58b01ca2-8a47-4329-a431-6cb625cb0758",
+    "@name": "yusaa",
+    "@description": ""
+}

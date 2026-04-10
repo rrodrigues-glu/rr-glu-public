@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": "^VOICE$|^VIDEO$",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_cat3k-4500x-qos-cmap_cli.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_cat3k-4500x-qos-cmap_grp"
+    },
+    "@exportedInstanceId": "21ee9866-d7e8-4cec-9d33-32b2411007a9",
+    "@id": "21ee9866-d7e8-4cec-9d33-32b2411007a9",
+    "@name": "ios_cat3k-4500x-qos-cmap_grp",
+    "@description": ""
+}

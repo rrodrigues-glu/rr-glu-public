@@ -1,0 +1,26 @@
+{
+    "regEx": ".+",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_intf-mgmt_cli--RRDiscov-liqJS.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": []
+    },
+    "maskCommands": [
+        "interface",
+        "description"
+    ],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "13f991c9-7cbc-4313-8d68-8d116d0914f1",
+    "@id": "13f991c9-7cbc-4313-8d68-8d116d0914f1",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@name": "ios_intf-mgmt_grp--RRDiscov",
+    "@description": ""
+}

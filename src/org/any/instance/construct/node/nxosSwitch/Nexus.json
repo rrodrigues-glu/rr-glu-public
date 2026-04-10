@@ -1,0 +1,48 @@
+{
+    "configState": "managed",
+    "entryConnection": {
+        "connectionMethod": "cliConnection",
+        "ip": "10.150.1.74",
+        "credentials": {
+            "@ref": "/secret/sys/credentials/deviceUserPass/admin.json"
+        },
+        "type": "ssh",
+        "port": 22,
+        "terminalType": "xterm"
+    },
+    "associations": {
+        "provider": "local"
+    },
+    "persona": {
+        "type": "none",
+        "id": 0
+    },
+    "hardware": {
+        "vendor": "auto",
+        "expectedSerialNumber": "auto"
+    },
+    "nxosSwitch": {
+        "enabled": true
+    },
+    "provisioning": {
+        "type": "advanced"
+    },
+    "options": {
+        "connectionEnabled": true,
+        "previewMode": false,
+        "forcedAttachedStorage": false
+    },
+    "dcSwitch": {
+        "enabled": true
+    },
+    "site": {
+        "@ref": "/org/instance/construct/domain/location/SN001.json"
+    },
+    "@exportedInstanceId": "7687c59e-64a3-4be0-a12e-99f0bd87d902",
+    "@id": "7687c59e-64a3-4be0-a12e-99f0bd87d902",
+    "@type": {
+        "ref": "/sys/type/construct/node/nxosSwitch.jtype"
+    },
+    "@name": "Nexus",
+    "@description": ""
+}

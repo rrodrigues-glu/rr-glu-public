@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/aireosWirelessControllerAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "qos": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/qos/aireos_qos-bra-saopaulo.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "state": {
+        "assessment": {}
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "qos-saopaulo"
+    },
+    "@exportedInstanceId": "f76cb9c4-c2e0-472a-939b-30ed6c23ad52",
+    "@id": "f76cb9c4-c2e0-472a-939b-30ed6c23ad52",
+    "@name": "qos-saopaulo",
+    "@description": ""
+}

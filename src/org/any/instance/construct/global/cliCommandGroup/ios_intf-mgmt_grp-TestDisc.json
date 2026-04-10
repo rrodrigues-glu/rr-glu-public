@@ -1,0 +1,26 @@
+{
+    "regEx": "Loopback11",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_intf-mgmt_cli-TestDisc.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": []
+    },
+    "maskCommands": [
+        "interface Loopback11",
+        "description"
+    ],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "f4fadda8-31c9-4863-a289-7d5acd3ac4c6",
+    "@id": "f4fadda8-31c9-4863-a289-7d5acd3ac4c6",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@name": "ios_intf-mgmt_grp-TestDisc",
+    "@description": ""
+}

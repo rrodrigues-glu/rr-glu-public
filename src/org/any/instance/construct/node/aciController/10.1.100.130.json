@@ -1,0 +1,41 @@
+{
+    "configState": "managed",
+    "entryConnection": {
+        "connectionMethod": "aciApiConnection",
+        "name": "aci",
+        "ip": "10.1.100.130",
+        "credentials": {
+            "@ref": "/secret/sys/credentials/deviceUserPass/admin.json"
+        },
+        "trustAnyHttpsCert": true,
+        "srvProvider": "cisco_APIC"
+    },
+    "associations": {
+        "provider": "local"
+    },
+    "provisioning": {
+        "type": "advanced"
+    },
+    "options": {
+        "connectionEnabled": true,
+        "previewMode": false,
+        "forcedAttachedStorage": false
+    },
+    "aciController": {
+        "enabled": true
+    },
+    "apiEndpoint": {
+        "enabled": true
+    },
+    "controlType": "controller",
+    "site": {
+        "@ref": "/org/instance/construct/domain/location/Romualdo.json"
+    },
+    "@exportedInstanceId": "502cb0ec-9ac8-436f-b7af-585114c5767a",
+    "@id": "502cb0ec-9ac8-436f-b7af-585114c5767a",
+    "@type": {
+        "ref": "/sys/type/construct/node/aciController.jtype"
+    },
+    "@name": "10.1.100.130",
+    "@description": ""
+}

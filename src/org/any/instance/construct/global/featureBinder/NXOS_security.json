@@ -1,0 +1,29 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/featureBinder.jtype"
+    },
+    "vendor": "cisco",
+    "os": "nxos",
+    "featureName": "security",
+    "featureDisplayName": "Security feature",
+    "renderList": [
+        {
+            "item": {},
+            "maskCommands": [],
+            "dCli": []
+        },
+        {
+            "item": {},
+            "maskCommands": [],
+            "dCli": []
+        }
+    ],
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "NXOS_security"
+    },
+    "@exportedInstanceId": "4b09fa6e-539e-4bc3-a670-ba546f6fc699",
+    "@id": "4b09fa6e-539e-4bc3-a670-ba546f6fc699",
+    "@name": "NXOS_security",
+    "@description": ""
+}

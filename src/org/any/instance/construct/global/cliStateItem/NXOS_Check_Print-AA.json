@@ -1,0 +1,14 @@
+{
+    "cmd": "!!!!!!!!!!!!!!! STATE Assessment !!!!!!!!!!!!!!!",
+    "groupName": "Announce",
+    "discover": {},
+    "options": {},
+    "rootEntry": "yes",
+    "@exportedInstanceId": "51f9172b-512b-4f24-973c-44f8132d07d4",
+    "@id": "51f9172b-512b-4f24-973c-44f8132d07d4",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "@name": "NXOS_Check_Print-AA",
+    "@description": ""
+}

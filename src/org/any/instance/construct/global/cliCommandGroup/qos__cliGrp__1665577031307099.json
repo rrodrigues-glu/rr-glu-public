@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@id": "6e23ee68-68f6-41fe-b540-a31e3180bf57",
+    "ignoreDelete": true,
+    "regEx": "default-in-policy|default-nq-policy",
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/PolicyMapQos__cli__166557703130702cd.json"
+        ]
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "6e23ee68-68f6-41fe-b540-a31e3180bf57",
+    "@name": "qos__cliGrp__1665577031307099",
+    "@description": ""
+}

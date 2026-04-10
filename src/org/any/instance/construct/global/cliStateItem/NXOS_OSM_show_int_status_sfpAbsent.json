@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show interface status | inc sfpAbsent",
+    "groupName": "sfpAbsent",
+    "discover": {
+        "interfaces": {
+            "expressions": [
+                "(?<interface>^[\\w\\/]+)\\s+(?<description>.+)\\s+(?<status>sfpAbsent)\\s+(?<vlan>[\\w-]+)\\s+(?<duplex>[\\w-]+)\\s+(?<speed>[\\w-]+)\\s+(?<type>[\\w-]+)"
+            ],
+            "localKey": "interface",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {
+        "generateLocalKey": false
+    },
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_show_int_status_sfpAbsent"
+    },
+    "@exportedInstanceId": "5fb48b8e-2aaa-4f3b-a565-d226e225263e",
+    "@id": "5fb48b8e-2aaa-4f3b-a565-d226e225263e",
+    "@name": "NXOS_OSM_show_int_status_sfpAbsent",
+    "@description": ""
+}

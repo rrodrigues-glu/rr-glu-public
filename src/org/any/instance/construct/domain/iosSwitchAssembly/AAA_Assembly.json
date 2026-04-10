@@ -1,0 +1,31 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosSwitchAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "aaa": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/aaa/tacacs-single-step.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "agents": {
+        "watchdog": {}
+    },
+    "boot": {
+        "firmware": {}
+    },
+    "state": {
+        "assessment": {}
+    },
+    "@source": {
+        "instanceName": "AAA_Assembly"
+    },
+    "@exportedInstanceId": "aad96ac1-a3bc-4a7f-9e1f-9cd2b5b8d67f",
+    "@id": "aad96ac1-a3bc-4a7f-9e1f-9cd2b5b8d67f",
+    "@name": "AAA_Assembly",
+    "@description": ""
+}

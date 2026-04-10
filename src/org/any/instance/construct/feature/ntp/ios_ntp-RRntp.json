@@ -1,0 +1,36 @@
+{
+    "featureConcept": {
+        "name": "IOS NTP",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_ntp-server_grp-RRntp.json"
+            ]
+        }
+    },
+    "form": {
+        "ntp": {
+            "srcInt": {
+                "@ref": "/org/instance/construct/global/lanInterface/MGNT1.json"
+            },
+            "server": [
+                {
+                    "ip": "10.12.3.11",
+                    "version": 4,
+                    "key": ""
+                },
+                {
+                    "ip": "10.12.4.11",
+                    "version": 4,
+                    "key": ""
+                }
+            ]
+        }
+    },
+    "@exportedInstanceId": "3f1b71d5-1b46-4289-8286-e009128ac458",
+    "@id": "3f1b71d5-1b46-4289-8286-e009128ac458",
+    "@type": {
+        "ref": "/sys/type/construct/feature/ntp.jtype"
+    },
+    "@name": "ios_ntp-RRntp",
+    "@description": ""
+}

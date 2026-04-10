@@ -1,0 +1,26 @@
+{
+    "regEx": ".+",
+    "ignoreDelete": false,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_banner_cli.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": [
+            "$context.customFields.Test match ^WATER",
+            "$context.customFields.Region == EMEA"
+        ]
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "a508d5c8-0bb8-42b7-bb1d-637f4f643f11",
+    "@id": "a508d5c8-0bb8-42b7-bb1d-637f4f643f11",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@name": "ios_banner_grp",
+    "@description": ""
+}

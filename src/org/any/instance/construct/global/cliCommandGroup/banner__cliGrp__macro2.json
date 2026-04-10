@@ -1,0 +1,22 @@
+{
+    "regEx": ".+",
+    "ignoreDelete": false,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/Banner__cli__macro_CLI01.json",
+            "/org/instance/construct/global/cliCommands/Banner__cli__macro_CLI02.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "7056e6cb-4d56-4f3a-b4ae-ff7dc6baaa59",
+    "@id": "7056e6cb-4d56-4f3a-b4ae-ff7dc6baaa59",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@name": "banner__cliGrp__macro2",
+    "@description": ""
+}

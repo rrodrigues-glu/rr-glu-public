@@ -1,0 +1,45 @@
+{
+    "configState": "managed",
+    "entryConnection": {
+        "ip": "10.150.1.116",
+        "credentials": {
+            "@ref": "/secret/sys/credentials/deviceUserPass/admin.json"
+        },
+        "enablePassword": null,
+        "type": "ssh",
+        "port": 22,
+        "connectionMethod": "cliConnection",
+        "terminalType": "xterm"
+    },
+    "associations": {
+        "provider": "local"
+    },
+    "hardware": {
+        "vendor": "auto",
+        "expectedSerialNumber": "auto"
+    },
+    "persona": {
+        "type": "none"
+    },
+    "provisioning": {
+        "type": "advanced"
+    },
+    "iosSwitch": {
+        "enabled": true
+    },
+    "options": {
+        "connectionEnabled": true,
+        "previewMode": false,
+        "forcedAttachedStorage": false
+    },
+    "campusSwitch": {
+        "enabled": true
+    },
+    "@exportedInstanceId": "94d1fe5c-d3a5-4722-91e3-384b2540e84b",
+    "@id": "94d1fe5c-d3a5-4722-91e3-384b2540e84b",
+    "@type": {
+        "ref": "/sys/type/construct/node/iosSwitch.jtype"
+    },
+    "@name": "spine1_1",
+    "@description": ""
+}

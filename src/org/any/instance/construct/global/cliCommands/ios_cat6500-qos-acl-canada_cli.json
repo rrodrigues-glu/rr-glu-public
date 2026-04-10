@@ -1,0 +1,52 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "ip access-list extended Local-telephony-ACL",
+        " remark Calgary",
+        " permit ip 142.221.52.0 0.0.0.255 any",
+        " permit ip 142.221.53.0 0.0.0.255 any",
+        " permit ip 142.221.54.0 0.0.0.255 any",
+        " permit ip 142.221.79.0 0.0.0.255 any",
+        " remark Edmonton",
+        " permit ip 142.221.59.0 0.0.0.255 any",
+        " remark Halifax",
+        " permit ip 142.221.107.0 0.0.0.255 any",
+        " remark Kitchener",
+        " permit ip 142.221.1.0 0.0.0.255 any",
+        " remark London CA",
+        " permit ip 142.221.0.0 0.0.0.255 any",
+        " remark Montreal",
+        " permit ip 142.221.32.0 0.0.3.255 any",
+        " remark Ottawa",
+        " permit ip 142.221.95.0 0.0.0.255 any",
+        " remark Quebec City",
+        " permit ip 142.221.111.0 0.0.0.255 any",
+        " permit ip 142.221.151.0 0.0.0.255 any",
+        " remark St John's",
+        " permit ip 142.221.22.0 0.0.0.255 any",
+        " permit ip 142.221.29.0 0.0.0.127 any",
+        " remark Toronto-North",
+        " permit ip 142.221.26.0 0.0.0.255 any",
+        " remark Toronto-King",
+        " permit ip 142.221.101.0 0.0.0.255 any",
+        " permit ip 142.221.103.0 0.0.0.255 any",
+        " remark Winnipeg",
+        " permit ip 142.221.2.0 0.0.0.255 any",
+        "!"
+    ],
+    "advanced": {
+        "filter": "platform",
+        "platform": "C6500|C2960X"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_cat6500-qos-acl-canada_cli"
+    },
+    "@exportedInstanceId": "6f304980-cc6d-43e6-b6f7-624e08c9ddd0",
+    "@id": "6f304980-cc6d-43e6-b6f7-624e08c9ddd0",
+    "@name": "ios_cat6500-qos-acl-canada_cli",
+    "@description": ""
+}

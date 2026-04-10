@@ -1,7 +1,5 @@
 {
-    "item": {
-        "@ref": "/org/instance/construct/global/conceptItem/IOS_Snmp.json"
-    },
+    "item": {},
     "cliCommands": [
         "snmp-server group TESTGROUP v3 auth",
         "snmp-server group NOTREDACTED_VERSION_3 v3 auth",
@@ -21,10 +19,11 @@
     "advanced": {
         "filter": null
     },
+    "@exportedInstanceId": "2e90dd68-04f9-425d-9f89-d46e1b5fee6a",
     "@id": "2e90dd68-04f9-425d-9f89-d46e1b5fee6a",
-    "@name": "ios_snmp-server_cli-romualdo_GIT",
-    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    }
+    },
+    "@name": "ios_snmp-server_cli-romualdo_GIT",
+    "@description": ""
 }

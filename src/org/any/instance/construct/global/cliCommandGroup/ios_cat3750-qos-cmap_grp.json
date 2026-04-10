@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": "^AutoQoS-VoIP-RTP-Trust$|^AutoQoS-VoIP-Control-Trust$",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_cat3750-qos-cmap_cli.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_cat3750-qos-cmap_grp"
+    },
+    "@exportedInstanceId": "289a5bde-66ff-462e-ac62-2225fa7693d5",
+    "@id": "289a5bde-66ff-462e-ac62-2225fa7693d5",
+    "@name": "ios_cat3750-qos-cmap_grp",
+    "@description": ""
+}

@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStatePolicy.jtype"
+    },
+    "list": [
+        {
+            "params": "10.255.150.11",
+            "includePattern": ".+",
+            "excludePattern": "",
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/IOS_ping.json"
+            },
+            "query": {
+                "@ref": "/org/instance/construct/global/cliStateQuery/pingLatencyQuery.json"
+            }
+        }
+    ],
+    "@source": {
+        "instanceName": "cliStatePolicy"
+    },
+    "privilegeMode": false,
+    "@exportedInstanceId": "5a239128-1cbf-40f1-b28a-66b9eb31fef5",
+    "@id": "5a239128-1cbf-40f1-b28a-66b9eb31fef5",
+    "@name": "cliStatePolicy",
+    "@description": ""
+}

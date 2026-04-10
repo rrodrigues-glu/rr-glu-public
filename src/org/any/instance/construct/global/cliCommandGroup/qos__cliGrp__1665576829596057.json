@@ -1,0 +1,21 @@
+{
+    "regEx": "STD_ACL|ACL_FIVE|ACL_FOUR|ACL_ONE|ACL_THREE|ACL_TWO|EXT_ACL|SYSLOG|acl-qos-EXTERNAL-WEB|acl-qos-NETWORK-MANAGEMENT|acl-qos-REAL-TIME-CONFERENCING|acl-qos-SCAVENGER|acl-qos-SIGNALING-MISSION-CRITICAL|acl-qos-TRANSACTIONAL-DATA|acl-qos-VOICE",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/IpAcl__cli__1665576829596f7e7-Common.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "c04a26d7-536f-41d8-8104-ce6a975b744c",
+    "@id": "c04a26d7-536f-41d8-8104-ce6a975b744c",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@name": "qos__cliGrp__1665576829596057",
+    "@description": ""
+}

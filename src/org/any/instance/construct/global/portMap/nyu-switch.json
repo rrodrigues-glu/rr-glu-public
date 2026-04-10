@@ -1,0 +1,21 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/portMap.jtype"
+    },
+    "map": [
+        {
+            "refName": {
+                "@ref": "/org/instance/construct/global/lanInterface/MGNT1.json"
+            },
+            "name": "Vlan619",
+            "extendedName": ""
+        }
+    ],
+    "@source": {
+        "instanceName": "nyu-switch"
+    },
+    "@exportedInstanceId": "f926f1bc-7319-4a81-8dee-094c8f2461d6",
+    "@id": "f926f1bc-7319-4a81-8dee-094c8f2461d6",
+    "@name": "nyu-switch",
+    "@description": ""
+}

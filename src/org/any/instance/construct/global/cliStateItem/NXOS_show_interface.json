@@ -1,0 +1,42 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show interface #context.interfaceName",
+    "rootEntry": "no",
+    "keyLineRegEx": "^([\\/\\w\\-]+) is (?:up|down)",
+    "groupName": "interface",
+    "discover": {
+        "status": {
+            "expressions": [
+                "^(?<name>[\\/\\w\\-]+) is (?<line>up|down)(?:\\s\\(.+\\))?",
+                "Description: (?<description>.+)",
+                "admin state is (?<adminState>up|down),",
+                "(?<duplex>(?:auto|half|full)-duplex),\\s(?<speed>(?:auto-speed|\\d+\\s[\\w\\/]+))",
+                "Hardware: (?<type>(?:\\S+\\sEthernet|GigabitEthernet|Port-Channel)), address:\\s(?<macAddress>[a-f0-9]{4}\\.[a-f0-9]{4}\\.[a-f0-9]{4})",
+                "Internet Address is (?<ipAddress>\\d+\\.\\d+\\.\\d+\\.\\d+\\/\\d+)",
+                "MTU (?<mtu>\\d+) bytes, BW (?<bandwidth>[\\w\\s\\/]+)\\s, DLY (?<delay>\\d+) usec",
+                "(?<inputErrors>\\d+) input error\\s+\\d+ short frame\\s+\\d+ overrun\\s+\\d+ underrun\\s+\\d+ ignored",
+                "(?<outputErrors>\\d+) output error\\s+(?<collisions>\\d+) collision\\s+\\d+ deferred\\s+\\d+ late collision",
+                "(?<interfaceResets>\\d+) interface resets"
+            ]
+        }
+    },
+    "options": {
+        "params": [
+            {
+                "name": "interfaceName",
+                "label": "Interface Name",
+                "description": "Name of the interface"
+            }
+        ]
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "NXOS_show_interface"
+    },
+    "@exportedInstanceId": "b0c6ea82-b0b0-467d-b1ca-1910e6bbba2f",
+    "@id": "b0c6ea82-b0b0-467d-b1ca-1910e6bbba2f",
+    "@name": "NXOS_show_interface",
+    "@description": ""
+}

@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/aireosWirelessControllerAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "qos": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/qos/aireos_qos-vgb-bermuda.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "state": {
+        "assessment": {}
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "qos-bermuda"
+    },
+    "@exportedInstanceId": "da7eb9c6-420e-4daf-9810-a97b970fa194",
+    "@id": "da7eb9c6-420e-4daf-9810-a97b970fa194",
+    "@name": "qos-bermuda",
+    "@description": ""
+}

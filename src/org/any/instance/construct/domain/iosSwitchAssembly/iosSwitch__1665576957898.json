@@ -1,0 +1,22 @@
+{
+    "domains": {
+        "modules": {
+            "banner": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/banner/banner__1665576957898.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "agents": {
+        "watchdog": {}
+    },
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosSwitchAssembly.jtype"
+    },
+    "@id": "e3d856af-94b1-49ec-a20b-fcdb50dfc941",
+    "@exportedInstanceId": "e3d856af-94b1-49ec-a20b-fcdb50dfc941",
+    "@name": "iosSwitch__1665576957898",
+    "@description": ""
+}

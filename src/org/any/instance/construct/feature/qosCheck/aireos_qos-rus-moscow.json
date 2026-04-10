@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/qosCheck.jtype"
+    },
+    "featureConcept": {
+        "name": "QoS Model for AIR2504 Moscow Russia",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/aireos_qos_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/aireos_wlan-qos-3_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "platform": "AIR-(CT|WLC).+"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "aireos_qos-rus-moscow"
+    },
+    "@exportedInstanceId": "f3a35163-945e-4ba1-aee6-057e4047c332",
+    "@id": "f3a35163-945e-4ba1-aee6-057e4047c332",
+    "@name": "aireos_qos-rus-moscow",
+    "@description": ""
+}

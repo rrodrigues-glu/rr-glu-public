@@ -1,0 +1,42 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "snmp-server enable traps callhome event-notify",
+        "snmp-server enable traps callhome smtp-send-fail",
+        "snmp-server enable traps cfs state-change-notif",
+        "snmp-server enable traps cfs merge-failure",
+        "snmp-server enable traps port-security access-secure-mac-violation",
+        "snmp-server enable traps port-security trunk-secure-mac-violation",
+        "snmp-server enable traps aaa server-state-change",
+        "snmp-server enable traps hsrp state-change",
+        "snmp-server enable traps feature-control FeatureOpStatusChange",
+        "snmp-server enable traps sysmgr cseFailSwCoreNotifyExtended",
+        "snmp-server enable traps config ccmCLIRunningConfigChanged",
+        "snmp-server enable traps snmp authentication",
+        "snmp-server enable traps mpls ldp session-up",
+        "snmp-server enable traps mpls ldp session-down",
+        "snmp-server enable traps link cisco-xcvr-mon-status-chg",
+        "snmp-server enable traps vtp notifs",
+        "snmp-server enable traps vtp vlancreate",
+        "snmp-server enable traps vtp vlandelete",
+        "snmp-server enable traps bridge newroot",
+        "snmp-server enable traps bridge topologychange",
+        "snmp-server enable traps stpx inconsistency",
+        "snmp-server enable traps stpx root-inconsistency",
+        "snmp-server enable traps stpx loop-inconsistency",
+        "snmp-server enable traps feature-control ciscoFeatOpStatusChange"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_snmpserver-traps-cli"
+    },
+    "@exportedInstanceId": "779c6391-5161-4651-8fdd-5b10d2becdf6",
+    "@id": "779c6391-5161-4651-8fdd-5b10d2becdf6",
+    "@name": "nxos_snmpserver-traps-cli",
+    "@description": ""
+}

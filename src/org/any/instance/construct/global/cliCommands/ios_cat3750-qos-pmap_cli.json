@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "policy-map AutoQoS-Police-CiscoPhone",
+        " class AutoQoS-VoIP-RTP-Trust",
+        "  set dscp ef",
+        "  police 320000 8000 exceed-action policed-dscp-transmit",
+        " class AutoQoS-VoIP-Control-Trust",
+        "  set dscp cs3",
+        "  police 32000 8000 exceed-action policed-dscp-transmit",
+        "!"
+    ],
+    "advanced": {
+        "filter": "platform",
+        "platform": "C3750"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_cat3750-qos-pmap_cli"
+    },
+    "@exportedInstanceId": "b48bad69-4967-482b-a91d-d6e680e23ff0",
+    "@id": "b48bad69-4967-482b-a91d-d6e680e23ff0",
+    "@name": "ios_cat3750-qos-pmap_cli",
+    "@description": ""
+}

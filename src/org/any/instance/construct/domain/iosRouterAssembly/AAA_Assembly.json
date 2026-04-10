@@ -1,0 +1,22 @@
+{
+    "domains": {
+        "modules": {
+            "aaa": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/aaa/ios_aaa.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "state": {
+        "assessment": {}
+    },
+    "@exportedInstanceId": "f96465f3-bfcc-4d7b-bc4f-37e13c08cd9d",
+    "@id": "f96465f3-bfcc-4d7b-bc4f-37e13c08cd9d",
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosRouterAssembly.jtype"
+    },
+    "@name": "AAA_Assembly",
+    "@description": ""
+}

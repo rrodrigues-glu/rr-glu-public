@@ -1,0 +1,35 @@
+{
+    "featureConcept": {
+        "name": "IOS NTP",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_intf-lan_grp-mrck-Rubb1.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_ntp-server_grp-_Rubb1.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_ntp-server_grp-Rubb1.json"
+            ]
+        }
+    },
+    "form": {
+        "ntp": {
+            "server": [
+                {
+                    "ip": "10.12.3.11",
+                    "version": 4,
+                    "key": ""
+                },
+                {
+                    "ip": "10.12.4.11",
+                    "version": 4,
+                    "key": ""
+                }
+            ]
+        }
+    },
+    "@exportedInstanceId": "1ae4b98d-0917-44ef-ba8a-e8288e26e12e",
+    "@id": "1ae4b98d-0917-44ef-ba8a-e8288e26e12e",
+    "@type": {
+        "ref": "/sys/type/construct/feature/ntp.jtype"
+    },
+    "@name": "ios_ntp-Merck-Rubb1",
+    "@description": ""
+}

@@ -1,0 +1,27 @@
+{
+    "regEx": ".+",
+    "ignoreDelete": false,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_ntp-server_cli-Copy-1.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": [
+            "$discover.Intf.up.name != up"
+        ]
+    },
+    "maskCommands": [
+        "ntp source"
+    ],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "88a47441-b413-44df-aa50-aaa0cb52ab09",
+    "@id": "88a47441-b413-44df-aa50-aaa0cb52ab09",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@name": "ios_ntp-server_grp-Copy-1-Copy-1",
+    "@description": ""
+}

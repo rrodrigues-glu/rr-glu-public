@@ -1,0 +1,16 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "920910ae-fc38-440d-b0a8-76c10297e554",
+    "item": {},
+    "cliCommands": [
+        "logging buffered 51200",
+        "no logging console",
+        "logging source-interface GigabitEthernet1 vrf FVRF",
+        "logging host 10.255.150.100 transport udp port 32000"
+    ],
+    "@exportedInstanceId": "920910ae-fc38-440d-b0a8-76c10297e554",
+    "@name": "SyslogServer__cli__1665576295055abcc",
+    "@description": ""
+}

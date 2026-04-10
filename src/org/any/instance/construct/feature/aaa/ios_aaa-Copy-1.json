@@ -1,0 +1,31 @@
+{
+    "featureConcept": {
+        "name": "AAA Feature",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_wan-acl-in_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "aaa": [
+            {
+                "name": "tacacsServer",
+                "tacacs": [
+                    {
+                        "name": "testServer",
+                        "ip": "10.1.255.203",
+                        "timeout": 5
+                    }
+                ]
+            }
+        ]
+    },
+    "@exportedInstanceId": "7e0014d4-56d1-4428-9c6b-f1ba9b63c5ee",
+    "@id": "7e0014d4-56d1-4428-9c6b-f1ba9b63c5ee",
+    "@type": {
+        "ref": "/sys/type/construct/feature/aaa.jtype"
+    },
+    "@name": "ios_aaa-Copy-1",
+    "@description": ""
+}

@@ -1,0 +1,17 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "dir",
+    "groupName": "DIR",
+    "discover": {},
+    "options": {},
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_dir"
+    },
+    "@exportedInstanceId": "5d44e4fd-8278-4e5f-ae35-c7fd2181abdd",
+    "@id": "5d44e4fd-8278-4e5f-ae35-c7fd2181abdd",
+    "@name": "NXOS_OSM_dir",
+    "@description": ""
+}

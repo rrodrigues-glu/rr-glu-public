@@ -1,0 +1,25 @@
+{
+    "regEx": ".+",
+    "ignoreDelete": false,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_router-bgp_cli-romTest-2.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": []
+    },
+    "maskCommands": [
+        "WHATEVER"
+    ],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "a1725cfd-2f54-4192-aece-d8e0e89cbbfc",
+    "@id": "a1725cfd-2f54-4192-aece-d8e0e89cbbfc",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@name": "ios_router-bgp_grp-romTest",
+    "@description": ""
+}

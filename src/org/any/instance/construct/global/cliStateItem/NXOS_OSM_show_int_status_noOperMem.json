@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show interface status | inc noOperMem",
+    "groupName": "noOperMem",
+    "discover": {
+        "interfaces": {
+            "expressions": [
+                "(?<interface>^[\\w\\/]+)\\s+(?<description>.+)\\s+(?<status>noOperMem)\\s+(?<vlan>[\\w-]+)\\s+(?<duplex>[\\w-]+)\\s+(?<speed>[\\w-]+)\\s+(?<type>[\\w-]+)"
+            ],
+            "localKey": "interface",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {
+        "generateLocalKey": false
+    },
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_show_int_status_noOperMem"
+    },
+    "@exportedInstanceId": "497a7c5d-07e7-42e9-8a95-7275b43ac5d7",
+    "@id": "497a7c5d-07e7-42e9-8a95-7275b43ac5d7",
+    "@name": "NXOS_OSM_show_int_status_noOperMem",
+    "@description": ""
+}

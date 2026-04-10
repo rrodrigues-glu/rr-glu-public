@@ -1,0 +1,20 @@
+{
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Intf2_modified--RRDiscov.json"
+    },
+    "cliCommands": [
+        "interface $context.portMap[*].name",
+        " description {{device.hardware.serialNumber}}",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "afa0e0bf-6858-462e-bb85-f50c80331271",
+    "@id": "afa0e0bf-6858-462e-bb85-f50c80331271",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "ios_intf-mgmt_cli--RRDiscov-liqJS",
+    "@description": ""
+}

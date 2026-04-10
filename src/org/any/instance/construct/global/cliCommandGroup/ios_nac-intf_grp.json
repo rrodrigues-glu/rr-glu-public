@@ -1,0 +1,34 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": ".+",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_nac-intf_cli.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": [
+            "$discover.vlan.accessMode.enabled == true",
+            "$discover.vlan.access != 201"
+        ]
+    },
+    "maskCommands": [
+        "authentication",
+        "mab",
+        "dot1x",
+        "interface"
+    ],
+    "removeSyntax": {
+        "list": []
+    },
+    "@source": {
+        "instanceName": "ios_nac-intf_grp"
+    },
+    "@exportedInstanceId": "fb1f6f25-4824-4b67-bfe2-3ace54e3ab29",
+    "@id": "fb1f6f25-4824-4b67-bfe2-3ace54e3ab29",
+    "@name": "ios_nac-intf_grp",
+    "@description": ""
+}

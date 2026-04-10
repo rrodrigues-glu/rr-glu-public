@@ -1,0 +1,35 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "name": "NXOS-CFS",
+    "showCmds": [
+        "show run | sec ^cfs"
+    ],
+    "mode": "advanced",
+    "keyCliLine": "cfs\\s(\\S+)",
+    "rootEntryFlag": true,
+    "keyLineDepth": 1,
+    "keyGroup": 1,
+    "regEx": "",
+    "boundaries": {
+        "start": null
+    },
+    "discover": {},
+    "removeSyntax": {},
+    "vendors": {
+        "cisco": {
+            "type": [
+                "nxos"
+            ],
+            "level": null
+        }
+    },
+    "@source": {
+        "instanceName": "NXOS_CFS"
+    },
+    "@exportedInstanceId": "fd08c41d-a875-48c5-99ad-bc216688f627",
+    "@id": "fd08c41d-a875-48c5-99ad-bc216688f627",
+    "@name": "NXOS_CFS",
+    "@description": ""
+}

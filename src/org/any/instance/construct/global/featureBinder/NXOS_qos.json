@@ -1,0 +1,34 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/featureBinder.jtype"
+    },
+    "vendor": "cisco",
+    "os": "nxos",
+    "featureName": "qos",
+    "featureDisplayName": "QOS Feature",
+    "renderList": [
+        {
+            "item": {},
+            "maskCommands": [],
+            "dCli": []
+        },
+        {
+            "item": {},
+            "maskCommands": [],
+            "dCli": []
+        },
+        {
+            "item": {},
+            "maskCommands": [],
+            "dCli": []
+        }
+    ],
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "NXOS_qos"
+    },
+    "@exportedInstanceId": "13ccacaa-a2be-4100-a6a0-9884abd85773",
+    "@id": "13ccacaa-a2be-4100-a6a0-9884abd85773",
+    "@name": "NXOS_qos",
+    "@description": ""
+}

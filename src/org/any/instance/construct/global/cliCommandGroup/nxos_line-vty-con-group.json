@@ -1,0 +1,26 @@
+{
+    "regEx": "console|vty",
+    "ignoreDelete": false,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/nxos_line-vty-con-cli.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [
+        ""
+    ],
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@description": "",
+    "@source": {
+        "instanceName": "nxos_line-vty-con-group"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "6ed55aec-493e-4b56-b89a-d6a710b163e2",
+    "@id": "6ed55aec-493e-4b56-b89a-d6a710b163e2",
+    "@name": "nxos_line-vty-con-group"
+}

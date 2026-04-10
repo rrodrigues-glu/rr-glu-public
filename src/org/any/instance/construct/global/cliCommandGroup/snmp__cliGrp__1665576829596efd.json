@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@id": "21f4e4e5-9b0a-4d2e-a232-c07830762154",
+    "ignoreDelete": true,
+    "regEx": "community|location|contact|enable|host|ifmib",
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/Snmp__cli__16655768295963215.json"
+        ]
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "21f4e4e5-9b0a-4d2e-a232-c07830762154",
+    "@name": "snmp__cliGrp__1665576829596efd",
+    "@description": ""
+}

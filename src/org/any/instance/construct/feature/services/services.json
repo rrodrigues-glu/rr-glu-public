@@ -1,0 +1,21 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/services.jtype"
+    },
+    "featureConcept": {
+        "name": "Services",
+        "cliCommandGroups": {}
+    },
+    "form": {
+        "services": {
+            "comment": null
+        }
+    },
+    "@source": {
+        "instanceName": "services"
+    },
+    "@exportedInstanceId": "4e40fcb6-0429-4088-94a5-472712a80954",
+    "@id": "4e40fcb6-0429-4088-94a5-472712a80954",
+    "@name": "services",
+    "@description": ""
+}

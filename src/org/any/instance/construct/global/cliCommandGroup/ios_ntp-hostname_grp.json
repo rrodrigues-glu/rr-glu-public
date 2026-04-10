@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": ".+",
+    "ignoreDelete": false,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_ntp-server_cli.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": [
+            "$discover.Hostname.global.host.shortName == c365"
+        ]
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@source": {
+        "instanceName": "ios_ntp-hostname_grp"
+    },
+    "@exportedInstanceId": "1fa6c463-90ff-4bca-aaa6-6a06f70e0793",
+    "@id": "1fa6c463-90ff-4bca-aaa6-6a06f70e0793",
+    "@name": "ios_ntp-hostname_grp",
+    "@description": ""
+}

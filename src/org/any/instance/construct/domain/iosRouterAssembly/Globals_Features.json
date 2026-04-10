@@ -1,0 +1,71 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosRouterAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "dns": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/dns/ios_dns.json"
+                }
+            },
+            "ntp": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/ntp/ios_ntp.json"
+                }
+            },
+            "syslog": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/syslog/ios_syslog.json"
+                }
+            },
+            "snmp": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/snmp/ios_snmp-v2c.json"
+                }
+            },
+            "banner": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/banner/ios_banner.json"
+                }
+            },
+            "qos": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/qos/ios_qos.json"
+                }
+            },
+            "globals": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/globals/iosSwitch_globals.json"
+                }
+            },
+            "services": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/services/ios_services.json"
+                }
+            },
+            "username": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/username/ios_username.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "agents": {
+        "watchdog": {}
+    },
+    "boot": {
+        "firmware": {}
+    },
+    "state": {
+        "assessment": {}
+    },
+    "@source": {
+        "instanceName": "Globals_Features"
+    },
+    "@exportedInstanceId": "8551e3ed-3cc7-4d07-b5d2-91e3582860df",
+    "@id": "8551e3ed-3cc7-4d07-b5d2-91e3582860df",
+    "@name": "Globals_Features",
+    "@description": ""
+}

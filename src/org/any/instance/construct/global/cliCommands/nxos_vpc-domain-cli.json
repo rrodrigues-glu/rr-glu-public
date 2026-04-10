@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_vpcDomain.json"
+    },
+    "cliCommands": [
+        "vpc domain 1",
+        " peer-switch",
+        " role priority 1000",
+        " system-priority 1000",
+        " peer-keepalive destination 10.30.91.32 source 10.30.91.31",
+        " peer-gateway",
+        " ip arp synchronize",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_vpc-domain-cli"
+    },
+    "@exportedInstanceId": "b068f5b5-831b-4934-99a2-ec7983b68fa4",
+    "@id": "b068f5b5-831b-4934-99a2-ec7983b68fa4",
+    "@name": "nxos_vpc-domain-cli",
+    "@description": ""
+}

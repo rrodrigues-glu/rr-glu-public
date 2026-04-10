@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/qosCheck.jtype"
+    },
+    "featureConcept": {
+        "name": "QoS Model for AIR5520 Mexico City Mexico",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/aireos_qos-cdmx_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/aireos_wlan-qos-4_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "platform": "AIR-(CT|WLC).+"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "aireos_qos-mex-mexicocity"
+    },
+    "@exportedInstanceId": "62124a7e-3357-415b-b380-0a00827a8b0c",
+    "@id": "62124a7e-3357-415b-b380-0a00827a8b0c",
+    "@name": "aireos_qos-mex-mexicocity",
+    "@description": ""
+}

@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/Aireos_WlanQos.json"
+    },
+    "cliCommands": [
+        "wlan qos 1 platinum",
+        "wlan qos 2 platinum",
+        "wlan qos 3 platinum",
+        "wlan qos 4 platinum"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "aireos_wlan-qos_cli"
+    },
+    "@exportedInstanceId": "66c492d4-0608-49d9-beae-753a77741eec",
+    "@id": "66c492d4-0608-49d9-beae-753a77741eec",
+    "@name": "aireos_wlan-qos_cli",
+    "@description": ""
+}

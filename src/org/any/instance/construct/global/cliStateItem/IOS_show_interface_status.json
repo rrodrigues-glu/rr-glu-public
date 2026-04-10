@@ -1,0 +1,27 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show interface status",
+    "rootEntry": "yes",
+    "groupName": "interface",
+    "discover": {
+        "status": {
+            "expressions": [
+                "(?<id>[\\/\\w]+)\\s+(?<name>\\b[\\w\\s-]+\\w)?\\s+(?<status>disabled|enabled|notconnect)\\s+(?<vlan>\\d+)\\s+(?<duplex>[\\w]+)\\s+(?<speed>[\\w]+)\\s+(?<type>[\\w\\/]+)"
+            ],
+            "localKey": "id",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {},
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "IOS_show_interface_status"
+    },
+    "@exportedInstanceId": "55ae2b0e-cf9c-4f09-8329-22e25f061f1f",
+    "@id": "55ae2b0e-cf9c-4f09-8329-22e25f061f1f",
+    "@name": "IOS_show_interface_status",
+    "@description": ""
+}

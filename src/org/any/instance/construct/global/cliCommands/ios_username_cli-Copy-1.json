@@ -1,0 +1,18 @@
+{
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Username-Copy-1.json"
+    },
+    "cliCommands": [
+        "username cisco privilege 15 secret cisco"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "fccfd0cd-1bcd-44c4-8bb2-a04c413812ca",
+    "@id": "fccfd0cd-1bcd-44c4-8bb2-a04c413812ca",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "ios_username_cli-Copy-1",
+    "@description": ""
+}

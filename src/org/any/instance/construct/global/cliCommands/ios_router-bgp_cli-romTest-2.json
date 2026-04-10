@@ -1,0 +1,18 @@
+{
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Router-romTest-2.json"
+    },
+    "cliCommands": [
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "408ad3d7-ae80-48dc-afe3-1e05cf0aa7c2",
+    "@id": "408ad3d7-ae80-48dc-afe3-1e05cf0aa7c2",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "ios_router-bgp_cli-romTest-2",
+    "@description": ""
+}

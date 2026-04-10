@@ -1,0 +1,14 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/wanInterface.jtype"
+    },
+    "description": "",
+    "location": "external",
+    "@source": {
+        "instanceName": "ISP1"
+    },
+    "@exportedInstanceId": "4e68f37f-eac9-4d37-a448-65765cccf57e",
+    "@id": "4e68f37f-eac9-4d37-a448-65765cccf57e",
+    "@name": "ISP1",
+    "@description": ""
+}

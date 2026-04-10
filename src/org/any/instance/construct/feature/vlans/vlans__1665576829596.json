@@ -1,0 +1,17 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/vlans.jtype"
+    },
+    "@id": "1ba02361-3a51-44c9-9cfe-422a5a611550",
+    "featureConcept": {
+        "name": "Vlans",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/vlans__cliGrp__1665576829596da9.json"
+            ]
+        }
+    },
+    "@exportedInstanceId": "1ba02361-3a51-44c9-9cfe-422a5a611550",
+    "@name": "vlans__1665576829596",
+    "@description": ""
+}

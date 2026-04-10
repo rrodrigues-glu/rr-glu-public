@@ -1,0 +1,17 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "sh vpc consistency-parameters global",
+    "groupName": "VPC_CONS",
+    "discover": {},
+    "options": {},
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_show_vpc_consistency_global"
+    },
+    "@exportedInstanceId": "fdbdfb81-5409-4856-be48-cf15eaecfa5d",
+    "@id": "fdbdfb81-5409-4856-be48-cf15eaecfa5d",
+    "@name": "NXOS_OSM_show_vpc_consistency_global",
+    "@description": ""
+}

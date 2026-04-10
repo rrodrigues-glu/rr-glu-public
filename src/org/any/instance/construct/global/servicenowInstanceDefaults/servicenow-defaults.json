@@ -1,0 +1,22 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/servicenowInstanceDefaults.jtype"
+    },
+    "incidentDefaults": {
+        "caller_id": null
+    },
+    "changeRequestDefaults": {
+        "requested_by": null
+    },
+    "problemDefaults": {
+        "assignment_group": null
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "servicenow-defaults"
+    },
+    "@exportedInstanceId": "8be1d8dd-592a-46e2-a737-65f4bfab923b",
+    "@id": "8be1d8dd-592a-46e2-a737-65f4bfab923b",
+    "@name": "servicenow-defaults",
+    "@description": ""
+}

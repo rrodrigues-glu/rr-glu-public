@@ -1,0 +1,34 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/switching.jtype"
+    },
+    "featureConcept": {
+        "name": "Switching",
+        "cliCommandGroups": {}
+    },
+    "form": {
+        "layer2": [],
+        "switchports": {
+            "0": {
+                "dot1x": false
+            },
+            "1": {
+                "dot1x": false
+            },
+            "2": {
+                "dot1x": false
+            },
+            "3": {
+                "dot1x": false
+            },
+            "profile": "4port"
+        }
+    },
+    "@source": {
+        "instanceName": "switching"
+    },
+    "@exportedInstanceId": "cd19d7de-b237-4e57-a0c4-b704040bd2d3",
+    "@id": "cd19d7de-b237-4e57-a0c4-b704040bd2d3",
+    "@name": "switching",
+    "@description": ""
+}

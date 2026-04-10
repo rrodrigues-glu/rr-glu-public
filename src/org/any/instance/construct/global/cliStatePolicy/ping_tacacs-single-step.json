@@ -1,0 +1,37 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStatePolicy.jtype"
+    },
+    "list": [
+        {
+            "params": "10.185.42.11",
+            "includePattern": ".+",
+            "excludePattern": "",
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/IOS_ping.json"
+            },
+            "query": {
+                "@ref": "/org/instance/construct/global/cliStateQuery/pingLatencyQuery.json"
+            }
+        },
+        {
+            "params": "10.150.42.11",
+            "includePattern": ".+",
+            "excludePattern": "",
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/IOS_ping.json"
+            },
+            "query": {
+                "@ref": "/org/instance/construct/global/cliStateQuery/pingLatencyQuery.json"
+            }
+        }
+    ],
+    "@source": {
+        "instanceName": "ping_tacacs-single-step"
+    },
+    "privilegeMode": false,
+    "@exportedInstanceId": "ee44e208-2ac0-433c-b97f-ab456d1bb869",
+    "@id": "ee44e208-2ac0-433c-b97f-ab456d1bb869",
+    "@name": "ping_tacacs-single-step",
+    "@description": ""
+}

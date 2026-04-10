@@ -1,0 +1,29 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/qosCheck.jtype"
+    },
+    "featureConcept": {
+        "name": "QoS Model for Cat2960X Switches (Alcatel Phones)",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_cat2960-qos-mls_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_cat2960-qos-acl_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_cat6500-qos-acl-alcatel_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_cat2960-qos-cmap_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_cat2960-qos-pmap_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "site": {},
+        "platform": "WS-C2960X.+"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_cat2960x-qos-alcatel"
+    },
+    "@exportedInstanceId": "b5c4ac7b-11c5-45e8-8692-9b17fb469977",
+    "@id": "b5c4ac7b-11c5-45e8-8692-9b17fb469977",
+    "@name": "ios_cat2960x-qos-alcatel",
+    "@description": ""
+}

@@ -1,0 +1,27 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "flow exporter NAM2220",
+        " description export netflow to NAM2220",
+        " transport udp 2055",
+        " source Vlan100",
+        " version 9",
+        "  template data timeout 0",
+        "  option exporter-stats timeout 1800",
+        "  option arp-table timeout 1800",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_netflow-exporter-cli"
+    },
+    "@exportedInstanceId": "39efd1d5-3b5e-46d0-98bd-1251e497ebf9",
+    "@id": "39efd1d5-3b5e-46d0-98bd-1251e497ebf9",
+    "@name": "nxos_netflow-exporter-cli",
+    "@description": ""
+}

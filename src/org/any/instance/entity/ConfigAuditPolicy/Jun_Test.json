@@ -1,0 +1,48 @@
+{
+  "permissionLevel": "auditManageLevel1",
+  "rules": [
+    {
+      "severity": "MINOR",
+      "name": "01",
+      "os": "junos",
+      "source": "LATEST",
+      "commandSet": "all",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "type": "SIMPLE",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": false,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "protocols rst8p"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "conceptItemId": null
+    }
+  ],
+  "runLevel": "auditRunLevel1",
+  "description": "",
+  "name": "Jun_Test",
+  "tid": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+  "id": "93a1dc3d-5175-48ab-9f19-54459456b5f1",
+  "createdBy": "admin",
+  "createdOn": 1733481690507,
+  "updatedBy": "admin",
+  "updatedOn": 1733481788882,
+  "lastAuditErrorMsg": "",
+  "lastAuditDevicesSkippedCount": 0
+}

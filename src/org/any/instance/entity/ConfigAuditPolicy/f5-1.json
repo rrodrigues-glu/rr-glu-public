@@ -1,0 +1,53 @@
+{
+  "permissionLevel": "auditManageLevel1",
+  "rules": [
+    {
+      "severity": "INFO",
+      "name": "New rule",
+      "os": "tmos",
+      "source": "LATEST",
+      "commandSet": "all",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "type": "SIMPLE",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": false,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "    communities {",
+              "        /Common/comm-public {",
+              "            community-name public",
+              "            source default",
+              "        }",
+              "    }"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "conceptItem": "TMOS_SYS_Snmp-w-o_onelIne"
+    }
+  ],
+  "runLevel": "auditRunLevel1",
+  "description": "",
+  "name": "f5-1",
+  "tid": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+  "id": "d71c0d35-e729-43e4-80d8-377a37a0dc1c",
+  "createdBy": "admin",
+  "createdOn": 1732204023216,
+  "updatedBy": "admin",
+  "updatedOn": 1732204322055,
+  "lastAuditErrorMsg": "",
+  "lastAuditDevicesSkippedCount": 0
+}

@@ -1,0 +1,22 @@
+{
+    "domains": {
+        "modules": {
+            "routing": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/routing/ios_routing.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "state": {
+        "assessment": {}
+    },
+    "@exportedInstanceId": "57a9aa9e-3222-4352-99ac-6dd8a9ff37aa",
+    "@id": "57a9aa9e-3222-4352-99ac-6dd8a9ff37aa",
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosRouterAssembly.jtype"
+    },
+    "@name": "iosRouterAssembly",
+    "@description": ""
+}

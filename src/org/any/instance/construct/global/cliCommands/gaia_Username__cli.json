@@ -1,0 +1,21 @@
+{
+    "item": {},
+    "cliCommands": [
+        "expert qwerty2020L",
+        "cd /var/log/download/",
+        "touch test1",
+        "rm test",
+        "exit",
+        ""
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "07c38abd-1a68-4cc3-a45b-a50a8dec985c",
+    "@id": "07c38abd-1a68-4cc3-a45b-a50a8dec985c",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "gaia_Username__cli",
+    "@description": ""
+}

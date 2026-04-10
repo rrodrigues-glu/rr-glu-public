@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show npv flogi-table",
+    "groupName": "flogi",
+    "discover": {
+        "table": {
+            "expressions": [
+                "^Total number of flogi = (?<count>\\d+)"
+            ],
+            "localKey": "",
+            "preserveLocalKey": false,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {
+        "generateLocalKey": true
+    },
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_show_flogi_table"
+    },
+    "@exportedInstanceId": "b9fdfccf-7e3b-4976-8547-12a43d065b6b",
+    "@id": "b9fdfccf-7e3b-4976-8547-12a43d065b6b",
+    "@name": "NXOS_OSM_show_flogi_table",
+    "@description": ""
+}

@@ -1,0 +1,62 @@
+{
+    "hostname": "c9300-09",
+    "vendor": "cisco",
+    "os": "ios",
+    "path": "/sys/jnib/features/deviceDetect/cisco/ios/",
+    "sku": "C9300-48UXM",
+    "software": {
+        "version": "17.12.1",
+        "major": "17",
+        "minor": "12",
+        "revision": "1",
+        "train": "",
+        "build": "",
+        "patch": "",
+        "apiVersion": "17.12.1",
+        "image": "packages.conf",
+        "drive": "flash:"
+    },
+    "hardware": {
+        "serialNumber": "FJC2543299V",
+        "sku": "C9300-48UXM",
+        "stack": {
+            "1": {
+                "sku": "C9300-48UXM",
+                "version": "17.12.01",
+                "master": true,
+                "serialNumber": "FJC2543299V"
+            }
+        },
+        "components": {
+            "powerSupplies": [
+                {
+                    "description": "Switch 1 - Power Supply A",
+                    "label": "Power Supply",
+                    "location": {
+                        "path": "A",
+                        "type": "psu"
+                    },
+                    "serialNumber": "ART2528P8KV",
+                    "sku": "PWR-C1-1100WAC-P"
+                }
+            ]
+        },
+        "family": "9300",
+        "series": "9300"
+    },
+    "detectedSerialNumber": "FJC2543299V",
+    "uptime": "4d20h46m",
+    "stack": {
+        "1": {
+            "sku": "C9300-48UXM",
+            "version": "17.12.01",
+            "master": true,
+            "serialNumber": "FJC2543299V"
+        }
+    },
+    "type": {
+        "name": "iosSwitch",
+        "base": "campusSwitch"
+    },
+    "licenses": []
+}

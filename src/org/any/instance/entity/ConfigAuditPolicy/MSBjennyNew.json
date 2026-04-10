@@ -1,0 +1,243 @@
+{
+  "permissionLevel": "auditManageLevel1",
+  "rules": [
+    {
+      "severity": "INFO",
+      "name": "New rule",
+      "os": "ios",
+      "source": "LATEST",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "type": "SIMPLE",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": true,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_ordered_regex",
+            "value": [
+              "aaa authentication login default",
+              "    realm tacacs",
+              "    group (tacacs|TACACS)",
+              "    exit"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_ordered_regex",
+            "value": [
+              "aaa authentication login console",
+              "    realm tacacs",
+              "    group (tacacs|TACACS)",
+              "    exit"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItem": "IOS_AAA"
+    },
+    {
+      "severity": "INFO",
+      "name": "New rule1",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "",
+      "scopeSeparateResults": true,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_ordered_regex",
+            "value": [
+              "aaa authentication login default",
+              "    realm tacacs",
+              "    group (tacacs|TACACS)",
+              "    exit"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_ordered_regex",
+            "value": [
+              "aaa authentication login console",
+              "    realm tacacs",
+              "    group (tacacs|TACACS)",
+              "    exit"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItem": "IOS_AAA"
+    },
+    {
+      "severity": "INFO",
+      "name": "New rule2",
+      "os": "ios",
+      "source": "LATEST",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "type": "SIMPLE",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": true,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_ordered_regex",
+            "value": [
+              "aaa authentication login default",
+              "    realm tacacs",
+              "    group (tacacs|TACACS)",
+              "    exit"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_ordered_regex",
+            "value": [
+              "aaa authentication login console",
+              "    realm tacacs",
+              "    group (tacacs|TACACS)",
+              "    exit"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItem": "IOS_AAA"
+    },
+    {
+      "severity": "INFO",
+      "name": "New rule3",
+      "os": "ios",
+      "source": "LATEST",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "type": "SIMPLE",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": true,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_ordered_regex",
+            "value": [
+              "aaa authentication login default",
+              "    realm tacacs",
+              "    group (tacacs|TACACS)",
+              "    exit"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_ordered_regex",
+            "value": [
+              "aaa authentication login console",
+              "    realm tacacs",
+              "    group (tacacs|TACACS)",
+              "    exit"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItem": "IOS_AAA"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.1.6 Set 'login authentication for 'line vty'",
+      "os": "ios",
+      "source": "LATEST",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "type": "SIMPLE",
+      "description": "Authenticates users who access the router or switch using the serial console port.",
+      "enable": true,
+      "scope": "vty",
+      "scopeSeparateResults": true,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "login authentication"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItem": "IOS_LineConVty"
+    }
+  ],
+  "runLevel": "auditRunLevel1",
+  "name": "MSBjennyNew",
+  "description": "",
+  "tid": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+  "id": "44d09947-f300-459f-91b3-12454a7ac48c",
+  "createdBy": "admin",
+  "createdOn": 1731432283032,
+  "updatedBy": "admin",
+  "updatedOn": 1731432317540
+}

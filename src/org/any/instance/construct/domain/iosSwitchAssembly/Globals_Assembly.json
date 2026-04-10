@@ -1,0 +1,61 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosSwitchAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "banner": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/banner/ios_banner.json"
+                }
+            },
+            "dns": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/dns/ios_dns.json"
+                }
+            },
+            "ntp": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/ntp/ios_ntp.json"
+                }
+            },
+            "snmp": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/snmp/ios_snmp-v2c.json"
+                }
+            },
+            "globals": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/globals/iosSwitch_globals.json"
+                }
+            },
+            "services": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/services/ios_services.json"
+                }
+            },
+            "syslog": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/syslog/ios_syslog.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "agents": {
+        "watchdog": {}
+    },
+    "boot": {
+        "firmware": {}
+    },
+    "state": {
+        "assessment": {}
+    },
+    "@source": {
+        "instanceName": "Globals_Assembly"
+    },
+    "@exportedInstanceId": "5ae54145-3b4f-4d47-a5f3-d25db1cf0e2d",
+    "@id": "5ae54145-3b4f-4d47-a5f3-d25db1cf0e2d",
+    "@name": "Globals_Assembly",
+    "@description": ""
+}

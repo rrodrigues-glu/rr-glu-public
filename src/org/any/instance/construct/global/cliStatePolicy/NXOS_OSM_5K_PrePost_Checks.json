@@ -1,0 +1,231 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStatePolicy.jtype"
+    },
+    "list": [
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NSOS_OSM_Check_Print.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_dir.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_InterfaceStatus.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_show_cdp_neighbors_detail.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_show_fabricpath_isis_adj.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_show_fabricpath_isis_database.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_show_fabricpath_isis_hostname.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_show_fabricpath_isis_route.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_show_fabricpath_isis_tree.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_show_fabricpath_isis_vlan.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_show_fabricpath_switch_id.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_show_fcoe_database.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_show_fex_detail.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_show_flogi_table.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_show_int_status_CANS.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_show_int_status_connected.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_show_int_status_noOperMem.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_show_int_status_sfpAbsent.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_show_mac_addr-table.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_show_mac_address_table_count.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_show_npv_status.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_show_version.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_show_vpc_brief_role.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_show_vpc_brief_status.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_show_vpc_consistency_global.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_show_vsan_membership.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_OSM_save_config.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        }
+    ],
+    "@source": {
+        "instanceName": "NXOS_OSM_5K_PrePost_Checks"
+    },
+    "privilegeMode": false,
+    "@exportedInstanceId": "d42c0992-5821-4871-a2c0-1e8a5374de0a",
+    "@id": "d42c0992-5821-4871-a2c0-1e8a5374de0a",
+    "@name": "NXOS_OSM_5K_PrePost_Checks",
+    "@description": ""
+}

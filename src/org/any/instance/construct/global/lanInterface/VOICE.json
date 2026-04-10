@@ -1,0 +1,14 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/lanInterface.jtype"
+    },
+    "description": "",
+    "location": "internal",
+    "@source": {
+        "instanceName": "VOICE"
+    },
+    "@exportedInstanceId": "3c9b23ef-3ddc-41ce-a3e4-8a8c37ea2f7b",
+    "@id": "3c9b23ef-3ddc-41ce-a3e4-8a8c37ea2f7b",
+    "@name": "VOICE",
+    "@description": ""
+}

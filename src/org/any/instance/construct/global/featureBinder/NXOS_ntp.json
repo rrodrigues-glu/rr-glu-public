@@ -1,0 +1,24 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/featureBinder.jtype"
+    },
+    "vendor": "cisco",
+    "os": "nxos",
+    "featureName": "ntp",
+    "featureDisplayName": "NTP Feature",
+    "renderList": [
+        {
+            "item": {},
+            "maskCommands": [],
+            "dCli": []
+        }
+    ],
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "NXOS_ntp"
+    },
+    "@exportedInstanceId": "302b2d42-aaf0-409e-bb57-f7764a1d9739",
+    "@id": "302b2d42-aaf0-409e-bb57-f7764a1d9739",
+    "@name": "NXOS_ntp",
+    "@description": ""
+}

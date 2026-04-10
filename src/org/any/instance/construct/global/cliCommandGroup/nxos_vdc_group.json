@@ -1,0 +1,24 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": ".+",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/nxos_vdc-cli.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "@source": {
+        "instanceName": "nxos_vdc_group"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "d04b9890-16a2-4ac4-8dba-579887b3ed8f",
+    "@id": "d04b9890-16a2-4ac4-8dba-579887b3ed8f",
+    "@name": "nxos_vdc_group",
+    "@description": ""
+}

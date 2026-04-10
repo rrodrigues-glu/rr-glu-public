@@ -1,0 +1,532 @@
+{
+    "hostname": "wlc5508-1",
+    "vendor": "cisco",
+    "os": "aireos",
+    "path": "/sys/jnib/features/deviceDetect/cisco/aireos/",
+    "sku": "AIR-CT5508-K9",
+    "software": {
+        "version": "8.5.140.0",
+        "major": "8",
+        "minor": "5",
+        "revision": "140",
+        "patch": "0",
+        "build": "",
+        "train": ""
+    },
+    "hardware": {
+        "serialNumber": "FCW1504L0H8",
+        "sku": "AIR-CT5508-K9"
+    },
+    "detectedSerialNumber": "FCW1504L0H8",
+    "uptime": "323d4h40m42s",
+    "type": {
+        "name": "aireosWirelessController",
+        "base": "baseController"
+    },
+    "licenses": {},
+    "portsInfo": {
+        "ports": {
+            "GigabitEthernet0/0/1": {
+                "operational": {
+                    "status": "up",
+                    "macAddress": "e0:5f:b9:46:54:a4",
+                    "speed": "1000Mbps",
+                    "mtu": "1500"
+                },
+                "configured": {
+                    "enabled": true,
+                    "type": "ethernetCsmacd",
+                    "speed": "1000 Full",
+                    "duplex": "Auto"
+                },
+                "type": "l2",
+                "description": "Unit: 0 Slot: 0 Port: 1 Gigabit - Level 0x6070001-ethernetCsmacd"
+            },
+            "GigabitEthernet0/0/2": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "e0:5f:b9:46:54:a5",
+                    "speed": "10Mbps",
+                    "mtu": "1500"
+                },
+                "configured": {
+                    "enabled": true,
+                    "type": "ethernetCsmacd",
+                    "speed": "Auto",
+                    "duplex": "Auto"
+                },
+                "type": "l2",
+                "description": "Unit: 0 Slot: 0 Port: 2 Gigabit - Level 0x6070001-ethernetCsmacd"
+            },
+            "GigabitEthernet0/0/3": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "e0:5f:b9:46:54:a6",
+                    "speed": "10Mbps",
+                    "mtu": "1500"
+                },
+                "configured": {
+                    "enabled": true,
+                    "type": "ethernetCsmacd",
+                    "speed": "Auto",
+                    "duplex": "Auto"
+                },
+                "type": "l2",
+                "description": "Unit: 0 Slot: 0 Port: 3 Gigabit - Level 0x6070001-ethernetCsmacd"
+            },
+            "GigabitEthernet0/0/4": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "e0:5f:b9:46:54:a7",
+                    "speed": "10Mbps",
+                    "mtu": "1500"
+                },
+                "configured": {
+                    "enabled": true,
+                    "type": "ethernetCsmacd",
+                    "speed": "Auto",
+                    "duplex": "Auto"
+                },
+                "type": "l2",
+                "description": "Unit: 0 Slot: 0 Port: 4 Gigabit - Level 0x6070001-ethernetCsmacd"
+            },
+            "GigabitEthernet0/0/5": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "e0:5f:b9:46:54:a8",
+                    "speed": "10Mbps",
+                    "mtu": "1500"
+                },
+                "configured": {
+                    "enabled": true,
+                    "type": "ethernetCsmacd",
+                    "speed": "Auto",
+                    "duplex": "Auto"
+                },
+                "type": "l2",
+                "description": "Unit: 0 Slot: 0 Port: 5 Gigabit - Level 0x6070001-ethernetCsmacd"
+            },
+            "GigabitEthernet0/0/6": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "e0:5f:b9:46:54:a9",
+                    "speed": "10Mbps",
+                    "mtu": "1500"
+                },
+                "configured": {
+                    "enabled": true,
+                    "type": "ethernetCsmacd",
+                    "speed": "Auto",
+                    "duplex": "Auto"
+                },
+                "type": "l2",
+                "description": "Unit: 0 Slot: 0 Port: 6 Gigabit - Level 0x6070001-ethernetCsmacd"
+            },
+            "GigabitEthernet0/0/7": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "e0:5f:b9:46:54:aa",
+                    "speed": "10Mbps",
+                    "mtu": "1500"
+                },
+                "configured": {
+                    "enabled": true,
+                    "type": "ethernetCsmacd",
+                    "speed": "Auto",
+                    "duplex": "Auto"
+                },
+                "type": "l2",
+                "description": "Unit: 0 Slot: 0 Port: 7 Gigabit - Level 0x6070001-ethernetCsmacd"
+            },
+            "GigabitEthernet0/0/8": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "e0:5f:b9:46:54:ab",
+                    "speed": "10Mbps",
+                    "mtu": "1500"
+                },
+                "configured": {
+                    "enabled": true,
+                    "type": "ethernetCsmacd",
+                    "speed": "Auto",
+                    "duplex": "Auto"
+                },
+                "type": "l2",
+                "description": "Unit: 0 Slot: 0 Port: 8 Gigabit - Level 0x6070001-ethernetCsmacd"
+            },
+            "GigabitEthernet0/0/RP": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "e0:5f:b9:46:54:a2",
+                    "speed": "1000Mbps",
+                    "mtu": "1500"
+                },
+                "configured": {
+                    "enabled": true,
+                    "type": "ethernetCsmacd",
+                    "speed": "Auto",
+                    "duplex": "Auto"
+                },
+                "type": "l2",
+                "description": "Unit: 0 Slot: 0 Port:RP Gigabit - Level 0x6070001-ethernetCsmacd"
+            },
+            "GigabitEthernet0/0/SP": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "e0:5f:b9:46:54:a1",
+                    "speed": "1000Mbps",
+                    "mtu": "1500"
+                },
+                "configured": {
+                    "enabled": true,
+                    "type": "ethernetCsmacd",
+                    "speed": "Auto",
+                    "duplex": "Auto"
+                },
+                "type": "l2",
+                "description": "Unit: 0 Slot: 0 Port:SP Gigabit - Level 0x6070001-ethernetCsmacd"
+            },
+            "management": {
+                "operational": {
+                    "ipv4Address": "10.150.1.69/24",
+                    "macAddress": "e0:5f:b9:46:54:af",
+                    "ipv6Address": "fe80::e25f:b9ff:fe46:54af/64",
+                    "status": "up"
+                },
+                "configured": {
+                    "vlanId": "0",
+                    "ipv4Address": "10.150.1.69",
+                    "phyPort": "LAG"
+                },
+                "type": "l3"
+            },
+            "redundancy-management": {
+                "operational": {
+                    "ipv4Address": "0.0.0.0",
+                    "macAddress": "e0:5f:b9:46:54:af",
+                    "status": "up"
+                },
+                "configured": {
+                    "vlanId": "0",
+                    "ipv4Address": "0.0.0.0"
+                },
+                "type": "l3"
+            },
+            "redundancy-port": {
+                "operational": {
+                    "ipv4Address": "0.0.0.0",
+                    "macAddress": "e0:5f:b9:46:54:a2",
+                    "status": "up"
+                },
+                "configured": {
+                    "vlanId": "0",
+                    "ipv4Address": "0.0.0.0"
+                },
+                "type": "l3"
+            },
+            "service-port": {
+                "operational": {
+                    "ipv4Address": "0.0.0.0",
+                    "macAddress": "e0:5f:b9:46:54:a1",
+                    "ipv6Address": "fe80::e25f:b9ff:fe46:54a1/64",
+                    "duplex": "Half-duplex",
+                    "status": "down"
+                },
+                "configured": {
+                    "vlanId": "N/A",
+                    "ipv4Address": "DHCP",
+                    "speed": "10Mbps"
+                },
+                "type": "l3"
+            },
+            "testinterface10": {
+                "operational": {
+                    "ipv4Address": "198.19.10.2/24",
+                    "macAddress": "e0:5f:b9:46:54:af",
+                    "ipv6Address": "fe80::e25f:b9ff:fe46:54af/64",
+                    "status": "up"
+                },
+                "configured": {
+                    "vlanId": "10",
+                    "ipv4Address": "198.19.10.2",
+                    "phyPort": "LAG"
+                },
+                "type": "l3"
+            },
+            "testinterface11": {
+                "operational": {
+                    "ipv4Address": "198.19.11.2/24",
+                    "macAddress": "e0:5f:b9:46:54:af",
+                    "ipv6Address": "fe80::e25f:b9ff:fe46:54af/64",
+                    "status": "up"
+                },
+                "configured": {
+                    "vlanId": "11",
+                    "ipv4Address": "198.19.11.2",
+                    "phyPort": "LAG"
+                },
+                "type": "l3"
+            },
+            "testinterface12": {
+                "operational": {
+                    "ipv4Address": "0.0.0.0",
+                    "macAddress": "e0:5f:b9:46:54:af",
+                    "ipv6Address": "fe80::e25f:b9ff:fe46:54af/64",
+                    "status": "up"
+                },
+                "configured": {
+                    "vlanId": "12",
+                    "ipv4Address": "0.0.0.0",
+                    "phyPort": "LAG"
+                },
+                "type": "l3"
+            },
+            "testinterface13": {
+                "operational": {
+                    "ipv4Address": "0.0.0.0",
+                    "macAddress": "e0:5f:b9:46:54:af",
+                    "ipv6Address": "fe80::e25f:b9ff:fe46:54af/64",
+                    "status": "up"
+                },
+                "configured": {
+                    "vlanId": "13",
+                    "ipv4Address": "0.0.0.0",
+                    "phyPort": "LAG"
+                },
+                "type": "l3"
+            },
+            "testinterface14": {
+                "operational": {
+                    "ipv4Address": "0.0.0.0",
+                    "macAddress": "e0:5f:b9:46:54:af",
+                    "ipv6Address": "fe80::e25f:b9ff:fe46:54af/64",
+                    "status": "up"
+                },
+                "configured": {
+                    "vlanId": "14",
+                    "ipv4Address": "0.0.0.0",
+                    "phyPort": "LAG"
+                },
+                "type": "l3"
+            },
+            "testinterface15": {
+                "operational": {
+                    "ipv4Address": "0.0.0.0",
+                    "macAddress": "e0:5f:b9:46:54:af",
+                    "ipv6Address": "fe80::e25f:b9ff:fe46:54af/64",
+                    "status": "up"
+                },
+                "configured": {
+                    "vlanId": "15",
+                    "ipv4Address": "0.0.0.0",
+                    "phyPort": "LAG"
+                },
+                "type": "l3"
+            },
+            "testinterface16": {
+                "operational": {
+                    "ipv4Address": "0.0.0.0",
+                    "macAddress": "e0:5f:b9:46:54:af",
+                    "ipv6Address": "fe80::e25f:b9ff:fe46:54af/64",
+                    "status": "up"
+                },
+                "configured": {
+                    "vlanId": "16",
+                    "ipv4Address": "0.0.0.0",
+                    "phyPort": "LAG"
+                },
+                "type": "l3"
+            },
+            "testinterface17": {
+                "operational": {
+                    "ipv4Address": "0.0.0.0",
+                    "macAddress": "e0:5f:b9:46:54:af",
+                    "ipv6Address": "fe80::e25f:b9ff:fe46:54af/64",
+                    "status": "up"
+                },
+                "configured": {
+                    "vlanId": "17",
+                    "ipv4Address": "0.0.0.0",
+                    "phyPort": "LAG"
+                },
+                "type": "l3"
+            },
+            "testinterface18": {
+                "operational": {
+                    "ipv4Address": "0.0.0.0",
+                    "macAddress": "e0:5f:b9:46:54:af",
+                    "ipv6Address": "fe80::e25f:b9ff:fe46:54af/64",
+                    "status": "up"
+                },
+                "configured": {
+                    "vlanId": "18",
+                    "ipv4Address": "0.0.0.0",
+                    "phyPort": "LAG"
+                },
+                "type": "l3"
+            },
+            "testinterface19": {
+                "operational": {
+                    "ipv4Address": "0.0.0.0",
+                    "macAddress": "e0:5f:b9:46:54:af",
+                    "ipv6Address": "fe80::e25f:b9ff:fe46:54af/64",
+                    "status": "up"
+                },
+                "configured": {
+                    "vlanId": "19",
+                    "ipv4Address": "0.0.0.0",
+                    "phyPort": "LAG"
+                },
+                "type": "l3"
+            },
+            "testinterface20": {
+                "operational": {
+                    "ipv4Address": "0.0.0.0",
+                    "macAddress": "e0:5f:b9:46:54:af",
+                    "ipv6Address": "fe80::e25f:b9ff:fe46:54af/64",
+                    "status": "up"
+                },
+                "configured": {
+                    "vlanId": "20",
+                    "ipv4Address": "0.0.0.0",
+                    "phyPort": "LAG"
+                },
+                "type": "l3"
+            },
+            "testinterface21": {
+                "operational": {
+                    "ipv4Address": "0.0.0.0",
+                    "macAddress": "e0:5f:b9:46:54:af",
+                    "ipv6Address": "fe80::e25f:b9ff:fe46:54af/64",
+                    "status": "up"
+                },
+                "configured": {
+                    "vlanId": "21",
+                    "ipv4Address": "0.0.0.0",
+                    "phyPort": "LAG"
+                },
+                "type": "l3"
+            },
+            "testinterface22": {
+                "operational": {
+                    "ipv4Address": "0.0.0.0",
+                    "macAddress": "e0:5f:b9:46:54:af",
+                    "ipv6Address": "fe80::e25f:b9ff:fe46:54af/64",
+                    "status": "up"
+                },
+                "configured": {
+                    "vlanId": "22",
+                    "ipv4Address": "0.0.0.0",
+                    "phyPort": "LAG"
+                },
+                "type": "l3"
+            },
+            "testinterface23": {
+                "operational": {
+                    "ipv4Address": "0.0.0.0",
+                    "macAddress": "e0:5f:b9:46:54:af",
+                    "ipv6Address": "fe80::e25f:b9ff:fe46:54af/64",
+                    "status": "up"
+                },
+                "configured": {
+                    "vlanId": "23",
+                    "ipv4Address": "0.0.0.0",
+                    "phyPort": "LAG"
+                },
+                "type": "l3"
+            },
+            "testinterface24": {
+                "operational": {
+                    "ipv4Address": "0.0.0.0",
+                    "macAddress": "e0:5f:b9:46:54:af",
+                    "ipv6Address": "fe80::e25f:b9ff:fe46:54af/64",
+                    "status": "up"
+                },
+                "configured": {
+                    "vlanId": "24",
+                    "ipv4Address": "0.0.0.0",
+                    "phyPort": "LAG"
+                },
+                "type": "l3"
+            },
+            "testinterface25": {
+                "operational": {
+                    "ipv4Address": "0.0.0.0",
+                    "macAddress": "e0:5f:b9:46:54:af",
+                    "ipv6Address": "fe80::e25f:b9ff:fe46:54af/64",
+                    "status": "up"
+                },
+                "configured": {
+                    "vlanId": "25",
+                    "ipv4Address": "0.0.0.0",
+                    "phyPort": "LAG"
+                },
+                "type": "l3"
+            },
+            "testinterface26": {
+                "operational": {
+                    "ipv4Address": "0.0.0.0",
+                    "macAddress": "e0:5f:b9:46:54:af",
+                    "ipv6Address": "fe80::e25f:b9ff:fe46:54af/64",
+                    "status": "up"
+                },
+                "configured": {
+                    "vlanId": "26",
+                    "ipv4Address": "0.0.0.0",
+                    "phyPort": "LAG"
+                },
+                "type": "l3"
+            },
+            "testinterface27": {
+                "operational": {
+                    "ipv4Address": "0.0.0.0",
+                    "macAddress": "e0:5f:b9:46:54:af",
+                    "ipv6Address": "fe80::e25f:b9ff:fe46:54af/64",
+                    "status": "up"
+                },
+                "configured": {
+                    "vlanId": "27",
+                    "ipv4Address": "0.0.0.0",
+                    "phyPort": "LAG"
+                },
+                "type": "l3"
+            },
+            "virtual": {
+                "operational": {
+                    "ipv4Address": "1.1.1.1",
+                    "macAddress": "e0:5f:b9:46:54:a0",
+                    "status": "up"
+                },
+                "configured": {
+                    "vlanId": "N/A",
+                    "ipv4Address": "1.1.1.1"
+                },
+                "type": "l3"
+            },
+            "LAG": {
+                "operational": {
+                    "status": "up"
+                },
+                "configured": {
+                    "memberInterfaces": [
+                        "GigabitEthernet0/0/1"
+                    ]
+                },
+                "phyVirt": "virtual",
+                "type": "l2",
+                "ifNumber": "13"
+            }
+        },
+        "portSummary": {
+            "switchports": {
+                "total": 11,
+                "use": 11,
+                "free": 0
+            }
+        },
+        "recordTime": {
+            "utcTime": 1743091931460,
+            "utcDateTime": "Thu, 27 Mar 2025 16:12:11 GMT"
+        }
+    }
+}

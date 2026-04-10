@@ -1,0 +1,17 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "1716570a-4bf7-4b38-b5ad-f03cb9c97f95",
+    "item": {},
+    "cliCommands": [
+        "vrf definition Mgmt-vrf",
+        " address-family ipv4",
+        " exit-address-family",
+        " address-family ipv6",
+        " exit-address-family"
+    ],
+    "@exportedInstanceId": "1716570a-4bf7-4b38-b5ad-f03cb9c97f95",
+    "@name": "Vrf__cli__16655768295965976",
+    "@description": ""
+}

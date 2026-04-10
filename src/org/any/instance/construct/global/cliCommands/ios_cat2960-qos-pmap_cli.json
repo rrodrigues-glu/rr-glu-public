@@ -1,0 +1,32 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "policy-map CLASSIFY",
+        " class voice-traffic-INBOUND",
+        "  set dscp ef",
+        " class video-traffic-INBOUND",
+        "  set dscp af41",
+        " class premium-traffic-INBOUND",
+        "  set dscp af31",
+        " class bulk-traffic-INBOUND",
+        "  set dscp af11",
+        " class default-traffic-INBOUND",
+        "  set dscp af21",
+        "!"
+    ],
+    "advanced": {
+        "filter": "platform",
+        "platform": "C2960"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_cat2960-qos-pmap_cli"
+    },
+    "@exportedInstanceId": "4ad48db3-21a1-4d22-aae2-5e181fc46a18",
+    "@id": "4ad48db3-21a1-4d22-aae2-5e181fc46a18",
+    "@name": "ios_cat2960-qos-pmap_cli",
+    "@description": ""
+}

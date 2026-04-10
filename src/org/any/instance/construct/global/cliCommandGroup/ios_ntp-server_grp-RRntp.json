@@ -1,0 +1,21 @@
+{
+    "regEx": ".+",
+    "ignoreDelete": false,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_ntp-server_cli-RRntp-liqJS02.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "ed7708ac-0a5f-46f8-bb8f-4c4b8cc0bd48",
+    "@id": "ed7708ac-0a5f-46f8-bb8f-4c4b8cc0bd48",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@name": "ios_ntp-server_grp-RRntp",
+    "@description": ""
+}

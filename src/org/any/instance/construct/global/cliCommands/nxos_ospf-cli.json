@@ -1,0 +1,34 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "router ospf 65103",
+        " flush-routes",
+        " log-adjacency-changes",
+        " timers throttle spf 1 50 50",
+        " timers lsa-arrival 10",
+        " maximum-paths 4",
+        " vrf netmgmt",
+        "  router-id 10.255.30.10",
+        "  redistribute static route-map redistribute-netmgmt-static-to-ospf-rmap",
+        "  redistribute bgp 65013 route-map redistribute-netmgmt-bgp-to-ospf-rmap",
+        "  log-adjacency-changes",
+        "  distance 250",
+        "  table-map Filter-OSPF filter",
+        "  maximum-paths 4",
+        "  passive-interface default",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_ospf-cli"
+    },
+    "@exportedInstanceId": "8de74b96-4ded-414b-b7e6-488600dd4290",
+    "@id": "8de74b96-4ded-414b-b7e6-488600dd4290",
+    "@name": "nxos_ospf-cli",
+    "@description": ""
+}

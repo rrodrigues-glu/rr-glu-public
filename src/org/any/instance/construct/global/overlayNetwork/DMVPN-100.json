@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/overlayNetwork.jtype"
+    },
+    "id": 100,
+    "region": "",
+    "authentication": {
+        "method": "secret",
+        "key": "Secret123"
+    },
+    "settings": {
+        "authentication": "nhrp@100",
+        "tunnelKey": 100001,
+        "mapping": [
+            {
+                "nhs": "10.0.1.11",
+                "nbma": "172.16.0.11"
+            }
+        ]
+    },
+    "@source": {
+        "instanceName": "DMVPN-100"
+    },
+    "@exportedInstanceId": "2f52aa48-e7be-4302-bd06-e526488c55e6",
+    "@id": "2f52aa48-e7be-4302-bd06-e526488c55e6",
+    "@name": "DMVPN-100",
+    "@description": ""
+}

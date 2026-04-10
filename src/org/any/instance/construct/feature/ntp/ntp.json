@@ -1,0 +1,19 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/ntp.jtype"
+    },
+    "featureConcept": {
+        "name": "NTP",
+        "cliCommandGroups": {}
+    },
+    "form": {
+        "ntp": {}
+    },
+    "@source": {
+        "instanceName": "ntp"
+    },
+    "@exportedInstanceId": "dced834c-8def-426d-a7cc-e788b72e07b1",
+    "@id": "dced834c-8def-426d-a7cc-e788b72e07b1",
+    "@name": "ntp",
+    "@description": ""
+}

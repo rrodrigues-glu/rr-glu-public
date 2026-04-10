@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/qosCheck.jtype"
+    },
+    "featureConcept": {
+        "name": "QoS Model for Cat6500 Sup2T Switches",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_cat6500-qos-acl_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_cat6500-qos-acl-sweden_cli_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_cat6500-qos-cmap_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_cat6500-qos-pmap_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "site": {},
+        "platform": "WS-C65.+"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_cat6500-qos-sweden"
+    },
+    "@exportedInstanceId": "d25b3c88-90c0-4804-a4e7-9a2350355f9a",
+    "@id": "d25b3c88-90c0-4804-a4e7-9a2350355f9a",
+    "@name": "ios_cat6500-qos-sweden",
+    "@description": ""
+}

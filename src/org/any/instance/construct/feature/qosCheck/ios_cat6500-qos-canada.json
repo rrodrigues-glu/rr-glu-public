@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/qosCheck.jtype"
+    },
+    "featureConcept": {
+        "name": "QoS Model for Cat6500 Sup2T Switches (Nortel IP Phones)",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_cat6500-qos-acl_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_cat6500-qos-acl-canada_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_cat6500-qos-cmap_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_cat6500-qos-pmap_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "site": {},
+        "platform": "WS-C65.+"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_cat6500-qos-canada"
+    },
+    "@exportedInstanceId": "bcf18d92-fade-48cc-ae1e-8aabe966aeee",
+    "@id": "bcf18d92-fade-48cc-ae1e-8aabe966aeee",
+    "@name": "ios_cat6500-qos-canada",
+    "@description": ""
+}

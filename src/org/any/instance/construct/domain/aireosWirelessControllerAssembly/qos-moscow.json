@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/aireosWirelessControllerAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "qos": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/qos/aireos_qos-rus-moscow.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "state": {
+        "assessment": {}
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "qos-moscow"
+    },
+    "@exportedInstanceId": "b8287901-8ae0-4702-bd90-bd0e2bd35fdf",
+    "@id": "b8287901-8ae0-4702-bd90-bd0e2bd35fdf",
+    "@name": "qos-moscow",
+    "@description": ""
+}

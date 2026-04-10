@@ -1,0 +1,17 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show fabricpath isis route",
+    "groupName": "ISIS_ROUTE",
+    "discover": {},
+    "options": {},
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_show_fabricpath_isis_route"
+    },
+    "@exportedInstanceId": "72fc3089-73da-4fe7-9de4-5830d0b4bbcd",
+    "@id": "72fc3089-73da-4fe7-9de4-5830d0b4bbcd",
+    "@name": "NXOS_OSM_show_fabricpath_isis_route",
+    "@description": ""
+}

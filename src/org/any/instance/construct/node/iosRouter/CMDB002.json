@@ -1,0 +1,52 @@
+{
+    "options": {
+        "connectionEnabled": true,
+        "previewMode": false,
+        "forcedAttachedStorage": false
+    },
+    "wanRouter": {
+        "enabled": true
+    },
+    "site": {
+        "@ref": "/org/instance/construct/domain/location/SN001.json"
+    },
+    "configState": "managed",
+    "entryConnection": {
+        "connectionMethod": "cliConnection",
+        "ip": "10.1.100.155",
+        "credentials": {
+            "@ref": "/secret/sys/credentials/deviceUserPass/admin.json"
+        },
+        "port": 22,
+        "type": "ssh",
+        "terminalType": "xterm"
+    },
+    "associations": {
+        "assembly": {
+            "@ref": "/org/instance/construct/domain/iosRouterAssembly/Username_Assembly.json"
+        },
+        "provider": "local"
+    },
+    "personae": {},
+    "hardware": {
+        "vendor": "auto",
+        "expectedSerialNumber": "auto"
+    },
+    "provisioning": {
+        "type": "advanced"
+    },
+    "persona": {
+        "id": 0,
+        "type": "none"
+    },
+    "iosRouter": {
+        "enabled": true
+    },
+    "@exportedInstanceId": "53927635-ed5c-4e63-9c8c-67fe718636a4",
+    "@id": "53927635-ed5c-4e63-9c8c-67fe718636a4",
+    "@type": {
+        "ref": "/sys/type/construct/node/iosRouter.jtype"
+    },
+    "@name": "CMDB002",
+    "@description": "Testing123"
+}

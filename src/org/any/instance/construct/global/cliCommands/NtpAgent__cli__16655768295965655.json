@@ -1,0 +1,14 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "d487894c-f4b8-4cba-8071-d53ce497d3b4",
+    "item": {},
+    "cliCommands": [
+        "ntp server 10.1.25.53",
+        "ntp server 10.192.11.53"
+    ],
+    "@exportedInstanceId": "d487894c-f4b8-4cba-8071-d53ce497d3b4",
+    "@name": "NtpAgent__cli__16655768295965655",
+    "@description": ""
+}

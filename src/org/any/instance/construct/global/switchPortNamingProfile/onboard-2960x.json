@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/switchPortNamingProfile.jtype"
+    },
+    "ethernetPorts": {
+        "namedType": "GigabitEthernet",
+        "mapping": "inherited",
+        "pathId": "0/%portId"
+    },
+    "breakoutPorts": {
+        "namedType": "Ethernet",
+        "pathId": "%stackId/0/%portId/%breakoutId"
+    },
+    "otherSettings": {
+        "intialStackId": 1
+    },
+    "comment1": null,
+    "comment2": null,
+    "@source": {
+        "instanceName": "onboard-2960x"
+    },
+    "@exportedInstanceId": "c4450725-02e8-443d-8649-296894fa2921",
+    "@id": "c4450725-02e8-443d-8649-296894fa2921",
+    "@name": "onboard-2960x",
+    "@description": ""
+}

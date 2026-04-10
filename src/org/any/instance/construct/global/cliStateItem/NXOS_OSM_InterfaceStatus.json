@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show interface status | inc fc",
+    "groupName": "FiberChannel",
+    "discover": {
+        "FCcheck": {
+            "expressions": [
+                "vfc(?<Fcche>\\S+)"
+            ],
+            "localKey": "Fcche",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {},
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_InterfaceStatus"
+    },
+    "@exportedInstanceId": "e16673d4-c561-48f7-945e-06340d098a0b",
+    "@id": "e16673d4-c561-48f7-945e-06340d098a0b",
+    "@name": "NXOS_OSM_InterfaceStatus",
+    "@description": ""
+}

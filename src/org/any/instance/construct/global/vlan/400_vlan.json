@@ -1,0 +1,15 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/vlan.jtype"
+    },
+    "id": 400,
+    "name": "DATA4",
+    "@source": {
+        "instanceName": "400_vlan"
+    },
+    "alias": "",
+    "@exportedInstanceId": "86c33394-55bf-44fd-8664-7d66232d92f1",
+    "@id": "86c33394-55bf-44fd-8664-7d66232d92f1",
+    "@name": "400_vlan",
+    "@description": ""
+}

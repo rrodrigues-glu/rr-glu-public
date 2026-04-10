@@ -1,0 +1,30 @@
+{
+    "regEx": ".+",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/Intf__cli__1665577031307d32a.json"
+        ]
+    },
+    "advanced": {
+        "preModifyConditions": {
+            "objectKeyRegEx": "interface GigabitEthernet2/0/2",
+            "onChangeOfCliLineRegEx": "macro apply .+",
+            "doCliLines": [
+                "default interface GigabitEthernet2/0/2"
+            ],
+            "renderType": "separate"
+        }
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "d0642b3a-18c4-4183-aea0-1a2c34bbc7b1",
+    "@id": "d0642b3a-18c4-4183-aea0-1a2c34bbc7b1",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@name": "banner__cliGrp__macro",
+    "@description": ""
+}

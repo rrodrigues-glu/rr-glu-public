@@ -1,0 +1,21 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_CFS.json"
+    },
+    "cliCommands": [
+        "cfs eth distribute"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_cfs-cli"
+    },
+    "@exportedInstanceId": "16133426-3523-4f4a-97b4-340380af4fb6",
+    "@id": "16133426-3523-4f4a-97b4-340380af4fb6",
+    "@name": "nxos_cfs-cli",
+    "@description": ""
+}

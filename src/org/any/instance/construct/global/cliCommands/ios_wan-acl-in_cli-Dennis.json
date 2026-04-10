@@ -1,0 +1,21 @@
+{
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_IpAcl-Dennis01.json"
+    },
+    "cliCommands": [
+        "ip access-list extended 102",
+        " permit ip host {$discover.Intf.GigabitEthernet1.address.ip3oct}.2 any",
+        " permit ip host {$discover.Intf.GigabitEthernet1.address.ip3oct}.3 any",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "d3d15e8b-607b-4968-9744-e28a60e5e002",
+    "@id": "d3d15e8b-607b-4968-9744-e28a60e5e002",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "ios_wan-acl-in_cli-Dennis",
+    "@description": ""
+}

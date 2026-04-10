@@ -1,0 +1,23 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "crypto ikev2 keyring DMVPN-KEYRING-$context.networks[*].overlayNetwork.id",
+        " peer ANY",
+        "  address 0.0.0.0 0.0.0.0",
+        "  pre-shared-key $context.networks[*].overlayNetwork.authentication.key",
+        " !"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_dmvpn-ikev2-keyring_cli"
+    },
+    "@exportedInstanceId": "9766d6ca-d6d3-4078-9985-59d1e9c1829c",
+    "@id": "9766d6ca-d6d3-4078-9985-59d1e9c1829c",
+    "@name": "ios_dmvpn-ikev2-keyring_cli",
+    "@description": ""
+}

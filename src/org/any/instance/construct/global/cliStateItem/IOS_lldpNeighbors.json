@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show lldp neighbors",
+    "rootEntry": "yes",
+    "groupName": "lldp",
+    "discover": {
+        "neighbors": {
+            "expressions": [
+                "(?<deviceId>[-\\s\\w]{20})(?<localPort>[/\\w]+)\\s+(?<holdTime>\\d+)\\s+(?<capability>[RBTCWPSO,]+)\\s+(?<remotePortId>[./A-Za-z0-9]+)"
+            ],
+            "localKey": "deviceId+localPort",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {},
+    "@source": {
+        "instanceName": "IOS_lldpNeighbors"
+    },
+    "@exportedInstanceId": "8f8dc5f6-52c3-4e47-8b83-81b2f0b140aa",
+    "@id": "8f8dc5f6-52c3-4e47-8b83-81b2f0b140aa",
+    "@name": "IOS_lldpNeighbors",
+    "@description": ""
+}

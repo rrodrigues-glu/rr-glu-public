@@ -1,0 +1,22 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "aaa group server tacacs+ $context.aaa[*].name",
+        " server name $context.aaa[*].tacacs[*].name",
+        " ip tacacs source-interface $context.aaa[*].srcInt",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_aaa-group-server_cli"
+    },
+    "@exportedInstanceId": "27de182f-c675-4dc1-b47e-4a45732796c0",
+    "@id": "27de182f-c675-4dc1-b47e-4a45732796c0",
+    "@name": "ios_aaa-group-server_cli",
+    "@description": ""
+}

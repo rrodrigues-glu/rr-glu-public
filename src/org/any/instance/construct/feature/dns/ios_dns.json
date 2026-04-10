@@ -1,0 +1,35 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/dns.jtype"
+    },
+    "featureConcept": {
+        "name": " ",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_domain-lookup_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_domain-name_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_dns-server_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "dns": {
+            "domainName": "nuc.lab",
+            "server": [
+                {
+                    "ip": "10.1.255.53"
+                },
+                {
+                    "ip": "10.1.155.53"
+                }
+            ]
+        }
+    },
+    "@source": {
+        "instanceName": "ios_dns"
+    },
+    "@exportedInstanceId": "6eee2ba4-cd41-4ea3-8128-51efcc3fee08",
+    "@id": "6eee2ba4-cd41-4ea3-8128-51efcc3fee08",
+    "@name": "ios_dns",
+    "@description": ""
+}

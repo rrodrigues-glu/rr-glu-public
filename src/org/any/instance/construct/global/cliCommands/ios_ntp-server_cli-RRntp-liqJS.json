@@ -1,0 +1,29 @@
+{
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_NtpAgent-RRntp.json"
+    },
+    "cliCommands": [
+        "clock timezone PST -7 0",
+        "clock summer-time PDT recurring",
+        "!",
+        "ntp server 10.12.1.11",
+        "ntp server 10.12.2.11",
+        "{%- for server in ntp.server %}",
+        "ntp server {{server.ip}}",
+        "{%- endfor %}",
+        "!",
+        "ntp source $context.portMap.MGNT1.name",
+        "!",
+        "ntp panic update"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "71609d05-ad1f-4036-9939-74f2779c9812",
+    "@id": "71609d05-ad1f-4036-9939-74f2779c9812",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "ios_ntp-server_cli-RRntp-liqJS",
+    "@description": ""
+}

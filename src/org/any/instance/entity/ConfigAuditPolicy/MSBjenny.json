@@ -1,0 +1,206 @@
+{
+  "permissionLevel": "auditManageLevel1",
+  "rules": [
+    {
+      "severity": "INFO",
+      "name": "New rule",
+      "os": "ios",
+      "source": "LATEST",
+      "commandSet": "all",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "type": "SIMPLE",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": true,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_ordered_regex",
+            "value": [
+              "aaa authentication login default",
+              "    realm tacacs",
+              "    group (tacacs|TACACS)",
+              "    exit"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_ordered_regex",
+            "value": [
+              "aaa authentication login console",
+              "    realm tacacs",
+              "    group (tacacs|TACACS)",
+              "    exit"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "conceptItem": "IOS_AAA"
+    },
+    {
+      "severity": "INFO",
+      "name": "New rule1",
+      "os": "ios",
+      "source": "LATEST",
+      "commandSet": "all",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "type": "SIMPLE",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": true,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_ordered_regex",
+            "value": [
+              "aaa authentication login default",
+              "    realm tacacs",
+              "    group (tacacs|TACACS)",
+              "    exit"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_ordered_regex",
+            "value": [
+              "aaa authentication login console",
+              "    realm tacacs",
+              "    group (tacacs|TACACS)",
+              "    exit"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "conceptItem": "IOS_AAA"
+    },
+    {
+      "severity": "INFO",
+      "name": "New rule2",
+      "os": "ios",
+      "source": "LATEST",
+      "commandSet": "all",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "type": "SIMPLE",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": true,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_ordered_regex",
+            "value": [
+              "aaa authentication login default",
+              "    realm tacacs",
+              "    group (tacacs|TACACS)",
+              "    exit"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_ordered_regex",
+            "value": [
+              "aaa authentication login console",
+              "    realm tacacs",
+              "    group (tacacs|TACACS)",
+              "    exit"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "conceptItem": "IOS_AAA"
+    },
+    {
+      "severity": "INFO",
+      "name": "New rule3",
+      "os": "ios",
+      "source": "LATEST",
+      "commandSet": "all",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "type": "SIMPLE",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": true,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_ordered_regex",
+            "value": [
+              "aaa authentication login default",
+              "    realm tacacs",
+              "    group (tacacs|TACACS)",
+              "    exit"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_ordered_regex",
+            "value": [
+              "aaa authentication login console",
+              "    realm tacacs",
+              "    group (tacacs|TACACS)",
+              "    exit"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "conceptItem": "IOS_AAA"
+    }
+  ],
+  "runLevel": "auditRunLevel1",
+  "name": "MSBjenny",
+  "description": "",
+  "tid": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+  "id": "8ac9257d-b833-4736-a9d9-119da48f94d9",
+  "createdBy": "admin",
+  "createdOn": 1729599844254,
+  "updatedBy": "admin",
+  "updatedOn": 1731432139523
+}

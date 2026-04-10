@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/globals.jtype"
+    },
+    "featureConcept": {
+        "name": "Custom Use Case",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_dns-server_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_domain-name_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "globals": {
+            "hostName": true,
+            "ip": true,
+            "domainName": ""
+        }
+    },
+    "@source": {
+        "instanceName": "ios_hostname-ip-config"
+    },
+    "@exportedInstanceId": "d02289db-6958-47d3-b880-2a371d3e38cf",
+    "@id": "d02289db-6958-47d3-b880-2a371d3e38cf",
+    "@name": "ios_hostname-ip-config",
+    "@description": ""
+}

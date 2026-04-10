@@ -1,0 +1,51 @@
+{
+    "name": "Intf",
+    "vendors": {
+        "cisco": {
+            "type": [
+                "ios"
+            ],
+            "level": null
+        }
+    },
+    "showCmds": [
+        "sh run | sec ^router bgp"
+    ],
+    "keyCliLine": "",
+    "rootEntryFlag": false,
+    "mode": "basic",
+    "boundaries": {
+        "start": null
+    },
+    "discover": {
+        "asnbr": {
+            "expressions": [
+                "router bgp (?<nbr>\\S+)"
+            ]
+        },
+        "desc": {
+            "expressions": [
+                "description\\s(.+)"
+            ]
+        },
+        "hostname": {
+            "expressions": [
+                "hostname\\s(.+)"
+            ]
+        },
+        "ntp": {
+            "expressions": []
+        },
+        "ipadd": {
+            "expressions": []
+        }
+    },
+    "removeSyntax": {},
+    "@exportedInstanceId": "f740e5d2-83c0-4227-91ae-08ccc67a4019",
+    "@id": "f740e5d2-83c0-4227-91ae-08ccc67a4019",
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "@name": "IOS_Router-romTest-Copy-1",
+    "@description": "Displays the configuration section that shows the configured routed protocol options. Note: The ^ makes the parser display ONLY the sections whose first lines BEGIN with the word 'router'."
+}

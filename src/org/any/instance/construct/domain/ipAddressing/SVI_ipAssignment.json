@@ -1,0 +1,77 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/ipAddressing.jtype"
+    },
+    "intfs": [
+        {
+            "intf": {
+                "map": {
+                    "@ref": "/org/instance/construct/global/lanInterface/VLAN200.json"
+                }
+            },
+            "ipv4": {
+                "category": "local",
+                "method": "hostPool",
+                "supernet": {
+                    "ipPrefix": {
+                        "@ref": "/org/instance/construct/domain/ipv4Pool/vlan200_pool.json"
+                    }
+                },
+                "host": {
+                    "range": {
+                        "@ref": "/org/instance/construct/global/subnetRange/reserved_subnet.json"
+                    }
+                }
+            }
+        },
+        {
+            "intf": {
+                "map": {
+                    "@ref": "/org/instance/construct/global/lanInterface/VLAN400.json"
+                }
+            },
+            "ipv4": {
+                "category": "local",
+                "method": "hostPool",
+                "supernet": {
+                    "ipPrefix": {
+                        "@ref": "/org/instance/construct/domain/ipv4Pool/vlan400_pool.json"
+                    }
+                },
+                "host": {
+                    "range": {
+                        "@ref": "/org/instance/construct/global/subnetRange/reserved_subnet.json"
+                    }
+                }
+            }
+        },
+        {
+            "intf": {
+                "map": {
+                    "@ref": "/org/instance/construct/global/lanInterface/VLAN600.json"
+                }
+            },
+            "ipv4": {
+                "category": "local",
+                "method": "hostPool",
+                "supernet": {
+                    "ipPrefix": {
+                        "@ref": "/org/instance/construct/domain/ipv4Pool/vlan600_pool.json"
+                    }
+                },
+                "host": {
+                    "range": {
+                        "@ref": "/org/instance/construct/global/subnetRange/reserved_subnet.json"
+                    }
+                }
+            }
+        }
+    ],
+    "@source": {
+        "instanceName": "SVI_ipAssignment"
+    },
+    "@exportedInstanceId": "79e6d2ea-5b61-4fe3-bfb9-c321b0f70a1b",
+    "@id": "79e6d2ea-5b61-4fe3-bfb9-c321b0f70a1b",
+    "@name": "SVI_ipAssignment",
+    "@description": ""
+}

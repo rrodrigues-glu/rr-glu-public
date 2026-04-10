@@ -1,0 +1,25 @@
+{
+    "cmd": "show switch",
+    "groupName": "stack",
+    "discover": {
+        "members": {
+            "expressions": [
+                "(?<id>\\d+)\\s+(?<role>Active|Standby)\\s+(?<macAddress>[a-f0-9]{4}\\.[a-f0-9]{4}\\.[a-f0-9]{4})\\s+(?<priority>\\d+)\\s+(?<version>\\w\\d+)\\s+(?<state>\\w+)"
+            ],
+            "localKey": "",
+            "preserveLocalKey": false,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {
+        "generateLocalKey": false
+    },
+    "rootEntry": "yes",
+    "@exportedInstanceId": "50020eb6-89d9-4b56-8ef9-ba03803821e9",
+    "@id": "50020eb6-89d9-4b56-8ef9-ba03803821e9",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "@name": "IOS_show_switch-Copy-1",
+    "@description": ""
+}

@@ -1,0 +1,20 @@
+{
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_NtpAgent-Disc-1.json"
+    },
+    "cliCommands": [
+        "{%- for device in devices -%}",
+        "ntp source {{device.connectionInformation.ip}}",
+        "{%- endfor %}"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "b3b5d6b9-eeed-45dd-88d0-18b10efabfd3",
+    "@id": "b3b5d6b9-eeed-45dd-88d0-18b10efabfd3",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "ios_ntp-server_cli-Disc-1",
+    "@description": ""
+}

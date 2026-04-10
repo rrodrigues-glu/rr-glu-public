@@ -1,0 +1,53 @@
+{
+    "name": "neighip",
+    "vendors": {
+        "cisco": {
+            "type": [
+                "ios"
+            ],
+            "level": null
+        }
+    },
+    "showCmds": [
+        "show run | i timers 7 21"
+    ],
+    "keyCliLine": "",
+    "rootEntryFlag": false,
+    "mode": "basic",
+    "boundaries": {
+        "start": null
+    },
+    "discover": {
+        "neigh": {
+            "expressions": [
+                "neighbor (?<ipbgp>\\b\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\b) timers 7 21"
+            ]
+        },
+        "ntp": {
+            "expressions": [
+                "ntp\\s.+"
+            ]
+        },
+        "ipadd": {
+            "expressions": []
+        },
+        "hostname": {
+            "expressions": [
+                "hostname\\s.+"
+            ]
+        },
+        "desc": {
+            "expressions": [
+                "description\\s(.+)"
+            ]
+        }
+    },
+    "removeSyntax": {},
+    "@exportedInstanceId": "bf2abcfd-644a-4b35-880c-5310baff00df",
+    "@id": "bf2abcfd-644a-4b35-880c-5310baff00df",
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "@name": "IOS_Router-romTest-2-Copy-1",
+    "@description": "Displays the configuration section that shows the configured routed protocol options. Note: The ^ makes the parser display ONLY the sections whose first lines BEGIN with the word 'router'."
+}

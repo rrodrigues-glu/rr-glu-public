@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@id": "e2d1cc1f-46a3-4755-8c4e-9d83ed5e24d8",
+    "ignoreDelete": true,
+    "regEx": ".+",
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/SyslogServer__cli__1731435087366a91b.json"
+        ]
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "e2d1cc1f-46a3-4755-8c4e-9d83ed5e24d8",
+    "@name": "syslog__cliGrp__1731435087366638",
+    "@description": ""
+}

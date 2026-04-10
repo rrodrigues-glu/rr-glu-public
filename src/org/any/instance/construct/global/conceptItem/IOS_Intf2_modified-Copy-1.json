@@ -1,0 +1,56 @@
+{
+    "name": "Intf",
+    "vendors": {
+        "cisco": {
+            "type": [
+                "ios"
+            ],
+            "level": null
+        }
+    },
+    "showCmds": [
+        "sh run | sec ^interface"
+    ],
+    "keyCliLine": "interface (.+)",
+    "rootEntryFlag": false,
+    "keyLineDepth": 1,
+    "keyGroup": 1,
+    "mode": "advanced",
+    "boundaries": {
+        "start": null
+    },
+    "discover": {
+        "accessVlan": {
+            "expressions": [
+                "switchport access vlan (.+)"
+            ]
+        },
+        "vlan": {
+            "expressions": [
+                "(?<accessMode>^switchport mode access$)",
+                "(?<trunkMode>^switchport mode trunk$)",
+                "(?<trunkAllowed>^switchport trunk allowed vlan .+$)",
+                "switchport access vlan (?<access>.+)",
+                "switchport voice vlan (?<voice>.+)"
+            ]
+        },
+        "description": {
+            "expressions": [
+                "description (?<DesPart1>:W1:)(?<DesPart2>.+)"
+            ]
+        },
+        "address": {
+            "expressions": [
+                "(?<ipa>ip address) (?<ip>.+)"
+            ]
+        }
+    },
+    "removeSyntax": {},
+    "@exportedInstanceId": "65f2c07b-21fd-40ed-8a91-e1cb3866505e",
+    "@id": "65f2c07b-21fd-40ed-8a91-e1cb3866505e",
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "@name": "IOS_Intf2_modified-Copy-1",
+    "@description": ""
+}

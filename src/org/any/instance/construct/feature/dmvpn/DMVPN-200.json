@@ -1,0 +1,54 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/dmvpn.jtype"
+    },
+    "featureConcept": {
+        "name": "ios_dmvpn-spoke-concept",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_dmvpn-ikev2-keyring_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_dmvpn-ikev2-proposal_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_dmvpn-ikev2-policy_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_dmvpn-ikev2-profile_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_dmvpn-ipsec-security_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_dmvpn-ipsec-proposal_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_dmvpn-ipsec-profile_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_dmvpn-intf-spoke_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_dmvpn-plist-spoke-routing_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_dmvpn-eigrp-spoke_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "networks": [
+            {
+                "overlayNetwork": {
+                    "@ref": "/org/instance/construct/global/overlayNetwork/DMVPN-200.json"
+                },
+                "overlayIntf": {
+                    "@ref": "/org/instance/construct/global/lanInterface/OVRL2.json"
+                },
+                "underlyingIntf": {
+                    "wanIntf": {
+                        "@ref": "/org/instance/construct/global/wanInterface/ISP1.json"
+                    },
+                    "vrf": {
+                        "@ref": "/org/instance/construct/global/vrf/inet-public.json"
+                    }
+                },
+                "routing": {
+                    "delay": {
+                        "@ref": "/org/instance/construct/global/routingDelay/secondary.json"
+                    }
+                }
+            }
+        ]
+    },
+    "@source": {
+        "instanceName": "DMVPN-200"
+    },
+    "@exportedInstanceId": "8f7faf03-9261-4fef-914c-568a7e7aa5f4",
+    "@id": "8f7faf03-9261-4fef-914c-568a7e7aa5f4",
+    "@name": "DMVPN-200",
+    "@description": ""
+}

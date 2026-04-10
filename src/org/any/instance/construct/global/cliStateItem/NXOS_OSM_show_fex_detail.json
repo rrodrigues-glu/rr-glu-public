@@ -1,0 +1,19 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show fex detail",
+    "groupName": "fex",
+    "discover": {},
+    "options": {
+        "generateLocalKey": false
+    },
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_show_fex_detail"
+    },
+    "@exportedInstanceId": "2be46d4f-9b95-420b-9d4c-4e7e12cc8e6a",
+    "@id": "2be46d4f-9b95-420b-9d4c-4e7e12cc8e6a",
+    "@name": "NXOS_OSM_show_fex_detail",
+    "@description": ""
+}

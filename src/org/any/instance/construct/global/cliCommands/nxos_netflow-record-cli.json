@@ -1,0 +1,34 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "flow record WATCHFUL",
+        " match ipv4 source address",
+        " match ipv4 destination address",
+        " match ip protocol",
+        " match ip tos",
+        " match transport source-port",
+        " match transport destination-port",
+        " collect routing source as",
+        " collect routing destination as",
+        " collect routing next-hop address ipv4",
+        " collect transport tcp flags",
+        " collect counter bytes",
+        " collect counter packets",
+        " collect timestamp sys-uptime first",
+        " collect timestamp sys-uptime last",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_netflow-record-cli"
+    },
+    "@exportedInstanceId": "f6f3bd1c-61d5-492b-bf3e-83df688d5ef2",
+    "@id": "f6f3bd1c-61d5-492b-bf3e-83df688d5ef2",
+    "@name": "nxos_netflow-record-cli",
+    "@description": ""
+}

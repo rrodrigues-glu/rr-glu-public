@@ -1,0 +1,20 @@
+{
+    "list": [
+        {
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": "",
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/IOS_show_proc_cpu.json"
+            }
+        }
+    ],
+    "privilegeMode": false,
+    "@exportedInstanceId": "28a888be-4228-4a60-938c-250812f5fd8f",
+    "@id": "28a888be-4228-4a60-938c-250812f5fd8f",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStatePolicy.jtype"
+    },
+    "@name": "cliStatePolicy2",
+    "@description": ""
+}

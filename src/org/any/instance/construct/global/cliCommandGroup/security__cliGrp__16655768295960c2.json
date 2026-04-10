@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@id": "78d40266-435b-46e4-8ff7-56f8f92bddc1",
+    "ignoreDelete": true,
+    "regEx": "GigabitEthernet0/0|GigabitEthernet1/0/1|GigabitEthernet1/0/2|GigabitEthernet1/0/3|GigabitEthernet1/0/4|GigabitEthernet1/0/5|GigabitEthernet1/0/6|GigabitEthernet1/0/7|GigabitEthernet1/0/8|GigabitEthernet1/0/9|GigabitEthernet1/0/10|GigabitEthernet1/0/11|GigabitEthernet1/0/12|GigabitEthernet1/0/13|GigabitEthernet1/0/14|GigabitEthernet1/0/15|GigabitEthernet1/0/16|GigabitEthernet1/0/17|GigabitEthernet1/0/18|GigabitEthernet1/0/19|GigabitEthernet1/0/20|GigabitEthernet1/0/21|GigabitEthernet1/0/22|GigabitEthernet1/0/23|GigabitEthernet1/0/24|GigabitEthernet1/1/1|GigabitEthernet1/1/2|GigabitEthernet1/1/3|GigabitEthernet1/1/4|TenGigabitEthernet1/1/1|TenGigabitEthernet1/1/2|TenGigabitEthernet1/1/3|TenGigabitEthernet1/1/4|GigabitEthernet2/0/1|GigabitEthernet2/0/2|GigabitEthernet2/0/3|GigabitEthernet2/0/4|GigabitEthernet2/0/5|GigabitEthernet2/0/6|GigabitEthernet2/0/7|GigabitEthernet2/0/8|GigabitEthernet2/0/9|GigabitEthernet2/0/10|GigabitEthernet2/0/11|GigabitEthernet2/0/12|GigabitEthernet2/0/13|GigabitEthernet2/0/14|GigabitEthernet2/0/15|GigabitEthernet2/0/16|GigabitEthernet2/0/17|GigabitEthernet2/0/18|GigabitEthernet2/0/19|GigabitEthernet2/0/20|GigabitEthernet2/0/21|GigabitEthernet2/0/22|GigabitEthernet2/0/23|GigabitEthernet2/0/24|GigabitEthernet2/1/1|GigabitEthernet2/1/2|GigabitEthernet2/1/3|GigabitEthernet2/1/4|TenGigabitEthernet2/1/1|TenGigabitEthernet2/1/2|TenGigabitEthernet2/1/3|TenGigabitEthernet2/1/4|Vlan1|Vlan55|Vlan76",
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/Intf__cli__1665576829596198f.json"
+        ]
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "78d40266-435b-46e4-8ff7-56f8f92bddc1",
+    "@name": "security__cliGrp__16655768295960c2",
+    "@description": ""
+}

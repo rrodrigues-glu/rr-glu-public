@@ -1,0 +1,21 @@
+{
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_ErrDisable.json"
+    },
+    "cliCommands": [
+        "errdisable recovery cause pause-rate-limit"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@description": "",
+    "@source": {
+        "instanceName": "nxos_errdis-recovery-cli"
+    },
+    "@exportedInstanceId": "ccd7c84a-f088-437e-a16c-772fba6b3c72",
+    "@id": "ccd7c84a-f088-437e-a16c-772fba6b3c72",
+    "@name": "nxos_errdis-recovery-cli"
+}

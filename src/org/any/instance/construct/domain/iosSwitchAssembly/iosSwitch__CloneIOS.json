@@ -1,0 +1,73 @@
+{
+    "domains": {
+        "modules": {
+            "banner": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/banner/banner__1665576829596.json"
+                }
+            },
+            "nac": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/nac/nac__1665576829596.json"
+                }
+            },
+            "ntp": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/ntp/ntp__1665576829596.json"
+                }
+            },
+            "qos": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/qos/qos__1665576829596.json"
+                }
+            },
+            "security": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/security/security__1665576829596.json"
+                }
+            },
+            "snmp": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/snmp/snmp__1665576829596.json"
+                }
+            },
+            "syslog": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/syslog/syslog__1665576829596.json"
+                }
+            },
+            "username": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/username/username__1665576829596.json"
+                }
+            },
+            "vlans": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/vlans/vlans__1665576829596.json"
+                }
+            },
+            "vrfs": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/vrfs/vrfs__1665576829596.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "agents": {
+        "watchdog": {}
+    },
+    "boot": {
+        "firmware": {}
+    },
+    "state": {
+        "assessment": {}
+    },
+    "@exportedInstanceId": "bd406086-2630-4933-9e06-31213879b483",
+    "@id": "bd406086-2630-4933-9e06-31213879b483",
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosSwitchAssembly.jtype"
+    },
+    "@name": "iosSwitch__CloneIOS",
+    "@description": ""
+}

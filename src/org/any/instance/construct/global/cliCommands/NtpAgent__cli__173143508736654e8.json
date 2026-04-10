@@ -1,0 +1,14 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "94d1d865-3c2e-4c46-8313-ddc5ae223e73",
+    "item": {},
+    "cliCommands": [
+        "ntp server 10.150.1.53 use-vrf management",
+        ""
+    ],
+    "@exportedInstanceId": "94d1d865-3c2e-4c46-8313-ddc5ae223e73",
+    "@name": "NtpAgent__cli__173143508736654e8",
+    "@description": ""
+}

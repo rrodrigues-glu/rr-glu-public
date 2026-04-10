@@ -1,0 +1,43 @@
+{
+    "name": "Intf",
+    "vendors": {
+        "cisco": {
+            "type": [
+                "ios"
+            ],
+            "level": null,
+            "note": null
+        }
+    },
+    "showCmds": [
+        "show ip vrf interfaces | exclude unassigned"
+    ],
+    "keyCliLine": ".+(up)",
+    "rootEntryFlag": false,
+    "mode": "basic",
+    "boundaries": {
+        "start": null
+    },
+    "discover": {
+        "name": {
+            "expressions": [
+                "interface (?<mgmt2>.+)\\n\\sip vrf forwarding (?<mgmt0>.+)"
+            ]
+        },
+        "pop": {
+            "expressions": [
+                "^(Gi\\S+)\\s+\\S+\\s+\\S+\\s+\\S+$"
+            ]
+        }
+    },
+    "removeSyntax": {
+        "no macro description.+": ""
+    },
+    "@exportedInstanceId": "b7ba2d2d-1e8e-4438-947d-fa2630230332",
+    "@id": "b7ba2d2d-1e8e-4438-947d-fa2630230332",
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "@name": "IOS_Intf2-mrck2-Romario",
+    "@description": "Displays the running configuration starting from the first line that BEGINS with the word interface. Note: The ^ makes the parser ONLY display the section whose first line BEGINS with the word 'interface'. Note: This concept item DOES NOT display the hidden commands (unlike the IOS_Intf concept item)."
+}

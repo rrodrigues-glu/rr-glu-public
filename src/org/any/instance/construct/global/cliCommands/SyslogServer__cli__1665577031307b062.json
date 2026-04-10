@@ -1,0 +1,18 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "9ada0f71-a684-4de8-87db-b95c851ee930",
+    "item": {},
+    "cliCommands": [
+        "logging level ascii-cfg 2",
+        "logging server 10.1.100.32 7 port 32000 use-vrf management facility syslog",
+        "logging server 10.1.100.84 5 port 32003 use-vrf management facility syslog",
+        "logging source-interface mgmt0",
+        "logging origin-id hostname",
+        ""
+    ],
+    "@exportedInstanceId": "9ada0f71-a684-4de8-87db-b95c851ee930",
+    "@name": "SyslogServer__cli__1665577031307b062",
+    "@description": ""
+}

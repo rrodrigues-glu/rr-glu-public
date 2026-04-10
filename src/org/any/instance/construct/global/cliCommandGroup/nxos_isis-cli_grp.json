@@ -1,0 +1,24 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": "^isis.+",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/nxos_isis-cli.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@source": {
+        "instanceName": "nxos_isis-cli_grp"
+    },
+    "@exportedInstanceId": "6004f97c-c086-4581-be55-6367051ca2fb",
+    "@id": "6004f97c-c086-4581-be55-6367051ca2fb",
+    "@name": "nxos_isis-cli_grp",
+    "@description": ""
+}

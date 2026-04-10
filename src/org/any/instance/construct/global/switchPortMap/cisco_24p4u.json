@@ -1,0 +1,248 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/switchPortMap.jtype"
+    },
+    "platform": {
+        "onBoard": {
+            "ports": "24",
+            "layout": {
+                "1": {
+                    "description": "",
+                    "settings": {
+                        "@ref": "/org/instance/construct/global/switchportSettings/access-deptABC-vlan-assignment.json"
+                    }
+                },
+                "2": {
+                    "description": "",
+                    "settings": {
+                        "@ref": "/org/instance/construct/global/switchportSettings/access-deptABC-vlan-assignment.json"
+                    }
+                },
+                "3": {
+                    "description": "",
+                    "settings": {
+                        "@ref": "/org/instance/construct/global/switchportSettings/access-deptABC-vlan-assignment.json"
+                    }
+                },
+                "4": {
+                    "description": "",
+                    "settings": {
+                        "@ref": "/org/instance/construct/global/switchportSettings/access-deptABC-vlan-assignment.json"
+                    }
+                },
+                "5": {
+                    "description": "",
+                    "settings": {
+                        "@ref": "/org/instance/construct/global/switchportSettings/access-deptABC-vlan-assignment.json"
+                    }
+                },
+                "6": {
+                    "description": "",
+                    "settings": {
+                        "@ref": "/org/instance/construct/global/switchportSettings/access-deptABC-vlan-assignment.json"
+                    }
+                },
+                "7": {
+                    "description": "",
+                    "settings": {
+                        "@ref": "/org/instance/construct/global/switchportSettings/access-deptABC-vlan-assignment.json"
+                    }
+                },
+                "8": {
+                    "description": "",
+                    "settings": {
+                        "@ref": "/org/instance/construct/global/switchportSettings/access-deptABC-vlan-assignment.json"
+                    }
+                },
+                "9": {
+                    "description": "",
+                    "settings": {
+                        "@ref": "/org/instance/construct/global/switchportSettings/access-deptABC-vlan-assignment.json"
+                    }
+                },
+                "10": {
+                    "description": "",
+                    "settings": {
+                        "@ref": "/org/instance/construct/global/switchportSettings/access-deptABC-vlan-assignment.json"
+                    }
+                },
+                "11": {
+                    "description": "",
+                    "settings": {
+                        "@ref": "/org/instance/construct/global/switchportSettings/access-deptABC-vlan-assignment.json"
+                    }
+                },
+                "12": {
+                    "description": "",
+                    "settings": {
+                        "@ref": "/org/instance/construct/global/switchportSettings/access-deptABC-vlan-assignment.json"
+                    }
+                },
+                "13": {
+                    "description": "",
+                    "settings": {
+                        "@ref": "/org/instance/construct/global/switchportSettings/access-deptXYZ-vlan-assignment.json"
+                    }
+                },
+                "14": {
+                    "description": "",
+                    "settings": {
+                        "@ref": "/org/instance/construct/global/switchportSettings/access-deptXYZ-vlan-assignment.json"
+                    }
+                },
+                "15": {
+                    "description": "",
+                    "settings": {
+                        "@ref": "/org/instance/construct/global/switchportSettings/access-deptXYZ-vlan-assignment.json"
+                    }
+                },
+                "16": {
+                    "description": "",
+                    "settings": {
+                        "@ref": "/org/instance/construct/global/switchportSettings/access-deptXYZ-vlan-assignment.json"
+                    }
+                },
+                "17": {
+                    "description": "",
+                    "settings": {
+                        "@ref": "/org/instance/construct/global/switchportSettings/access-deptXYZ-vlan-assignment.json"
+                    }
+                },
+                "18": {
+                    "description": "",
+                    "settings": {
+                        "@ref": "/org/instance/construct/global/switchportSettings/access-deptXYZ-vlan-assignment.json"
+                    }
+                },
+                "19": {
+                    "description": "",
+                    "settings": {
+                        "@ref": "/org/instance/construct/global/switchportSettings/access-deptXYZ-vlan-assignment.json"
+                    }
+                },
+                "20": {
+                    "description": "",
+                    "settings": {
+                        "@ref": "/org/instance/construct/global/switchportSettings/access-deptXYZ-vlan-assignment.json"
+                    }
+                },
+                "21": {
+                    "description": "",
+                    "settings": {
+                        "@ref": "/org/instance/construct/global/switchportSettings/access-deptXYZ-vlan-assignment.json"
+                    }
+                },
+                "22": {
+                    "description": "",
+                    "settings": {
+                        "@ref": "/org/instance/construct/global/switchportSettings/access-deptXYZ-vlan-assignment.json"
+                    }
+                },
+                "23": {
+                    "description": "",
+                    "settings": {
+                        "@ref": "/org/instance/construct/global/switchportSettings/access-deptXYZ-vlan-assignment.json"
+                    }
+                },
+                "24": {
+                    "description": "",
+                    "settings": {
+                        "@ref": "/org/instance/construct/global/switchportSettings/access-deptXYZ-vlan-assignment.json"
+                    }
+                }
+            },
+            "templates": [
+                {
+                    "cliCommandGroups": {
+                        "@ref": [
+                            "/org/instance/construct/global/switchportCommandGroup/ios_access-interface-swCliGroup.json"
+                        ]
+                    },
+                    "ports": [
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9",
+                        "10",
+                        "11",
+                        "12",
+                        "13",
+                        "14",
+                        "15",
+                        "16",
+                        "17",
+                        "18",
+                        "19",
+                        "20",
+                        "21",
+                        "22",
+                        "23",
+                        "24"
+                    ]
+                }
+            ]
+        },
+        "uplinks": {
+            "ports": "4",
+            "layout": {
+                "1": {
+                    "description": ""
+                },
+                "2": {
+                    "description": ""
+                },
+                "3": {
+                    "description": ""
+                },
+                "4": {
+                    "description": ""
+                }
+            },
+            "templates": [
+                {
+                    "cliCommandGroups": {
+                        "@ref": [
+                            "/org/instance/construct/global/switchportCommandGroup/ios_trunk-interface-swCliGroup.json"
+                        ]
+                    },
+                    "ports": [
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                    ]
+                }
+            ]
+        },
+        "aggregated": {},
+        "module1": {
+            "ports": null
+        },
+        "module2": {
+            "ports": null
+        }
+    },
+    "namingConventions": {
+        "unmanaged": "",
+        "portNamingPolicies": {
+            "onBoard": {
+                "@ref": "/org/instance/construct/global/switchPortNamingProfile/onboardNamingProfile.json"
+            },
+            "uplinks": {
+                "@ref": "/org/instance/construct/global/switchPortNamingProfile/uplink-3850.json"
+            }
+        }
+    },
+    "@source": {
+        "instanceName": "cisco_24p4u"
+    },
+    "@exportedInstanceId": "3a0e91bf-8ddc-4f8b-9738-24b924392372",
+    "@id": "3a0e91bf-8ddc-4f8b-9738-24b924392372",
+    "@name": "cisco_24p4u",
+    "@description": ""
+}

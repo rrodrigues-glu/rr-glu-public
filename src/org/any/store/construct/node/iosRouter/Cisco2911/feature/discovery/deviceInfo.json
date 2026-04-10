@@ -1,0 +1,242 @@
+{
+    "hostname": "HE2-128001",
+    "vendor": "cisco",
+    "os": "ios",
+    "path": "/sys/jnib/features/deviceDetect/cisco/ios/",
+    "sku": "CISCO2911/K9",
+    "software": {
+        "version": "15.7(3)M8",
+        "major": "15",
+        "minor": "7",
+        "revision": "3",
+        "train": "M",
+        "build": "8",
+        "patch": "",
+        "apiVersion": "15.7(3)M8",
+        "image": "c2900-universalk9-mz.SPA.157-3.M8.bin",
+        "drive": "flash0:"
+    },
+    "hardware": {
+        "serialNumber": "FTX1607AJTQ",
+        "sku": "CISCO2911/K9",
+        "chassis": {},
+        "components": {
+            "networkModules": [
+                {
+                    "description": "WAN Interface Card - One Port Analog Modem(Version 2)",
+                    "label": "Network Module",
+                    "location": {
+                        "path": "0/0",
+                        "type": "slot"
+                    },
+                    "serialNumber": "FOC12240WYU",
+                    "sku": "WIC-1AM-V2"
+                }
+            ],
+            "powerSupplies": [
+                {
+                    "description": "C2911 AC Power Supply",
+                    "label": "Power Supply",
+                    "location": {
+                        "path": 0,
+                        "type": "psu"
+                    },
+                    "serialNumber": "DCA1547R24T",
+                    "sku": "PWR-2911-AC"
+                }
+            ]
+        },
+        "family": "ISR",
+        "series": "2900"
+    },
+    "detectedSerialNumber": "FTX1607AJTQ",
+    "uptime": "32w5d18h12m",
+    "chassis": {},
+    "type": {
+        "name": "iosRouter",
+        "base": "wanRouter"
+    },
+    "licenses": [
+        {
+            "name": "ipbase",
+            "k9": true,
+            "inUse": true,
+            "eval": false,
+            "rtu": false
+        },
+        {
+            "name": "security",
+            "k9": true,
+            "inUse": true,
+            "eval": false,
+            "rtu": false
+        },
+        {
+            "name": "uc",
+            "k9": true,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "data",
+            "k9": true,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "FoundationSuite",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "AdvUCSuite",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "ios-ips-update",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "SNASw",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "hsec",
+            "k9": true,
+            "inUse": false
+        },
+        {
+            "name": "cme-srst",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "mgmt-plug-and-play",
+            "k9": false,
+            "inUse": false
+        },
+        {
+            "name": "mgmt-lifecycle",
+            "k9": false,
+            "inUse": false
+        },
+        {
+            "name": "mgmt-assurance",
+            "k9": false,
+            "inUse": false
+        },
+        {
+            "name": "mgmt-onplus",
+            "k9": false,
+            "inUse": false
+        },
+        {
+            "name": "mgmt-compliance",
+            "k9": false,
+            "inUse": false
+        }
+    ],
+    "portsInfo": {
+        "ports": {
+            "GigabitEthernet0/0": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "f0:f7:55:97:77:e8",
+                    "phyMacAddress": "f0:f7:55:97:77:e8",
+                    "ipv4Address": "10.150.1.37/27"
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l3",
+                "configured": {
+                    "speed": "auto",
+                    "duplex": "auto",
+                    "ipv4Address": "10.150.1.37/27",
+                    "enabled": true
+                }
+            },
+            "GigabitEthernet0/1": {
+                "operational": {
+                    "status": "down",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "f0:f7:55:97:77:e9",
+                    "phyMacAddress": "f0:f7:55:97:77:e9",
+                    "ipv4Address": "216.93.213.72/27"
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l3",
+                "configured": {
+                    "speed": "auto",
+                    "duplex": "auto",
+                    "ipv4Address": "216.93.213.72/27",
+                    "enabled": true
+                }
+            },
+            "NVI0": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1514",
+                    "speed": "56 Kbit/sec",
+                    "macAddress": "",
+                    "phyMacAddress": ""
+                },
+                "description": "",
+                "phyVirt": "virtual"
+            },
+            "Tunnel104466": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "17912",
+                    "speed": "1000 Kbit/sec",
+                    "macAddress": "",
+                    "phyMacAddress": "",
+                    "ipv4Address": "10.128.1.200/24"
+                },
+                "description": "104466  - DMVPN Tunnel Interface",
+                "phyVirt": "virtual",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.128.1.200/24",
+                    "enabled": true
+                }
+            }
+        },
+        "portSummary": {
+            "switchports": {
+                "total": 0,
+                "use": 0,
+                "free": 0
+            }
+        },
+        "recordTime": {
+            "utcTime": 1737392909456,
+            "utcDateTime": "Mon, 20 Jan 2025 17:08:29 GMT"
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosSwitchAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "dns": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/dns/ios_dns.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "agents": {
+        "watchdog": {}
+    },
+    "boot": {
+        "firmware": {}
+    },
+    "state": {
+        "assessment": {}
+    },
+    "@source": {
+        "instanceName": "DNS_Assembly"
+    },
+    "@exportedInstanceId": "c7137375-89ad-48d2-bbbd-5c1b51a47dd3",
+    "@id": "c7137375-89ad-48d2-bbbd-5c1b51a47dd3",
+    "@name": "DNS_Assembly",
+    "@description": ""
+}

@@ -1,0 +1,29 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show cdp neighbors detail",
+    "rootEntry": "no",
+    "keyLineRegEx": "Device ID:([-.()\\w]+)",
+    "groupName": "cdp",
+    "discover": {
+        "neighbors": {
+            "expressions": [
+                "Device ID:(?<deviceId>[-.()\\w]+)",
+                "Interface: (?<localIntf>[\\/\\w]+),\\s+Port ID \\(outgoing port\\): (?<remoteIntf>[\\/\\w]+)",
+                "Holdtime : (?<holdTime>\\d+)",
+                "\\), Version (?<version>\\d+\\.\\d+(?:\\([.\\w]+\\))*(?:\\.\\d+)*)\\.?",
+                "VTP Management Domain Name: (?<vtpDomain>[\\-\\w]+)"
+            ]
+        }
+    },
+    "options": {},
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "NXOS_show_cdp_neigh_detail"
+    },
+    "@exportedInstanceId": "ece1ed62-3fd5-4d90-b4f3-be75e19c25eb",
+    "@id": "ece1ed62-3fd5-4d90-b4f3-be75e19c25eb",
+    "@name": "NXOS_show_cdp_neigh_detail",
+    "@description": ""
+}

@@ -1,0 +1,17 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show fabricpath isis switch-id",
+    "groupName": "ISIS_ID",
+    "discover": {},
+    "options": {},
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_show_fabricpath_switch_id"
+    },
+    "@exportedInstanceId": "8b186048-66ce-4e8c-8ef8-196124690faf",
+    "@id": "8b186048-66ce-4e8c-8ef8-196124690faf",
+    "@name": "NXOS_OSM_show_fabricpath_switch_id",
+    "@description": ""
+}

@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "88317f8d-3e54-4450-b5ab-c34879325f10",
+    "item": {},
+    "cliCommands": [
+        "banner login ^C",
+        "  ######################################################",
+        "  #                                                    #",
+        "  # UNAUTHORIZED ACCESS TO THIS DEVICE IS PROHIBITED   #",
+        "  # You must have explicit, authorized permission to   #",
+        "  # access or configure this device. Unauthorized      #",
+        "  # attempts and actions to access or use this system  #",
+        "  # may result in civil and/or criminal penalties.     #",
+        "  # All activities performed on this device are logged #",
+        "  # and monitored.    TEST TEST                        #",
+        "  #                                                    #",
+        "  ######################################################",
+        "^C"
+    ],
+    "@exportedInstanceId": "88317f8d-3e54-4450-b5ab-c34879325f10",
+    "@name": "Banner__cli__16655762950552c37",
+    "@description": ""
+}

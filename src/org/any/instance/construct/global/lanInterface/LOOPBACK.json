@@ -1,0 +1,14 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/lanInterface.jtype"
+    },
+    "description": "",
+    "location": "internal",
+    "@source": {
+        "instanceName": "LOOPBACK"
+    },
+    "@exportedInstanceId": "14cd919c-2e27-405e-b831-ca1f6c8878da",
+    "@id": "14cd919c-2e27-405e-b831-ca1f6c8878da",
+    "@name": "LOOPBACK",
+    "@description": ""
+}

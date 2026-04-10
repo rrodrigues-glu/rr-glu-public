@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_ipRoute.json"
+    },
+    "cliCommands": [
+        "ip route 10.30.158.0/23 10.30.10.89",
+        "ip route 10.253.253.56/32 10.30.10.41",
+        "ip route 10.253.253.56/32 10.30.10.65",
+        "ip route 10.253.253.56/32 10.30.10.73",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_iproute-cli"
+    },
+    "@exportedInstanceId": "f1dbe05d-2869-4cd8-ad7b-2ec74e25ffdb",
+    "@id": "f1dbe05d-2869-4cd8-ad7b-2ec74e25ffdb",
+    "@name": "nxos_iproute-cli",
+    "@description": ""
+}

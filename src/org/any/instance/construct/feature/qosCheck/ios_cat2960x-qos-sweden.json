@@ -1,0 +1,29 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/qosCheck.jtype"
+    },
+    "featureConcept": {
+        "name": "QoS Model for Cat2960X Switches (Sweden PBX Phones)",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_cat2960-qos-mls_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_cat2960-qos-acl_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_cat6500-qos-acl-sweden_cli_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_cat2960-qos-cmap_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_cat2960-qos-pmap_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "site": {},
+        "platform": "WS-C2960X.+"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_cat2960x-qos-sweden"
+    },
+    "@exportedInstanceId": "ab7213d4-86c2-42d6-97c0-4bcd2fb7b48d",
+    "@id": "ab7213d4-86c2-42d6-97c0-4bcd2fb7b48d",
+    "@name": "ios_cat2960x-qos-sweden",
+    "@description": ""
+}

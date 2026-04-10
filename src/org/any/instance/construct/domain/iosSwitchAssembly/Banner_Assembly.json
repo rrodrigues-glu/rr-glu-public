@@ -1,0 +1,25 @@
+{
+    "domains": {
+        "modules": {
+            "banner": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/banner/banner.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "boot": {
+        "firmware": {}
+    },
+    "state": {
+        "assessment": {}
+    },
+    "@exportedInstanceId": "eeaa6919-2446-422f-a6a8-4bd99d98a7e1",
+    "@id": "eeaa6919-2446-422f-a6a8-4bd99d98a7e1",
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosSwitchAssembly.jtype"
+    },
+    "@name": "Banner_Assembly",
+    "@description": ""
+}

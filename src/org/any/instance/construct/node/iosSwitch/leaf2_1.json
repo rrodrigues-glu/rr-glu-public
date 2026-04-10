@@ -1,0 +1,45 @@
+{
+    "configState": "managed",
+    "entryConnection": {
+        "ip": "10.150.1.122",
+        "credentials": {
+            "@ref": "/secret/sys/credentials/deviceUserPass/admin.json"
+        },
+        "enablePassword": null,
+        "type": "ssh",
+        "port": 22,
+        "connectionMethod": "cliConnection",
+        "terminalType": "xterm"
+    },
+    "associations": {
+        "provider": "local"
+    },
+    "hardware": {
+        "vendor": "auto",
+        "expectedSerialNumber": "auto"
+    },
+    "persona": {
+        "type": "none"
+    },
+    "provisioning": {
+        "type": "advanced"
+    },
+    "iosSwitch": {
+        "enabled": true
+    },
+    "options": {
+        "connectionEnabled": true,
+        "previewMode": false,
+        "forcedAttachedStorage": false
+    },
+    "campusSwitch": {
+        "enabled": true
+    },
+    "@exportedInstanceId": "e17370c4-3406-4d49-ba48-da7776e6ff8c",
+    "@id": "e17370c4-3406-4d49-ba48-da7776e6ff8c",
+    "@type": {
+        "ref": "/sys/type/construct/node/iosSwitch.jtype"
+    },
+    "@name": "leaf2_1",
+    "@description": ""
+}

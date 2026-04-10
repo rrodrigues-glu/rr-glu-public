@@ -1,0 +1,46 @@
+{
+    "configState": "managed",
+    "entryConnection": {
+        "ip": "10.150.1.3",
+        "credentials": {
+            "@ref": "/secret/sys/credentials/deviceUserPass/admin.json"
+        },
+        "enablePassword": null,
+        "type": "ssh",
+        "port": 22,
+        "connectionMethod": "cliConnection",
+        "terminalType": "xterm"
+    },
+    "associations": {
+        "provider": "local"
+    },
+    "persona": {
+        "type": "none",
+        "id": 0
+    },
+    "hardware": {
+        "vendor": "auto",
+        "expectedSerialNumber": "auto"
+    },
+    "provisioning": {
+        "type": "advanced"
+    },
+    "iosRouter": {
+        "enabled": true
+    },
+    "options": {
+        "connectionEnabled": true,
+        "previewMode": false,
+        "forcedAttachedStorage": false
+    },
+    "wanRouter": {
+        "enabled": true
+    },
+    "@exportedInstanceId": "ac09ba8e-ca96-471e-8a40-93a3189e0a8a",
+    "@id": "ac09ba8e-ca96-471e-8a40-93a3189e0a8a",
+    "@type": {
+        "ref": "/sys/type/construct/node/iosRouter.jtype"
+    },
+    "@name": "IR1101",
+    "@description": ""
+}

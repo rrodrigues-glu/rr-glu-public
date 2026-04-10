@@ -1,0 +1,14 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "af29e5e2-ce16-40b6-87e4-a3d7e8165002",
+    "item": {},
+    "cliCommands": [
+        "snmp-server user admin network-admin auth md5 0x2bdf92a2ca18baae529d0ae575e630b8 priv 0x2bdf92a2ca18baae529d0ae575e630b8 localizedkey",
+        ""
+    ],
+    "@exportedInstanceId": "af29e5e2-ce16-40b6-87e4-a3d7e8165002",
+    "@name": "Snmp__cli__17314350873662231",
+    "@description": ""
+}

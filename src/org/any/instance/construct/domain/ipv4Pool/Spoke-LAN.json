@@ -1,0 +1,55 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/ipv4Pool.jtype"
+    },
+    "description": "Branch LAN",
+    "type": "ipv4",
+    "summary": "172.31.255.0/24",
+    "reservations": [
+        {
+            "subnet": "172.31.255.1",
+            "device": {
+                "serialNumber": "93BYWWC2EAN"
+            }
+        },
+        {
+            "subnet": "172.31.255.2",
+            "device": {
+                "serialNumber": "9S90JNP0JIR"
+            }
+        },
+        {
+            "subnet": "172.31.255.3",
+            "device": {
+                "serialNumber": "9ZLOFSVQ20V"
+            }
+        },
+        {
+            "subnet": "172.31.255.4",
+            "device": {
+                "serialNumber": "9YM4DICUYZE"
+            }
+        }
+    ],
+    "ranges": [
+        {
+            "name": {
+                "@ref": "/org/instance/construct/global/subnetRange/dmvpn-spoke-subnetRange.json"
+            },
+            "ips": [
+                "172.31.255.1-172.31.255.254"
+            ]
+        }
+    ],
+    "allocationMode": "hostBased",
+    "options": {
+        "oversubscribingMode": false
+    },
+    "@source": {
+        "instanceName": "Spoke-LAN"
+    },
+    "@exportedInstanceId": "c40936b5-a2a9-40b2-b801-8d9a99aec5e9",
+    "@id": "c40936b5-a2a9-40b2-b801-8d9a99aec5e9",
+    "@name": "Spoke-LAN",
+    "@description": ""
+}

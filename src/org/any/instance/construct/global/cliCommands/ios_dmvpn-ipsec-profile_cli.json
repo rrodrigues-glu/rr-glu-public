@@ -1,0 +1,24 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "crypto ipsec profile DMVPN-IPSEC-PROFILE-$context.networks[*].overlayNetwork.id",
+        " set security-association lifetime seconds 43200",
+        " set security-association idle-time 300",
+        " set transform-set AES256/SHA/TRANSPORT",
+        " set ikev2-profile DMVPN-IKE-PROFILE-$context.networks[*].overlayNetwork.id",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_dmvpn-ipsec-profile_cli"
+    },
+    "@exportedInstanceId": "cd568446-84e7-45f5-bb9b-725bc1929f47",
+    "@id": "cd568446-84e7-45f5-bb9b-725bc1929f47",
+    "@name": "ios_dmvpn-ipsec-profile_cli",
+    "@description": ""
+}

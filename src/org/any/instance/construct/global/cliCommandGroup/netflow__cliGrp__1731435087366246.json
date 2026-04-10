@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@id": "1dbe538b-0415-4b85-9835-d29deadcfb2e",
+    "ignoreDelete": true,
+    "regEx": ".+",
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/NetflowRecord__cli__17314350873667225.json"
+        ]
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "1dbe538b-0415-4b85-9835-d29deadcfb2e",
+    "@name": "netflow__cliGrp__1731435087366246",
+    "@description": ""
+}

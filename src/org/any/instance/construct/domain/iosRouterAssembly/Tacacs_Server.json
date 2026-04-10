@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosRouterAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "aaa": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/aaa/ios_tacacs-server.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "agents": {
+        "watchdog": {}
+    },
+    "boot": {
+        "firmware": {}
+    },
+    "@source": {
+        "instanceName": "Tacacs_Server"
+    },
+    "@exportedInstanceId": "a584104b-36df-4b04-b9a5-88bfa4272cc0",
+    "@id": "a584104b-36df-4b04-b9a5-88bfa4272cc0",
+    "@name": "Tacacs_Server",
+    "@description": ""
+}

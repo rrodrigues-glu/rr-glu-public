@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/qosCheck.jtype"
+    },
+    "featureConcept": {
+        "name": "QoS Model for AIR5508 Shanghai China",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/aireos_qos_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/aireos_wlan-qos-3_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "platform": "AIR-(CT|WLC).+"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "aireos_qos-chn-shanghai"
+    },
+    "@exportedInstanceId": "bced17fa-bb64-4889-8dae-d1eac2f7bfed",
+    "@id": "bced17fa-bb64-4889-8dae-d1eac2f7bfed",
+    "@name": "aireos_qos-chn-shanghai",
+    "@description": ""
+}

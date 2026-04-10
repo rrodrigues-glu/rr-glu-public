@@ -1,0 +1,30 @@
+{
+    "regEx": "^default$",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/nxos_logging-LnkStatus-cli.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": [
+            ""
+        ]
+    },
+    "maskCommands": [
+        ""
+    ],
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@description": "",
+    "@source": {
+        "instanceName": "nxos_logging-lnkStatus-group"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "2685669b-23ee-4052-8f10-56e2948015bc",
+    "@id": "2685669b-23ee-4052-8f10-56e2948015bc",
+    "@name": "nxos_logging-lnkStatus-group"
+}

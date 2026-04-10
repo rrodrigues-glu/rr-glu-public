@@ -1,0 +1,49 @@
+{
+    "name": "IpAcl",
+    "vendors": {
+        "cisco": {
+            "type": [
+                "ios"
+            ],
+            "level": null
+        }
+    },
+    "showCmds": [
+        "sh run all | sec ^ip access-list"
+    ],
+    "keyCliLine": "ip access-list ?(standard\\s|extended\\s)(.+)",
+    "rootEntryFlag": false,
+    "keyLineDepth": 1,
+    "keyGroup": 2,
+    "metadata": {},
+    "mode": "advanced",
+    "boundaries": {
+        "start": null
+    },
+    "discover": {
+        "type": {
+            "expressions": [
+                "ip access-list ?(standard|extended).+"
+            ]
+        },
+        "rules": {
+            "expressions": [
+                "(?<entryId>^\\d*) (?<action>permit|deny)?(?<protocol> gre| icmp| tcp| udp| ip)(?<sourceIp> [\\d\\w\\-\\.]*)?(?<destIp> [\\d\\w\\-\\.]*)?(?<operator> \\w*)?(?<value1> [\\d\\w-\\.]*)?(?<value2> [\\d\\w-\\.]*)",
+                "(?<entryId>^\\d*) (?<action>permit|deny) ([\\d.\\w]*) ?([\\d.\\w]*)$"
+            ]
+        },
+        "remarks": {
+            "expressions": [
+                "remark (.+)"
+            ]
+        }
+    },
+    "removeSyntax": {},
+    "@exportedInstanceId": "dce53a72-85e2-4535-806a-ff90eae158f0",
+    "@id": "dce53a72-85e2-4535-806a-ff90eae158f0",
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "@name": "IOS_IpAcl-Dennis01",
+    "@description": "Displays the configuration sections that shows all IP ACLs. Note: The ^ makes the parser ONLY display the section that BEGINS with 'ip access-list'."
+}

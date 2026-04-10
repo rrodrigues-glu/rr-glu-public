@@ -1,0 +1,598 @@
+{
+    "hostname": "N7706-VDC1",
+    "vendor": "cisco",
+    "os": "nxos",
+    "path": "/sys/jnib/features/deviceDetect/cisco/nxos/",
+    "sku": "N77-C7706",
+    "software": {
+        "version": "7.3(7)D1(1)",
+        "major": "7.3",
+        "minor": "7",
+        "revision": "D1",
+        "patch": "1",
+        "build": "",
+        "train": "",
+        "image": "n7700-s2-dk9.7.3.7.D1.1.bin",
+        "kickstart": "n7700-s2-kickstart.7.3.7.D1.1.bin",
+        "drive": "bootflash:/"
+    },
+    "hardware": {
+        "serialNumber": "FXS1920Q19C",
+        "sku": "N77-C7706",
+        "chassis": {
+            "1": {
+                "sku": "N77-F348XP-23",
+                "serialNumber": "JAE19240CRS"
+            },
+            "3": {
+                "sku": "N77-SUP2E",
+                "serialNumber": "JAE191905V4",
+                "active": true
+            },
+            "4": {
+                "sku": "N77-SUP2E",
+                "serialNumber": "JAE180400QK",
+                "active": true
+            },
+            "6": {
+                "sku": "N77-F348XP-23",
+                "serialNumber": "JAE192408JP"
+            }
+        },
+        "supervisors": 2,
+        "components": {
+            "fabrics": [
+                {
+                    "description": "Fabric card module",
+                    "label": "Fabric Card",
+                    "location": {
+                        "path": "7",
+                        "type": "slot"
+                    },
+                    "serialNumber": "JAE192400JJ",
+                    "sku": "N77-C7706-FAB-2"
+                },
+                {
+                    "description": "Fabric card module",
+                    "label": "Fabric Card",
+                    "location": {
+                        "path": "8",
+                        "type": "slot"
+                    },
+                    "serialNumber": "JAE192400HY",
+                    "sku": "N77-C7706-FAB-2"
+                },
+                {
+                    "description": "Fabric card module",
+                    "label": "Fabric Card",
+                    "location": {
+                        "path": "9",
+                        "type": "slot"
+                    },
+                    "serialNumber": "JAE1924004R",
+                    "sku": "N77-C7706-FAB-2"
+                },
+                {
+                    "description": "Fabric card module",
+                    "label": "Fabric Card",
+                    "location": {
+                        "path": "10",
+                        "type": "slot"
+                    },
+                    "serialNumber": "JAE192400G0",
+                    "sku": "N77-C7706-FAB-2"
+                },
+                {
+                    "description": "Fabric card module",
+                    "label": "Fabric Card",
+                    "location": {
+                        "path": "11",
+                        "type": "slot"
+                    },
+                    "serialNumber": "JAE1924008B",
+                    "sku": "N77-C7706-FAB-2"
+                },
+                {
+                    "description": "Fabric card module",
+                    "label": "Fabric Card",
+                    "location": {
+                        "path": "12",
+                        "type": "slot"
+                    },
+                    "serialNumber": "JAE192400DJ",
+                    "sku": "N77-C7706-FAB-2"
+                }
+            ],
+            "fans": [
+                {
+                    "description": "Nexus7700 C7706 (6 Slot) Chassis Fan Module",
+                    "label": "Fan",
+                    "location": {
+                        "path": "37",
+                        "type": "slot"
+                    },
+                    "serialNumber": "DCH1914A08M",
+                    "sku": "N77-C7706-FAN"
+                },
+                {
+                    "description": "Nexus7700 C7706 (6 Slot) Chassis Fan Module",
+                    "label": "Fan",
+                    "location": {
+                        "path": "38",
+                        "type": "slot"
+                    },
+                    "serialNumber": "DCH1914A07S",
+                    "sku": "N77-C7706-FAN"
+                },
+                {
+                    "description": "Nexus7700 C7706 (6 Slot) Chassis Fan Module",
+                    "label": "Fan",
+                    "location": {
+                        "path": "39",
+                        "type": "slot"
+                    },
+                    "serialNumber": "DCH1914A0FP",
+                    "sku": "N77-C7706-FAN"
+                }
+            ],
+            "lineCards": [
+                {
+                    "description": "1/10 Gbps Ethernet Module",
+                    "label": "Line Card",
+                    "location": {
+                        "path": "1",
+                        "type": "slot"
+                    },
+                    "serialNumber": "JAE19240CRS",
+                    "sku": "N77-F348XP-23"
+                },
+                {
+                    "description": "1/10 Gbps Ethernet Module",
+                    "label": "Line Card",
+                    "location": {
+                        "path": "6",
+                        "type": "slot"
+                    },
+                    "serialNumber": "JAE192408JP",
+                    "sku": "N77-F348XP-23"
+                }
+            ],
+            "powerSupplies": [
+                {
+                    "description": "Nexus7700 C7706 (6 Slot) Chassis Power Supply",
+                    "label": "Power Supply",
+                    "location": {
+                        "path": "33",
+                        "type": "slot"
+                    },
+                    "serialNumber": "DTM191501XG",
+                    "sku": "N77-AC-3KW"
+                },
+                {
+                    "description": "Nexus7700 C7706 (6 Slot) Chassis Power Supply",
+                    "label": "Power Supply",
+                    "location": {
+                        "path": "34",
+                        "type": "slot"
+                    },
+                    "serialNumber": "DTM1915025H",
+                    "sku": "N77-AC-3KW"
+                },
+                {
+                    "description": "Nexus7700 C7706 (6 Slot) Chassis Power Supply",
+                    "label": "Power Supply",
+                    "location": {
+                        "path": "35",
+                        "type": "slot"
+                    },
+                    "serialNumber": "DTM19150207",
+                    "sku": "N77-AC-3KW"
+                },
+                {
+                    "description": "Nexus7700 C7706 (6 Slot) Chassis Power Supply",
+                    "label": "Power Supply",
+                    "location": {
+                        "path": "36",
+                        "type": "slot"
+                    },
+                    "serialNumber": "DTM191501UG",
+                    "sku": "N77-AC-3KW"
+                }
+            ],
+            "supervisors": [
+                {
+                    "description": "Supervisor Module-2",
+                    "label": "Supervisor Engine",
+                    "location": {
+                        "path": "3",
+                        "type": "slot"
+                    },
+                    "serialNumber": "JAE191905V4",
+                    "sku": "N77-SUP2E"
+                },
+                {
+                    "description": "Supervisor Module-2",
+                    "label": "Supervisor Engine",
+                    "location": {
+                        "path": "4",
+                        "type": "slot"
+                    },
+                    "serialNumber": "JAE180400QK",
+                    "sku": "N77-SUP2E"
+                }
+            ]
+        }
+    },
+    "features": {
+        "bfd": {
+            "enabled": false,
+            "instance": 1
+        },
+        "bfd_app": {
+            "enabled": false,
+            "instance": 1
+        },
+        "bgp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "bulkstat": {
+            "enabled": false,
+            "instance": 1
+        },
+        "cable-management": {
+            "enabled": false,
+            "instance": 1
+        },
+        "cts": {
+            "enabled": false,
+            "instance": 1
+        },
+        "dhcp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "dot1x": {
+            "enabled": false,
+            "instance": 1
+        },
+        "eigrp": {
+            "enabled": false,
+            "instance": 16
+        },
+        "elo": {
+            "enabled": false,
+            "instance": 1
+        },
+        "eth_port_sec": {
+            "enabled": false,
+            "instance": 1
+        },
+        "evb": {
+            "enabled": false,
+            "instance": 1
+        },
+        "evc": {
+            "enabled": false,
+            "instance": 1
+        },
+        "evmed": {
+            "enabled": false,
+            "instance": 1
+        },
+        "fabric-access": {
+            "enabled": false,
+            "instance": 1
+        },
+        "fabric_mcast": {
+            "enabled": false,
+            "instance": 1
+        },
+        "glbp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "hmm": {
+            "enabled": false,
+            "instance": 1
+        },
+        "hsrp_engine": {
+            "enabled": false,
+            "instance": 1
+        },
+        "imp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "interface-vlan": {
+            "enabled": false,
+            "instance": 1
+        },
+        "ipp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "isis": {
+            "enabled": false,
+            "instance": 16
+        },
+        "itd": {
+            "enabled": false,
+            "instance": 1
+        },
+        "l2vpn": {
+            "enabled": false,
+            "instance": 1
+        },
+        "l3vpn": {
+            "enabled": false,
+            "instance": 1
+        },
+        "lacp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "ldap": {
+            "enabled": false,
+            "instance": 1
+        },
+        "ldp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "lisp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "lldp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "mpls_te": {
+            "enabled": false,
+            "instance": 1
+        },
+        "msdp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "msrp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "mvpn": {
+            "enabled": false,
+            "instance": 1
+        },
+        "mvrp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "netflow": {
+            "enabled": false,
+            "instance": 1
+        },
+        "ngoam": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nve": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxapi": {
+            "enabled": false,
+            "instance": 1
+        },
+        "onep": {
+            "enabled": false,
+            "instance": 1
+        },
+        "ospf": {
+            "enabled": false,
+            "instance": 16
+        },
+        "ospfv3": {
+            "enabled": false,
+            "instance": 16
+        },
+        "otv": {
+            "enabled": false,
+            "instance": 1
+        },
+        "pbr": {
+            "enabled": false,
+            "instance": 1
+        },
+        "pim": {
+            "enabled": false,
+            "instance": 1
+        },
+        "pim6": {
+            "enabled": false,
+            "instance": 1
+        },
+        "poap": {
+            "enabled": false,
+            "instance": 1
+        },
+        "pong": {
+            "enabled": false,
+            "instance": 1
+        },
+        "private-vlan": {
+            "enabled": false,
+            "instance": 1
+        },
+        "privilege": {
+            "enabled": false,
+            "instance": 1
+        },
+        "ptp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "rip": {
+            "enabled": false,
+            "instance": 4
+        },
+        "rise": {
+            "enabled": false,
+            "instance": 1
+        },
+        "scheduler": {
+            "enabled": false,
+            "instance": 1
+        },
+        "scpServer": {
+            "enabled": false,
+            "instance": 1
+        },
+        "sftpServer": {
+            "enabled": false,
+            "instance": 1
+        },
+        "sla_responder": {
+            "enabled": false,
+            "instance": 1
+        },
+        "sla_sender": {
+            "enabled": false,
+            "instance": 1
+        },
+        "smart-channel": {
+            "enabled": false,
+            "instance": 1
+        },
+        "sshServer": {
+            "enabled": true,
+            "instance": 1
+        },
+        "tacacs": {
+            "enabled": false,
+            "instance": 1
+        },
+        "telnetServer": {
+            "enabled": false,
+            "instance": 1
+        },
+        "tunnel": {
+            "enabled": false,
+            "instance": 1
+        },
+        "udld": {
+            "enabled": false,
+            "instance": 1
+        },
+        "vmtracker": {
+            "enabled": false,
+            "instance": 1
+        },
+        "vni": {
+            "enabled": false,
+            "instance": 1
+        },
+        "vnseg_vlan": {
+            "enabled": false,
+            "instance": 1
+        },
+        "vpc": {
+            "enabled": false,
+            "instance": 1
+        },
+        "vrrp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "vrrpv3": {
+            "enabled": false,
+            "instance": 1
+        },
+        "vtp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "wccp": {
+            "enabled": false,
+            "instance": 1
+        }
+    },
+    "detectedSerialNumber": "FXS1920Q19C",
+    "uptime": "80d3h20m3s",
+    "chassis": {
+        "1": {
+            "sku": "N77-F348XP-23",
+            "serialNumber": "JAE19240CRS"
+        },
+        "3": {
+            "sku": "N77-SUP2E",
+            "serialNumber": "JAE191905V4",
+            "active": true
+        },
+        "4": {
+            "sku": "N77-SUP2E",
+            "serialNumber": "JAE180400QK",
+            "active": true
+        },
+        "6": {
+            "sku": "N77-F348XP-23",
+            "serialNumber": "JAE192408JP"
+        }
+    },
+    "type": {
+        "name": "nxosSwitch",
+        "base": "dcSwitch"
+    },
+    "licenses": [
+        {
+            "name": "TRANSPORT_SERVICES_PKG",
+            "eval": false,
+            "rtu": false,
+            "inUse": true
+        },
+        {
+            "name": "LAN_ENTERPRISE_SERVICES_PKG",
+            "eval": false,
+            "rtu": false,
+            "inUse": true
+        },
+        {
+            "name": "VDC_LICENSES",
+            "eval": false,
+            "rtu": false,
+            "inUse": true
+        }
+    ],
+    "portsInfo": {
+        "ports": {
+            "mgmt0": {
+                "operational": {
+                    "status": "up",
+                    "macAddress": "b0:7d:47:da:58:87",
+                    "ipv4Address": "10.150.1.98/27",
+                    "speed": "1000 Mb/s",
+                    "mtu": "1500 bytes",
+                    "duplex": "full-duplex"
+                },
+                "configured": {
+                    "enabled": true,
+                    "ipv4Address": "10.150.1.98/27",
+                    "vrf": "management"
+                },
+                "description": "test test test",
+                "type": "l3"
+            }
+        },
+        "portSummary": {
+            "switchports": {
+                "total": 0,
+                "use": 0,
+                "free": 0
+            }
+        },
+        "recordTime": {
+            "utcTime": 1737392840789,
+            "utcDateTime": "Mon, 20 Jan 2025 17:07:20 GMT"
+        }
+    }
+}

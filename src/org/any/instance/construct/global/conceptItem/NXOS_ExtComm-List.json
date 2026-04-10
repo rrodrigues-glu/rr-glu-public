@@ -1,0 +1,32 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "name": "extcommunity-list",
+    "showCmds": [
+        "sh run | sec \"ip extcommunity-list\""
+    ],
+    "mode": "basic",
+    "keyCliLine": "",
+    "rootEntryFlag": false,
+    "boundaries": {
+        "start": null
+    },
+    "discover": {},
+    "removeSyntax": {},
+    "vendors": {
+        "cisco": {
+            "type": [
+                "nxos"
+            ],
+            "level": null
+        }
+    },
+    "@source": {
+        "instanceName": "NXOS_ExtComm-List"
+    },
+    "@exportedInstanceId": "4ff15c35-aed4-4fd1-a33b-2f97af30fc1d",
+    "@id": "4ff15c35-aed4-4fd1-a33b-2f97af30fc1d",
+    "@name": "NXOS_ExtComm-List",
+    "@description": ""
+}

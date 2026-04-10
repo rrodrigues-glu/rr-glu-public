@@ -1,0 +1,23 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "crypto ikev2 proposal DMVPN-IKE-PROPOSAL-$context.networks[*].overlayNetwork.id",
+        " encryption aes-cbc-256",
+        " integrity sha512",
+        " group 2",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_dmvpn-ikev2-proposal_cli"
+    },
+    "@exportedInstanceId": "65ae3b33-ebed-4143-88be-9654c9cc0056",
+    "@id": "65ae3b33-ebed-4143-88be-9654c9cc0056",
+    "@name": "ios_dmvpn-ikev2-proposal_cli",
+    "@description": ""
+}

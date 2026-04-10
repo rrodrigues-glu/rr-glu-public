@@ -1,0 +1,54 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/dmvpn.jtype"
+    },
+    "featureConcept": {
+        "name": "ios_dmvpn-hub-concept",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_dmvpn-ikev2-keyring_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_dmvpn-ikev2-proposal_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_dmvpn-ikev2-policy_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_dmvpn-ikev2-profile_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_dmvpn-ipsec-security_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_dmvpn-ipsec-proposal_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_dmvpn-ipsec-profile_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_dmvpn-intf-hub_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_dmvpn-plist-hub-routing_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_dmvpn-eigrp-hub_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "networks": [
+            {
+                "overlayNetwork": {
+                    "@ref": "/org/instance/construct/global/overlayNetwork/DMVPN-200.json"
+                },
+                "overlayIntf": {
+                    "@ref": "/org/instance/construct/global/lanInterface/OVRL2.json"
+                },
+                "underlyingIntf": {
+                    "wanIntf": {
+                        "@ref": "/org/instance/construct/global/wanInterface/ISP1.json"
+                    },
+                    "vrf": {
+                        "@ref": "/org/instance/construct/global/vrf/inet-public.json"
+                    }
+                },
+                "routing": {
+                    "delay": {
+                        "@ref": "/org/instance/construct/global/routingDelay/primary.json"
+                    }
+                }
+            }
+        ]
+    },
+    "@source": {
+        "instanceName": "DMVPN-200-Hub"
+    },
+    "@exportedInstanceId": "3fb072fe-2ae6-4bda-a0eb-0b3a32d84b56",
+    "@id": "3fb072fe-2ae6-4bda-a0eb-0b3a32d84b56",
+    "@name": "DMVPN-200-Hub",
+    "@description": ""
+}

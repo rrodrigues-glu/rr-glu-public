@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/qosCheck.jtype"
+    },
+    "featureConcept": {
+        "name": "QoS Model for AIR5508 Prague Czech Republic",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/aireos_qos_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/aireos_wlan-qos-3_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "platform": "AIR-(CT|WLC).+"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "aireos_qos-cze-prague"
+    },
+    "@exportedInstanceId": "9ea31973-4895-4b21-b583-081431eba2f5",
+    "@id": "9ea31973-4895-4b21-b583-081431eba2f5",
+    "@name": "aireos_qos-cze-prague",
+    "@description": ""
+}

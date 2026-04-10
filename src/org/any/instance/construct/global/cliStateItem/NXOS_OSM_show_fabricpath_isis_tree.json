@@ -1,0 +1,17 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show fabricpath isis tree",
+    "groupName": "ISIS_TREE",
+    "discover": {},
+    "options": {},
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_show_fabricpath_isis_tree"
+    },
+    "@exportedInstanceId": "5cc41360-a2fc-4a50-8d65-82bdbd793f8d",
+    "@id": "5cc41360-a2fc-4a50-8d65-82bdbd793f8d",
+    "@name": "NXOS_OSM_show_fabricpath_isis_tree",
+    "@description": ""
+}

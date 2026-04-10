@@ -1,0 +1,14 @@
+{
+    "cmd": "copy run start",
+    "groupName": "copy",
+    "discover": {},
+    "options": {},
+    "rootEntry": "yes",
+    "@exportedInstanceId": "82d97f41-7855-483b-848f-cc4a7b25fdd3",
+    "@id": "82d97f41-7855-483b-848f-cc4a7b25fdd3",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "@name": "NXOS_OSM_save_config_01",
+    "@description": ""
+}

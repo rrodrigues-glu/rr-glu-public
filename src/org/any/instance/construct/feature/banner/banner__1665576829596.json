@@ -1,0 +1,24 @@
+{
+    "featureConcept": {
+        "name": "Banner Feature",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/banner__cliGrp__Common.json",
+                "/org/instance/construct/global/cliCommandGroup/banner__cliGrp__1665576829596a18.json",
+                "/org/instance/construct/global/cliCommandGroup/banner__cliGrp__1665576829596a18-Third.json"
+            ]
+        }
+    },
+    "form": {
+        "banner": {
+            "comment": null
+        }
+    },
+    "@exportedInstanceId": "a7c36e73-0bce-4b28-b492-fef37887be10",
+    "@id": "a7c36e73-0bce-4b28-b492-fef37887be10",
+    "@type": {
+        "ref": "/sys/type/construct/feature/banner.jtype"
+    },
+    "@name": "banner__1665576829596",
+    "@description": ""
+}

@@ -1,0 +1,18 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "7b543828-a6d7-4d96-ba31-458f29953b39",
+    "item": {},
+    "cliCommands": [
+        "logging count",
+        "logging buffered 128000",
+        "logging monitor informational",
+        "logging trap debugging",
+        "logging source-interface GigabitEthernet0/0 vrf Mgmt-vrf",
+        "logging host 10.1.100.106 transport udp port 32066"
+    ],
+    "@exportedInstanceId": "7b543828-a6d7-4d96-ba31-458f29953b39",
+    "@name": "SyslogServer__cli__16655768295968ba9",
+    "@description": ""
+}

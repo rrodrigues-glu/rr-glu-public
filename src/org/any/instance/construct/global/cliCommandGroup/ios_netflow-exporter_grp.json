@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": ".+",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_netflow-exporter_cli.json"
+        ]
+    },
+    "maskCommands": [],
+    "advanced": {
+        "renderingConditions": []
+    },
+    "@source": {
+        "instanceName": "ios_netflow-exporter_grp"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "304eae6b-72c7-4922-96b0-b8173e1fedd9",
+    "@id": "304eae6b-72c7-4922-96b0-b8173e1fedd9",
+    "@name": "ios_netflow-exporter_grp",
+    "@description": ""
+}

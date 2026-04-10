@@ -1,0 +1,23 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/snmp.jtype"
+    },
+    "@id": "d6210e94-e734-450a-a143-aa81c9fbb6ec",
+    "featureConcept": {
+        "name": "Snmp Feature",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/snmp__cliGrp__1665576829596efd.json"
+            ]
+        }
+    },
+    "form": {
+        "snmp": {
+            "location": "",
+            "contact": ""
+        }
+    },
+    "@exportedInstanceId": "d6210e94-e734-450a-a143-aa81c9fbb6ec",
+    "@name": "snmp__1665576829596",
+    "@description": ""
+}

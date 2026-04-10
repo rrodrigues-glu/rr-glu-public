@@ -1,0 +1,19 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_hostname_cli"
+    },
+    "@exportedInstanceId": "ee2ef5a1-f262-4cf6-8a22-ad8422fff769",
+    "@id": "ee2ef5a1-f262-4cf6-8a22-ad8422fff769",
+    "@name": "ios_hostname_cli",
+    "@description": ""
+}

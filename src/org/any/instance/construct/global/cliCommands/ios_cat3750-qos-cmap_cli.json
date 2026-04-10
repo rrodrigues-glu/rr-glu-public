@@ -1,0 +1,24 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "class-map match-all AutoQoS-VoIP-RTP-Trust",
+        " match ip dscp ef",
+        "class-map match-all AutoQoS-VoIP-Control-Trust",
+        " match ip dscp cs3 af31"
+    ],
+    "advanced": {
+        "filter": "platform",
+        "platform": "C3750"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_cat3750-qos-cmap_cli"
+    },
+    "@exportedInstanceId": "f6d88d6e-44b1-4ee9-bdcd-aa0a2c52849d",
+    "@id": "f6d88d6e-44b1-4ee9-bdcd-aa0a2c52849d",
+    "@name": "ios_cat3750-qos-cmap_cli",
+    "@description": ""
+}

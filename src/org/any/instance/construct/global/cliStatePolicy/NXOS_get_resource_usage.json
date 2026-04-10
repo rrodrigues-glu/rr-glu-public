@@ -1,0 +1,32 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStatePolicy.jtype"
+    },
+    "list": [
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/IOS_show_proc_cpu.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/NXOS_show_proc_memory.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        }
+    ],
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "NXOS_get_resource_usage"
+    },
+    "privilegeMode": false,
+    "@exportedInstanceId": "79ec46a1-446f-4908-8ef5-7f4b917d9116",
+    "@id": "79ec46a1-446f-4908-8ef5-7f4b917d9116",
+    "@name": "NXOS_get_resource_usage",
+    "@description": ""
+}

@@ -1,0 +1,21 @@
+{
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Banner-Common.json"
+    },
+    "cliCommands": [
+        "banner login ^C",
+        "Test1234",
+        "3rd Concept Item",
+        "^C"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "1c833d6f-1154-4330-8062-91fcd62b33b7",
+    "@id": "1c833d6f-1154-4330-8062-91fcd62b33b7",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "Banner__cli__1665576829596a3f2-Third",
+    "@description": ""
+}

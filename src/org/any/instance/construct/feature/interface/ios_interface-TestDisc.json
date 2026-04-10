@@ -1,0 +1,20 @@
+{
+    "featureConcept": {
+        "name": "Int",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_intf-mgmt_grp-TestDisc.json"
+            ]
+        }
+    },
+    "form": {
+        "intf": {}
+    },
+    "@exportedInstanceId": "15b7b7e0-37b6-44a1-b83f-f363f0b6951a",
+    "@id": "15b7b7e0-37b6-44a1-b83f-f363f0b6951a",
+    "@type": {
+        "ref": "/sys/type/construct/feature/interface.jtype"
+    },
+    "@name": "ios_interface-TestDisc",
+    "@description": ""
+}

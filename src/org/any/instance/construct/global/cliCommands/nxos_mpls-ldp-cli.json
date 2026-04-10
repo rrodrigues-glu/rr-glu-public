@@ -1,0 +1,46 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Mpls.json"
+    },
+    "cliCommands": [
+        "no mpls ip propagate-ttl",
+        "mpls traffic-eng configuration",
+        " mpls ip",
+        " mpls ip",
+        " mpls ip",
+        "mpls ldp configuration",
+        " backoff 15 120",
+        " graceful-restart timers forwarding-holding 600",
+        " graceful-restart timers max-recovery 120",
+        " graceful-restart timers neighbor-liveness 120",
+        " holdtime 180",
+        " discovery hello interval 5",
+        " discovery hello holdtime 15",
+        " discovery targeted-hello interval 10",
+        " discovery targeted-hello holdtime 90",
+        " discovery targeted-hello accept",
+        " router-id Lo0 force",
+        " session protection duration 86400",
+        " neighbor 10.255.30.2 targeted",
+        " neighbor 10.255.30.3 targeted",
+        " neighbor 10.255.30.4 targeted",
+        " neighbor 10.255.30.7 targeted",
+        " neighbor 10.255.30.9 targeted",
+        " password required for ldp-md5-key-prefix",
+        " password option 10 for ldp-md5-key-prefix key-chain LDP-MD5-DC03-CORE",
+        " label allocate global host-routes"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_mpls-ldp-cli"
+    },
+    "@exportedInstanceId": "589db06e-cfb5-49df-937f-1b076cd79b74",
+    "@id": "589db06e-cfb5-49df-937f-1b076cd79b74",
+    "@name": "nxos_mpls-ldp-cli",
+    "@description": ""
+}

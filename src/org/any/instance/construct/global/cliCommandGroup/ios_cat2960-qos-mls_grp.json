@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": ".+",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_cat2960-qos-mls_cli.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_cat2960-qos-mls_grp"
+    },
+    "@exportedInstanceId": "018942ee-cf49-4bb1-adc6-1e316f0388cf",
+    "@id": "018942ee-cf49-4bb1-adc6-1e316f0388cf",
+    "@name": "ios_cat2960-qos-mls_grp",
+    "@description": ""
+}

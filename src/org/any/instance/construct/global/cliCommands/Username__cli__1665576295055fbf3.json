@@ -1,0 +1,13 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "98d95fa8-fd74-4f90-bcd9-c399a5232e47",
+    "item": {},
+    "cliCommands": [
+        "username admin privilege 15 secret 9 $9$WRiiAn/KbgWXtk$F.o7.UO9gqJ57kBvQ2YV8bCUuYjap5eVB7RC99qrrcM"
+    ],
+    "@exportedInstanceId": "98d95fa8-fd74-4f90-bcd9-c399a5232e47",
+    "@name": "Username__cli__1665576295055fbf3",
+    "@description": ""
+}

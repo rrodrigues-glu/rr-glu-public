@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "ip access-list extended Local-telephony-ACL",
+        " permit udp host 10.103.72.212 any",
+        " permit udp 10.103.72.230 0.0.0.1 any",
+        " permit udp 10.103.72.232 0.0.0.7 any",
+        " permit udp 10.103.72.240 0.0.0.15 any",
+        "!"
+    ],
+    "advanced": {
+        "filter": "platform",
+        "platform": "C6500|C2960X"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_cat6500-qos-acl-luxembourg_cli"
+    },
+    "@exportedInstanceId": "91370491-b403-442a-b5e1-e0eaff02ba30",
+    "@id": "91370491-b403-442a-b5e1-e0eaff02ba30",
+    "@name": "ios_cat6500-qos-acl-luxembourg_cli",
+    "@description": ""
+}

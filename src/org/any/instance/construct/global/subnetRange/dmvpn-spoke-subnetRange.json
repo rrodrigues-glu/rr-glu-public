@@ -1,0 +1,13 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/subnetRange.jtype"
+    },
+    "description": "",
+    "@source": {
+        "instanceName": "dmvpn-spoke-subnetRange"
+    },
+    "@exportedInstanceId": "f6ba5b60-69c2-4086-b1f7-41b2dab51419",
+    "@id": "f6ba5b60-69c2-4086-b1f7-41b2dab51419",
+    "@name": "dmvpn-spoke-subnetRange",
+    "@description": ""
+}

@@ -1,0 +1,32 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/switchportCommandGroup.jtype"
+    },
+    "regEx": ".+",
+    "linkedFeature": {
+        "path": "/sys/type/construct/feature/switching.jtype"
+    },
+    "associatedFeatureType": "featurePath",
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_access-interface_cli.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": [
+            ""
+        ]
+    },
+    "maskCommands": [
+        "^interface",
+        "^switchport"
+    ],
+    "@source": {
+        "instanceName": "ios_access-interface-swCliGroup"
+    },
+    "ignoreDelete": true,
+    "@exportedInstanceId": "2a265612-4283-4914-b9ef-f117f793e197",
+    "@id": "2a265612-4283-4914-b9ef-f117f793e197",
+    "@name": "ios_access-interface-swCliGroup",
+    "@description": ""
+}

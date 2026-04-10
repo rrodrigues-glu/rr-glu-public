@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "no ip http server",
+        "no ip http secure-server"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_http_cli"
+    },
+    "@exportedInstanceId": "5e31e036-9e37-4b1f-96aa-27ed93f119cd",
+    "@id": "5e31e036-9e37-4b1f-96aa-27ed93f119cd",
+    "@name": "ios_http_cli",
+    "@description": ""
+}

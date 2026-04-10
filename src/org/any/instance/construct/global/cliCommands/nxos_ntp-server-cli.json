@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "clock timezone EST -5 0",
+        "clock summer-time EDT 1 Sunday March 02:00 1 Sunday November 02:00 60",
+        "ntp distribute",
+        "ntp server $context.ntp.server[*].ip use-vrf management",
+        "ntp peer $context.ntp.peer[*].ip use-vrf management",
+        "ntp source-interface mgmt0",
+        "ntp logging",
+        "ntp commit "
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_ntp-server-cli"
+    },
+    "@exportedInstanceId": "2b540338-5cbe-468e-8e15-e84ff1719a59",
+    "@id": "2b540338-5cbe-468e-8e15-e84ff1719a59",
+    "@name": "nxos_ntp-server-cli",
+    "@description": ""
+}

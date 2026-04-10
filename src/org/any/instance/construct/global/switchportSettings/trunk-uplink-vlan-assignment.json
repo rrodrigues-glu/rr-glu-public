@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/switchportSettings.jtype"
+    },
+    "dot1q": {
+        "includedVlansRange": "100,101,200,201",
+        "nativeVlan": 1
+    },
+    "spanningTree": {
+        "vlanId": "1",
+        "pathCost": 32768
+    },
+    "@source": {
+        "instanceName": "trunk-uplink-vlan-assignment"
+    },
+    "@exportedInstanceId": "ee712f68-1d69-4575-8be0-5f58e1e6393c",
+    "@id": "ee712f68-1d69-4575-8be0-5f58e1e6393c",
+    "@name": "trunk-uplink-vlan-assignment",
+    "@description": ""
+}

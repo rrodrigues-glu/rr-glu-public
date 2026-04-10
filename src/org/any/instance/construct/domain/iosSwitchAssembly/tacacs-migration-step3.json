@@ -1,0 +1,32 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosSwitchAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "aaa": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/aaa/tacacs-step3.json"
+                }
+            }
+        }
+    },
+    "interfaces": {
+        "portMap": {
+            "@ref": "/org/instance/construct/global/portMap/nyu-switch.json"
+        }
+    },
+    "agents": {
+        "watchdog": {}
+    },
+    "state": {
+        "assessment": {}
+    },
+    "@source": {
+        "instanceName": "tacacs-migration-step3"
+    },
+    "@exportedInstanceId": "66852a5c-9646-49a5-9d1f-e6d9a3e11a88",
+    "@id": "66852a5c-9646-49a5-9d1f-e6d9a3e11a88",
+    "@name": "tacacs-migration-step3",
+    "@description": ""
+}

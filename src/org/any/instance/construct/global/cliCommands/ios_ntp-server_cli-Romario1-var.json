@@ -1,0 +1,18 @@
+{
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_NtpAgent-Romario.json"
+    },
+    "cliCommands": [
+        "{{test}}"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "7f9b3f7f-89fa-4e48-9588-6c4c7858b042",
+    "@id": "7f9b3f7f-89fa-4e48-9588-6c4c7858b042",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "ios_ntp-server_cli-Romario1-var",
+    "@description": ""
+}

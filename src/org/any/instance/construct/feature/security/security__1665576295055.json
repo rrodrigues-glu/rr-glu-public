@@ -1,0 +1,18 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/security.jtype"
+    },
+    "@id": "50a6b1d2-49e5-43c0-85d2-e547abf7a6f3",
+    "featureConcept": {
+        "name": "Security Feature",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/security__cliGrp__1665576295055c80.json",
+                "/org/instance/construct/global/cliCommandGroup/security__cliGrp__16655762950559b0.json"
+            ]
+        }
+    },
+    "@exportedInstanceId": "50a6b1d2-49e5-43c0-85d2-e547abf7a6f3",
+    "@name": "security__1665576295055",
+    "@description": ""
+}

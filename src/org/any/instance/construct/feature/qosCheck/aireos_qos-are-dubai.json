@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/qosCheck.jtype"
+    },
+    "featureConcept": {
+        "name": "QoS Model for AIR5520 Dubai United Arab Emirates",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/aireos_qos_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/aireos_wlan-qos-4_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "platform": "AIR-(CT|WLC).+"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "aireos_qos-are-dubai"
+    },
+    "@exportedInstanceId": "bd36d519-a5e8-42b6-a281-5488b1821d74",
+    "@id": "bd36d519-a5e8-42b6-a281-5488b1821d74",
+    "@name": "aireos_qos-are-dubai",
+    "@description": ""
+}

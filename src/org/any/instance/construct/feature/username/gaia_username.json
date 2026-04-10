@@ -1,0 +1,20 @@
+{
+    "featureConcept": {
+        "name": "UserName Feature",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/Gaia_username__cliGrp__.json"
+            ]
+        }
+    },
+    "form": {
+        "user": []
+    },
+    "@exportedInstanceId": "d5229cb8-3b75-4ed3-8baf-876af4dd0b7a",
+    "@id": "d5229cb8-3b75-4ed3-8baf-876af4dd0b7a",
+    "@type": {
+        "ref": "/sys/type/construct/feature/username.jtype"
+    },
+    "@name": "gaia_username",
+    "@description": ""
+}

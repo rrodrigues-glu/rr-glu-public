@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/aireosWirelessControllerAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "qos": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/qosCheck/aireos_qos-nzl-auckland.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "state": {
+        "assessment": {}
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "qos-auckland"
+    },
+    "@exportedInstanceId": "3db368fd-a430-4f50-b26a-1301eae7d686",
+    "@id": "3db368fd-a430-4f50-b26a-1301eae7d686",
+    "@name": "qos-auckland",
+    "@description": ""
+}

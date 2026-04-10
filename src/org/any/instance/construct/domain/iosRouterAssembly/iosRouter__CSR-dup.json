@@ -1,0 +1,22 @@
+{
+    "domains": {
+        "modules": {
+            "interface": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/interface/ios_interface-Copy-1.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "state": {
+        "assessment": {}
+    },
+    "@exportedInstanceId": "a7bfbad7-d6c2-4e77-9d27-ed81c4f42eac",
+    "@id": "a7bfbad7-d6c2-4e77-9d27-ed81c4f42eac",
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosRouterAssembly.jtype"
+    },
+    "@name": "iosRouter__CSR-dup",
+    "@description": ""
+}

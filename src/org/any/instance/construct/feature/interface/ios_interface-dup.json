@@ -1,0 +1,20 @@
+{
+    "featureConcept": {
+        "name": " ",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_intf-wan_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "intf": {}
+    },
+    "@exportedInstanceId": "ce5387c5-d33f-43dd-9c41-4910f2a05dcd",
+    "@id": "ce5387c5-d33f-43dd-9c41-4910f2a05dcd",
+    "@type": {
+        "ref": "/sys/type/construct/feature/interface.jtype"
+    },
+    "@name": "ios_interface-dup",
+    "@description": ""
+}

@@ -1,0 +1,53 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/syslog.jtype"
+    },
+    "featureConcept": {
+        "name": "Cisco IOS/IOSXE Syslog (Advanced)",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_syslog-server_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "syslog": {
+            "level": "debugging",
+            "srcInt": {
+                "@ref": "/org/instance/construct/global/lanInterface/MGNT1.json"
+            },
+            "bufferSize": 128000,
+            "mode": "advanced",
+            "server": [
+                {
+                    "ip": "10.1.55.55",
+                    "protocol": "udp",
+                    "port": 514,
+                    "level": "informational",
+                    "sessionId": "ipv4"
+                },
+                {
+                    "ip": "10.2.55.55",
+                    "protocol": "udp",
+                    "port": 514,
+                    "level": "notifications",
+                    "sessionId": "ipv4"
+                },
+                {
+                    "ip": "10.3.55.55",
+                    "protocol": "udp",
+                    "port": 514,
+                    "level": "errors",
+                    "sessionId": "ipv4"
+                }
+            ]
+        }
+    },
+    "@source": {
+        "instanceName": "ios_syslog-adv"
+    },
+    "@exportedInstanceId": "6ab8ba60-2cb1-4e83-803b-0360bd611197",
+    "@id": "6ab8ba60-2cb1-4e83-803b-0360bd611197",
+    "@name": "ios_syslog-adv",
+    "@description": ""
+}

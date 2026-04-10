@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "aaa group server tacacs+ $context.aaa[*].tacacs[*].name",
+        "  server $context.aaa[*].tacacs[*].ip"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_aaa-group_cli"
+    },
+    "@exportedInstanceId": "91a7fa52-de6e-4348-b29d-47daea33e68e",
+    "@id": "91a7fa52-de6e-4348-b29d-47daea33e68e",
+    "@name": "nxos_aaa-group_cli",
+    "@description": ""
+}

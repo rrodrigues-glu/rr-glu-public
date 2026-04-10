@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show interface status | inc CANS",
+    "groupName": "CANS",
+    "discover": {
+        "interface": {
+            "expressions": [
+                "(?<interface>^[\\w\\/]+)\\s+(?<description>.+)\\s+(?<status>CANS)\\s+(?<vlan>[\\w-]+)\\s+(?<duplex>[\\w-]+)\\s+(?<speed>[\\w-]+)\\s+(?<type>[\\w-]+)"
+            ],
+            "localKey": "interface",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {
+        "generateLocalKey": false
+    },
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_show_int_status_CANS"
+    },
+    "@exportedInstanceId": "5007f6d4-f9c3-455a-83e5-d7b50ba2facb",
+    "@id": "5007f6d4-f9c3-455a-83e5-d7b50ba2facb",
+    "@name": "NXOS_OSM_show_int_status_CANS",
+    "@description": ""
+}

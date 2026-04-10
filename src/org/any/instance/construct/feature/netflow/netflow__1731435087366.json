@@ -1,0 +1,36 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/netflow.jtype"
+    },
+    "@id": "a6614155-3ddd-4600-825a-a5cd33769959",
+    "featureConcept": {
+        "name": "Netflow Feature",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/netflow__cliGrp__1731435087366094.json",
+                "/org/instance/construct/global/cliCommandGroup/netflow__cliGrp__1731435087366f35.json",
+                "/org/instance/construct/global/cliCommandGroup/netflow__cliGrp__1731435087366246.json",
+                "/org/instance/construct/global/cliCommandGroup/netflow__cliGrp__17314350873668a5.json"
+            ]
+        }
+    },
+    "form": {
+        "flow": {
+            "record": {
+                "name": "",
+                "description": ""
+            },
+            "exporter": [],
+            "monitor": {
+                "name": "",
+                "description": "",
+                "inactive": null,
+                "active": null,
+                "entries": null
+            }
+        }
+    },
+    "@exportedInstanceId": "a6614155-3ddd-4600-825a-a5cd33769959",
+    "@name": "netflow__1731435087366",
+    "@description": ""
+}

@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@id": "f09c893a-eb86-4b2b-b6ca-30088fa8c031",
+    "ignoreDelete": true,
+    "regEx": "AutoQos-4.0-Output-Policy|pmap-qos-LAN-QUEUING-out|pmap-qos-LAN-MARKING-in|AutoQos-4.0-Trust-Cos-Input-Policy|system-cpp-policy|pmap-qos_mark-in|port_child_policy",
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/PolicyMap__cli__1665576829596c0cf.json"
+        ]
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "f09c893a-eb86-4b2b-b6ca-30088fa8c031",
+    "@name": "qos__cliGrp__16655768295965c5",
+    "@description": ""
+}

@@ -1,0 +1,32 @@
+{
+    "name": "ErrDisable",
+    "vendors": {
+        "cisco": {
+            "type": [
+                "nxos"
+            ],
+            "level": null
+        }
+    },
+    "showCmds": [
+        "sh run | inc ^errdisable"
+    ],
+    "keyCliLine": "",
+    "rootEntryFlag": true,
+    "mode": "basic",
+    "boundaries": {
+        "start": null
+    },
+    "discover": {},
+    "removeSyntax": {},
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "@description": "",
+    "@source": {
+        "instanceName": "NXOS_ErrDisable"
+    },
+    "@exportedInstanceId": "6823fc4a-4c42-4788-8e45-bf09db432879",
+    "@id": "6823fc4a-4c42-4788-8e45-bf09db432879",
+    "@name": "NXOS_ErrDisable"
+}

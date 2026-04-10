@@ -1,0 +1,24 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/qos.jtype"
+    },
+    "@id": "ae742a25-93fa-43e4-8f4d-d3c945d6c457",
+    "featureConcept": {
+        "name": "QOS Feature",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/qos__cliGrp__1731435087366cb3.json",
+                "/org/instance/construct/global/cliCommandGroup/qos__cliGrp__1731435087366f7b.json",
+                "/org/instance/construct/global/cliCommandGroup/qos__cliGrp__17314350873661ef.json"
+            ]
+        }
+    },
+    "form": {
+        "intf": {
+            "bandwidth": null
+        }
+    },
+    "@exportedInstanceId": "ae742a25-93fa-43e4-8f4d-d3c945d6c457",
+    "@name": "qos__1731435087366",
+    "@description": ""
+}

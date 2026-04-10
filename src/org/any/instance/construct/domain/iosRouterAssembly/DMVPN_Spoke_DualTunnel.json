@@ -1,0 +1,38 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosRouterAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "dmvpn": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/dmvpn/DMVPN-Spoke_100-200.json"
+                }
+            }
+        }
+    },
+    "interfaces": {
+        "portMap": {
+            "@ref": "/org/instance/construct/global/portMap/ISR2921.json"
+        },
+        "ipNumbering": {
+            "@ref": "/org/instance/construct/domain/ipAddressing/DMVPN_100-200.json"
+        }
+    },
+    "agents": {
+        "watchdog": {}
+    },
+    "boot": {
+        "firmware": {}
+    },
+    "state": {
+        "assessment": {}
+    },
+    "@source": {
+        "instanceName": "DMVPN_Spoke_DualTunnel"
+    },
+    "@exportedInstanceId": "10183599-c363-43b2-a2a3-fcbbd0d046ee",
+    "@id": "10183599-c363-43b2-a2a3-fcbbd0d046ee",
+    "@name": "DMVPN_Spoke_DualTunnel",
+    "@description": ""
+}

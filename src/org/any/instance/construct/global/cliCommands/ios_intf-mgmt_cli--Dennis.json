@@ -1,0 +1,18 @@
+{
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Intf2_modified-Copy-1.json"
+    },
+    "cliCommands": [
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "f103d4a0-75f7-4c4a-873c-9478074f160a",
+    "@id": "f103d4a0-75f7-4c4a-873c-9478074f160a",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "ios_intf-mgmt_cli--Dennis",
+    "@description": ""
+}

@@ -1,0 +1,22 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "flow monitor Scrutinizer",
+        " record netflow-original",
+        " exporter NAM2220",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_netflow-monitor-cli"
+    },
+    "@exportedInstanceId": "6d842841-095e-447d-a2df-b57e56b125ae",
+    "@id": "6d842841-095e-447d-a2df-b57e56b125ae",
+    "@name": "nxos_netflow-monitor-cli",
+    "@description": ""
+}

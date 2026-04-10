@@ -1,0 +1,32 @@
+{
+    "domains": {
+        "modules": {
+            "banner": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/banner/ios_banner.json"
+                }
+            },
+            "dns": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/dns/dns__1665576295055.json"
+                }
+            },
+            "ntp": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/ntp/ntp__1665576295055.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "state": {
+        "assessment": {}
+    },
+    "@exportedInstanceId": "0fcf0f26-0c76-496c-9d9e-6e3428ab4af4",
+    "@id": "0fcf0f26-0c76-496c-9d9e-6e3428ab4af4",
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosRouterAssembly.jtype"
+    },
+    "@name": "iosRouter__CSR-RR01",
+    "@description": ""
+}

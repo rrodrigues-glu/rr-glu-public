@@ -1,0 +1,24 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": "GigabitEthernet0\\/0\\/0",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_object-intf_cli.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "@source": {
+        "instanceName": "ios_object-intf_grp"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "bd4dbd50-4aa1-4862-9108-5cb797ea1a06",
+    "@id": "bd4dbd50-4aa1-4862-9108-5cb797ea1a06",
+    "@name": "ios_object-intf_grp",
+    "@description": ""
+}

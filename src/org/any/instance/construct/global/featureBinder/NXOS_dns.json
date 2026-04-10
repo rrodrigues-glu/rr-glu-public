@@ -1,0 +1,31 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/featureBinder.jtype"
+    },
+    "vendor": "cisco",
+    "os": "nxos",
+    "featureName": "dns",
+    "featureDisplayName": "DNS Feature",
+    "renderList": [
+        {
+            "item": {},
+            "maskCommands": [
+                ""
+            ],
+            "dCli": []
+        },
+        {
+            "item": {},
+            "maskCommands": [],
+            "dCli": []
+        }
+    ],
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "NXOS_dns"
+    },
+    "@exportedInstanceId": "3047b560-255d-4cdf-875e-b5a221f22ff1",
+    "@id": "3047b560-255d-4cdf-875e-b5a221f22ff1",
+    "@name": "NXOS_dns",
+    "@description": ""
+}

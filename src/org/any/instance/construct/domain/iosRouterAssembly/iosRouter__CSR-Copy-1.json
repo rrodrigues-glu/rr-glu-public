@@ -1,0 +1,22 @@
+{
+    "domains": {
+        "modules": {
+            "ntp": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/ntp/ios_ntp-Merck-Romario.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "state": {
+        "assessment": {}
+    },
+    "@exportedInstanceId": "fa1c860a-8ec3-457b-bd8f-f180be365cf8",
+    "@id": "fa1c860a-8ec3-457b-bd8f-f180be365cf8",
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosRouterAssembly.jtype"
+    },
+    "@name": "iosRouter__CSR-Copy-1",
+    "@description": ""
+}

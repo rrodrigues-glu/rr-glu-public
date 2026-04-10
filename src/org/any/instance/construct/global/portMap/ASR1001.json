@@ -1,0 +1,42 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/portMap.jtype"
+    },
+    "map": [
+        {
+            "refName": {
+                "@ref": "/org/instance/construct/global/wanInterface/ISP1.json"
+            },
+            "name": "GigabitEthernet0/0/0",
+            "extendedName": ""
+        },
+        {
+            "refName": {
+                "@ref": "/org/instance/construct/global/lanInterface/DATA.json"
+            },
+            "name": "GigabitEthernet0/0/1",
+            "extendedName": ""
+        },
+        {
+            "refName": {
+                "@ref": "/org/instance/construct/global/lanInterface/DATA2.json"
+            },
+            "name": "GigabitEthernet0/0/2",
+            "extendedName": ""
+        },
+        {
+            "refName": {
+                "@ref": "/org/instance/construct/global/lanInterface/MGNT1.json"
+            },
+            "name": "Loopback0",
+            "extendedName": ""
+        }
+    ],
+    "@source": {
+        "instanceName": "ASR1001"
+    },
+    "@exportedInstanceId": "4d488453-e5de-441d-ab08-792ac5ff074d",
+    "@id": "4d488453-e5de-441d-ab08-792ac5ff074d",
+    "@name": "ASR1001",
+    "@description": ""
+}

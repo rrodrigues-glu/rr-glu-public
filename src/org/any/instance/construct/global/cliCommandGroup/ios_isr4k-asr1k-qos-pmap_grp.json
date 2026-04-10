@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": "^Queuing-WAN-OUTBOUND$|^Marking-LAN-INBOUND$|^SHAPE-ETHERNET$",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_isr4k-asr1k-qos-pmap_cli.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_isr4k-asr1k-qos-pmap_grp"
+    },
+    "@exportedInstanceId": "6ada90fc-baba-42bf-baf0-d6c110b23fb8",
+    "@id": "6ada90fc-baba-42bf-baf0-d6c110b23fb8",
+    "@name": "ios_isr4k-asr1k-qos-pmap_grp",
+    "@description": ""
+}

@@ -1,0 +1,22 @@
+{
+    "featureConcept": {
+        "name": " Interface",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_intf-lan_grp-mrck-Rubb1.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_ntp-server_grp-Rubb1.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_ntp-server_grp-_Rubb1.json"
+            ]
+        }
+    },
+    "form": {
+        "intf": {}
+    },
+    "@exportedInstanceId": "210b8ace-ba02-4c79-9ee4-6baf723d0151",
+    "@id": "210b8ace-ba02-4c79-9ee4-6baf723d0151",
+    "@type": {
+        "ref": "/sys/type/construct/feature/interface.jtype"
+    },
+    "@name": "ios_interface-Rubb1",
+    "@description": ""
+}

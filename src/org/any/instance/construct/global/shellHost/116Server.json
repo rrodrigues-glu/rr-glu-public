@@ -1,0 +1,15 @@
+{
+    "ip": "10.1.100.116",
+    "userName": "sysadmin",
+    "password": {
+        "@ref": "/secret/sys/credentials/secret/sysLinux.json"
+    },
+    "type": "ssh",
+    "@exportedInstanceId": "8d07d2d4-9b34-475a-90f6-3d55b18b5666",
+    "@id": "8d07d2d4-9b34-475a-90f6-3d55b18b5666",
+    "@type": {
+        "ref": "/sys/type/construct/global/shellHost.jtype"
+    },
+    "@name": "116Server",
+    "@description": ""
+}

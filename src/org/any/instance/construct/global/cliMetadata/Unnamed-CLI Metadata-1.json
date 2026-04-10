@@ -1,0 +1,9 @@
+{
+    "@exportedInstanceId": "4a941b51-3ad8-4e7e-a778-73602afa3602",
+    "@id": "4a941b51-3ad8-4e7e-a778-73602afa3602",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliMetadata.jtype"
+    },
+    "@name": "Unnamed-CLI Metadata-1",
+    "@description": ""
+}

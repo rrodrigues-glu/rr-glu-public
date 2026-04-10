@@ -1,0 +1,16 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/location/attachedStorage/firmwareCheck.jtype"
+    },
+    "firmware": {
+        "Cisco CSR": {
+            "lastUpdate": "Wed, 27 Nov 2024 15:30:06 GMT",
+            "CSR1000V": {
+                "installedFirmware": "16.12",
+                "expectedFirmware": "16.6",
+                "status": "FAIL"
+            }
+        }
+    },
+    "@id": "ca9eabc2-a7e7-4f12-b966-f9a6fac7b7ab"
+}

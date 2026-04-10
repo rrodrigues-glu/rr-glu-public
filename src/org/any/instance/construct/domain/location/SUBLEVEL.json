@@ -1,0 +1,18 @@
+{
+    "site": {
+        "name": "SLVL",
+        "description": "",
+        "location": "",
+        "type": "site",
+        "sitePath": "/",
+        "contact": "",
+        "techContact": ""
+    },
+    "@exportedInstanceId": "de943ce0-fc13-41d7-91a6-b0d5907fcb42",
+    "@id": "de943ce0-fc13-41d7-91a6-b0d5907fcb42",
+    "@type": {
+        "ref": "/sys/type/construct/domain/location.jtype"
+    },
+    "@name": "SUBLEVEL",
+    "@description": ""
+}

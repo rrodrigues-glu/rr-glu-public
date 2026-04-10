@@ -1,0 +1,32 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "name": "Boot",
+    "showCmds": [
+        "sh run all | sec boot"
+    ],
+    "mode": "basic",
+    "keyCliLine": "boot .+",
+    "rootEntryFlag": false,
+    "boundaries": {
+        "start": null
+    },
+    "discover": {},
+    "removeSyntax": {},
+    "vendors": {
+        "cisco": {
+            "type": [
+                "nxos"
+            ],
+            "level": null
+        }
+    },
+    "@source": {
+        "instanceName": "NXOS_Boot"
+    },
+    "@exportedInstanceId": "5c25828e-387f-400d-b074-5ad361d37ead",
+    "@id": "5c25828e-387f-400d-b074-5ad361d37ead",
+    "@name": "NXOS_Boot",
+    "@description": ""
+}

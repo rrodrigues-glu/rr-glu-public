@@ -1,0 +1,49 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/portMap.jtype"
+    },
+    "map": [
+        {
+            "refName": {
+                "@ref": "/org/instance/construct/global/wanInterface/ISP1.json"
+            },
+            "name": "GigabitEthernet0/0",
+            "extendedName": ""
+        },
+        {
+            "refName": {
+                "@ref": "/org/instance/construct/global/lanInterface/DATA.json"
+            },
+            "name": "GigabitEthernet0/1",
+            "extendedName": ""
+        },
+        {
+            "refName": {
+                "@ref": "/org/instance/construct/global/lanInterface/MGNT1.json"
+            },
+            "name": "Loopback0",
+            "extendedName": ""
+        },
+        {
+            "refName": {
+                "@ref": "/org/instance/construct/global/lanInterface/OVRL1.json"
+            },
+            "name": "Tunnel100",
+            "extendedName": ""
+        },
+        {
+            "refName": {
+                "@ref": "/org/instance/construct/global/lanInterface/OVRL2.json"
+            },
+            "name": "Tunnel200",
+            "extendedName": ""
+        }
+    ],
+    "@source": {
+        "instanceName": "ISR2921"
+    },
+    "@exportedInstanceId": "92161008-b835-497d-986e-7b3769787d46",
+    "@id": "92161008-b835-497d-986e-7b3769787d46",
+    "@name": "ISR2921",
+    "@description": ""
+}

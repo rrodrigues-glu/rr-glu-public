@@ -1,0 +1,18 @@
+{
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_NtpAgent-Copy-1.json"
+    },
+    "cliCommands": [
+        "ntp source Loopback0"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "013e1ef8-d226-48c4-95fd-21ef8c4ce1bc",
+    "@id": "013e1ef8-d226-48c4-95fd-21ef8c4ce1bc",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "ios_ntp-server_cli-Copy-1",
+    "@description": ""
+}

@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosRouterAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "syslog": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/syslog/ios_syslog.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "agents": {
+        "watchdog": {}
+    },
+    "state": {
+        "assessment": {}
+    },
+    "@source": {
+        "instanceName": "Syslog_Assembly"
+    },
+    "@exportedInstanceId": "45088199-f81f-4797-b0db-bc9c6d878c8e",
+    "@id": "45088199-f81f-4797-b0db-bc9c6d878c8e",
+    "@name": "Syslog_Assembly",
+    "@description": ""
+}

@@ -1,0 +1,24 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": "lookup",
+    "ignoreDelete": false,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_domain-lookup_cli.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "@source": {
+        "instanceName": "ios_domain-lookup_grp"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "109c5e3b-76d9-48ed-a4dc-5f57b8e5a647",
+    "@id": "109c5e3b-76d9-48ed-a4dc-5f57b8e5a647",
+    "@name": "ios_domain-lookup_grp",
+    "@description": ""
+}

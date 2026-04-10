@@ -1,0 +1,19 @@
+{
+    "domains": {
+        "modules": {
+            "globals": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/globals/Gaia_Expert_Password.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "@exportedInstanceId": "1caa6dba-06b2-46be-bb9c-a7ae39dc7498",
+    "@id": "1caa6dba-06b2-46be-bb9c-a7ae39dc7498",
+    "@type": {
+        "ref": "/sys/type/construct/domain/gaiaFirewallAssembly.jtype"
+    },
+    "@name": "Gaia Firewall-Assembly-Copy-1",
+    "@description": ""
+}

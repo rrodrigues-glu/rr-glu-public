@@ -1,0 +1,32 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosSwitchAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "switching": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/switching/ios_switching.json"
+                }
+            }
+        }
+    },
+    "interfaces": {
+        "portLayout": {
+            "@ref": "/org/instance/construct/global/switchPortMap/cisco_24p4u.json"
+        }
+    },
+    "agents": {
+        "watchdog": {}
+    },
+    "boot": {
+        "firmware": {}
+    },
+    "@source": {
+        "instanceName": "cisco_24p4u"
+    },
+    "@exportedInstanceId": "b1652c46-f2cd-49bf-abf0-a0f620426639",
+    "@id": "b1652c46-f2cd-49bf-abf0-a0f620426639",
+    "@name": "cisco_24p4u",
+    "@description": ""
+}

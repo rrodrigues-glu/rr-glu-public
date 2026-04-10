@@ -1,0 +1,20 @@
+{
+    "featureConcept": {
+        "name": "Intf",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/nxos_intf-vlan_group-DUP.json"
+            ]
+        }
+    },
+    "form": {
+        "intf": {}
+    },
+    "@exportedInstanceId": "77899811-7195-41da-902d-1848f3e22385",
+    "@id": "77899811-7195-41da-902d-1848f3e22385",
+    "@type": {
+        "ref": "/sys/type/construct/feature/interface.jtype"
+    },
+    "@name": "nxos_interface-dup",
+    "@description": ""
+}

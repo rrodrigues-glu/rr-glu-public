@@ -1,0 +1,21 @@
+{
+    "featureConcept": {
+        "name": "Interface",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_intf-mgmt_grp--Dennis.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_wan-acl-in_grp-Dennis.json"
+            ]
+        }
+    },
+    "form": {
+        "intf": {}
+    },
+    "@exportedInstanceId": "e2aea273-16dc-4b0d-b259-41a7bdfb86de",
+    "@id": "e2aea273-16dc-4b0d-b259-41a7bdfb86de",
+    "@type": {
+        "ref": "/sys/type/construct/feature/interface.jtype"
+    },
+    "@name": "ios_interface-Dennis",
+    "@description": ""
+}

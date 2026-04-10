@@ -1,0 +1,19 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_finger_cli"
+    },
+    "@exportedInstanceId": "64d1cf80-7c7b-4cb9-b17a-b3d55df52e98",
+    "@id": "64d1cf80-7c7b-4cb9-b17a-b3d55df52e98",
+    "@name": "ios_finger_cli",
+    "@description": ""
+}

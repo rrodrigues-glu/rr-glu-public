@@ -1,0 +1,58 @@
+{
+  "permissionLevel": "auditManageLevel1",
+  "rules": [
+    {
+      "severity": "INFO",
+      "name": "New rule1",
+      "os": "ios",
+      "source": "LATEST",
+      "commandSet": "all",
+      "commandSetResult": {
+        "type": "all"
+      },
+      "type": "IF_THEN",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": false,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "transport input ssh"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "conceptItemId": null,
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((SSH Enabled)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "runLevel": "auditRunLevel1",
+  "description": "",
+  "name": "TestC3-1",
+  "tid": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+  "id": "31cfc4d5-dbd8-428a-9b54-f88e47b4821e",
+  "createdBy": "admin",
+  "createdOn": 1731609480694,
+  "updatedBy": "admin",
+  "updatedOn": 1731616237735,
+  "lastAuditErrorMsg": "",
+  "lastAuditDevicesSkippedCount": 1
+}

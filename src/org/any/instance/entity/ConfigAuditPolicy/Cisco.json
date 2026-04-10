@@ -1,0 +1,48 @@
+{
+  "permissionLevel": "auditManageLevel1",
+  "rules": [
+    {
+      "severity": "INFO",
+      "name": "New rule",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "",
+      "scopeSeparateResults": false,
+      "scope": "exec",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "banner exec"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSet": "all",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "conceptItem": "IOSXE_Banner"
+    }
+  ],
+  "runLevel": "auditRunLevel1",
+  "name": "Cisco",
+  "description": "",
+  "tid": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+  "id": "85e28198-36d7-4c22-9964-2ea7b31e7f9c",
+  "createdBy": "admin",
+  "createdOn": 1665756633566,
+  "updatedBy": "admin",
+  "updatedOn": 1665756955076,
+  "lastAuditErrorMsg": "",
+  "lastAuditDevicesSkippedCount": 0
+}

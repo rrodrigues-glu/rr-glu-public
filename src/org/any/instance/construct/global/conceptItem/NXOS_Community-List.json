@@ -1,0 +1,32 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "name": "community-list",
+    "showCmds": [
+        "show run | sec \"ip community-list\""
+    ],
+    "mode": "basic",
+    "keyCliLine": "",
+    "rootEntryFlag": false,
+    "boundaries": {
+        "start": null
+    },
+    "discover": {},
+    "removeSyntax": {},
+    "vendors": {
+        "cisco": {
+            "type": [
+                "nxos"
+            ],
+            "level": null
+        }
+    },
+    "@source": {
+        "instanceName": "NXOS_Community-List"
+    },
+    "@exportedInstanceId": "34f24738-61b9-49d5-b774-29a023ddbd4a",
+    "@id": "34f24738-61b9-49d5-b774-29a023ddbd4a",
+    "@name": "NXOS_Community-List",
+    "@description": ""
+}

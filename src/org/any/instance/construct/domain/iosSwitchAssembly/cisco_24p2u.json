@@ -1,0 +1,31 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosSwitchAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "switching": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/switching/ios_vlan-db.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "agents": {
+        "watchdog": {}
+    },
+    "boot": {
+        "firmware": {}
+    },
+    "state": {
+        "assessment": {}
+    },
+    "@source": {
+        "instanceName": "cisco_24p2u"
+    },
+    "@exportedInstanceId": "bb4ef26a-76bf-4aa3-bca0-945d4d6e4963",
+    "@id": "bb4ef26a-76bf-4aa3-bca0-945d4d6e4963",
+    "@name": "cisco_24p2u",
+    "@description": ""
+}

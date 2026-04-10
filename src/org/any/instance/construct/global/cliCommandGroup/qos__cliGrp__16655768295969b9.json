@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@id": "e98d28d0-084e-4933-be12-7f07c26170fe",
+    "ignoreDelete": true,
+    "regEx": "AutoQos-4.0-Output-Multimedia-Conf-Queue|system-cpp-police-topology-control|system-cpp-police-sw-forward|cmap-qos-TRANSACTIONAL-DATA|AutoQos-4.0-Output-Bulk-Data-Queue|system-cpp-default|cmap-qos-NETWORK-MANAGEMENT|cmap-qos-EXTERNAL-WEB|system-cpp-police-sys-data|AutoQos-4.0-Output-Priority-Queue|system-cpp-police-punt-webauth|AutoQos-4.0-Output-Multimedia-Strm-Queue|system-cpp-police-l2lvx-control|cmap-qos-VOICE|system-cpp-police-forus|cmap-qos-SCAVENGER|system-cpp-police-multicast-end-station|cmap-qos-queue-REAL-TIME-CONFERENCING|system-cpp-police-multicast|system-cpp-police-l2-control|system-cpp-police-dot1x-auth|system-cpp-police-data|cmap-qos-queue-NETWORK-MANAGEMENT|system-cpp-police-stackwise-virt-control|system-cpp-police-control-low-priority|system-cpp-police-wireless-priority1|cmap-qos-queue-TRANSACTIONAL-DATA|system-cpp-police-wireless-priority2|system-cpp-police-wireless-priority3-4-5|non-client-nrt-class|AutoQos-4.0-Output-Trans-Data-Queue|system-cpp-police-routing-control|system-cpp-police-protocol-snooping|cmap-qos-REAL-TIME-CONFERENCING|system-cpp-police-dhcp-snooping|cmap-qos-SIGNALING-MISSION-CRITICAL|cmap-qos-queue-SCAVENGER|system-cpp-police-system-critical|cmap-qos-queue-VOICE|AutoQos-4.0-Output-Scavenger-Queue|cmap-qos-queue-SIGNALING-MISSION-CRITICA|AutoQos-4.0-Output-Control-Mgmt-Queue",
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ClassMap__cli__16655768295963627.json"
+        ]
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "e98d28d0-084e-4933-be12-7f07c26170fe",
+    "@name": "qos__cliGrp__16655768295969b9",
+    "@description": ""
+}

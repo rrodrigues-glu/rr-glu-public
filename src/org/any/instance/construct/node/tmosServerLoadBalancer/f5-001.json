@@ -1,0 +1,46 @@
+{
+    "configState": "managed",
+    "entryConnection": {
+        "connectionMethod": "cliConnection",
+        "ip": "10.150.8.3",
+        "type": "ssh",
+        "port": 22,
+        "credentials": {
+            "@ref": "/secret/sys/credentials/deviceUserPass/admin.json"
+        }
+    },
+    "associations": {
+        "provider": "local"
+    },
+    "persona": {
+        "type": "none"
+    },
+    "hardware": {
+        "vendor": "auto",
+        "expectedSerialNumber": "auto"
+    },
+    "provisioning": {
+        "type": "advanced"
+    },
+    "tmosServerLoadBalancer": {
+        "enabled": true
+    },
+    "options": {
+        "connectionEnabled": true,
+        "previewMode": false,
+        "forcedAttachedStorage": false
+    },
+    "serverLoadBalancer": {
+        "enabled": true
+    },
+    "site": {
+        "@ref": "/org/instance/construct/domain/location/Romualdo.json"
+    },
+    "@exportedInstanceId": "b8805226-eae9-45ac-baa2-13bebbc0863b",
+    "@id": "b8805226-eae9-45ac-baa2-13bebbc0863b",
+    "@type": {
+        "ref": "/sys/type/construct/node/tmosServerLoadBalancer.jtype"
+    },
+    "@name": "f5-001",
+    "@description": ""
+}

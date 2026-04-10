@@ -1,0 +1,15 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/vlan.jtype"
+    },
+    "id": 700,
+    "name": "NEW_DATA7",
+    "@source": {
+        "instanceName": "700_vlan"
+    },
+    "alias": "",
+    "@exportedInstanceId": "5a22855a-89a7-462e-a9d4-7654867dabb6",
+    "@id": "5a22855a-89a7-462e-a9d4-7654867dabb6",
+    "@name": "700_vlan",
+    "@description": ""
+}

@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Rmon.json"
+    },
+    "cliCommands": [
+        "rmon event 1 log trap public description FATAL(1) owner PMON@FATAL",
+        "rmon event 2 log trap public description CRITICAL(2) owner PMON@CRITICAL",
+        "rmon event 3 log trap public description ERROR(3) owner PMON@ERROR",
+        "rmon event 4 log trap public description WARNING(4) owner PMON@WARNING",
+        "rmon event 5 log trap public description INFORMATION(5) owner PMON@INFO"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_rmon-cli"
+    },
+    "@exportedInstanceId": "bc0a1fa8-da3c-4711-a0ef-9d6c28c0cb3a",
+    "@id": "bc0a1fa8-da3c-4711-a0ef-9d6c28c0cb3a",
+    "@name": "nxos_rmon-cli",
+    "@description": ""
+}

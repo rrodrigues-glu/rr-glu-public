@@ -1,0 +1,58 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/nxosSwitchAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "snmp": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/snmp/nxos_snmp-v3.json"
+                }
+            },
+            "banner": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/banner/nxos_banner.json"
+                }
+            },
+            "dns": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/dns/nxos_dns.json"
+                }
+            },
+            "ntp": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/ntp/nxos_ntp.json"
+                }
+            },
+            "qos": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/qos/nxos_qos.json"
+                }
+            },
+            "syslog": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/syslog/nxos_syslog.json"
+                }
+            },
+            "username": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/username/nxos_username.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "boot": {
+        "firmware": {}
+    },
+    "state": {
+        "assessment": {}
+    },
+    "@source": {
+        "instanceName": "Globals_Assembly"
+    },
+    "@exportedInstanceId": "2c6df712-f501-441e-b057-c52e48e90cba",
+    "@id": "2c6df712-f501-441e-b057-c52e48e90cba",
+    "@name": "Globals_Assembly",
+    "@description": ""
+}

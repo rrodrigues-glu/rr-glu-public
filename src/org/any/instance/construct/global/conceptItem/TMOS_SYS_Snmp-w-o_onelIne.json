@@ -1,0 +1,28 @@
+{
+    "name": "Snmp",
+    "vendors": {
+        "f5": {
+            "type": [
+                "tmos"
+            ]
+        }
+    },
+    "showCmds": [
+        "show running-config sys snmp"
+    ],
+    "keyCliLine": "",
+    "rootEntryFlag": true,
+    "mode": "basic",
+    "boundaries": {
+        "start": "sys snmp "
+    },
+    "discover": {},
+    "removeSyntax": {},
+    "@exportedInstanceId": "0fe03e11-c659-4f6d-a15e-32bd6798c72b",
+    "@id": "0fe03e11-c659-4f6d-a15e-32bd6798c72b",
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "@name": "TMOS_SYS_Snmp-w-o_onelIne",
+    "@description": ""
+}

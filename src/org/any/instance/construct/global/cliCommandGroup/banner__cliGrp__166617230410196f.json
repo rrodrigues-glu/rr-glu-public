@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@id": "83857dbf-016f-4f13-a4f9-af7c10c7b358",
+    "ignoreDelete": true,
+    "regEx": "login",
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/Banner__cli__16661723041017122.json"
+        ]
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "83857dbf-016f-4f13-a4f9-af7c10c7b358",
+    "@name": "banner__cliGrp__166617230410196f",
+    "@description": ""
+}

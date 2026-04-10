@@ -1,0 +1,27 @@
+{
+    "hostname": "QTS-APIC-1",
+    "vendor": "cisco",
+    "os": "aci",
+    "path": "/sys/jnib/features/deviceDetect/cisco/aci/",
+    "sku": "ACI",
+    "software": {
+        "version": "5.2(7g)",
+        "major": "5",
+        "minor": "2",
+        "revision": "",
+        "patch": "",
+        "build": "",
+        "train": ""
+    },
+    "hardware": {
+        "serialNumber": "WMP272200BB",
+        "sku": "ACI"
+    },
+    "detectedSerialNumber": "WMP272200BB",
+    "uptime": "266d1h20m",
+    "type": {
+        "name": "aciController",
+        "base": "baseController"
+    },
+    "licenses": {}
+}

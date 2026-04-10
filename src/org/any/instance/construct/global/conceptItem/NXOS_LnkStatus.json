@@ -1,0 +1,35 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "name": "LinkStatus",
+    "showCmds": [
+        "sh run all | inc link-status"
+    ],
+    "mode": "advanced",
+    "keyCliLine": "logging event link-status\\s(\\S+)",
+    "rootEntryFlag": true,
+    "keyLineDepth": 1,
+    "keyGroup": 1,
+    "regEx": "",
+    "boundaries": {
+        "start": null
+    },
+    "discover": {},
+    "removeSyntax": {},
+    "vendors": {
+        "cisco": {
+            "type": [
+                "nxos"
+            ],
+            "level": null
+        }
+    },
+    "@source": {
+        "instanceName": "NXOS_LnkStatus"
+    },
+    "@exportedInstanceId": "bfa6c790-6d2d-4371-812d-42eb1deb98e5",
+    "@id": "bfa6c790-6d2d-4371-812d-42eb1deb98e5",
+    "@name": "NXOS_LnkStatus",
+    "@description": ""
+}

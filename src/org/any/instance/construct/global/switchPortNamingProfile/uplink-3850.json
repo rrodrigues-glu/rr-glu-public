@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/switchPortNamingProfile.jtype"
+    },
+    "ethernetPorts": {
+        "namedType": "TenGigabitEthernet",
+        "mapping": "inherited",
+        "pathId": "%stackId/1/%portId"
+    },
+    "breakoutPorts": {
+        "namedType": "Ethernet",
+        "pathId": "%stackId/0/%portId/%breakoutId"
+    },
+    "otherSettings": {
+        "intialStackId": 1
+    },
+    "comment1": null,
+    "comment2": null,
+    "@source": {
+        "instanceName": "uplink-3850"
+    },
+    "@exportedInstanceId": "0333abff-8738-40b0-9290-5bf267119eda",
+    "@id": "0333abff-8738-40b0-9290-5bf267119eda",
+    "@name": "uplink-3850",
+    "@description": ""
+}

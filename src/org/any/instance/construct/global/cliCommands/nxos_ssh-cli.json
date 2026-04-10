@@ -1,0 +1,22 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_SSH.json"
+    },
+    "cliCommands": [
+        "ssh login-attempts 5",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_ssh-cli"
+    },
+    "@exportedInstanceId": "23bc938f-ce64-4afd-9c1c-54aa52d5028a",
+    "@id": "23bc938f-ce64-4afd-9c1c-54aa52d5028a",
+    "@name": "nxos_ssh-cli",
+    "@description": ""
+}

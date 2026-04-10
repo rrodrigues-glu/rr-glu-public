@@ -1,0 +1,13 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "0df6c539-7bdd-4a43-a942-b74cf1ffb5ac",
+    "item": {},
+    "cliCommands": [
+        "username admin password 5 $5$IAkr.rzA$aESSjwduYHFSozalWoQ34XZkqJf2k4ylYtwLEYtLTD0  role network-admin"
+    ],
+    "@exportedInstanceId": "0df6c539-7bdd-4a43-a942-b74cf1ffb5ac",
+    "@name": "Username__cli__17314350873661142",
+    "@description": ""
+}

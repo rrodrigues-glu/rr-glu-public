@@ -1,0 +1,24 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": ".+",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/nxos_crypto-cli.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "@source": {
+        "instanceName": "nxos_crypto_group"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "be8fe7e1-1d6a-4ad5-b463-9226eaa473d9",
+    "@id": "be8fe7e1-1d6a-4ad5-b463-9226eaa473d9",
+    "@name": "nxos_crypto_group",
+    "@description": ""
+}

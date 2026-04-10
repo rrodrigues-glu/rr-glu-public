@@ -1,0 +1,45 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/aaa.jtype"
+    },
+    "featureConcept": {
+        "name": "AAA Feature",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/nxos_feature-tacacs_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_tacacs-server_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_aaa-group_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_aaa-auth_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "aaa": [
+            {
+                "name": "tacacsServer",
+                "tacacs": [
+                    {
+                        "name": "demoServer1",
+                        "ip": "10.1.255.203",
+                        "key": "thisKey1",
+                        "timeout": 5
+                    },
+                    {
+                        "name": "demoServer2",
+                        "ip": "10.1.205.203",
+                        "key": "thisKey2",
+                        "timeout": 5
+                    }
+                ],
+                "srcIntOverride": true
+            }
+        ]
+    },
+    "@source": {
+        "instanceName": "nxos_aaa"
+    },
+    "@exportedInstanceId": "e7695a2f-273b-4cf2-a8b5-474a606d8617",
+    "@id": "e7695a2f-273b-4cf2-a8b5-474a606d8617",
+    "@name": "nxos_aaa",
+    "@description": ""
+}

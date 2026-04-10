@@ -1,0 +1,24 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/featureBinder.jtype"
+    },
+    "vendor": "cisco",
+    "os": "nxos",
+    "featureName": "snmp",
+    "featureDisplayName": "SNMP Feature",
+    "renderList": [
+        {
+            "item": {},
+            "maskCommands": [],
+            "dCli": []
+        }
+    ],
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "NXOS_snmp"
+    },
+    "@exportedInstanceId": "1c75d8ca-de7a-47e8-aeae-4eb088e026b6",
+    "@id": "1c75d8ca-de7a-47e8-aeae-4eb088e026b6",
+    "@name": "NXOS_snmp",
+    "@description": ""
+}

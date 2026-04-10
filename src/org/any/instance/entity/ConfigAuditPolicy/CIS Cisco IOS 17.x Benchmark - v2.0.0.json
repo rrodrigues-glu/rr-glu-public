@@ -1,0 +1,3586 @@
+{
+  "permissionLevel": "auditManageLevel1",
+  "rules": [
+    {
+      "severity": "MAJOR",
+      "name": "1.1.1 Enable 'aaa new-model'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "This command enables the AAA access control system.",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^aaa new-model"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.1.2 Enable 'aaa authentication login'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Sets authentication, authorization and accounting (AAA) authentication at login.",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": "^aaa authentication login"
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.1.3 Enable 'aaa authentication enable default'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Authenticates users who access privileged EXEC mode when they use the enable command.",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^aaa authentication enable default"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.1.4 (Exc-Alt) Set 'login authentication for 'line vty'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "IF_THEN",
+      "description": "Authenticates users who access the router or switch remotely through the VTY port.",
+      "scopeSeparateResults": true,
+      "scope": "vty",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "login authentication"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "aaa authentication login default",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "conceptItem": "IOS_LineConVty",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.1.5 (Exc-Skp) Set 'login authentication for 'ip http'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Authenticates users who access the router or switch using HTTP service.",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ip http secure-server"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ip http authentication"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.1.6 Set 'aaa accounting' to log all privileged use commands using 'commands 15'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Runs accounting for all commands at the specified privilege level.",
+      "scopeSeparateResults": false,
+      "scope": "aaa .+",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^aaa accounting commands 15"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "*1.1.7 Set 'aaa accounting connection'*",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Provides information about all outbound connections made from the network access server. ",
+      "scopeSeparateResults": false,
+      "scope": "aaa .+",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^aaa accounting connection"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.1.8 Set 'aaa accounting exec'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Runs accounting for the EXEC shell session.",
+      "scopeSeparateResults": false,
+      "scope": "aaa .+",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^aaa accounting exec"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.1.9 Set 'aaa accounting network'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Runs accounting for all network-related service requests.",
+      "scopeSeparateResults": false,
+      "scope": "aaa .+",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^aaa accounting network"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "*1.1.10 Set 'aaa accounting system'*",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Performs accounting for all system-level events not associated with users, such as reloads.",
+      "scopeSeparateResults": false,
+      "scope": "aaa .+",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^aaa accounting system"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.2.1  Set 'privilege 1' for local users",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception:",
+      "scopeSeparateResults": true,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "privilege.\\d+"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "conceptItem": "IOS_Username",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.2.2 Set 'transport input ssh' for 'line vty' connections",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Selects the Secure Shell (SSH) protocol.",
+      "scopeSeparateResults": true,
+      "scope": "vty",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "transport input ssh"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "conceptItem": "IOS_LineConVty",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.2.3 Set 'no exec' for 'line aux 0'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "IF_THEN",
+      "description": "The 'no exec' command restricts a line to outgoing connections only.",
+      "scopeSeparateResults": true,
+      "scope": "aux 0",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": "no exec"
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "ifExpression": {
+        "$and": [
+          {
+            "detectedTypeBase": {
+              "$eq": "Router (WAN)"
+            }
+          }
+        ]
+      },
+      "conceptItem": "IOS_LineConVty",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.2.4 Create 'access-list' for use with 'line vty'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Access lists control the transmission of packets on an interface, control Virtual Terminal Line (VTY) access, and restrict the contents of routing updates. The Cisco IOS software stops checking the extended access list after a match occurs.",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "ip access-list extended VTY-FILTER"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "conceptItem": "IOS_IpAcl",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.2.5 Set 'access-class' for 'line vty'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "The 'access-class' setting restricts incoming and outgoing connections between a particular vty (into a Cisco device) and the networking devices associated with addresses in an access list.",
+      "scopeSeparateResults": true,
+      "scope": "vty",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "access-class VTY-FILTER in"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "conceptItem": "IOS_LineConVty",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.2.6 Set 'exec-timeout' to less than or equal to 10 minutes for 'line aux 0'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "IF_THEN",
+      "description": "CIS benchmark recommends 10 mins, but set it to 0 min 1 sec and check for that time.",
+      "scopeSeparateResults": true,
+      "scope": "aux 0",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "exec-timeout 0 1"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "ifExpression": {
+        "$and": [
+          {
+            "detectedTypeBase": {
+              "$eq": "Router (WAN)"
+            }
+          }
+        ]
+      },
+      "conceptItem": "IOS_LineConVty",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.2.7 Set 'exec-timeout' to less than or equal to 10 minutes 'line console 0'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "CIS Benchmark recommends exec-timeout of 10 minutes or less on line CON 0",
+      "scopeSeparateResults": true,
+      "scope": "con 0",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "exec-timeout 4 0"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "conceptItem": "IOS_LineConVty",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.2.8 (Exc-Alt) Set 'exec-timeout' to less than or equal to 10 minutes 'line vty'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "CIS Benchmark recommends exec-timeout of 10 minutes or less on vty lines",
+      "scopeSeparateResults": true,
+      "scope": "vty",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "exec-timeout 10"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "exec-timeout"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "conceptItem": "IOS_LineConVty",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.2.9 Set 'transport input none' for 'line aux 0'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "IF_THEN",
+      "description": "When you want to allow only an outgoing connection on a line, use the no exec command.",
+      "scopeSeparateResults": true,
+      "scope": "aux 0",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "transport input"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "ifExpression": {
+        "$and": [
+          {
+            "detectedTypeBase": {
+              "$eq": "Router (WAN)"
+            }
+          }
+        ]
+      },
+      "conceptItem": "IOS_LineConVty",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.2.10 (Exc-Alt) Set 'http secure-server' limit",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: limit not needed HTTP is disabled",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "^ip http secure-server"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.2.11 (Exc-Alt) Set 'exec-timeout' to less than or equal to 10 min on 'ip http'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: Exec-timeout not needed HTTP server is disabled",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "^ip http server",
+              "^ip http secure-server"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.3.1 (Exc-Alt) Set the 'banner-text' for 'banner exec'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "exec",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "banner exec"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "conceptItem": "IOS_Banner",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.3.2 (Exc-Alt)  Set the 'banner-text' for 'banner login'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "login",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "banner login"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "conceptItem": "IOS_Banner",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.3.3 Set the 'banner-text' for 'banner motd'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "",
+      "scopeSeparateResults": false,
+      "scope": "motd",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "banner motd"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "conceptItem": "IOS_Banner",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.3.4 (Exc-Alt) Set the 'banner-text' for 'webauth banner'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "^ip http server",
+              "^ip http secure-server"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.4.1 Set 'password' for 'enable secret' ",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "The enable secret command provides better security by storing the enable secret password using a nonreversible cryptographic function. The added layer of security encryption provides is useful in environments where the password crosses the network or is stored on a TFTP server.",
+      "scopeSeparateResults": false,
+      "scope": "^enable .+",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^enable secret"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "^enable password"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.4.2 Enable 'service password-encryption'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "When password encryption is enabled, the encrypted form of the passwords is displayed when a more system:running-config command is entered.",
+      "scopeSeparateResults": false,
+      "scope": "^service .+",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^service password-encryption"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "INFO",
+      "name": "1.4.3 Set 'username secret' for all local users",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "The username secret command provides an additional layer of security over the username password. It also provides better security by encrypting the password using non reversible MD5 encryption and storing the encrypted text. The added layer of MD5 encryption is useful in environments in which the password crosses the network or is stored on a TFTP server.",
+      "scopeSeparateResults": true,
+      "scope": "",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "username \\S+ secret \\d+ \\S+"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "username .+ password [8-9] \\S+"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "conceptItem": "IOS_Username",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.5.1 (Exc-Alt) Set 'no snmp-server' to disable SNMP when unused",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "no snmp-server"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.5.2 Unset 'private' for 'snmp-server community'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "An SNMP community string permits read-only access to all objects.",
+      "scopeSeparateResults": true,
+      "scope": "snmp-server",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "^snmp-server community private"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "conceptItem": "IOS_Snmp",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.5.3 Unset 'public' for 'snmp-server community'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "An SNMP community string permits read-only access to all objects.",
+      "scopeSeparateResults": true,
+      "scope": "snmp-server",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "^snmp-server community public"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "conceptItem": "IOS_Snmp",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.5.4 (Exc-Alt) Do not set 'RW' for any 'snmp-server community'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": true,
+      "scope": "^snmp-server",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "^snmp-server community .+ RW"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "conceptItem": "IOS_Snmp",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.5.5 (Exc-Alt) Set the ACL for each 'snmp-server community'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": true,
+      "scope": "snmp-server",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^snmp-server community \\S+ .+ [5-6]"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "conceptItem": "IOS_Snmp",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.5.6 Create an 'access-list' for use with SNMP",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^access-list [5-6] .+"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ip access-list standard [5-6]"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^access-list standard [5-6]"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ip access-list standard ACL-SNMPV3-ACCESS-MONITORING"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.5.7 Set 'snmp-server host' when using SNMP",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Update: ",
+      "scopeSeparateResults": true,
+      "scope": "host",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^snmp-server host .+"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "conceptItem": "IOS_Snmp",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.5.8 Set 'snmp-server enable traps snmp'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "SNMP notifications can be sent as traps to authorized management systems.",
+      "scopeSeparateResults": false,
+      "scope": "^snmp-server enable traps",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "snmp ",
+              "authentication ",
+              "linkdown ",
+              "linkup ",
+              "coldstart"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.5.9 Set 'priv' for each 'snmp-server group' using SNMPv3",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Specifies authentication of a packet with encryption when using SNMPv3",
+      "scopeSeparateResults": false,
+      "scope": "snmp-server",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^snmp-server group \\S+ v3 priv"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.5.10 (Exc-Manual) Require 'aes 128' as minimum for 'snmp-server user' when using SNMPv3",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Unable to look up the snmp users  from the configuration. Specify the use of a minimum of 128-bit AES algorithm for encryption when using SNMPv3.",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^Privacy Protocol: AES128"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "cliCommands",
+        "command": "show snmp user"
+      },
+      "commandSetName": "IOS_show_snmp_user",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.6.1 Configure Login Block",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Update: ",
+      "scopeSeparateResults": false,
+      "scope": "^login .*",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^login block-for 60 attempts 5 within 60"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.6.2 (Exc-Skp) AutoSecure",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^auto secure (management|forwarding) .+",
+              "^enable password .+",
+              "^security authentication failure rate .+"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.6.3 (Exc-Skp) Configuring Kerberos",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^kerberos .+"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "1.6.4 (Exc-Skp) Configure Web interface",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ip admission .+"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.1.1.1.1 Set the 'hostname'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "The hostname is used in prompts and default configuration filenames.",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^hostname .+"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.1.1.1.2 Set the 'ip domain-name'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Define a default domain name that the Cisco IOS software uses to complete unqualified hostnames",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ip domain.name.+"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.1.1.1.3 (Exc-Manual) Set 'modulus' to greater than or equal to 2048 for 'crypto key generate rsa'.  Cannot check with 'show run' command.",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: Update: ",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^Minimum expected Diffie Hellman key size : 2048 bits"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "cliCommands",
+        "command": "show ip ssh"
+      },
+      "commandSetName": "IOS_show_ip_ssh",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.1.1.1.4 (Exce-Alt) Set 'seconds' for 'ip ssh timeout'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: Update: ",
+      "scopeSeparateResults": false,
+      "scope": "^ip .+",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ip ssh time-out 60"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "^ip ssh time-out"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.1.1.1.5 (Exc-Alt) Set maximimum value for 'ip ssh authentication-retries'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "Authentication retries: 3"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "cliCommands",
+        "command": "show ip ssh"
+      },
+      "commandSetName": "IOS_show_ip_ssh",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.1.1.2 Set version 2 for 'ip ssh version'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Specify the version of Secure Shell (SSH) to be run on a router",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ip ssh version 2"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "* 2.1.2 (Exc-Skp) Set 'no cdp run' *",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^no cdp run"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.1.3 Set 'no ip bootp server'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Disable the Bootstrap Protocol (BOOTP) service on your routing device.",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "^ip bootp server"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.1.4 (Exc-Skp) Set 'no service' dhcp",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ip dhcp bootp ignore"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.1.5 Set 'no ip identd'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Disable the identification (identd) server.",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "^ip identd"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.1.6 Set 'service tcp-keepalives-in'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "^service .+",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^service tcp-keepalives-in"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.1.7 Set 'service tcp-keepalives-out'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "^service .+",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^service tcp-keepalives-out"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.1.8 Set 'no service pad'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Disable X.25 Packet Assembler/Disassembler (PAD) service.",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "^service pad"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "* 2.2.1 Set 'logging-enable' *",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Enable logging of system messages.",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_ordered_regex",
+            "value": [
+              "^archive",
+              " log config",
+              "  logging enable"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^logging"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.2.2 Set 'buffer size' for 'logging buffered'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Enable system message logging to a local buffer.",
+      "scopeSeparateResults": false,
+      "scope": "logging.+",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^logging buffered \\d+"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "* 2.2.3 Set 'logging console critical' *",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^logging console (critical|error|warning)"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.2.4  Set IP address for 'logging host'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Log system messages and debug output to a remote host.",
+      "scopeSeparateResults": false,
+      "scope": "logging .+",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^logging host .+"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.2.5 (Exc-Skp) Set 'logging trap informational'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^logging trap .+"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.2.6 Set 'service timestamps debug datetime'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Configure the system to apply a time stamp to debugging messages or system logging messages",
+      "scopeSeparateResults": false,
+      "scope": "service .+",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^service timestamps debug datetime localtime"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.2.7 Set 'logging source interface'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Specify the source IPv4 or IPv6 address of system logging packets",
+      "scopeSeparateResults": false,
+      "scope": "logging .+",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^logging source-interface (Vlan|Loopback)\\d+"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.2.8 Set 'login success/failure logging'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one.",
+      "scopeSeparateResults": false,
+      "scope": "^login.+",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^login on-failure log"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "** OLD** 2.3.1.1 (Exc-Skp) Require Encryption Keys for NTP",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ntp authenticate"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.3.1.1 (Exc-Skp) Set 'ntp authenticate'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ntp authenticate"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.3.1.2 (Exc-Skp) Set 'ntp authentication-key'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ntp authentication-key .+"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.3.1.3 (Exc-Skp) Set the 'ntp trusted-key'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ntp trusted-key .+"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.3.1.4 (Exc-Skp) Set 'key' for each 'ntp server'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ntp server \\S+ key .+"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.3.2 Set 'ip address' for 'ntp server'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Use this command if you want to allow the system to synchronize the system software clock with the specified NTP server.",
+      "scopeSeparateResults": false,
+      "scope": ".+",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "(2|3|4)$"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "cliCommands",
+        "command": "show run | count ^ntp server"
+      },
+      "commandSetName": "ios_ntp server_count",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.4.1a (Exc-Alt) Create a single 'interface loopback'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "IF_THEN",
+      "description": "Configure a single loopback interface.  Some L2-only devices do not have loopbacks",
+      "scopeSeparateResults": true,
+      "scope": "[l|L]oopback.+",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "ip address 10\\.\\d{1,3}\\.\\d{1,3}\\.(1|2|48) 255.+"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "ifExpression": {
+        "$or": [
+          {
+            "connectionInformation.ip": {
+              "$regex": "(((^10\\.\\d{1,3}\\.\\d{1,3}\\.(1|2|48)$)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "conceptItem": "IOS_Intf",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.4.1b (Exc-Alt) Create a single 'interface vlan'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "IF_THEN",
+      "description": "Configure a single vlan interface.  Some L2-only devices do not have loopbacks",
+      "scopeSeparateResults": true,
+      "scope": "[v|V]lan.+",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "ip address 10\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3} 255.+"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "no ip address",
+              "shutdown"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "ifExpression": {
+        "$or": [
+          {
+            "detectedTypeBase": {
+              "$eq": "Switch"
+            }
+          },
+          {
+            "detectedTypeBase": {
+              "$eq": "Switch (Campus)"
+            }
+          },
+          {
+            "detectedTypeBase": {
+              "$eq": "Switch (DC)"
+            }
+          }
+        ]
+      },
+      "conceptItem": "IOS_Intf",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.4.2  Set AAA 'source-interface' to Loopback interface",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Force AAA to use the IP address of a specified interface for all outgoing AAA packets",
+      "scopeSeparateResults": false,
+      "scope": "^ip .+",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ip tacacs source-interface (Loopback|Vlan).+"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.4.3 Set 'ntp source' to Loopback Interface",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Use a particular source address in Network Time Protocol (NTP) packets.  Need to allow other interfaces as source.",
+      "scopeSeparateResults": false,
+      "scope": "ntp .+",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "ntp source (Loopback|Vlan).*"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "2.4.4 Set 'ip tftp source-interface' to the Loopback Interface",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Specify the IP address of an interface as the source address for TFTP connections",
+      "scopeSeparateResults": false,
+      "scope": "^ip .+",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ip tftp source-interface"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "3.1.1 Set 'no ip source-route'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Disable the handling of IP datagrams with source routing header options.",
+      "scopeSeparateResults": false,
+      "scope": "ip.+",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "^ip source-route"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "3.1.2 Set 'no ip proxy-arp'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Disable proxy ARP on all interfaces.",
+      "scopeSeparateResults": true,
+      "scope": "GigabitEthernet|Vlan",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "no ip proxy-arp"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ shutdown"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ switchport"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "no ip address"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "ip address"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "conceptItem": "IOS_Intf",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "3.1.3 Set 'no interface tunnel'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Verify no tunnel interfaces are defined.",
+      "scopeSeparateResults": true,
+      "scope": "[T|t]unnel.+",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "\\S"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "conceptItem": "IOS_Intf",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "3.1.4 (Exc-Skp) Set 'ip verify unicast source reachable-via'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "ip verify unicast source reachable-via rx"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "3.2.1 Set 'ip access-list extended' to Forbid Private Source Addresses from External Networks",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "IF_THEN",
+      "description": "Update: ",
+      "scopeSeparateResults": true,
+      "scope": "100",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "deny\\s+ip 127.0.0.0 0.255.255.255 any",
+              "deny\\s+ip host 255.255.255.255 any",
+              "deny\\s+ip host 0.0.0.0 any",
+              "deny\\s+ip 172.16.0.0 0.15.255.255 any",
+              "deny\\s+ip 192.168.0.0 0.0.255.255 any"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "ifExpression": {
+        "$or": [
+          {
+            "name": {
+              "$regex": "_Ext_",
+              "$options": "mi"
+            }
+          },
+          {
+            "name": {
+              "$regex": "_EXT_",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "conceptItem": "IOS_IpAcl",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "3.2.2 Set inbound 'ip access-group' on the External Interface ",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "This command places the router in access-list configuration mode, where you must define the denied or permitted access conditions by using the deny and permit commands.",
+      "scopeSeparateResults": true,
+      "scope": "",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "ip access-group"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "shutdown"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "no ip address"
+            ]
+          },
+          {
+            "condition": "OR",
+            "rules": [
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "ip address 10\\..+"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "ip address 192\\.168\\..+"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "ip address 172\\.[1-3]\\d\\..+"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "switchport"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "no ip address"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "conceptItem": "IOS_Intf",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "3.3.1.1 (Exc-Alt) Set 'key chain'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "IF_THEN",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^key chain \\S+"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(^|(\\r?\\n))router eigrp",
+              "$options": "i"
+            }
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "3.3.1.2 (Exc-Skp) Set 'key'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ key \\d+"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "3.3.1.3 (Exc-Skp) Set 'key-string'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^  key-string"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "3.3.1.4 (Exc-Skp) Set 'address-family ipv4 autonomous-system'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "IF_THEN",
+      "description": "Configure the EIGRP address family.",
+      "scopeSeparateResults": false,
+      "scope": "eigrp",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "address-family ipv4 autonomous-system"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(^|(\\r?\\n))router eigrp",
+              "$options": "i"
+            }
+          }
+        ]
+      },
+      "conceptItem": "IOS_Router",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "3.3.1.5 (Exc-Skp) Set 'af-interface default'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "eigrp",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "af-interface default"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "conceptItem": "IOS_Router",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "3.3.1.6 (Exc-Skp) Set 'authentication key-chain'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "IF_THEN",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "eigrp",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "authentication key-chain"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(^|(\\r?\\n))router eigrp",
+              "$options": "i"
+            }
+          }
+        ]
+      },
+      "conceptItem": "IOS_Router",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "3.3.1.7 (Exc-Skp) Set 'authentication mode md5'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "IF_THEN",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "eigrp",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "authentication mode"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(^|(\\r?\\n))router eigrp",
+              "$options": "i"
+            }
+          }
+        ]
+      },
+      "conceptItem": "IOS_Router",
+      "commandSet": "all"
+    },
+    {
+      "severity": "MAJOR",
+      "name": "3.3.1.8 (Exc-Skp) Set 'ip authentication key-chain eigrp'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Specify the type of authentication used in Enhanced Interior Gateway Routing Protocol (EIGRP) packets per interface.",
+      "scopeSeparateResults": false,
+      "scope": "eigrp",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "ip authentication key-chain eigrp"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "3.3.1.9 (Exc-Skp) Set 'ip authentication mode eigrp'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Exception: ",
+      "scopeSeparateResults": false,
+      "scope": "interface",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "ip authentication mode \\S+ md5"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "3.3.2.1 (Exc-Skp) Set 'authentication message-digest' for OSPF area (Manual)",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Enable MD5 authentication for OSPF.",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^router ospf \\d+",
+              "authentication message-digest"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "^router ospf \\d+"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "3.3.2.2 (Exc-Skp) Set 'ip ospf message-digest-key md5' (Manual)",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Enable Open Shortest Path First (OSPF) Message Digest 5 (MD5) authentication.",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "ip ospf message-digest-key \\S+ md5"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "3.3.3.1 (Exc-Skp) Set 'key chain'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Define an authentication key chain to enable authentication for RIPv2 routing protocols.",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "key.+"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "3.3.3.2 (Exc-Skp) Set 'key'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Configure an authentication key on a key chain.",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^key"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "3.3.3.3 (Exc-Skp) Set 'key-string'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Configure the authentication string for a key.",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^key.string"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "3.3.3.4 (Exc-Skp) Set 'ip rip authentication key-chain'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Enable authentication for Routing Information Protocol (RIP) Version 2 packets and to specify the set of keys that can be used on an interface.",
+      "scopeSeparateResults": false,
+      "scope": "interface",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ip rip authentication key-chain"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "3.3.3.5 (Exc-Skp) Set 'ip rip authentication mode' to 'md5'",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Configure the Interface with the RIPv2 key chain.",
+      "scopeSeparateResults": false,
+      "scope": "interface",
+      "thenExpression": {
+        "condition": "OR",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ip rip authentication mode md5"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "severity": "MAJOR",
+      "name": "3.3.4.1 (Exc-Skp) Set 'neighbor password",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "Enable message digest5 (MD5) authentication on a TCP connection between two BGP peers.",
+      "scopeSeparateResults": false,
+      "scope": "",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^router bgp \\d+"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "neighbor \\d+\\.\\d+\\.\\d+\\.\\d+ password"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": false,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "commandSet": "all",
+      "conceptItemId": null
+    }
+  ],
+  "runLevel": "auditRunLevel1",
+  "name": "CIS Cisco IOS 17.x Benchmark - v2.0.0",
+  "description": "This Audit Policy is created based on CIS Cisco IOS 17.x Benchmark - v2.0.0",
+  "tid": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+  "id": "9659e098-ed16-4912-9f35-60699c4dc0ec",
+  "createdBy": "admin",
+  "createdOn": 1724851500590,
+  "updatedBy": "admin",
+  "updatedOn": 1731424890729,
+  "lastAuditErrorMsg": "",
+  "lastAuditDevicesSkippedCount": 0
+}

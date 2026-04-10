@@ -1,0 +1,17 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/ntp.jtype"
+    },
+    "@id": "10726087-be50-424c-962d-cd57faf5efba",
+    "featureConcept": {
+        "name": "NTP Feature",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ntp__cliGrp__17314350873660af.json"
+            ]
+        }
+    },
+    "@exportedInstanceId": "10726087-be50-424c-962d-cd57faf5efba",
+    "@name": "ntp__1731435087366",
+    "@description": ""
+}

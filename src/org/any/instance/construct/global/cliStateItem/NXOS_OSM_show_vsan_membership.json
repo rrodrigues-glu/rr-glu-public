@@ -1,0 +1,17 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "sh vsan membership",
+    "groupName": "vsan",
+    "discover": {},
+    "options": {},
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_show_vsan_membership"
+    },
+    "@exportedInstanceId": "b2fdc13c-1d46-452f-a45a-cb59fe5bfbb2",
+    "@id": "b2fdc13c-1d46-452f-a45a-cb59fe5bfbb2",
+    "@name": "NXOS_OSM_show_vsan_membership",
+    "@description": ""
+}

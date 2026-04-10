@@ -1,0 +1,89 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/ipAddressing.jtype"
+    },
+    "intfs": [
+        {
+            "intf": {
+                "map": {
+                    "@ref": "/org/instance/construct/global/lanInterface/OVRL1.json"
+                }
+            },
+            "ipv4": {
+                "category": "local",
+                "method": "hostPool",
+                "supernet": {
+                    "ipPrefix": {
+                        "@ref": "/org/instance/construct/domain/ipv4Pool/DMVPN-100.json"
+                    }
+                },
+                "host": {}
+            }
+        },
+        {
+            "intf": {
+                "map": {
+                    "@ref": "/org/instance/construct/global/lanInterface/OVRL2.json"
+                }
+            },
+            "ipv4": {
+                "category": "local",
+                "method": "hostPool",
+                "supernet": {
+                    "ipPrefix": {
+                        "@ref": "/org/instance/construct/domain/ipv4Pool/DMVPN-200.json"
+                    }
+                },
+                "host": {}
+            }
+        },
+        {
+            "intf": {
+                "map": {
+                    "@ref": "/org/instance/construct/global/lanInterface/MGNT1.json"
+                }
+            },
+            "ipv4": {
+                "category": "local",
+                "method": "subnetPool",
+                "supernet": {
+                    "ipPrefix": {
+                        "@ref": "/org/instance/construct/domain/ipv4Pool/Spoke-Loopback0.json"
+                    }
+                },
+                "subnet": {
+                    "offset": null,
+                    "method": "individual"
+                }
+            }
+        },
+        {
+            "intf": {
+                "map": {
+                    "@ref": "/org/instance/construct/global/lanInterface/DATA.json"
+                }
+            },
+            "ipv4": {
+                "category": "local",
+                "method": "hostPool",
+                "supernet": {
+                    "ipPrefix": {
+                        "@ref": "/org/instance/construct/domain/ipv4Pool/Spoke-LAN.json"
+                    }
+                },
+                "host": {
+                    "range": {
+                        "@ref": "/org/instance/construct/global/subnetRange/dmvpn-spoke-subnetRange.json"
+                    }
+                }
+            }
+        }
+    ],
+    "@source": {
+        "instanceName": "DMVPN_100-200"
+    },
+    "@exportedInstanceId": "be7f07c3-19e6-42ec-ab2f-14281ca1b20e",
+    "@id": "be7f07c3-19e6-42ec-ab2f-14281ca1b20e",
+    "@name": "DMVPN_100-200",
+    "@description": ""
+}

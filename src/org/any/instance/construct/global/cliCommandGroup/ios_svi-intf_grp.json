@@ -1,0 +1,33 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": "Vlan.+",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_svi-intf_cli.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": []
+    },
+    "maskCommands": [
+        "^interface",
+        "^description",
+        "^ip address",
+        "^no ip redirects",
+        "^no ip proxy-arp",
+        "^no ip unreachables"
+    ],
+    "@source": {
+        "instanceName": "ios_svi-intf_grp"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "10c53108-7fcd-463f-aa1c-97a9cc741324",
+    "@id": "10c53108-7fcd-463f-aa1c-97a9cc741324",
+    "@name": "ios_svi-intf_grp",
+    "@description": ""
+}

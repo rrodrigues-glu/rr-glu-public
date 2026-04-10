@@ -1,0 +1,27 @@
+{
+    "regEx": ".+",
+    "ignoreDelete": false,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_ntp-server_cli-_Rubb1.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": [
+            "$discover.Intf.up.name == up"
+        ]
+    },
+    "maskCommands": [
+        "ntp source"
+    ],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "d185af82-164c-48b6-ae7f-2834938734ee",
+    "@id": "d185af82-164c-48b6-ae7f-2834938734ee",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@name": "ios_ntp-server_grp-_Rubb1",
+    "@description": ""
+}

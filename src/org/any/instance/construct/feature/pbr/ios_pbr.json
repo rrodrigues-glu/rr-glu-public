@@ -1,0 +1,27 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/pbr.jtype"
+    },
+    "featureConcept": {
+        "name": " ",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_pbr-acl_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_pbr-rmap_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_pbr-intf_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "pbr": {
+            "comment": null
+        }
+    },
+    "@source": {
+        "instanceName": "ios_pbr"
+    },
+    "@exportedInstanceId": "04fbbe81-be84-4338-9933-f21cb6ca3fd4",
+    "@id": "04fbbe81-be84-4338-9933-f21cb6ca3fd4",
+    "@name": "ios_pbr",
+    "@description": ""
+}

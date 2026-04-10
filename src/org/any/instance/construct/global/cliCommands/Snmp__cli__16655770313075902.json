@@ -1,0 +1,16 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "07c293c9-356b-4aad-a9d7-287f5fc10d65",
+    "item": {},
+    "cliCommands": [
+        "snmp-server user admin network-admin auth md5 0xfcbaf62630614ce754f7478d4253423f priv 0xfcbaf62630614ce754f7478d4253423f localizedkey",
+        "snmp-server enable traps bridge newroot",
+        "snmp-server enable traps bridge topologychange",
+        ""
+    ],
+    "@exportedInstanceId": "07c293c9-356b-4aad-a9d7-287f5fc10d65",
+    "@name": "Snmp__cli__16655770313075902",
+    "@description": ""
+}

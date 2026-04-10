@@ -1,0 +1,44 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "router eigrp dmvpn",
+        " !",
+        " address-family ipv4 unicast autonomous-system 9999",
+        "  !",
+        "  af-interface default",
+        "   passive-interface",
+        "  exit-af-interface",
+        "  !",
+        "  af-interface Tunnel$context.networks[*].overlayNetwork.id",
+        "   hello-interval 20",
+        "   hold-time 60",
+        "   no passive-interface",
+        "   stub-site wan-interface",
+        "  exit-af-interface",
+        "  !",
+        "  topology base",
+        "   redistribute $context.ospf.procId",
+        "  exit-af-topology",
+        "  network $context.networks[*].overlayIntf.ipv4.subnet.subnetId $context.networks[*].overlayIntf.ipv4.subnet.wildCardMask",
+        "  network $context.portMap.MGNT1.ipv4.subnet.subnetId $context.portMap.MGNT1.ipv4.subnet.wildCardMask",
+        "  network $context.portMap.DATA1.ipv4.subnet.subnetId $context.portMap.DATA1.ipv4.subnet.wildCardMask",
+        "  network $context.portMap.DATA2.ipv4.subnet.subnetId $context.portMap.DATA2.ipv4.subnet.wildCardMask",
+        "  eigrp router-id $context.portMap.MGNT1.ipv4.subnet.ipAddress",
+        "  eigrp stub-site 1:10",
+        " exit-address-family",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_dmvpn-eigrp-spoke_cli"
+    },
+    "@exportedInstanceId": "a98400f2-61fe-4a30-b243-16d7b0998c1a",
+    "@id": "a98400f2-61fe-4a30-b243-16d7b0998c1a",
+    "@name": "ios_dmvpn-eigrp-spoke_cli",
+    "@description": ""
+}

@@ -1,0 +1,38 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/globals.jtype"
+    },
+    "featureConcept": {
+        "name": "Globals Feature",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_enable-passwd_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_enable-secret_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_ip-ftp-source_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_ip-tftp-source_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_gratuitous-arp_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_hostname_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_ip-finger_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_line-aux_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_line-vty-con_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_source-route_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_subnet-zero_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_tcp_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "globals": {
+            "hostName": true,
+            "domainName": "nuc.lab",
+            "ip": true
+        }
+    },
+    "@source": {
+        "instanceName": "iosSwitch_globals"
+    },
+    "@exportedInstanceId": "7e25aa37-5cb7-4f3c-891a-93a42e2c3069",
+    "@id": "7e25aa37-5cb7-4f3c-891a-93a42e2c3069",
+    "@name": "iosSwitch_globals",
+    "@description": ""
+}

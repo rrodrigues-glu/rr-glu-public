@@ -1,0 +1,32 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosRouterAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "pbr": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/pbr/ios_pbr.json"
+                }
+            }
+        }
+    },
+    "interfaces": {
+        "portMap": {
+            "@ref": "/org/instance/construct/global/portMap/ASR1001.json"
+        }
+    },
+    "agents": {
+        "watchdog": {}
+    },
+    "state": {
+        "assessment": {}
+    },
+    "@source": {
+        "instanceName": "PBR_Assembly"
+    },
+    "@exportedInstanceId": "bc2df4a8-a91c-49d7-b218-cfe5a9aabcd9",
+    "@id": "bc2df4a8-a91c-49d7-b218-cfe5a9aabcd9",
+    "@name": "PBR_Assembly",
+    "@description": ""
+}

@@ -1,0 +1,33 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": "GigabitEthernet0/1$",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_intf-lan_cli.json"
+        ]
+    },
+    "maskCommands": [
+        "^interface",
+        "^description",
+        "^ip address",
+        "^no ip redirects",
+        "^no ip proxy-arp",
+        "^no ip unreachables"
+    ],
+    "advanced": {
+        "renderingConditions": []
+    },
+    "@source": {
+        "instanceName": "ios_intf-lan_grp"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "1b254fe9-17bd-43ad-b551-d4e525e7af09",
+    "@id": "1b254fe9-17bd-43ad-b551-d4e525e7af09",
+    "@name": "ios_intf-lan_grp",
+    "@description": ""
+}

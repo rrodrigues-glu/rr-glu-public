@@ -1,0 +1,32 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "name": "Vtp",
+    "showCmds": [
+        "show run | sec vtp"
+    ],
+    "mode": "basic",
+    "keyCliLine": "",
+    "rootEntryFlag": false,
+    "boundaries": {
+        "start": null
+    },
+    "discover": {},
+    "removeSyntax": {},
+    "vendors": {
+        "cisco": {
+            "type": [
+                "nxos"
+            ],
+            "level": null
+        }
+    },
+    "@source": {
+        "instanceName": "NXOS_Vtp"
+    },
+    "@exportedInstanceId": "16140de9-3cb4-45a1-a853-058223923bbb",
+    "@id": "16140de9-3cb4-45a1-a853-058223923bbb",
+    "@name": "NXOS_Vtp",
+    "@description": ""
+}

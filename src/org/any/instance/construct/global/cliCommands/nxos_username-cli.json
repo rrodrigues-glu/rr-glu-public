@@ -1,0 +1,24 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "username netadmin password 5 $5$BWgNj/pV$Dn0kIz2gxJlshgU44EqVq23OYpzJ3g1ATVimv2IiLD3  role vdc-admin",
+        "username netadmin passphrase  lifetime 99999 warntime 7",
+        "username syssnmp password 5 $1$PKRTWVIb$rq9h9uZ89LnB7rhC9Dio6.  role vdc-admin",
+        "username syssnmp passphrase  lifetime 99999 warntime 7",
+        "username netsnmp password 5 $5$74y3BRGt$gHtwXAFn97wDKT493/18HoXeLkYK0TdhLUnqrHtvXL8  role vdc-operator",
+        "username netsnmp passphrase  lifetime 99999 warntime 7"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_username-cli"
+    },
+    "@exportedInstanceId": "655ed35d-a129-484a-90f6-dfed15d78614",
+    "@id": "655ed35d-a129-484a-90f6-dfed15d78614",
+    "@name": "nxos_username-cli",
+    "@description": ""
+}

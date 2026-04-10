@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/qosCheck.jtype"
+    },
+    "featureConcept": {
+        "name": "QoS Model for AIR3504 Cairo Egypt",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/aireos_qos_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/aireos_wlan-qos-1_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "platform": "AIR-(CT|WLC).+"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "aireos_qos-egy-cairo"
+    },
+    "@exportedInstanceId": "f1f32630-2110-4b90-828d-5c80258fb081",
+    "@id": "f1f32630-2110-4b90-828d-5c80258fb081",
+    "@name": "aireos_qos-egy-cairo",
+    "@description": ""
+}

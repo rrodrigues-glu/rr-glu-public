@@ -1,0 +1,14 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/lanInterface.jtype"
+    },
+    "description": "",
+    "location": "internal",
+    "@source": {
+        "instanceName": "GUEST"
+    },
+    "@exportedInstanceId": "9b71b667-76e2-4c5c-bcae-be447f37b107",
+    "@id": "9b71b667-76e2-4c5c-bcae-be447f37b107",
+    "@name": "GUEST",
+    "@description": ""
+}

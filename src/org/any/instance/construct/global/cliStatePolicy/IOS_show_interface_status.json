@@ -1,0 +1,24 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStatePolicy.jtype"
+    },
+    "list": [
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/IOS_show_interface_status.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        }
+    ],
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "IOS_show_interface_status"
+    },
+    "privilegeMode": false,
+    "@exportedInstanceId": "26ea7637-8df0-4217-9929-031a7d094aed",
+    "@id": "26ea7637-8df0-4217-9929-031a7d094aed",
+    "@name": "IOS_show_interface_status",
+    "@description": ""
+}

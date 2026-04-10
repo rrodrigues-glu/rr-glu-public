@@ -1,0 +1,24 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/featureBinder.jtype"
+    },
+    "vendor": "cisco",
+    "os": "nxos",
+    "featureName": "syslog",
+    "featureDisplayName": "Syslog Feature",
+    "renderList": [
+        {
+            "item": {},
+            "maskCommands": [],
+            "dCli": []
+        }
+    ],
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "NXOS_syslog"
+    },
+    "@exportedInstanceId": "fc8d1bd2-eaca-44fb-bae9-2ec3daee2049",
+    "@id": "fc8d1bd2-eaca-44fb-bae9-2ec3daee2049",
+    "@name": "NXOS_syslog",
+    "@description": ""
+}

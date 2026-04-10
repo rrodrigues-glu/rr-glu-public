@@ -1,0 +1,23 @@
+{
+    "featureConcept": {
+        "name": "Macro Feature",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/banner__cliGrp__macro2.json",
+                "/org/instance/construct/global/cliCommandGroup/banner__cliGrp__macro.json"
+            ]
+        }
+    },
+    "form": {
+        "banner": {
+            "comment": null
+        }
+    },
+    "@exportedInstanceId": "a6f27f2f-d9ab-44d1-bf0a-03c4fe33073c",
+    "@id": "a6f27f2f-d9ab-44d1-bf0a-03c4fe33073c",
+    "@type": {
+        "ref": "/sys/type/construct/feature/banner.jtype"
+    },
+    "@name": "banner__1665576295055",
+    "@description": ""
+}

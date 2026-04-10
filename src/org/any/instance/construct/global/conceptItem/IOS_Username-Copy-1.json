@@ -1,0 +1,51 @@
+{
+    "name": "username",
+    "selectAVendor": {
+        "vendor": null
+    },
+    "vendors": {
+        "cisco": {
+            "type": [
+                "ios"
+            ],
+            "level": null
+        }
+    },
+    "showCmds": [
+        "sh run | sec username"
+    ],
+    "keyCliLine": "username (\\w+)( privilege\\s\\w*)?( view\\s\\w*)?( password\\s\\w*\\s\\w*)?( secret\\s\\w*\\s\\w*)?",
+    "rootEntryFlag": true,
+    "keyLineDepth": 1,
+    "keyGroup": 1,
+    "metadata": {},
+    "mode": "advanced",
+    "boundaries": {
+        "start": ""
+    },
+    "discover": {
+        "Ci1": {
+            "expressions": [
+                "username (?<user>\\w+) privilege ( ?<role>\\w.*) "
+            ]
+        },
+        "Ci6": {
+            "expressions": [
+                "username (?<user>\\w+) privilege ( ?<role>\\w.*) "
+            ]
+        },
+        "Ci8": {
+            "expressions": [
+                "username (?<user>\\w+) privilege ( ?<role>\\w.*) "
+            ]
+        }
+    },
+    "removeSyntax": {},
+    "@exportedInstanceId": "68aa007b-c330-4555-a708-11a6e69695cb",
+    "@id": "68aa007b-c330-4555-a708-11a6e69695cb",
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "@name": "IOS_Username-Copy-1",
+    "@description": "Displays the configuration section that shows the configured username details."
+}

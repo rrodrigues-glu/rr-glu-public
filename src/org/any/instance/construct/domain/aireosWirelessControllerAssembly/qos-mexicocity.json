@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/aireosWirelessControllerAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "qos": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/qos/aireos_qos-mex-mexicocity.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "state": {
+        "assessment": {}
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "qos-mexicocity"
+    },
+    "@exportedInstanceId": "e893027d-cb50-46d3-b29a-fe5abd97e6e5",
+    "@id": "e893027d-cb50-46d3-b29a-fe5abd97e6e5",
+    "@name": "qos-mexicocity",
+    "@description": ""
+}

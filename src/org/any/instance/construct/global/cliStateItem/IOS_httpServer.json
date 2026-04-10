@@ -1,0 +1,27 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show ip http server all",
+    "rootEntry": "yes",
+    "groupName": "httpServer",
+    "discover": {
+        "state": {
+            "expressions": [
+                "HTTP server port: (?<httpPort>\\d+)",
+                "HTTP server status: (?<status>Enabled|Disabled)"
+            ],
+            "localKey": "",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {},
+    "@source": {
+        "instanceName": "IOS_httpServer"
+    },
+    "@exportedInstanceId": "7fbd3a14-837c-45f7-9261-446ee952525e",
+    "@id": "7fbd3a14-837c-45f7-9261-446ee952525e",
+    "@name": "IOS_httpServer",
+    "@description": ""
+}

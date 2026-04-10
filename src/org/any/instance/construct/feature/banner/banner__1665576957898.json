@@ -1,0 +1,17 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/banner.jtype"
+    },
+    "@id": "db0ffb83-b2b4-4973-8156-45c0906e1f24",
+    "featureConcept": {
+        "name": "Banner Feature",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/banner__cliGrp__1665576957898e47.json"
+            ]
+        }
+    },
+    "@exportedInstanceId": "db0ffb83-b2b4-4973-8156-45c0906e1f24",
+    "@name": "banner__1665576957898",
+    "@description": ""
+}

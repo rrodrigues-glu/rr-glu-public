@@ -1,0 +1,32 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "1e4dfb7e-7213-4858-9b22-84654588b288",
+    "item": {},
+    "cliCommands": [
+        "banner motd ^",
+        "******************************* NOTICE ********************************",
+        "This is a private computer system.",
+        "It is for authorized use only. Users (authorized or unauthorized)",
+        "have no explicit or implicit expectation of privacy.",
+        "Any or all uses of this system and all files on this system may be",
+        "intercepted, monitored, recorded, copied, audited, inspected, and",
+        "disclosed to authorized site, information security, and law enforcement",
+        "personnel, as well as authorized officials of other agencies, both",
+        "domestic and foreign. By using this system, the user consents to such",
+        "interception, monitoring, recording, copying, auditing, inspection, and",
+        "disclosure at the discretion of authorized site or personnel.",
+        " ",
+        "Unauthorized or improper use of this system may result in civil and",
+        "criminal penalties. By continuing to access this system you indicate",
+        "your awareness of and consent to these terms and conditions of use.",
+        "DISCONNECT IMMEDIATELY if you do not agree to the conditions stated in",
+        "this warning.",
+        "***********************************************************************",
+        "^"
+    ],
+    "@exportedInstanceId": "1e4dfb7e-7213-4858-9b22-84654588b288",
+    "@name": "Banner__cli__1665577031307fc50",
+    "@description": ""
+}

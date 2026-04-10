@@ -1,0 +1,34 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "interface $context.switchPorts[*].name",
+        " authentication open",
+        " authentication control-direction in",
+        " authentication event fail action next-method",
+        " authentication event server dead action reinitialize vlan $discover.vlan.access",
+        " authentication event server dead action authorize voice",
+        " authentication event server alive action reinitialize",
+        " authentication host-mode multi-auth",
+        " authentication order mab dot1x",
+        " authentication priority dot1x mab",
+        " authentication port-control auto",
+        " authentication periodic",
+        " authentication timer reauthenticate server",
+        " authentication violation restrict",
+        " mab",
+        " dot1x pae authenticator",
+        " dot1x timeout tx-period 3",
+        "!"
+    ],
+    "advanced": {},
+    "@source": {
+        "instanceName": "ios_nac-interface_cli"
+    },
+    "@exportedInstanceId": "a18484fa-aa04-4d09-9654-a9386abe6d9e",
+    "@id": "a18484fa-aa04-4d09-9654-a9386abe6d9e",
+    "@name": "ios_nac-interface_cli",
+    "@description": ""
+}

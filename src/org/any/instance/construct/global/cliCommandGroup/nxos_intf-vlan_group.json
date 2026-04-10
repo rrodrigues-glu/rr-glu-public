@@ -1,0 +1,24 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": "(^vlan.+|^Vlan.+)",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/nxos_intf-vlan-cli.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@source": {
+        "instanceName": "nxos_intf-vlan_group"
+    },
+    "@exportedInstanceId": "df2e6363-17a3-4245-a60a-05120dc936cc",
+    "@id": "df2e6363-17a3-4245-a60a-05120dc936cc",
+    "@name": "nxos_intf-vlan_group",
+    "@description": ""
+}

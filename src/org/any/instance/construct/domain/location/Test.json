@@ -1,0 +1,18 @@
+{
+    "site": {
+        "name": "TST",
+        "description": "",
+        "location": "",
+        "type": "site",
+        "sitePath": "/",
+        "contact": "",
+        "techContact": ""
+    },
+    "@exportedInstanceId": "1a9619ec-e1e1-4bab-9c35-fd5acfa2ff1b",
+    "@id": "1a9619ec-e1e1-4bab-9c35-fd5acfa2ff1b",
+    "@type": {
+        "ref": "/sys/type/construct/domain/location.jtype"
+    },
+    "@name": "Test",
+    "@description": ""
+}

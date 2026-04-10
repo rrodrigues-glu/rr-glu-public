@@ -1,0 +1,46 @@
+{
+    "configState": "managed",
+    "entryConnection": {
+        "ip": "10.150.1.46",
+        "credentials": {
+            "@ref": "/secret/sys/credentials/deviceUserPass/admin.json"
+        },
+        "enablePassword": null,
+        "type": "ssh",
+        "port": 22,
+        "connectionMethod": "cliConnection",
+        "terminalType": "xterm"
+    },
+    "associations": {
+        "provider": "local"
+    },
+    "persona": {
+        "type": "none",
+        "id": 0
+    },
+    "hardware": {
+        "vendor": "auto",
+        "expectedSerialNumber": "auto"
+    },
+    "provisioning": {
+        "type": "advanced"
+    },
+    "nxosSwitch": {
+        "enabled": true
+    },
+    "options": {
+        "connectionEnabled": true,
+        "previewMode": false,
+        "forcedAttachedStorage": false
+    },
+    "dcSwitch": {
+        "enabled": true
+    },
+    "@exportedInstanceId": "b50432eb-94b0-480a-8b0f-e0c02337fbd5",
+    "@id": "b50432eb-94b0-480a-8b0f-e0c02337fbd5",
+    "@type": {
+        "ref": "/sys/type/construct/node/nxosSwitch.jtype"
+    },
+    "@name": "nx",
+    "@description": ""
+}

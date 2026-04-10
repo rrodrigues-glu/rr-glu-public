@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "ip domain-name $context.dns.domainName"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "nxos_domain-name-cli"
+    },
+    "@description": "",
+    "@exportedInstanceId": "ea1022fc-41a8-4a02-aecf-1a6c4920f6bf",
+    "@id": "ea1022fc-41a8-4a02-aecf-1a6c4920f6bf",
+    "@name": "nxos_domain-name-cli"
+}

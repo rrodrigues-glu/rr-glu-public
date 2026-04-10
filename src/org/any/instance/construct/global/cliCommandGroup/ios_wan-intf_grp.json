@@ -1,0 +1,31 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": ".+",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_wan-intf_cli.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": [
+            "$discover.description == Outside Internet Provider"
+        ]
+    },
+    "maskCommands": [
+        "^interface",
+        "^ip access-group"
+    ],
+    "@source": {
+        "instanceName": "ios_wan-intf_grp"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "e1bc8fc0-ce69-4007-85a4-68a863da3914",
+    "@id": "e1bc8fc0-ce69-4007-85a4-68a863da3914",
+    "@name": "ios_wan-intf_grp",
+    "@description": ""
+}

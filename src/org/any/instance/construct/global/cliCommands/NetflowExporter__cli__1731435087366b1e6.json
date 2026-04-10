@@ -1,0 +1,15 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "c9060e14-b48d-436d-a548-8d0d79a3b3f4",
+    "item": {},
+    "cliCommands": [
+        "                                       ^",
+        "% Invalid command at '^' marker.",
+        ""
+    ],
+    "@exportedInstanceId": "c9060e14-b48d-436d-a548-8d0d79a3b3f4",
+    "@name": "NetflowExporter__cli__1731435087366b1e6",
+    "@description": ""
+}

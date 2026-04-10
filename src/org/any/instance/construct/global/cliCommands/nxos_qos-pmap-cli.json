@@ -1,0 +1,54 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "policy-map type control-plane NEW_NO_MPLS-copp-policy-strict",
+        " class NEW_NO_MPLS-copp-class-critical",
+        "  set cos 7",
+        "  police cir 39600 kbps bc 250 ms conform transmit violate drop",
+        " class NEW_NO_MPLS-copp-class-important",
+        "  set cos 6",
+        "  police cir 1060 kbps bc 1000 ms conform transmit violate drop",
+        " class NEW_NO_MPLS-copp-class-management",
+        "  set cos 2",
+        "  police cir 10000 kbps bc 250 ms conform transmit violate drop",
+        " class NEW_NO_MPLS-copp-class-normal",
+        "  set cos 1",
+        "  police cir 680 kbps bc 250 ms conform transmit violate drop",
+        " class NEW_NO_MPLS-copp-class-normal-dhcp",
+        "  set cos 1",
+        "  police cir 680 kbps bc 250 ms conform transmit violate drop",
+        " class NEW_NO_MPLS-copp-class-normal-dhcp-relay-response",
+        "  set cos 1",
+        "  police cir 900 kbps bc 500 ms conform transmit violate drop",
+        " class NEW_NO_MPLS-copp-class-redirect",
+        "  set cos 1",
+        "  police cir 280 kbps bc 250 ms conform transmit violate drop",
+        " class NEW_NO_MPLS-copp-class-exception",
+        "  set cos 1",
+        "  police cir 360 kbps bc 250 ms conform transmit violate drop",
+        " class NEW_NO_MPLS-copp-class-monitoring",
+        "  set cos 1",
+        "  police cir 130 kbps bc 1000 ms conform transmit violate drop",
+        " class NEW_NO_MPLS-copp-class-l2-unpoliced",
+        "  police cir 8 gbps bc 5 mbytes conform transmit violate transmit",
+        " class NEW_NO_MPLS-copp-class-undesirable",
+        "  set cos 0",
+        "  police cir 32 kbps bc 250 ms conform drop violate drop",
+        " class class-default",
+        "  set cos 0",
+        "  police cir 100 kbps bc 250 ms conform transmit violate drop"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_qos-pmap-cli"
+    },
+    "@exportedInstanceId": "47540a9c-4b1f-4ad8-b6e5-c51f3ddb9102",
+    "@id": "47540a9c-4b1f-4ad8-b6e5-c51f3ddb9102",
+    "@name": "nxos_qos-pmap-cli",
+    "@description": ""
+}

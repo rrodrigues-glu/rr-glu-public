@@ -1,0 +1,23 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "ip access-list extended Local-telephony-ACL",
+        " permit udp any any range 16384 32767",
+        "!"
+    ],
+    "advanced": {
+        "filter": "platform",
+        "platform": "C6500|C2960X"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_cat6500-qos-acl-default_cli"
+    },
+    "@exportedInstanceId": "eb72485e-ad15-4008-a3b8-6b7cc9d49405",
+    "@id": "eb72485e-ad15-4008-a3b8-6b7cc9d49405",
+    "@name": "ios_cat6500-qos-acl-default_cli",
+    "@description": ""
+}

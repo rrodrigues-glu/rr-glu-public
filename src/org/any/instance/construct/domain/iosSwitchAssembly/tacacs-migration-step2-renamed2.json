@@ -1,0 +1,40 @@
+{
+    "domains": {
+        "modules": {
+            "aaa": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/aaa/tacacs-step2.json"
+                }
+            }
+        }
+    },
+    "interfaces": {
+        "portMap": {
+            "@ref": "/org/instance/construct/global/portMap/nyu-switch.json"
+        }
+    },
+    "agents": {
+        "watchdog": {}
+    },
+    "boot": {
+        "firmware": {}
+    },
+    "state": {
+        "assessment": {
+            "provision": {
+                "policy": {
+                    "@ref": "/org/instance/construct/global/cliStatePolicy/ping_tacacs-step2.json"
+                },
+                "action": "abort",
+                "schedule": "before"
+            }
+        }
+    },
+    "@exportedInstanceId": "3a6697a4-00cf-4267-8912-831d9330b607",
+    "@id": "3a6697a4-00cf-4267-8912-831d9330b607",
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosSwitchAssembly.jtype"
+    },
+    "@name": "tacacs-migration-step2-renamed2",
+    "@description": ""
+}

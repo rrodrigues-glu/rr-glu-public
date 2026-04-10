@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/rtoAssessmentTemplateExport.jtype"
+    },
+    "exportType": {
+        "email": {
+            "server": {
+                "@ref": "/org/instance/construct/global/emailServerInfo/gmail-smtp-example.json"
+            },
+            "from": "address1@domain1.tld",
+            "to": "address1@domain1.tld, address2@domain2.tld",
+            "subject": "Export Report For Site $context.location",
+            "bodyType": "text/plain",
+            "body": "Test Message for $context.location"
+        }
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "Export-reports-example"
+    },
+    "@exportedInstanceId": "4f3ca24f-67ed-4c30-8296-21cacbb423fc",
+    "@id": "4f3ca24f-67ed-4c30-8296-21cacbb423fc",
+    "@name": "Export-reports-example",
+    "@description": ""
+}

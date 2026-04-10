@@ -1,0 +1,17 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show fabricpath isis hostname",
+    "groupName": "ISIS_HOSTNAME",
+    "discover": {},
+    "options": {},
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_show_fabricpath_isis_hostname"
+    },
+    "@exportedInstanceId": "9e01ae8b-7512-4f84-9c9d-05cbd4e1619a",
+    "@id": "9e01ae8b-7512-4f84-9c9d-05cbd4e1619a",
+    "@name": "NXOS_OSM_show_fabricpath_isis_hostname",
+    "@description": ""
+}

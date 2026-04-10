@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show vpc brief",
+    "groupName": "vpcStatus",
+    "discover": {
+        "Data": {
+            "expressions": [
+                "^Peer status\\s+: (?<peerStatus>.+)"
+            ],
+            "localKey": "",
+            "preserveLocalKey": false,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {
+        "generateLocalKey": false
+    },
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_show_vpc_brief_status"
+    },
+    "@exportedInstanceId": "5055596d-be6c-4b55-8618-e7577fcf4412",
+    "@id": "5055596d-be6c-4b55-8618-e7577fcf4412",
+    "@name": "NXOS_OSM_show_vpc_brief_status",
+    "@description": ""
+}

@@ -1,0 +1,30 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/ipv4Pool.jtype"
+    },
+    "description": "",
+    "type": "ipv4",
+    "summary": "10.10.80.0/24",
+    "reservations": [],
+    "ranges": [
+        {
+            "name": {
+                "@ref": "/org/instance/construct/global/subnetRange/reserved_subnet.json"
+            },
+            "ips": [
+                "10.10.80.10-10.10.80.254"
+            ]
+        }
+    ],
+    "allocationMode": "hostBased",
+    "options": {
+        "oversubscribingMode": false
+    },
+    "@source": {
+        "instanceName": "vlan800_pool"
+    },
+    "@exportedInstanceId": "d66dd889-b16d-4248-a226-f0e2113c1e83",
+    "@id": "d66dd889-b16d-4248-a226-f0e2113c1e83",
+    "@name": "vlan800_pool",
+    "@description": ""
+}

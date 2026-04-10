@@ -1,0 +1,46 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/licensing.jtype"
+    },
+    "featureConcept": {
+        "name": "Smart Licensing Test",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_dns-server_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_domain-lookup_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_http-source-interface_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "license": {
+            "token": "OTliMDExMGYtZmQwZi00ZTdjLTljM2ItYzdiNjM3ZTFjOGQ0LTE2MzE4OTQx%0AMDI2NTd8dENhc0pPQ0trcy9MUUVJTzlqNkNvVnZrd2NFaXd1V3F6OTY0dXgy%0AQlN5MD0%3D%0A"
+        },
+        "dns": {
+            "domainName": "gluware.com",
+            "vrf": {
+                "@ref": "/org/instance/construct/global/vrf/inet-public.json"
+            },
+            "server": [
+                {
+                    "ip": "8.8.8.8"
+                },
+                {
+                    "ip": "9.9.9.9"
+                }
+            ]
+        },
+        "http": {
+            "srcInt": {
+                "@ref": "/org/instance/construct/global/wanInterface/ISP1.json"
+            }
+        }
+    },
+    "@source": {
+        "instanceName": "ios_licensing"
+    },
+    "@exportedInstanceId": "1dcda0d5-08d5-4208-93a2-362c31b59f54",
+    "@id": "1dcda0d5-08d5-4208-93a2-362c31b59f54",
+    "@name": "ios_licensing",
+    "@description": ""
+}

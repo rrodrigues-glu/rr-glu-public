@@ -1,0 +1,77 @@
+{
+  "permissionLevel": "auditManageLevel1",
+  "rules": [
+    {
+      "severity": "INFO",
+      "name": "New rule",
+      "os": "ios",
+      "source": "LATEST",
+      "commandSet": "all",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "type": "IF_THEN",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": false,
+      "ifExpression": {
+        "$and": [
+          {
+            "$or": [
+              {
+                "latestConfig": {
+                  "$regex": "(?<!\\n)^((?!ElisityNetFlowRecord).)*$(?!\\n)",
+                  "$options": "mis"
+                }
+              },
+              {
+                "latestConfig": {
+                  "$exists": false
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ip http secure-server"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "no ip http secure-server"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "conceptItemId": null
+    }
+  ],
+  "runLevel": "auditRunLevel1",
+  "name": "MSB",
+  "description": "",
+  "tid": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+  "id": "232ac1d7-f68a-4be4-b778-2ecf231fb7e4",
+  "createdBy": "admin",
+  "createdOn": 1714062734102,
+  "updatedBy": "admin",
+  "updatedOn": 1714139765335,
+  "lastAuditErrorMsg": "",
+  "lastAuditDevicesSkippedCount": 0
+}

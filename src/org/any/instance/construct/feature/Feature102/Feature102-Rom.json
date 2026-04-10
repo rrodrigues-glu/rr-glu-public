@@ -1,0 +1,18 @@
+{
+    "featureConcept": {
+        "name": "102-Rom",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_banner_grp.json"
+            ]
+        }
+    },
+    "form": {},
+    "@exportedInstanceId": "bd0d8770-cb36-4050-b7df-b10f5ee786ed",
+    "@id": "bd0d8770-cb36-4050-b7df-b10f5ee786ed",
+    "@type": {
+        "ref": "/sys/type/construct/feature/Feature102.jtype"
+    },
+    "@name": "Feature102-Rom",
+    "@description": ""
+}

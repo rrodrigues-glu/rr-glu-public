@@ -1,0 +1,20 @@
+{
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Macro-Copy-1.json"
+    },
+    "cliCommands": [
+        "macro name jfk2",
+        "   macro description Radagast",
+        "@"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "84f05de6-c22d-4a3b-ab65-fed3b125e3ea",
+    "@id": "84f05de6-c22d-4a3b-ab65-fed3b125e3ea",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "Banner__cli__macro_CLI02",
+    "@description": ""
+}

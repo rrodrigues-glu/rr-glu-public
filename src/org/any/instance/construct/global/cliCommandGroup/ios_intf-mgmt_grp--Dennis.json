@@ -1,0 +1,26 @@
+{
+    "regEx": "GigabitEthernet1",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_intf-mgmt_cli--Dennis.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": []
+    },
+    "maskCommands": [
+        "interface GigabitEthernet1",
+        " ip address"
+    ],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "49ff6db6-21a5-480a-81d2-6fbe5401ab99",
+    "@id": "49ff6db6-21a5-480a-81d2-6fbe5401ab99",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@name": "ios_intf-mgmt_grp--Dennis",
+    "@description": ""
+}

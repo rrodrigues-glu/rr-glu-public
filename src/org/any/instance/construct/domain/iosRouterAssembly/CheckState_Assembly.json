@@ -1,0 +1,37 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosRouterAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "banner": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/banner/ios_banner.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "agents": {
+        "watchdog": {}
+    },
+    "state": {
+        "assessment": {
+            "provision": {
+                "policy": {
+                    "@ref": "/org/instance/construct/global/cliStatePolicy/cliStatePolicy.json"
+                },
+                "schedule": "both",
+                "compare": false,
+                "action": "ignore"
+            }
+        }
+    },
+    "@source": {
+        "instanceName": "CheckState_Assembly"
+    },
+    "@exportedInstanceId": "c7369e86-e4cd-4d05-8653-0d88a1cc1f62",
+    "@id": "c7369e86-e4cd-4d05-8653-0d88a1cc1f62",
+    "@name": "CheckState_Assembly",
+    "@description": ""
+}

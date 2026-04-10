@@ -1,0 +1,30 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/ipv4Pool.jtype"
+    },
+    "description": "",
+    "type": "ipv4",
+    "summary": "10.10.20.0/24",
+    "reservations": [],
+    "ranges": [
+        {
+            "name": {
+                "@ref": "/org/instance/construct/global/subnetRange/reserved_subnet.json"
+            },
+            "ips": [
+                "10.10.20.10-10.10.20.254"
+            ]
+        }
+    ],
+    "allocationMode": "hostBased",
+    "options": {
+        "oversubscribingMode": false
+    },
+    "@source": {
+        "instanceName": "vlan200_pool"
+    },
+    "@exportedInstanceId": "83aa927e-b864-4026-8223-3dcb644e3f41",
+    "@id": "83aa927e-b864-4026-8223-3dcb644e3f41",
+    "@name": "vlan200_pool",
+    "@description": ""
+}

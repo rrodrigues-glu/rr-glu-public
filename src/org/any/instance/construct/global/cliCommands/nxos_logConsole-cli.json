@@ -1,0 +1,22 @@
+{
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_logConsole.json"
+    },
+    "cliCommands": [
+        "no logging console",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@description": "",
+    "@source": {
+        "instanceName": "nxos_logConsole-cli"
+    },
+    "@exportedInstanceId": "6196c24d-637f-4b33-93b5-ba4d7d98c15d",
+    "@id": "6196c24d-637f-4b33-93b5-ba4d7d98c15d",
+    "@name": "nxos_logConsole-cli"
+}

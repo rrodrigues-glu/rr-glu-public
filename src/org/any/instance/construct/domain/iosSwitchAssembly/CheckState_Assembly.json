@@ -1,0 +1,42 @@
+{
+    "domains": {
+        "modules": {
+            "Feature102": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/Feature102/Feature102-Rom.json"
+                }
+            },
+            "banner": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/banner/ios_banner.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "agents": {
+        "watchdog": {}
+    },
+    "boot": {
+        "firmware": {}
+    },
+    "state": {
+        "assessment": {
+            "provision": {
+                "policy": {
+                    "@ref": "/org/instance/construct/global/cliStatePolicy/cliStatePolicy.json"
+                },
+                "action": "abort",
+                "compare": false,
+                "schedule": "both"
+            }
+        }
+    },
+    "@exportedInstanceId": "abb4c03d-db51-461b-bf0a-16dbaf7f08ed",
+    "@id": "abb4c03d-db51-461b-bf0a-16dbaf7f08ed",
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosSwitchAssembly.jtype"
+    },
+    "@name": "CheckState_Assembly",
+    "@description": ""
+}

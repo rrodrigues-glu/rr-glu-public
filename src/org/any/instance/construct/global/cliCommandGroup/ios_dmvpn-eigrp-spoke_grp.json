@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": ".+",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_dmvpn-eigrp-spoke_cli.json"
+        ]
+    },
+    "maskCommands": [],
+    "advanced": {
+        "renderingConditions": []
+    },
+    "@source": {
+        "instanceName": "ios_dmvpn-eigrp-spoke_grp"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "bb871b33-0986-46ca-a29f-a0e147978921",
+    "@id": "bb871b33-0986-46ca-a29f-a0e147978921",
+    "@name": "ios_dmvpn-eigrp-spoke_grp",
+    "@description": ""
+}

@@ -1,0 +1,22 @@
+{
+    "featureConcept": {
+        "name": "tst",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_intf-wan_grp-RomADD.json"
+            ]
+        }
+    },
+    "form": {
+        "VlanNumbers": {
+            "No": 5
+        }
+    },
+    "@exportedInstanceId": "419d9da1-3d39-45b8-9d46-130b277dff93",
+    "@id": "419d9da1-3d39-45b8-9d46-130b277dff93",
+    "@type": {
+        "ref": "/sys/type/construct/feature/interfaceDef.jtype"
+    },
+    "@name": "interfaceROM",
+    "@description": ""
+}

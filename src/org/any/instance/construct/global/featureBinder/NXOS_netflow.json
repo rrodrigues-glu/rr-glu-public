@@ -1,0 +1,39 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/featureBinder.jtype"
+    },
+    "vendor": "cisco",
+    "os": "nxos",
+    "featureName": "netflow",
+    "featureDisplayName": "Netflow Feature",
+    "renderList": [
+        {
+            "item": {},
+            "maskCommands": [],
+            "dCli": []
+        },
+        {
+            "item": {},
+            "maskCommands": [],
+            "dCli": []
+        },
+        {
+            "item": {},
+            "maskCommands": [],
+            "dCli": []
+        },
+        {
+            "item": {},
+            "maskCommands": [],
+            "dCli": []
+        }
+    ],
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "NXOS_netflow"
+    },
+    "@exportedInstanceId": "bd4ebf98-c1de-486d-a008-0f959099ad07",
+    "@id": "bd4ebf98-c1de-486d-a008-0f959099ad07",
+    "@name": "NXOS_netflow",
+    "@description": ""
+}

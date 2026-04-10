@@ -1,0 +1,14 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/lanInterface.jtype"
+    },
+    "description": "VLAN 800 Interface description",
+    "location": "internal",
+    "@source": {
+        "instanceName": "VLAN800"
+    },
+    "@exportedInstanceId": "1d70c8af-5b33-47e2-bffd-d47a8ca2aa63",
+    "@id": "1d70c8af-5b33-47e2-bffd-d47a8ca2aa63",
+    "@name": "VLAN800",
+    "@description": ""
+}

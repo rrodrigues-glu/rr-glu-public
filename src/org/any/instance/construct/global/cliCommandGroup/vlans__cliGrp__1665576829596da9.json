@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@id": "d448ca2e-fcf5-4ffa-ac9d-8c2236ba5295",
+    "ignoreDelete": true,
+    "regEx": "2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31|32|33|34|35|36|37|38|39|40|41|42|43|44|45|46|47|48|49|50|76|100|150|200|222,300,444,456",
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/Vlan__cli__166557682959685c5.json"
+        ]
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "d448ca2e-fcf5-4ffa-ac9d-8c2236ba5295",
+    "@name": "vlans__cliGrp__1665576829596da9",
+    "@description": ""
+}

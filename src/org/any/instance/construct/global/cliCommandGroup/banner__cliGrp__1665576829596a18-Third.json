@@ -1,0 +1,21 @@
+{
+    "regEx": "login",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/Banner__cli__1665576829596a3f2-Third.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "15e55028-268e-4dab-b62a-2d85873c35a7",
+    "@id": "15e55028-268e-4dab-b62a-2d85873c35a7",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@name": "banner__cliGrp__1665576829596a18-Third",
+    "@description": ""
+}

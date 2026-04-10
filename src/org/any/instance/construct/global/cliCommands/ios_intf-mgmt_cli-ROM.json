@@ -1,0 +1,20 @@
+{
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Intf2_modified-ROM.json"
+    },
+    "cliCommands": [
+        "interface $context.portMap[*].name",
+        " description :W3:{$discover.description.desc}",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "5eb8fe75-84f0-48e6-8b7e-c5a9c5f0fcf3",
+    "@id": "5eb8fe75-84f0-48e6-8b7e-c5a9c5f0fcf3",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "ios_intf-mgmt_cli-ROM",
+    "@description": ""
+}

@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@id": "fe491783-5417-4768-9f87-dd670612ce42",
+    "ignoreDelete": true,
+    "regEx": ".+",
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/NtpAgent__cli__173143508736654e8.json"
+        ]
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "fe491783-5417-4768-9f87-dd670612ce42",
+    "@name": "ntp__cliGrp__17314350873660af",
+    "@description": ""
+}

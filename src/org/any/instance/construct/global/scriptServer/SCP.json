@@ -1,0 +1,15 @@
+{
+    "ip": "10.1.100.116",
+    "userName": "sysadmin",
+    "password": {
+        "@ref": "/secret/sys/credentials/secret/sysLinux.json"
+    },
+    "type": "scp",
+    "@exportedInstanceId": "1dc7ad15-6ea8-4b6f-bc2f-1eb64ac42c9c",
+    "@id": "1dc7ad15-6ea8-4b6f-bc2f-1eb64ac42c9c",
+    "@type": {
+        "ref": "/sys/type/construct/global/scriptServer.jtype"
+    },
+    "@name": "SCP",
+    "@description": ""
+}

@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": ".+",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/aireos_qos-cdmx_cli.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "aireos_qos-cdmx_grp"
+    },
+    "@exportedInstanceId": "fd3fdb38-c7d5-4852-b977-dd9081813947",
+    "@id": "fd3fdb38-c7d5-4852-b977-dd9081813947",
+    "@name": "aireos_qos-cdmx_grp",
+    "@description": ""
+}

@@ -1,0 +1,30 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/ipv4Pool.jtype"
+    },
+    "description": "",
+    "type": "ipv4",
+    "summary": "10.10.60.0/24",
+    "reservations": [],
+    "ranges": [
+        {
+            "name": {
+                "@ref": "/org/instance/construct/global/subnetRange/reserved_subnet.json"
+            },
+            "ips": [
+                "10.10.60.10-10.10.60.254"
+            ]
+        }
+    ],
+    "allocationMode": "hostBased",
+    "options": {
+        "oversubscribingMode": false
+    },
+    "@source": {
+        "instanceName": "vlan600_pool"
+    },
+    "@exportedInstanceId": "a3111608-5f2e-47a9-98e9-e07611e376d6",
+    "@id": "a3111608-5f2e-47a9-98e9-e07611e376d6",
+    "@name": "vlan600_pool",
+    "@description": ""
+}

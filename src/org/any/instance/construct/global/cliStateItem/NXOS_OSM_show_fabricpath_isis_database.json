@@ -1,0 +1,17 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show fabricpath isis database",
+    "groupName": "ISIS_DATABASE",
+    "discover": {},
+    "options": {},
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_show_fabricpath_isis_database"
+    },
+    "@exportedInstanceId": "3789d811-0394-4cb9-a148-89429c26d16d",
+    "@id": "3789d811-0394-4cb9-a148-89429c26d16d",
+    "@name": "NXOS_OSM_show_fabricpath_isis_database",
+    "@description": ""
+}

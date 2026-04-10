@@ -1,0 +1,55 @@
+{
+    "options": {
+        "connectionEnabled": true,
+        "previewMode": false,
+        "forcedAttachedStorage": false
+    },
+    "wanRouter": {
+        "enabled": true
+    },
+    "site": {
+        "@ref": "/org/instance/construct/domain/location/Romualdo.json"
+    },
+    "configState": "managed",
+    "entryConnection": {
+        "connectionMethod": "cliConnection",
+        "ip": "10.150.1.78",
+        "credentials": {
+            "@ref": "/secret/sys/credentials/deviceUserPass/GlueSQA.json"
+        },
+        "enablePassword": {
+            "@ref": "/secret/sys/credentials/deviceEnablePass/enableQ.json"
+        },
+        "port": 22,
+        "type": "ssh",
+        "terminalType": "xterm"
+    },
+    "associations": {
+        "assembly": {
+            "@ref": "/org/instance/construct/domain/iosRouterAssembly/iosRouter__CSR-Copy-1.json"
+        },
+        "provider": "local"
+    },
+    "personae": {},
+    "hardware": {
+        "vendor": "auto",
+        "expectedSerialNumber": "auto"
+    },
+    "provisioning": {
+        "type": "advanced"
+    },
+    "persona": {
+        "id": 0,
+        "type": "none"
+    },
+    "iosRouter": {
+        "enabled": true
+    },
+    "@exportedInstanceId": "48685f83-7a65-4df7-87fe-06717d6f784b",
+    "@id": "48685f83-7a65-4df7-87fe-06717d6f784b",
+    "@type": {
+        "ref": "/sys/type/construct/node/iosRouter.jtype"
+    },
+    "@name": "ISR4331",
+    "@description": ""
+}

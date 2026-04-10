@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show version",
+    "groupName": "NXOS",
+    "discover": {
+        "boot": {
+            "expressions": [
+                "System version: (?<system>\\S+)"
+            ],
+            "localKey": "",
+            "preserveLocalKey": false,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {
+        "generateLocalKey": false
+    },
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_show_version"
+    },
+    "@exportedInstanceId": "9c06bc04-5258-4a29-8aa7-c4e1652bdd89",
+    "@id": "9c06bc04-5258-4a29-8aa7-c4e1652bdd89",
+    "@name": "NXOS_OSM_show_version",
+    "@description": ""
+}

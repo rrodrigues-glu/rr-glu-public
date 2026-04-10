@@ -1,0 +1,19 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "ip domain-lookup"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_domain-lookup-cli"
+    },
+    "@exportedInstanceId": "3016faa1-524d-452b-9b90-6d7c4e19f9ee",
+    "@id": "3016faa1-524d-452b-9b90-6d7c4e19f9ee",
+    "@name": "nxos_domain-lookup-cli",
+    "@description": ""
+}

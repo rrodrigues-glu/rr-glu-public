@@ -1,0 +1,36 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/featureBinder.jtype"
+    },
+    "vendor": "cisco",
+    "os": "nxos",
+    "featureName": "aaa",
+    "featureDisplayName": "AAA Feature",
+    "renderList": [
+        {
+            "item": {},
+            "maskCommands": [
+                ""
+            ],
+            "dCli": []
+        },
+        {
+            "item": {},
+            "maskCommands": [],
+            "dCli": []
+        },
+        {
+            "item": {},
+            "maskCommands": [],
+            "dCli": []
+        }
+    ],
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "NXOS_aaa"
+    },
+    "@exportedInstanceId": "fc29d06b-2cb0-401a-9058-a505a8981b0a",
+    "@id": "fc29d06b-2cb0-401a-9058-a505a8981b0a",
+    "@name": "NXOS_aaa",
+    "@description": ""
+}

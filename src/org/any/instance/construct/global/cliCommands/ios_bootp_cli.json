@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "!"
+    ],
+    "advanced": {
+        "filter": "platform",
+        "platform": "(^ISR.+|^ASR.+|^AS53.+|^WS-C3.+|^WS-C4.+|^WS-C6.+|^C68.+|^CISCO\\S+)"
+    },
+    "@source": {
+        "instanceName": "ios_bootp_cli"
+    },
+    "@exportedInstanceId": "2b0131df-4e55-42ed-9c6a-a387debf317e",
+    "@id": "2b0131df-4e55-42ed-9c6a-a387debf317e",
+    "@name": "ios_bootp_cli",
+    "@description": ""
+}

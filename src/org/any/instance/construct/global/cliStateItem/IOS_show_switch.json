@@ -1,0 +1,37 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show switch",
+    "rootEntry": "yes",
+    "groupName": "stack",
+    "discover": {
+        "members": {
+            "expressions": [
+                "(?<id>\\d+)\\s+(?<role>Active|Standby)\\s+(?<macAddress>[a-f0-9]{4}\\.[a-f0-9]{4}\\.[a-f0-9]{4})\\s+(?<priority>\\d+)\\s+(?<version>\\w\\d+)\\s+(?<state>\\w+)"
+            ],
+            "localKey": "id",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        },
+        "local": {
+            "expressions": [
+                "Switch\\/Stack Mac Address : (?<macAddress>[a-f0-9]{4}\\.[a-f0-9]{4}\\.[a-f0-9]{4}) - Local Mac Address"
+            ],
+            "localKey": "",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {
+        "generateLocalKey": false
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "IOS_show_switch"
+    },
+    "@exportedInstanceId": "05af118b-8455-4f6b-9603-57f6d16b13b7",
+    "@id": "05af118b-8455-4f6b-9603-57f6d16b13b7",
+    "@name": "IOS_show_switch",
+    "@description": ""
+}

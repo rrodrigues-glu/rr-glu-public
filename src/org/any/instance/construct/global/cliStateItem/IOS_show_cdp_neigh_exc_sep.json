@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show cdp neighbors | exclude SEP",
+    "rootEntry": "no",
+    "keyLineRegEx": "(?!Capability Codes|Device ID)(^[\\w\\d\\-\\.()]+)",
+    "groupName": "cdp",
+    "discover": {
+        "neighbors": {
+            "expressions": [
+                "(?<deviceId>[\\w\\d\\-\\.()]+)\\s+(?<localPort>(?:[\\w]+\\s?[\\d\\/\\-\\.]+))\\s+(?<holdtime>\\d+)\\s+(?<capability>[RSDTHCBIMPr\\s]+\\b)\\s+(?<platform>(?:\\b[\\S+]+))\\s+(?<remotePort>(?:[\\w]+\\s?[\\d\\/\\-\\.]+)$)"
+            ]
+        }
+    },
+    "options": {},
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "IOS_show_cdp_neigh_exc_sep"
+    },
+    "@exportedInstanceId": "ba1f9dc4-a11f-44c2-8f44-7f41ac03b2db",
+    "@id": "ba1f9dc4-a11f-44c2-8f44-7f41ac03b2db",
+    "@name": "IOS_show_cdp_neigh_exc_sep",
+    "@description": ""
+}

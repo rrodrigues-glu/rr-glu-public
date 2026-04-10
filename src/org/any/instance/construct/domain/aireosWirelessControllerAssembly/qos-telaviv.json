@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/aireosWirelessControllerAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "qos": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/qos/aireos_qos-isr-telaviv.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "state": {
+        "assessment": {}
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "qos-telaviv"
+    },
+    "@exportedInstanceId": "bdd2751a-f751-41e1-bd16-5de0416c1190",
+    "@id": "bdd2751a-f751-41e1-bd16-5de0416c1190",
+    "@name": "qos-telaviv",
+    "@description": ""
+}

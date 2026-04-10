@@ -1,0 +1,35 @@
+{
+    "name": "Intf",
+    "vendors": {
+        "cisco": {
+            "type": [
+                "ios"
+            ],
+            "level": null
+        }
+    },
+    "showCmds": [
+        "sh run | sec ^interface"
+    ],
+    "keyCliLine": "interface (.+)",
+    "rootEntryFlag": false,
+    "mode": "basic",
+    "boundaries": {
+        "start": null
+    },
+    "discover": {
+        "description": {
+            "expressions": [
+                "description\\s+(?<node>:N1:)(?<desc>.+)"
+            ]
+        }
+    },
+    "removeSyntax": {},
+    "@exportedInstanceId": "c4cadddf-cb19-4d0c-98f4-1e2ce297dc92",
+    "@id": "c4cadddf-cb19-4d0c-98f4-1e2ce297dc92",
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "@name": "IOS_Intf2_modified-ROM",
+    "@description": ""
+}

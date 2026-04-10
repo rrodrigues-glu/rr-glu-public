@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": "^voice-traffic-INBOUND$|^video-traffic-INBOUND$|^premium-traffic-INBOUND$|^default-traffic-INBOUND$|^bulk-traffic-INBOUND$|^VoIP-out$|^Video-out$|^Premium-out$|^NETWORK_CONTROL$|^Bulk-out$|^Default-out$",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_isr4k-asr1k-qos-cmap_cli.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_isr4k-asr1k-qos-cmap_grp"
+    },
+    "@exportedInstanceId": "4299b76d-baf9-4c07-985d-c6cd4bb1192f",
+    "@id": "4299b76d-baf9-4c07-985d-c6cd4bb1192f",
+    "@name": "ios_isr4k-asr1k-qos-cmap_grp",
+    "@description": ""
+}

@@ -1,0 +1,31 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosRouterAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "snmp": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/snmp/ios_snmp-v2c.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "agents": {
+        "watchdog": {}
+    },
+    "boot": {
+        "firmware": {}
+    },
+    "state": {
+        "assessment": {}
+    },
+    "@source": {
+        "instanceName": "SNMP_Assembly"
+    },
+    "@exportedInstanceId": "a3ca82d9-7e42-46aa-b5ad-8f11b66b2d65",
+    "@id": "a3ca82d9-7e42-46aa-b5ad-8f11b66b2d65",
+    "@name": "SNMP_Assembly",
+    "@description": ""
+}

@@ -1,0 +1,27 @@
+{
+    "regEx": ".+",
+    "ignoreDelete": false,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_ntp-server_cli-Romario.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": [
+            "$discover.Intf.up.name == up"
+        ]
+    },
+    "maskCommands": [
+        "ntp source"
+    ],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "e665cc35-93d8-44bd-97c3-1647ea6c8acf",
+    "@id": "e665cc35-93d8-44bd-97c3-1647ea6c8acf",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@name": "ios_ntp-server_grp-Romario",
+    "@description": ""
+}

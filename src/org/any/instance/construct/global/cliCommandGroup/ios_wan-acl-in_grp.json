@@ -1,0 +1,25 @@
+{
+    "regEx": "copp-(system-)?acl-.+-WSP$",
+    "ignoreDelete": false,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_wan-acl-in_cli.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": [
+            "$context.aaa[0].name == tacacsServer"
+        ]
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "d3c0b12e-bd0b-4cb0-8b67-42a92d62b270",
+    "@id": "d3c0b12e-bd0b-4cb0-8b67-42a92d62b270",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@name": "ios_wan-acl-in_grp",
+    "@description": ""
+}

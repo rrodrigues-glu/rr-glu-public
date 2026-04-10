@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/qosCheck.jtype"
+    },
+    "featureConcept": {
+        "name": "QoS Model for AIR5520 Tel Aviv Israel",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/aireos_qos_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/aireos_wlan-qos-3_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "platform": "AIR-(CT|WLC).+"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "aireos_qos-isr-telaviv"
+    },
+    "@exportedInstanceId": "09c81b98-9712-4095-8759-936007a613e9",
+    "@id": "09c81b98-9712-4095-8759-936007a613e9",
+    "@name": "aireos_qos-isr-telaviv",
+    "@description": ""
+}

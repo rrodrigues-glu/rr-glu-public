@@ -1,0 +1,49 @@
+{
+  "permissionLevel": "auditManageLevel1",
+  "rules": [
+    {
+      "severity": "INFO",
+      "name": "New rule",
+      "os": "ios",
+      "source": "LATEST",
+      "commandSet": "b21dbf60-ebd9-4024-863b-1d6d67ae1ff4",
+      "commandSetResult": {
+        "type": "cliCommands",
+        "command": "show run | beg line vty"
+      },
+      "type": "SIMPLE",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": false,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "Loopback101"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "conceptItemId": null
+    }
+  ],
+  "runLevel": "auditRunLevel1",
+  "name": "1",
+  "description": "",
+  "tid": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+  "id": "72ac2b6a-931d-4c89-b693-9f0c2f4d866a",
+  "createdBy": "admin",
+  "createdOn": 1734445542476,
+  "updatedBy": "admin",
+  "updatedOn": 1734535416434,
+  "lastAuditErrorMsg": "",
+  "lastAuditDevicesSkippedCount": 1
+}

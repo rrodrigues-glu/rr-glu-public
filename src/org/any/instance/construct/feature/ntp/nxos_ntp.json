@@ -1,0 +1,37 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/ntp.jtype"
+    },
+    "featureConcept": {
+        "name": "NXOS NTP",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/nxos_feature-ntp_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_ntp-server_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "ntp": {
+            "server": [
+                {
+                    "ip": "10.1.2.3",
+                    "version": 4,
+                    "key": ""
+                },
+                {
+                    "ip": "10.23.44.4",
+                    "version": 4,
+                    "key": ""
+                }
+            ]
+        }
+    },
+    "@source": {
+        "instanceName": "nxos_ntp"
+    },
+    "@exportedInstanceId": "de4d76ca-4c22-41a3-883b-72987d189494",
+    "@id": "de4d76ca-4c22-41a3-883b-72987d189494",
+    "@name": "nxos_ntp",
+    "@description": ""
+}

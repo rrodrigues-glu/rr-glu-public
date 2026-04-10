@@ -1,0 +1,24 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "interface $context.switchPorts[*].name",
+        " switchport mode trunk",
+        " switchport trunk allowed vlan $context.switchPorts[*].dot1q.includedVlansRange",
+        " switchport trunk native vlan $context.switchPorts[*].dot1q.nativeVlan",
+        " channel-group $context.switchPorts[*].portChannel.id mode $context.switchPorts[*].portChannel.mode",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_trunk-cleanup_cli"
+    },
+    "@exportedInstanceId": "d5ca01a6-9ebb-4a74-bab3-da7b5fbdb38d",
+    "@id": "d5ca01a6-9ebb-4a74-bab3-da7b5fbdb38d",
+    "@name": "ios_trunk-cleanup_cli",
+    "@description": ""
+}

@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/qosCheck.jtype"
+    },
+    "featureConcept": {
+        "name": "QoS Model for Cat9200 Switches",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_cat3k-4500x-qos-cmap_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_cat3k-4500x-qos-pmap_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "platform": "C9200.+"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_cat9200-qos"
+    },
+    "@exportedInstanceId": "d395234e-b9b1-4cbb-815e-528273d8f155",
+    "@id": "d395234e-b9b1-4cbb-815e-528273d8f155",
+    "@name": "ios_cat9200-qos",
+    "@description": ""
+}

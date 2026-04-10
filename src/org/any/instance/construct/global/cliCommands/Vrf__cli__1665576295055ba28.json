@@ -1,0 +1,13 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "ed3a8405-9584-40f1-8fb2-adb1e775eecc",
+    "item": {},
+    "cliCommands": [
+        "ip vrf FVRF"
+    ],
+    "@exportedInstanceId": "ed3a8405-9584-40f1-8fb2-adb1e775eecc",
+    "@name": "Vrf__cli__1665576295055ba28",
+    "@description": ""
+}

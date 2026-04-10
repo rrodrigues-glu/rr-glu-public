@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/qosCheck.jtype"
+    },
+    "featureConcept": {
+        "name": "QoS Model for Cat4500X Switches",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_cat3k-4500x-qos-cmap_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_cat3k-4500x-qos-pmap_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "platform": "WS-C4500X.+"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_cat4500x-qos"
+    },
+    "@exportedInstanceId": "19f2a590-d4c4-49eb-aae9-f7434c586ce7",
+    "@id": "19f2a590-d4c4-49eb-aae9-f7434c586ce7",
+    "@name": "ios_cat4500x-qos",
+    "@description": ""
+}

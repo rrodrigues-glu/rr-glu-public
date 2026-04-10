@@ -1,0 +1,34 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/switchportCommandGroup.jtype"
+    },
+    "regEx": ".+",
+    "linkedFeature": {
+        "path": "/sys/type/construct/feature/switching.jtype"
+    },
+    "associatedFeatureType": "featurePath",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_trunk-cleanup_cli.json"
+        ]
+    },
+    "maskCommands": [
+        "^interface",
+        "^switchport access",
+        "^switchport trunk",
+        "^switchport mode"
+    ],
+    "advanced": {
+        "renderingConditions": [
+            "$discover.vlan.trunkAllowed"
+        ]
+    },
+    "@source": {
+        "instanceName": "ios_trunk-cleanup-swCliGroup"
+    },
+    "@exportedInstanceId": "63a88683-dc6c-4d9c-be51-ec23cb5f7f64",
+    "@id": "63a88683-dc6c-4d9c-be51-ec23cb5f7f64",
+    "@name": "ios_trunk-cleanup-swCliGroup",
+    "@description": ""
+}

@@ -1,0 +1,30 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show cdp neighbors detail",
+    "rootEntry": "no",
+    "keyLineRegEx": "Device ID: ([-.()\\w]+)",
+    "groupName": "cdp",
+    "discover": {
+        "neighbors": {
+            "expressions": [
+                "Device ID: (?<deviceId>[-.()\\w]+)",
+                "Interface: (?<localIntf>[\\/\\w]+),\\s+Port ID \\(outgoing port\\): (?<remoteIntf>[\\/\\w]+)",
+                "Platform: (?:[\\w]+ )?(?<platform>\\S+),",
+                "Holdtime : (?<holdTime>\\d+)",
+                "\\), Version (?<version>\\d+\\.\\d+(?:\\([.\\w]+\\))*(?:\\.\\d+)*)\\.?(?<build>\\w+)*,? (?:(?:RELEASE|MAINTENANCE INTERIM) SOFTWARE|CUST-SPECIAL:V\\w+SR(\\w+))*",
+                "VTP Management Domain: '(?<vtpDomain>[-\\w]+)'"
+            ]
+        }
+    },
+    "options": {},
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "IOS_show_cdp_neigh_detail"
+    },
+    "@exportedInstanceId": "5128897b-1d34-4922-b6f1-36adf58136f1",
+    "@id": "5128897b-1d34-4922-b6f1-36adf58136f1",
+    "@name": "IOS_show_cdp_neigh_detail",
+    "@description": ""
+}

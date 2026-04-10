@@ -1,0 +1,8 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/node/iosRouter/attachedStorage/inventory/firmware.jtype"
+    },
+    "version": {
+        "detected": "15.5(3)S5"
+    }
+}

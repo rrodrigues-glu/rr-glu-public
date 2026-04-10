@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@id": "fc7137f7-a5c5-46cb-9583-127388e2034c",
+    "ignoreDelete": true,
+    "regEx": "13|acl-snmp-4|acl-snmp-5|acl-wan-filter-out|acl-fw-dhcp-in|acl-fw-dhcp-out|acl-fw-eigrp-multicast|acl-fw-esp-in|acl-fw-esp-out|acl-fw-gre-in|acl-fw-gre-out|acl-fw-icmp-in|acl-fw-icmp-out|acl-fw-inside-isp1-inside|acl-fw-isakmp-in|acl-fw-isakmp-out|acl-fw-ntp-out|acl-fw-pfr|acl-fw-pki-out|acl-fw-radius-in|acl-fw-radius-out|acl-fw-snmp-in|acl-fw-ssh-in|acl-fw-ssh-out|acl-fw-tclagents-out|acl-ibo-SVB_GUEST",
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/IpAcl__cli__1665576295055022f.json"
+        ]
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "fc7137f7-a5c5-46cb-9583-127388e2034c",
+    "@name": "security__cliGrp__1665576295055c80",
+    "@description": ""
+}

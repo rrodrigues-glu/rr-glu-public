@@ -1,0 +1,30 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "policy-map QOS-OUTBOUND",
+        " class VOICE",
+        "  priority level 1",
+        "  police rate percent 20 conform-action transmit  exceed-action transmit",
+        " class VIDEO",
+        "  priority level 2",
+        "  police rate percent 10 conform-action transmit  exceed-action transmit",
+        " class class-default",
+        "  bandwidth remaining percent 100",
+        "!"
+    ],
+    "advanced": {
+        "filter": "platform",
+        "platform": "(C3[6|8]50.+|C4500X|C9200|C9500)"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_cat3k-4500x-qos-pmap_cli"
+    },
+    "@exportedInstanceId": "a5635959-08ad-4e86-85cc-61b94cbff52e",
+    "@id": "a5635959-08ad-4e86-85cc-61b94cbff52e",
+    "@name": "ios_cat3k-4500x-qos-pmap_cli",
+    "@description": ""
+}

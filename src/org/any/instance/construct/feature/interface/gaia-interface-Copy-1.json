@@ -1,0 +1,20 @@
+{
+    "featureConcept": {
+        "name": "Interface",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/Gaia_username__cliGrp__.json"
+            ]
+        }
+    },
+    "form": {
+        "intf": {}
+    },
+    "@exportedInstanceId": "320fd908-bdc4-416e-92ec-d5cae86c3527",
+    "@id": "320fd908-bdc4-416e-92ec-d5cae86c3527",
+    "@type": {
+        "ref": "/sys/type/construct/feature/interface.jtype"
+    },
+    "@name": "gaia-interface-Copy-1",
+    "@description": ""
+}

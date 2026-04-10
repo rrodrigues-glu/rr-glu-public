@@ -1,0 +1,30 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_KeyChain.json"
+    },
+    "cliCommands": [
+        "key chain ISIS-MD5-DC03-CORE",
+        " key 1",
+        "   key-string 7 070b221c1d000a0c04190e15",
+        "key chain LDP-MD5-DC03-CORE",
+        " key 1",
+        "   key-string 7 070b704d6359170113431818167b2830",
+        "key chain RIPAnycastKey",
+        " key 1",
+        "   key-string 7 071d605c6e07000616561f",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_keychain-cli"
+    },
+    "@exportedInstanceId": "eab37ffd-8ab2-441c-ab55-b244af0a2003",
+    "@id": "eab37ffd-8ab2-441c-ab55-b244af0a2003",
+    "@name": "nxos_keychain-cli",
+    "@description": ""
+}

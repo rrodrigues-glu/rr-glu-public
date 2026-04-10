@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/aireosWirelessControllerAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "qos": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/qos/aireos_qos-chn-guangzhou.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "state": {
+        "assessment": {}
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "qos-guangzhou"
+    },
+    "@exportedInstanceId": "8f880138-9810-4d62-9a5c-c26274185021",
+    "@id": "8f880138-9810-4d62-9a5c-c26274185021",
+    "@name": "qos-guangzhou",
+    "@description": ""
+}

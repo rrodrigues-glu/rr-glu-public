@@ -1,0 +1,24 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": ".+",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/nxos_spanning-tree-cli.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "@source": {
+        "instanceName": "nxos_spanning-tree_group"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "b5d276a5-2f6b-46e1-a9c3-28ba123177d8",
+    "@id": "b5d276a5-2f6b-46e1-a9c3-28ba123177d8",
+    "@name": "nxos_spanning-tree_group",
+    "@description": ""
+}

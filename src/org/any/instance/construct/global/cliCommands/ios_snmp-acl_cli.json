@@ -1,0 +1,21 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "ip access-list standard $context.snmp.version.v2c.community[*].accessList",
+        " permit $context.snmp.version.v2c.community[*].host[*].ip",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_snmp-acl_cli"
+    },
+    "@exportedInstanceId": "a9b6b822-c089-4768-b4f5-91c2f29b28e6",
+    "@id": "a9b6b822-c089-4768-b4f5-91c2f29b28e6",
+    "@name": "ios_snmp-acl_cli",
+    "@description": ""
+}

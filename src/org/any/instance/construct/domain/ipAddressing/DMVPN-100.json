@@ -1,0 +1,35 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/ipAddressing.jtype"
+    },
+    "intfs": [
+        {
+            "intf": {
+                "map": {
+                    "@ref": "/org/instance/construct/global/lanInterface/OVRL1.json"
+                }
+            },
+            "ipv4": {
+                "category": "local",
+                "method": "hostPool",
+                "supernet": {
+                    "ipPrefix": {
+                        "@ref": "/org/instance/construct/domain/ipv4Pool/DMVPN-100.json"
+                    }
+                },
+                "host": {
+                    "range": {
+                        "@ref": "/org/instance/construct/global/subnetRange/dmvpn-spoke-subnetRange.json"
+                    }
+                }
+            }
+        }
+    ],
+    "@source": {
+        "instanceName": "DMVPN-100"
+    },
+    "@exportedInstanceId": "6620d4df-9267-413d-accd-0b23eda550ff",
+    "@id": "6620d4df-9267-413d-accd-0b23eda550ff",
+    "@name": "DMVPN-100",
+    "@description": ""
+}

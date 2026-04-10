@@ -1,0 +1,35 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/portMap.jtype"
+    },
+    "map": [
+        {
+            "refName": {
+                "@ref": "/org/instance/construct/global/lanInterface/VLAN200.json"
+            },
+            "name": "Vlan200",
+            "extendedName": ""
+        },
+        {
+            "refName": {
+                "@ref": "/org/instance/construct/global/lanInterface/VLAN400.json"
+            },
+            "name": "Vlan400",
+            "extendedName": ""
+        },
+        {
+            "refName": {
+                "@ref": "/org/instance/construct/global/lanInterface/VLAN600.json"
+            },
+            "name": "Vlan600",
+            "extendedName": ""
+        }
+    ],
+    "@source": {
+        "instanceName": "SVI_portMap"
+    },
+    "@exportedInstanceId": "1f2be4c6-da20-41f0-a626-4c50495af3ca",
+    "@id": "1f2be4c6-da20-41f0-a626-4c50495af3ca",
+    "@name": "SVI_portMap",
+    "@description": ""
+}

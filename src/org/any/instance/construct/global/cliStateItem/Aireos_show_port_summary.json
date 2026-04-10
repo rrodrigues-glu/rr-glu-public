@@ -1,0 +1,29 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show port summary",
+    "rootEntry": "yes",
+    "groupName": "interface",
+    "discover": {
+        "status": {
+            "expressions": [
+                "(?<intId>\\d+)\\s+(?<type>\\S+)\\s+(?<stpStatus>\\S+)\\s+(?<adminMode>\\S+)\\s+(?<physMode>\\S+)\\s+(?<physStatus>[\\w\\s]+\\b)\\s+(?<linkStatus>Up)\\s+(?<linkTrap>\\w+)\\s+(?<poe>\\S+)\\s+(?<sfpType>\\d+[\\w]+)"
+            ],
+            "localKey": "intId",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {
+        "generateLocalKey": false
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "Aireos_show_port_summary"
+    },
+    "@exportedInstanceId": "3e8616a8-cf3a-4783-b9e7-2e884a549263",
+    "@id": "3e8616a8-cf3a-4783-b9e7-2e884a549263",
+    "@name": "Aireos_show_port_summary",
+    "@description": ""
+}

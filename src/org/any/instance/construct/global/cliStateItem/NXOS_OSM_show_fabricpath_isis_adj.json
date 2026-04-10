@@ -1,0 +1,17 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show fabricpath isis adjacency",
+    "groupName": "ISIS_ADJ",
+    "discover": {},
+    "options": {},
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_show_fabricpath_isis_adj"
+    },
+    "@exportedInstanceId": "ab20bb9b-c830-4468-9c54-a5e3683cc9e3",
+    "@id": "ab20bb9b-c830-4468-9c54-a5e3683cc9e3",
+    "@name": "NXOS_OSM_show_fabricpath_isis_adj",
+    "@description": ""
+}

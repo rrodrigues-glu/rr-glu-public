@@ -1,0 +1,58 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/snmp.jtype"
+    },
+    "featureConcept": {
+        "name": "NXOS SNMP",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/nxos_snmp-acl_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_snmp-server_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "snmp": {
+            "location": "Gluware Virtual LAB",
+            "contact": "support@gluware.com",
+            "version": {
+                "v3": {
+                    "group": [
+                        {
+                            "name": "snmpV3Group",
+                            "method": "authPriv",
+                            "view": {
+                                "read": {
+                                    "name": "v3readView"
+                                },
+                                "write": {
+                                    "name": "v3writeView"
+                                }
+                            }
+                        }
+                    ],
+                    "user": [
+                        {
+                            "name": "snmpv3user",
+                            "authentication": {
+                                "hash": "md5",
+                                "password": "0x476edff41f920b7a52ea116c7bab140e"
+                            },
+                            "encryption": {
+                                "cipher": "aes 256",
+                                "password": "0x476edff41f920b7a52ea116c7bab140e"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "@source": {
+        "instanceName": "nxos_snmp-v3"
+    },
+    "@exportedInstanceId": "7ef9362e-00e7-40c3-bed4-0a0b6ca7859d",
+    "@id": "7ef9362e-00e7-40c3-bed4-0a0b6ca7859d",
+    "@name": "nxos_snmp-v3",
+    "@description": ""
+}

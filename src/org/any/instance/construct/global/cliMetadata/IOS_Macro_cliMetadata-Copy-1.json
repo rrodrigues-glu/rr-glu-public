@@ -1,0 +1,18 @@
+{
+    "META-DATA": {
+        "ignoreLines": {
+            "from": []
+        },
+        "reset": {
+            "type": "anyChange"
+        },
+        "writeRawWhenSending": true
+    },
+    "@exportedInstanceId": "726bb69d-ae37-43ef-b939-d2623efb73f9",
+    "@id": "726bb69d-ae37-43ef-b939-d2623efb73f9",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliMetadata.jtype"
+    },
+    "@name": "IOS_Macro_cliMetadata-Copy-1",
+    "@description": ""
+}

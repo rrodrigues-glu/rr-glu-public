@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "ip prefix-list plist-sfo-noc seq 10 permit 0.0.0.0/0",
+        "ip prefix-list plist-sfo-noc seq 20 permit 10.0.0.0/8",
+        "ip prefix-list plist-sfo-noc seq 30 permit $context.portMap.MGNT1.ipv4.subnet.ipPrefix",
+        "!",
+        "ip prefix-list plist-lax-noc seq 10 permit 10.1.1.0/11",
+        "!",
+        "ip prefix-list plist-DEFAULT-ROUTE seq 10 permit 0.0.0.0/0",
+        "!",
+        "ip prefix-list plist-FORWARDER_DEFAULT_ROUTE seq 10 permit 10.123.10.0/24",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_dmvpn-plist-hub-routing_cli"
+    },
+    "@exportedInstanceId": "fc144f54-9a6a-43b6-9424-ebe157ac7773",
+    "@id": "fc144f54-9a6a-43b6-9424-ebe157ac7773",
+    "@name": "ios_dmvpn-plist-hub-routing_cli",
+    "@description": ""
+}

@@ -1,0 +1,117 @@
+{
+    "hostname": "ISR4331",
+    "vendor": "cisco",
+    "os": "ios",
+    "path": "/sys/jnib/features/deviceDetect/cisco/ios/",
+    "sku": "ISR4331/K9",
+    "software": {
+        "version": "16.12.5",
+        "major": "16",
+        "minor": "12",
+        "revision": "5",
+        "train": "",
+        "build": "",
+        "patch": "",
+        "apiVersion": "16.12.5",
+        "image": "isr4300-universalk9.16.12.05.SPA.bin",
+        "drive": "bootflash:",
+        "routingMode": "autonomous"
+    },
+    "hardware": {
+        "serialNumber": "FLM1946W0JM",
+        "sku": "ISR4331/K9",
+        "chassis": {
+            "R0": {
+                "sku": "ISR4331/K9",
+                "serialNumber": "FDO19421F3Z"
+            }
+        },
+        "components": {
+            "fans": [
+                {
+                    "description": "Cisco ISR4330 Fan Assembly",
+                    "label": "Fan",
+                    "location": {
+                        "path": "n/s",
+                        "type": "n/s"
+                    },
+                    "serialNumber": "none",
+                    "sku": "ACS-4330-FANASSY"
+                }
+            ],
+            "powerSupplies": [
+                {
+                    "description": "250W AC Power Supply for Cisco ISR 4330",
+                    "label": "Power Supply",
+                    "location": {
+                        "path": "0",
+                        "type": "module"
+                    },
+                    "serialNumber": "PST1938N0UN",
+                    "sku": "PWR-4330-AC"
+                }
+            ]
+        },
+        "family": "ISR",
+        "series": "4300"
+    },
+    "detectedSerialNumber": "FLM1946W0JM",
+    "uptime": "14w4d20h37m",
+    "chassis": {
+        "R0": {
+            "sku": "ISR4331/K9",
+            "serialNumber": "FDO19421F3Z"
+        }
+    },
+    "type": {
+        "name": "iosRouter",
+        "base": "wanRouter"
+    },
+    "licenses": [],
+    "portsInfo": {
+        "ports": {
+            "GigabitEthernet0": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "58:ac:78:27:23:5f",
+                    "phyMacAddress": "58:ac:78:27:23:5f",
+                    "ipv4Address": "10.150.1.78/27"
+                },
+                "description": "*** Global Summary Routes to be advertised ***",
+                "phyVirt": "physical",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.150.1.78/27",
+                    "enabled": true
+                }
+            },
+            "Loopback0": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1514",
+                    "speed": "8000000 Kbit/sec",
+                    "macAddress": "",
+                    "phyMacAddress": ""
+                },
+                "description": "Management Interface",
+                "phyVirt": "virtual",
+                "configured": {
+                    "enabled": true
+                }
+            }
+        },
+        "portSummary": {
+            "switchports": {
+                "total": 0,
+                "use": 0,
+                "free": 0
+            }
+        },
+        "recordTime": {
+            "utcTime": 1737392893957,
+            "utcDateTime": "Mon, 20 Jan 2025 17:08:13 GMT"
+        }
+    }
+}

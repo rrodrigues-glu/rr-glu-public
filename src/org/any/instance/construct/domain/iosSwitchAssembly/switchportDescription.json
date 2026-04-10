@@ -1,0 +1,40 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosSwitchAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "switching": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/switching/ios_switching.json"
+                }
+            }
+        }
+    },
+    "interfaces": {
+        "portLayout": {
+            "@ref": "/org/instance/construct/global/stackPortMap/stack_iosSwitch_Switchports.json"
+        }
+    },
+    "agents": {
+        "watchdog": {}
+    },
+    "state": {
+        "assessment": {
+            "provision": {
+                "policy": {
+                    "@ref": "/org/instance/construct/global/cliStatePolicy/cliStatePolicy.json"
+                },
+                "schedule": "before",
+                "action": "ignore"
+            }
+        }
+    },
+    "@source": {
+        "instanceName": "switchportDescription"
+    },
+    "@exportedInstanceId": "5c59c8f6-346c-435b-b591-2bce3ca428f2",
+    "@id": "5c59c8f6-346c-435b-b591-2bce3ca428f2",
+    "@name": "switchportDescription",
+    "@description": ""
+}

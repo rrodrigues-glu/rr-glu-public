@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": "testUser|gluUser",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/nxos_username_cli.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": []
+    },
+    "maskCommands": [],
+    "@source": {
+        "instanceName": "nxos_username_grp"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "85bf7dd1-99a4-48aa-ad07-4f58e4471e1b",
+    "@id": "85bf7dd1-99a4-48aa-ad07-4f58e4471e1b",
+    "@name": "nxos_username_grp",
+    "@description": ""
+}

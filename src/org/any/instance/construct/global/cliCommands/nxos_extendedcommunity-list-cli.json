@@ -1,0 +1,43 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_ExtComm-List.json"
+    },
+    "cliCommands": [
+        "ip extcommunity-list standard BACKUP_VRF_ROUTES permit rt 65103:35 ",
+        "ip extcommunity-list standard CORPDR_VRF_ROUTES permit rt 65103:16 ",
+        "ip extcommunity-list standard DC03-OOBVPN-EXTCOMM permit rt 65203:1000 ",
+        "ip extcommunity-list standard DC03-OOBVPN-EXTCOMM-DEFAULT permit rt 65203:9999 ",
+        "ip extcommunity-list standard DC03-OOBVPN-EXTCOMM126 permit rt 65203:126 ",
+        "ip extcommunity-list standard DC03-REMOTEOFFICE-NETS-COMMLIST permit rt 65103:1001 ",
+        "ip extcommunity-list standard DC03-REMOTEOFFICE-NETS-COMMLIST2 permit rt 65103:2001 ",
+        "ip extcommunity-list standard DRN_VRF_ROUTES permit rt 65103:12 ",
+        "ip extcommunity-list standard HS-DRN_VRF_ROUTES permit rt 65103:14 ",
+        "ip extcommunity-list standard HS-STG_VRF_ROUTES permit rt 65103:13 ",
+        "ip extcommunity-list standard MAIN_DMZ01_ROUTES permit rt 65103:100 ",
+        "ip extcommunity-list standard MAIN_DMZ02_ROUTES permit rt 65103:200 ",
+        "ip extcommunity-list standard MPX_VRF_ROUTES permit rt 65103:17 ",
+        "ip extcommunity-list standard NSX_VRF_ROUTES permit rt 65103:90 ",
+        "ip extcommunity-list standard PUBLICDMZ_VRF_ROUTES permit rt 65103:18 ",
+        "ip extcommunity-list standard QAD_VRF_ROUTES permit rt 65103:33 ",
+        "ip extcommunity-list standard QAMAIN_DMZ01_ROUTES permit rt 65103:800 ",
+        "ip extcommunity-list standard QAMAIN_DMZ02_ROUTES permit rt 65103:900 ",
+        "ip extcommunity-list standard STG-TRN_VRF_ROUTES permit rt 65103:11 ",
+        "ip extcommunity-list standard SYSMGMT_VRF_ROUTES permit rt 65103:15 ",
+        "ip extcommunity-list standard VOICE_VRF_ROUTES permit rt 65103:19 ",
+        "ip extcommunity-list standard XTK-DRN_VRF_ROUTES permit rt 65103:32 ",
+        "ip extcommunity-list standard XTK-STG_VRF_ROUTES permit rt 65103:31 "
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_extendedcommunity-list-cli"
+    },
+    "@exportedInstanceId": "dd30ff53-d9b7-477a-a4ec-1c74df1fa75e",
+    "@id": "dd30ff53-d9b7-477a-a4ec-1c74df1fa75e",
+    "@name": "nxos_extendedcommunity-list-cli",
+    "@description": ""
+}

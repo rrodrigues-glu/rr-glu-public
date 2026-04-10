@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": "^bulk_traffic_ACL$|^premium_traffic_ACL$|^video_traffic_ACL$|^Lync-traffic-ACL$",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_isr4k-asr1k-qos-acl_cli.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_isr4k-asr1k-qos-acl_grp"
+    },
+    "@exportedInstanceId": "0c09c13d-ed0f-416d-9747-899b67519fbe",
+    "@id": "0c09c13d-ed0f-416d-9747-899b67519fbe",
+    "@name": "ios_isr4k-asr1k-qos-acl_grp",
+    "@description": ""
+}

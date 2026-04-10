@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": "source-interface",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_ip-ftp-source_cli.json"
+        ]
+    },
+    "maskCommands": [
+        "^ip ftp source-interface"
+    ],
+    "advanced": {
+        "renderingConditions": []
+    },
+    "@source": {
+        "instanceName": "ios_ip-ftp-source_grp"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "2cab0d6d-cb49-45cc-b404-5760d87a2c9c",
+    "@id": "2cab0d6d-cb49-45cc-b404-5760d87a2c9c",
+    "@name": "ios_ip-ftp-source_grp",
+    "@description": ""
+}

@@ -1,0 +1,56 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "! Change the DSCP values to match to the local provider. The examples below are the OneNet standards.",
+        "",
+        "policy-map Marking-LAN-INBOUND",
+        " class voice-traffic-INBOUND",
+        "  set ip dscp ef",
+        " class video-traffic-INBOUND",
+        "  set ip dscp af41",
+        " class premium-traffic-INBOUND",
+        "  set ip dscp af31",
+        " class bulk-traffic-INBOUND",
+        "  set ip dscp af11",
+        " class default-traffic-INBOUND",
+        "  set ip dscp af21",
+        "!",
+        "policy-map Queuing-WAN-OUTBOUND",
+        " class VoIP-out",
+        "  priority percent 20",
+        " class NETWORK_CONTROL",
+        "  bandwidth remaining percent 5",
+        " class Video-out",
+        "  bandwidth remaining percent 10",
+        "  random-detect dscp-based",
+        " class Premium-out",
+        "  bandwidth remaining percent 35",
+        "  random-detect dscp-based",
+        " class Bulk-out",
+        "  bandwidth remaining percent 15",
+        "  random-detect dscp-based",
+        " class Default-out",
+        "  bandwidth remaining percent 35",
+        "  random-detect dscp-based",
+        "!",
+        "policy-map SHAPE-ETHERNET",
+        " class class-default",
+        "  shape average 47500000",
+        "  service-policy Queuing-WAN-OUTBOUND"
+    ],
+    "advanced": {
+        "filter": "platform",
+        "platform": "(ISR4.+|ASR1.+|CSR1000.+|CISCO39.+)"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_isr4k-asr1k-qos-pmap_cli"
+    },
+    "@exportedInstanceId": "d52b8e39-fe62-48f1-84a3-75119c7c6e8e",
+    "@id": "d52b8e39-fe62-48f1-84a3-75119c7c6e8e",
+    "@name": "ios_isr4k-asr1k-qos-pmap_cli",
+    "@description": ""
+}

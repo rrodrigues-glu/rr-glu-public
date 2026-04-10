@@ -1,0 +1,34 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/interface.jtype"
+    },
+    "featureConcept": {
+        "name": "Intf",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/nxos_install_group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_features-group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_vrf-context-group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_vlan_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_netflow-monitor_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_netflow-exporter_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_netflow-record_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_intf-mgmt-group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_intf-Eth_group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_intf-vlan_group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_intf-Loopback_group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_inft-portchannel_group.json"
+            ]
+        }
+    },
+    "form": {
+        "comment": null
+    },
+    "@source": {
+        "instanceName": "nxos_interface"
+    },
+    "@exportedInstanceId": "144ac94f-2080-46e2-ac7b-99ea4b24e29f",
+    "@id": "144ac94f-2080-46e2-ac7b-99ea4b24e29f",
+    "@name": "nxos_interface",
+    "@description": ""
+}

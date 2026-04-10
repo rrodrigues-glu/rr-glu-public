@@ -1,0 +1,18 @@
+{
+    "site": {
+        "name": "SN002",
+        "description": "",
+        "location": "",
+        "type": "site",
+        "sitePath": "/",
+        "contact": "",
+        "techContact": ""
+    },
+    "@exportedInstanceId": "65c5ad43-3fad-4e45-b3d3-88358a581111",
+    "@id": "65c5ad43-3fad-4e45-b3d3-88358a581111",
+    "@type": {
+        "ref": "/sys/type/construct/domain/location.jtype"
+    },
+    "@name": "SN002",
+    "@description": ""
+}

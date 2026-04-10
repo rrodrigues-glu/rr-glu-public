@@ -1,7 +1,5 @@
 {
-    "item": {
-        "@ref": "/org/instance/construct/global/conceptItem/IOS_Snmp.json"
-    },
+    "item": {},
     "cliCommands": [
         "snmp-server group TESTGROUP v3 auth",
         "snmp-server group NOTREDACTED_VERSION_3 v3 auth",
@@ -21,10 +19,11 @@
     "advanced": {
         "filter": null
     },
+    "@exportedInstanceId": "da3eb4d2-2ed6-42b1-8dfc-5daf6a6da73e",
     "@id": "da3eb4d2-2ed6-42b1-8dfc-5daf6a6da73e",
-    "@name": "ios_snmp-server_cli",
-    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    }
+    },
+    "@name": "ios_snmp-server_cli",
+    "@description": ""
 }

@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": "source-interface",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_ip-tftp-source_cli.json"
+        ]
+    },
+    "maskCommands": [
+        "^ip tftp source-interface"
+    ],
+    "advanced": {
+        "renderingConditions": []
+    },
+    "@source": {
+        "instanceName": "ios_ip-tftp-source_grp"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "3bef1faa-0bc8-4f44-9d0f-0cea3332f42b",
+    "@id": "3bef1faa-0bc8-4f44-9d0f-0cea3332f42b",
+    "@name": "ios_ip-tftp-source_grp",
+    "@description": ""
+}

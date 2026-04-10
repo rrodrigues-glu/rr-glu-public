@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": "^EF$|^AF21$|^AF11$|^CS3AF41$|^bulk-traffic-INBOUND$|^premium-traffic-INBOUND$|^video-traffic-INBOUND$|^Default$|^voice-traffic-INBOUND$|^default-traffic-INBOUND$",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_cat2960-qos-cmap_cli.json",
+            "/org/instance/construct/global/cliCommands/ios_cat2960x-qos-cmap_cli.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_cat2960-qos-cmap_grp"
+    },
+    "@exportedInstanceId": "0deeb6b0-0adb-4fd6-8b20-1e581fcd6458",
+    "@id": "0deeb6b0-0adb-4fd6-8b20-1e581fcd6458",
+    "@name": "ios_cat2960-qos-cmap_grp",
+    "@description": ""
+}

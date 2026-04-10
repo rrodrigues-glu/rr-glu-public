@@ -1,0 +1,30 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": "(^VPC_KEEPALIVE$|^backup$|^corp-vdi$|^corpdr$|^default$|^drn$|^hs-drn$|^hs-stg$|^management$|^mpx$|^netmgmt$|^nsx$|^publicdmz$|^qad$|^stg-trn$|^sysmgmt$|^voice$|^xtk-drn$|^xtk-stg$)",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/nxos_vrf-context-cli.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": [
+            ""
+        ]
+    },
+    "maskCommands": [
+        ""
+    ],
+    "removeSyntax": {
+        "list": []
+    },
+    "@source": {
+        "instanceName": "nxos_vrf-context-group"
+    },
+    "@exportedInstanceId": "77fc5bb9-fd2a-4b66-be16-484450c05087",
+    "@id": "77fc5bb9-fd2a-4b66-be16-484450c05087",
+    "@name": "nxos_vrf-context-group",
+    "@description": ""
+}

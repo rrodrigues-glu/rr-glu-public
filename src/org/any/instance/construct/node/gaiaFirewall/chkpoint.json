@@ -1,0 +1,54 @@
+{
+    "options": {
+        "connectionEnabled": true,
+        "previewMode": false,
+        "forcedAttachedStorage": false
+    },
+    "firewall": {
+        "enabled": true
+    },
+    "site": {
+        "@ref": "/org/instance/construct/domain/location/SN001.json"
+    },
+    "configState": "managed",
+    "entryConnection": {
+        "connectionMethod": "cliConnection",
+        "ip": "10.150.11.2",
+        "credentials": {
+            "@ref": "/secret/sys/credentials/deviceUserPass/admin.json"
+        },
+        "enablePassword": {
+            "@ref": "/secret/sys/credentials/deviceEnablePass/En1.json"
+        },
+        "port": 22,
+        "type": "ssh",
+        "terminalType": "xterm"
+    },
+    "associations": {
+        "assembly": {
+            "@ref": "/org/instance/construct/domain/gaiaFirewallAssembly/Gaia Firewall-Assembly-Copy-1.json"
+        },
+        "provider": "local"
+    },
+    "personae": {},
+    "hardware": {
+        "vendor": "auto",
+        "expectedSerialNumber": "auto"
+    },
+    "provisioning": {
+        "type": "advanced"
+    },
+    "persona": {
+        "type": "none"
+    },
+    "gaiaFirewall": {
+        "enabled": true
+    },
+    "@exportedInstanceId": "e626a5b9-c10f-4611-a9b9-40e249f85115",
+    "@id": "e626a5b9-c10f-4611-a9b9-40e249f85115",
+    "@type": {
+        "ref": "/sys/type/construct/node/gaiaFirewall.jtype"
+    },
+    "@name": "chkpoint",
+    "@description": ""
+}

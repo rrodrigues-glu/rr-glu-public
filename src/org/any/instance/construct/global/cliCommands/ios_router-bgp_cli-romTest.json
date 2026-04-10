@@ -1,0 +1,21 @@
+{
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Router-romTest.json"
+    },
+    "cliCommands": [
+        "router bgp $context.portMap[*].name",
+        " address-family ipv4",
+        "  neighbor {$discover.neighip.global.neigh.ipbgp} advertisement-interval 10",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "b1df2543-c31c-428f-a8ce-6b0b2965510c",
+    "@id": "b1df2543-c31c-428f-a8ce-6b0b2965510c",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "ios_router-bgp_cli-romTest",
+    "@description": ""
+}

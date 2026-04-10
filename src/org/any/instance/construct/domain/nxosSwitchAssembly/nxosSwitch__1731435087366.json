@@ -1,0 +1,22 @@
+{
+    "domains": {
+        "modules": {
+            "interface": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/interface/nxos_interface-dup.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "state": {
+        "assessment": {}
+    },
+    "@exportedInstanceId": "14264397-7a3d-4315-bba4-13bc04e1d61c",
+    "@id": "14264397-7a3d-4315-bba4-13bc04e1d61c",
+    "@type": {
+        "ref": "/sys/type/construct/domain/nxosSwitchAssembly.jtype"
+    },
+    "@name": "nxosSwitch__1731435087366",
+    "@description": ""
+}

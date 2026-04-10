@@ -1,0 +1,18 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "1912f1d4-1677-472e-958e-9314c4fafb77",
+    "item": {},
+    "cliCommands": [
+        "ntp source GigabitEthernet1",
+        "ntp access-group peer 13",
+        "ntp server vrf FVRF 54.174.226.160",
+        "ntp server vrf FVRF 54.200.78.189 prefer",
+        "clock timezone PST -7 0",
+        "clock summer-time PDT recurring"
+    ],
+    "@exportedInstanceId": "1912f1d4-1677-472e-958e-9314c4fafb77",
+    "@name": "NtpAgent__cli__1665576295055911e",
+    "@description": ""
+}

@@ -1,0 +1,30 @@
+{
+    "regEx": "^fragement$",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/nxos_verify-fragment-cli.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": [
+            ""
+        ]
+    },
+    "maskCommands": [
+        "no hardware ip verify fragment"
+    ],
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@description": "",
+    "@source": {
+        "instanceName": "nxos_verify-fragment-group"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "aa676ead-4df2-4caf-8d30-d0aba0026777",
+    "@id": "aa676ead-4df2-4caf-8d30-d0aba0026777",
+    "@name": "nxos_verify-fragment-group"
+}

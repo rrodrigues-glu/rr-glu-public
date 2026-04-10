@@ -1,0 +1,51 @@
+{
+  "permissionLevel": "auditManageLevel1",
+  "rules": [
+    {
+      "severity": "INFO",
+      "name": "Test ",
+      "os": "ios",
+      "source": "LATEST",
+      "commandSet": "all",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "type": "SIMPLE",
+      "description": "",
+      "enable": true,
+      "scope": "flow exporter test",
+      "scopeSeparateResults": false,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_ordered",
+            "value": [
+              "flow exporter test",
+              " description tstOnly",
+              " destination 1.1.1.1",
+              " source Loopback11"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "conceptItem": "IOS_NetflowExporter"
+    }
+  ],
+  "runLevel": "auditRunLevel1",
+  "description": "",
+  "name": "MSBjenny-1",
+  "tid": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+  "id": "0da4d4cd-7b90-48ee-b2b3-1e31ce0f5f3d",
+  "createdBy": "admin",
+  "createdOn": 1729768776026,
+  "updatedBy": "admin",
+  "updatedOn": 1730891444224,
+  "lastAuditErrorMsg": "",
+  "lastAuditDevicesSkippedCount": 0
+}

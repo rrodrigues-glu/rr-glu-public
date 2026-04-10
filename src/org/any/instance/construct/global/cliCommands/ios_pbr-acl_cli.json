@@ -1,0 +1,22 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "ip access-list extended acl_pbr-data",
+        " permit tcp $context.portMap.DATA.ipv4.subnet.subnetId $context.portMap.DATA.ipv4.subnet.wildCardMask any eq www 443",
+        " permit tcp 192.168.10.0 0.0.0.255 any eq www 443",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_pbr-acl_cli"
+    },
+    "@exportedInstanceId": "13f241d5-eec7-425e-aa41-ec1ac0f13fce",
+    "@id": "13f241d5-eec7-425e-aa41-ec1ac0f13fce",
+    "@name": "ios_pbr-acl_cli",
+    "@description": ""
+}

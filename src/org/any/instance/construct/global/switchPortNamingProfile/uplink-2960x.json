@@ -1,0 +1,27 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/switchPortNamingProfile.jtype"
+    },
+    "ethernetPorts": {
+        "namedType": "GigabitEthernet",
+        "mapping": "specific",
+        "range": "25-26",
+        "pathId": "0/%portId"
+    },
+    "breakoutPorts": {
+        "namedType": "Ethernet",
+        "pathId": "%stackId/0/%portId/%breakoutId"
+    },
+    "otherSettings": {
+        "intialStackId": 1
+    },
+    "comment1": null,
+    "comment2": null,
+    "@source": {
+        "instanceName": "uplink-2960x"
+    },
+    "@exportedInstanceId": "7df7c52a-6e11-4814-84b8-f42dd9329826",
+    "@id": "7df7c52a-6e11-4814-84b8-f42dd9329826",
+    "@name": "uplink-2960x",
+    "@description": ""
+}

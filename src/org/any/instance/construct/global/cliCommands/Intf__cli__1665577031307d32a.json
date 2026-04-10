@@ -1,0 +1,17 @@
+{
+    "item": {},
+    "cliCommands": [
+        "interface GigabitEthernet2/0/2",
+        " macro apply JFK_Macro2"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "e0e14d60-3b32-487c-b684-2a67159b4cfe",
+    "@id": "e0e14d60-3b32-487c-b684-2a67159b4cfe",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "Intf__cli__1665577031307d32a",
+    "@description": ""
+}

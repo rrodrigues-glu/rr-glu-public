@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "interface GigabitEthernet0/1",
+        " description Inside Interface",
+        " ip address 192.168.168.1 255.255.255.0",
+        " no ip redirects",
+        " no ip unreachables",
+        " no ip proxy-arp",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_intf-lan_cli"
+    },
+    "@exportedInstanceId": "ef9b5e51-879b-4165-98bd-0830402b4fdd",
+    "@id": "ef9b5e51-879b-4165-98bd-0830402b4fdd",
+    "@name": "ios_intf-lan_cli",
+    "@description": ""
+}

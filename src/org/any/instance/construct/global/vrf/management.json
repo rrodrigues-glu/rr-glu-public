@@ -1,0 +1,16 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/vrf.jtype"
+    },
+    "id": 1,
+    "rd": null,
+    "@source": {
+        "instanceName": "management"
+    },
+    "type": "basic",
+    "alias": "",
+    "@exportedInstanceId": "c42ef24a-d1be-4e6d-b196-be0be5e2d44a",
+    "@id": "c42ef24a-d1be-4e6d-b196-be0be5e2d44a",
+    "@name": "management",
+    "@description": ""
+}

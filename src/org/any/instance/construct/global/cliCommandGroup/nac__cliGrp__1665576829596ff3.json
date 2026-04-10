@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@id": "86c52ad2-19a3-4076-be7a-94278a046d53",
+    "ignoreDelete": true,
+    "regEx": ".+",
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/Dot1x__cli__16655768295964bd1.json"
+        ]
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "86c52ad2-19a3-4076-be7a-94278a046d53",
+    "@name": "nac__cliGrp__1665576829596ff3",
+    "@description": ""
+}

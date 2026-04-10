@@ -1,0 +1,32 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "policy-map CLASSIFY",
+        " class voice-traffic-INBOUND",
+        "  set dscp ef",
+        " class video-traffic-INBOUND",
+        "  set dscp af41",
+        " class premium-traffic-INBOUND",
+        "  set dscp af31",
+        " class bulk-traffic-INBOUND",
+        "  set dscp af11",
+        " class default-traffic-INBOUND",
+        "  set dscp af21",
+        "!"
+    ],
+    "advanced": {
+        "filter": "platform",
+        "platform": "C6500"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_cat6500-qos-pmap_cli"
+    },
+    "@exportedInstanceId": "56811d49-ed00-49da-81bd-8bff682b4744",
+    "@id": "56811d49-ed00-49da-81bd-8bff682b4744",
+    "@name": "ios_cat6500-qos-pmap_cli",
+    "@description": ""
+}

@@ -1,0 +1,22 @@
+{
+    "featureConcept": {
+        "name": "QOS Feature",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/qos__cliGrp__1665576829596057-Test.json"
+            ]
+        }
+    },
+    "form": {
+        "intf": {
+            "bandwidth": null
+        }
+    },
+    "@exportedInstanceId": "4e6f5876-95fb-4fb2-a1da-0dd5763a06eb",
+    "@id": "4e6f5876-95fb-4fb2-a1da-0dd5763a06eb",
+    "@type": {
+        "ref": "/sys/type/construct/feature/qos.jtype"
+    },
+    "@name": "qos__1665576829596-Test",
+    "@description": ""
+}

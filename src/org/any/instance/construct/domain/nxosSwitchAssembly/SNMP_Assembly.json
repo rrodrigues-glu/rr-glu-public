@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/nxosSwitchAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "snmp": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/snmp/nxos_snmp.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "boot": {
+        "firmware": {}
+    },
+    "state": {
+        "assessment": {}
+    },
+    "@source": {
+        "instanceName": "SNMP_Assembly"
+    },
+    "@exportedInstanceId": "08656730-479f-40ee-8670-2dda98387dc4",
+    "@id": "08656730-479f-40ee-8670-2dda98387dc4",
+    "@name": "SNMP_Assembly",
+    "@description": ""
+}

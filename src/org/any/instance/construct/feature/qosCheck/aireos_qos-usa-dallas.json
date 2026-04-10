@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/qosCheck.jtype"
+    },
+    "featureConcept": {
+        "name": "QoS Model for AIR5508 Dallas United States",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/aireos_qos_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/aireos_wlan-qos-3_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "platform": "AIR-(CT|WLC).+"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "aireos_qos-usa-dallas"
+    },
+    "@exportedInstanceId": "04a9ee95-8634-4140-b862-53511b77d139",
+    "@id": "04a9ee95-8634-4140-b862-53511b77d139",
+    "@name": "aireos_qos-usa-dallas",
+    "@description": ""
+}

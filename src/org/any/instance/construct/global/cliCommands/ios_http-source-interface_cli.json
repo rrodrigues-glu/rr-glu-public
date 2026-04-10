@@ -1,0 +1,19 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "ip http client source-interface $context.http.srcInt"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_http-source-interface_cli"
+    },
+    "@exportedInstanceId": "4a7016fa-5e5e-47d7-ae42-6c47ec5ea89f",
+    "@id": "4a7016fa-5e5e-47d7-ae42-6c47ec5ea89f",
+    "@name": "ios_http-source-interface_cli",
+    "@description": ""
+}

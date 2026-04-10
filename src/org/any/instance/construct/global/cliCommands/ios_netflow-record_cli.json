@@ -1,0 +1,37 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "flow record $context.flow.record.name",
+        " match ipv4 tos",
+        " match ipv4 protocol",
+        " match ipv4 source address",
+        " collect routing source as",
+        " collect routing destination as",
+        " collect routing next-hop address ipv4",
+        " collect ipv4 dscp",
+        " collect ipv4 id",
+        " collect ipv4 source prefix",
+        " collect ipv4 source mask",
+        " collect ipv4 destination mask",
+        " collect transport tcp flags",
+        " collect interface output",
+        " collect flow sampler",
+        " collect counter bytes",
+        " collect counter packets",
+        " collect application name",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_netflow-record_cli"
+    },
+    "@exportedInstanceId": "6024a417-c682-411c-8fda-4bbb4746994a",
+    "@id": "6024a417-c682-411c-8fda-4bbb4746994a",
+    "@name": "ios_netflow-record_cli",
+    "@description": ""
+}

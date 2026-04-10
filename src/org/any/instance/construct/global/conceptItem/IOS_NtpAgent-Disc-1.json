@@ -1,0 +1,42 @@
+{
+    "name": "NtpAgent",
+    "vendors": {
+        "cisco": {
+            "type": [
+                "ios"
+            ],
+            "level": null,
+            "note": null
+        }
+    },
+    "showCmds": [
+        "sh run | sec ^ntp",
+        "sh run | sec ^clock"
+    ],
+    "keyCliLine": "",
+    "rootEntryFlag": true,
+    "mode": "basic",
+    "boundaries": {
+        "start": null
+    },
+    "discover": {
+        "timezone": {
+            "expressions": [
+                "clock timezone (.+)"
+            ]
+        },
+        "intf": {
+            "expressions": [
+                "^interface\\s(?<Gi>.+)\\s.+description\\s(?<test>.+)$"
+            ]
+        }
+    },
+    "removeSyntax": {},
+    "@exportedInstanceId": "dc9ccbff-55f6-48e1-80f9-7938e0d715b2",
+    "@id": "dc9ccbff-55f6-48e1-80f9-7938e0d715b2",
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "@name": "IOS_NtpAgent-Disc-1",
+    "@description": "Displays the sections that show the NTP and Clock configuration parameters. Note: The ^ makes the parser ONLY display the sections whose first lines BEGIN with 'ntp' or 'clock'."
+}

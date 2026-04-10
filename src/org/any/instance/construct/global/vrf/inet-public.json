@@ -1,0 +1,16 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/vrf.jtype"
+    },
+    "id": 1,
+    "rd": null,
+    "@source": {
+        "instanceName": "inet-public"
+    },
+    "type": "basic",
+    "alias": "",
+    "@exportedInstanceId": "4815d4ae-b64e-4956-97a9-a434fb226fa2",
+    "@id": "4815d4ae-b64e-4956-97a9-a434fb226fa2",
+    "@name": "inet-public",
+    "@description": ""
+}

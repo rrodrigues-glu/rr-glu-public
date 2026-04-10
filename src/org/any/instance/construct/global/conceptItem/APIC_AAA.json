@@ -1,0 +1,30 @@
+{
+    "name": "Aaa",
+    "vendors": {
+        "cisco": {
+            "type": [
+                "aci"
+            ],
+            "level": null,
+            "note": null
+        }
+    },
+    "showCmds": [
+        "show running-config aaa"
+    ],
+    "keyCliLine": "aaa authentication (.+)",
+    "rootEntryFlag": false,
+    "mode": "basic",
+    "boundaries": {
+        "start": "aaa accounting"
+    },
+    "discover": {},
+    "removeSyntax": {},
+    "@exportedInstanceId": "9726ef9c-71cd-4c94-a5bf-443272925e92",
+    "@id": "9726ef9c-71cd-4c94-a5bf-443272925e92",
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "@name": "APIC_AAA",
+    "@description": "Displays the configuration section of the configured default AAA accounting method."
+}

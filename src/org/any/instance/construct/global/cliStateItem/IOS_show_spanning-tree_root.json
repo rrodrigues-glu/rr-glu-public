@@ -1,0 +1,27 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "sh spanning-tree root",
+    "rootEntry": "yes",
+    "groupName": "stp",
+    "discover": {
+        "vlan": {
+            "expressions": [
+                "^(?<vlan>VLAN\\d+)\\s+(?<priority>\\d+)\\s+(?<macAddress>[0-9A-Fa-f]{4}\\.[0-9A-Fa-f]{4}\\.[0-9A-Fa-f]{4})\\s+(\\d+)\\s+(\\d+)\\s+(\\d{2})\\s+(\\d{2})(?:\\s+)?(?:(?<port>\\S+))?(?:\\s+)?$"
+            ],
+            "localKey": "vlan",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {},
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "IOS_show_spanning-tree_root"
+    },
+    "@exportedInstanceId": "aeb6dfa3-2d27-44cc-9c90-57dbdfb69add",
+    "@id": "aeb6dfa3-2d27-44cc-9c90-57dbdfb69add",
+    "@name": "IOS_show_spanning-tree_root",
+    "@description": ""
+}

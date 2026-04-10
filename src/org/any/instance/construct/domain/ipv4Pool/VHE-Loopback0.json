@@ -1,0 +1,34 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/ipv4Pool.jtype"
+    },
+    "description": "Router Loopback0 Addressing",
+    "type": "ipv4",
+    "summary": "10.0.0.0/24",
+    "subnetPrefixLength": 32,
+    "reservations": [
+        {
+            "subnet": "10.0.0.1",
+            "device": {
+                "serialNumber": "FOX2018GA37"
+            }
+        },
+        {
+            "subnet": "10.0.0.2",
+            "device": {
+                "serialNumber": ""
+            }
+        }
+    ],
+    "allocationMode": "subnetBased",
+    "options": {
+        "oversubscribingMode": false
+    },
+    "@source": {
+        "instanceName": "VHE-Loopback0"
+    },
+    "@exportedInstanceId": "df903f58-4a17-48f1-bbe8-5ea2bde53007",
+    "@id": "df903f58-4a17-48f1-bbe8-5ea2bde53007",
+    "@name": "VHE-Loopback0",
+    "@description": ""
+}

@@ -1,0 +1,50 @@
+{
+    "configState": "managed",
+    "associations": {
+        "provider": "local"
+    },
+    "persona": {
+        "type": "none"
+    },
+    "hardware": {
+        "vendor": "auto",
+        "expectedSerialNumber": "auto"
+    },
+    "provisioning": {
+        "type": "advanced"
+    },
+    "arubaosSwitch": {
+        "enabled": true
+    },
+    "options": {
+        "connectionEnabled": true,
+        "previewMode": false,
+        "forcedAttachedStorage": false
+    },
+    "campusSwitch": {
+        "enabled": true
+    },
+    "entryConnection": {
+        "ip": "10.150.3.2",
+        "credentials": {
+            "@ref": "/secret/sys/credentials/deviceUserPass/admin.json"
+        },
+        "enablePassword": {
+            "@ref": "/secret/sys/credentials/deviceEnablePass/En2.json"
+        },
+        "type": "ssh",
+        "port": 22,
+        "connectionMethod": "cliConnection",
+        "terminalType": "xterm"
+    },
+    "site": {
+        "@ref": "/org/instance/construct/domain/location/SN001.json"
+    },
+    "@exportedInstanceId": "7f97a30b-eff3-4858-8292-49721d33767f",
+    "@id": "7f97a30b-eff3-4858-8292-49721d33767f",
+    "@type": {
+        "ref": "/sys/type/construct/node/arubaosSwitch.jtype"
+    },
+    "@name": "Aruba",
+    "@description": ""
+}

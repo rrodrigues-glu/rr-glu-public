@@ -1,0 +1,35 @@
+{
+    "name": "Macro",
+    "vendors": {
+        "cisco": {
+            "type": [
+                "ios"
+            ],
+            "level": null
+        }
+    },
+    "showCmds": [
+        "show run | beg macro"
+    ],
+    "keyCliLine": "macro name (.+)",
+    "rootEntryFlag": false,
+    "keyLineDepth": 0,
+    "keyGroup": 1,
+    "metadata": {
+        "@ref": "/org/instance/construct/global/cliMetadata/IOS_Macro_cliMetadata-Copy-1.json"
+    },
+    "mode": "advanced",
+    "boundaries": {
+        "start": "macro name "
+    },
+    "discover": {},
+    "removeSyntax": {},
+    "accelerators": {},
+    "@exportedInstanceId": "38c63d41-5f7b-43bc-adca-38cb97e26b91",
+    "@id": "38c63d41-5f7b-43bc-adca-38cb97e26b91",
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "@name": "IOS_Macro-Copy-1",
+    "@description": ""
+}

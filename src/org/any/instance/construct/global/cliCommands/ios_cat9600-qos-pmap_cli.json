@@ -1,0 +1,32 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "policy-map QOS-OUTBOUND",
+        " class VOICE",
+        "  priority level 1 percent 20",
+        "  queue-buffers ratio 10",
+        " class VIDEO",
+        "  priority level 2 percent 10",
+        "  queue-buffers ratio 10",
+        " class class-default",
+        "  bandwidth remaining percent 100",
+        "  queue-buffers ratio 80",
+        "  qos queue-softmax-multiplier 2000",
+        "!"
+    ],
+    "advanced": {
+        "filter": "platform",
+        "platform": "(C9600)"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_cat9600-qos-pmap_cli"
+    },
+    "@exportedInstanceId": "cf88d3b2-cb5c-4867-b5fb-205a2cd8a5df",
+    "@id": "cf88d3b2-cb5c-4867-b5fb-205a2cd8a5df",
+    "@name": "ios_cat9600-qos-pmap_cli",
+    "@description": ""
+}

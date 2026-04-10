@@ -1,0 +1,36 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "name": "DnsServer",
+    "showCmds": [
+        "sh run | sec \"^ip name-server\""
+    ],
+    "mode": "basic",
+    "keyCliLine": "",
+    "rootEntryFlag": true,
+    "boundaries": {
+        "start": null
+    },
+    "discover": {
+        "": {
+            "expressions": []
+        }
+    },
+    "removeSyntax": {},
+    "vendors": {
+        "cisco": {
+            "type": [
+                "nxos"
+            ],
+            "level": null
+        }
+    },
+    "@source": {
+        "instanceName": "NXOS_DnsServer"
+    },
+    "@exportedInstanceId": "2d8431fa-890f-4965-bb59-b3e173216307",
+    "@id": "2d8431fa-890f-4965-bb59-b3e173216307",
+    "@name": "NXOS_DnsServer",
+    "@description": ""
+}

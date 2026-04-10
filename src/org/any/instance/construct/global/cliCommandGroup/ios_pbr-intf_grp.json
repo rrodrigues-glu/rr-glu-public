@@ -1,0 +1,29 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": ".+",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_pbr-intf_cli.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": []
+    },
+    "maskCommands": [
+        "^interface",
+        "^ip policy"
+    ],
+    "@source": {
+        "instanceName": "ios_pbr-intf_grp"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "10151c4f-db02-4f5f-a877-357d59872ad2",
+    "@id": "10151c4f-db02-4f5f-a877-357d59872ad2",
+    "@name": "ios_pbr-intf_grp",
+    "@description": ""
+}

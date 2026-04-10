@@ -1,0 +1,24 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStatePolicy.jtype"
+    },
+    "list": [
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/Aireos_wlanSummary.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        }
+    ],
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "Aireos_wlanSummary"
+    },
+    "privilegeMode": false,
+    "@exportedInstanceId": "b1855c70-91da-496b-b40f-e834390c460f",
+    "@id": "b1855c70-91da-496b-b40f-e834390c460f",
+    "@name": "Aireos_wlanSummary",
+    "@description": ""
+}

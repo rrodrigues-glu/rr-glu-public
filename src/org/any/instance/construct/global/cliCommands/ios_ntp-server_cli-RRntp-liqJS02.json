@@ -1,0 +1,20 @@
+{
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_NtpAgent-RRntp.json"
+    },
+    "cliCommands": [
+        "ntp server {{device.hardware.serialNumber}}",
+        "!",
+        ""
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "ff030a5a-d3e1-4593-9836-98154dc6cc51",
+    "@id": "ff030a5a-d3e1-4593-9836-98154dc6cc51",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "ios_ntp-server_cli-RRntp-liqJS02",
+    "@description": ""
+}

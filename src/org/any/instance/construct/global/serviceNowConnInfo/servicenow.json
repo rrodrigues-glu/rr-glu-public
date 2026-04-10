@@ -1,0 +1,19 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/serviceNowConnInfo.jtype"
+    },
+    "type": "https",
+    "trustAnyHttpsCert": false,
+    "ip": "<instance>.service-now.com",
+    "srvProvider": "",
+    "userName": "",
+    "password": "",
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "servicenow"
+    },
+    "@exportedInstanceId": "5f7b6262-717e-40f2-8b30-3d5c5d1ba086",
+    "@id": "5f7b6262-717e-40f2-8b30-3d5c5d1ba086",
+    "@name": "servicenow",
+    "@description": ""
+}

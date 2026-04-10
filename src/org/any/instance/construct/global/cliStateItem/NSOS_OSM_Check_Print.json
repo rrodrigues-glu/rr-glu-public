@@ -1,0 +1,17 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "copy run start",
+    "groupName": "copy",
+    "discover": {},
+    "options": {},
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NSOS_OSM_Check_Print"
+    },
+    "@exportedInstanceId": "32cf263a-5127-4b4e-8c8e-2c3875397d97",
+    "@id": "32cf263a-5127-4b4e-8c8e-2c3875397d97",
+    "@name": "NSOS_OSM_Check_Print",
+    "@description": ""
+}

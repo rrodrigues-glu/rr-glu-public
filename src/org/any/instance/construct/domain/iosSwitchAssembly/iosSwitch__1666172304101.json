@@ -1,0 +1,25 @@
+{
+    "domains": {
+        "modules": {
+            "banner": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/banner/banner__1665576295055.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "boot": {
+        "firmware": {}
+    },
+    "state": {
+        "assessment": {}
+    },
+    "@exportedInstanceId": "07cd0596-9e48-4fd4-a5f4-f48381eb0bb0",
+    "@id": "07cd0596-9e48-4fd4-a5f4-f48381eb0bb0",
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosSwitchAssembly.jtype"
+    },
+    "@name": "iosSwitch__1666172304101",
+    "@description": ""
+}

@@ -1,0 +1,19 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_object-intf_cli"
+    },
+    "@exportedInstanceId": "4b0e002d-a9ce-479e-84fb-9cc335602f7e",
+    "@id": "4b0e002d-a9ce-479e-84fb-9cc335602f7e",
+    "@name": "ios_object-intf_cli",
+    "@description": ""
+}

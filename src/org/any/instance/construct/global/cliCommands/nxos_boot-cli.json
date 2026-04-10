@@ -1,0 +1,24 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Boot.json"
+    },
+    "cliCommands": [
+        "boot kickstart bootflash:/n7000-s2-kickstart.7.2.2.D1.2.bin sup-1",
+        "boot system bootflash:/n7000-s2-dk9.7.2.2.D1.2.bin sup-1",
+        "boot kickstart bootflash:/n7000-s2-kickstart.7.2.2.D1.2.bin sup-2",
+        "boot system bootflash:/n7000-s2-dk9.7.2.2.D1.2.bin sup-2"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_boot-cli"
+    },
+    "@exportedInstanceId": "4e241c41-2eb2-4c31-9a00-84b762bec497",
+    "@id": "4e241c41-2eb2-4c31-9a00-84b762bec497",
+    "@name": "nxos_boot-cli",
+    "@description": ""
+}

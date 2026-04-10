@@ -1,0 +1,27 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "interface $context.portMap.ISP1.name",
+        " service-policy input pmap_qos-wan-counting-in",
+        "!",
+        "interface $context.portMap.DATA1.name",
+        " service-policy input pmap_qos-lan-marking-in",
+        "!",
+        "interface $context.portMap.DATA2.name",
+        " service-policy input pmap_qos-lan-marking-in",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_qos-intf_cli"
+    },
+    "@exportedInstanceId": "17b2e572-44f2-4525-8799-d2e564bae928",
+    "@id": "17b2e572-44f2-4525-8799-d2e564bae928",
+    "@name": "ios_qos-intf_cli",
+    "@description": ""
+}

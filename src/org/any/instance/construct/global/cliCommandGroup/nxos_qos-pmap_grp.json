@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": "^qos.+",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/nxos_qos-pmap_cli.json"
+        ]
+    },
+    "maskCommands": [],
+    "advanced": {
+        "renderingConditions": []
+    },
+    "@source": {
+        "instanceName": "nxos_qos-pmap_grp"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "dd3165d9-448a-4f98-a937-ce3fb8da9af2",
+    "@id": "dd3165d9-448a-4f98-a937-ce3fb8da9af2",
+    "@name": "nxos_qos-pmap_grp",
+    "@description": ""
+}

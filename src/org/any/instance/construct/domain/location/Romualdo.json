@@ -1,0 +1,18 @@
+{
+    "site": {
+        "name": "ROOT",
+        "description": "Root site",
+        "location": "",
+        "type": "site",
+        "sitePath": "/",
+        "contact": "",
+        "techContact": ""
+    },
+    "@exportedInstanceId": "026b1a93-5b8e-495d-86f5-20c897217a21",
+    "@id": "026b1a93-5b8e-495d-86f5-20c897217a21",
+    "@type": {
+        "ref": "/sys/type/construct/domain/location.jtype"
+    },
+    "@name": "Romualdo",
+    "@description": ""
+}

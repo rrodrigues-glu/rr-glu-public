@@ -1,0 +1,56 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/aaa.jtype"
+    },
+    "featureConcept": {
+        "name": "Tacacs Server (VRF)",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/nxos_aaa-auth-group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_aaa-group-server-group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_tacacs-server-group.json"
+            ]
+        }
+    },
+    "form": {
+        "aaa": [
+            {
+                "name": "MKTX_TACACS",
+                "tacacs": [
+                    {
+                        "name": "",
+                        "ip": "10.30.100.121",
+                        "key": "\"O0gpE3Y0oq!23\"",
+                        "timeout": 5
+                    },
+                    {
+                        "name": "",
+                        "ip": "10.40.100.121",
+                        "key": "\"O0gpE3Y0oq!23\"",
+                        "timeout": 5
+                    },
+                    {
+                        "name": "",
+                        "ip": "10.80.100.121",
+                        "key": "\"O0gpE3Y0oq!23\"",
+                        "timeout": 5
+                    },
+                    {
+                        "name": "",
+                        "ip": "10.8.100.121",
+                        "key": "\"O0gpE3Y0oq!23\"",
+                        "timeout": 5
+                    }
+                ],
+                "srcIntOverride": true
+            }
+        ]
+    },
+    "@source": {
+        "instanceName": "nxos_aaa-vrf"
+    },
+    "@exportedInstanceId": "dcf44695-ba06-471d-9218-ba0b6e004f75",
+    "@id": "dcf44695-ba06-471d-9218-ba0b6e004f75",
+    "@name": "nxos_aaa-vrf",
+    "@description": ""
+}

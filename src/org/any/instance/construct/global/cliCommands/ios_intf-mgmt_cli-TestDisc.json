@@ -1,0 +1,22 @@
+{
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Intf2_modified-TestDisc.json"
+    },
+    "cliCommands": [
+        "{% for device in devices %}",
+        " interface Loopback11",
+        " description {{device.name }}",
+        "{% endfor %}",
+        ""
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "383c88c6-0ab8-4888-bf5b-64e0dc712066",
+    "@id": "383c88c6-0ab8-4888-bf5b-64e0dc712066",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "ios_intf-mgmt_cli-TestDisc",
+    "@description": ""
+}

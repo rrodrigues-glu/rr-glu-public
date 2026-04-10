@@ -1,0 +1,36 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show fcoe database",
+    "groupName": "fcoe",
+    "discover": {
+        "database": {
+            "expressions": [
+                "^vfc\\d+\\s+(?<fcid>.+)"
+            ],
+            "localKey": "vfc",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        },
+        "flogi": {
+            "expressions": [
+                "^Total number of flogi count from FCoE devices = (?<count>\\d+)"
+            ],
+            "localKey": "",
+            "preserveLocalKey": false,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {
+        "generateLocalKey": true
+    },
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_show_fcoe_database"
+    },
+    "@exportedInstanceId": "ebfb2c53-ce07-4166-b2d6-b17886c30eee",
+    "@id": "ebfb2c53-ce07-4166-b2d6-b17886c30eee",
+    "@name": "NXOS_OSM_show_fcoe_database",
+    "@description": ""
+}

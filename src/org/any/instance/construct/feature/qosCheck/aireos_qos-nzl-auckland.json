@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/qosCheck.jtype"
+    },
+    "featureConcept": {
+        "name": "QoS Model for AIR2504 Auckland New Zealand",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/aireos_qos_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "site": {},
+        "platform": "AIR-(CT|WLC).+"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "aireos_qos-nzl-auckland"
+    },
+    "@exportedInstanceId": "c61c0bd3-5298-4061-93dc-6f2c9141e8fa",
+    "@id": "c61c0bd3-5298-4061-93dc-6f2c9141e8fa",
+    "@name": "aireos_qos-nzl-auckland",
+    "@description": ""
+}

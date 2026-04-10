@@ -1,0 +1,32 @@
+{
+    "name": "NXOS_Cfs",
+    "vendors": {
+        "cisco": {
+            "type": [
+                "nxos"
+            ],
+            "level": null
+        }
+    },
+    "showCmds": [
+        "sh run all | inc ^no telnet"
+    ],
+    "keyCliLine": "",
+    "rootEntryFlag": true,
+    "mode": "basic",
+    "boundaries": {
+        "start": null
+    },
+    "discover": {},
+    "removeSyntax": {},
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "@description": "",
+    "@source": {
+        "instanceName": "NXOS_Telnet"
+    },
+    "@exportedInstanceId": "449553a3-73e2-4107-a64f-9234cc504d0b",
+    "@id": "449553a3-73e2-4107-a64f-9234cc504d0b",
+    "@name": "NXOS_Telnet"
+}

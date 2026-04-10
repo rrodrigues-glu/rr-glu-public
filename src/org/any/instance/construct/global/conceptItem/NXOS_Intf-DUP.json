@@ -1,0 +1,40 @@
+{
+    "name": "Intf",
+    "vendors": {
+        "cisco": {
+            "type": [
+                "nxos"
+            ],
+            "level": null
+        }
+    },
+    "showCmds": [
+        "sh run | section ^interface"
+    ],
+    "keyCliLine": "interface(.+)",
+    "rootEntryFlag": false,
+    "keyLineDepth": 1,
+    "keyGroup": 1,
+    "metadata": {
+        "@ref": "/org/instance/construct/global/cliMetadata/IOS_indentation.json"
+    },
+    "mode": "advanced",
+    "boundaries": {
+        "start": ""
+    },
+    "discover": {
+        "accessVlan": {
+            "expressions": [
+                "switchport access vlan (.+)"
+            ]
+        }
+    },
+    "removeSyntax": {},
+    "@exportedInstanceId": "7228d19e-d35e-45af-a2fd-0e3295ae82b0",
+    "@id": "7228d19e-d35e-45af-a2fd-0e3295ae82b0",
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "@name": "NXOS_Intf-DUP",
+    "@description": "Displays the configuration sections that show ALL configured interface settings. Note: The ^ makes the parser display ONLY the sections whose first lines begin with the word 'interface'. The ALL keyword displays the otherwise hidden commands."
+}

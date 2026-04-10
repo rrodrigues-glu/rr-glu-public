@@ -1,0 +1,27 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/qosCheck.jtype"
+    },
+    "featureConcept": {
+        "name": "QoS Model for Cat2960 Switches",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_cat2960-qos-mls_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_cat2960-qos-acl_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_cat2960-qos-cmap_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_cat2960-qos-pmap_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "platform": "WS-C2960(\\-|\\+|S).+"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_cat2960-qos"
+    },
+    "@exportedInstanceId": "eee70691-3967-41ab-ba1c-8e5686d4ec00",
+    "@id": "eee70691-3967-41ab-ba1c-8e5686d4ec00",
+    "@name": "ios_cat2960-qos",
+    "@description": ""
+}

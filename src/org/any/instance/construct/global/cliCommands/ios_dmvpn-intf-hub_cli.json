@@ -1,0 +1,40 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "interface Tunnel$context.networks[*].overlayNetwork.id",
+        " description $context.networks[*].underlyingIntf.vrf DMVPN Network",
+        " ip address $context.networks[*].overlayIntf.ipv4.subnet.ipAddress $context.networks[*].overlayIntf.ipv4.subnet.subnetMask ",
+        " no ip redirects",
+        " ip mtu 1400",
+        " ip pim dr-priority 0",
+        " ip nhrp authentication $context.networks[*].overlayNetwork.settings.authentication",
+        " ip nhrp map multicast dynamic",
+        " ip nhrp network-id 1$context.networks[*].overlayNetwork.id",
+        " ip nhrp holdtime 600",
+        " ip nhrp nhs $context.networks[*].overlayNetwork.settings.mapping[*].nhs nbma $context.networks[*].overlayNetwork.settings.mapping[*].nbma multicast",
+        " ip nhrp shortcut",
+        " ip nhrp redirect",
+        " ip tcp adjust-mss 1360",
+        " load-interval 30",
+        " delay $context.networks[*].routing.delay",
+        " tunnel source $context.networks[*].underlyingIntf.wanIntf.name",
+        " tunnel mode gre multipoint",
+        " tunnel key $context.networks[*].overlayNetwork.settings.tunnelKey",
+        " tunnel vrf $context.networks[*].underlyingIntf.vrf",
+        " tunnel protection ipsec profile DMVPN-IPSEC-PROFILE-$context.networks[*].overlayNetwork.id",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_dmvpn-intf-hub_cli"
+    },
+    "@exportedInstanceId": "b615334e-4d35-4bd1-8974-52175d287849",
+    "@id": "b615334e-4d35-4bd1-8974-52175d287849",
+    "@name": "ios_dmvpn-intf-hub_cli",
+    "@description": ""
+}

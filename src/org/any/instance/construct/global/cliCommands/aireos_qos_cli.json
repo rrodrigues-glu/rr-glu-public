@@ -1,0 +1,36 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "qos qosmap disable",
+        "qos qosmap upstream trust-dscp disable",
+        "qos protocol-type bronze dot1p",
+        "qos protocol-type silver dot1p",
+        "qos protocol-type gold dot1p",
+        "qos protocol-type platinum dot1p",
+        "qos priority bronze background background background",
+        "qos priority gold video video video",
+        "qos priority platinum voice voice voice",
+        "qos priority silver besteffort besteffort besteffort",
+        "qos dot1p-tag silver 0",
+        "qos dot1p-tag gold 4",
+        "qos dot1p-tag platinum 5",
+        "qos max-dscp bronze 10",
+        "qos max-dscp silver 0",
+        "qos max-dscp gold 34",
+        "qos max-dscp platinum 46"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "aireos_qos_cli"
+    },
+    "@exportedInstanceId": "3f932181-1946-4f53-8e3b-94fd946dd0b3",
+    "@id": "3f932181-1946-4f53-8e3b-94fd946dd0b3",
+    "@name": "aireos_qos_cli",
+    "@description": ""
+}

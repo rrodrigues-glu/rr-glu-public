@@ -1,0 +1,19 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_enable-passwd_cli"
+    },
+    "@exportedInstanceId": "214e5bf7-d917-48c9-835f-764523112faa",
+    "@id": "214e5bf7-d917-48c9-835f-764523112faa",
+    "@name": "ios_enable-passwd_cli",
+    "@description": ""
+}

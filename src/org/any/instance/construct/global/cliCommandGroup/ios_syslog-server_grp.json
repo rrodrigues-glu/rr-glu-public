@@ -1,0 +1,24 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": ".+",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_syslog-server_cli.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@source": {
+        "instanceName": "ios_syslog-server_grp"
+    },
+    "@exportedInstanceId": "4fa682e4-6797-401f-b9b6-a02e7ec6e74f",
+    "@id": "4fa682e4-6797-401f-b9b6-a02e7ec6e74f",
+    "@name": "ios_syslog-server_grp",
+    "@description": ""
+}

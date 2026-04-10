@@ -1,0 +1,25 @@
+{
+    "cmd": "sh processes cpu",
+    "groupName": "cpu",
+    "discover": {
+        "status": {
+            "expressions": [
+                "(?<cpuId>Core\\s\\d+)?(?:\\:\\s)?CPU utilization for five seconds\\:\\s(?<cpu5sec>[\\d\\/\\%]+)\\;\\sone minute\\:\\s(?<cpu1min>\\d+\\%)\\;\\sfive minutes\\:\\s(?<cpu5min>\\d+\\%)"
+            ],
+            "localKey": "Core",
+            "preserveLocalKey": false,
+            "preserveMultipleValues": true
+        }
+    },
+    "options": {
+        "generateLocalKey": false
+    },
+    "rootEntry": "yes",
+    "@exportedInstanceId": "f17178e7-8b2a-4834-afba-88278e3cc25f",
+    "@id": "f17178e7-8b2a-4834-afba-88278e3cc25f",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "@name": "IOS_show_proc_cpu",
+    "@description": ""
+}

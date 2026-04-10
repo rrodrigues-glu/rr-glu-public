@@ -1,0 +1,55 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "policy-map type qos qos-in-marking-5k",
+        "  description inbound classification/marking policy for trust boundaries.",
+        "  class qos-in-voice",
+        "    set dscp ef",
+        "    set qos-group 5",
+        "  class qos-in-clinical-life-critical",
+        "    set dscp cs5",
+        "    set qos-group 5",
+        "  class qos-in-multimedia-conferencing",
+        "    set dscp af41",
+        "    set qos-group 4",
+        "  class qos-in-real-time-interactive",
+        "    set dscp cs4",
+        "    set qos-group 4",
+        "  class qos-in-network-control",
+        "    set dscp cs6",
+        "    set qos-group 3",
+        "  class qos-in-multimedia-streaming",
+        "    set dscp af31",
+        "    set qos-group 3",
+        "  class qos-in-signaling",
+        "    set dscp cs3",
+        "    set qos-group 3",
+        "  class qos-in-low-latency-data",
+        "    set dscp af21",
+        "    set qos-group 3",
+        "  class qos-in-network-management",
+        "    set dscp cs2",
+        "    set qos-group 3",
+        "  class qos-in-high-throughput-data",
+        "    set dscp af11",
+        "    set qos-group 2",
+        "  class qos-in-low-priority-data",
+        "    set dscp cs1",
+        "    set qos-group 2",
+        "  class class-default",
+        "    set dscp default"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_qos-pmap_cli"
+    },
+    "@exportedInstanceId": "b09405ac-5266-4de9-99c5-28e7e84a0b92",
+    "@id": "b09405ac-5266-4de9-99c5-28e7e84a0b92",
+    "@name": "nxos_qos-pmap_cli",
+    "@description": ""
+}

@@ -1,0 +1,49 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/portMap.jtype"
+    },
+    "map": [
+        {
+            "refName": {
+                "@ref": "/org/instance/construct/global/wanInterface/ISP1.json"
+            },
+            "name": "GigabitEthernet1",
+            "extendedName": ""
+        },
+        {
+            "refName": {
+                "@ref": "/org/instance/construct/global/lanInterface/DATA.json"
+            },
+            "name": "GigabitEthernet3",
+            "extendedName": ""
+        },
+        {
+            "refName": {
+                "@ref": "/org/instance/construct/global/lanInterface/OVRL1.json"
+            },
+            "name": "Tunnel100",
+            "extendedName": ""
+        },
+        {
+            "refName": {
+                "@ref": "/org/instance/construct/global/lanInterface/OVRL2.json"
+            },
+            "name": "Tunnel200",
+            "extendedName": ""
+        },
+        {
+            "refName": {
+                "@ref": "/org/instance/construct/global/lanInterface/MGNT1.json"
+            },
+            "name": "Loopback0",
+            "extendedName": ""
+        }
+    ],
+    "@source": {
+        "instanceName": "csr1000v"
+    },
+    "@exportedInstanceId": "544fc3b1-7dca-4da7-949d-ffec2b1400e5",
+    "@id": "544fc3b1-7dca-4da7-949d-ffec2b1400e5",
+    "@name": "csr1000v",
+    "@description": ""
+}

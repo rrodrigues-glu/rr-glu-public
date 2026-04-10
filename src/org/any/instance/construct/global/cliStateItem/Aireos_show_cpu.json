@@ -1,0 +1,30 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show cpu",
+    "rootEntry": "yes",
+    "groupName": "cpu",
+    "discover": {
+        "status": {
+            "expressions": [
+                "Current CPU\\(s\\) load: (?<cpuLoad>\\d+\\%)",
+                "Individual CPU load: (?<individualCpu>.+)"
+            ],
+            "localKey": "",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {
+        "generateLocalKey": false
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "Aireos_show_cpu"
+    },
+    "@exportedInstanceId": "00211e2e-fa2d-412b-8396-88f9463bcf23",
+    "@id": "00211e2e-fa2d-412b-8396-88f9463bcf23",
+    "@name": "Aireos_show_cpu",
+    "@description": ""
+}

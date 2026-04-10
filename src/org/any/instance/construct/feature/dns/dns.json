@@ -1,0 +1,22 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/dns.jtype"
+    },
+    "featureConcept": {
+        "name": "DNS",
+        "cliCommandGroups": {}
+    },
+    "form": {
+        "dns": {
+            "domainName": "",
+            "server": []
+        }
+    },
+    "@source": {
+        "instanceName": "dns"
+    },
+    "@exportedInstanceId": "e52cc197-62b6-41ec-92e5-61a52b20c6b4",
+    "@id": "e52cc197-62b6-41ec-92e5-61a52b20c6b4",
+    "@name": "dns",
+    "@description": ""
+}

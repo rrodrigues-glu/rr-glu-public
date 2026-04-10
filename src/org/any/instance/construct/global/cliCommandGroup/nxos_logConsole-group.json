@@ -1,0 +1,30 @@
+{
+    "regEx": "^console$",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/nxos_logConsole-cli.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": [
+            ""
+        ]
+    },
+    "maskCommands": [
+        ""
+    ],
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@description": "",
+    "@source": {
+        "instanceName": "nxos_logConsole-group"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "eb54cc7d-c39e-4994-b864-f99e46e20d85",
+    "@id": "eb54cc7d-c39e-4994-b864-f99e46e20d85",
+    "@name": "nxos_logConsole-group"
+}

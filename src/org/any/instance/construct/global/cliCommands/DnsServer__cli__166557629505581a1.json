@@ -1,0 +1,13 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "16fe1ab8-2d33-47ad-883e-e9d760eac3c1",
+    "item": {},
+    "cliCommands": [
+        "ip name-server vrf FVRF 8.8.8.8 8.8.4.4"
+    ],
+    "@exportedInstanceId": "16fe1ab8-2d33-47ad-883e-e9d760eac3c1",
+    "@name": "DnsServer__cli__166557629505581a1",
+    "@description": ""
+}

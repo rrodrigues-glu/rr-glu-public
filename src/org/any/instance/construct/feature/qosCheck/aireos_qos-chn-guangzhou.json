@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/qosCheck.jtype"
+    },
+    "featureConcept": {
+        "name": "QoS Model for AIR5520 Guangzhou China",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/aireos_qos_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/aireos_wlan-qos-3_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "platform": "AIR-(CT|WLC).+"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "aireos_qos-chn-guangzhou"
+    },
+    "@exportedInstanceId": "27d8c84a-6e36-4a5c-b681-10f51f93ba83",
+    "@id": "27d8c84a-6e36-4a5c-b681-10f51f93ba83",
+    "@name": "aireos_qos-chn-guangzhou",
+    "@description": ""
+}

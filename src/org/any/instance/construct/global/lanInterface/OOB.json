@@ -1,0 +1,14 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/lanInterface.jtype"
+    },
+    "description": "",
+    "location": "internal",
+    "@source": {
+        "instanceName": "OOB"
+    },
+    "@exportedInstanceId": "83546322-9624-457a-be2f-261a1bd88924",
+    "@id": "83546322-9624-457a-be2f-261a1bd88924",
+    "@name": "OOB",
+    "@description": ""
+}

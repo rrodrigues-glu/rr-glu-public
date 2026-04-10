@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosRouterAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "username": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/username/ios_username.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "agents": {
+        "watchdog": {}
+    },
+    "boot": {
+        "firmware": {}
+    },
+    "@source": {
+        "instanceName": "Username_Assembly"
+    },
+    "@exportedInstanceId": "c98222a6-1fbd-431d-916b-201fccbc0d99",
+    "@id": "c98222a6-1fbd-431d-916b-201fccbc0d99",
+    "@name": "Username_Assembly",
+    "@description": ""
+}

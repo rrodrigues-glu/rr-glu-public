@@ -1,0 +1,48 @@
+{
+  "permissionLevel": "auditManageLevel1",
+  "rules": [
+    {
+      "severity": "INFO",
+      "name": "IF-THEN Test",
+      "os": "ios",
+      "source": "LATEST",
+      "commandSet": "2ac489a7-fcd9-4bea-a335-5fef5dad0996",
+      "commandSetResult": {
+        "type": "all"
+      },
+      "type": "SIMPLE",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": false,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "bgp"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "conceptItemId": null
+    }
+  ],
+  "runLevel": "auditRunLevel1",
+  "description": "",
+  "name": "bgp",
+  "tid": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+  "id": "722e0185-1c96-47f4-bdb9-492299f6187d",
+  "createdBy": "admin",
+  "createdOn": 1731664937580,
+  "updatedBy": "admin",
+  "updatedOn": 1737126436051,
+  "lastAuditErrorMsg": "",
+  "lastAuditDevicesSkippedCount": 0
+}

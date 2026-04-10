@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosSwitchAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "globals": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/globals/ios_hostname-ip-config.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "agents": {
+        "watchdog": {}
+    },
+    "state": {
+        "assessment": {}
+    },
+    "@source": {
+        "instanceName": "ios_hostname"
+    },
+    "@exportedInstanceId": "0ef456cd-9175-4f5d-a7a5-82b739890f75",
+    "@id": "0ef456cd-9175-4f5d-a7a5-82b739890f75",
+    "@name": "ios_hostname",
+    "@description": ""
+}

@@ -1,0 +1,33 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "name": "mlsQos",
+    "vendors": {
+        "cisco": {
+            "type": [
+                "ios"
+            ],
+            "level": null
+        }
+    },
+    "showCmds": [
+        "sh run | sec ^mls qos"
+    ],
+    "keyCliLine": "mls qos(?: (\\S+).+)?",
+    "rootEntryFlag": true,
+    "mode": "basic",
+    "boundaries": {
+        "start": "^mls qos"
+    },
+    "discover": {},
+    "removeSyntax": {},
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "IOS_MlsQos"
+    },
+    "@exportedInstanceId": "e0359716-7584-4812-ac43-4eed8b515e98",
+    "@id": "e0359716-7584-4812-ac43-4eed8b515e98",
+    "@name": "IOS_MlsQos",
+    "@description": ""
+}

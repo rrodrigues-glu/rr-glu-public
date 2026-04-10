@@ -1,0 +1,18 @@
+{
+    "featureConcept": {
+        "name": "101-Rom",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_snmp-server_grp.json"
+            ]
+        }
+    },
+    "form": {},
+    "@exportedInstanceId": "ba977f61-2440-4c6e-9dc8-5464f1d571cd",
+    "@id": "ba977f61-2440-4c6e-9dc8-5464f1d571cd",
+    "@type": {
+        "ref": "/sys/type/construct/feature/Feature101.jtype"
+    },
+    "@name": "Feature101-Rom",
+    "@description": ""
+}

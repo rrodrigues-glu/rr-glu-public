@@ -1,0 +1,12 @@
+{
+    "META-DATA": {
+        "indentDefinesLevel": true
+    },
+    "@exportedInstanceId": "81626b41-5522-4869-b95c-b153f121b3e6",
+    "@id": "81626b41-5522-4869-b95c-b153f121b3e6",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliMetadata.jtype"
+    },
+    "@name": "IOS_indentation",
+    "@description": ""
+}

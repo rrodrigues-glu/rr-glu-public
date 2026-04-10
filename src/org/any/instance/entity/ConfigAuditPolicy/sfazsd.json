@@ -1,0 +1,13 @@
+{
+  "permissionLevel": "auditManageLevel1",
+  "rules": [],
+  "runLevel": "auditRunLevel1",
+  "name": "sfazsd",
+  "description": "",
+  "tid": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+  "id": "467079fa-2d20-47a5-a255-b30b0dfca1ed",
+  "createdBy": "admin",
+  "createdOn": 1699452668879,
+  "updatedBy": "admin",
+  "updatedOn": 1699452668879
+}

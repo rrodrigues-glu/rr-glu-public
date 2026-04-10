@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/switchPortNamingProfile.jtype"
+    },
+    "ethernetPorts": {
+        "namedType": "GigabitEthernet",
+        "mapping": "inherited",
+        "pathId": "%stackId/0/%portId"
+    },
+    "breakoutPorts": {
+        "namedType": "Ethernet",
+        "pathId": "%stackId/0/%portId/%breakoutId"
+    },
+    "otherSettings": {
+        "intialStackId": 1
+    },
+    "comment1": null,
+    "comment2": null,
+    "@source": {
+        "instanceName": "onboardNamingProfile"
+    },
+    "@exportedInstanceId": "4ce57852-5220-4de6-91ce-4bc9dc089ace",
+    "@id": "4ce57852-5220-4de6-91ce-4bc9dc089ace",
+    "@name": "onboardNamingProfile",
+    "@description": ""
+}

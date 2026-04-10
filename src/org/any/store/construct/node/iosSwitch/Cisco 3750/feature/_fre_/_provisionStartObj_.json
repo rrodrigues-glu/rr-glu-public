@@ -1,0 +1,19 @@
+{
+    "version": "3.0.0",
+    "provisionedActions": [
+        {
+            "typeName": "iosSwitch",
+            "actionKey": "[g]default_iosSwitch",
+            "jnib": "/sys/jnib/features/campusSwitch/campusSwitch.feature.jnib",
+            "actionTypeKey": "/org/Romualdo/type/construct/feature/iosSwitch.jtype",
+            "timeStamp": 1715876633703
+        },
+        {
+            "typeName": "banner",
+            "actionKey": "/org/Romualdo/instance/construct/feature/banner/banner.json",
+            "jnib": "/sys/jnib/features/banner/cm_banner.template.jnib",
+            "actionTypeKey": "/org/Romualdo/type/construct/feature/banner.jtype",
+            "timeStamp": 1715876633703
+        }
+    ]
+}

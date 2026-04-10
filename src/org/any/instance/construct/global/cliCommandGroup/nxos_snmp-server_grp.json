@@ -1,0 +1,31 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": ".+",
+    "ignoreDelete": false,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/nxos_snmp-server_cli.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": []
+    },
+    "maskCommands": [
+        "snmp-server location",
+        "snmp-server contact",
+        "snmp-server host",
+        "snmp-server community"
+    ],
+    "@source": {
+        "instanceName": "nxos_snmp-server_grp"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "d40dc311-291d-450d-bd5c-f919e2040181",
+    "@id": "d40dc311-291d-450d-bd5c-f919e2040181",
+    "@name": "nxos_snmp-server_grp",
+    "@description": ""
+}

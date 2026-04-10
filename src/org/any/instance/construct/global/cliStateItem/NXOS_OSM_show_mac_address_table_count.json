@@ -1,0 +1,31 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show mac address-table count",
+    "groupName": "MAC",
+    "discover": {
+        "count": {
+            "expressions": [
+                "^Dynamic Address (?<mackey>Count):\\s+(?<dynamic>\\d+)",
+                "^Static Address \\(User-defined\\) (?<mackey>Count):\\s+(?<static>\\d+)",
+                "^Multicast MAC Address (?<mackey>Count):\\s+(?<multicast>\\d+)",
+                "^(?<mackey>Total) MAC Addresses in Use:\\s+(?<total>\\d+)"
+            ],
+            "localKey": "mackey",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {
+        "generateLocalKey": false
+    },
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_show_mac_address_table_count"
+    },
+    "@exportedInstanceId": "2ffd76e4-bdb7-4ce0-a074-df7cb65ca425",
+    "@id": "2ffd76e4-bdb7-4ce0-a074-df7cb65ca425",
+    "@name": "NXOS_OSM_show_mac_address_table_count",
+    "@description": ""
+}

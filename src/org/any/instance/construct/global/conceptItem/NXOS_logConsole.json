@@ -1,0 +1,35 @@
+{
+    "name": "Logging Console",
+    "vendors": {
+        "cisco": {
+            "type": [
+                "nxos"
+            ],
+            "level": null
+        }
+    },
+    "showCmds": [
+        "sh run all | inc \"^no logging\""
+    ],
+    "keyCliLine": "no logging\\s(\\S+)",
+    "rootEntryFlag": true,
+    "keyLineDepth": 1,
+    "keyGroup": 1,
+    "regEx": "",
+    "mode": "advanced",
+    "boundaries": {
+        "start": null
+    },
+    "discover": {},
+    "removeSyntax": {},
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "@description": "",
+    "@source": {
+        "instanceName": "NXOS_logConsole"
+    },
+    "@exportedInstanceId": "8c676eee-73e0-4bf1-8fb7-7eb1c13421ad",
+    "@id": "8c676eee-73e0-4bf1-8fb7-7eb1c13421ad",
+    "@name": "NXOS_logConsole"
+}

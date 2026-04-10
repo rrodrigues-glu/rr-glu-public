@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "class-map match-any VOICE",
+        "  description VOICE Payload Traffic",
+        " match dscp ef",
+        "class-map match-any VIDEO",
+        "  description VIDEO Payload Traffic",
+        " match dscp af41"
+    ],
+    "advanced": {
+        "filter": "platform",
+        "platform": "(C3[6|8]50.+|C4500X|C9200|C9500)"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_cat3k-4500x-qos-cmap_cli"
+    },
+    "@exportedInstanceId": "7170600c-d426-4a9e-9205-e2e978b2fb18",
+    "@id": "7170600c-d426-4a9e-9205-e2e978b2fb18",
+    "@name": "ios_cat3k-4500x-qos-cmap_cli",
+    "@description": ""
+}

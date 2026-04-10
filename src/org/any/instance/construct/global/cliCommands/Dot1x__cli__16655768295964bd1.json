@@ -1,0 +1,13 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "4f91368b-53cd-41c7-8b52-db36f5da469c",
+    "item": {},
+    "cliCommands": [
+        "dot1x system-auth-control"
+    ],
+    "@exportedInstanceId": "4f91368b-53cd-41c7-8b52-db36f5da469c",
+    "@name": "Dot1x__cli__16655768295964bd1",
+    "@description": ""
+}

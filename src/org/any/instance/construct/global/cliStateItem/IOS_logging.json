@@ -1,0 +1,29 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show logging",
+    "rootEntry": "no",
+    "keyLineRegEx": "(?<date>[a-zA-Z]+(?:\\s+)?\\d+(?: \\d{4})?) (?<clock>\\d{1,2}\\:\\d{1,2}\\:\\d{1,2}(?:\\.\\d+)?): (?<facility>\\%\\S+): Configured from console by (?<user>\\w+) on (?<console>\\w+) \\((?<srcIp>\\S+)\\)",
+    "groupName": "log",
+    "discover": {
+        "line": {
+            "expressions": [
+                "(?<date>[a-zA-Z]+(?:\\s+)?\\d+(?: \\d{4})?) (?<clock>\\d{1,2}\\:\\d{1,2}\\:\\d{1,2}(?:\\.\\d+)?): (?<facility>\\%\\S+): Configured from console by (?<user>\\w+) on (?<console>\\w+) \\((?<srcIp>\\S+)\\)"
+            ]
+        },
+        "interfaceStatus": {
+            "expressions": [
+                "(?<date>[a-zA-Z]+(?:\\s+)?\\d+(?: \\d{4})?) (?<clock>\\d{1,2}\\:\\d{1,2}\\:\\d{1,2}(?:\\.\\d+)?): (?<facility>\\%\\S+): Interface (?<interface>\\S+), changed state to (?<state>up|down)"
+            ]
+        }
+    },
+    "options": {},
+    "@source": {
+        "instanceName": "IOS_logging"
+    },
+    "@exportedInstanceId": "46edeb84-94a6-42a6-99c2-b683919a8a4e",
+    "@id": "46edeb84-94a6-42a6-99c2-b683919a8a4e",
+    "@name": "IOS_logging",
+    "@description": ""
+}

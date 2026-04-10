@@ -1,0 +1,56 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/snmp.jtype"
+    },
+    "featureConcept": {
+        "name": "NXOS SNMP",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/nxos_snmp-acl_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_snmp-server_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "snmp": {
+            "location": "Gluware Virtual LAB",
+            "contact": "support@gluware.com",
+            "version": {
+                "v2c": {
+                    "community": [
+                        {
+                            "name": "CommREAD",
+                            "accessList": "acl-snmp-ro",
+                            "accessType": "RO",
+                            "host": [
+                                {
+                                    "ip": "10.1.2.161"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "CommWRITE",
+                            "accessList": "acl-snmp-rw",
+                            "accessType": "RW",
+                            "host": [
+                                {
+                                    "ip": "10.1.3.161"
+                                },
+                                {
+                                    "ip": "10.1.4.161"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "@source": {
+        "instanceName": "nxos_snmp"
+    },
+    "@exportedInstanceId": "9227c498-796c-4d9d-b765-d5f26c117bb0",
+    "@id": "9227c498-796c-4d9d-b765-d5f26c117bb0",
+    "@name": "nxos_snmp",
+    "@description": ""
+}

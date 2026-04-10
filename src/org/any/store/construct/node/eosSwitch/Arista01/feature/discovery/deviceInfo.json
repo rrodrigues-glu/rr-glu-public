@@ -1,0 +1,59 @@
+{
+    "hostname": "GNSW-US-QTS-04",
+    "vendor": "arista",
+    "os": "eos",
+    "path": "/sys/jnib/features/deviceDetect/arista/eos/",
+    "sku": "DCS-7050S-64",
+    "software": {
+        "version": "4.21.5F",
+        "major": "4",
+        "minor": "21",
+        "revision": "5F",
+        "patch": "",
+        "train": "",
+        "build": "",
+        "image": "EOS-4.21.5F.swi"
+    },
+    "hardware": {
+        "serialNumber": "JPE14172083",
+        "sku": "DCS-7050S-64"
+    },
+    "detectedSerialNumber": "JPE14172083",
+    "uptime": "3w0d13h",
+    "type": {
+        "name": "eosSwitch",
+        "base": "dcSwitch"
+    },
+    "licenses": {},
+    "portsInfo": {
+        "ports": {
+            "Management1": {
+                "configured": {
+                    "ipv4Address": "10.150.17.8/24",
+                    "enabled": true
+                },
+                "operational": {
+                    "speed": "1Gb/s",
+                    "duplex": "Full-duplex",
+                    "macAddress": "00:1c:73:67:63:2e",
+                    "ipv4Address": "10.150.17.8/24",
+                    "status": "up",
+                    "phyMacAddress": "00:1c:73:67:63:2e"
+                },
+                "type": "l3",
+                "phyVirt": "virtual"
+            }
+        },
+        "portSummary": {
+            "switchports": {
+                "total": 0,
+                "use": 0,
+                "free": 0
+            }
+        },
+        "recordTime": {
+            "utcTime": 1741688538845,
+            "utcDateTime": "Tue, 11 Mar 2025 10:22:18 GMT"
+        }
+    }
+}

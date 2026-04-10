@@ -1,0 +1,35 @@
+{
+    "name": "Pasword Strength",
+    "vendors": {
+        "cisco": {
+            "type": [
+                "nxos"
+            ],
+            "level": null
+        }
+    },
+    "showCmds": [
+        "sh run | inc ^password"
+    ],
+    "keyCliLine": "no password\\s(\\S+)",
+    "rootEntryFlag": true,
+    "keyLineDepth": 1,
+    "keyGroup": 1,
+    "regEx": "",
+    "mode": "advanced",
+    "boundaries": {
+        "start": null
+    },
+    "discover": {},
+    "removeSyntax": {},
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "@description": "",
+    "@source": {
+        "instanceName": "NXOS_pwdStrength"
+    },
+    "@exportedInstanceId": "3a4947a8-e281-4e57-baf4-ea7275285435",
+    "@id": "3a4947a8-e281-4e57-baf4-ea7275285435",
+    "@name": "NXOS_pwdStrength"
+}

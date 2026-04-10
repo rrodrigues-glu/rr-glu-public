@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": "rmap.pbr",
+    "ignoreDelete": false,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_pbr-rmap_cli.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": []
+    },
+    "maskCommands": [],
+    "@source": {
+        "instanceName": "ios_pbr-rmap_grp"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "4be41938-5657-47b2-a46c-c2ab0cde4c23",
+    "@id": "4be41938-5657-47b2-a46c-c2ab0cde4c23",
+    "@name": "ios_pbr-rmap_grp",
+    "@description": ""
+}

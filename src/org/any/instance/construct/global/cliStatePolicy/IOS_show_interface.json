@@ -1,0 +1,23 @@
+{
+    "list": [
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/IOS_show_interface.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": "",
+            "query": {
+                "@ref": "/org/instance/construct/global/cliStateQuery/intf_AdminState.json"
+            }
+        }
+    ],
+    "privilegeMode": false,
+    "@exportedInstanceId": "5c01016b-cfa2-422c-a656-81e59a1c486a",
+    "@id": "5c01016b-cfa2-422c-a656-81e59a1c486a",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStatePolicy.jtype"
+    },
+    "@name": "IOS_show_interface",
+    "@description": ""
+}

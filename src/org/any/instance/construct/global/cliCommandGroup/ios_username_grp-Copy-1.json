@@ -1,0 +1,23 @@
+{
+    "regEx": ".+",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_username_cli-Copy-1.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": []
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "54476837-de1c-4cb0-85d3-70fa99936469",
+    "@id": "54476837-de1c-4cb0-85d3-70fa99936469",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@name": "ios_username_grp-Copy-1",
+    "@description": ""
+}

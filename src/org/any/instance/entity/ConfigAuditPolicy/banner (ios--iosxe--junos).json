@@ -1,0 +1,48 @@
+{
+  "permissionLevel": "auditManageLevel1",
+  "rules": [
+    {
+      "severity": "INFO",
+      "name": "motd_banner_ios",
+      "os": "ios",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "MOTD Banner must be found on IOS/IOS XE Routers and Switches",
+      "scopeSeparateResults": false,
+      "scope": "motd",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^banner motd"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSet": "all",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "conceptItem": "IOS_Banner"
+    }
+  ],
+  "runLevel": "auditRunLevel1",
+  "name": "banner (ios--iosxe--junos)",
+  "description": "Audit IOS/IOS-XE (Routers + Switches) Banner motd Configuration",
+  "tid": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+  "id": "922a536f-1c52-4884-95f1-ccfa0c9b05d6",
+  "createdBy": "admin",
+  "createdOn": 1694599257066,
+  "updatedBy": "admin",
+  "updatedOn": 1731432535067,
+  "lastAuditErrorMsg": "",
+  "lastAuditDevicesSkippedCount": 0
+}

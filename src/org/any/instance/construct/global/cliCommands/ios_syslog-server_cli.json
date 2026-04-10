@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "logging file flash:log-buffer.txt 40960 4096 informational",
+        "logging buffered 32768 informational",
+        "logging console errors",
+        "logging monitor informational",
+        "!",
+        "logging host $context.syslog.server[*].ip #context.syslog.server[*].advanced",
+        "logging source-interface $context.syslog.srcIntf",
+        "logging count"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_syslog-server_cli"
+    },
+    "@exportedInstanceId": "80c500df-3cae-4625-8fda-b02889bd8356",
+    "@id": "80c500df-3cae-4625-8fda-b02889bd8356",
+    "@name": "ios_syslog-server_cli",
+    "@description": ""
+}

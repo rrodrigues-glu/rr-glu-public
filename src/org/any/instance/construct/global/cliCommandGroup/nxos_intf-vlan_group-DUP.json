@@ -1,0 +1,21 @@
+{
+    "regEx": "Vlan.+",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/nxos_intf-vlan-cli-DUP.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "216549d2-53ff-4b01-9966-11ffd6e3efdb",
+    "@id": "216549d2-53ff-4b01-9966-11ffd6e3efdb",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@name": "nxos_intf-vlan_group-DUP",
+    "@description": ""
+}

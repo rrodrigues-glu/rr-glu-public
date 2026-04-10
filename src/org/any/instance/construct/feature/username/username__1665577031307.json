@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/username.jtype"
+    },
+    "@id": "264b5980-7c4c-4527-9843-8975af8eeb74",
+    "featureConcept": {
+        "name": "UserName Feature",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/username__cliGrp__16655770313071b7.json"
+            ]
+        }
+    },
+    "form": {
+        "user": []
+    },
+    "@exportedInstanceId": "264b5980-7c4c-4527-9843-8975af8eeb74",
+    "@name": "username__1665577031307",
+    "@description": ""
+}

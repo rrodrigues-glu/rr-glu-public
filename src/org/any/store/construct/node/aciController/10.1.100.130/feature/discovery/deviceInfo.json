@@ -1,0 +1,33 @@
+{
+    "isController": true,
+    "podId": "1",
+    "elementId": "1",
+    "role": "controller",
+    "vendor": "cisco",
+    "ipAddress": "10.0.0.1",
+    "software": {
+        "version": "5.2(5c)",
+        "major": "5",
+        "minor": "2",
+        "revision": "5c",
+        "train": "",
+        "build": "",
+        "patch": "",
+        "image": "",
+        "drive": ""
+    },
+    "path": "/sys/jnib/features/restDeviceDetect/cisco/aci",
+    "type": {
+        "name": "aciController",
+        "base": "baseController"
+    },
+    "hostname": "apic1",
+    "os": "aci",
+    "serialNumber": "TEP-1-1",
+    "macAddress": "",
+    "uptime": "",
+    "fabricId": "",
+    "fabricDomain": "",
+    "clusterMembers": {},
+    "multiDeviceKey": "controller"
+}

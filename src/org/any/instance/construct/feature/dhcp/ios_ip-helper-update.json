@@ -1,0 +1,27 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/dhcp.jtype"
+    },
+    "featureConcept": {
+        "name": "IP Helper Update",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_ip-helper_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "dhcp": [
+            {
+                "pool": ""
+            }
+        ]
+    },
+    "@source": {
+        "instanceName": "ios_ip-helper-update"
+    },
+    "@exportedInstanceId": "ae14f764-abaa-474b-a856-7f3e639e7adb",
+    "@id": "ae14f764-abaa-474b-a856-7f3e639e7adb",
+    "@name": "ios_ip-helper-update",
+    "@description": ""
+}

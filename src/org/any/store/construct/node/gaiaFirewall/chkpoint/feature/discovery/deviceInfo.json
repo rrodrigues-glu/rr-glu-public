@@ -1,0 +1,70 @@
+{
+    "vendor": "checkpoint",
+    "os": "gaia",
+    "path": "/sys/jnib/features/deviceDetect/checkpoint/gaia/",
+    "sku": "CP 210",
+    "software": {
+        "version": "R80.30",
+        "major": "80",
+        "minor": "30",
+        "build": "993000019"
+    },
+    "hardware": {
+        "serialNumber": "LR201510002119",
+        "sku": "CP 210"
+    },
+    "detectedSerialNumber": "LR201510002119",
+    "uptime": "425d21h16m",
+    "type": {
+        "name": "gaiaFirewall",
+        "base": "baseFirewall"
+    },
+    "licenses": {},
+    "portsInfo": {
+        "ports": {
+            "Mgmt": {
+                "configured": {
+                    "enabled": true,
+                    "duplex": "full",
+                    "speed": "1000M",
+                    "ipv4Address": "10.150.11.2/24"
+                },
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "duplex": "full",
+                    "speed": "1000M",
+                    "macAddress": "00:1c:7f:42:a3:7f",
+                    "ipv4Address": "10.150.11.2/24"
+                },
+                "mediaType": "ethernet",
+                "type": "l3"
+            },
+            "lo": {
+                "configured": {
+                    "enabled": false,
+                    "ipv4Address": "127.0.0.1/8"
+                },
+                "operational": {
+                    "status": "down",
+                    "mtu": "65536",
+                    "macAddress": "",
+                    "ipv4Address": "127.0.0.1/8"
+                },
+                "mediaType": "loopback",
+                "type": "l3"
+            }
+        },
+        "portSummary": {
+            "switchports": {
+                "total": 0,
+                "use": 0,
+                "free": 0
+            }
+        },
+        "recordTime": {
+            "utcTime": 1737392799215,
+            "utcDateTime": "Mon, 20 Jan 2025 17:06:39 GMT"
+        }
+    }
+}

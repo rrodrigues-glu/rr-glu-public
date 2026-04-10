@@ -1,0 +1,21 @@
+{
+    "featureConcept": {
+        "name": "test2",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_router-bgp_grp-romTest2.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_router-bgp_grp-romTest.json"
+            ]
+        }
+    },
+    "form": {
+        "intf": {}
+    },
+    "@exportedInstanceId": "73e86555-c0b7-4f0d-aca4-429910849d2a",
+    "@id": "73e86555-c0b7-4f0d-aca4-429910849d2a",
+    "@type": {
+        "ref": "/sys/type/construct/feature/interface.jtype"
+    },
+    "@name": "ios_interface-RRDiscov",
+    "@description": ""
+}

@@ -1,0 +1,21 @@
+{
+    "regEx": "ip access-list extended acl-qos-SCAVENGER",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/IpAcl__cli__1665576829596f7e7-Test.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "35090477-a735-4200-b577-2ad32669e5b5",
+    "@id": "35090477-a735-4200-b577-2ad32669e5b5",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@name": "qos__cliGrp__1665576829596057-Test",
+    "@description": ""
+}

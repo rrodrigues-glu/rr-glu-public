@@ -1,0 +1,35 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "sh crypto pki server",
+    "rootEntry": "no",
+    "keyLineRegEx": "Certificate Server (.+):",
+    "groupName": "iosCa",
+    "discover": {
+        "state": {
+            "expressions": [
+                "Status: (?<status>.+)",
+                "State: (?<state>.+)",
+                "Last certificate issued serial number \\(hex\\): (?<lastIssuedSerialNumber>[0-9A-F]+)",
+                "CA certificate expiration timer: (?<caExpirationDate>.+)"
+            ]
+        },
+        "config": {
+            "expressions": [
+                "CA cert fingerprint: (?<md5Fingerprint>.+)",
+                "Granting mode is: (?<grantMode>.+)",
+                "Issuer name: (?<issuerName>.+)",
+                "configuration is (?<lock>\\w+)"
+            ]
+        }
+    },
+    "options": {},
+    "@source": {
+        "instanceName": "IOS_iosCaServer"
+    },
+    "@exportedInstanceId": "ab2a8ee6-dc92-4887-849b-d43eea0827a1",
+    "@id": "ab2a8ee6-dc92-4887-849b-d43eea0827a1",
+    "@name": "IOS_iosCaServer",
+    "@description": ""
+}

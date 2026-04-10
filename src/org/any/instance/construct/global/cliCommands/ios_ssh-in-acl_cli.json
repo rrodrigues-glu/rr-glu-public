@@ -1,0 +1,21 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "ip access-list standard acl-ssh-in",
+        " permit any",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_ssh-in-acl_cli"
+    },
+    "@exportedInstanceId": "340a486b-6808-4b06-a875-0d745dc4abb7",
+    "@id": "340a486b-6808-4b06-a875-0d745dc4abb7",
+    "@name": "ios_ssh-in-acl_cli",
+    "@description": ""
+}

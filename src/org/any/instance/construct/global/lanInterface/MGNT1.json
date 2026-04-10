@@ -1,0 +1,14 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/lanInterface.jtype"
+    },
+    "description": "",
+    "location": "internal",
+    "@source": {
+        "instanceName": "MGNT1"
+    },
+    "@exportedInstanceId": "f1452b81-fd8f-4699-b3d6-13ffce9f0040",
+    "@id": "f1452b81-fd8f-4699-b3d6-13ffce9f0040",
+    "@name": "MGNT1",
+    "@description": ""
+}

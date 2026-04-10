@@ -1,0 +1,19 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/interface.jtype"
+    },
+    "featureConcept": {
+        "name": "Interface",
+        "cliCommandGroups": {}
+    },
+    "form": {
+        "intf": {}
+    },
+    "@source": {
+        "instanceName": "interface"
+    },
+    "@exportedInstanceId": "c9632399-b6cb-413c-b3b4-91c30da18cfe",
+    "@id": "c9632399-b6cb-413c-b3b4-91c30da18cfe",
+    "@name": "interface",
+    "@description": ""
+}

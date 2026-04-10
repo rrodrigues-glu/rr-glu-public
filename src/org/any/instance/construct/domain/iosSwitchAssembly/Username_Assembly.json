@@ -1,0 +1,25 @@
+{
+    "domains": {
+        "modules": {
+            "username": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/username/ios_username.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "boot": {
+        "firmware": {}
+    },
+    "state": {
+        "assessment": {}
+    },
+    "@exportedInstanceId": "3d4d3b2d-c36e-4661-9b01-f843264539a1",
+    "@id": "3d4d3b2d-c36e-4661-9b01-f843264539a1",
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosSwitchAssembly.jtype"
+    },
+    "@name": "Username_Assembly",
+    "@description": ""
+}

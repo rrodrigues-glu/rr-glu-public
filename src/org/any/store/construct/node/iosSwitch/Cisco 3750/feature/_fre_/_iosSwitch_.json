@@ -1,0 +1,104 @@
+{
+    "version": "3.0.0",
+    "actionInfo": {
+        "typeName": "iosSwitch",
+        "actionKey": "[g]default_iosSwitch",
+        "jnib": "/sys/jnib/features/campusSwitch/campusSwitch.feature.jnib",
+        "phaseNumber": "[g]init",
+        "actionTypeKey": "/org/Romualdo/type/construct/feature/iosSwitch.jtype",
+        "startObj": {
+            "feature": {
+                "self": {
+                    "@source": {
+                        "instanceKey": "[g]default_iosSwitch",
+                        "typeKey": "/org/Romualdo/type/construct/feature/iosSwitch.jtype",
+                        "type": "iosSwitch",
+                        "typeId": "61ea05d3-ddae-402e-ab36-0da6430ef512",
+                        "typeVersionId": "9c274275-e4da-4b5c-8e35-8ba97f4b8a01",
+                        "instanceName": "[g]default_iosSwitch",
+                        "construct": "feature",
+                        "organizationId": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b"
+                    }
+                }
+            }
+        },
+        "@Info": {
+            "displayName": "IOS Switch",
+            "description": "The iosSwitch feature handles the initialization of the target node in the Gluware Control engine.",
+            "vendor": "Cisco Systems",
+            "phaseNumber": "[g]init",
+            "glueInternalUse": "[g]GlueInternalUseOnly[g]",
+            "featureDependencies": {
+                "jnib": {
+                    "/sys/jnib/features/campusSwitch/campusSwitch.feature.jnib": {}
+                }
+            },
+            "domainDependencies": {
+                "/sys/type/construct/domain/iosSwitchAssembly.jtype": {},
+                "/sys/type/construct/domain/location.jtype": {
+                    "optional": true
+                }
+            },
+            "nodeDependencies": {
+                "/sys/type/construct/node/campusSwitch.jtype": {}
+            }
+        }
+    },
+    "configRefs": {
+        "/org/Romualdo/instance/construct/node/iosSwitch/Cisco 3750": {
+            "relativePaths": [
+                "iosSwitch.Cisco 3750"
+            ],
+            "@source": {
+                "instanceKey": "/org/Romualdo/instance/construct/node/iosSwitch/Cisco 3750",
+                "typeKey": "/org/Romualdo/type/construct/node/iosSwitch.jtype",
+                "type": "iosSwitch",
+                "typeId": "cedd9d42-576c-4968-b2c4-3f2f2e036863",
+                "typeVersionId": "c5f2e6ab-e324-4046-b01d-6e7abf2a964e",
+                "instanceName": "Cisco 3750",
+                "instanceId": "eaace78b-5ebd-42c5-94b5-559327e024f2",
+                "construct": "node",
+                "organizationId": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+                "instanceVersionId": "ec888183-0751-4fa6-ad3f-0d5ba5cc3ee7",
+                "instanceVersion": "1.0.4",
+                "deviceId": "3b9fdad2-a10a-484c-967f-ec2560e5b091"
+            }
+        },
+        "/org/Romualdo/instance/construct/domain/location/SN002.json": {
+            "relativePaths": [
+                "iosSwitch.Cisco 3750.site"
+            ],
+            "@source": {
+                "instanceKey": "/org/Romualdo/instance/construct/domain/location/SN002.json",
+                "typeKey": "/org/Romualdo/type/construct/domain/location.jtype",
+                "type": "location",
+                "typeId": "d0ea05e5-9f62-4e97-a336-b153c5c9c8ac",
+                "typeVersionId": "89d22d58-07e9-4298-b7a1-2d5bd45cc267",
+                "instanceName": "SN002",
+                "instanceId": "65c5ad43-3fad-4e45-b3d3-88358a581111",
+                "construct": "domain",
+                "organizationId": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+                "instanceVersionId": "b2b5707a-1088-4402-ad4f-9c11bcaf2c91",
+                "instanceVersion": "1.0.0"
+            }
+        },
+        "/org/Romualdo/instance/construct/domain/iosSwitchAssembly/Banner_Assembly.json": {
+            "relativePaths": [
+                "iosSwitch.Cisco 3750.associations.assembly"
+            ],
+            "@source": {
+                "instanceKey": "/org/Romualdo/instance/construct/domain/iosSwitchAssembly/Banner_Assembly.json",
+                "typeKey": "/org/Romualdo/type/construct/domain/iosSwitchAssembly.jtype",
+                "type": "iosSwitchAssembly",
+                "typeId": "bcb6ba7f-42dc-4ff0-b764-2ec71fcbe820",
+                "typeVersionId": "4a6b78d2-1043-4a12-a0d7-6e6d6b968db5",
+                "instanceName": "Banner_Assembly",
+                "instanceId": "eeaa6919-2446-422f-a6a8-4bd99d98a7e1",
+                "construct": "domain",
+                "organizationId": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+                "instanceVersionId": "525ab129-02c4-4c88-8727-374c4d4cbda0",
+                "instanceVersion": "1.0.10"
+            }
+        }
+    }
+}

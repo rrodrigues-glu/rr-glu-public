@@ -1,0 +1,32 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/switchportCommandGroup.jtype"
+    },
+    "regEx": ".+",
+    "linkedFeature": {
+        "path": "/sys/type/construct/feature/qos.jtype"
+    },
+    "associatedFeatureType": "featurePath",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_qos-intf-accessMarking_cli.json"
+        ]
+    },
+    "maskCommands": [
+        "^interface",
+        "^service-policy"
+    ],
+    "advanced": {
+        "renderingConditions": [
+            "$discover.vlan.accessMode"
+        ]
+    },
+    "@source": {
+        "instanceName": "ios-qos-interface-swCliGroup-access"
+    },
+    "@exportedInstanceId": "06bafbad-250b-42f1-b51d-fafa2411dace",
+    "@id": "06bafbad-250b-42f1-b51d-fafa2411dace",
+    "@name": "ios-qos-interface-swCliGroup-access",
+    "@description": ""
+}

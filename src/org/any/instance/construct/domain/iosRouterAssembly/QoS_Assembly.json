@@ -1,0 +1,31 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosRouterAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "qos": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/qos/ios_qos.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "agents": {
+        "watchdog": {}
+    },
+    "boot": {
+        "firmware": {}
+    },
+    "state": {
+        "assessment": {}
+    },
+    "@source": {
+        "instanceName": "QoS_Assembly"
+    },
+    "@exportedInstanceId": "47a61ad2-3e34-449f-b48e-60c39dae66a2",
+    "@id": "47a61ad2-3e34-449f-b48e-60c39dae66a2",
+    "@name": "QoS_Assembly",
+    "@description": ""
+}

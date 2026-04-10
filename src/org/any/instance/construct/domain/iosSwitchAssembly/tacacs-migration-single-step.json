@@ -1,0 +1,36 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosSwitchAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "aaa": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/aaa/tacacs-single-step.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "agents": {
+        "watchdog": {}
+    },
+    "state": {
+        "assessment": {
+            "provision": {
+                "policy": {
+                    "@ref": "/org/instance/construct/global/cliStatePolicy/ping_tacacs-single-step.json"
+                },
+                "schedule": "before",
+                "action": "abort"
+            }
+        }
+    },
+    "@source": {
+        "instanceName": "tacacs-migration-single-step"
+    },
+    "@exportedInstanceId": "e8f5ab93-6a0d-481b-b7c5-f389b1f99e6f",
+    "@id": "e8f5ab93-6a0d-481b-b7c5-f389b1f99e6f",
+    "@name": "tacacs-migration-single-step",
+    "@description": ""
+}

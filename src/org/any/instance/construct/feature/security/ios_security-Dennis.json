@@ -1,0 +1,21 @@
+{
+    "featureConcept": {
+        "name": "Security WAN ACL",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_wan-acl-in_grp-Dennis.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_intf-mgmt_grp--Dennis.json"
+            ]
+        }
+    },
+    "form": {
+        "comment": null
+    },
+    "@exportedInstanceId": "6747546f-b3ca-4486-87c6-d43a53571ba3",
+    "@id": "6747546f-b3ca-4486-87c6-d43a53571ba3",
+    "@type": {
+        "ref": "/sys/type/construct/feature/security.jtype"
+    },
+    "@name": "ios_security-Dennis",
+    "@description": ""
+}

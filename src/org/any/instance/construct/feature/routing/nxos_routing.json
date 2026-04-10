@@ -1,0 +1,43 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/routing.jtype"
+    },
+    "featureConcept": {
+        "name": "routing",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/nxos_iproute_group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_route-map_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_IPprefix-list_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_bgp-group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_isis-cli_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_ospf-group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_mpls-ldp_group.json"
+            ]
+        }
+    },
+    "form": {
+        "distributionLayer": {
+            "ipv4": {
+                "routingProtocol": {
+                    "bgp": {
+                        "asn": 65103,
+                        "routerId": "10.255.30.1",
+                        "advertise": [
+                            "10.255.30.1/32",
+                            ""
+                        ],
+                        "peering": []
+                    }
+                }
+            }
+        }
+    },
+    "@source": {
+        "instanceName": "nxos_routing"
+    },
+    "@exportedInstanceId": "c6808702-7ecd-4b57-a0f9-8f6f4dbb6a78",
+    "@id": "c6808702-7ecd-4b57-a0f9-8f6f4dbb6a78",
+    "@name": "nxos_routing",
+    "@description": ""
+}

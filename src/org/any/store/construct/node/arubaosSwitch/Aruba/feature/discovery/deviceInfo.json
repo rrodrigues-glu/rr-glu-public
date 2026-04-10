@@ -1,0 +1,571 @@
+{
+    "hostname": "HP-Switch-5406Rzl2",
+    "vendor": "hpe",
+    "os": "arubaos",
+    "path": "/sys/jnib/features/deviceDetect/hpe/arubaos/",
+    "sku": "J9850A",
+    "software": {
+        "version": "KB.16.10.0009",
+        "major": "16",
+        "minor": "10",
+        "revision": "0009",
+        "train": "KB"
+    },
+    "hardware": {
+        "serialNumber": "SG68G493P3",
+        "sku": "J9850A",
+        "components": {
+            "lineCards": [
+                {
+                    "description": "SG5AGPH00Y",
+                    "location": {
+                        "path": "A",
+                        "type": "slot"
+                    },
+                    "revision": "3",
+                    "serialNumber": " 20p PoE+ / 4p 1/2.5/5/XGT...",
+                    "sku": "J9991A"
+                },
+                {
+                    "description": "SG78GPK018",
+                    "location": {
+                        "path": "B",
+                        "type": "slot"
+                    },
+                    "revision": "3",
+                    "serialNumber": " 8p 1G/10GbE SFP+ v3 zl2 Mod ",
+                    "sku": "J9993A"
+                }
+            ],
+            "powerSupplies": [
+                {
+                    "location": {
+                        "path": 1,
+                        "type": "psu"
+                    },
+                    "serialNumber": "IN69G4D59B",
+                    "sku": "J9828A"
+                }
+            ]
+        },
+        "family": "5400R",
+        "series": "5406R"
+    },
+    "detectedSerialNumber": "SG68G493P3",
+    "type": {
+        "name": "arubaosSwitch",
+        "base": "campusSwitch"
+    },
+    "licenses": {},
+    "portsInfo": {
+        "ports": {
+            "A1": {
+                "operational": {
+                    "status": "down",
+                    "type": "100/1000T",
+                    "mode": "Auto",
+                    "speed": "1000FDx",
+                    "macAddress": "941882-cf3fff",
+                    "access": {
+                        "vlanId": "100",
+                        "vlanName": "MarkAndy"
+                    }
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "A2": {
+                "operational": {
+                    "status": "down",
+                    "type": "100/1000T",
+                    "mode": "Auto",
+                    "speed": "1000FDx",
+                    "macAddress": "941882-cf3ffe",
+                    "access": {
+                        "vlanId": "100",
+                        "vlanName": "MarkAndy"
+                    }
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "A3": {
+                "operational": {
+                    "status": "down",
+                    "type": "100/1000T",
+                    "mode": "Auto",
+                    "speed": "1000FDx",
+                    "macAddress": "941882-cf3ffd",
+                    "access": {
+                        "vlanId": "100",
+                        "vlanName": "MarkAndy"
+                    }
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "A4": {
+                "operational": {
+                    "status": "down",
+                    "type": "100/1000T",
+                    "mode": "Auto",
+                    "speed": "1000FDx",
+                    "macAddress": "941882-cf3ffc",
+                    "access": {
+                        "vlanId": "100",
+                        "vlanName": "MarkAndy"
+                    }
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "A5": {
+                "operational": {
+                    "status": "down",
+                    "type": "100/1000T",
+                    "mode": "Auto",
+                    "speed": "1000FDx",
+                    "macAddress": "941882-cf3ffb",
+                    "access": {
+                        "vlanId": "100",
+                        "vlanName": "MarkAndy"
+                    }
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "A6": {
+                "operational": {
+                    "status": "down",
+                    "type": "100/1000T",
+                    "mode": "Auto",
+                    "speed": "1000FDx",
+                    "macAddress": "941882-cf3ffa"
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "A7": {
+                "operational": {
+                    "status": "down",
+                    "type": "100/1000T",
+                    "mode": "Auto",
+                    "speed": "1000FDx",
+                    "macAddress": "941882-cf3ff9"
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "A8": {
+                "operational": {
+                    "status": "down",
+                    "type": "100/1000T",
+                    "mode": "Auto",
+                    "speed": "1000FDx",
+                    "macAddress": "941882-cf3ff8"
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "A9": {
+                "operational": {
+                    "status": "down",
+                    "type": "100/1000T",
+                    "mode": "Auto",
+                    "speed": "1000FDx",
+                    "macAddress": "941882-cf3ff7"
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "A10": {
+                "operational": {
+                    "status": "down",
+                    "type": "100/1000T",
+                    "mode": "Auto",
+                    "speed": "1000FDx",
+                    "macAddress": "941882-cf3ff6"
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "A11": {
+                "operational": {
+                    "status": "down",
+                    "type": "100/1000T",
+                    "mode": "Auto",
+                    "speed": "1000FDx",
+                    "macAddress": "941882-cf3ff5"
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "A12": {
+                "operational": {
+                    "status": "down",
+                    "type": "100/1000T",
+                    "mode": "Auto",
+                    "speed": "1000FDx",
+                    "macAddress": "941882-cf3ff4"
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "A13": {
+                "operational": {
+                    "status": "down",
+                    "type": "100/1000T",
+                    "mode": "Auto",
+                    "speed": "1000FDx",
+                    "macAddress": "941882-cf3ff3"
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "A14": {
+                "operational": {
+                    "status": "down",
+                    "type": "100/1000T",
+                    "mode": "Auto",
+                    "speed": "1000FDx",
+                    "macAddress": "941882-cf3ff2"
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "A15": {
+                "operational": {
+                    "status": "down",
+                    "type": "100/1000T",
+                    "mode": "Auto",
+                    "speed": "1000FDx",
+                    "macAddress": "941882-cf3ff1"
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "A16": {
+                "operational": {
+                    "status": "down",
+                    "type": "100/1000T",
+                    "mode": "Auto",
+                    "speed": "1000FDx",
+                    "macAddress": "941882-cf3ff0"
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "A17": {
+                "operational": {
+                    "status": "down",
+                    "type": "100/1000T",
+                    "mode": "Auto",
+                    "speed": "1000FDx",
+                    "macAddress": "941882-cf3fef"
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "A18": {
+                "operational": {
+                    "status": "down",
+                    "type": "100/1000T",
+                    "mode": "Auto",
+                    "speed": "1000FDx",
+                    "macAddress": "941882-cf3fee"
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "A19": {
+                "operational": {
+                    "status": "down",
+                    "type": "100/1000T",
+                    "mode": "Auto",
+                    "speed": "1000FDx",
+                    "macAddress": "941882-cf3fed"
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "A20": {
+                "operational": {
+                    "status": "down",
+                    "type": "100/1000T",
+                    "mode": "Auto",
+                    "speed": "1000FDx",
+                    "macAddress": "941882-cf3fec"
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "A21": {
+                "operational": {
+                    "status": "down",
+                    "type": "10GbE-T",
+                    "mode": "Auto",
+                    "speed": "10GigFD",
+                    "macAddress": "941882-cf3feb",
+                    "trunk": {
+                        "vlans": "105,178,239,244"
+                    }
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "A22": {
+                "operational": {
+                    "status": "down",
+                    "type": "10GbE-T",
+                    "mode": "Auto",
+                    "speed": "10GigFD",
+                    "macAddress": "941882-cf3fea"
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "A23": {
+                "operational": {
+                    "status": "down",
+                    "type": "10GbE-T",
+                    "mode": "Auto",
+                    "speed": "10GigFD",
+                    "macAddress": "941882-cf3fe9"
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "A24": {
+                "operational": {
+                    "status": "down",
+                    "type": "10GbE-T",
+                    "mode": "Auto",
+                    "speed": "10GigFD",
+                    "macAddress": "941882-cf3fe8"
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "B1": {
+                "operational": {
+                    "status": "down",
+                    "type": " ",
+                    "mode": " ",
+                    "speed": " ",
+                    "macAddress": "941882-cf3fdf",
+                    "access": {
+                        "vlanId": "100",
+                        "vlanName": "MarkAndy"
+                    }
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "B2": {
+                "operational": {
+                    "status": "down",
+                    "type": " ",
+                    "mode": " ",
+                    "speed": " ",
+                    "macAddress": "941882-cf3fde",
+                    "access": {
+                        "vlanId": "100",
+                        "vlanName": "MarkAndy"
+                    }
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "B3": {
+                "operational": {
+                    "status": "down",
+                    "type": " ",
+                    "mode": " ",
+                    "speed": " ",
+                    "macAddress": "941882-cf3fdd",
+                    "access": {
+                        "vlanId": "100",
+                        "vlanName": "MarkAndy"
+                    }
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "B4": {
+                "operational": {
+                    "status": "down",
+                    "type": " ",
+                    "mode": " ",
+                    "speed": " ",
+                    "macAddress": "941882-cf3fdc",
+                    "trunk": {
+                        "vlans": "105,239"
+                    }
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "B5": {
+                "operational": {
+                    "status": "down",
+                    "type": " ",
+                    "mode": " ",
+                    "speed": " ",
+                    "macAddress": "941882-cf3fdb"
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "B6": {
+                "operational": {
+                    "status": "down",
+                    "type": " ",
+                    "mode": " ",
+                    "speed": " ",
+                    "macAddress": "941882-cf3fda"
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "B7": {
+                "operational": {
+                    "status": "down",
+                    "type": " ",
+                    "mode": " ",
+                    "speed": " ",
+                    "macAddress": "941882-cf3fd9"
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "B8": {
+                "operational": {
+                    "status": "down",
+                    "type": " ",
+                    "mode": " ",
+                    "speed": " ",
+                    "macAddress": "941882-cf3fd8"
+                },
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                },
+                "description": ""
+            },
+            "oobm": {
+                "operational": {
+                    "status": "up",
+                    "type": "100/1000T",
+                    "macAddress": "941882-cf2f01",
+                    "ipv4Address": null,
+                    "ipv6Address": null
+                },
+                "config": {}
+            }
+        },
+        "portSummary": {
+            "switchports": {
+                "total": 32,
+                "use": 10,
+                "free": 22
+            }
+        },
+        "recordTime": {
+            "utcTime": 1737392813247,
+            "utcDateTime": "Mon, 20 Jan 2025 17:06:53 GMT"
+        }
+    }
+}

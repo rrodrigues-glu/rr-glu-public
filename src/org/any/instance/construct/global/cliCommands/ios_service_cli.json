@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "service password-encryption",
+        "service sequence-numbers",
+        "service tcp-keepalives-in",
+        "service tcp-keepalives-out",
+        "service timestamps debug datetime msec localtime",
+        "service timestamps log datetime msec localtime",
+        "service counters max age 0",
+        "no service pad"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_service_cli"
+    },
+    "@exportedInstanceId": "79e1e698-401d-4955-a0cb-a7b9d5a1cbd9",
+    "@id": "79e1e698-401d-4955-a0cb-a7b9d5a1cbd9",
+    "@name": "ios_service_cli",
+    "@description": ""
+}

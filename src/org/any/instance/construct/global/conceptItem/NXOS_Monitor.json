@@ -1,0 +1,32 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "name": "monitor",
+    "showCmds": [
+        "show run | sec monitor"
+    ],
+    "mode": "basic",
+    "keyCliLine": "",
+    "rootEntryFlag": false,
+    "boundaries": {
+        "start": null
+    },
+    "discover": {},
+    "removeSyntax": {},
+    "vendors": {
+        "cisco": {
+            "type": [
+                "nxos"
+            ],
+            "level": null
+        }
+    },
+    "@source": {
+        "instanceName": "NXOS_Monitor"
+    },
+    "@exportedInstanceId": "8b854c6c-e99e-46f1-9c59-dc81d325422d",
+    "@id": "8b854c6c-e99e-46f1-9c59-dc81d325422d",
+    "@name": "NXOS_Monitor",
+    "@description": ""
+}

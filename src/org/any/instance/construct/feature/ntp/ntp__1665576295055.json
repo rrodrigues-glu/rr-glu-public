@@ -1,0 +1,20 @@
+{
+    "featureConcept": {
+        "name": "NTP Feature",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_ntp-server_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "ntp": {}
+    },
+    "@exportedInstanceId": "4cd0326b-cabe-43cb-afc9-5b1ad79d61fd",
+    "@id": "4cd0326b-cabe-43cb-afc9-5b1ad79d61fd",
+    "@type": {
+        "ref": "/sys/type/construct/feature/ntp.jtype"
+    },
+    "@name": "ntp__1665576295055",
+    "@description": ""
+}

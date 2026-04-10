@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@id": "7a31ceb6-02f0-4d26-ab52-abfb9e061ad6",
+    "ignoreDelete": true,
+    "regEx": "default-in-policy|fcoe-default-in-policy|default-nq-policy|fcoe-default-nq-policy|fcoe-default-nq-policy-jumbo",
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/PolicyMapQos__cli__1731435087366929c.json"
+        ]
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "7a31ceb6-02f0-4d26-ab52-abfb9e061ad6",
+    "@name": "qos__cliGrp__17314350873661ef",
+    "@description": ""
+}

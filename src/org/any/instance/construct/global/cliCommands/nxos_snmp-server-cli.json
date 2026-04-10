@@ -1,0 +1,59 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "snmp-server contact Network@marketAxess.com 212-813-6111 299 Park Ave",
+        "snmp-server source-interface trap loopback10",
+        "snmp-server source-interface inform loopback10",
+        "snmp-server user netsnmp vdc-operator auth sha 0xcebad5b9533c37ba755681023a80380ade15266f priv aes-128 0xdc45f72afae2f99401d3510ff1c8fe4be1fe387d localizedkey",
+        "snmp-server user syssnmp vdc-admin auth sha 0xa83eac1753153a0732b482e02e7a3ba2a5842dc4 priv aes-128 0x3771ab1deb2c39b1c1fa18fbba1b185fabb81980 localizedkey",
+        "snmp-server user netadmin vdc-admin auth md5 0x51ba5a13b8bbb7010a03ac574e7341ae priv 0x51ba5a13b8bbb7010a03ac574e7341ae localizedkey",
+        "snmp-server host 10.30.70.110 traps version 2c DC03s0juRn3xpl0r3r",
+        "snmp-server host 10.30.70.110 use-vrf netmgmt",
+        "snmp-server host 10.30.70.120 traps version 2c DC03s0juRn3xpl0r3r",
+        "snmp-server host 10.30.70.120 use-vrf netmgmt",
+        "snmp-server host 10.30.100.205 traps version 2c DC03s0juRn3xpl0r3r",
+        "snmp-server host 10.30.74.244 traps version 3 auth syssnmp",
+        "snmp-server host 10.30.74.244 use-vrf management",
+        "snmp-server enable traps callhome event-notify",
+        "snmp-server enable traps callhome smtp-send-fail",
+        "snmp-server enable traps cfs state-change-notif",
+        "snmp-server enable traps cfs merge-failure",
+        "snmp-server enable traps port-security access-secure-mac-violation",
+        "snmp-server enable traps port-security trunk-secure-mac-violation",
+        "snmp-server enable traps aaa server-state-change",
+        "snmp-server enable traps hsrp state-change",
+        "snmp-server enable traps feature-control FeatureOpStatusChange",
+        "snmp-server enable traps sysmgr cseFailSwCoreNotifyExtended",
+        "snmp-server enable traps config ccmCLIRunningConfigChanged",
+        "snmp-server enable traps snmp authentication",
+        "snmp-server enable traps mpls ldp session-up",
+        "snmp-server enable traps mpls ldp session-down",
+        "snmp-server enable traps link cisco-xcvr-mon-status-chg",
+        "snmp-server enable traps vtp notifs",
+        "snmp-server enable traps vtp vlancreate",
+        "snmp-server enable traps vtp vlandelete",
+        "snmp-server enable traps bridge newroot",
+        "snmp-server enable traps bridge topologychange",
+        "snmp-server enable traps stpx inconsistency",
+        "snmp-server enable traps stpx root-inconsistency",
+        "snmp-server enable traps stpx loop-inconsistency",
+        "snmp-server enable traps feature-control ciscoFeatOpStatusChange",
+        "snmp-server community VaN1LLa1C3CR3aM group vdc-admin",
+        "snmp-server community DC03s0juRn3xpl0r3r group vdc-operator",
+        "snmp-server community VaN1LLa1C3CR3aM use-acl IPV4-NMS-RW",
+        "snmp-server community DC03s0juRn3xpl0r3r use-acl IPV4-NMS-RO"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_snmp-server-cli"
+    },
+    "@exportedInstanceId": "5014a171-b075-47c5-ac81-f3659e09509f",
+    "@id": "5014a171-b075-47c5-ac81-f3659e09509f",
+    "@name": "nxos_snmp-server-cli",
+    "@description": ""
+}

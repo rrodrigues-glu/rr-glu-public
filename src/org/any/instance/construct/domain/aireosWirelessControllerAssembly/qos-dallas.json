@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/aireosWirelessControllerAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "qos": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/qos/aireos_qos-usa-dallas.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "state": {
+        "assessment": {}
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "qos-dallas"
+    },
+    "@exportedInstanceId": "c6a11847-458c-434a-856d-2bcd911e0d81",
+    "@id": "c6a11847-458c-434a-856d-2bcd911e0d81",
+    "@name": "qos-dallas",
+    "@description": ""
+}

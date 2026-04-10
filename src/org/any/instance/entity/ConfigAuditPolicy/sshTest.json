@@ -1,0 +1,116 @@
+{
+  "permissionLevel": "auditManageLevel1",
+  "rules": [
+    {
+      "severity": "INFO",
+      "name": "IF-THEN Test",
+      "os": "ios",
+      "source": "LATEST",
+      "commandSet": "2ac489a7-fcd9-4bea-a335-5fef5dad0996",
+      "commandSetResult": {
+        "type": "all"
+      },
+      "type": "IF_THEN",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": false,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "transport input ssh"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "conceptItemId": null,
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "ip ssh version 2",
+              "$options": "mi"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "severity": "INFO",
+      "name": "IF-THEN-ELSE Test",
+      "os": "ios",
+      "source": "LATEST",
+      "commandSet": "2ac489a7-fcd9-4bea-a335-5fef5dad0996",
+      "commandSetResult": {
+        "type": "all"
+      },
+      "type": "IF_THEN_ELSE",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": false,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "transport input ssh"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "conceptItemId": null,
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "ip ssh version 2",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "elseExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "transport input telnet"
+            ]
+          }
+        ],
+        "valid": true
+      }
+    }
+  ],
+  "runLevel": "auditRunLevel1",
+  "description": "",
+  "name": "sshTest",
+  "tid": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+  "id": "d5d766b1-e6f8-4217-a456-53fd30a66965",
+  "createdBy": "admin",
+  "createdOn": 1731614814258,
+  "updatedBy": "admin",
+  "updatedOn": 1731615185013,
+  "lastAuditErrorMsg": "",
+  "lastAuditDevicesSkippedCount": 0
+}

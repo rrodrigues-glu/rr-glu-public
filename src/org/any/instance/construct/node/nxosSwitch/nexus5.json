@@ -1,0 +1,66 @@
+{
+    "configState": "managed",
+    "entryConnection": {
+        "connectionMethod": "cliConnection",
+        "ip": "10.150.1.4",
+        "credentials": {
+            "@ref": "/secret/sys/credentials/deviceUserPass/admin.json"
+        },
+        "type": "ssh",
+        "port": 22,
+        "terminalType": "xterm"
+    },
+    "associations": {
+        "provider": "local",
+        "assembly": {
+            "@ref": "/org/instance/construct/domain/nxosSwitchAssembly/nxosSwitch__1731435087366.json"
+        }
+    },
+    "persona": {
+        "type": "none",
+        "id": 0
+    },
+    "hardware": {
+        "vendor": "auto",
+        "expectedSerialNumber": "auto"
+    },
+    "provisioning": {
+        "type": "advanced"
+    },
+    "nxosSwitch": {
+        "enabled": true
+    },
+    "options": {
+        "connectionEnabled": true,
+        "previewMode": false,
+        "forcedAttachedStorage": false
+    },
+    "dcSwitch": {
+        "enabled": true
+    },
+    "site": {
+        "@ref": "/org/instance/construct/domain/location/Romualdo.json"
+    },
+    "@id": "02110438-1af6-484a-ad3c-ea0b7951b9d8",
+    "@source": {
+        "instanceKey": "/org/Romualdo/instance/construct/node/nxosSwitch/nexus5",
+        "typeKey": "/org/Romualdo/type/construct/node/nxosSwitch.jtype",
+        "type": "nxosSwitch",
+        "typeName": "NXOS Switch",
+        "typeId": "d537c13e-2c54-427e-a5fa-7a31ea153137",
+        "typeVersionId": "91e71512-3dd3-4756-9f59-79e358b4835b",
+        "typeVersion": "3.2.0",
+        "instanceName": "nexus5",
+        "instanceId": "02110438-1af6-484a-ad3c-ea0b7951b9d8",
+        "construct": "node",
+        "organizationId": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+        "instanceVersionId": "816055b7-92d7-4631-9b76-2adc3131819f",
+        "instanceVersion": "1.0.0"
+    },
+    "@exportedInstanceId": "02110438-1af6-484a-ad3c-ea0b7951b9d8",
+    "@type": {
+        "ref": "/sys/type/construct/node/nxosSwitch.jtype"
+    },
+    "@name": "nexus5",
+    "@description": ""
+}

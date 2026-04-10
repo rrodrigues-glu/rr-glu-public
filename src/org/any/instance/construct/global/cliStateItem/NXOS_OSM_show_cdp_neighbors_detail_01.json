@@ -1,0 +1,22 @@
+{
+    "cmd": "show cdp neighbors detail",
+    "keyLineRegEx": "Device ID:(.+)",
+    "groupName": "cdp",
+    "discover": {
+        "neighbors": {
+            "expressions": [
+                "Device ID:(?<deviceId>.+)",
+                "Interface: (?<localIntf>[\\/\\w]+),\\s+Port ID \\(outgoing port\\): (?<remoteIntf>[\\/\\w\\s]+$)"
+            ]
+        }
+    },
+    "options": {},
+    "rootEntry": "no",
+    "@exportedInstanceId": "6283f3f9-6e0f-4a3e-be0a-3092a684e16d",
+    "@id": "6283f3f9-6e0f-4a3e-be0a-3092a684e16d",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "@name": "NXOS_OSM_show_cdp_neighbors_detail_01",
+    "@description": ""
+}

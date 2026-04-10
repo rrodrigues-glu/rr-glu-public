@@ -1,0 +1,17 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/nac.jtype"
+    },
+    "@id": "8b84d5e0-8f65-471e-af79-7249c0498985",
+    "featureConcept": {
+        "name": "Nac Feature",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/nac__cliGrp__1665576829596ff3.json"
+            ]
+        }
+    },
+    "@exportedInstanceId": "8b84d5e0-8f65-471e-af79-7249c0498985",
+    "@name": "nac__1665576829596",
+    "@description": ""
+}

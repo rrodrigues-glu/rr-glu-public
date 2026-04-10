@@ -1,0 +1,61 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "class-map match-any voice-traffic-INBOUND",
+        " description COS1-RT_Vo",
+        " match access-group name Lync-traffic-ACL",
+        " match access-group name Local-telephony-ACL",
+        "!",
+        "class-map match-any video-traffic-INBOUND",
+        " description COS1-RT_Vi",
+        " match access-group name video-traffic-ACL",
+        "!",
+        "class-map match-any premium-traffic-INBOUND",
+        " description COS2-D1",
+        " match access-group name premium-traffic-ACL",
+        "!",
+        "class-map match-any default-traffic-INBOUND",
+        " description COS3-D2",
+        " match any",
+        "!",
+        "class-map match-any bulk-traffic-INBOUND",
+        " description COS5-D3",
+        " match access-group name bulk-traffic-ACL",
+        "!",
+        "class-map match-any EF",
+        " description VOICE Payload Traffic",
+        " match ip dscp ef",
+        "!",
+        "class-map match-any CS3AF41",
+        " description VOICE control and Polycom",
+        " match dscp cs3 af41",
+        "!",
+        "class-map match-any AF21",
+        " description Notes Traffic",
+        " match ip dscp af21",
+        "!",
+        "class-map match-any AF11",
+        " description low priority apps",
+        " match ip dscp af11",
+        "!",
+        "class-map match-any Default",
+        " description unclassified traffic",
+        " match ip dscp default",
+        "!"
+    ],
+    "advanced": {
+        "filter": "platform",
+        "platform": "C2960X-"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_cat2960x-qos-cmap_cli"
+    },
+    "@exportedInstanceId": "aebb56e8-645f-481c-93d9-919860234996",
+    "@id": "aebb56e8-645f-481c-93d9-919860234996",
+    "@name": "ios_cat2960x-qos-cmap_cli",
+    "@description": ""
+}

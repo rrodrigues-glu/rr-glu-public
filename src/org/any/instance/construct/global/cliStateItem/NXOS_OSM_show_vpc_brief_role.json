@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show vpc brief",
+    "groupName": "vpcRole",
+    "discover": {
+        "Data": {
+            "expressions": [
+                "^vPC role\\s+: (?<role>.+)"
+            ],
+            "localKey": "",
+            "preserveLocalKey": false,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {
+        "generateLocalKey": false
+    },
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_show_vpc_brief_role"
+    },
+    "@exportedInstanceId": "6b806792-a008-4ae4-a8f1-6ac6cab40ad1",
+    "@id": "6b806792-a008-4ae4-a8f1-6ac6cab40ad1",
+    "@name": "NXOS_OSM_show_vpc_brief_role",
+    "@description": ""
+}

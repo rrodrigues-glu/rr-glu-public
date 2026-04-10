@@ -1,0 +1,50 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/aaa.jtype"
+    },
+    "featureConcept": {
+        "name": "Tacacs Migration - Single Step",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_tacacs-remove-single-step_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_tacacs-add-single-step_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_intf-mgmt_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_aaa-group-server_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_aaa-auth_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_tacacs-key-remove_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "aaa": [
+            {
+                "name": "Gluware-ACS",
+                "tacacs": [
+                    {
+                        "name": "Glu-ACS1",
+                        "ip": "10.10.10.10",
+                        "key": "thiskey",
+                        "timeout": 30
+                    },
+                    {
+                        "name": "Glu-ACS2",
+                        "ip": "20.20.20.20",
+                        "key": "thiskey",
+                        "timeout": 30
+                    }
+                ],
+                "srcInt": {
+                    "@ref": "/org/instance/construct/global/lanInterface/MGNT1.json"
+                },
+                "srcIntOverride": true
+            }
+        ]
+    },
+    "@source": {
+        "instanceName": "tacacs-single-step"
+    },
+    "@exportedInstanceId": "b8b8963b-041c-4fe8-8345-8c1bfab65e0a",
+    "@id": "b8b8963b-041c-4fe8-8345-8c1bfab65e0a",
+    "@name": "tacacs-single-step",
+    "@description": ""
+}

@@ -1,0 +1,32 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "name": "install",
+    "showCmds": [
+        "sh run | sec install"
+    ],
+    "mode": "basic",
+    "keyCliLine": "install .+",
+    "rootEntryFlag": false,
+    "boundaries": {
+        "start": null
+    },
+    "discover": {},
+    "removeSyntax": {},
+    "vendors": {
+        "cisco": {
+            "type": [
+                "nxos"
+            ],
+            "level": null
+        }
+    },
+    "@source": {
+        "instanceName": "NXOS_Install"
+    },
+    "@exportedInstanceId": "62920136-a0e8-4323-a5f3-83df02f840a4",
+    "@id": "62920136-a0e8-4323-a5f3-83df02f840a4",
+    "@name": "NXOS_Install",
+    "@description": ""
+}

@@ -1,0 +1,33 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "name": "WlanQos",
+    "vendors": {
+        "cisco": {
+            "type": [
+                "aireos"
+            ],
+            "level": null
+        }
+    },
+    "showCmds": [
+        "show run-config commands"
+    ],
+    "keyCliLine": "",
+    "rootEntryFlag": true,
+    "mode": "basic",
+    "boundaries": {
+        "start": "^wlan qos .+"
+    },
+    "discover": {},
+    "removeSyntax": {},
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "Aireos_WlanQos"
+    },
+    "@exportedInstanceId": "a4b9db64-e9b9-4332-a3cd-ecbc325b44d5",
+    "@id": "a4b9db64-e9b9-4332-a3cd-ecbc325b44d5",
+    "@name": "Aireos_WlanQos",
+    "@description": ""
+}

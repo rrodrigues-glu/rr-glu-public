@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/aireosWirelessControllerAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "qos": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/qos/aireos_qos-usa-boston.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "state": {
+        "assessment": {}
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "qos-boston"
+    },
+    "@exportedInstanceId": "6299db04-0a43-4a5c-b549-377d857cd377",
+    "@id": "6299db04-0a43-4a5c-b549-377d857cd377",
+    "@name": "qos-boston",
+    "@description": ""
+}

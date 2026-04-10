@@ -1,0 +1,24 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": ".+",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/nxos_rmon-cli.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "@source": {
+        "instanceName": "nxos_rmon_group"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "4b69ed92-a901-4b7c-be5d-f5022fa0e6ce",
+    "@id": "4b69ed92-a901-4b7c-be5d-f5022fa0e6ce",
+    "@name": "nxos_rmon_group",
+    "@description": ""
+}

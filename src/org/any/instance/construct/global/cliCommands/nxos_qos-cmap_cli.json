@@ -1,0 +1,62 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "class-map type qos match-any qos-in-network-control",
+        " description network control",
+        " match access-group name qos-network-control",
+        "!",
+        "class-map type qos match-any qos-in-voice",
+        " description voice/voip/ipt",
+        " match access-group name qos-voice",
+        "!",
+        "class-map type qos match-any qos-in-clinical-life-critical",
+        " description clinical life critical",
+        " match access-group name qos-clinical-life-critical",
+        "!",
+        "class-map type qos match-any qos-in-multimedia-conferencing",
+        " description multimedia conferencing",
+        " match access-group name qos-multimedia-conferencing",
+        "!",
+        "class-map type qos match-any qos-in-real-time-interactive",
+        " description real-time interactive (i.e. immersive telepresence)",
+        " match access-group name qos-real-time-interactive",
+        "!",
+        "class-map type qos match-any qos-in-multimedia-streaming",
+        " description multimedia streaming",
+        " match access-group name qos-multimedia-streaming",
+        "!",
+        "class-map type qos match-any qos-in-signaling",
+        " description call signaling",
+        " match access-group name qos-signaling",
+        "!",
+        "class-map type qos match-any qos-in-low-latency-data",
+        " description low-latency data (i.e. scavenger class)",
+        " match access-group name qos-low-latency-data",
+        "!",
+        "class-map type qos match-any qos-in-network-management",
+        " description network management",
+        " match access-group name qos-network-management",
+        "!",
+        "class-map type qos match-any qos-in-high-throughput-data",
+        " description high-throughput data traffic (ftp, etc.)",
+        " match access-group name qos-high-throughput-data",
+        "!",
+        "class-map type qos match-any qos-in-low-priority-data",
+        " description low priority data applications (i.e. non-business apps)",
+        " match access-group name qos-low-priority-data",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_qos-cmap_cli"
+    },
+    "@exportedInstanceId": "a282357c-b58d-483c-8951-48016e55ab2e",
+    "@id": "a282357c-b58d-483c-8951-48016e55ab2e",
+    "@name": "nxos_qos-cmap_cli",
+    "@description": ""
+}

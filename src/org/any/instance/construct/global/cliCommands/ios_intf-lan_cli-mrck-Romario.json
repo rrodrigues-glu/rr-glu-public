@@ -1,0 +1,18 @@
+{
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Intf2-mrck2-Romario.json"
+    },
+    "cliCommands": [
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "b647639f-2da8-4468-bc2a-03e234512752",
+    "@id": "b647639f-2da8-4468-bc2a-03e234512752",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "ios_intf-lan_cli-mrck-Romario",
+    "@description": ""
+}

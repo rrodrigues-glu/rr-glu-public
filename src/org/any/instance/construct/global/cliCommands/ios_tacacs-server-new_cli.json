@@ -1,0 +1,23 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "tacacs server $context.aaa[*].tacacs[*].name",
+        " address ipv4 $context.aaa[*].tacacs[*].ip",
+        " key $context.aaa[*].tacacs[*].key",
+        " timeout $context.aaa[*].tacacs[*].timeout",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_tacacs-server-new_cli"
+    },
+    "@exportedInstanceId": "5f5e8655-5ae5-404d-b126-56cba9abf192",
+    "@id": "5f5e8655-5ae5-404d-b126-56cba9abf192",
+    "@name": "ios_tacacs-server-new_cli",
+    "@description": ""
+}

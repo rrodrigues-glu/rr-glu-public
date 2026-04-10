@@ -1,0 +1,31 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show vpc role",
+    "groupName": "vpcRole",
+    "discover": {
+        "vPC": {
+            "expressions": [
+                "^vPC[\\s\\+]+ role\\s+:\\s+(?<vpcrole>\\S+\\w)",
+                "^vPC system-mac\\s+:\\s+(?<systemMac>\\S+)",
+                "^vPC system-priority\\s+:\\s+(?<systemPriority>\\S+)",
+                "^vPC local role-priority\\s+:\\s+(?<localPriority>\\S+)"
+            ],
+            "localKey": "vpcrole",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {
+        "generateLocalKey": false
+    },
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_show_vpc_role"
+    },
+    "@exportedInstanceId": "a3fed575-4036-4365-a952-1ac5ced62412",
+    "@id": "a3fed575-4036-4365-a952-1ac5ced62412",
+    "@name": "NXOS_show_vpc_role",
+    "@description": ""
+}

@@ -1,0 +1,33 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/rtoAssessmentTemplate.jtype"
+    },
+    "assess": {
+        "bandwidthCheck": {
+            "policy": {},
+            "nodeTypes": [
+                "iosSwitch",
+                "iosRouter"
+            ]
+        }
+    },
+    "@id": "022d0ac8-a776-4e63-b5e5-ec052e725e51",
+    "@source": {
+        "instanceKey": "/org/Romualdo/instance/construct/global/rtoAssessmentTemplate/rtoAssessmentTemplate",
+        "typeKey": "/org/Romualdo/type/construct/global/rtoAssessmentTemplate.jtype",
+        "type": "rtoAssessmentTemplate",
+        "typeName": "RTO Assessment Template",
+        "typeId": "55981206-8284-45c1-9c15-247c7550da01",
+        "typeVersionId": "93d32ec2-1101-4153-bc5f-e922c1a9aa72",
+        "typeVersion": "1.0.0",
+        "instanceName": "rtoAssessmentTemplate",
+        "instanceId": "022d0ac8-a776-4e63-b5e5-ec052e725e51",
+        "construct": "global",
+        "organizationId": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+        "instanceVersionId": "94413f0a-2713-4eaf-8363-c9aee0d26fe5",
+        "instanceVersion": "1.0.0"
+    },
+    "@exportedInstanceId": "022d0ac8-a776-4e63-b5e5-ec052e725e51",
+    "@name": "rtoAssessmentTemplate",
+    "@description": ""
+}

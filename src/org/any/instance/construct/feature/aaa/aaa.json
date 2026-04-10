@@ -1,0 +1,19 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/aaa.jtype"
+    },
+    "featureConcept": {
+        "name": "AAA",
+        "cliCommandGroups": {}
+    },
+    "form": {
+        "aaa": []
+    },
+    "@source": {
+        "instanceName": "aaa"
+    },
+    "@exportedInstanceId": "06d259a4-c213-447f-af3c-f79d8c6177fe",
+    "@id": "06d259a4-c213-447f-af3c-f79d8c6177fe",
+    "@name": "aaa",
+    "@description": ""
+}

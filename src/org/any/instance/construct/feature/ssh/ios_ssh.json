@@ -1,0 +1,23 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/ssh.jtype"
+    },
+    "featureConcept": {
+        "name": "SSH Server Configuration",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_ssh_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "comment": null
+    },
+    "@source": {
+        "instanceName": "ios_ssh"
+    },
+    "@exportedInstanceId": "ca358083-1f24-4ccc-85af-3d3003268927",
+    "@id": "ca358083-1f24-4ccc-85af-3d3003268927",
+    "@name": "ios_ssh",
+    "@description": ""
+}

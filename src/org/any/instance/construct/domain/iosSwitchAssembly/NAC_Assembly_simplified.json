@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosSwitchAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "nac": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/nac/ios_nac-simplified.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "agents": {
+        "watchdog": {}
+    },
+    "state": {
+        "assessment": {}
+    },
+    "@source": {
+        "instanceName": "NAC_Assembly_simplified"
+    },
+    "@exportedInstanceId": "f4093b52-298a-44e6-8225-4bcba579524d",
+    "@id": "f4093b52-298a-44e6-8225-4bcba579524d",
+    "@name": "NAC_Assembly_simplified",
+    "@description": ""
+}

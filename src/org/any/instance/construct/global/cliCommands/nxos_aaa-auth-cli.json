@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "aaa authentication login default group $context.aaa[*].name none",
+        "aaa authorization config-commands default group $context.aaa[*].name local",
+        "aaa authorization commands default group $context.aaa[*].name local",
+        "aaa authorization config-commands console group $context.aaa[*].name local",
+        "aaa authorization commands console group $context.aaa[*].name local",
+        "aaa accounting default group $context.aaa[*].name",
+        "aaa authentication login error-enable"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_aaa-auth-cli"
+    },
+    "@exportedInstanceId": "15f1aeba-8101-4989-93bd-d54110cbbf21",
+    "@id": "15f1aeba-8101-4989-93bd-d54110cbbf21",
+    "@name": "nxos_aaa-auth-cli",
+    "@description": ""
+}

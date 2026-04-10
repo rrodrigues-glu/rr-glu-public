@@ -1,0 +1,26 @@
+{
+    "regEx": "^102$",
+    "ignoreDelete": false,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_wan-acl-in_cli-Dennis.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": []
+    },
+    "maskCommands": [
+        "ip access-list extended 102",
+        "permit"
+    ],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "80c4dfbd-3f4b-48df-ae4b-10f3be58d25e",
+    "@id": "80c4dfbd-3f4b-48df-ae4b-10f3be58d25e",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@name": "ios_wan-acl-in_grp-Dennis",
+    "@description": ""
+}

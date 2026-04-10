@@ -1,0 +1,19 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "36245c9b-0240-4768-b9be-a2cfc071c4b9",
+    "item": {},
+    "cliCommands": [
+        "policy-map type qos default-in-policy",
+        "  class class-default",
+        "    set qos-group 0",
+        "policy-map type network-qos default-nq-policy",
+        "  class type network-qos class-default",
+        "    mtu 1500",
+        ""
+    ],
+    "@exportedInstanceId": "36245c9b-0240-4768-b9be-a2cfc071c4b9",
+    "@name": "PolicyMapQos__cli__166557703130702cd",
+    "@description": ""
+}

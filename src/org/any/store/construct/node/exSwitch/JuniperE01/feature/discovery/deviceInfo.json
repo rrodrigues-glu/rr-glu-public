@@ -1,0 +1,630 @@
+{
+    "hostname": "ex3300-vc",
+    "vendor": "juniper",
+    "os": "junos",
+    "path": "/sys/jnib/features/deviceDetect/juniper/junos/",
+    "sku": "EX3300-24P",
+    "software": {
+        "version": "15.1R6-S5",
+        "major": "15",
+        "minor": "1",
+        "revision": "S5",
+        "spin": "",
+        "build": "6",
+        "type": "R"
+    },
+    "hardware": {
+        "serialNumber": "GE0218360451",
+        "sku": "EX3300-24P",
+        "stack": {
+            "0": {
+                "sku": "EX3300-24P",
+                "serialNumber": "GE0218360451",
+                "status": "prsnt",
+                "master": true,
+                "software": {
+                    "version": "15.1R6-S5",
+                    "major": "15",
+                    "minor": "1",
+                    "revision": "S5",
+                    "spin": "",
+                    "build": "6",
+                    "type": "R"
+                }
+            },
+            "1": {
+                "sku": "EX3300-24P",
+                "serialNumber": "GE0214351520",
+                "status": "prsnt",
+                "backup": true,
+                "software": {
+                    "version": "15.1R6-S5",
+                    "major": "15",
+                    "minor": "1",
+                    "revision": "S5",
+                    "spin": "",
+                    "build": "6",
+                    "type": "R"
+                }
+            }
+        },
+        "components": {
+            "flexiblePicConcentrator": [
+                {
+                    "description": "EX3300 24-Port POE+",
+                    "location": {
+                        "id": "0",
+                        "path": "fpc0",
+                        "type": "fpc"
+                    },
+                    "serialNumber": "GE0218360451",
+                    "sku": "650-063364"
+                },
+                {
+                    "description": "EX3300 24-Port POE+",
+                    "location": {
+                        "id": "1",
+                        "path": "fpc1",
+                        "type": "fpc"
+                    },
+                    "serialNumber": "GE0214351520",
+                    "sku": "750-034300"
+                }
+            ],
+            "physicalInterfaceCards": [
+                {
+                    "description": "4x GE/XE SFP+",
+                    "location": {
+                        "id": "1",
+                        "path": "fpc0/pic1",
+                        "type": "pic"
+                    },
+                    "serialNumber": "GE0218360451",
+                    "sku": "650-063364"
+                },
+                {
+                    "description": "4x GE/XE SFP+",
+                    "location": {
+                        "id": "1",
+                        "path": "fpc1/pic1",
+                        "type": "pic"
+                    },
+                    "serialNumber": "GE0214351520",
+                    "sku": "750-034300"
+                }
+            ]
+        },
+        "family": "EX",
+        "series": "3300"
+    },
+    "detectedSerialNumber": "GE0218360451",
+    "uptime": "5d1h36m",
+    "type": {
+        "name": "exSwitch",
+        "base": "campusSwitch"
+    },
+    "portsInfo": {
+        "ports": {
+            "vcp-255/1/2": {
+                "operational": {
+                    "status": "up",
+                    "macAddress": "Unspecified",
+                    "speed": "1000mbps",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Fiber"
+            },
+            "vcp-255/1/3": {
+                "operational": {
+                    "status": "up",
+                    "macAddress": "Unspecified",
+                    "speed": "10000mbps",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Fiber"
+            },
+            "ge-0/0/0": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:83",
+                    "speed": "Auto",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Copper",
+                "type": "l2"
+            },
+            "ge-0/0/1": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:84",
+                    "speed": "Auto",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Copper",
+                "type": "l2"
+            },
+            "ge-0/0/2": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:85",
+                    "speed": "Auto",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Copper",
+                "type": "l2"
+            },
+            "ge-0/0/3": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:86",
+                    "speed": "Auto",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Copper",
+                "type": "l2"
+            },
+            "ge-0/0/4": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:87",
+                    "speed": "Auto",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Copper",
+                "type": "l2"
+            },
+            "ge-0/0/5": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:88",
+                    "speed": "Auto",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Copper",
+                "type": "l2"
+            },
+            "ge-0/0/6": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:89",
+                    "speed": "Auto",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Copper",
+                "type": "l2"
+            },
+            "ge-0/0/7": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:8a",
+                    "speed": "Auto",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Copper",
+                "type": "l2"
+            },
+            "ge-0/0/8": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:8b",
+                    "speed": "Auto",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Copper",
+                "type": "l2"
+            },
+            "ge-0/0/9": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:8c",
+                    "speed": "Auto",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Copper",
+                "type": "l2"
+            },
+            "ge-0/0/10": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:8d",
+                    "speed": "Auto",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Copper",
+                "type": "l2"
+            },
+            "ge-0/0/11": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:8e",
+                    "speed": "Auto",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Copper",
+                "type": "l2"
+            },
+            "ge-0/0/12": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:8f",
+                    "speed": "Auto",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Copper",
+                "type": "l2"
+            },
+            "ge-0/0/13": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:90",
+                    "speed": "Auto",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Copper",
+                "type": "l2"
+            },
+            "ge-0/0/14": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:91",
+                    "speed": "Auto",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Copper",
+                "type": "l2"
+            },
+            "ge-0/0/15": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:92",
+                    "speed": "Auto",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Copper",
+                "type": "l2"
+            },
+            "ge-0/0/16": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:93",
+                    "speed": "Auto",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Copper",
+                "type": "l2"
+            },
+            "ge-0/0/17": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:94",
+                    "speed": "Auto",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Copper",
+                "type": "l2"
+            },
+            "ge-0/0/18": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:95",
+                    "speed": "Auto",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Copper",
+                "type": "l2"
+            },
+            "ge-0/0/19": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:96",
+                    "speed": "Auto",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Copper",
+                "type": "l2"
+            },
+            "ge-0/0/20": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:97",
+                    "speed": "Auto",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Copper",
+                "type": "l2"
+            },
+            "ge-0/0/21": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:98",
+                    "speed": "Auto",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Copper",
+                "type": "l2"
+            },
+            "ge-0/0/22": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:99",
+                    "speed": "Auto",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Copper",
+                "type": "l2"
+            },
+            "ge-0/0/23": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:9a",
+                    "speed": "Auto",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "mediaType": "Copper",
+                "type": "l2"
+            },
+            "bme0": {
+                "operational": {
+                    "status": "up",
+                    "macAddress": "00:0b:ca:fe:00:00",
+                    "speed": "Unspecified",
+                    "mtu": "1576"
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "dsc": {
+                "operational": {
+                    "status": "up",
+                    "macAddress": "Unspecified",
+                    "speed": "Unspecified",
+                    "mtu": "Unlimited"
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "gre": {
+                "operational": {
+                    "status": "up",
+                    "macAddress": "Unspecified",
+                    "speed": "Unlimited",
+                    "mtu": "Unlimited"
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "ipip": {
+                "operational": {
+                    "status": "up",
+                    "speed": "Unlimited",
+                    "mtu": "Unlimited"
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "jsrv": {
+                "operational": {
+                    "status": "up",
+                    "macAddress": "b0:33:a6:2e:b5:80",
+                    "ipv4Address": "128.0.0.127/2",
+                    "speed": "1000mbps",
+                    "mtu": "1518"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "type": "l3"
+            },
+            "lo0": {
+                "operational": {
+                    "status": "up",
+                    "macAddress": "Unspecified",
+                    "ipv4Address": "127.0.0.1",
+                    "speed": "Unspecified",
+                    "mtu": "Unlimited"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "type": "l3"
+            },
+            "lsi": {
+                "operational": {
+                    "status": "up",
+                    "macAddress": "Unspecified",
+                    "speed": "Unlimited",
+                    "mtu": "Unlimited"
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "me0": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:bf",
+                    "speed": "Unspecified",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "type": "l2"
+            },
+            "mtun": {
+                "operational": {
+                    "status": "up",
+                    "macAddress": "Unspecified",
+                    "speed": "Unlimited",
+                    "mtu": "Unlimited"
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "pimd": {
+                "operational": {
+                    "status": "up",
+                    "speed": "Unlimited",
+                    "mtu": "Unlimited"
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "pime": {
+                "operational": {
+                    "status": "up",
+                    "speed": "Unlimited",
+                    "mtu": "Unlimited"
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "tap": {
+                "operational": {
+                    "status": "up",
+                    "macAddress": "Unspecified",
+                    "speed": "Unlimited",
+                    "mtu": "Unlimited"
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "vlan": {
+                "operational": {
+                    "status": "up",
+                    "macAddress": "b0:33:a6:2e:b5:81",
+                    "ipv4Address": "10.150.2.10/27",
+                    "speed": "1000mbps",
+                    "mtu": "1518"
+                },
+                "configured": {
+                    "status": "up",
+                    "ipv4Address": "10.150.2.10/27"
+                },
+                "type": "l3"
+            },
+            "vme": {
+                "operational": {
+                    "status": "up",
+                    "macAddress": "b0:33:a6:2e:b5:82",
+                    "ipv4Address": "10.150.2.9/27",
+                    "speed": "1000mbps",
+                    "mtu": "1518"
+                },
+                "configured": {
+                    "status": "up",
+                    "ipv4Address": "10.150.2.9/27"
+                },
+                "type": "l3"
+            },
+            ".local.": {
+                "operational": {
+                    "status": "up",
+                    "macAddress": "Unspecified",
+                    "speed": "Unlimited",
+                    "mtu": "Unlimited"
+                },
+                "configured": {
+                    "status": "up"
+                }
+            }
+        },
+        "portSummary": {
+            "switchports": {
+                "total": 25,
+                "use": 0,
+                "free": 25
+            }
+        },
+        "recordTime": {
+            "utcTime": 1737393067262,
+            "utcDateTime": "Mon, 20 Jan 2025 17:11:07 GMT"
+        }
+    }
+}

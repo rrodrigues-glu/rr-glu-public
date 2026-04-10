@@ -1,0 +1,45 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show logging",
+    "rootEntry": "yes",
+    "groupName": "syslog",
+    "discover": {
+        "line": {
+            "expressions": [
+                "(?<date>[a-zA-Z]+(?:\\s+)?\\d+(?: \\d{4})?) (?<clock>\\d{1,2}\\:\\d{1,2}\\:\\d{1,2}(?:\\.\\d+)?)(?:\\s\\w+)?: (?<facility>\\%\\S+): Configured from console by (?<user>\\w+) on (?<console>\\w+) \\((?<srcIp>\\S+)\\)"
+            ],
+            "localKey": "",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        },
+        "interfaceStatus": {
+            "expressions": [
+                "(?<date>[a-zA-Z]+(?:\\s+)?\\d+(?: \\d{4})?) (?<clock>\\d{1,2}\\:\\d{1,2}\\:\\d{1,2}(?:\\.\\d+)?)(?:\\s\\w+)?: (?<facility>\\%\\S+): Interface (?<interface>\\S+), changed state to (?<state>up|down)"
+            ],
+            "localKey": "",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        },
+        "messages": {
+            "expressions": [
+                "(?<date>[a-zA-Z]+(?:\\s+)?\\d+(?: \\d{4})?) (?<clock>\\d{1,2}\\:\\d{1,2}\\:\\d{1,2}(?:\\.\\d+)?)(?:\\s\\w+)?: (?<facility>\\%\\S+): (?<message>.+)"
+            ],
+            "localKey": "",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {
+        "generateLocalKey": true
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "IOS_show_logging"
+    },
+    "@exportedInstanceId": "698eab26-c5a2-458f-be9a-e224183ac1d4",
+    "@id": "698eab26-c5a2-458f-be9a-e224183ac1d4",
+    "@name": "IOS_show_logging",
+    "@description": ""
+}

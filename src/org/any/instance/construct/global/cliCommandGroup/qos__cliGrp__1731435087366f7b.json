@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@id": "a2ae06a2-6fa3-4fb0-90f3-3f6a079111b6",
+    "ignoreDelete": true,
+    "regEx": "qos class-fcoe|qos match-any class-default|qos match-any class-all-flood|qos match-any class-ip-multicast|queuing class-fcoe|queuing class-default|queuing class-all-flood|queuing class-ip-multicast|network-qos class-fcoe|network-qos class-default|network-qos class-all-flood|network-qos class-ip-multicast",
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ClassMap__cli__1731435087366d62f.json"
+        ]
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "a2ae06a2-6fa3-4fb0-90f3-3f6a079111b6",
+    "@name": "qos__cliGrp__1731435087366f7b",
+    "@description": ""
+}

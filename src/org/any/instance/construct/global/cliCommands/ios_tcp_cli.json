@@ -1,0 +1,19 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "ip tcp synwait-time 10"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_tcp_cli"
+    },
+    "@exportedInstanceId": "493574db-47ba-4e3a-84bc-4cad4fc89cb9",
+    "@id": "493574db-47ba-4e3a-84bc-4cad4fc89cb9",
+    "@name": "ios_tcp_cli",
+    "@description": ""
+}

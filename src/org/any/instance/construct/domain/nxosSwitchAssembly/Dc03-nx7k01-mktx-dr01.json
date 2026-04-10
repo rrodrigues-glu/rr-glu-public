@@ -1,0 +1,83 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/nxosSwitchAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "aaa": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/aaa/nxos_aaa-vrf.json"
+                }
+            },
+            "banner": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/banner/nxos_banner.json"
+                }
+            },
+            "dns": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/dns/nxos_dns.json"
+                }
+            },
+            "globals": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/globals/nxosSwitch_globals.json"
+                }
+            },
+            "interface": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/interface/nxos_interface.json"
+                }
+            },
+            "ntp": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/ntp/nxos_ntp.json"
+                }
+            },
+            "snmp": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/snmp/nxos_snmp.json"
+                }
+            },
+            "username": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/username/nxos_username.json"
+                }
+            },
+            "qos": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/qos/nxos_qos.json"
+                }
+            },
+            "netflow": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/netflow/nxos_netflow.json"
+                }
+            },
+            "routing": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/routing/nxos_routing.json"
+                }
+            },
+            "syslog": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/syslog/nxos_syslog.json"
+                }
+            }
+        },
+        "interfaces": {},
+        "boot": {
+            "firmware": {}
+        },
+        "state": {
+            "assessment": {}
+        }
+    },
+    "@source": {
+        "instanceName": "Dc03-nx7k01-mktx-dr01"
+    },
+    "@exportedInstanceId": "f5844558-1ec5-400f-9a7d-d30325e98311",
+    "@id": "f5844558-1ec5-400f-9a7d-d30325e98311",
+    "@name": "Dc03-nx7k01-mktx-dr01",
+    "@description": ""
+}

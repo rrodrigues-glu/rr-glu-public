@@ -1,0 +1,22 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "route-map rmap_pbr permit 10",
+        " match ip address acl_pbr-data",
+        " set ip next-hop peer-address",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_pbr-rmap_cli"
+    },
+    "@exportedInstanceId": "16862fc3-95cb-4309-947e-db6871cf159b",
+    "@id": "16862fc3-95cb-4309-947e-db6871cf159b",
+    "@name": "ios_pbr-rmap_cli",
+    "@description": ""
+}

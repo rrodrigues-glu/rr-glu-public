@@ -1,0 +1,18 @@
+{
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_NtpAgent-Rubb1.json"
+    },
+    "cliCommands": [
+        "ntp source Loopback0"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "c24b4e79-73be-4072-8dc7-d2b6d5676bd8",
+    "@id": "c24b4e79-73be-4072-8dc7-d2b6d5676bd8",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "ios_ntp-server_cli-Rubb1",
+    "@description": ""
+}

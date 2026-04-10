@@ -1,0 +1,21 @@
+{
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Telnet.json"
+    },
+    "cliCommands": [
+        "no telnet server enable"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@description": "",
+    "@source": {
+        "instanceName": "nxos_telnet-cli"
+    },
+    "@exportedInstanceId": "e904d4e3-0e6b-49a9-9ceb-023565285c46",
+    "@id": "e904d4e3-0e6b-49a9-9ceb-023565285c46",
+    "@name": "nxos_telnet-cli"
+}

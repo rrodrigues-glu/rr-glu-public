@@ -1,0 +1,18 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "e38449c4-8bfa-4847-a629-e93e069f1d6a",
+    "item": {},
+    "cliCommands": [
+        "username test secret 5 $1$Jwa/$zxhhEa9dZKG306U7oTt4k.",
+        "username testuser password 0 dskfjdkfjdklfjdskfj",
+        "username gluware secret 5 $1$3aft$77Gn4o.FpQPVW8kvA1a7B/",
+        "username cisco privilege 15 secret 5 $1$sL7k$c4XUOh.NWFiuK3pfmyIHW/",
+        "username glue_sqa privilege 15 secret 5 $1$8VSY$NTTC6kf0ACweeIA9/L9yJ0",
+        "username mytestuser secret 5 $1$UPV/$fnr1c9Ms3pqtP9WUwtlzD."
+    ],
+    "@exportedInstanceId": "e38449c4-8bfa-4847-a629-e93e069f1d6a",
+    "@name": "Username__cli__1665576829596cc96",
+    "@description": ""
+}

@@ -1,0 +1,19 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "username $context.users[*].name privilege 15 secret 0 $context.users[*].password"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_aaa-username_cli"
+    },
+    "@exportedInstanceId": "3baf4526-9496-412a-abc0-b3a4204808e7",
+    "@id": "3baf4526-9496-412a-abc0-b3a4204808e7",
+    "@name": "ios_aaa-username_cli",
+    "@description": ""
+}

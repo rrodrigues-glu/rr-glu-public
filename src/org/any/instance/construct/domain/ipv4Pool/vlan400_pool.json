@@ -1,0 +1,30 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/ipv4Pool.jtype"
+    },
+    "description": "",
+    "type": "ipv4",
+    "summary": "10.10.40.0/24",
+    "reservations": [],
+    "ranges": [
+        {
+            "name": {
+                "@ref": "/org/instance/construct/global/subnetRange/reserved_subnet.json"
+            },
+            "ips": [
+                "10.10.40.10-10.10.40.254"
+            ]
+        }
+    ],
+    "allocationMode": "hostBased",
+    "options": {
+        "oversubscribingMode": false
+    },
+    "@source": {
+        "instanceName": "vlan400_pool"
+    },
+    "@exportedInstanceId": "5da1dee2-707e-4a9a-bbf2-5eb1e1bb6c71",
+    "@id": "5da1dee2-707e-4a9a-bbf2-5eb1e1bb6c71",
+    "@name": "vlan400_pool",
+    "@description": ""
+}

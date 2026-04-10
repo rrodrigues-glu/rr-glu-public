@@ -1,0 +1,24 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": ".+",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/nxos_mpls-ldp-cli.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "@source": {
+        "instanceName": "nxos_mpls-ldp_group"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "1a3cdebd-8b6a-4bc9-a502-c0b4b7fb1b39",
+    "@id": "1a3cdebd-8b6a-4bc9-a502-c0b4b7fb1b39",
+    "@name": "nxos_mpls-ldp_group",
+    "@description": ""
+}

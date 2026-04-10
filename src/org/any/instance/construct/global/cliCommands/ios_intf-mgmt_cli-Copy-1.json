@@ -1,0 +1,20 @@
+{
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Intf2_modified-Copy-1.json"
+    },
+    "cliCommands": [
+        "interface $context.portMap[*].name",
+        " description :W3:{$discover.description.DesPart2}",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "0e8b231b-9d40-4b29-8a06-a47c662c005e",
+    "@id": "0e8b231b-9d40-4b29-8a06-a47c662c005e",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "ios_intf-mgmt_cli-Copy-1",
+    "@description": ""
+}

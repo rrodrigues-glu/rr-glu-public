@@ -1,0 +1,23 @@
+{
+    "cmd": "show ip sla summary",
+    "groupName": "sla",
+    "discover": {
+        "status": {
+            "expressions": [
+                "\\^(?<slaid>[0-9]+)\\s+\\S+\\s+\\S+\\s+\\S+\\s+(?!OK\\b)(?<Return>\\S+)"
+            ],
+            "localKey": "slaid",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {},
+    "rootEntry": "yes",
+    "@exportedInstanceId": "650ffd84-fa3e-43ca-ad38-8bb261949516",
+    "@id": "650ffd84-fa3e-43ca-ad38-8bb261949516",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "@name": "IOS_show_ip_sla_summary",
+    "@description": ""
+}

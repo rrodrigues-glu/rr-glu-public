@@ -1,0 +1,57 @@
+{
+    "domains": {
+        "modules": {
+            "banner": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/banner/banner__1665576295055.json"
+                }
+            },
+            "dns": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/dns/dns__1665576295055.json"
+                }
+            },
+            "interface": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/interface/ios_interface.json"
+                }
+            },
+            "ntp": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/ntp/ntp__1665576295055.json"
+                }
+            },
+            "security": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/security/security__1665576295055.json"
+                }
+            },
+            "syslog": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/syslog/syslog__1665576295055.json"
+                }
+            },
+            "username": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/username/username__1665576295055.json"
+                }
+            },
+            "vrfs": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/vrfs/vrfs__1665576295055.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "state": {
+        "assessment": {}
+    },
+    "@exportedInstanceId": "98e80dd3-0a5f-41ab-af49-deaf5a1b1311",
+    "@id": "98e80dd3-0a5f-41ab-af49-deaf5a1b1311",
+    "@type": {
+        "ref": "/sys/type/construct/domain/iosRouterAssembly.jtype"
+    },
+    "@name": "iosRouter__CSR",
+    "@description": ""
+}

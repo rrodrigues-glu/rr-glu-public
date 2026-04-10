@@ -1,0 +1,32 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStatePolicy.jtype"
+    },
+    "list": [
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/Aireos_show_cpu.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        },
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/Aireos_show_memory_summary.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        }
+    ],
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "Aireos_get_resource_usage"
+    },
+    "privilegeMode": false,
+    "@exportedInstanceId": "7db1d244-9221-4dab-97c0-1da43e8cabbe",
+    "@id": "7db1d244-9221-4dab-97c0-1da43e8cabbe",
+    "@name": "Aireos_get_resource_usage",
+    "@description": ""
+}

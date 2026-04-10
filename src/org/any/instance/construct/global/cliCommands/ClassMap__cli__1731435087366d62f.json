@@ -1,0 +1,33 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "2b1cf87a-5e72-454e-a2b6-fa848cbbc6f3",
+    "item": {},
+    "cliCommands": [
+        "class-map type qos class-fcoe",
+        "class-map type qos match-any class-default",
+        "class-map type qos match-any class-all-flood",
+        "class-map type qos match-any class-ip-multicast",
+        "class-map type queuing class-fcoe",
+        "  match qos-group 1",
+        "class-map type queuing class-default",
+        "  match qos-group 0",
+        "class-map type queuing class-all-flood",
+        "  match qos-group 2",
+        "class-map type queuing class-ip-multicast",
+        "  match qos-group 2",
+        "class-map type network-qos class-fcoe",
+        "  match qos-group 1",
+        "class-map type network-qos class-default",
+        "  match qos-group 0",
+        "class-map type network-qos class-all-flood",
+        "  match qos-group 2",
+        "class-map type network-qos class-ip-multicast",
+        "  match qos-group 2",
+        ""
+    ],
+    "@exportedInstanceId": "2b1cf87a-5e72-454e-a2b6-fa848cbbc6f3",
+    "@name": "ClassMap__cli__1731435087366d62f",
+    "@description": ""
+}

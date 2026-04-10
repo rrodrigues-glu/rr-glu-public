@@ -1,0 +1,41 @@
+{
+    "configState": "managed",
+    "entryConnection": {
+        "connectionMethod": "cliConnection",
+        "name": "aci",
+        "ip": "10.150.1.24",
+        "trustAnyHttpsCert": false,
+        "srvProvider": "cisco_APIC",
+        "credentials": {
+            "@ref": "/secret/sys/credentials/deviceUserPass/admin.json"
+        }
+    },
+    "associations": {
+        "provider": "local"
+    },
+    "provisioning": {
+        "type": "advanced"
+    },
+    "options": {
+        "connectionEnabled": true,
+        "previewMode": false,
+        "forcedAttachedStorage": false
+    },
+    "aciController": {
+        "enabled": true
+    },
+    "apiEndpoint": {
+        "enabled": true
+    },
+    "controlType": "controller",
+    "site": {
+        "@ref": "/org/instance/construct/domain/location/Romualdo.json"
+    },
+    "@exportedInstanceId": "9d0bc6c8-0daf-4cd4-9a5e-43aec45eebfd",
+    "@id": "9d0bc6c8-0daf-4cd4-9a5e-43aec45eebfd",
+    "@type": {
+        "ref": "/sys/type/construct/node/aciController.jtype"
+    },
+    "@name": "QTS-APIC-1",
+    "@description": ""
+}

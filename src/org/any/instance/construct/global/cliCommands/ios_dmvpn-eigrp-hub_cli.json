@@ -1,0 +1,45 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "router eigrp dmvpn",
+        " !",
+        " address-family ipv4 unicast autonomous-system 9999",
+        "  !",
+        "  af-interface default",
+        "   passive-interface",
+        "  exit-af-interface",
+        "  !",
+        "  af-interface Tunnel$context.networks[*].overlayNetwork.id",
+        "   hello-interval 20",
+        "   hold-time 60",
+        "   no passive-interface",
+        "   no split-horizon",
+        "  exit-af-interface",
+        "  !",
+        "  topology base",
+        "   default-metric 10000 100 255 100 1500",
+        "   distribute-list route-map rmap-routing-TAG-DC-ROUTES-TO-TUNNEL out Tunnel$context.networks[*].overlayNetwork.id",
+        "   redistribute ospf 100 metric 10000 100 255 100 1500 route-map rmap-routing-OSPF-TO-EIGRP",
+        "   summary-metric 0.0.0.0/0 1000000 1 255 0 1500 distance 250",
+        "   summary-metric 10.0.0.0/8 1000000 1 255 0 1500 distance 250",
+        "  exit-af-topology",
+        "  network $context.networks[*].overlayIntf.ipv4.subnet.subnetId $context.networks[*].overlayIntf.ipv4.subnet.wildCardMask",
+        "  network $context.portMap.MGNT1.ipv4.subnet.subnetId $context.portMap.MGNT1.ipv4.subnet.wildCardMask",
+        "  eigrp router-id $context.portMap.MGNT1.ipv4.subnet.ipAddress",
+        " exit-address-family",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_dmvpn-eigrp-hub_cli"
+    },
+    "@exportedInstanceId": "17f6cb53-f99f-492f-8f27-ff1e7cd83bdd",
+    "@id": "17f6cb53-f99f-492f-8f27-ff1e7cd83bdd",
+    "@name": "ios_dmvpn-eigrp-hub_cli",
+    "@description": ""
+}

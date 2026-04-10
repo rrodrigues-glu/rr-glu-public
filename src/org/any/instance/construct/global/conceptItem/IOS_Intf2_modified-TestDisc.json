@@ -1,0 +1,41 @@
+{
+    "name": "Intf",
+    "vendors": {
+        "cisco": {
+            "type": [
+                "ios"
+            ],
+            "level": null,
+            "note": null
+        }
+    },
+    "showCmds": [
+        "sh run | sec interface"
+    ],
+    "keyCliLine": "interface (.+)",
+    "rootEntryFlag": false,
+    "mode": "basic",
+    "boundaries": {
+        "start": null
+    },
+    "discover": {
+        "description": {
+            "expressions": [
+                "description\\s+(?<node>:N1:)(?<desc>.+)"
+            ]
+        },
+        "address": {
+            "expressions": [
+                "ip address (?<ip3oct>\\S+)\\.\\d+\\s"
+            ]
+        }
+    },
+    "removeSyntax": {},
+    "@exportedInstanceId": "e4e230e5-142c-4ad9-8611-0cb5edf070e2",
+    "@id": "e4e230e5-142c-4ad9-8611-0cb5edf070e2",
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "@name": "IOS_Intf2_modified-TestDisc",
+    "@description": ""
+}

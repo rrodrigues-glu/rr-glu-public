@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show interface status | inc connected",
+    "groupName": "Connected",
+    "discover": {
+        "interfaces": {
+            "expressions": [
+                "(?<interface>^[\\w\\/]+)\\s+(?<description>.+)\\s+(?<status>connected)\\s+(?<vlan>[\\w-]+)\\s+(?<duplex>[\\w-]+)\\s+(?<speed>[\\w-]+)\\s+(?<type>[\\w-]+)"
+            ],
+            "localKey": "interface",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {
+        "generateLocalKey": false
+    },
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_show_int_status_connected"
+    },
+    "@exportedInstanceId": "9f45b200-02a1-4b3a-a6b7-219b03e073bf",
+    "@id": "9f45b200-02a1-4b3a-a6b7-219b03e073bf",
+    "@name": "NXOS_OSM_show_int_status_connected",
+    "@description": ""
+}

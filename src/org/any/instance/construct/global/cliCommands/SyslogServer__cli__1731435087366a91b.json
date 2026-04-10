@@ -1,0 +1,13 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "890fb844-0eae-4d34-988e-bc5a90558fbf",
+    "item": {},
+    "cliCommands": [
+        "logging event link-status default"
+    ],
+    "@exportedInstanceId": "890fb844-0eae-4d34-988e-bc5a90558fbf",
+    "@name": "SyslogServer__cli__1731435087366a91b",
+    "@description": ""
+}

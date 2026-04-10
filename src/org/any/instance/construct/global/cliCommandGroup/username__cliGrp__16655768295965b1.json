@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@id": "a4fecc4d-8007-4576-9bd0-a9d2a4af3d3e",
+    "ignoreDelete": true,
+    "regEx": "test|testuser|gluware|cisco|glue_sqa|mytestuser",
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/Username__cli__1665576829596cc96.json"
+        ]
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "a4fecc4d-8007-4576-9bd0-a9d2a4af3d3e",
+    "@name": "username__cliGrp__16655768295965b1",
+    "@description": ""
+}

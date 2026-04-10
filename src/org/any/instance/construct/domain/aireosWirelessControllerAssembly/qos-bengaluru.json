@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/aireosWirelessControllerAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "qos": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/qos/aireos_qos-ind-bengaluru.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "state": {
+        "assessment": {}
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "qos-bengaluru"
+    },
+    "@exportedInstanceId": "c6350f31-290e-4c7f-b07f-19f2432ad0de",
+    "@id": "c6350f31-290e-4c7f-b07f-19f2432ad0de",
+    "@name": "qos-bengaluru",
+    "@description": ""
+}

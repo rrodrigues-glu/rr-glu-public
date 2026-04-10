@@ -1,0 +1,59 @@
+{
+  "permissionLevel": "auditManageLevel1",
+  "rules": [
+    {
+      "severity": "MINOR",
+      "name": "Test",
+      "os": "all",
+      "source": "LATEST",
+      "type": "SIMPLE",
+      "description": "",
+      "scopeSeparateResults": false,
+      "scope": "line",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "banner login ^C",
+              "  ######################################################",
+              "  #                                                    #",
+              "  # UNAUTHORIZED ACCESS TO THIS DEVICE IS PROHIBITED   #",
+              "  # You must have explicit, authorized permission to   #",
+              "  # access or configure this device. Unauthorized      #",
+              "  # attempts and actions to access or use this system  #",
+              "  # may result in civil and/or criminal penalties.     #",
+              "  # All activities performed on this device are logged #",
+              "  # and monitored.                                     #",
+              "  #                                                    #",
+              "  ######################################################"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "enable": true,
+      "commandSet": "all",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "conceptItem": "IOS_Banner"
+    }
+  ],
+  "runLevel": "auditRunLevel1",
+  "name": "12345",
+  "description": "",
+  "tid": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+  "id": "d808043f-19b6-4d92-8648-211fecb53fe2",
+  "createdBy": "admin",
+  "createdOn": 1693307165739,
+  "updatedBy": "admin",
+  "updatedOn": 1694613658813,
+  "lastAuditErrorMsg": "",
+  "lastAuditDevicesSkippedCount": 0
+}

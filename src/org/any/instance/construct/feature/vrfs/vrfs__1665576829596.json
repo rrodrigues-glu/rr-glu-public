@@ -1,0 +1,17 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/vrfs.jtype"
+    },
+    "@id": "8a4dd4ca-92cd-484c-b08e-baad53ee7168",
+    "featureConcept": {
+        "name": "Vrfs",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/vrfs__cliGrp__16655768295963ac.json"
+            ]
+        }
+    },
+    "@exportedInstanceId": "8a4dd4ca-92cd-484c-b08e-baad53ee7168",
+    "@name": "vrfs__1665576829596",
+    "@description": ""
+}

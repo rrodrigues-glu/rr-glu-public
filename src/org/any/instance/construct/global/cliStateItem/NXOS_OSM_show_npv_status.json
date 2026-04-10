@@ -1,0 +1,31 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show npv status",
+    "groupName": "NPV",
+    "discover": {
+        "details": {
+            "expressions": [
+                "^npiv is (?<status>\\S+)",
+                "^disruptive load balancing is (?<disruptiveLB>\\S+)",
+                "^  Number of External Interfaces: (?<externalInterfaces>\\d+)",
+                "^  Number of Server Interfaces: (?<serverInterfaces>\\d+)"
+            ],
+            "localKey": "",
+            "preserveLocalKey": false,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {
+        "generateLocalKey": true
+    },
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_show_npv_status"
+    },
+    "@exportedInstanceId": "17bf4a10-8279-4b5c-a7ca-f5c11994328f",
+    "@id": "17bf4a10-8279-4b5c-a7ca-f5c11994328f",
+    "@name": "NXOS_OSM_show_npv_status",
+    "@description": ""
+}

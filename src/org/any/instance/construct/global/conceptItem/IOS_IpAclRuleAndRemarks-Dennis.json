@@ -1,0 +1,35 @@
+{
+    "name": "IpAclRuleAndRemarks",
+    "selectAVendor": {
+        "vendor": null
+    },
+    "vendors": {
+        "cisco": {
+            "type": [
+                "ios"
+            ],
+            "level": null
+        }
+    },
+    "showCmds": [
+        "sh run all | sec ^ip access-list"
+    ],
+    "keyCliLine": "ip access-list extended (\\d+)\\s.+",
+    "rootEntryFlag": false,
+    "keyLineDepth": 1,
+    "keyGroup": 2,
+    "metadata": {},
+    "mode": "advanced",
+    "boundaries": {
+        "start": null
+    },
+    "discover": {},
+    "removeSyntax": {},
+    "@exportedInstanceId": "16649980-9a10-4cc9-9b31-712bae66280e",
+    "@id": "16649980-9a10-4cc9-9b31-712bae66280e",
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "@name": "IOS_IpAclRuleAndRemarks-Dennis",
+    "@description": "Displays the configuration sections that shows all IP ACLs. Note: The ^ makes the parser ONLY display the sections that BEGIN with 'ip access-list'."
+}

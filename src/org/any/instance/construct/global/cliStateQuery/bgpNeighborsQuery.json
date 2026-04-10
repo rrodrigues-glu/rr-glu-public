@@ -1,0 +1,41 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateQuery.jtype"
+    },
+    "mode": "advanced",
+    "table": [
+        {
+            "type": "inclusiveLookup",
+            "fields": [
+                {
+                    "keyType": "regex",
+                    "key": ".+",
+                    "category": "neighbors",
+                    "field": "holdTime",
+                    "value": "120"
+                },
+                {
+                    "keyType": "regex",
+                    "key": ".+",
+                    "category": "neighbors",
+                    "field": "capability",
+                    "value": "W|R"
+                }
+            ]
+        },
+        {
+            "type": "count",
+            "category": "neighbors",
+            "operator": "gt",
+            "varType": "number",
+            "value": "3"
+        }
+    ],
+    "@source": {
+        "instanceName": "bgpNeighborsQuery"
+    },
+    "@exportedInstanceId": "12cfddfb-0ac8-4ba5-af8b-35396bf9b3e1",
+    "@id": "12cfddfb-0ac8-4ba5-af8b-35396bf9b3e1",
+    "@name": "bgpNeighborsQuery",
+    "@description": ""
+}

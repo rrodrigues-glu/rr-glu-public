@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/qosCheck.jtype"
+    },
+    "featureConcept": {
+        "name": "QoS Model for ISR4K and ASR1K",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_isr4k-asr1k-qos-acl_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_isr4k-asr1k-qos-cmap_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_isr4k-asr1k-qos-pmap_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "platform": "(ISR4.+|ASR1.+|CSR1000.+|CISCO39.+)"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_isr4k-qos"
+    },
+    "@exportedInstanceId": "51e86afc-8cbd-44bf-8a7b-45d58815d6fc",
+    "@id": "51e86afc-8cbd-44bf-8a7b-45d58815d6fc",
+    "@name": "ios_isr4k-qos",
+    "@description": ""
+}

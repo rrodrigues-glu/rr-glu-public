@@ -1,0 +1,24 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "interface $context.switchPorts[*].name",
+        " description $context.switchPorts[*].description",
+        " switchport mode access",
+        " switchport access vlan $context.switchPorts[*].settings.vlan.access",
+        " switchport voice vlan $context.switchPorts[*].settings.vlan.voice",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_access-intf_cli"
+    },
+    "@exportedInstanceId": "df8a3a81-2bf4-4374-9fa7-6390a9b85d37",
+    "@id": "df8a3a81-2bf4-4374-9fa7-6390a9b85d37",
+    "@name": "ios_access-intf_cli",
+    "@description": ""
+}

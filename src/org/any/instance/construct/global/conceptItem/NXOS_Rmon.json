@@ -1,0 +1,32 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "name": "rmon",
+    "showCmds": [
+        "sh run | sec rmon"
+    ],
+    "mode": "basic",
+    "keyCliLine": "rmon .+",
+    "rootEntryFlag": false,
+    "boundaries": {
+        "start": null
+    },
+    "discover": {},
+    "removeSyntax": {},
+    "vendors": {
+        "cisco": {
+            "type": [
+                "nxos"
+            ],
+            "level": null
+        }
+    },
+    "@source": {
+        "instanceName": "NXOS_Rmon"
+    },
+    "@exportedInstanceId": "6f588c2d-f3b3-405a-b53f-50bf25ebdb62",
+    "@id": "6f588c2d-f3b3-405a-b53f-50bf25ebdb62",
+    "@name": "NXOS_Rmon",
+    "@description": ""
+}

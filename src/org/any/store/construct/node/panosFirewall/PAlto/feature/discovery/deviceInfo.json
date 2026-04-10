@@ -1,0 +1,194 @@
+{
+    "hostname": "fw-panosDev-02",
+    "vendor": "paloalto",
+    "os": "panos",
+    "path": "/sys/jnib/features/deviceDetect/paloalto/panos/",
+    "sku": "PA-3260",
+    "software": {
+        "version": "9.1.9",
+        "major": "9",
+        "minor": "1",
+        "revision": "9",
+        "patch": "",
+        "build": "",
+        "train": ""
+    },
+    "hardware": {
+        "serialNumber": "016401002775",
+        "sku": "PA-3260"
+    },
+    "detectedSerialNumber": "016401002775",
+    "uptime": "59d18h35m03s",
+    "type": {
+        "name": "panosFirewall",
+        "base": "baseFirewall"
+    },
+    "licenses": {},
+    "portsInfo": {
+        "ports": {
+            "ethernet1/1": {
+                "operational": {
+                    "status": "down",
+                    "type": "RJ45",
+                    "speed": "1Gbps"
+                },
+                "configured": {
+                    "enabled": true,
+                    "speed": "auto",
+                    "duplex": "auto"
+                },
+                "type": "l2"
+            },
+            "ethernet1/10": {
+                "operational": {
+                    "status": "down",
+                    "type": "RJ45",
+                    "speed": "1Gbps"
+                },
+                "configured": {
+                    "enabled": true
+                },
+                "type": "l2"
+            },
+            "ethernet1/11": {
+                "operational": {
+                    "status": "down",
+                    "type": "RJ45",
+                    "speed": "1Gbps"
+                },
+                "configured": {
+                    "enabled": true
+                },
+                "type": "l2"
+            },
+            "ethernet1/12": {
+                "operational": {
+                    "status": "down",
+                    "type": "RJ45",
+                    "speed": "1Gbps"
+                },
+                "configured": {
+                    "enabled": true
+                },
+                "type": "l2"
+            },
+            "ethernet1/2": {
+                "operational": {
+                    "status": "down",
+                    "type": "RJ45",
+                    "speed": "1Gbps"
+                },
+                "configured": {
+                    "enabled": true,
+                    "speed": "auto",
+                    "duplex": "auto"
+                },
+                "type": "l2"
+            },
+            "ethernet1/3": {
+                "operational": {
+                    "status": "down",
+                    "type": "RJ45",
+                    "speed": "1Gbps"
+                },
+                "configured": {
+                    "enabled": true,
+                    "speed": "auto",
+                    "duplex": "auto"
+                },
+                "type": "l2"
+            },
+            "ethernet1/4": {
+                "operational": {
+                    "status": "down",
+                    "type": "RJ45",
+                    "speed": "1Gbps"
+                },
+                "configured": {
+                    "enabled": true
+                },
+                "type": "l2"
+            },
+            "ethernet1/5": {
+                "operational": {
+                    "status": "down",
+                    "type": "RJ45",
+                    "speed": "1Gbps"
+                },
+                "configured": {
+                    "enabled": true
+                },
+                "type": "l2"
+            },
+            "ethernet1/6": {
+                "operational": {
+                    "status": "down",
+                    "type": "RJ45",
+                    "speed": "1Gbps"
+                },
+                "configured": {
+                    "enabled": true
+                },
+                "type": "l2"
+            },
+            "ethernet1/7": {
+                "operational": {
+                    "status": "down",
+                    "type": "RJ45",
+                    "speed": "1Gbps"
+                },
+                "configured": {
+                    "enabled": true
+                },
+                "type": "l2"
+            },
+            "ethernet1/8": {
+                "operational": {
+                    "status": "down",
+                    "type": "RJ45",
+                    "speed": "1Gbps"
+                },
+                "configured": {
+                    "enabled": true
+                },
+                "type": "l2"
+            },
+            "ethernet1/9": {
+                "operational": {
+                    "status": "down",
+                    "type": "RJ45",
+                    "speed": "1Gbps"
+                },
+                "configured": {
+                    "enabled": true
+                },
+                "type": "l2"
+            },
+            "eth0": {
+                "type": "l3",
+                "operational": {
+                    "macAddress": "08:66:1f:01:75:46",
+                    "ipv4Address": "10.150.4.2",
+                    "type": "logical",
+                    "speed": "1000 Mbps",
+                    "status": "up",
+                    "duplex": "full"
+                },
+                "configured": {
+                    "enabled": true
+                }
+            }
+        },
+        "portSummary": {
+            "switchports": {
+                "total": 12,
+                "use": 0,
+                "free": 12
+            }
+        },
+        "recordTime": {
+            "utcTime": 1737392906578,
+            "utcDateTime": "Mon, 20 Jan 2025 17:08:26 GMT"
+        }
+    }
+}

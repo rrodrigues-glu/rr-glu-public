@@ -1,0 +1,20 @@
+{
+    "featureConcept": {
+        "name": "test2",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_intf-wan_grp-RomADD.json"
+            ]
+        }
+    },
+    "form": {
+        "intf": {}
+    },
+    "@exportedInstanceId": "284504dc-48e9-4a2f-ac46-16e258b436e6",
+    "@id": "284504dc-48e9-4a2f-ac46-16e258b436e6",
+    "@type": {
+        "ref": "/sys/type/construct/feature/interface.jtype"
+    },
+    "@name": "ios_interface-RRAddInt",
+    "@description": ""
+}

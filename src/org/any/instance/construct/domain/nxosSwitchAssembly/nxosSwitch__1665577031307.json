@@ -1,0 +1,44 @@
+{
+    "domains": {
+        "modules": {
+            "banner": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/banner/banner__1665577031307.json"
+                }
+            },
+            "qos": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/qos/qos__1665577031307.json"
+                }
+            },
+            "security": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/security/security__1665577031307.json"
+                }
+            },
+            "snmp": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/snmp/snmp__1665577031307.json"
+                }
+            },
+            "syslog": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/syslog/syslog__1665577031307.json"
+                }
+            },
+            "username": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/username/username__1665577031307.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "@type": {
+        "ref": "/sys/type/construct/domain/nxosSwitchAssembly.jtype"
+    },
+    "@id": "237e82f2-27bb-41b8-9429-9dc0249a2764",
+    "@exportedInstanceId": "237e82f2-27bb-41b8-9429-9dc0249a2764",
+    "@name": "nxosSwitch__1665577031307",
+    "@description": ""
+}

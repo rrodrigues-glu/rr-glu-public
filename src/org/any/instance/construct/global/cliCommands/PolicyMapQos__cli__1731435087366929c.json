@@ -1,0 +1,32 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@id": "39eda4fe-c531-4b28-b944-99b9b32a6051",
+    "item": {},
+    "cliCommands": [
+        "policy-map type qos default-in-policy",
+        "  class class-default",
+        "policy-map type qos fcoe-default-in-policy",
+        "  class class-fcoe",
+        "    set qos-group 1",
+        "  class class-default",
+        "policy-map type network-qos default-nq-policy",
+        "  class type network-qos class-default",
+        "policy-map type network-qos fcoe-default-nq-policy",
+        "  class type network-qos class-fcoe",
+        "    pause no-drop",
+        "    mtu 2158",
+        "  class type network-qos class-default",
+        "policy-map type network-qos fcoe-default-nq-policy-jumbo",
+        "  class type network-qos class-fcoe",
+        "    pause no-drop",
+        "    mtu 2158",
+        "  class type network-qos class-default",
+        "    mtu 9216",
+        ""
+    ],
+    "@exportedInstanceId": "39eda4fe-c531-4b28-b944-99b9b32a6051",
+    "@name": "PolicyMapQos__cli__1731435087366929c",
+    "@description": ""
+}

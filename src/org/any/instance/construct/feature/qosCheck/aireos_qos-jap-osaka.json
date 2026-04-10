@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/qosCheck.jtype"
+    },
+    "featureConcept": {
+        "name": "QoS Model for AIR5508 Osaka Japan",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/aireos_qos_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/aireos_wlan-qos-4_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "platform": "AIR-(CT|WLC).+"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "aireos_qos-jap-osaka"
+    },
+    "@exportedInstanceId": "021cb393-45f8-40de-a534-b705f16df4c6",
+    "@id": "021cb393-45f8-40de-a534-b705f16df4c6",
+    "@name": "aireos_qos-jap-osaka",
+    "@description": ""
+}

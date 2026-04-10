@@ -1,0 +1,24 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": "acl.pbr",
+    "ignoreDelete": false,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_pbr-acl_cli.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "@source": {
+        "instanceName": "ios_pbr-acl_grp"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "936286e9-8289-461c-baa2-99fa3b14b212",
+    "@id": "936286e9-8289-461c-baa2-99fa3b14b212",
+    "@name": "ios_pbr-acl_grp",
+    "@description": ""
+}

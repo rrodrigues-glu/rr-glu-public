@@ -1,0 +1,19 @@
+{
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Intf2-Rom.json"
+    },
+    "cliCommands": [
+        "interface $context.portMap[*].name",
+        " description :W3:{$discover.description.desc}"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "4cbdfd3e-0da5-457f-92de-1497ccb2c8b3",
+    "@id": "4cbdfd3e-0da5-457f-92de-1497ccb2c8b3",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "ios_intf-wan_cli",
+    "@description": ""
+}

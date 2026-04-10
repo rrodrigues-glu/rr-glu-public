@@ -1,0 +1,17 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliMetadata.jtype"
+    },
+    "META-DATA": {
+        "reset": {
+            "type": "anyChange"
+        }
+    },
+    "@source": {
+        "instanceName": "JUNOS_PolicyOptions_cliMetadata"
+    },
+    "@exportedInstanceId": "ca509629-6c58-42be-82e6-04357cdf863b",
+    "@id": "ca509629-6c58-42be-82e6-04357cdf863b",
+    "@name": "JUNOS_PolicyOptions_cliMetadata-Copy-1",
+    "@description": ""
+}

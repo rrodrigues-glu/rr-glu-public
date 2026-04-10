@@ -1,0 +1,157 @@
+{
+    "hostname": "SQA-4431",
+    "vendor": "cisco",
+    "os": "ios",
+    "path": "/sys/jnib/features/deviceDetect/cisco/ios/",
+    "sku": "ISR4431/K9",
+    "software": {
+        "version": "16.6.7",
+        "major": "16",
+        "minor": "6",
+        "revision": "7",
+        "train": "",
+        "build": "",
+        "patch": "",
+        "apiVersion": "16.6.7",
+        "image": "isr4400-universalk9.16.06.07.SPA.bin",
+        "drive": "bootflash:",
+        "routingMode": "autonomous"
+    },
+    "hardware": {
+        "serialNumber": "FGL181213D7",
+        "sku": "ISR4431/K9",
+        "chassis": {
+            "R0": {
+                "sku": "ISR4431/K9",
+                "serialNumber": "FOC18094C26"
+            }
+        },
+        "components": {
+            "fans": [
+                {
+                    "description": "Cisco ISR4430 Fan Assembly",
+                    "label": "Fan",
+                    "location": {
+                        "path": "n/s",
+                        "type": "n/s"
+                    },
+                    "serialNumber": "none",
+                    "sku": "ACS-4430-FANASSY"
+                }
+            ],
+            "powerSupplies": [
+                {
+                    "description": "Unknown Power Supply",
+                    "label": "Power Supply",
+                    "location": {
+                        "path": "0",
+                        "type": "module"
+                    },
+                    "serialNumber": "none",
+                    "sku": "ISR4XXX-PWR-UNKNOWN"
+                }
+            ]
+        },
+        "family": "ISR",
+        "series": "4400"
+    },
+    "detectedSerialNumber": "FGL181213D7",
+    "uptime": "5d8h31m",
+    "chassis": {
+        "R0": {
+            "sku": "ISR4431/K9",
+            "serialNumber": "FOC18094C26"
+        }
+    },
+    "type": {
+        "name": "iosRouter",
+        "base": "wanRouter"
+    },
+    "licenses": [
+        {
+            "name": "appx",
+            "k9": true,
+            "inUse": true,
+            "eval": false,
+            "rtu": true
+        },
+        {
+            "name": "uc",
+            "k9": true,
+            "inUse": true,
+            "eval": false,
+            "rtu": true
+        },
+        {
+            "name": "security",
+            "k9": true,
+            "inUse": true,
+            "eval": false,
+            "rtu": true
+        },
+        {
+            "name": "FoundationSuite",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "AdvUCSuite",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "cme-srst",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "throughput",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        }
+    ],
+    "portsInfo": {
+        "ports": {
+            "GigabitEthernet0/0/0": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "c0:67:af:94:ef:10",
+                    "phyMacAddress": "c0:67:af:94:ef:10",
+                    "ipv4Address": "10.150.1.44/27"
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.150.1.44/27",
+                    "enabled": true
+                }
+            }
+        },
+        "portSummary": {
+            "switchports": {
+                "total": 0,
+                "use": 0,
+                "free": 0
+            }
+        },
+        "recordTime": {
+            "utcTime": 1737392881757,
+            "utcDateTime": "Mon, 20 Jan 2025 17:08:01 GMT"
+        }
+    }
+}

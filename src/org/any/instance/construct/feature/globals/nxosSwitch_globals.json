@@ -1,0 +1,41 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/globals.jtype"
+    },
+    "featureConcept": {
+        "name": "Global Services Configuration",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/nxos_ssh-group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_logging-lnkStatus-group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_vpc-domain-group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_cfs-group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_logConsole-group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_policing-group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_verify-fragment-group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_line-vty-con-group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_vtp_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_boot_group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_bfd-group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_monitor-group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_vdc_group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_crypto_group.json",
+                "/org/instance/construct/global/cliCommandGroup/nxos_keychain-group.json"
+            ]
+        }
+    },
+    "form": {
+        "globals": {
+            "hostName": true,
+            "domainName": "dc03.mktx.net",
+            "ip": true
+        }
+    },
+    "@source": {
+        "instanceName": "nxosSwitch_globals"
+    },
+    "@exportedInstanceId": "39fac39f-b022-4c0b-b73e-4f7e74ac78e6",
+    "@id": "39fac39f-b022-4c0b-b73e-4f7e74ac78e6",
+    "@name": "nxosSwitch_globals",
+    "@description": ""
+}

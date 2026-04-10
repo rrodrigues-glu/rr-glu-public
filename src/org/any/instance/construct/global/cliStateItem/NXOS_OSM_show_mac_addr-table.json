@@ -1,0 +1,28 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "sh mac address-table dynamic",
+    "groupName": "MACDynamic",
+    "discover": {
+        "table": {
+            "expressions": [
+                "(?<entryType>^\\*|^\\+|^G|^R|^O)\\s+(?<vlan>\\d+)\\s+(?<mac>[0-9A-Fa-f]+\\.[0-9A-Fa-f]+\\.[0-9A-Fa-f]+)\\s+dynamic\\s+(?<age>\\d+)\\s+F\\s+F\\s+(?<interface>\\S+)"
+            ],
+            "localKey": "mac",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {
+        "generateLocalKey": false
+    },
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_show_mac_addr-table"
+    },
+    "@exportedInstanceId": "397e95c5-de8a-40c9-9e3f-998923488564",
+    "@id": "397e95c5-de8a-40c9-9e3f-998923488564",
+    "@name": "NXOS_OSM_show_mac_addr-table",
+    "@description": ""
+}

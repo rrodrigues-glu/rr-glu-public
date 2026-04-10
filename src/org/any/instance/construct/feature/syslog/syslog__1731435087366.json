@@ -1,0 +1,23 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/syslog.jtype"
+    },
+    "@id": "74e2110b-b5d8-404b-b23c-cb159ce1018d",
+    "featureConcept": {
+        "name": "Syslog Feature",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/syslog__cliGrp__1731435087366638.json"
+            ]
+        }
+    },
+    "form": {
+        "syslog": {
+            "level": "debugging",
+            "bufferSize": null
+        }
+    },
+    "@exportedInstanceId": "74e2110b-b5d8-404b-b23c-cb159ce1018d",
+    "@name": "syslog__1731435087366",
+    "@description": ""
+}

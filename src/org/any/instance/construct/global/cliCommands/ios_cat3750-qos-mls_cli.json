@@ -1,0 +1,53 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_MlsQos.json"
+    },
+    "cliCommands": [
+        "mls qos map policed-dscp 24 26 46 to 0",
+        "mls qos srr-queue input threshold 1 8 16",
+        "mls qos srr-queue input threshold 2 34 66",
+        "mls qos srr-queue input cos-map queue 1 threshold 2 1",
+        "mls qos srr-queue input cos-map queue 1 threshold 3 0",
+        "mls qos srr-queue input cos-map queue 2 threshold 1 2",
+        "mls qos srr-queue input cos-map queue 2 threshold 2 4 6 7",
+        "mls qos srr-queue input cos-map queue 2 threshold 3 3 5",
+        "mls qos srr-queue input dscp-map queue 1 threshold 2 9 10 11 12 13 14 15",
+        "mls qos srr-queue input dscp-map queue 1 threshold 3 0 1 2 3 4 5 6 7",
+        "mls qos srr-queue input dscp-map queue 1 threshold 3 32",
+        "mls qos srr-queue input dscp-map queue 2 threshold 1 16 17 18 19 20 21 22 23",
+        "mls qos srr-queue input dscp-map queue 2 threshold 2 33 34 35 36 37 38 39 48",
+        "mls qos srr-queue input dscp-map queue 2 threshold 2 49 50 51 52 53 54 55 56",
+        "mls qos srr-queue input dscp-map queue 2 threshold 2 57 58 59 60 61 62 63",
+        "mls qos srr-queue input dscp-map queue 2 threshold 3 24 25 26 27 28 29 30 31",
+        "mls qos srr-queue input dscp-map queue 2 threshold 3 40 41 42 43 44 45 46 47",
+        "mls qos srr-queue output cos-map queue 1 threshold 3 5",
+        "mls qos srr-queue output cos-map queue 2 threshold 3 3 6 7",
+        "mls qos srr-queue output cos-map queue 3 threshold 3 2 4",
+        "mls qos srr-queue output cos-map queue 4 threshold 2 1",
+        "mls qos srr-queue output cos-map queue 4 threshold 3 0",
+        "mls qos srr-queue output dscp-map queue 1 threshold 3 40 41 42 43 44 45 46 47",
+        "mls qos srr-queue output dscp-map queue 2 threshold 3 24 25 26 27 28 29 30 31",
+        "mls qos srr-queue output dscp-map queue 2 threshold 3 48 49 50 51 52 53 54 55",
+        "mls qos srr-queue output dscp-map queue 2 threshold 3 56 57 58 59 60 61 62 63",
+        "mls qos srr-queue output dscp-map queue 3 threshold 3 16 17 18 19 20 21 22 23",
+        "mls qos srr-queue output dscp-map queue 3 threshold 3 32 33 34 35 36 37 38 39",
+        "mls qos srr-queue output dscp-map queue 4 threshold 1 8",
+        "mls qos srr-queue output dscp-map queue 4 threshold 2 9 10 11 12 13 14 15",
+        "mls qos srr-queue output dscp-map queue 4 threshold 3 0 1 2 3 4 5 6 7"
+    ],
+    "advanced": {
+        "filter": "platform",
+        "platform": "C3750"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_cat3750-qos-mls_cli"
+    },
+    "@exportedInstanceId": "3e22991d-275e-4adc-911c-d10e4840142c",
+    "@id": "3e22991d-275e-4adc-911c-d10e4840142c",
+    "@name": "ios_cat3750-qos-mls_cli",
+    "@description": ""
+}

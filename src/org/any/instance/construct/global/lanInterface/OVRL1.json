@@ -1,0 +1,14 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/lanInterface.jtype"
+    },
+    "description": "",
+    "location": "internal",
+    "@source": {
+        "instanceName": "OVRL1"
+    },
+    "@exportedInstanceId": "c66413d0-02d3-4e27-bf6e-ef929f2365dc",
+    "@id": "c66413d0-02d3-4e27-bf6e-ef929f2365dc",
+    "@name": "OVRL1",
+    "@description": ""
+}

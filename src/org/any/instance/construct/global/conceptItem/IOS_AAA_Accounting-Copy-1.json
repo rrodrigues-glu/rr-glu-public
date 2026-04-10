@@ -1,0 +1,32 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "@description": "Displays the configuration section of the configured default AAA accounting method.",
+    "name": "AaaAccounting",
+    "vendors": {
+        "cisco": {
+            "type": [
+                "ios"
+            ],
+            "level": null
+        }
+    },
+    "showCmds": [
+        "sh run | sec ^aaa.(accounting)"
+    ],
+    "mode": "basic",
+    "keyCliLine": "aaa accounting (.+)",
+    "rootEntryFlag": false,
+    "boundaries": {
+        "start": "aaa accounting"
+    },
+    "discover": {},
+    "removeSyntax": {},
+    "@source": {
+        "instanceName": "IOS_AAA_Accounting"
+    },
+    "@exportedInstanceId": "d9d320a4-9cbc-405e-84f2-f4de84895b1b",
+    "@id": "d9d320a4-9cbc-405e-84f2-f4de84895b1b",
+    "@name": "IOS_AAA_Accounting-Copy-1"
+}

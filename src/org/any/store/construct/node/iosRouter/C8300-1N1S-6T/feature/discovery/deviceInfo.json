@@ -1,0 +1,113 @@
+{
+    "hostname": "C8300-1N1S-6T",
+    "vendor": "cisco",
+    "os": "ios",
+    "path": "/sys/jnib/features/deviceDetect/cisco/ios/",
+    "sku": "C8300-1N1S-6T",
+    "software": {
+        "version": "17.3.4a",
+        "major": "17",
+        "minor": "3",
+        "revision": "4a",
+        "train": "",
+        "build": "",
+        "patch": "",
+        "apiVersion": "17.3.4a",
+        "image": "c8000be-universalk9.17.03.04a.SPA.bin",
+        "drive": "bootflash:"
+    },
+    "hardware": {
+        "serialNumber": "FLM2633116G",
+        "sku": "C8300-1N1S-6T",
+        "chassis": {
+            "R0": {
+                "sku": "C8300-1N1S-6T",
+                "serialNumber": "FDO26162GJL"
+            }
+        },
+        "components": {
+            "fans": [
+                {
+                    "description": "Cisco C8300 1RU Fan Assembly",
+                    "label": "Fan",
+                    "location": {
+                        "path": "n/s",
+                        "type": "n/s"
+                    },
+                    "serialNumber": "none",
+                    "sku": "C8300-FAN-1R"
+                }
+            ],
+            "gbics": [],
+            "powerSupplies": [
+                {
+                    "description": "250W AC power supply for Cisco C8300 1RU",
+                    "label": "Power Supply",
+                    "location": {
+                        "path": "0",
+                        "type": "module"
+                    },
+                    "serialNumber": "LIT2629AH4U",
+                    "sku": "PWR-CC1-250WAC"
+                },
+                {
+                    "description": "250W AC power supply for Cisco C8300 1RU",
+                    "label": "Power Supply",
+                    "location": {
+                        "path": "1",
+                        "type": "module"
+                    },
+                    "serialNumber": "LIT2629AHMX",
+                    "sku": "PWR-CC1-250WAC"
+                }
+            ]
+        },
+        "family": "C",
+        "series": "8300"
+    },
+    "detectedSerialNumber": "FLM2633116G",
+    "uptime": "2y20w2d22h33m",
+    "chassis": {
+        "R0": {
+            "sku": "C8300-1N1S-6T",
+            "serialNumber": "FDO26162GJL"
+        }
+    },
+    "type": {
+        "name": "iosRouter",
+        "base": "wanRouter"
+    },
+    "licenses": [],
+    "portsInfo": {
+        "ports": {
+            "GigabitEthernet0/0/0": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "48:2e:72:11:63:f0",
+                    "phyMacAddress": "48:2e:72:11:63:f0",
+                    "ipv4Address": "10.150.1.2/27"
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.150.1.2/27",
+                    "enabled": true
+                }
+            }
+        },
+        "portSummary": {
+            "switchports": {
+                "total": 0,
+                "use": 0,
+                "free": 0
+            }
+        },
+        "recordTime": {
+            "utcTime": 1737392835268,
+            "utcDateTime": "Mon, 20 Jan 2025 17:07:15 GMT"
+        }
+    }
+}

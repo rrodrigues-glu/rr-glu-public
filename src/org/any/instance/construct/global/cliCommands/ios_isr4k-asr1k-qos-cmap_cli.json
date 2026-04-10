@@ -1,0 +1,56 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "class-map match-any voice-traffic-INBOUND",
+        " match access-group name Lync_traffic_ACL",
+        " match protocol rtp audio",
+        "!",
+        "class-map match-any video-traffic-INBOUND",
+        " match access-group name video_traffic_ACL",
+        "!",
+        "class-map match-any premium-traffic-INBOUND",
+        " match access-group name premium_traffic_ACL",
+        "!",
+        "class-map match-any default-traffic-INBOUND",
+        " match any",
+        "!",
+        "class-map match-any bulk-traffic-INBOUND",
+        " match access-group name bulk_traffic_ACL",
+        "!",
+        "! Change the DSCP values to match to the local provider. The examples below are the OneNet standards",
+        "!",
+        "class-map match-any VoIP-out",
+        " match dscp ef",
+        "!",
+        "class-map match-any Video-out",
+        " match dscp af41",
+        "!",
+        "class-map match-any Premium-out",
+        " match dscp af31",
+        "!",
+        "class-map match-any NETWORK_CONTROL",
+        " match dscp cs6 cs7",
+        "!",
+        "class-map match-any Bulk-out",
+        " match dscp af11",
+        "!",
+        "class-map match-any Default-out",
+        " match any",
+        "!"
+    ],
+    "advanced": {
+        "filter": "platform",
+        "platform": "(ISR4.+|ASR1.+|CSR1000.+|CISCO39.+)"
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_isr4k-asr1k-qos-cmap_cli"
+    },
+    "@exportedInstanceId": "0c54e411-0234-4b3e-8e51-7430fe7648ef",
+    "@id": "0c54e411-0234-4b3e-8e51-7430fe7648ef",
+    "@name": "ios_isr4k-asr1k-qos-cmap_cli",
+    "@description": ""
+}

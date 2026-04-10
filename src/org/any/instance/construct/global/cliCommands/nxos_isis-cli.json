@@ -1,0 +1,47 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "router isis DC03-CORE",
+        " bfd",
+        " net 49.0030.48B2.5330.0001.00",
+        " is-type level-2",
+        " log-adjacency-changes",
+        " spf-interval level-2 1000 50 50",
+        " lsp-gen-interval level-2 5000 50 50",
+        " address-family ipv4 unicast",
+        "router rip dns-anycast",
+        " address-family ipv4 unicast",
+        "  maximum-paths 6",
+        "  timers basic 15 45 45 30",
+        " vrf backup",
+        "  address-family ipv4 unicast",
+        "   maximum-paths 6",
+        "   timers basic 15 45 45 30",
+        " vrf corpdr",
+        "  address-family ipv4 unicast",
+        "   maximum-paths 6",
+        "   timers basic 15 45 45 30",
+        " vrf hs-drn",
+        "  address-family ipv4 unicast",
+        "   maximum-paths 6",
+        "   timers basic 15 45 45 30",
+        " vrf mpx",
+        "  address-family ipv4 unicast",
+        "   maximum-paths 6",
+        "   timers basic 15 45 45 30",
+        " flush-routes"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_isis-cli"
+    },
+    "@exportedInstanceId": "a8b886bb-3eea-4796-b9ac-8d912f9373ff",
+    "@id": "a8b886bb-3eea-4796-b9ac-8d912f9373ff",
+    "@name": "nxos_isis-cli",
+    "@description": ""
+}

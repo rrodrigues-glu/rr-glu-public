@@ -1,0 +1,24 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/security.jtype"
+    },
+    "featureConcept": {
+        "name": "Dynamic Object",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_object-intf_grp.json",
+                "/org/instance/construct/global/cliCommandGroup/ios_object-group_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "comment": null
+    },
+    "@source": {
+        "instanceName": "ios_securityObj"
+    },
+    "@exportedInstanceId": "dac62571-6a64-44a4-9c23-6583bb4c3eaa",
+    "@id": "dac62571-6a64-44a4-9c23-6583bb4c3eaa",
+    "@name": "ios_securityObj",
+    "@description": ""
+}

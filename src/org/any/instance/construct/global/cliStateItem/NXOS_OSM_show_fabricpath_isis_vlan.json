@@ -1,0 +1,17 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show fabricpath isis vlan-range",
+    "groupName": "ISIS_VLAN",
+    "discover": {},
+    "options": {},
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_show_fabricpath_isis_vlan"
+    },
+    "@exportedInstanceId": "b58dd7a5-1ab2-4044-a9b6-d7cdfa6f7f88",
+    "@id": "b58dd7a5-1ab2-4044-a9b6-d7cdfa6f7f88",
+    "@name": "NXOS_OSM_show_fabricpath_isis_vlan",
+    "@description": ""
+}

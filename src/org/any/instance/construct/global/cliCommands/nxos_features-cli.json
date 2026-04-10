@@ -1,0 +1,50 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Features.json"
+    },
+    "cliCommands": [
+        "feature tacacs+",
+        "feature scheduler",
+        "feature ospf",
+        "feature bgp",
+        "feature pim",
+        "feature pim6",
+        "feature msdp",
+        "feature rip",
+        "feature isis",
+        "feature-set mpls",
+        "feature mpls l3vpn",
+        "feature mvpn",
+        "feature mpls traffic-eng",
+        "feature mpls ldp",
+        "feature pbr",
+        "feature private-vlan",
+        "feature port-security",
+        "feature udld",
+        "feature interface-vlan",
+        "feature dot1x",
+        "feature netflow",
+        "feature hsrp",
+        "feature lacp",
+        "feature glbp",
+        "feature dhcp",
+        "feature tunnel",
+        "feature vpc",
+        "feature ptp",
+        "feature vtp",
+        "feature bfd"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_features-cli"
+    },
+    "@exportedInstanceId": "ecf774e6-c013-47b1-9366-c79fb579665f",
+    "@id": "ecf774e6-c013-47b1-9366-c79fb579665f",
+    "@name": "nxos_features-cli",
+    "@description": ""
+}

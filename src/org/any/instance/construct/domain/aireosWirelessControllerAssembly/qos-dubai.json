@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/aireosWirelessControllerAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "qos": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/qos/aireos_qos-are-dubai.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "state": {
+        "assessment": {}
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "qos-dubai"
+    },
+    "@exportedInstanceId": "addb60c2-0522-49a8-8137-8912a88b0668",
+    "@id": "addb60c2-0522-49a8-8137-8912a88b0668",
+    "@name": "qos-dubai",
+    "@description": ""
+}

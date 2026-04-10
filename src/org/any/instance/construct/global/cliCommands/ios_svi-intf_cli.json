@@ -1,0 +1,22 @@
+{
+    "item": {},
+    "cliCommands": [
+        "interface $context.portMap[*].name",
+        " description $context.portMap[*].description",
+        " ip address $context.portMap[*].ipv4.subnet.ipAddress $context.portMap[*].ipv4.subnet.subnetMask",
+        " no ip redirects",
+        " no ip unreachables",
+        " no ip proxy-arp",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "9fd9c15d-ca0a-4f1c-a2fa-89e410e5c180",
+    "@id": "9fd9c15d-ca0a-4f1c-a2fa-89e410e5c180",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "ios_svi-intf_cli",
+    "@description": ""
+}

@@ -1,0 +1,58 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/ipv4Pool.jtype"
+    },
+    "description": "Spoke Loopback0",
+    "type": "ipv4",
+    "summary": "1.1.1.0/24",
+    "subnetPrefixLength": 32,
+    "reservations": [
+        {
+            "subnet": "1.1.1.1",
+            "device": {
+                "serialNumber": "93BYWWC2EAN",
+                "intfName": {
+                    "@ref": "/org/instance/construct/global/lanInterface/MGNT1.json"
+                }
+            }
+        },
+        {
+            "subnet": "1.1.1.2",
+            "device": {
+                "serialNumber": "9S90JNP0JIR",
+                "intfName": {
+                    "@ref": "/org/instance/construct/global/lanInterface/MGNT1.json"
+                }
+            }
+        },
+        {
+            "subnet": "1.1.1.3",
+            "device": {
+                "serialNumber": "9ZLOFSVQ20V",
+                "intfName": {
+                    "@ref": "/org/instance/construct/global/lanInterface/MGNT1.json"
+                }
+            }
+        },
+        {
+            "subnet": "1.1.1.4",
+            "device": {
+                "serialNumber": "9YM4DICUYZE",
+                "intfName": {
+                    "@ref": "/org/instance/construct/global/lanInterface/MGNT1.json"
+                }
+            }
+        }
+    ],
+    "allocationMode": "subnetBased",
+    "options": {
+        "oversubscribingMode": false
+    },
+    "@source": {
+        "instanceName": "Spoke-Loopback0"
+    },
+    "@exportedInstanceId": "90ce0e8b-9429-4f7d-9c7b-0644497de5ac",
+    "@id": "90ce0e8b-9429-4f7d-9c7b-0644497de5ac",
+    "@name": "Spoke-Loopback0",
+    "@description": ""
+}

@@ -1,0 +1,51 @@
+{
+    "options": {
+        "connectionEnabled": true,
+        "previewMode": false,
+        "forcedAttachedStorage": false
+    },
+    "campusSwitch": {
+        "enabled": true
+    },
+    "site": {
+        "@ref": "/org/instance/construct/domain/location/Romualdo.json"
+    },
+    "configState": "managed",
+    "entryConnection": {
+        "connectionMethod": "cliConnection",
+        "ip": "10.150.1.12",
+        "credentials": {
+            "@ref": "/secret/sys/credentials/deviceUserPass/ciscoCred.json"
+        },
+        "port": 22,
+        "type": "ssh",
+        "terminalType": "xterm"
+    },
+    "associations": {
+        "assembly": {
+            "@ref": "/org/instance/construct/domain/iosSwitchAssembly/Username_Assembly.json"
+        },
+        "provider": "local"
+    },
+    "hardware": {
+        "vendor": "auto",
+        "expectedSerialNumber": "auto"
+    },
+    "personae": {},
+    "provisioning": {
+        "type": "advanced"
+    },
+    "persona": {
+        "type": "none"
+    },
+    "iosSwitch": {
+        "enabled": true
+    },
+    "@exportedInstanceId": "5b39c8be-2774-470e-acb0-7f9cb45a0956",
+    "@id": "5b39c8be-2774-470e-acb0-7f9cb45a0956",
+    "@type": {
+        "ref": "/sys/type/construct/node/iosSwitch.jtype"
+    },
+    "@name": "Cisco iosSwitch",
+    "@description": ""
+}

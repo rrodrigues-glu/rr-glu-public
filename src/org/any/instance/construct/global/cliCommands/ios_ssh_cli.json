@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "ip ssh version 2",
+        "ip ssh time-out 60"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_ssh_cli"
+    },
+    "@exportedInstanceId": "ce90b37a-38c9-4be6-a9a9-f6e04ae488b4",
+    "@id": "ce90b37a-38c9-4be6-a9a9-f6e04ae488b4",
+    "@name": "ios_ssh_cli",
+    "@description": ""
+}

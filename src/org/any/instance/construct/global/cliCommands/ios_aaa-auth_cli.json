@@ -1,0 +1,33 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "aaa new-model",
+        "!",
+        "aaa authentication login default group $context.aaa[*].name line",
+        "aaa authentication enable default group $context.aaa[*].name enable",
+        "aaa authorization config-commands",
+        "aaa authorization exec default group $context.aaa[*].name if-authenticated",
+        "aaa authorization commands 0 default group $context.aaa[*].name if-authenticated",
+        "aaa authorization commands 7 default group $context.aaa[*].name if-authenticated",
+        "aaa authorization commands 15 default group $context.aaa[*].name if-authenticated",
+        "aaa accounting exec default start-stop group $context.aaa[*].name",
+        "aaa accounting commands 0 default start-stop group $context.aaa[*].name",
+        "aaa accounting commands 7 default start-stop group $context.aaa[*].name",
+        "aaa accounting commands 15 default start-stop group $context.aaa[*].name",
+        "!",
+        "aaa session-id common"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_aaa-auth_cli"
+    },
+    "@exportedInstanceId": "a9cb514a-ba12-4a0a-9629-462643eec52b",
+    "@id": "a9cb514a-ba12-4a0a-9629-462643eec52b",
+    "@name": "ios_aaa-auth_cli",
+    "@description": ""
+}

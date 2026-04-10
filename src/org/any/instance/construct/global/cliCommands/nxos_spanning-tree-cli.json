@@ -1,0 +1,29 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_SpanningTree.json"
+    },
+    "cliCommands": [
+        "spanning-tree pathcost method long",
+        "spanning-tree port type network default",
+        "spanning-tree vlan 1-3790,3919-4093 priority 20480",
+        "spanning-tree vlan 1-3790,3919-4093 forward-time 9",
+        "spanning-tree vlan 1-3790,3919-4093 max-age 12",
+        "spanning-tree pseudo-information",
+        " vlan 1-3790,3919-4093 root priority 20480",
+        " vlan 1-3790,3919-4093 designated priority 20480",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_spanning-tree-cli"
+    },
+    "@exportedInstanceId": "f9623d1c-6ebb-432a-afda-7c40f9a2d868",
+    "@id": "f9623d1c-6ebb-432a-afda-7c40f9a2d868",
+    "@name": "nxos_spanning-tree-cli",
+    "@description": ""
+}

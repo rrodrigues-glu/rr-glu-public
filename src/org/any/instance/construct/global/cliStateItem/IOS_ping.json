@@ -1,0 +1,35 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "ping #context.ipAddress",
+    "groupName": "ping",
+    "discover": {
+        "rate": {
+            "expressions": [
+                "Sending \\d+, (?<pcktSize>\\d+)\\-byte ICMP Echos to (?<ipAddress>\\d+.\\d+.\\d+.\\d+), timeout is \\d+ seconds",
+                "Success rate is (?<successRate>\\d+).*"
+            ],
+            "localKey": "",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {
+        "params": [
+            {
+                "name": "ipAddress",
+                "label": "IP Address",
+                "description": "ip of server to ping"
+            }
+        ]
+    },
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "IOS_ping"
+    },
+    "@exportedInstanceId": "d0d8c956-11b2-45d3-96f1-4c6e6951999a",
+    "@id": "d0d8c956-11b2-45d3-96f1-4c6e6951999a",
+    "@name": "IOS_ping",
+    "@description": ""
+}

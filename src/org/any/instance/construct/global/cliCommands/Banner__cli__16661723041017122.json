@@ -1,0 +1,28 @@
+{
+    "item": {},
+    "cliCommands": [
+        "banner login ^C",
+        " ********************************************************************************",
+        " ********************************************************************************",
+        " ****                         !!!!! WARNING !!!!!                            ****",
+        " **** This private system is only to be used by personnel authorized by the  ****",
+        " **** Chief Information Officer of Gluware. If you have not been authorized, ****",
+        " **** use of this systems is unlawful and subject to civil and criminal      ****",
+        " **** penalties.  All connections are logged, investigated, and prosecuted.  ****",
+        " **** All log files can and will be used as evidence in court.               ****",
+        " ****           !!!!! WARNING !!!!! WARNING  !!!!! WARNING !!!!!             ****",
+        " ********************************************************************************",
+        " ********************************************************************************",
+        "^C"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "f23fa529-22d2-4af5-a0a1-0158406db5dd",
+    "@id": "f23fa529-22d2-4af5-a0a1-0158406db5dd",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "Banner__cli__16661723041017122",
+    "@description": ""
+}

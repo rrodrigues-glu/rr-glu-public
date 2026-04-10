@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@id": "009e9bff-8410-4ffb-95ff-c249bdf4c201",
+    "ignoreDelete": true,
+    "regEx": "Tunnel159001|GigabitEthernet1|GigabitEthernet2|GigabitEthernet2.10|GigabitEthernet2.20|GigabitEthernet2.30|GigabitEthernet3",
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/Intf__cli__1665576295055c59f.json"
+        ]
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "009e9bff-8410-4ffb-95ff-c249bdf4c201",
+    "@name": "security__cliGrp__16655762950559b0",
+    "@description": ""
+}

@@ -1,0 +1,28 @@
+{
+    "regEx": ".+",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_intf-mgmt_cli-ROM.json"
+        ]
+    },
+    "advanced": {
+        "renderingConditions": [
+            "$discover.description.node == :N1:"
+        ]
+    },
+    "maskCommands": [
+        "interface",
+        " description"
+    ],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "f0874e9d-3205-4f20-8cb7-283275a6c897",
+    "@id": "f0874e9d-3205-4f20-8cb7-283275a6c897",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@name": "ios_intf-mgmt_grp-Copy-1",
+    "@description": ""
+}

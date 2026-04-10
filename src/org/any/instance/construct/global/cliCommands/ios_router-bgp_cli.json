@@ -1,0 +1,27 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "router bgp 64629",
+        " bgp log-neighbor-changes",
+        " timers bgp 60 180 0",
+        " !",
+        " address-family ipv4",
+        "  network $context.portMap.DATA1.ipv4.subnet.subnetId mask $context.portMap.DATA1.ipv4.subnet.subnetMask",
+        "  network $context.portMap.DATA2.ipv4.subnet.subnetId mask $context.portMap.DATA2.ipv4.subnet.subnetMask",
+        "  network $context.portMap.MGNT1.ipv4.subnet.subnetId mask $context.portMap.MGNT1.ipv4.subnet.subnetMask",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "ios_router-bgp_cli"
+    },
+    "@exportedInstanceId": "07612c67-936d-4909-9102-fe0e8170ceb3",
+    "@id": "07612c67-936d-4909-9102-fe0e8170ceb3",
+    "@name": "ios_router-bgp_cli",
+    "@description": ""
+}

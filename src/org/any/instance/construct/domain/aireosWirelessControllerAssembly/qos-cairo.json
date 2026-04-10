@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/domain/aireosWirelessControllerAssembly.jtype"
+    },
+    "domains": {
+        "modules": {
+            "qos": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/qos/aireos_qos-egy-cairo.json"
+                }
+            }
+        }
+    },
+    "interfaces": {},
+    "state": {
+        "assessment": {}
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "qos-cairo"
+    },
+    "@exportedInstanceId": "cb8987bc-aae2-4f53-9635-8702b1324df2",
+    "@id": "cb8987bc-aae2-4f53-9635-8702b1324df2",
+    "@name": "qos-cairo",
+    "@description": ""
+}

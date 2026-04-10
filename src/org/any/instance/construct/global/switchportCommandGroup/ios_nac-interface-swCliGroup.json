@@ -1,0 +1,34 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/switchportCommandGroup.jtype"
+    },
+    "regEx": ".+",
+    "linkedFeature": {
+        "path": "/sys/type/construct/feature/nac.jtype"
+    },
+    "associatedFeatureType": "featurePath",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_nac-interface_cli.json"
+        ]
+    },
+    "maskCommands": [
+        "^interface",
+        "^authentication",
+        "^mab",
+        "^dot1x"
+    ],
+    "advanced": {
+        "renderingConditions": [
+            "$discover.vlan.accessMode"
+        ]
+    },
+    "@source": {
+        "instanceName": "ios_nac-interface-swCliGroup"
+    },
+    "@exportedInstanceId": "53fc7606-e3b5-40af-9755-2cc2271ea753",
+    "@id": "53fc7606-e3b5-40af-9755-2cc2271ea753",
+    "@name": "ios_nac-interface-swCliGroup",
+    "@description": ""
+}

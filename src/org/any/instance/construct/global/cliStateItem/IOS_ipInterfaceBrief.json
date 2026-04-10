@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show ip interface brief",
+    "rootEntry": "yes",
+    "groupName": "interfaces",
+    "discover": {
+        "status": {
+            "expressions": [
+                "(?<name>[\\.\\/\\w]+)\\s+(?<ipAddress>\\d+\\.\\d+\\.\\d+\\.\\d+|unassigned)\\s+(YES|NO)\\s+(?:NVRAM|manual)\\s+(?<status>up|down|administratively down)\\s+(?<protocolStatus>up|down)"
+            ],
+            "localKey": "name",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {},
+    "@source": {
+        "instanceName": "IOS_ipInterfaceBrief"
+    },
+    "@exportedInstanceId": "f5914f6e-d89e-4f6b-8eb9-7c91110037c2",
+    "@id": "f5914f6e-d89e-4f6b-8eb9-7c91110037c2",
+    "@name": "IOS_ipInterfaceBrief",
+    "@description": ""
+}

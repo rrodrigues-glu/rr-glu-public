@@ -1,0 +1,26 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": "plist-default.+|plist-distribute.+",
+    "ignoreDelete": false,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_dmvpn-plist-spoke-routing_cli.json"
+        ]
+    },
+    "maskCommands": [],
+    "advanced": {
+        "renderingConditions": []
+    },
+    "@source": {
+        "instanceName": "ios_dmvpn-plist-spoke-routing_grp"
+    },
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "969275f3-ba88-4959-b898-373bac9afd3a",
+    "@id": "969275f3-ba88-4959-b898-373bac9afd3a",
+    "@name": "ios_dmvpn-plist-spoke-routing_grp",
+    "@description": ""
+}

@@ -1,0 +1,20 @@
+{
+    "list": [
+        {
+            "item": {
+                "@ref": "/org/instance/construct/global/cliStateItem/IOS_show_ip_sla_summary.json"
+            },
+            "params": "",
+            "includePattern": ".+",
+            "excludePattern": ""
+        }
+    ],
+    "privilegeMode": false,
+    "@exportedInstanceId": "8ff50d03-852c-4d1f-b60e-352c1142aa0e",
+    "@id": "8ff50d03-852c-4d1f-b60e-352c1142aa0e",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStatePolicy.jtype"
+    },
+    "@name": "IOS_show_ip_sla_summary",
+    "@description": ""
+}

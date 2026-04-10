@@ -1,0 +1,25 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "regEx": "^Local-telephony-ACL$",
+    "ignoreDelete": true,
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ios_cat6500-qos-acl-sweden_cli.json"
+        ]
+    },
+    "advanced": {},
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "ios_cat6500-qos-acl-sweden_cli_grp"
+    },
+    "@exportedInstanceId": "d987ed86-7fb4-4afe-9100-579cb3efc717",
+    "@id": "d987ed86-7fb4-4afe-9100-579cb3efc717",
+    "@name": "ios_cat6500-qos-acl-sweden_cli_grp",
+    "@description": ""
+}

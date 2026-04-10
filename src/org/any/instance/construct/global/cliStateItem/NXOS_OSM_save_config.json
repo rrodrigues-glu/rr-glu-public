@@ -1,0 +1,17 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "copy run start",
+    "groupName": "copy",
+    "discover": {},
+    "options": {},
+    "rootEntry": "yes",
+    "@source": {
+        "instanceName": "NXOS_OSM_save_config"
+    },
+    "@exportedInstanceId": "e2ea438f-b3d7-45c9-a925-2c80fd340b0e",
+    "@id": "e2ea438f-b3d7-45c9-a925-2c80fd340b0e",
+    "@name": "NXOS_OSM_save_config",
+    "@description": ""
+}

@@ -1,0 +1,19 @@
+{
+    "item": {},
+    "cliCommands": [
+        "banner login ^C",
+        "Test1234",
+        "1st Concept Item",
+        "^C"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@exportedInstanceId": "9bd37eab-619f-4903-a8a2-cfa5cad17b6a",
+    "@id": "9bd37eab-619f-4903-a8a2-cfa5cad17b6a",
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "@name": "Banner__cli__Common",
+    "@description": ""
+}

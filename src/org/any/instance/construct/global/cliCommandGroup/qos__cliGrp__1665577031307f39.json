@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@id": "92ee2904-7060-4a00-9a49-da02bcc0dd8e",
+    "ignoreDelete": true,
+    "regEx": "copp-system-acl-eigrp|copp-system-acl-eigrp6|copp-system-acl-icmp|copp-system-acl-igmp|copp-system-acl-ntp|copp-system-acl-pimreg|copp-system-acl-ping|copp-system-acl-routingproto1|copp-system-acl-routingproto2|copp-system-acl-snmp|copp-system-acl-ssh|copp-system-acl-stftp|copp-system-acl-tacacsradius|copp-system-acl-telnet|copp-system-acl-v6routingProto2|copp-system-acl-v6routingproto1|copp-system-dhcp-relay|syslog",
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/AccessList__cli__16655770313077276.json"
+        ]
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "92ee2904-7060-4a00-9a49-da02bcc0dd8e",
+    "@name": "qos__cliGrp__1665577031307f39",
+    "@description": ""
+}

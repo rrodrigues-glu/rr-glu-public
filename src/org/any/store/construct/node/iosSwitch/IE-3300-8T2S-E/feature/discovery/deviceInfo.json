@@ -1,0 +1,286 @@
+{
+    "hostname": "IE-3300-8T2S-E",
+    "vendor": "cisco",
+    "os": "ios",
+    "path": "/sys/jnib/features/deviceDetect/cisco/ios/",
+    "sku": "IE-3300-8T2S",
+    "software": {
+        "version": "17.6.7",
+        "major": "17",
+        "minor": "6",
+        "revision": "7",
+        "train": "",
+        "build": "",
+        "patch": "",
+        "apiVersion": "17.6.7",
+        "image": "ie3x00-universalk9.17.06.07.SPA.bin",
+        "drive": "flash:"
+    },
+    "hardware": {
+        "serialNumber": "FCW2653Y071",
+        "sku": "IE-3300-8T2S",
+        "chassis": {
+            "0": {
+                "sku": "IE-3300-8T2S",
+                "serialNumber": "FCW2653Y071",
+                "active": true,
+                "role": "active"
+            }
+        },
+        "supervisors": 1,
+        "components": {}
+    },
+    "detectedSerialNumber": "FCW2653Y071",
+    "uptime": "19w6d1m",
+    "chassis": {
+        "0": {
+            "sku": "IE-3300-8T2S",
+            "serialNumber": "FCW2653Y071",
+            "active": true,
+            "role": "active"
+        }
+    },
+    "type": {
+        "name": "iosSwitch",
+        "base": "campusSwitch"
+    },
+    "licenses": [],
+    "portsInfo": {
+        "ports": {
+            "Vlan1": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:42:1e:51:41:0b",
+                    "phyMacAddress": "4c:42:1e:51:41:0b",
+                    "memberInterfaces": [
+                        "GigabitEthernet1/1",
+                        "GigabitEthernet1/2",
+                        "GigabitEthernet1/3",
+                        "GigabitEthernet1/4",
+                        "GigabitEthernet1/5",
+                        "GigabitEthernet1/6",
+                        "GigabitEthernet1/7",
+                        "GigabitEthernet1/8",
+                        "GigabitEthernet1/9"
+                    ]
+                },
+                "description": "",
+                "phyVirt": "virtual"
+            },
+            "Vlan10": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:42:1e:51:41:0b",
+                    "phyMacAddress": "4c:42:1e:51:41:0b",
+                    "ipv4Address": "10.150.1.8/24",
+                    "memberInterfaces": [
+                        "GigabitEthernet1/10"
+                    ]
+                },
+                "description": "",
+                "phyVirt": "virtual",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.150.1.8/24",
+                    "enabled": true
+                }
+            },
+            "GigabitEthernet1/1": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:42:1e:51:41:01",
+                    "phyMacAddress": "4c:42:1e:51:41:01",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "GigabitEthernet1/2": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:42:1e:51:41:02",
+                    "phyMacAddress": "4c:42:1e:51:41:02",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l2"
+            },
+            "GigabitEthernet1/3": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:42:1e:51:41:03",
+                    "phyMacAddress": "4c:42:1e:51:41:03",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100/1000BaseTX",
+                "type": "l2"
+            },
+            "GigabitEthernet1/4": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:42:1e:51:41:04",
+                    "phyMacAddress": "4c:42:1e:51:41:04",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100/1000BaseTX",
+                "type": "l2"
+            },
+            "GigabitEthernet1/5": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:42:1e:51:41:05",
+                    "phyMacAddress": "4c:42:1e:51:41:05",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100/1000BaseTX",
+                "type": "l2"
+            },
+            "GigabitEthernet1/6": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:42:1e:51:41:06",
+                    "phyMacAddress": "4c:42:1e:51:41:06",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100/1000BaseTX",
+                "type": "l2"
+            },
+            "GigabitEthernet1/7": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:42:1e:51:41:07",
+                    "phyMacAddress": "4c:42:1e:51:41:07",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100/1000BaseTX",
+                "type": "l2"
+            },
+            "GigabitEthernet1/8": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:42:1e:51:41:08",
+                    "phyMacAddress": "4c:42:1e:51:41:08",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100/1000BaseTX",
+                "type": "l2"
+            },
+            "GigabitEthernet1/9": {
+                "operational": {
+                    "status": "down",
+                    "duplex": "auto",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:42:1e:51:41:09",
+                    "phyMacAddress": "4c:42:1e:51:41:09",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100/1000BaseTX",
+                "type": "l2"
+            },
+            "GigabitEthernet1/10": {
+                "operational": {
+                    "status": "up",
+                    "duplex": "a-full",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "4c:42:1e:51:41:0a",
+                    "phyMacAddress": "4c:42:1e:51:41:0a",
+                    "access": {
+                        "vlanId": "10",
+                        "vlanName": "Lab-Cisco"
+                    }
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "mediaType": "10/100/1000BaseTX",
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                }
+            }
+        },
+        "portSummary": {
+            "switchports": {
+                "total": 10,
+                "use": 1,
+                "free": 9
+            }
+        },
+        "recordTime": {
+            "utcTime": 1737392839803,
+            "utcDateTime": "Mon, 20 Jan 2025 17:07:19 GMT"
+        }
+    }
+}

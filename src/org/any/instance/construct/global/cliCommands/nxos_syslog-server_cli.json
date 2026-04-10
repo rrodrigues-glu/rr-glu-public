@@ -1,0 +1,22 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "logging buffered $context.syslog.bufferSize",
+        "logging server $context.syslog.server[*].ip #context.syslog.server[*].level",
+        "logging event link-status default",
+        "logging event trunk-status default"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_syslog-server_cli"
+    },
+    "@exportedInstanceId": "69f1a4d1-dbcd-4eda-9c0e-e68784002196",
+    "@id": "69f1a4d1-dbcd-4eda-9c0e-e68784002196",
+    "@name": "nxos_syslog-server_cli",
+    "@description": ""
+}

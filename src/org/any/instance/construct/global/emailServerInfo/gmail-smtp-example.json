@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/emailServerInfo.jtype"
+    },
+    "emailServerInfo": {
+        "smtpServer": "smtp.gmail.com",
+        "port": 587,
+        "secureChannel": "none",
+        "username": "",
+        "password": ""
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "gmail-smtp-example"
+    },
+    "@exportedInstanceId": "967e64a5-d2b3-4e3f-9b84-dcab5902a7a3",
+    "@id": "967e64a5-d2b3-4e3f-9b84-dcab5902a7a3",
+    "@name": "gmail-smtp-example",
+    "@description": ""
+}

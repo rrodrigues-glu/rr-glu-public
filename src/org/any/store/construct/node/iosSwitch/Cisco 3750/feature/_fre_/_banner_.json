@@ -1,0 +1,499 @@
+{
+    "version": "3.0.0",
+    "actionInfo": {
+        "typeName": "banner",
+        "actionKey": "/org/Romualdo/instance/construct/feature/banner/banner.json",
+        "jnib": "/sys/jnib/features/banner/cm_banner.template.jnib",
+        "phaseNumber": "10",
+        "actionTypeKey": "/org/Romualdo/type/construct/feature/banner.jtype",
+        "startObj": {
+            "feature": {
+                "self": {
+                    "@source": {
+                        "instanceKey": "/org/Romualdo/instance/construct/feature/banner/banner.json",
+                        "typeKey": "/org/Romualdo/type/construct/feature/banner.jtype",
+                        "type": "banner",
+                        "typeId": "3ceff579-18ae-4c55-9613-f1588684203e",
+                        "typeVersionId": "e74feeb8-1459-4702-bf63-82162c851f9f",
+                        "instanceName": "banner",
+                        "instanceId": "516d3c62-f7db-4685-80f2-3f00fbd5e7dd",
+                        "construct": "feature",
+                        "organizationId": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+                        "instanceVersionId": "f40a54af-75e5-4edb-92ab-b63b1f8a9354",
+                        "instanceVersion": "1.0.3"
+                    },
+                    "featureConcept": {
+                        "name": "Macro Feature",
+                        "cliCommandGroups": [
+                            {
+                                "regEx": ".+",
+                                "ignoreDelete": true,
+                                "cliBlocks": [
+                                    {
+                                        "item": {
+                                            "@type": {
+                                                "ref": "/sys/type/construct/global/conceptItem.jtype"
+                                            },
+                                            "name": "Intf",
+                                            "vendors": {
+                                                "cisco": {
+                                                    "type": [
+                                                        "ios"
+                                                    ],
+                                                    "level": null
+                                                }
+                                            },
+                                            "showCmds": [
+                                                "sh run | beg ^interface"
+                                            ],
+                                            "keyCliLine": "interface (.+)",
+                                            "rootEntryFlag": false,
+                                            "mode": "basic",
+                                            "boundaries": {
+                                                "start": null
+                                            },
+                                            "discover": {
+                                                "accessVlan": {
+                                                    "expressions": [
+                                                        "switchport access vlan (.+)"
+                                                    ]
+                                                },
+                                                "subnet": {
+                                                    "expressions": [
+                                                        "ip address (?<address>.+) (?<mask>.+)"
+                                                    ]
+                                                },
+                                                "description": {
+                                                    "expressions": [
+                                                        "description (.+)"
+                                                    ]
+                                                }
+                                            },
+                                            "removeSyntax": {
+                                                "no macro description.+": ""
+                                            },
+                                            "accelerators": {
+                                                "reference": {
+                                                    "type": "conceptItem",
+                                                    "activationCommand": "macro apply (.+)",
+                                                    "referenceConceptItem": {
+                                                        "path": "/org/instance/construct/global/conceptItem/IOS_Macro.json"
+                                                    },
+                                                    "options": {
+                                                        "activationCheckCliMatch": "macro description (.+)"
+                                                    }
+                                                }
+                                            },
+                                            "@source": {
+                                                "instanceKey": "/org/Romualdo/instance/construct/global/conceptItem/IOS_Intf2",
+                                                "typeKey": "/org/Romualdo/type/construct/global/conceptItem.jtype",
+                                                "type": "conceptItem",
+                                                "typeName": "Concept Item",
+                                                "typeId": "6519318d-2ca2-4eaf-8dc7-5265ff16eea3",
+                                                "typeVersionId": "5196f46e-c3c5-4329-bad1-44ba6c27c9d2",
+                                                "typeVersion": "1.2.0",
+                                                "instanceName": "IOS_Intf2",
+                                                "instanceId": "1f26aef1-0a8a-45ed-b64e-3cd15489ec8d",
+                                                "construct": "global",
+                                                "organizationId": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+                                                "instanceVersionId": "aac3c109-0ffa-423b-bd77-cf2856ff7c69",
+                                                "instanceVersion": "1.7.0"
+                                            }
+                                        },
+                                        "cliCommands": [
+                                            "interface GigabitEthernet2/0/2",
+                                            " macro apply JFK_Macro2"
+                                        ],
+                                        "advanced": {
+                                            "filter": null
+                                        },
+                                        "@source": {
+                                            "instanceKey": "/org/Romualdo/instance/construct/global/cliCommands/Intf__cli__1665577031307d32a",
+                                            "typeKey": "/org/Romualdo/type/construct/global/cliCommands.jtype",
+                                            "type": "cliCommands",
+                                            "typeName": "CLI Command List",
+                                            "typeId": "d0107cf7-3bf3-49cc-9845-0cc70a4a9ff2",
+                                            "typeVersionId": "99cd5656-e3bc-49e4-9af2-ff1bfb45bf69",
+                                            "typeVersion": "1.0.0",
+                                            "instanceName": "Intf__cli__1665577031307d32a",
+                                            "instanceId": "e0e14d60-3b32-487c-b684-2a67159b4cfe",
+                                            "construct": "global",
+                                            "organizationId": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+                                            "instanceVersionId": "24050ffe-ab11-4437-85f1-50462e3a8cb3",
+                                            "instanceVersion": "1.0.3"
+                                        }
+                                    }
+                                ],
+                                "advanced": {
+                                    "preModifyConditions": {
+                                        "objectKeyRegEx": "interface GigabitEthernet2/0/2",
+                                        "onChangeOfCliLineRegEx": "macro apply .+",
+                                        "doCliLines": [
+                                            "default interface GigabitEthernet2/0/2"
+                                        ],
+                                        "renderType": "separate"
+                                    }
+                                },
+                                "maskCommands": [],
+                                "removeSyntax": {
+                                    "list": []
+                                },
+                                "@source": {
+                                    "instanceKey": "/org/Romualdo/instance/construct/global/cliCommandGroup/banner__cliGrp__macro",
+                                    "typeKey": "/org/Romualdo/type/construct/global/cliCommandGroup.jtype",
+                                    "type": "cliCommandGroup",
+                                    "typeName": "CLI Command Group",
+                                    "typeId": "905aad52-9624-4901-b7f9-96f4dac97254",
+                                    "typeVersionId": "579aa589-0959-4cc3-b0cb-95cec8ef762c",
+                                    "typeVersion": "1.1.0",
+                                    "instanceName": "banner__cliGrp__macro",
+                                    "instanceId": "d0642b3a-18c4-4183-aea0-1a2c34bbc7b1",
+                                    "construct": "global",
+                                    "organizationId": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+                                    "instanceVersionId": "47c68ee1-1ac0-4491-9997-eba8eeea837f",
+                                    "instanceVersion": "1.0.4"
+                                }
+                            },
+                            {
+                                "regEx": ".+",
+                                "ignoreDelete": false,
+                                "cliBlocks": [
+                                    {
+                                        "item": {
+                                            "@type": {
+                                                "ref": "/sys/type/construct/global/conceptItem.jtype"
+                                            },
+                                            "name": "Macro",
+                                            "vendors": {
+                                                "cisco": {
+                                                    "type": [
+                                                        "ios"
+                                                    ],
+                                                    "level": null
+                                                }
+                                            },
+                                            "showCmds": [
+                                                "show run | sec macro"
+                                            ],
+                                            "keyCliLine": "macro name (.+)",
+                                            "rootEntryFlag": false,
+                                            "mode": "advanced",
+                                            "keyLineDepth": 0,
+                                            "keyGroup": 1,
+                                            "metadata": {
+                                                "@type": {
+                                                    "ref": "/sys/type/construct/global/cliMetadata.jtype"
+                                                },
+                                                "META-DATA": {
+                                                    "reset": {
+                                                        "type": "anyChange"
+                                                    },
+                                                    "writeRawWhenSending": true,
+                                                    "ignoreLines": {
+                                                        "from": [
+                                                            "macro description.+"
+                                                        ]
+                                                    }
+                                                },
+                                                "@source": {
+                                                    "instanceKey": "/org/Romualdo/instance/construct/global/cliMetadata/IOS_Macro_cliMetadata",
+                                                    "typeKey": "/org/Romualdo/type/construct/global/cliMetadata.jtype",
+                                                    "type": "cliMetadata",
+                                                    "typeName": "CLI Metadata",
+                                                    "typeId": "9ce8051d-3288-4c3c-99c5-cb1229e6b22c",
+                                                    "typeVersionId": "aaa2592b-d14a-41d9-af5d-344b4f55bc9a",
+                                                    "typeVersion": "1.0.0",
+                                                    "instanceName": "IOS_Macro_cliMetadata",
+                                                    "instanceId": "1e2c9af2-2b60-4cba-95bf-b4899aaebbf8",
+                                                    "construct": "global",
+                                                    "organizationId": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+                                                    "instanceVersionId": "ab1578ec-5bb3-43b9-a89b-7bdd8ab5dd41",
+                                                    "instanceVersion": "1.0.0"
+                                                }
+                                            },
+                                            "boundaries": {
+                                                "start": "macro name "
+                                            },
+                                            "discover": {},
+                                            "removeSyntax": {},
+                                            "accelerators": {},
+                                            "@source": {
+                                                "instanceKey": "/org/Romualdo/instance/construct/global/conceptItem/IOS_Macro",
+                                                "typeKey": "/org/Romualdo/type/construct/global/conceptItem.jtype",
+                                                "type": "conceptItem",
+                                                "typeName": "Concept Item",
+                                                "typeId": "6519318d-2ca2-4eaf-8dc7-5265ff16eea3",
+                                                "typeVersionId": "5196f46e-c3c5-4329-bad1-44ba6c27c9d2",
+                                                "typeVersion": "1.2.0",
+                                                "instanceName": "IOS_Macro",
+                                                "instanceId": "6117f0d8-42ec-4411-a41c-08cf39af4023",
+                                                "construct": "global",
+                                                "organizationId": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+                                                "instanceVersionId": "b87a1b53-4228-4122-aa11-e5c238caf40b",
+                                                "instanceVersion": "1.0.0"
+                                            }
+                                        },
+                                        "cliCommands": [
+                                            "macro name JFK_Macro2",
+                                            "   macro description ospreys",
+                                            "@"
+                                        ],
+                                        "advanced": {
+                                            "filter": null
+                                        },
+                                        "@source": {
+                                            "instanceKey": "/org/Romualdo/instance/construct/global/cliCommands/Banner__cli__macro_CLI01",
+                                            "typeKey": "/org/Romualdo/type/construct/global/cliCommands.jtype",
+                                            "type": "cliCommands",
+                                            "typeName": "CLI Command List",
+                                            "typeId": "d0107cf7-3bf3-49cc-9845-0cc70a4a9ff2",
+                                            "typeVersionId": "99cd5656-e3bc-49e4-9af2-ff1bfb45bf69",
+                                            "typeVersion": "1.0.0",
+                                            "instanceName": "Banner__cli__macro_CLI01",
+                                            "instanceId": "318ae5b9-2693-4c54-a321-c32741dad697",
+                                            "construct": "global",
+                                            "organizationId": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+                                            "instanceVersionId": "b0c7be66-561b-4178-bce4-cb5e6bad3909",
+                                            "instanceVersion": "1.0.3"
+                                        }
+                                    },
+                                    {
+                                        "item": {
+                                            "@type": {
+                                                "ref": "/sys/type/construct/global/conceptItem.jtype"
+                                            },
+                                            "name": "Macro",
+                                            "vendors": {
+                                                "cisco": {
+                                                    "type": [
+                                                        "ios"
+                                                    ],
+                                                    "level": null
+                                                }
+                                            },
+                                            "showCmds": [
+                                                "show run | sec macro"
+                                            ],
+                                            "keyCliLine": "macro name (.+)",
+                                            "rootEntryFlag": false,
+                                            "mode": "advanced",
+                                            "keyLineDepth": 0,
+                                            "keyGroup": 1,
+                                            "metadata": {
+                                                "@type": {
+                                                    "ref": "/sys/type/construct/global/cliMetadata.jtype"
+                                                },
+                                                "META-DATA": {
+                                                    "reset": {
+                                                        "type": "anyChange"
+                                                    },
+                                                    "writeRawWhenSending": true,
+                                                    "ignoreLines": {
+                                                        "from": [
+                                                            "macro description.+"
+                                                        ]
+                                                    }
+                                                },
+                                                "@source": {
+                                                    "instanceKey": "/org/Romualdo/instance/construct/global/cliMetadata/IOS_Macro_cliMetadata",
+                                                    "typeKey": "/org/Romualdo/type/construct/global/cliMetadata.jtype",
+                                                    "type": "cliMetadata",
+                                                    "typeName": "CLI Metadata",
+                                                    "typeId": "9ce8051d-3288-4c3c-99c5-cb1229e6b22c",
+                                                    "typeVersionId": "aaa2592b-d14a-41d9-af5d-344b4f55bc9a",
+                                                    "typeVersion": "1.0.0",
+                                                    "instanceName": "IOS_Macro_cliMetadata",
+                                                    "instanceId": "1e2c9af2-2b60-4cba-95bf-b4899aaebbf8",
+                                                    "construct": "global",
+                                                    "organizationId": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+                                                    "instanceVersionId": "ab1578ec-5bb3-43b9-a89b-7bdd8ab5dd41",
+                                                    "instanceVersion": "1.0.0"
+                                                }
+                                            },
+                                            "boundaries": {
+                                                "start": "macro name "
+                                            },
+                                            "discover": {},
+                                            "removeSyntax": {},
+                                            "accelerators": {},
+                                            "@source": {
+                                                "instanceKey": "/org/Romualdo/instance/construct/global/conceptItem/IOS_Macro",
+                                                "typeKey": "/org/Romualdo/type/construct/global/conceptItem.jtype",
+                                                "type": "conceptItem",
+                                                "typeName": "Concept Item",
+                                                "typeId": "6519318d-2ca2-4eaf-8dc7-5265ff16eea3",
+                                                "typeVersionId": "5196f46e-c3c5-4329-bad1-44ba6c27c9d2",
+                                                "typeVersion": "1.2.0",
+                                                "instanceName": "IOS_Macro",
+                                                "instanceId": "6117f0d8-42ec-4411-a41c-08cf39af4023",
+                                                "construct": "global",
+                                                "organizationId": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+                                                "instanceVersionId": "b87a1b53-4228-4122-aa11-e5c238caf40b",
+                                                "instanceVersion": "1.0.0"
+                                            }
+                                        },
+                                        "cliCommands": [
+                                            "macro name jfk2",
+                                            "   macro description Radagast",
+                                            "@"
+                                        ],
+                                        "advanced": {
+                                            "filter": null
+                                        },
+                                        "@source": {
+                                            "instanceKey": "/org/Romualdo/instance/construct/global/cliCommands/Banner__cli__macro_CLI02",
+                                            "typeKey": "/org/Romualdo/type/construct/global/cliCommands.jtype",
+                                            "type": "cliCommands",
+                                            "typeName": "CLI Command List",
+                                            "typeId": "d0107cf7-3bf3-49cc-9845-0cc70a4a9ff2",
+                                            "typeVersionId": "99cd5656-e3bc-49e4-9af2-ff1bfb45bf69",
+                                            "typeVersion": "1.0.0",
+                                            "instanceName": "Banner__cli__macro_CLI02",
+                                            "instanceId": "84f05de6-c22d-4a3b-ab65-fed3b125e3ea",
+                                            "construct": "global",
+                                            "organizationId": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+                                            "instanceVersionId": "834926e3-a1dc-4bc7-9b7f-aae000661d25",
+                                            "instanceVersion": "1.0.3"
+                                        }
+                                    }
+                                ],
+                                "advanced": {},
+                                "maskCommands": [],
+                                "removeSyntax": {
+                                    "list": []
+                                },
+                                "@source": {
+                                    "instanceKey": "/org/Romualdo/instance/construct/global/cliCommandGroup/banner__cliGrp__macro2",
+                                    "typeKey": "/org/Romualdo/type/construct/global/cliCommandGroup.jtype",
+                                    "type": "cliCommandGroup",
+                                    "typeName": "CLI Command Group",
+                                    "typeId": "905aad52-9624-4901-b7f9-96f4dac97254",
+                                    "typeVersionId": "579aa589-0959-4cc3-b0cb-95cec8ef762c",
+                                    "typeVersion": "1.1.0",
+                                    "instanceName": "banner__cliGrp__macro2",
+                                    "instanceId": "7056e6cb-4d56-4f3a-b4ae-ff7dc6baaa59",
+                                    "construct": "global",
+                                    "organizationId": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+                                    "instanceVersionId": "05d0be17-2647-446b-85bd-b1353bb3fe8e",
+                                    "instanceVersion": "1.0.4"
+                                }
+                            }
+                        ]
+                    },
+                    "form": {
+                        "banner": {
+                            "comment": null
+                        }
+                    }
+                }
+            }
+        },
+        "@Info": {
+            "phaseNumber": 10,
+            "displayName": "Banner Feature",
+            "description": "Banner Feature",
+            "featureDependencies": {
+                "jnib": {
+                    "/sys/jnib/features/banner/cm_banner.template.jnib": {}
+                },
+                "preRequiredFeatures": {}
+            },
+            "domainDependencies": {},
+            "nodeDependencies": {},
+            "augments": {
+                "targets": [
+                    "/sys/type/construct/domain/eosSwitchAssembly",
+                    "/sys/type/construct/domain/tmosServerLoadBalancerAssembly",
+                    "/sys/type/construct/domain/panosFirewallAssembly",
+                    "/sys/type/construct/domain/aireosWirelessControllerAssembly",
+                    "/sys/type/construct/domain/iosWirelessControllerAssembly",
+                    "/sys/type/construct/domain/arubaosWirelessControllerAssembly",
+                    "/sys/type/construct/domain/arubaoscxSwitchAssembly",
+                    "/sys/type/construct/domain/arubaosSwitchAssembly",
+                    "/sys/type/construct/domain/provisionSwitchAssembly",
+                    "/sys/type/construct/domain/sgosWanOptimizerAssembly",
+                    "/sys/type/construct/domain/dnosSwitchAssembly",
+                    "/sys/type/construct/domain/gaiaFirewallAssembly",
+                    "/sys/type/construct/domain/eosSwitchAssembly",
+                    "/sys/type/construct/domain/exSwitchAssembly",
+                    "/sys/type/construct/domain/srxRouterAssembly",
+                    "/sys/type/construct/domain/qfxSwitchAssembly",
+                    "/sys/type/construct/domain/mxRouterAssembly",
+                    "/sys/type/construct/domain/iosSwitchAssembly",
+                    "/sys/type/construct/domain/nxosSwitchAssembly",
+                    "/sys/type/construct/domain/iosRouterAssembly",
+                    "/sys/type/construct/domain/asaFirewallAssembly",
+                    "/sys/type/construct/domain/ucmRouterAssembly"
+                ],
+                "blocks": {
+                    "expertFeatureOption": {
+                        "properties": {
+                            "name": "banner",
+                            "featureLabel": "Banner Feature",
+                            "policyLabel": "Banner Policy",
+                            "policyPath": "/org/instance/construct/feature/banner/*"
+                        }
+                    }
+                }
+            },
+            "phaseNumber@Display.label": "Execution Order"
+        }
+    },
+    "configRefs": {
+        "/org/Romualdo/instance/construct/node/iosSwitch/Cisco 3750": {
+            "relativePaths": [
+                "iosSwitch.Cisco 3750"
+            ],
+            "@source": {
+                "instanceKey": "/org/Romualdo/instance/construct/node/iosSwitch/Cisco 3750",
+                "typeKey": "/org/Romualdo/type/construct/node/iosSwitch.jtype",
+                "type": "iosSwitch",
+                "typeId": "cedd9d42-576c-4968-b2c4-3f2f2e036863",
+                "typeVersionId": "c5f2e6ab-e324-4046-b01d-6e7abf2a964e",
+                "instanceName": "Cisco 3750",
+                "instanceId": "eaace78b-5ebd-42c5-94b5-559327e024f2",
+                "construct": "node",
+                "organizationId": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+                "instanceVersionId": "ec888183-0751-4fa6-ad3f-0d5ba5cc3ee7",
+                "instanceVersion": "1.0.4",
+                "deviceId": "3b9fdad2-a10a-484c-967f-ec2560e5b091"
+            }
+        },
+        "/org/Romualdo/instance/construct/domain/location/SN002.json": {
+            "relativePaths": [
+                "iosSwitch.Cisco 3750.site"
+            ],
+            "@source": {
+                "instanceKey": "/org/Romualdo/instance/construct/domain/location/SN002.json",
+                "typeKey": "/org/Romualdo/type/construct/domain/location.jtype",
+                "type": "location",
+                "typeId": "d0ea05e5-9f62-4e97-a336-b153c5c9c8ac",
+                "typeVersionId": "89d22d58-07e9-4298-b7a1-2d5bd45cc267",
+                "instanceName": "SN002",
+                "instanceId": "65c5ad43-3fad-4e45-b3d3-88358a581111",
+                "construct": "domain",
+                "organizationId": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+                "instanceVersionId": "b2b5707a-1088-4402-ad4f-9c11bcaf2c91",
+                "instanceVersion": "1.0.0"
+            }
+        },
+        "/org/Romualdo/instance/construct/domain/iosSwitchAssembly/Banner_Assembly.json": {
+            "relativePaths": [
+                "iosSwitch.Cisco 3750.associations.assembly"
+            ],
+            "@source": {
+                "instanceKey": "/org/Romualdo/instance/construct/domain/iosSwitchAssembly/Banner_Assembly.json",
+                "typeKey": "/org/Romualdo/type/construct/domain/iosSwitchAssembly.jtype",
+                "type": "iosSwitchAssembly",
+                "typeId": "bcb6ba7f-42dc-4ff0-b764-2ec71fcbe820",
+                "typeVersionId": "4a6b78d2-1043-4a12-a0d7-6e6d6b968db5",
+                "instanceName": "Banner_Assembly",
+                "instanceId": "eeaa6919-2446-422f-a6a8-4bd99d98a7e1",
+                "construct": "domain",
+                "organizationId": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+                "instanceVersionId": "525ab129-02c4-4c88-8727-374c4d4cbda0",
+                "instanceVersion": "1.0.10"
+            }
+        }
+    }
+}

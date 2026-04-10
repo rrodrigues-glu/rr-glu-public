@@ -1,0 +1,22 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Install.json"
+    },
+    "cliCommands": [
+        "install feature-set mpls",
+        "!"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@source": {
+        "instanceName": "nxos_install-cli"
+    },
+    "@exportedInstanceId": "d138e7e8-e4e2-48e0-808f-82407b1b6d72",
+    "@id": "d138e7e8-e4e2-48e0-808f-82407b1b6d72",
+    "@name": "nxos_install-cli",
+    "@description": ""
+}

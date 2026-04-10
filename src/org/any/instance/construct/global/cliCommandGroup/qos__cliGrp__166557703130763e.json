@@ -1,0 +1,20 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
+    },
+    "@id": "f24e6605-b137-47c1-a53b-668530c2ad77",
+    "ignoreDelete": true,
+    "regEx": "qos match-any class-default|queuing class-default|network-qos class-default|control-plane match-any copp-icmp|control-plane match-any copp-ntp|control-plane match-any copp-s-arp|control-plane match-any copp-s-bfd|control-plane match-any copp-s-bpdu|control-plane match-any copp-s-dai|control-plane match-any copp-s-default|control-plane match-any copp-s-dhcpreq|control-plane match-any copp-s-dhcpresp|control-plane match-any copp-s-dpss|control-plane match-any copp-s-eigrp|control-plane match-any copp-s-glean|control-plane match-any copp-s-igmp|control-plane match-any copp-s-ipmcmiss|control-plane match-any copp-s-l2switched|control-plane match-any copp-s-l3destmiss|control-plane match-any copp-s-l3mtufail|control-plane match-any copp-s-l3slowpath|control-plane match-any copp-s-mpls|control-plane match-any copp-s-pimautorp|control-plane match-any copp-s-pimreg|control-plane match-any copp-s-ping|control-plane match-any copp-s-ptp|control-plane match-any copp-s-routingProto1|control-plane match-any copp-s-routingProto2|control-plane match-any copp-s-selfIp|control-plane match-any copp-s-ttl1|control-plane match-any copp-s-v6routingProto2|control-plane match-any copp-s-vxlan|control-plane match-any copp-snmp|control-plane match-any copp-ssh|control-plane match-any copp-stftp|control-plane match-any copp-tacacsradius|control-plane match-any copp-telnet",
+    "cliBlocks": {
+        "@ref": [
+            "/org/instance/construct/global/cliCommands/ClassMap__cli__166557703130703c6.json"
+        ]
+    },
+    "maskCommands": [],
+    "removeSyntax": {
+        "list": []
+    },
+    "@exportedInstanceId": "f24e6605-b137-47c1-a53b-668530c2ad77",
+    "@name": "qos__cliGrp__166557703130763e",
+    "@description": ""
+}

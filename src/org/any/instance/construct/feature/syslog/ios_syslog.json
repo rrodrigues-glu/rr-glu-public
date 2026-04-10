@@ -1,0 +1,38 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/feature/syslog.jtype"
+    },
+    "featureConcept": {
+        "name": "Cisco IOS/IOSXE Syslog",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/ios_syslog-server_grp.json"
+            ]
+        }
+    },
+    "form": {
+        "syslog": {
+            "level": "debugging",
+            "bufferSize": 128000,
+            "mode": "basic",
+            "server": [
+                {
+                    "ip": "10.1.155.155"
+                },
+                {
+                    "ip": "10.2.155.155"
+                },
+                {
+                    "ip": "10.3.155.155"
+                }
+            ]
+        }
+    },
+    "@source": {
+        "instanceName": "ios_syslog"
+    },
+    "@exportedInstanceId": "30d3b661-c5bd-47dd-9d90-32ac0d39cb5f",
+    "@id": "30d3b661-c5bd-47dd-9d90-32ac0d39cb5f",
+    "@name": "ios_syslog",
+    "@description": ""
+}

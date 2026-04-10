@@ -1,0 +1,48 @@
+{
+    "name": "Intf",
+    "vendors": {
+        "cisco": {
+            "type": [
+                "ios"
+            ],
+            "level": null,
+            "note": null
+        }
+    },
+    "showCmds": [
+        "sh run | beg ^interface"
+    ],
+    "keyCliLine": "interface (.+)",
+    "rootEntryFlag": false,
+    "mode": "basic",
+    "boundaries": {
+        "start": null
+    },
+    "discover": {
+        "accessVlan": {
+            "expressions": [
+                "switchport access vlan (.+)"
+            ]
+        },
+        "subnet": {
+            "expressions": [
+                "ip address (?<address>.+) (?<mask>.+)"
+            ]
+        },
+        "description": {
+            "expressions": [
+                "description\\s+(?<node>:N1:)(?<desc>.+)"
+            ]
+        }
+    },
+    "removeSyntax": {
+        "no macro description.+": ""
+    },
+    "@exportedInstanceId": "ecbf81ad-1809-4150-a645-d0cb855556aa",
+    "@id": "ecbf81ad-1809-4150-a645-d0cb855556aa",
+    "@type": {
+        "ref": "/sys/type/construct/global/conceptItem.jtype"
+    },
+    "@name": "IOS_Intf2-Rom",
+    "@description": "Displays the running configuration starting from the first line that BEGINS with the word interface. Note: The ^ makes the parser ONLY display the section whose first line BEGINS with the word 'interface'. Note: This concept item DOES NOT display the hidden commands (unlike the IOS_Intf concept item)."
+}

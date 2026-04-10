@@ -1,0 +1,32 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliCommands.jtype"
+    },
+    "item": {},
+    "cliCommands": [
+        "qos qosmap disable",
+        "qos qosmap upstream trust-dscp disable",
+        "qos protocol-type bronze dot1p",
+        "qos protocol-type silver dot1p",
+        "qos protocol-type gold dot1p",
+        "qos protocol-type platinum dot1p",
+        "qos priority bronze background background background",
+        "qos priority gold video video video",
+        "qos priority platinum voice voice voice",
+        "qos priority silver besteffort besteffort besteffort",
+        "qos dot1p-tag silver 0",
+        "qos dot1p-tag gold 4",
+        "qos dot1p-tag platinum 5"
+    ],
+    "advanced": {
+        "filter": null
+    },
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "aireos_qos-cdmx_cli"
+    },
+    "@exportedInstanceId": "9db66c28-eb96-40ae-887f-5bf1e28716f8",
+    "@id": "9db66c28-eb96-40ae-887f-5bf1e28716f8",
+    "@name": "aireos_qos-cdmx_cli",
+    "@description": ""
+}

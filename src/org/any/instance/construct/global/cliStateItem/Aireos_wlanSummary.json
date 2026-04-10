@@ -1,0 +1,27 @@
+{
+    "@type": {
+        "ref": "/sys/type/construct/global/cliStateItem.jtype"
+    },
+    "cmd": "show wlan summary",
+    "rootEntry": "yes",
+    "groupName": "wlc",
+    "discover": {
+        "summary": {
+            "expressions": [
+                "(?<wlanId>\\d+)\\s+(?<profile>\\S+) \\/ (?<ssid>\\S+)\\s+(?<status>Enabled|Disabled)\\s+(?<intf>\\S+)"
+            ],
+            "localKey": "wlanId",
+            "preserveLocalKey": true,
+            "preserveMultipleValues": false
+        }
+    },
+    "options": {},
+    "@firstLoad": true,
+    "@source": {
+        "instanceName": "Aireos_wlanSummary"
+    },
+    "@exportedInstanceId": "58ee1674-8c14-422a-a28b-7d4340dc41fe",
+    "@id": "58ee1674-8c14-422a-a28b-7d4340dc41fe",
+    "@name": "Aireos_wlanSummary",
+    "@description": ""
+}
