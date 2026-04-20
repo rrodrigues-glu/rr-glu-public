@@ -8,7 +8,7 @@
         "enabled": true
     },
     "site": {
-        "@ref": "/org/instance/construct/domain/location/SN002.json"
+        "@ref": "/org/instance/construct/domain/location/Romualdo.json"
     },
     "configState": "managed",
     "entryConnection": {
@@ -16,6 +16,9 @@
         "ip": "10.150.1.81",
         "credentials": {
             "@ref": "/secret/sys/credentials/deviceUserPass/ciscoCred.json"
+        },
+        "enablePassword": {
+            "@ref": null
         },
         "port": 22,
         "type": "ssh",
@@ -41,11 +44,10 @@
     "iosSwitch": {
         "enabled": true
     },
-    "@exportedInstanceId": "eaace78b-5ebd-42c5-94b5-559327e024f2",
     "@id": "eaace78b-5ebd-42c5-94b5-559327e024f2",
+    "@name": "Cisco 3750",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/iosSwitch.jtype"
-    },
-    "@name": "Cisco 3750",
-    "@description": ""
+    }
 }

@@ -5,10 +5,10 @@
     "path": "/sys/jnib/features/deviceDetect/cisco/aireos/",
     "sku": "AIR-CT5508-K9",
     "software": {
-        "version": "8.5.140.0",
+        "version": "8.5.171.0",
         "major": "8",
         "minor": "5",
-        "revision": "140",
+        "revision": "171",
         "patch": "0",
         "build": "",
         "train": ""
@@ -18,7 +18,6 @@
         "sku": "AIR-CT5508-K9"
     },
     "detectedSerialNumber": "FCW1504L0H8",
-    "uptime": "323d4h40m42s",
     "type": {
         "name": "aireosWirelessController",
         "base": "baseController"
@@ -172,7 +171,7 @@
             },
             "GigabitEthernet0/0/SP": {
                 "operational": {
-                    "status": "down",
+                    "status": "up",
                     "macAddress": "e0:5f:b9:46:54:a1",
                     "speed": "1000Mbps",
                     "mtu": "1500"
@@ -523,10 +522,6 @@
                 "use": 11,
                 "free": 0
             }
-        },
-        "recordTime": {
-            "utcTime": 1743091931460,
-            "utcDateTime": "Thu, 27 Mar 2025 16:12:11 GMT"
         }
     }
 }

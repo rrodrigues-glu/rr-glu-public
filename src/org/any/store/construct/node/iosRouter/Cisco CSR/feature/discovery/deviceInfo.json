@@ -1,5 +1,5 @@
 {
-    "hostname": "Testrom",
+    "hostname": "romualdo",
     "vendor": "cisco",
     "os": "ios",
     "path": "/sys/jnib/features/deviceDetect/cisco/ios/",
@@ -18,7 +18,7 @@
         "routingMode": "autonomous"
     },
     "hardware": {
-        "serialNumber": "97ACBFTCGVE",
+        "serialNumber": "9IPT2ZFOIT9",
         "sku": "CSR1000V",
         "chassis": {
             "R0": {
@@ -30,8 +30,7 @@
         "family": "CSR",
         "series": "1000v"
     },
-    "detectedSerialNumber": "97ACBFTCGVE",
-    "uptime": "26w5d11h55m",
+    "detectedSerialNumber": "9IPT2ZFOIT9",
     "chassis": {
         "R0": {
             "sku": "CSR1000V",
@@ -48,13 +47,14 @@
             "GigabitEthernet1": {
                 "operational": {
                     "status": "up",
+                    "duplex": "full",
                     "mtu": "1500",
                     "speed": "1000000 Kbit/sec",
-                    "macAddress": "00:50:56:9a:77:ef",
-                    "phyMacAddress": "00:50:56:9a:77:ef",
+                    "macAddress": "00:50:56:a5:f0:95",
+                    "phyMacAddress": "00:50:56:a5:f0:95",
                     "ipv4Address": "10.1.100.155/24"
                 },
-                "description": "trunk-TestInterface",
+                "description": "device tracking",
                 "phyVirt": "physical",
                 "type": "l3",
                 "configured": {
@@ -65,12 +65,13 @@
             "GigabitEthernet3": {
                 "operational": {
                     "status": "adminShut",
+                    "duplex": "full",
                     "mtu": "1500",
                     "speed": "1000000 Kbit/sec",
-                    "macAddress": "00:50:56:9a:0b:f3",
-                    "phyMacAddress": "00:50:56:9a:0b:f3"
+                    "macAddress": "00:50:56:a5:0f:29",
+                    "phyMacAddress": "00:50:56:a5:0f:29"
                 },
-                "description": "ElisityNetFlowRecord",
+                "description": "no device tracking",
                 "phyVirt": "physical",
                 "configured": {
                     "ipv4Address": "acl",
@@ -86,11 +87,8 @@
                     "macAddress": "",
                     "phyMacAddress": ""
                 },
-                "description": ":N1:BJD-DXN-6-R01-WLC01 TenGigabitEthernet0/0/1-TEST",
-                "phyVirt": "virtual",
-                "configured": {
-                    "enabled": true
-                }
+                "description": "",
+                "phyVirt": "virtual"
             },
             "Loopback44": {
                 "operational": {
@@ -100,7 +98,7 @@
                     "macAddress": "",
                     "phyMacAddress": ""
                 },
-                "description": "Loopback #management",
+                "description": "Testqwe",
                 "phyVirt": "virtual",
                 "configured": {
                     "enabled": true
@@ -115,7 +113,7 @@
                     "phyMacAddress": "",
                     "ipv4Address": "172.3.56.55/24"
                 },
-                "description": "",
+                "description": "r-sdwan-a TEMP INT",
                 "phyVirt": "virtual",
                 "type": "l3",
                 "configured": {
@@ -130,13 +128,47 @@
                     "speed": "8000000 Kbit/sec",
                     "macAddress": "",
                     "phyMacAddress": "",
-                    "ipv4Address": "10.1.1.100/24"
+                    "ipv4Address": "17.3.56.1/24"
                 },
-                "description": "",
+                "description": "63",
                 "phyVirt": "virtual",
                 "type": "l3",
                 "configured": {
-                    "ipv4Address": "10.1.1.100/24",
+                    "ipv4Address": "17.3.56.1/24",
+                    "enabled": true
+                }
+            },
+            "Loopback253": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1514",
+                    "speed": "8000000 Kbit/sec",
+                    "macAddress": "",
+                    "phyMacAddress": "",
+                    "ipv4Address": "10.35.253.2/24"
+                },
+                "description": "Backbone_L3",
+                "phyVirt": "virtual",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.35.253.2/24",
+                    "enabled": true
+                }
+            },
+            "Loopback345": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1514",
+                    "speed": "8000000 Kbit/sec",
+                    "macAddress": "",
+                    "phyMacAddress": "",
+                    "ipv4Address": "12.3.56.1/24"
+                },
+                "description": "sdwan-a iDRAC",
+                "phyVirt": "virtual",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "12.3.56.1/24",
                     "enabled": true
                 }
             },
@@ -158,10 +190,6 @@
                 "use": 0,
                 "free": 0
             }
-        },
-        "recordTime": {
-            "utcTime": 1751456058249,
-            "utcDateTime": "Wed, 02 Jul 2025 11:34:18 GMT"
         }
     }
 }

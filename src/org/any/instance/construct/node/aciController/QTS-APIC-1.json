@@ -31,11 +31,10 @@
     "site": {
         "@ref": "/org/instance/construct/domain/location/Romualdo.json"
     },
-    "@exportedInstanceId": "9d0bc6c8-0daf-4cd4-9a5e-43aec45eebfd",
     "@id": "9d0bc6c8-0daf-4cd4-9a5e-43aec45eebfd",
+    "@name": "QTS-APIC-1",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/aciController.jtype"
-    },
-    "@name": "QTS-APIC-1",
-    "@description": ""
+    }
 }

@@ -14,14 +14,14 @@
         "type": "R"
     },
     "hardware": {
-        "serialNumber": "GE0218360451",
+        "serialNumber": "GE0214351520",
         "sku": "EX3300-24P",
         "stack": {
             "0": {
                 "sku": "EX3300-24P",
                 "serialNumber": "GE0218360451",
                 "status": "prsnt",
-                "master": true,
+                "backup": true,
                 "software": {
                     "version": "15.1R6-S5",
                     "major": "15",
@@ -36,7 +36,7 @@
                 "sku": "EX3300-24P",
                 "serialNumber": "GE0214351520",
                 "status": "prsnt",
-                "backup": true,
+                "master": true,
                 "software": {
                     "version": "15.1R6-S5",
                     "major": "15",
@@ -97,8 +97,7 @@
         "family": "EX",
         "series": "3300"
     },
-    "detectedSerialNumber": "GE0218360451",
-    "uptime": "5d1h36m",
+    "detectedSerialNumber": "GE0214351520",
     "type": {
         "name": "exSwitch",
         "base": "campusSwitch"
@@ -109,30 +108,35 @@
                 "operational": {
                     "status": "up",
                     "macAddress": "Unspecified",
+                    "phyMacAddress": "Unspecified",
                     "speed": "1000mbps",
                     "mtu": "1514"
                 },
                 "configured": {
                     "status": "up"
                 },
-                "mediaType": "Fiber"
+                "mediaType": "Fiber",
+                "phyVirt": "physical"
             },
             "vcp-255/1/3": {
                 "operational": {
                     "status": "up",
                     "macAddress": "Unspecified",
+                    "phyMacAddress": "Unspecified",
                     "speed": "10000mbps",
                     "mtu": "1514"
                 },
                 "configured": {
                     "status": "up"
                 },
-                "mediaType": "Fiber"
+                "mediaType": "Fiber",
+                "phyVirt": "physical"
             },
             "ge-0/0/0": {
                 "operational": {
                     "status": "down",
                     "macAddress": "b0:33:a6:2e:b5:83",
+                    "phyMacAddress": "b0:33:a6:2e:b5:83",
                     "speed": "Auto",
                     "mtu": "1514"
                 },
@@ -140,12 +144,14 @@
                     "status": "up"
                 },
                 "mediaType": "Copper",
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "ge-0/0/1": {
                 "operational": {
                     "status": "down",
                     "macAddress": "b0:33:a6:2e:b5:84",
+                    "phyMacAddress": "b0:33:a6:2e:b5:84",
                     "speed": "Auto",
                     "mtu": "1514"
                 },
@@ -153,12 +159,14 @@
                     "status": "up"
                 },
                 "mediaType": "Copper",
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "ge-0/0/2": {
                 "operational": {
                     "status": "down",
                     "macAddress": "b0:33:a6:2e:b5:85",
+                    "phyMacAddress": "b0:33:a6:2e:b5:85",
                     "speed": "Auto",
                     "mtu": "1514"
                 },
@@ -166,12 +174,14 @@
                     "status": "up"
                 },
                 "mediaType": "Copper",
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "ge-0/0/3": {
                 "operational": {
                     "status": "down",
                     "macAddress": "b0:33:a6:2e:b5:86",
+                    "phyMacAddress": "b0:33:a6:2e:b5:86",
                     "speed": "Auto",
                     "mtu": "1514"
                 },
@@ -179,12 +189,14 @@
                     "status": "up"
                 },
                 "mediaType": "Copper",
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "ge-0/0/4": {
                 "operational": {
                     "status": "down",
                     "macAddress": "b0:33:a6:2e:b5:87",
+                    "phyMacAddress": "b0:33:a6:2e:b5:87",
                     "speed": "Auto",
                     "mtu": "1514"
                 },
@@ -192,12 +204,14 @@
                     "status": "up"
                 },
                 "mediaType": "Copper",
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "ge-0/0/5": {
                 "operational": {
                     "status": "down",
                     "macAddress": "b0:33:a6:2e:b5:88",
+                    "phyMacAddress": "b0:33:a6:2e:b5:88",
                     "speed": "Auto",
                     "mtu": "1514"
                 },
@@ -205,12 +219,14 @@
                     "status": "up"
                 },
                 "mediaType": "Copper",
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "ge-0/0/6": {
                 "operational": {
                     "status": "down",
                     "macAddress": "b0:33:a6:2e:b5:89",
+                    "phyMacAddress": "b0:33:a6:2e:b5:89",
                     "speed": "Auto",
                     "mtu": "1514"
                 },
@@ -218,12 +234,14 @@
                     "status": "up"
                 },
                 "mediaType": "Copper",
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "ge-0/0/7": {
                 "operational": {
                     "status": "down",
                     "macAddress": "b0:33:a6:2e:b5:8a",
+                    "phyMacAddress": "b0:33:a6:2e:b5:8a",
                     "speed": "Auto",
                     "mtu": "1514"
                 },
@@ -231,12 +249,14 @@
                     "status": "up"
                 },
                 "mediaType": "Copper",
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "ge-0/0/8": {
                 "operational": {
                     "status": "down",
                     "macAddress": "b0:33:a6:2e:b5:8b",
+                    "phyMacAddress": "b0:33:a6:2e:b5:8b",
                     "speed": "Auto",
                     "mtu": "1514"
                 },
@@ -244,12 +264,14 @@
                     "status": "up"
                 },
                 "mediaType": "Copper",
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "ge-0/0/9": {
                 "operational": {
                     "status": "down",
                     "macAddress": "b0:33:a6:2e:b5:8c",
+                    "phyMacAddress": "b0:33:a6:2e:b5:8c",
                     "speed": "Auto",
                     "mtu": "1514"
                 },
@@ -257,12 +279,14 @@
                     "status": "up"
                 },
                 "mediaType": "Copper",
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "ge-0/0/10": {
                 "operational": {
                     "status": "down",
                     "macAddress": "b0:33:a6:2e:b5:8d",
+                    "phyMacAddress": "b0:33:a6:2e:b5:8d",
                     "speed": "Auto",
                     "mtu": "1514"
                 },
@@ -270,12 +294,14 @@
                     "status": "up"
                 },
                 "mediaType": "Copper",
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "ge-0/0/11": {
                 "operational": {
                     "status": "down",
                     "macAddress": "b0:33:a6:2e:b5:8e",
+                    "phyMacAddress": "b0:33:a6:2e:b5:8e",
                     "speed": "Auto",
                     "mtu": "1514"
                 },
@@ -283,12 +309,14 @@
                     "status": "up"
                 },
                 "mediaType": "Copper",
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "ge-0/0/12": {
                 "operational": {
                     "status": "down",
                     "macAddress": "b0:33:a6:2e:b5:8f",
+                    "phyMacAddress": "b0:33:a6:2e:b5:8f",
                     "speed": "Auto",
                     "mtu": "1514"
                 },
@@ -296,12 +324,14 @@
                     "status": "up"
                 },
                 "mediaType": "Copper",
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "ge-0/0/13": {
                 "operational": {
                     "status": "down",
                     "macAddress": "b0:33:a6:2e:b5:90",
+                    "phyMacAddress": "b0:33:a6:2e:b5:90",
                     "speed": "Auto",
                     "mtu": "1514"
                 },
@@ -309,12 +339,14 @@
                     "status": "up"
                 },
                 "mediaType": "Copper",
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "ge-0/0/14": {
                 "operational": {
                     "status": "down",
                     "macAddress": "b0:33:a6:2e:b5:91",
+                    "phyMacAddress": "b0:33:a6:2e:b5:91",
                     "speed": "Auto",
                     "mtu": "1514"
                 },
@@ -322,12 +354,14 @@
                     "status": "up"
                 },
                 "mediaType": "Copper",
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "ge-0/0/15": {
                 "operational": {
                     "status": "down",
                     "macAddress": "b0:33:a6:2e:b5:92",
+                    "phyMacAddress": "b0:33:a6:2e:b5:92",
                     "speed": "Auto",
                     "mtu": "1514"
                 },
@@ -335,12 +369,14 @@
                     "status": "up"
                 },
                 "mediaType": "Copper",
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "ge-0/0/16": {
                 "operational": {
                     "status": "down",
                     "macAddress": "b0:33:a6:2e:b5:93",
+                    "phyMacAddress": "b0:33:a6:2e:b5:93",
                     "speed": "Auto",
                     "mtu": "1514"
                 },
@@ -348,12 +384,14 @@
                     "status": "up"
                 },
                 "mediaType": "Copper",
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "ge-0/0/17": {
                 "operational": {
                     "status": "down",
                     "macAddress": "b0:33:a6:2e:b5:94",
+                    "phyMacAddress": "b0:33:a6:2e:b5:94",
                     "speed": "Auto",
                     "mtu": "1514"
                 },
@@ -361,12 +399,14 @@
                     "status": "up"
                 },
                 "mediaType": "Copper",
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "ge-0/0/18": {
                 "operational": {
                     "status": "down",
                     "macAddress": "b0:33:a6:2e:b5:95",
+                    "phyMacAddress": "b0:33:a6:2e:b5:95",
                     "speed": "Auto",
                     "mtu": "1514"
                 },
@@ -374,12 +414,14 @@
                     "status": "up"
                 },
                 "mediaType": "Copper",
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "ge-0/0/19": {
                 "operational": {
                     "status": "down",
                     "macAddress": "b0:33:a6:2e:b5:96",
+                    "phyMacAddress": "b0:33:a6:2e:b5:96",
                     "speed": "Auto",
                     "mtu": "1514"
                 },
@@ -387,12 +429,14 @@
                     "status": "up"
                 },
                 "mediaType": "Copper",
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "ge-0/0/20": {
                 "operational": {
                     "status": "down",
                     "macAddress": "b0:33:a6:2e:b5:97",
+                    "phyMacAddress": "b0:33:a6:2e:b5:97",
                     "speed": "Auto",
                     "mtu": "1514"
                 },
@@ -400,12 +444,14 @@
                     "status": "up"
                 },
                 "mediaType": "Copper",
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "ge-0/0/21": {
                 "operational": {
                     "status": "down",
                     "macAddress": "b0:33:a6:2e:b5:98",
+                    "phyMacAddress": "b0:33:a6:2e:b5:98",
                     "speed": "Auto",
                     "mtu": "1514"
                 },
@@ -413,12 +459,14 @@
                     "status": "up"
                 },
                 "mediaType": "Copper",
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "ge-0/0/22": {
                 "operational": {
                     "status": "down",
                     "macAddress": "b0:33:a6:2e:b5:99",
+                    "phyMacAddress": "b0:33:a6:2e:b5:99",
                     "speed": "Auto",
                     "mtu": "1514"
                 },
@@ -426,12 +474,14 @@
                     "status": "up"
                 },
                 "mediaType": "Copper",
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "ge-0/0/23": {
                 "operational": {
                     "status": "down",
                     "macAddress": "b0:33:a6:2e:b5:9a",
+                    "phyMacAddress": "b0:33:a6:2e:b5:9a",
                     "speed": "Auto",
                     "mtu": "1514"
                 },
@@ -439,40 +489,47 @@
                     "status": "up"
                 },
                 "mediaType": "Copper",
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "bme0": {
                 "operational": {
                     "status": "up",
                     "macAddress": "00:0b:ca:fe:00:00",
+                    "phyMacAddress": "00:0b:ca:fe:00:00",
                     "speed": "Unspecified",
                     "mtu": "1576"
                 },
                 "configured": {
                     "status": "up"
-                }
+                },
+                "phyVirt": "physical"
             },
             "dsc": {
                 "operational": {
                     "status": "up",
                     "macAddress": "Unspecified",
+                    "phyMacAddress": "Unspecified",
                     "speed": "Unspecified",
                     "mtu": "Unlimited"
                 },
                 "configured": {
                     "status": "up"
-                }
+                },
+                "phyVirt": "physical"
             },
             "gre": {
                 "operational": {
                     "status": "up",
                     "macAddress": "Unspecified",
+                    "phyMacAddress": "Unspecified",
                     "speed": "Unlimited",
                     "mtu": "Unlimited"
                 },
                 "configured": {
                     "status": "up"
-                }
+                },
+                "phyVirt": "physical"
             },
             "ipip": {
                 "operational": {
@@ -482,12 +539,14 @@
                 },
                 "configured": {
                     "status": "up"
-                }
+                },
+                "phyVirt": "physical"
             },
             "jsrv": {
                 "operational": {
                     "status": "up",
                     "macAddress": "b0:33:a6:2e:b5:80",
+                    "phyMacAddress": "b0:33:a6:2e:b5:80",
                     "ipv4Address": "128.0.0.127/2",
                     "speed": "1000mbps",
                     "mtu": "1518"
@@ -495,12 +554,14 @@
                 "configured": {
                     "status": "up"
                 },
+                "phyVirt": "physical",
                 "type": "l3"
             },
             "lo0": {
                 "operational": {
                     "status": "up",
                     "macAddress": "Unspecified",
+                    "phyMacAddress": "Unspecified",
                     "ipv4Address": "127.0.0.1",
                     "speed": "Unspecified",
                     "mtu": "Unlimited"
@@ -508,41 +569,48 @@
                 "configured": {
                     "status": "up"
                 },
+                "phyVirt": "physical",
                 "type": "l3"
             },
             "lsi": {
                 "operational": {
                     "status": "up",
                     "macAddress": "Unspecified",
+                    "phyMacAddress": "Unspecified",
                     "speed": "Unlimited",
                     "mtu": "Unlimited"
                 },
                 "configured": {
                     "status": "up"
-                }
+                },
+                "phyVirt": "physical"
             },
             "me0": {
                 "operational": {
-                    "status": "down",
-                    "macAddress": "b0:33:a6:2e:b5:bf",
-                    "speed": "Unspecified",
+                    "status": "up",
+                    "macAddress": "cc:e1:7f:84:c1:3f",
+                    "phyMacAddress": "cc:e1:7f:84:c1:3f",
+                    "speed": "1000mbps",
                     "mtu": "1514"
                 },
                 "configured": {
                     "status": "up"
                 },
+                "phyVirt": "physical",
                 "type": "l2"
             },
             "mtun": {
                 "operational": {
                     "status": "up",
                     "macAddress": "Unspecified",
+                    "phyMacAddress": "Unspecified",
                     "speed": "Unlimited",
                     "mtu": "Unlimited"
                 },
                 "configured": {
                     "status": "up"
-                }
+                },
+                "phyVirt": "physical"
             },
             "pimd": {
                 "operational": {
@@ -552,7 +620,8 @@
                 },
                 "configured": {
                     "status": "up"
-                }
+                },
+                "phyVirt": "physical"
             },
             "pime": {
                 "operational": {
@@ -562,23 +631,27 @@
                 },
                 "configured": {
                     "status": "up"
-                }
+                },
+                "phyVirt": "physical"
             },
             "tap": {
                 "operational": {
                     "status": "up",
                     "macAddress": "Unspecified",
+                    "phyMacAddress": "Unspecified",
                     "speed": "Unlimited",
                     "mtu": "Unlimited"
                 },
                 "configured": {
                     "status": "up"
-                }
+                },
+                "phyVirt": "physical"
             },
             "vlan": {
                 "operational": {
                     "status": "up",
                     "macAddress": "b0:33:a6:2e:b5:81",
+                    "phyMacAddress": "b0:33:a6:2e:b5:81",
                     "ipv4Address": "10.150.2.10/27",
                     "speed": "1000mbps",
                     "mtu": "1518"
@@ -587,12 +660,14 @@
                     "status": "up",
                     "ipv4Address": "10.150.2.10/27"
                 },
+                "phyVirt": "physical",
                 "type": "l3"
             },
             "vme": {
                 "operational": {
                     "status": "up",
                     "macAddress": "b0:33:a6:2e:b5:82",
+                    "phyMacAddress": "b0:33:a6:2e:b5:82",
                     "ipv4Address": "10.150.2.9/27",
                     "speed": "1000mbps",
                     "mtu": "1518"
@@ -601,14 +676,659 @@
                     "status": "up",
                     "ipv4Address": "10.150.2.9/27"
                 },
+                "phyVirt": "physical",
                 "type": "l3"
+            },
+            "ge-0/0/0.0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:83",
+                    "phyMacAddress": "b0:33:a6:2e:b5:83",
+                    "speed": "Auto",
+                    "mtu": "1514",
+                    "access": {
+                        "vlanName": "default",
+                        "vlanId": null
+                    }
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "ge-0/0/1.0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:84",
+                    "phyMacAddress": "b0:33:a6:2e:b5:84",
+                    "speed": "Auto",
+                    "mtu": "1514",
+                    "access": {
+                        "vlanName": "default",
+                        "vlanId": null
+                    }
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "ge-0/0/2.0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:85",
+                    "phyMacAddress": "b0:33:a6:2e:b5:85",
+                    "speed": "Auto",
+                    "mtu": "1514",
+                    "access": {
+                        "vlanName": "default",
+                        "vlanId": null
+                    }
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "ge-0/0/3.0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:86",
+                    "phyMacAddress": "b0:33:a6:2e:b5:86",
+                    "speed": "Auto",
+                    "mtu": "1514",
+                    "access": {
+                        "vlanName": "default",
+                        "vlanId": null
+                    }
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "ge-0/0/4.0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:87",
+                    "phyMacAddress": "b0:33:a6:2e:b5:87",
+                    "speed": "Auto",
+                    "mtu": "1514",
+                    "access": {
+                        "vlanName": "default",
+                        "vlanId": null
+                    }
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "ge-0/0/5.0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:88",
+                    "phyMacAddress": "b0:33:a6:2e:b5:88",
+                    "speed": "Auto",
+                    "mtu": "1514",
+                    "access": {
+                        "vlanName": "default",
+                        "vlanId": null
+                    }
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "ge-0/0/6.0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:89",
+                    "phyMacAddress": "b0:33:a6:2e:b5:89",
+                    "speed": "Auto",
+                    "mtu": "1514",
+                    "access": {
+                        "vlanName": "default",
+                        "vlanId": null
+                    }
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "ge-0/0/7.0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:8a",
+                    "phyMacAddress": "b0:33:a6:2e:b5:8a",
+                    "speed": "Auto",
+                    "mtu": "1514",
+                    "access": {
+                        "vlanName": "default",
+                        "vlanId": null
+                    }
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "ge-0/0/8.0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:8b",
+                    "phyMacAddress": "b0:33:a6:2e:b5:8b",
+                    "speed": "Auto",
+                    "mtu": "1514",
+                    "access": {
+                        "vlanName": "default",
+                        "vlanId": null
+                    }
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "ge-0/0/9.0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:8c",
+                    "phyMacAddress": "b0:33:a6:2e:b5:8c",
+                    "speed": "Auto",
+                    "mtu": "1514",
+                    "access": {
+                        "vlanName": "default",
+                        "vlanId": null
+                    }
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "ge-0/0/10.0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:8d",
+                    "phyMacAddress": "b0:33:a6:2e:b5:8d",
+                    "speed": "Auto",
+                    "mtu": "1514",
+                    "access": {
+                        "vlanName": "default",
+                        "vlanId": null
+                    }
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "ge-0/0/11.0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:8e",
+                    "phyMacAddress": "b0:33:a6:2e:b5:8e",
+                    "speed": "Auto",
+                    "mtu": "1514",
+                    "access": {
+                        "vlanName": "default",
+                        "vlanId": null
+                    }
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "ge-0/0/12.0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:8f",
+                    "phyMacAddress": "b0:33:a6:2e:b5:8f",
+                    "speed": "Auto",
+                    "mtu": "1514",
+                    "access": {
+                        "vlanName": "default",
+                        "vlanId": null
+                    }
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "ge-0/0/13.0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:90",
+                    "phyMacAddress": "b0:33:a6:2e:b5:90",
+                    "speed": "Auto",
+                    "mtu": "1514",
+                    "access": {
+                        "vlanName": "default",
+                        "vlanId": null
+                    }
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "ge-0/0/14.0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:91",
+                    "phyMacAddress": "b0:33:a6:2e:b5:91",
+                    "speed": "Auto",
+                    "mtu": "1514",
+                    "access": {
+                        "vlanName": "default",
+                        "vlanId": null
+                    }
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "ge-0/0/15.0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:92",
+                    "phyMacAddress": "b0:33:a6:2e:b5:92",
+                    "speed": "Auto",
+                    "mtu": "1514",
+                    "access": {
+                        "vlanName": "default",
+                        "vlanId": null
+                    }
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "ge-0/0/16.0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:93",
+                    "phyMacAddress": "b0:33:a6:2e:b5:93",
+                    "speed": "Auto",
+                    "mtu": "1514",
+                    "access": {
+                        "vlanName": "default",
+                        "vlanId": null
+                    }
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "ge-0/0/17.0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:94",
+                    "phyMacAddress": "b0:33:a6:2e:b5:94",
+                    "speed": "Auto",
+                    "mtu": "1514",
+                    "access": {
+                        "vlanName": "default",
+                        "vlanId": null
+                    }
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "ge-0/0/18.0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:95",
+                    "phyMacAddress": "b0:33:a6:2e:b5:95",
+                    "speed": "Auto",
+                    "mtu": "1514",
+                    "access": {
+                        "vlanName": "default",
+                        "vlanId": null
+                    }
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "ge-0/0/19.0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:96",
+                    "phyMacAddress": "b0:33:a6:2e:b5:96",
+                    "speed": "Auto",
+                    "mtu": "1514",
+                    "access": {
+                        "vlanName": "default",
+                        "vlanId": null
+                    }
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "ge-0/0/20.0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:97",
+                    "phyMacAddress": "b0:33:a6:2e:b5:97",
+                    "speed": "Auto",
+                    "mtu": "1514",
+                    "access": {
+                        "vlanName": "default",
+                        "vlanId": null
+                    }
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "ge-0/0/21.0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:98",
+                    "phyMacAddress": "b0:33:a6:2e:b5:98",
+                    "speed": "Auto",
+                    "mtu": "1514",
+                    "access": {
+                        "vlanName": "default",
+                        "vlanId": null
+                    }
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "ge-0/0/22.0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:99",
+                    "phyMacAddress": "b0:33:a6:2e:b5:99",
+                    "speed": "Auto",
+                    "mtu": "1514",
+                    "access": {
+                        "vlanName": "default",
+                        "vlanId": null
+                    }
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "ge-0/0/23.0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "status": "down",
+                    "macAddress": "b0:33:a6:2e:b5:9a",
+                    "phyMacAddress": "b0:33:a6:2e:b5:9a",
+                    "speed": "Auto",
+                    "mtu": "1514",
+                    "access": {
+                        "vlanName": "default",
+                        "vlanId": null
+                    }
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            ".local..0": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "ipv4Address": "",
+                    "status": "up",
+                    "macAddress": "Unspecified",
+                    "phyMacAddress": "Unspecified",
+                    "speed": "Unlimited",
+                    "mtu": "Unlimited"
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            ".local..1": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "ipv4Address": "",
+                    "status": "up",
+                    "macAddress": "Unspecified",
+                    "phyMacAddress": "Unspecified",
+                    "speed": "Unlimited",
+                    "mtu": "Unlimited"
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            ".local..2": {
+                "type": "l3",
+                "phyVirt": "virtual",
+                "operational": {
+                    "ipv4Address": "127.0.0.1",
+                    "status": "up",
+                    "macAddress": "Unspecified",
+                    "phyMacAddress": "Unspecified",
+                    "speed": "Unlimited",
+                    "mtu": "Unlimited"
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            ".local..3": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "ipv4Address": "",
+                    "status": "up",
+                    "macAddress": "Unspecified",
+                    "phyMacAddress": "Unspecified",
+                    "speed": "Unlimited",
+                    "mtu": "Unlimited"
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            ".local..4": {
+                "type": "l3",
+                "phyVirt": "virtual",
+                "operational": {
+                    "ipv4Address": "128.0.0.127",
+                    "status": "up",
+                    "macAddress": "Unspecified",
+                    "phyMacAddress": "Unspecified",
+                    "speed": "Unlimited",
+                    "mtu": "Unlimited"
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            ".local..5": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "ipv4Address": "",
+                    "status": "up",
+                    "macAddress": "Unspecified",
+                    "phyMacAddress": "Unspecified",
+                    "speed": "Unlimited",
+                    "mtu": "Unlimited"
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            ".local..6": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "ipv4Address": "",
+                    "status": "up",
+                    "macAddress": "Unspecified",
+                    "phyMacAddress": "Unspecified",
+                    "speed": "Unlimited",
+                    "mtu": "Unlimited"
+                },
+                "configured": {
+                    "status": "up"
+                }
             },
             ".local.": {
                 "operational": {
                     "status": "up",
                     "macAddress": "Unspecified",
+                    "phyMacAddress": "Unspecified",
                     "speed": "Unlimited",
                     "mtu": "Unlimited"
+                },
+                "configured": {
+                    "status": "up"
+                },
+                "phyVirt": "physical"
+            },
+            "bme0.32768": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "ipv4Address": "",
+                    "status": "up",
+                    "macAddress": "00:0b:ca:fe:00:00",
+                    "phyMacAddress": "00:0b:ca:fe:00:00",
+                    "speed": "Unspecified",
+                    "mtu": "1576"
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "bme0.32769": {
+                "type": "l2",
+                "phyVirt": "virtual",
+                "operational": {
+                    "ipv4Address": "",
+                    "status": "up",
+                    "macAddress": "00:0b:ca:fe:00:00",
+                    "phyMacAddress": "00:0b:ca:fe:00:00",
+                    "speed": "Unspecified",
+                    "mtu": "1576"
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "jsrv.1": {
+                "type": "l3",
+                "phyVirt": "virtual",
+                "operational": {
+                    "ipv4Address": "128.0.0.127/2",
+                    "status": "up",
+                    "macAddress": "b0:33:a6:2e:b5:80",
+                    "phyMacAddress": "b0:33:a6:2e:b5:80",
+                    "speed": "1000mbps",
+                    "mtu": "1518"
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "lo0.16384": {
+                "type": "l3",
+                "phyVirt": "virtual",
+                "operational": {
+                    "ipv4Address": "128.0.0.127/2",
+                    "status": "up",
+                    "macAddress": "Unspecified",
+                    "phyMacAddress": "Unspecified",
+                    "speed": "Unspecified",
+                    "mtu": "Unlimited"
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "me0.0": {
+                "type": "l3",
+                "phyVirt": "virtual",
+                "operational": {
+                    "ipv4Address": "128.0.0.127/2",
+                    "status": "up",
+                    "macAddress": "cc:e1:7f:84:c1:3f",
+                    "phyMacAddress": "cc:e1:7f:84:c1:3f",
+                    "speed": "1000mbps",
+                    "mtu": "1514"
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "vlan.0": {
+                "type": "l3",
+                "phyVirt": "virtual",
+                "operational": {
+                    "ipv4Address": "128.0.0.127/2",
+                    "status": "up",
+                    "macAddress": "b0:33:a6:2e:b5:81",
+                    "phyMacAddress": "b0:33:a6:2e:b5:81",
+                    "speed": "1000mbps",
+                    "mtu": "1518"
+                },
+                "configured": {
+                    "status": "up"
+                }
+            },
+            "vme.0": {
+                "type": "l3",
+                "phyVirt": "virtual",
+                "operational": {
+                    "ipv4Address": "128.0.0.127/2",
+                    "status": "up",
+                    "macAddress": "b0:33:a6:2e:b5:82",
+                    "phyMacAddress": "b0:33:a6:2e:b5:82",
+                    "speed": "1000mbps",
+                    "mtu": "1518"
                 },
                 "configured": {
                     "status": "up"
@@ -617,14 +1337,10 @@
         },
         "portSummary": {
             "switchports": {
-                "total": 25,
-                "use": 0,
-                "free": 25
+                "total": 56,
+                "use": 32,
+                "free": 24
             }
-        },
-        "recordTime": {
-            "utcTime": 1737393067262,
-            "utcDateTime": "Mon, 20 Jan 2025 17:11:07 GMT"
         }
     }
 }

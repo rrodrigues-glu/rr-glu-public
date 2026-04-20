@@ -5,15 +5,15 @@
     "path": "/sys/jnib/features/deviceDetect/cisco/ios/",
     "sku": "C8300-1N1S-6T",
     "software": {
-        "version": "17.3.4a",
+        "version": "17.3.7",
         "major": "17",
         "minor": "3",
-        "revision": "4a",
+        "revision": "7",
         "train": "",
         "build": "",
         "patch": "",
-        "apiVersion": "17.3.4a",
-        "image": "c8000be-universalk9.17.03.04a.SPA.bin",
+        "apiVersion": "17.3.7",
+        "image": "c8000be-universalk9.17.03.07.SPA.bin",
         "drive": "bootflash:"
     },
     "hardware": {
@@ -66,7 +66,6 @@
         "series": "8300"
     },
     "detectedSerialNumber": "FLM2633116G",
-    "uptime": "2y20w2d22h33m",
     "chassis": {
         "R0": {
             "sku": "C8300-1N1S-6T",
@@ -83,17 +82,68 @@
             "GigabitEthernet0/0/0": {
                 "operational": {
                     "status": "up",
+                    "duplex": "full",
                     "mtu": "1500",
                     "speed": "1000000 Kbit/sec",
                     "macAddress": "48:2e:72:11:63:f0",
                     "phyMacAddress": "48:2e:72:11:63:f0",
                     "ipv4Address": "10.150.1.2/27"
                 },
-                "description": "",
+                "description": "This description ends with a caret-H...",
                 "phyVirt": "physical",
                 "type": "l3",
                 "configured": {
                     "ipv4Address": "10.150.1.2/27",
+                    "enabled": true
+                }
+            },
+            "GigabitEthernet0/0/1": {
+                "operational": {
+                    "status": "adminShut",
+                    "duplex": "full",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "48:2e:72:11:63:f1",
+                    "phyMacAddress": "48:2e:72:11:63:f1"
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l3",
+                "configured": {
+                    "enabled": false
+                }
+            },
+            "GigabitEthernet0/0/5": {
+                "operational": {
+                    "status": "adminShut",
+                    "duplex": "full",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "48:2e:72:11:63:f5",
+                    "phyMacAddress": "48:2e:72:11:63:f5"
+                },
+                "description": "Link Local / APIPA (RFC 3927)",
+                "phyVirt": "physical",
+                "configured": {
+                    "ipv4Address": "prefix",
+                    "enabled": false
+                },
+                "type": "l3"
+            },
+            "GigabitEthernet0/0/1.10": {
+                "operational": {
+                    "status": "down",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "48:2e:72:11:63:f1",
+                    "phyMacAddress": "48:2e:72:11:63:f1",
+                    "ipv4Address": "198.19.49.21/30"
+                },
+                "description": "Test subinterface",
+                "phyVirt": "physical",
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "198.19.49.21/30",
                     "enabled": true
                 }
             }
@@ -104,10 +154,6 @@
                 "use": 0,
                 "free": 0
             }
-        },
-        "recordTime": {
-            "utcTime": 1737392835268,
-            "utcDateTime": "Mon, 20 Jan 2025 17:07:15 GMT"
         }
     }
 }

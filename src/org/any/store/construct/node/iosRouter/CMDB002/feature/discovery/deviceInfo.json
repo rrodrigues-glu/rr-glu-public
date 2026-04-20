@@ -18,7 +18,7 @@
         "routingMode": "autonomous"
     },
     "hardware": {
-        "serialNumber": "97ACBFTCGVE",
+        "serialNumber": "9IPT2ZFOIT9",
         "sku": "CSR1000V",
         "chassis": {
             "R0": {
@@ -30,8 +30,7 @@
         "family": "CSR",
         "series": "1000v"
     },
-    "detectedSerialNumber": "97ACBFTCGVE",
-    "uptime": "47w4d16h4m",
+    "detectedSerialNumber": "9IPT2ZFOIT9",
     "chassis": {
         "R0": {
             "sku": "CSR1000V",
@@ -48,10 +47,11 @@
             "GigabitEthernet1": {
                 "operational": {
                     "status": "up",
+                    "duplex": "full",
                     "mtu": "1500",
                     "speed": "1000000 Kbit/sec",
-                    "macAddress": "00:50:56:9a:77:ef",
-                    "phyMacAddress": "00:50:56:9a:77:ef",
+                    "macAddress": "00:50:56:a5:f0:95",
+                    "phyMacAddress": "00:50:56:a5:f0:95",
                     "ipv4Address": "10.1.100.155/24"
                 },
                 "description": "device tracking",
@@ -65,10 +65,11 @@
             "GigabitEthernet3": {
                 "operational": {
                     "status": "adminShut",
+                    "duplex": "full",
                     "mtu": "1500",
                     "speed": "1000000 Kbit/sec",
-                    "macAddress": "00:50:56:9a:0b:f3",
-                    "phyMacAddress": "00:50:56:9a:0b:f3"
+                    "macAddress": "00:50:56:a5:0f:29",
+                    "phyMacAddress": "00:50:56:a5:0f:29"
                 },
                 "description": "no device tracking",
                 "phyVirt": "physical",
@@ -86,11 +87,8 @@
                     "macAddress": "",
                     "phyMacAddress": ""
                 },
-                "description": ":N1:BJD-DXN-6-R01-WLC01 TenGigabitEthernet0/0/1-TEST",
-                "phyVirt": "virtual",
-                "configured": {
-                    "enabled": true
-                }
+                "description": "",
+                "phyVirt": "virtual"
             },
             "Loopback44": {
                 "operational": {
@@ -115,7 +113,7 @@
                     "phyMacAddress": "",
                     "ipv4Address": "172.3.56.55/24"
                 },
-                "description": "londonuk",
+                "description": "r-sdwan-a TEMP INT",
                 "phyVirt": "virtual",
                 "type": "l3",
                 "configured": {
@@ -132,7 +130,7 @@
                     "phyMacAddress": "",
                     "ipv4Address": "17.3.56.1/24"
                 },
-                "description": "device tracking",
+                "description": "63",
                 "phyVirt": "virtual",
                 "type": "l3",
                 "configured": {
@@ -166,7 +164,7 @@
                     "phyMacAddress": "",
                     "ipv4Address": "12.3.56.1/24"
                 },
-                "description": "device tracking",
+                "description": "sdwan-a iDRAC",
                 "phyVirt": "virtual",
                 "type": "l3",
                 "configured": {
@@ -192,10 +190,6 @@
                 "use": 0,
                 "free": 0
             }
-        },
-        "recordTime": {
-            "utcTime": 1764085291985,
-            "utcDateTime": "Tue, 25 Nov 2025 15:41:31 GMT"
         }
     }
 }

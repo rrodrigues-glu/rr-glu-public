@@ -42,13 +42,12 @@
         "enabled": true
     },
     "site": {
-        "@ref": "/org/instance/construct/domain/location/SN002.json"
+        "@ref": "/org/instance/construct/domain/location/Romualdo.json"
     },
-    "@exportedInstanceId": "de158902-d1b7-4ec6-8130-4c1089652a3c",
     "@id": "de158902-d1b7-4ec6-8130-4c1089652a3c",
+    "@name": "Cisco Yusaf",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/iosRouter.jtype"
-    },
-    "@name": "Cisco Yusaf",
-    "@description": ""
+    }
 }

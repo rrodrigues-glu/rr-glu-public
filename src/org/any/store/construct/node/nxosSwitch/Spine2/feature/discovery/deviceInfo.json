@@ -1,0 +1,739 @@
+{
+    "hostname": "switch",
+    "vendor": "cisco",
+    "os": "nxos",
+    "path": "/sys/jnib/features/deviceDetect/cisco/nxos/",
+    "sku": "N9K-C9504",
+    "software": {
+        "version": "9.3(9)",
+        "major": "9.3",
+        "minor": "9",
+        "revision": "",
+        "patch": "",
+        "build": "",
+        "train": "",
+        "image": "nxos.9.3.9.bin",
+        "drive": "bootflash:/"
+    },
+    "hardware": {
+        "serialNumber": "FOX1906GCXZ",
+        "sku": "N9K-C9504",
+        "chassis": {
+            "27": {
+                "sku": "N9K-SUP-B",
+                "serialNumber": "SAL1938P9HH",
+                "active": true
+            },
+            "28": {
+                "sku": "N9K-SUP-B",
+                "serialNumber": "SAL1938P9K9",
+                "active": true
+            }
+        },
+        "supervisors": 2,
+        "components": {
+            "fans": [
+                {
+                    "description": "Nexus9000 C9504 (4 Slot) Chassis Fan Module",
+                    "label": "Fan",
+                    "location": {
+                        "path": "1",
+                        "type": "fan"
+                    },
+                    "serialNumber": "FOX1931GM79",
+                    "sku": "N9K-C9504-FAN"
+                },
+                {
+                    "description": "Nexus9000 C9504 (4 Slot) Chassis Fan Module",
+                    "label": "Fan",
+                    "location": {
+                        "path": "2",
+                        "type": "fan"
+                    },
+                    "serialNumber": "FOX1931GM6D",
+                    "sku": "N9K-C9504-FAN"
+                },
+                {
+                    "description": "Nexus9000 C9504 (4 Slot) Chassis Fan Module",
+                    "label": "Fan",
+                    "location": {
+                        "path": "3",
+                        "type": "fan"
+                    },
+                    "serialNumber": "FOX1931GM58",
+                    "sku": "N9K-C9504-FAN"
+                }
+            ],
+            "powerSupplies": [
+                {
+                    "description": "Nexus9000 C9504 (4 Slot) Chassis Power Supply",
+                    "label": "Power Supply",
+                    "location": {
+                        "path": "1",
+                        "type": "psu"
+                    },
+                    "serialNumber": "DTM191901KR",
+                    "sku": "N9K-PAC-3000W-B"
+                },
+                {
+                    "description": "Nexus9000 C9504 (4 Slot) Chassis Power Supply",
+                    "label": "Power Supply",
+                    "location": {
+                        "path": "2",
+                        "type": "psu"
+                    },
+                    "serialNumber": "DTM191901PY",
+                    "sku": "N9K-PAC-3000W-B"
+                },
+                {
+                    "description": "Nexus9000 C9504 (4 Slot) Chassis Power Supply",
+                    "label": "Power Supply",
+                    "location": {
+                        "path": "3",
+                        "type": "psu"
+                    },
+                    "serialNumber": "DTM191901D8",
+                    "sku": "N9K-PAC-3000W-B"
+                },
+                {
+                    "description": "Nexus9000 C9504 (4 Slot) Chassis Power Supply",
+                    "label": "Power Supply",
+                    "location": {
+                        "path": "4",
+                        "type": "psu"
+                    },
+                    "serialNumber": "DTM1919018C",
+                    "sku": "N9K-PAC-3000W-B"
+                }
+            ],
+            "supervisors": [
+                {
+                    "description": "Supervisor Module",
+                    "label": "Supervisor Engine",
+                    "location": {
+                        "path": "27",
+                        "type": "slot"
+                    },
+                    "serialNumber": "SAL1938P9HH",
+                    "sku": "N9K-SUP-B"
+                },
+                {
+                    "description": "Supervisor Module",
+                    "label": "Supervisor Engine",
+                    "location": {
+                        "path": "28",
+                        "type": "slot"
+                    },
+                    "serialNumber": "SAL1938P9K9",
+                    "sku": "N9K-SUP-B"
+                }
+            ],
+            "systemControllers": [
+                {
+                    "description": "System Controller",
+                    "label": "System Controller",
+                    "location": {
+                        "path": "29",
+                        "type": "slot"
+                    },
+                    "serialNumber": "SAL18422HL6",
+                    "sku": "N9K-SC-A"
+                },
+                {
+                    "description": "System Controller",
+                    "label": "System Controller",
+                    "location": {
+                        "path": "30",
+                        "type": "slot"
+                    },
+                    "serialNumber": "SAL18422HLN",
+                    "sku": "N9K-SC-A"
+                }
+            ]
+        },
+        "family": "9000",
+        "series": "9504"
+    },
+    "features": {
+        "Flexlink": {
+            "enabled": false,
+            "instance": 1
+        },
+        "analytics": {
+            "enabled": false,
+            "instance": 1
+        },
+        "bash-shell": {
+            "enabled": false,
+            "instance": 1
+        },
+        "bfd": {
+            "enabled": false,
+            "instance": 1
+        },
+        "bgp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "bluez": {
+            "enabled": false,
+            "instance": 1
+        },
+        "bulkstat": {
+            "enabled": false,
+            "instance": 1
+        },
+        "cable-management": {
+            "enabled": false,
+            "instance": 1
+        },
+        "catena": {
+            "enabled": false,
+            "instance": 1
+        },
+        "container-tracker": {
+            "enabled": false,
+            "instance": 1
+        },
+        "macsec": {
+            "enabled": false,
+            "instance": 1
+        },
+        "dhcp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "dot1x": {
+            "enabled": false,
+            "instance": 1
+        },
+        "eigrp": {
+            "enabled": false,
+            "instance": 16
+        },
+        "enm": {
+            "enabled": false,
+            "instance": 1
+        },
+        "epbr": {
+            "enabled": false,
+            "instance": 1
+        },
+        "eth-port-sec": {
+            "enabled": false,
+            "instance": 1
+        },
+        "evb": {
+            "enabled": false,
+            "instance": 1
+        },
+        "evc": {
+            "enabled": false,
+            "instance": 1
+        },
+        "evmed": {
+            "enabled": false,
+            "instance": 1
+        },
+        "fabric-access": {
+            "enabled": false,
+            "instance": 1
+        },
+        "fport-channel-trunk": {
+            "enabled": false,
+            "instance": 1
+        },
+        "fsync_mgr": {
+            "enabled": false,
+            "instance": 1
+        },
+        "grpc": {
+            "enabled": false,
+            "instance": 1
+        },
+        "hardware-telemetry": {
+            "enabled": false,
+            "instance": 1
+        },
+        "hmm": {
+            "enabled": false,
+            "instance": 1
+        },
+        "hsrp_engine": {
+            "enabled": false,
+            "instance": 1
+        },
+        "icam": {
+            "enabled": true,
+            "instance": 1
+        },
+        "imp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "interface-vlan": {
+            "enabled": false,
+            "instance": 1
+        },
+        "intersight": {
+            "enabled": false,
+            "instance": 1
+        },
+        "isis": {
+            "enabled": false,
+            "instance": 16
+        },
+        "itd": {
+            "enabled": false,
+            "instance": 1
+        },
+        "l2vpn": {
+            "enabled": false,
+            "instance": 1
+        },
+        "l3vpn": {
+            "enabled": false,
+            "instance": 1
+        },
+        "lacp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "ldap": {
+            "enabled": false,
+            "instance": 1
+        },
+        "ldp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "license-smart": {
+            "enabled": false,
+            "instance": 1
+        },
+        "license-smart-res": {
+            "enabled": false,
+            "instance": 1
+        },
+        "lldp": {
+            "enabled": true,
+            "instance": 1
+        },
+        "mpls-evpn": {
+            "enabled": false,
+            "instance": 1
+        },
+        "mpls_oam": {
+            "enabled": false,
+            "instance": 1
+        },
+        "mpls_static": {
+            "enabled": false,
+            "instance": 1
+        },
+        "msdp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "mvpn": {
+            "enabled": false,
+            "instance": 1
+        },
+        "mvrp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nat": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nbm": {
+            "enabled": false,
+            "instance": 1
+        },
+        "netconf": {
+            "enabled": false,
+            "instance": 1
+        },
+        "netflow": {
+            "enabled": false,
+            "instance": 1
+        },
+        "ngmvpn": {
+            "enabled": false,
+            "instance": 1
+        },
+        "ngoam": {
+            "enabled": false,
+            "instance": 1
+        },
+        "npiv": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nve": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxapi": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app1": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app10": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app11": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app12": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app13": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app14": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app15": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app16": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app17": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app18": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app19": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app2": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app20": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app21": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app22": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app23": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app24": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app25": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app26": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app27": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app28": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app29": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app3": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app30": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app31": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app32": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app4": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app5": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app6": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app7": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app8": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_app9": {
+            "enabled": false,
+            "instance": 1
+        },
+        "nxsdk_mgr": {
+            "enabled": false,
+            "instance": 1
+        },
+        "ofm": {
+            "enabled": false,
+            "instance": 1
+        },
+        "onep": {
+            "enabled": false,
+            "instance": 1
+        },
+        "openflow": {
+            "enabled": false,
+            "instance": 1
+        },
+        "ospf": {
+            "enabled": false,
+            "instance": 16
+        },
+        "ospfv3": {
+            "enabled": false,
+            "instance": 16
+        },
+        "pbr": {
+            "enabled": false,
+            "instance": 1
+        },
+        "pim": {
+            "enabled": false,
+            "instance": 1
+        },
+        "pim6": {
+            "enabled": false,
+            "instance": 1
+        },
+        "plb": {
+            "enabled": false,
+            "instance": 1
+        },
+        "pnp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "poe": {
+            "enabled": false,
+            "instance": 1
+        },
+        "private-vlan": {
+            "enabled": false,
+            "instance": 1
+        },
+        "privilege": {
+            "enabled": false,
+            "instance": 1
+        },
+        "ptp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "restconf": {
+            "enabled": false,
+            "instance": 1
+        },
+        "rip": {
+            "enabled": false,
+            "instance": 4
+        },
+        "rise": {
+            "enabled": false,
+            "instance": 1
+        },
+        "scheduler": {
+            "enabled": false,
+            "instance": 1
+        },
+        "scpServer": {
+            "enabled": false,
+            "instance": 1
+        },
+        "segment-routing": {
+            "enabled": false,
+            "instance": 1
+        },
+        "sflow": {
+            "enabled": false,
+            "instance": 1
+        },
+        "sftpServer": {
+            "enabled": false,
+            "instance": 1
+        },
+        "sla_responder": {
+            "enabled": false,
+            "instance": 1
+        },
+        "sla_sender": {
+            "enabled": false,
+            "instance": 1
+        },
+        "sla_twamp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "smart-channel": {
+            "enabled": false,
+            "instance": 1
+        },
+        "srte": {
+            "enabled": false,
+            "instance": 1
+        },
+        "srv6": {
+            "enabled": false,
+            "instance": 1
+        },
+        "sshServer": {
+            "enabled": true,
+            "instance": 1
+        },
+        "tacacs": {
+            "enabled": false,
+            "instance": 1
+        },
+        "telemetry": {
+            "enabled": false,
+            "instance": 1
+        },
+        "telnetServer": {
+            "enabled": false,
+            "instance": 1
+        },
+        "tun_enc_mgr": {
+            "enabled": false,
+            "instance": 1
+        },
+        "tunnel": {
+            "enabled": false,
+            "instance": 1
+        },
+        "udld": {
+            "enabled": false,
+            "instance": 1
+        },
+        "vmfex": {
+            "enabled": false,
+            "instance": 1
+        },
+        "vmtracker": {
+            "enabled": false,
+            "instance": 1
+        },
+        "vni": {
+            "enabled": false,
+            "instance": 1
+        },
+        "vnseg_vlan": {
+            "enabled": false,
+            "instance": 1
+        },
+        "vpc": {
+            "enabled": false,
+            "instance": 1
+        },
+        "vrrp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "vrrpv3": {
+            "enabled": false,
+            "instance": 1
+        },
+        "vtp": {
+            "enabled": false,
+            "instance": 1
+        }
+    },
+    "detectedSerialNumber": "FOX1906GCXZ",
+    "chassis": {
+        "27": {
+            "sku": "N9K-SUP-B",
+            "serialNumber": "SAL1938P9HH",
+            "active": true
+        },
+        "28": {
+            "sku": "N9K-SUP-B",
+            "serialNumber": "SAL1938P9K9",
+            "active": true
+        }
+    },
+    "type": {
+        "name": "nxosSwitch",
+        "base": "dcSwitch"
+    },
+    "licenses": [
+        {
+            "name": "LAN_ENTERPRISE_SERVICES_PKG",
+            "eval": false,
+            "rtu": false,
+            "inUse": true
+        }
+    ],
+    "portsInfo": {
+        "ports": {
+            "mgmt0": {
+                "operational": {
+                    "status": "up",
+                    "macAddress": "80:e0:1d:00:61:bc",
+                    "ipv4Address": "10.150.1.23/27",
+                    "speed": "1000 Mb/s",
+                    "mtu": "1500 bytes",
+                    "duplex": "full-duplex"
+                },
+                "configured": {
+                    "enabled": true,
+                    "ipv4Address": "10.150.1.23/27",
+                    "vrf": "management"
+                },
+                "type": "l3"
+            }
+        },
+        "portSummary": {
+            "switchports": {
+                "total": 0,
+                "use": 0,
+                "free": 0
+            }
+        }
+    }
+}

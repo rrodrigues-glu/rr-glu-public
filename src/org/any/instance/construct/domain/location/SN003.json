@@ -1,6 +1,6 @@
 {
     "site": {
-        "name": "SLVL",
+        "name": "SN003",
         "description": "",
         "location": "",
         "type": "site",
@@ -8,11 +8,10 @@
         "contact": "",
         "techContact": ""
     },
-    "@exportedInstanceId": "de943ce0-fc13-41d7-91a6-b0d5907fcb42",
-    "@id": "de943ce0-fc13-41d7-91a6-b0d5907fcb42",
+    "@id": "bc8d8536-5e1b-45fb-a631-0ded7c4ae437",
+    "@name": "SN003",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/domain/location.jtype"
-    },
-    "@name": "SUBLEVEL",
-    "@description": ""
+    }
 }

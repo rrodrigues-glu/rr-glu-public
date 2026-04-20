@@ -17,6 +17,9 @@
         "credentials": {
             "@ref": "/secret/sys/credentials/deviceUserPass/admin.json"
         },
+        "enablePassword": {
+            "@ref": null
+        },
         "port": 22,
         "type": "ssh",
         "terminalType": "xterm"
@@ -26,7 +29,14 @@
             "@ref": "/org/instance/construct/domain/iosRouterAssembly/SNMP_Assembly.json"
         },
         "provider": "local",
-        "interfaces": {}
+        "interfaces": {
+            "portMap": {
+                "@ref": null
+            },
+            "ipNumbering": {
+                "@ref": null
+            }
+        }
     },
     "personae": {},
     "hardware": {
@@ -43,11 +53,10 @@
     "iosRouter": {
         "enabled": true
     },
-    "@exportedInstanceId": "b6f54dff-156b-42e7-b99d-fecd9fddbb0d",
     "@id": "b6f54dff-156b-42e7-b99d-fecd9fddbb0d",
+    "@name": "Cisco CSR",
+    "@description": "Cisco CSR Romualdo Test ISR Router",
     "@type": {
         "ref": "/sys/type/construct/node/iosRouter.jtype"
-    },
-    "@name": "Cisco CSR",
-    "@description": "Cisco CSR Romualdo Test ISR Router"
+    }
 }

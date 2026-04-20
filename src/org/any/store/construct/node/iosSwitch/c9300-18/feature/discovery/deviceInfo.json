@@ -45,7 +45,6 @@
         "series": "9300"
     },
     "detectedSerialNumber": "FJC2543299V",
-    "uptime": "3w2d19h19m",
     "stack": {
         "1": {
             "sku": "C9300-48UXM",
@@ -64,6 +63,7 @@
             "GigabitEthernet0/0": {
                 "operational": {
                     "status": "up",
+                    "duplex": "full",
                     "mtu": "1500",
                     "speed": "1000000 Kbit/sec",
                     "macAddress": "68:87:c6:31:9e:80",
@@ -943,6 +943,19 @@
                     ]
                 }
             },
+            "Vlan150": {
+                "phyVirt": "virtual",
+                "type": "l3",
+                "operational": {
+                    "status": "down"
+                },
+                "configured": {
+                    "memberInterfaces": [
+                        "TenGigabitEthernet1/0/47",
+                        "TenGigabitEthernet1/0/48"
+                    ]
+                }
+            },
             "Vlan200": {
                 "phyVirt": "virtual",
                 "type": "l3",
@@ -1184,10 +1197,6 @@
                 "use": 7,
                 "free": 42
             }
-        },
-        "recordTime": {
-            "utcTime": 1745579471766,
-            "utcDateTime": "Fri, 25 Apr 2025 11:11:11 GMT"
         }
     }
 }

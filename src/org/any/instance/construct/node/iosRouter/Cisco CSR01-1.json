@@ -6,6 +6,9 @@
         "credentials": {
             "@ref": "/secret/sys/credentials/deviceUserPass/admin.json"
         },
+        "enablePassword": {
+            "@ref": null
+        },
         "type": "ssh",
         "port": 22,
         "terminalType": "xterm"
@@ -36,13 +39,12 @@
         "enabled": true
     },
     "site": {
-        "@ref": "/org/instance/construct/domain/location/SN001.json"
+        "@ref": "/org/instance/construct/domain/location/Romualdo.json"
     },
-    "@exportedInstanceId": "27c02042-6b92-459b-887e-dd8c8e52f0bd",
     "@id": "27c02042-6b92-459b-887e-dd8c8e52f0bd",
+    "@name": "Cisco CSR01-1",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/iosRouter.jtype"
-    },
-    "@name": "Cisco CSR01-1",
-    "@description": ""
+    }
 }

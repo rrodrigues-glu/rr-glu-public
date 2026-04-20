@@ -6,6 +6,9 @@
         "credentials": {
             "@ref": "/secret/sys/credentials/deviceUserPass/admin.json"
         },
+        "enablePassword": {
+            "@ref": null
+        },
         "type": "ssh",
         "port": 22,
         "terminalType": "xterm"
@@ -38,13 +41,12 @@
         "enabled": true
     },
     "site": {
-        "@ref": "/org/instance/construct/domain/location/Romualdo.json"
+        "@ref": "/org/instance/construct/domain/location/SN001.json"
     },
-    "@exportedInstanceId": "a391c082-8430-4e3c-8459-e39e7ab79d45",
     "@id": "a391c082-8430-4e3c-8459-e39e7ab79d45",
+    "@name": "c9300-63",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/iosSwitch.jtype"
-    },
-    "@name": "c9300-63",
-    "@description": ""
+    }
 }

@@ -36,11 +36,13 @@
     "dcSwitch": {
         "enabled": true
     },
-    "@exportedInstanceId": "b50432eb-94b0-480a-8b0f-e0c02337fbd5",
+    "site": {
+        "@ref": "/org/instance/construct/domain/location/Romualdo.json"
+    },
     "@id": "b50432eb-94b0-480a-8b0f-e0c02337fbd5",
+    "@name": "nx",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/nxosSwitch.jtype"
-    },
-    "@name": "nx",
-    "@description": ""
+    }
 }

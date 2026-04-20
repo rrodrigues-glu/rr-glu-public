@@ -36,11 +36,13 @@
     "dcSwitch": {
         "enabled": true
     },
-    "@exportedInstanceId": "676117d1-28c2-4d2a-a5e6-43122d40a4a7",
+    "site": {
+        "@ref": "/org/instance/construct/domain/location/SN001.json"
+    },
     "@id": "676117d1-28c2-4d2a-a5e6-43122d40a4a7",
+    "@name": "n9k-c9372px",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/nxosSwitch.jtype"
-    },
-    "@name": "n9k-c9372px",
-    "@description": ""
+    }
 }

@@ -1,18 +1,18 @@
 {
-    "hostname": "n9k-c9372px",
+    "hostname": "LCAPDCP412004-DB01",
     "vendor": "cisco",
     "os": "nxos",
     "path": "/sys/jnib/features/deviceDetect/cisco/nxos/",
     "sku": "N9K-C9372PX",
     "software": {
-        "version": "7.0(3)I7(5a)",
-        "major": "7.0",
-        "minor": "3",
-        "revision": "I7",
-        "patch": "5a",
+        "version": "9.3(6)",
+        "major": "9.3",
+        "minor": "6",
+        "revision": "",
+        "patch": "",
         "build": "",
         "train": "",
-        "image": "nxos.7.0.3.I7.5a.bin",
+        "image": "nxos.9.3.6.bin",
         "drive": "bootflash:/"
     },
     "hardware": {
@@ -95,6 +95,14 @@
         "series": "9372"
     },
     "features": {
+        "Flexlink": {
+            "enabled": false,
+            "instance": 1
+        },
+        "analytics": {
+            "enabled": false,
+            "instance": 1
+        },
         "bash-shell": {
             "enabled": false,
             "instance": 1
@@ -104,6 +112,10 @@
             "instance": 1
         },
         "bgp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "bluez": {
             "enabled": false,
             "instance": 1
         },
@@ -132,12 +144,20 @@
             "instance": 1
         },
         "dot1x": {
-            "enabled": true,
+            "enabled": false,
             "instance": 1
         },
         "eigrp": {
             "enabled": false,
             "instance": 16
+        },
+        "enm": {
+            "enabled": false,
+            "instance": 1
+        },
+        "epbr": {
+            "enabled": false,
+            "instance": 1
         },
         "eth-port-sec": {
             "enabled": false,
@@ -159,7 +179,11 @@
             "enabled": false,
             "instance": 1
         },
-        "fabric_mcast": {
+        "fport-channel-trunk": {
+            "enabled": false,
+            "instance": 1
+        },
+        "fsync_mgr": {
             "enabled": false,
             "instance": 1
         },
@@ -180,7 +204,7 @@
             "instance": 1
         },
         "icam": {
-            "enabled": false,
+            "enabled": true,
             "instance": 1
         },
         "imp": {
@@ -188,6 +212,10 @@
             "instance": 1
         },
         "interface-vlan": {
+            "enabled": false,
+            "instance": 1
+        },
+        "intersight": {
             "enabled": false,
             "instance": 1
         },
@@ -203,6 +231,10 @@
             "enabled": false,
             "instance": 1
         },
+        "l3vpn": {
+            "enabled": false,
+            "instance": 1
+        },
         "lacp": {
             "enabled": false,
             "instance": 1
@@ -215,8 +247,16 @@
             "enabled": false,
             "instance": 1
         },
-        "lldp": {
+        "license-smart": {
             "enabled": false,
+            "instance": 1
+        },
+        "license-smart-res": {
+            "enabled": false,
+            "instance": 1
+        },
+        "lldp": {
+            "enabled": true,
             "instance": 1
         },
         "mpls-evpn": {
@@ -232,6 +272,10 @@
             "instance": 1
         },
         "msdp": {
+            "enabled": false,
+            "instance": 1
+        },
+        "mvpn": {
             "enabled": false,
             "instance": 1
         },
@@ -403,6 +447,10 @@
             "enabled": false,
             "instance": 1
         },
+        "ofm": {
+            "enabled": false,
+            "instance": 1
+        },
         "onep": {
             "enabled": false,
             "instance": 1
@@ -491,7 +539,19 @@
             "enabled": false,
             "instance": 1
         },
+        "sla_twamp": {
+            "enabled": false,
+            "instance": 1
+        },
         "smart-channel": {
+            "enabled": false,
+            "instance": 1
+        },
+        "srte": {
+            "enabled": false,
+            "instance": 1
+        },
+        "srv6": {
             "enabled": false,
             "instance": 1
         },
@@ -511,11 +571,19 @@
             "enabled": false,
             "instance": 1
         },
+        "tun_enc_mgr": {
+            "enabled": false,
+            "instance": 1
+        },
         "tunnel": {
             "enabled": false,
             "instance": 1
         },
         "udld": {
+            "enabled": false,
+            "instance": 1
+        },
+        "vmfex": {
             "enabled": false,
             "instance": 1
         },
@@ -549,7 +617,6 @@
         }
     },
     "detectedSerialNumber": "SAL1929K9U5",
-    "uptime": "234d7h22m29s",
     "chassis": {
         "1": {
             "sku": "N9K-C9372PX",
@@ -592,15 +659,11 @@
                     "status": "down",
                     "macAddress": "58:97:bd:40:91:40",
                     "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "access": {}
                 },
                 "configured": {
                     "enabled": true
                 },
-                "description": "Description!",
                 "type": "l2"
             },
             "Ethernet1/2": {
@@ -620,781 +683,651 @@
             },
             "Ethernet1/3": {
                 "operational": {
-                    "status": "down",
+                    "status": "up",
                     "macAddress": "58:97:bd:40:91:42",
+                    "speed": "1000 Mb/s",
                     "mtu": "1500 bytes",
+                    "duplex": "full-duplex",
                     "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
+                        "vlanId": "223",
+                        "vlanName": "MerakiTestLink"
                     }
                 },
                 "configured": {
                     "enabled": true
                 },
+                "description": "MS225-24-01 Port 1",
                 "type": "l2"
             },
             "Ethernet1/4": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:43",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/5": {
                 "operational": {
-                    "status": "down",
+                    "status": "up",
                     "macAddress": "58:97:bd:40:91:44",
+                    "speed": "1000 Mb/s",
                     "mtu": "1500 bytes",
+                    "duplex": "full-duplex",
                     "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
+                        "vlanId": "224",
+                        "vlanName": "MerakiLinkTest2"
                     }
                 },
                 "configured": {
                     "enabled": true
                 },
+                "description": "MS225-24P-02 Port 1",
                 "type": "l2"
             },
             "Ethernet1/6": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:45",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/7": {
                 "operational": {
-                    "status": "down",
+                    "status": "up",
                     "macAddress": "58:97:bd:40:91:46",
+                    "speed": "1000 Mb/s",
                     "mtu": "1500 bytes",
+                    "duplex": "full-duplex",
                     "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
+                        "vlanId": "225",
+                        "vlanName": "MerakiLinkTest3"
                     }
                 },
                 "configured": {
                     "enabled": true
                 },
+                "description": "Meraki MX68 Port 2",
                 "type": "l2"
             },
             "Ethernet1/8": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:47",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/9": {
                 "operational": {
-                    "status": "down",
+                    "status": "up",
                     "macAddress": "58:97:bd:40:91:48",
+                    "speed": "1000 Mb/s",
                     "mtu": "1500 bytes",
+                    "duplex": "full-duplex",
                     "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
+                        "vlanId": "226",
+                        "vlanName": "MerakiLinkTest4"
                     }
                 },
                 "configured": {
                     "enabled": true
                 },
+                "description": "meraki-9300 GigabitEthernet1/0/2",
                 "type": "l2"
             },
             "Ethernet1/10": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:49",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/11": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:4a",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/12": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:4b",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/13": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:4c",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/14": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:4d",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/15": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:4e",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/16": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:4f",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/17": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:50",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/18": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:51",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/19": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:52",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/20": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:53",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/21": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:54",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/22": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:55",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/23": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:56",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/24": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:57",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/25": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:58",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/26": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:59",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/27": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:5a",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/28": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:5b",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/29": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:5c",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/30": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:5d",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/31": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:5e",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/32": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:5f",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/33": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:60",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/34": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:61",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/35": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:62",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/36": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:63",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/37": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:64",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/38": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:65",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/39": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:66",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/40": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:67",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/41": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:68",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/42": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:69",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/43": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:6a",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/44": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:6b",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/45": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:6c",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/46": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:6d",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/47": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:6e",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/48": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:6f",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/49": {
                 "operational": {
-                    "status": "down",
-                    "macAddress": "58:97:bd:40:91:70",
+                    "status": "up",
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "speed": "40 Gb/s",
                     "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "duplex": "full-duplex"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/50": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:71",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/51": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:72",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/52": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:73",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/53": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:74",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/54": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "58:97:bd:40:91:75",
-                    "mtu": "1500 bytes",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "58:97:bd:40:91:3f",
+                    "mtu": "1500 bytes"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             }
@@ -1402,13 +1335,9 @@
         "portSummary": {
             "switchports": {
                 "total": 54,
-                "use": 0,
-                "free": 54
+                "use": 6,
+                "free": 48
             }
-        },
-        "recordTime": {
-            "utcTime": 1737392846432,
-            "utcDateTime": "Mon, 20 Jan 2025 17:07:26 GMT"
         }
     }
 }

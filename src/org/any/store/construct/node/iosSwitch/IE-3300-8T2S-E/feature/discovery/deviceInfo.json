@@ -31,7 +31,6 @@
         "components": {}
     },
     "detectedSerialNumber": "FCW2653Y071",
-    "uptime": "19w6d1m",
     "chassis": {
         "0": {
             "sku": "IE-3300-8T2S",
@@ -277,10 +276,6 @@
                 "use": 1,
                 "free": 9
             }
-        },
-        "recordTime": {
-            "utcTime": 1737392839803,
-            "utcDateTime": "Mon, 20 Jan 2025 17:07:19 GMT"
         }
     }
 }

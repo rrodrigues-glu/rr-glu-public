@@ -31,7 +31,6 @@
         "series": "1000v"
     },
     "detectedSerialNumber": "9IPT2ZFOIT9",
-    "uptime": "6w6d3h21m",
     "chassis": {
         "R0": {
             "sku": "CSR1000V",
@@ -88,11 +87,8 @@
                     "macAddress": "",
                     "phyMacAddress": ""
                 },
-                "description": ":N1:BJD-DXN-6-R01-WLC01 TenGigabitEthernet0/0/1-TEST",
-                "phyVirt": "virtual",
-                "configured": {
-                    "enabled": true
-                }
+                "description": "",
+                "phyVirt": "virtual"
             },
             "Loopback44": {
                 "operational": {
@@ -117,7 +113,7 @@
                     "phyMacAddress": "",
                     "ipv4Address": "172.3.56.55/24"
                 },
-                "description": "c3 test",
+                "description": "r-sdwan-a TEMP INT",
                 "phyVirt": "virtual",
                 "type": "l3",
                 "configured": {
@@ -134,7 +130,7 @@
                     "phyMacAddress": "",
                     "ipv4Address": "17.3.56.1/24"
                 },
-                "description": "test123456789",
+                "description": "63",
                 "phyVirt": "virtual",
                 "type": "l3",
                 "configured": {
@@ -168,7 +164,7 @@
                     "phyMacAddress": "",
                     "ipv4Address": "12.3.56.1/24"
                 },
-                "description": "device tracking",
+                "description": "sdwan-a iDRAC",
                 "phyVirt": "virtual",
                 "type": "l3",
                 "configured": {
@@ -194,10 +190,6 @@
                 "use": 0,
                 "free": 0
             }
-        },
-        "recordTime": {
-            "utcTime": 1771946111094,
-            "utcDateTime": "Tue, 24 Feb 2026 15:15:11 GMT"
         }
     }
 }

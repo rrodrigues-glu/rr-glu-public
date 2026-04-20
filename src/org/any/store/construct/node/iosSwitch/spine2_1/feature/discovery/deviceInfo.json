@@ -57,7 +57,6 @@
         "series": "9300"
     },
     "detectedSerialNumber": "FJC2312T0BV",
-    "uptime": "6w3d18h5m",
     "stack": {
         "1": {
             "sku": "C9300-24UX",
@@ -132,6 +131,7 @@
             "GigabitEthernet0/0": {
                 "operational": {
                     "status": "up",
+                    "duplex": "full",
                     "mtu": "1500",
                     "speed": "1000000 Kbit/sec",
                     "macAddress": "4c:bc:48:78:e6:80",
@@ -154,13 +154,13 @@
                     "speed": "10000000 Kbit/sec",
                     "macAddress": "4c:bc:48:78:e6:e4",
                     "phyMacAddress": "4c:bc:48:78:e6:e4",
-                    "ipv4Address": "10.33.116.2/31"
+                    "ipv4Address": "10.100.2.40/31"
                 },
-                "description": "ETH1",
+                "description": "ETH21",
                 "phyVirt": "physical",
                 "type": "l3",
                 "configured": {
-                    "ipv4Address": "10.33.116.2/31",
+                    "ipv4Address": "10.100.2.40/31",
                     "enabled": true
                 }
             },
@@ -172,13 +172,13 @@
                     "speed": "10000000 Kbit/sec",
                     "macAddress": "4c:bc:48:78:e6:d6",
                     "phyMacAddress": "4c:bc:48:78:e6:d6",
-                    "ipv4Address": "10.33.116.4/31"
+                    "ipv4Address": "10.100.2.42/31"
                 },
-                "description": "ETH2",
+                "description": "ETH22",
                 "phyVirt": "physical",
                 "type": "l3",
                 "configured": {
-                    "ipv4Address": "10.33.116.4/31",
+                    "ipv4Address": "10.100.2.42/31",
                     "enabled": true
                 }
             },
@@ -186,375 +186,397 @@
                 "operational": {
                     "status": "down",
                     "duplex": "auto",
-                    "mtu": "1500",
+                    "mtu": "9100",
                     "speed": "10000000 Kbit/sec",
-                    "macAddress": "4c:bc:48:78:e6:83",
-                    "phyMacAddress": "4c:bc:48:78:e6:83",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "4c:bc:48:78:e6:d8",
+                    "phyMacAddress": "4c:bc:48:78:e6:d8",
+                    "ipv4Address": "10.100.2.4/31"
                 },
-                "description": "",
+                "description": "ETH3",
                 "phyVirt": "physical",
-                "type": "l2"
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.100.2.4/31",
+                    "enabled": true
+                }
             },
             "TenGigabitEthernet1/0/4": {
                 "operational": {
                     "status": "down",
                     "duplex": "auto",
-                    "mtu": "1500",
+                    "mtu": "9100",
                     "speed": "10000000 Kbit/sec",
-                    "macAddress": "4c:bc:48:78:e6:84",
-                    "phyMacAddress": "4c:bc:48:78:e6:84",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "4c:bc:48:78:e6:f6",
+                    "phyMacAddress": "4c:bc:48:78:e6:f6",
+                    "ipv4Address": "10.100.2.6/31"
                 },
-                "description": "",
+                "description": "ETH4",
                 "phyVirt": "physical",
-                "type": "l2"
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.100.2.6/31",
+                    "enabled": true
+                }
             },
             "TenGigabitEthernet1/0/5": {
                 "operational": {
                     "status": "down",
                     "duplex": "auto",
-                    "mtu": "1500",
+                    "mtu": "9100",
                     "speed": "10000000 Kbit/sec",
-                    "macAddress": "4c:bc:48:78:e6:85",
-                    "phyMacAddress": "4c:bc:48:78:e6:85",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "4c:bc:48:78:e6:e4",
+                    "phyMacAddress": "4c:bc:48:78:e6:e4",
+                    "ipv4Address": "10.100.2.8/31"
                 },
-                "description": "",
+                "description": "ETH5",
                 "phyVirt": "physical",
-                "type": "l2"
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.100.2.8/31",
+                    "enabled": true
+                }
             },
             "TenGigabitEthernet1/0/6": {
                 "operational": {
                     "status": "down",
                     "duplex": "auto",
-                    "mtu": "1500",
+                    "mtu": "9100",
                     "speed": "10000000 Kbit/sec",
-                    "macAddress": "4c:bc:48:78:e6:86",
-                    "phyMacAddress": "4c:bc:48:78:e6:86",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "4c:bc:48:78:e6:d6",
+                    "phyMacAddress": "4c:bc:48:78:e6:d6",
+                    "ipv4Address": "10.100.2.10/31"
                 },
-                "description": "",
+                "description": "ETH6",
                 "phyVirt": "physical",
-                "type": "l2"
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.100.2.10/31",
+                    "enabled": true
+                }
             },
             "TenGigabitEthernet1/0/7": {
                 "operational": {
                     "status": "down",
                     "duplex": "auto",
-                    "mtu": "1500",
+                    "mtu": "9100",
                     "speed": "10000000 Kbit/sec",
-                    "macAddress": "4c:bc:48:78:e6:87",
-                    "phyMacAddress": "4c:bc:48:78:e6:87",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "4c:bc:48:78:e6:c0",
+                    "phyMacAddress": "4c:bc:48:78:e6:c0",
+                    "ipv4Address": "10.100.2.12/31"
                 },
-                "description": "",
+                "description": "ETH7",
                 "phyVirt": "physical",
-                "type": "l2"
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.100.2.12/31",
+                    "enabled": true
+                }
             },
             "TenGigabitEthernet1/0/8": {
                 "operational": {
                     "status": "down",
                     "duplex": "auto",
-                    "mtu": "1500",
+                    "mtu": "9100",
                     "speed": "10000000 Kbit/sec",
-                    "macAddress": "4c:bc:48:78:e6:88",
-                    "phyMacAddress": "4c:bc:48:78:e6:88",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "4c:bc:48:78:e6:e7",
+                    "phyMacAddress": "4c:bc:48:78:e6:e7",
+                    "ipv4Address": "10.100.2.14/31"
                 },
-                "description": "",
+                "description": "ETH8",
                 "phyVirt": "physical",
-                "type": "l2"
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.100.2.14/31",
+                    "enabled": true
+                }
             },
             "TenGigabitEthernet1/0/9": {
                 "operational": {
                     "status": "down",
                     "duplex": "auto",
-                    "mtu": "1500",
+                    "mtu": "9100",
                     "speed": "10000000 Kbit/sec",
-                    "macAddress": "4c:bc:48:78:e6:89",
-                    "phyMacAddress": "4c:bc:48:78:e6:89",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "4c:bc:48:78:e6:f7",
+                    "phyMacAddress": "4c:bc:48:78:e6:f7",
+                    "ipv4Address": "10.100.2.16/31"
                 },
-                "description": "",
+                "description": "ETH9",
                 "phyVirt": "physical",
-                "type": "l2"
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.100.2.16/31",
+                    "enabled": true
+                }
             },
             "TenGigabitEthernet1/0/10": {
                 "operational": {
                     "status": "down",
                     "duplex": "auto",
-                    "mtu": "1500",
+                    "mtu": "9100",
                     "speed": "10000000 Kbit/sec",
-                    "macAddress": "4c:bc:48:78:e6:8a",
-                    "phyMacAddress": "4c:bc:48:78:e6:8a",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "4c:bc:48:78:e6:c7",
+                    "phyMacAddress": "4c:bc:48:78:e6:c7",
+                    "ipv4Address": "10.100.2.18/31"
                 },
-                "description": "",
+                "description": "ETH10",
                 "phyVirt": "physical",
-                "type": "l2"
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.100.2.18/31",
+                    "enabled": true
+                }
             },
             "TenGigabitEthernet1/0/11": {
                 "operational": {
                     "status": "down",
                     "duplex": "auto",
-                    "mtu": "1500",
+                    "mtu": "9100",
                     "speed": "10000000 Kbit/sec",
-                    "macAddress": "4c:bc:48:78:e6:8b",
-                    "phyMacAddress": "4c:bc:48:78:e6:8b",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "4c:bc:48:78:e6:d7",
+                    "phyMacAddress": "4c:bc:48:78:e6:d7",
+                    "ipv4Address": "10.100.2.20/31"
                 },
-                "description": "",
+                "description": "ETH11",
                 "phyVirt": "physical",
-                "type": "l2"
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.100.2.20/31",
+                    "enabled": true
+                }
             },
             "TenGigabitEthernet1/0/12": {
                 "operational": {
                     "status": "down",
                     "duplex": "auto",
-                    "mtu": "1500",
+                    "mtu": "9100",
                     "speed": "10000000 Kbit/sec",
-                    "macAddress": "4c:bc:48:78:e6:8c",
-                    "phyMacAddress": "4c:bc:48:78:e6:8c",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "4c:bc:48:78:e6:e6",
+                    "phyMacAddress": "4c:bc:48:78:e6:e6",
+                    "ipv4Address": "10.100.2.22/31"
                 },
-                "description": "",
+                "description": "ETH12",
                 "phyVirt": "physical",
-                "type": "l2"
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.100.2.22/31",
+                    "enabled": true
+                }
             },
             "TenGigabitEthernet1/0/13": {
                 "operational": {
                     "status": "down",
                     "duplex": "auto",
-                    "mtu": "1500",
+                    "mtu": "9100",
                     "speed": "10000000 Kbit/sec",
-                    "macAddress": "4c:bc:48:78:e6:8d",
-                    "phyMacAddress": "4c:bc:48:78:e6:8d",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "4c:bc:48:78:e6:f4",
+                    "phyMacAddress": "4c:bc:48:78:e6:f4",
+                    "ipv4Address": "10.100.2.24/31"
                 },
-                "description": "",
+                "description": "ETH13",
                 "phyVirt": "physical",
-                "type": "l2"
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.100.2.24/31",
+                    "enabled": true
+                }
             },
             "TenGigabitEthernet1/0/14": {
                 "operational": {
                     "status": "down",
                     "duplex": "auto",
-                    "mtu": "1500",
+                    "mtu": "9100",
                     "speed": "10000000 Kbit/sec",
-                    "macAddress": "4c:bc:48:78:e6:8e",
-                    "phyMacAddress": "4c:bc:48:78:e6:8e",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "4c:bc:48:78:e6:c6",
+                    "phyMacAddress": "4c:bc:48:78:e6:c6",
+                    "ipv4Address": "10.100.2.26/31"
                 },
-                "description": "",
+                "description": "ETH14",
                 "phyVirt": "physical",
-                "type": "l2"
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.100.2.26/31",
+                    "enabled": true
+                }
             },
             "TenGigabitEthernet1/0/15": {
                 "operational": {
                     "status": "down",
                     "duplex": "auto",
-                    "mtu": "1500",
+                    "mtu": "9100",
                     "speed": "10000000 Kbit/sec",
-                    "macAddress": "4c:bc:48:78:e6:8f",
-                    "phyMacAddress": "4c:bc:48:78:e6:8f",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "4c:bc:48:78:e6:d0",
+                    "phyMacAddress": "4c:bc:48:78:e6:d0",
+                    "ipv4Address": "10.100.2.28/31"
                 },
-                "description": "",
+                "description": "ETH15",
                 "phyVirt": "physical",
-                "type": "l2"
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.100.2.28/31",
+                    "enabled": true
+                }
             },
             "TenGigabitEthernet1/0/16": {
                 "operational": {
                     "status": "down",
                     "duplex": "auto",
-                    "mtu": "1500",
+                    "mtu": "9100",
                     "speed": "10000000 Kbit/sec",
-                    "macAddress": "4c:bc:48:78:e6:90",
-                    "phyMacAddress": "4c:bc:48:78:e6:90",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "4c:bc:48:78:e6:f7",
+                    "phyMacAddress": "4c:bc:48:78:e6:f7",
+                    "ipv4Address": "10.100.2.30/31"
                 },
-                "description": "",
+                "description": "ETH16",
                 "phyVirt": "physical",
-                "type": "l2"
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.100.2.30/31",
+                    "enabled": true
+                }
             },
             "TenGigabitEthernet1/0/17": {
                 "operational": {
                     "status": "down",
                     "duplex": "auto",
-                    "mtu": "1500",
+                    "mtu": "9100",
                     "speed": "10000000 Kbit/sec",
-                    "macAddress": "4c:bc:48:78:e6:91",
-                    "phyMacAddress": "4c:bc:48:78:e6:91",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "4c:bc:48:78:e6:c7",
+                    "phyMacAddress": "4c:bc:48:78:e6:c7",
+                    "ipv4Address": "10.100.2.32/31"
                 },
-                "description": "",
+                "description": "ETH17",
                 "phyVirt": "physical",
-                "type": "l2"
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.100.2.32/31",
+                    "enabled": true
+                }
             },
             "TenGigabitEthernet1/0/18": {
                 "operational": {
                     "status": "down",
                     "duplex": "auto",
-                    "mtu": "1500",
+                    "mtu": "9100",
                     "speed": "10000000 Kbit/sec",
-                    "macAddress": "4c:bc:48:78:e6:92",
-                    "phyMacAddress": "4c:bc:48:78:e6:92",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "4c:bc:48:78:e6:d7",
+                    "phyMacAddress": "4c:bc:48:78:e6:d7",
+                    "ipv4Address": "10.100.2.34/31"
                 },
-                "description": "",
+                "description": "ETH18",
                 "phyVirt": "physical",
-                "type": "l2"
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.100.2.34/31",
+                    "enabled": true
+                }
             },
             "TenGigabitEthernet1/0/19": {
                 "operational": {
                     "status": "down",
                     "duplex": "auto",
-                    "mtu": "1500",
+                    "mtu": "9100",
                     "speed": "10000000 Kbit/sec",
-                    "macAddress": "4c:bc:48:78:e6:93",
-                    "phyMacAddress": "4c:bc:48:78:e6:93",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "4c:bc:48:78:e6:e7",
+                    "phyMacAddress": "4c:bc:48:78:e6:e7",
+                    "ipv4Address": "10.100.2.36/31"
                 },
-                "description": "",
+                "description": "ETH19",
                 "phyVirt": "physical",
-                "type": "l2"
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.100.2.36/31",
+                    "enabled": true
+                }
             },
             "TenGigabitEthernet1/0/20": {
                 "operational": {
                     "status": "down",
                     "duplex": "auto",
-                    "mtu": "1500",
+                    "mtu": "9100",
                     "speed": "10000000 Kbit/sec",
-                    "macAddress": "4c:bc:48:78:e6:94",
-                    "phyMacAddress": "4c:bc:48:78:e6:94",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "4c:bc:48:78:e6:f7",
+                    "phyMacAddress": "4c:bc:48:78:e6:f7",
+                    "ipv4Address": "10.100.2.38/31"
                 },
-                "description": "",
+                "description": "ETH20",
                 "phyVirt": "physical",
-                "type": "l2"
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.100.2.38/31",
+                    "enabled": true
+                }
             },
             "TenGigabitEthernet1/0/21": {
                 "operational": {
                     "status": "down",
                     "duplex": "auto",
-                    "mtu": "1500",
+                    "mtu": "9100",
                     "speed": "10000000 Kbit/sec",
-                    "macAddress": "4c:bc:48:78:e6:95",
-                    "phyMacAddress": "4c:bc:48:78:e6:95",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "4c:bc:48:78:e6:c7",
+                    "phyMacAddress": "4c:bc:48:78:e6:c7",
+                    "ipv4Address": "10.100.2.0/31"
                 },
-                "description": "",
+                "description": "ETH1",
                 "phyVirt": "physical",
-                "type": "l2"
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.100.2.0/31",
+                    "enabled": true
+                }
             },
             "TenGigabitEthernet1/0/22": {
                 "operational": {
                     "status": "down",
                     "duplex": "auto",
-                    "mtu": "1500",
+                    "mtu": "9100",
                     "speed": "10000000 Kbit/sec",
-                    "macAddress": "4c:bc:48:78:e6:96",
-                    "phyMacAddress": "4c:bc:48:78:e6:96",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "4c:bc:48:78:e6:d7",
+                    "phyMacAddress": "4c:bc:48:78:e6:d7",
+                    "ipv4Address": "10.100.2.2/31"
                 },
-                "description": "",
+                "description": "ETH2",
                 "phyVirt": "physical",
-                "type": "l2"
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.100.2.2/31",
+                    "enabled": true
+                }
             },
             "TenGigabitEthernet1/0/23": {
                 "operational": {
                     "status": "down",
                     "duplex": "auto",
-                    "mtu": "1500",
+                    "mtu": "9100",
                     "speed": "10000000 Kbit/sec",
-                    "macAddress": "4c:bc:48:78:e6:97",
-                    "phyMacAddress": "4c:bc:48:78:e6:97",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "4c:bc:48:78:e6:e7",
+                    "phyMacAddress": "4c:bc:48:78:e6:e7",
+                    "ipv4Address": "10.100.2.44/31"
                 },
-                "description": "",
+                "description": "ETH23",
                 "phyVirt": "physical",
-                "type": "l2"
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.100.2.44/31",
+                    "enabled": true
+                }
             },
             "TenGigabitEthernet1/0/24": {
                 "operational": {
                     "status": "down",
                     "duplex": "auto",
-                    "mtu": "1500",
+                    "mtu": "9100",
                     "speed": "10000000 Kbit/sec",
-                    "macAddress": "4c:bc:48:78:e6:98",
-                    "phyMacAddress": "4c:bc:48:78:e6:98",
-                    "access": {
-                        "vlanId": "1",
-                        "vlanName": "default"
-                    }
+                    "macAddress": "4c:bc:48:78:e6:c0",
+                    "phyMacAddress": "4c:bc:48:78:e6:c0",
+                    "ipv4Address": "10.100.2.46/31"
                 },
-                "description": "",
+                "description": "ETH24",
                 "phyVirt": "physical",
-                "type": "l2"
+                "type": "l3",
+                "configured": {
+                    "ipv4Address": "10.100.2.46/31",
+                    "enabled": true
+                }
             },
             "TenGigabitEthernet1/1/1": {
                 "operational": {
@@ -664,13 +686,13 @@
                     "speed": "8000000 Kbit/sec",
                     "macAddress": "",
                     "phyMacAddress": "",
-                    "ipv4Address": "10.33.128.3/32"
+                    "ipv4Address": "10.100.255.1/32"
                 },
                 "description": "LB0",
                 "phyVirt": "virtual",
                 "type": "l3",
                 "configured": {
-                    "ipv4Address": "10.33.128.3/32",
+                    "ipv4Address": "10.100.255.1/32",
                     "enabled": true
                 }
             },
@@ -681,13 +703,13 @@
                     "speed": "8000000 Kbit/sec",
                     "macAddress": "",
                     "phyMacAddress": "",
-                    "ipv4Address": "10.33.128.4/32"
+                    "ipv4Address": "10.33.128.1/32"
                 },
                 "description": "LB1",
                 "phyVirt": "virtual",
                 "type": "l3",
                 "configured": {
-                    "ipv4Address": "10.33.128.4/32",
+                    "ipv4Address": "10.33.128.1/32",
                     "enabled": true
                 }
             },
@@ -698,13 +720,13 @@
                     "speed": "8000000 Kbit/sec",
                     "macAddress": "",
                     "phyMacAddress": "",
-                    "ipv4Address": "10.33.129.2/32"
+                    "ipv4Address": "10.33.129.1/32"
                 },
                 "description": "LB11",
                 "phyVirt": "virtual",
                 "type": "l3",
                 "configured": {
-                    "ipv4Address": "10.33.129.2/32",
+                    "ipv4Address": "10.33.129.1/32",
                     "enabled": true
                 }
             },
@@ -715,13 +737,13 @@
                     "speed": "8000000 Kbit/sec",
                     "macAddress": "",
                     "phyMacAddress": "",
-                    "ipv4Address": "10.33.130.2/32"
+                    "ipv4Address": "10.33.130.1/32"
                 },
                 "description": "LB12",
                 "phyVirt": "virtual",
                 "type": "l3",
                 "configured": {
-                    "ipv4Address": "10.33.130.2/32",
+                    "ipv4Address": "10.33.130.1/32",
                     "enabled": true
                 }
             },
@@ -732,13 +754,13 @@
                     "speed": "8000000 Kbit/sec",
                     "macAddress": "",
                     "phyMacAddress": "",
-                    "ipv4Address": "10.33.131.2/32"
+                    "ipv4Address": "10.33.131.1/32"
                 },
                 "description": "LB13",
                 "phyVirt": "virtual",
                 "type": "l3",
                 "configured": {
-                    "ipv4Address": "10.33.131.2/32",
+                    "ipv4Address": "10.33.131.1/32",
                     "enabled": true
                 }
             },
@@ -749,13 +771,13 @@
                     "speed": "8000000 Kbit/sec",
                     "macAddress": "",
                     "phyMacAddress": "",
-                    "ipv4Address": "10.33.132.2/32"
+                    "ipv4Address": "10.33.132.1/32"
                 },
                 "description": "LB110",
                 "phyVirt": "virtual",
                 "type": "l3",
                 "configured": {
-                    "ipv4Address": "10.33.132.2/32",
+                    "ipv4Address": "10.33.132.1/32",
                     "enabled": true
                 }
             },
@@ -795,14 +817,10 @@
         },
         "portSummary": {
             "switchports": {
-                "total": 27,
+                "total": 5,
                 "use": 1,
-                "free": 26
+                "free": 4
             }
-        },
-        "recordTime": {
-            "utcTime": 1737392905013,
-            "utcDateTime": "Mon, 20 Jan 2025 17:08:25 GMT"
         }
     }
 }

@@ -38,13 +38,12 @@
         "terminalType": "xterm"
     },
     "site": {
-        "@ref": "/org/instance/construct/domain/location/SN001.json"
+        "@ref": "/org/instance/construct/domain/location/Romualdo.json"
     },
-    "@exportedInstanceId": "7f97a30b-eff3-4858-8292-49721d33767f",
     "@id": "7f97a30b-eff3-4858-8292-49721d33767f",
+    "@name": "Aruba",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/arubaosSwitch.jtype"
-    },
-    "@name": "Aruba",
-    "@description": ""
+    }
 }

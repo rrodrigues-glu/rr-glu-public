@@ -36,11 +36,13 @@
     "wanRouter": {
         "enabled": true
     },
-    "@exportedInstanceId": "ac09ba8e-ca96-471e-8a40-93a3189e0a8a",
+    "site": {
+        "@ref": "/org/instance/construct/domain/location/Romualdo.json"
+    },
     "@id": "ac09ba8e-ca96-471e-8a40-93a3189e0a8a",
+    "@name": "IR1101",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/iosRouter.jtype"
-    },
-    "@name": "IR1101",
-    "@description": ""
+    }
 }

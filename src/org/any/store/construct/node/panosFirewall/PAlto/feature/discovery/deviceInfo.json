@@ -18,7 +18,6 @@
         "sku": "PA-3260"
     },
     "detectedSerialNumber": "016401002775",
-    "uptime": "59d18h35m03s",
     "type": {
         "name": "panosFirewall",
         "base": "baseFirewall"
@@ -30,7 +29,9 @@
                 "operational": {
                     "status": "down",
                     "type": "RJ45",
-                    "speed": "1Gbps"
+                    "speed": "1Gbps",
+                    "duplex": "ukn",
+                    "macAddress": "b4:0c:25:e0:40:40"
                 },
                 "configured": {
                     "enabled": true,
@@ -41,34 +42,34 @@
             },
             "ethernet1/10": {
                 "operational": {
-                    "status": "down",
+                    "status": "adminShut",
                     "type": "RJ45",
                     "speed": "1Gbps"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": false
                 },
                 "type": "l2"
             },
             "ethernet1/11": {
                 "operational": {
-                    "status": "down",
+                    "status": "adminShut",
                     "type": "RJ45",
                     "speed": "1Gbps"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": false
                 },
                 "type": "l2"
             },
             "ethernet1/12": {
                 "operational": {
-                    "status": "down",
+                    "status": "adminShut",
                     "type": "RJ45",
                     "speed": "1Gbps"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": false
                 },
                 "type": "l2"
             },
@@ -76,7 +77,9 @@
                 "operational": {
                     "status": "down",
                     "type": "RJ45",
-                    "speed": "1Gbps"
+                    "speed": "1Gbps",
+                    "duplex": "ukn",
+                    "macAddress": "b4:0c:25:e0:40:41"
                 },
                 "configured": {
                     "enabled": true,
@@ -89,7 +92,9 @@
                 "operational": {
                     "status": "down",
                     "type": "RJ45",
-                    "speed": "1Gbps"
+                    "speed": "1Gbps",
+                    "duplex": "ukn",
+                    "macAddress": "b4:0c:25:e0:40:42"
                 },
                 "configured": {
                     "enabled": true,
@@ -100,67 +105,67 @@
             },
             "ethernet1/4": {
                 "operational": {
-                    "status": "down",
+                    "status": "adminShut",
                     "type": "RJ45",
                     "speed": "1Gbps"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": false
                 },
                 "type": "l2"
             },
             "ethernet1/5": {
                 "operational": {
-                    "status": "down",
+                    "status": "adminShut",
                     "type": "RJ45",
                     "speed": "1Gbps"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": false
                 },
                 "type": "l2"
             },
             "ethernet1/6": {
                 "operational": {
-                    "status": "down",
+                    "status": "adminShut",
                     "type": "RJ45",
                     "speed": "1Gbps"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": false
                 },
                 "type": "l2"
             },
             "ethernet1/7": {
                 "operational": {
-                    "status": "down",
+                    "status": "adminShut",
                     "type": "RJ45",
                     "speed": "1Gbps"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": false
                 },
                 "type": "l2"
             },
             "ethernet1/8": {
                 "operational": {
-                    "status": "down",
+                    "status": "adminShut",
                     "type": "RJ45",
                     "speed": "1Gbps"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": false
                 },
                 "type": "l2"
             },
             "ethernet1/9": {
                 "operational": {
-                    "status": "down",
+                    "status": "adminShut",
                     "type": "RJ45",
                     "speed": "1Gbps"
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": false
                 },
                 "type": "l2"
             },
@@ -185,10 +190,6 @@
                 "use": 0,
                 "free": 12
             }
-        },
-        "recordTime": {
-            "utcTime": 1737392906578,
-            "utcDateTime": "Mon, 20 Jan 2025 17:08:26 GMT"
         }
     }
 }

@@ -17,18 +17,18 @@
         "drive": "flash:"
     },
     "hardware": {
-        "serialNumber": "CAT1040RGP8",
+        "serialNumber": "CAT1040RJR0",
         "sku": "WS-C3750-24PS-S",
         "stack": {
             "1": {
                 "sku": "WS-C3750-24P",
                 "version": "12.2(55)SE11",
+                "master": true,
                 "serialNumber": "CAT1040RJR0"
             },
             "2": {
                 "sku": "WS-C3750-24P",
                 "version": "12.2(55)SE11",
-                "master": true,
                 "serialNumber": "CAT1040RGP8"
             }
         },
@@ -36,18 +36,17 @@
         "family": "3700",
         "series": "3750"
     },
-    "detectedSerialNumber": "CAT1040RGP8",
-    "uptime": "47w1d16h58m",
+    "detectedSerialNumber": "CAT1040RJR0",
     "stack": {
         "1": {
             "sku": "WS-C3750-24P",
             "version": "12.2(55)SE11",
+            "master": true,
             "serialNumber": "CAT1040RJR0"
         },
         "2": {
             "sku": "WS-C3750-24P",
             "version": "12.2(55)SE11",
-            "master": true,
             "serialNumber": "CAT1040RGP8"
         }
     },
@@ -72,8 +71,8 @@
                     "duplex": "a-full",
                     "mtu": "1500",
                     "speed": "100000 Kbit",
-                    "macAddress": "00:19:aa:43:54:41",
-                    "phyMacAddress": "00:19:aa:43:54:41",
+                    "macAddress": "00:19:aa:b4:d2:c1",
+                    "phyMacAddress": "00:19:aa:b4:d2:c1",
                     "ipv4Address": "10.150.1.81/27"
                 },
                 "description": "testSyslog",
@@ -693,8 +692,8 @@
                     "duplex": "auto",
                     "mtu": "1500",
                     "speed": "10000 Kbit",
-                    "macAddress": "00:19:aa:43:54:42",
-                    "phyMacAddress": "00:19:aa:43:54:42",
+                    "macAddress": "00:19:aa:b4:d2:c2",
+                    "phyMacAddress": "00:19:aa:b4:d2:c2",
                     "ipv4Address": "10.111.111.1/24"
                 },
                 "description": "",
@@ -1345,14 +1344,6 @@
                 "use": 21,
                 "free": 30
             }
-        },
-        "recordTime": {
-            "utcTime": 1746032618929,
-            "utcDateTime": "Wed, 30 Apr 2025 17:03:38 GMT"
         }
-    },
-    "name": "cat1040rjr0",
-    "detectedOs": "ios",
-    "detectedSoftwareVersion": "12.2(55)SE11",
-    "detectedSku": "WS-C3750-24PS-S"
+    }
 }

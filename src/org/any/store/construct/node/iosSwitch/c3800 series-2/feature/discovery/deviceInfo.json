@@ -5,14 +5,14 @@
     "path": "/sys/jnib/features/deviceDetect/cisco/ios/",
     "sku": "WS-C3850-24U-E",
     "software": {
-        "version": "16.12.5",
+        "version": "16.9.3",
         "major": "16",
-        "minor": "12",
-        "revision": "5",
+        "minor": "9",
+        "revision": "3",
         "train": "",
         "build": "",
         "patch": "",
-        "apiVersion": "16.12.5",
+        "apiVersion": "16.9.3",
         "image": "packages.conf",
         "drive": "flash:"
     },
@@ -22,13 +22,13 @@
         "stack": {
             "1": {
                 "sku": "WS-C3850-24U-E",
-                "version": "16.12.5",
+                "version": "16.9.3",
                 "master": true,
                 "serialNumber": "FOC1909X1FL"
             },
             "2": {
                 "sku": "WS-C3850-24T-E",
-                "version": "16.12.5",
+                "version": "16.9.3",
                 "serialNumber": "FCW2140C07F"
             }
         },
@@ -124,17 +124,16 @@
         "series": "3850"
     },
     "detectedSerialNumber": "FOC1909X1FL",
-    "uptime": "22w3d4h8m",
     "stack": {
         "1": {
             "sku": "WS-C3850-24U-E",
-            "version": "16.12.5",
+            "version": "16.9.3",
             "master": true,
             "serialNumber": "FOC1909X1FL"
         },
         "2": {
             "sku": "WS-C3850-24T-E",
-            "version": "16.12.5",
+            "version": "16.9.3",
             "serialNumber": "FCW2140C07F"
         }
     },
@@ -142,7 +141,16 @@
         "name": "iosSwitch",
         "base": "campusSwitch"
     },
-    "licenses": [],
+    "licenses": [
+        {
+            "name": "C3850-24 IP Services",
+            "alias": null,
+            "count": "2",
+            "eval": true,
+            "remaining": 0,
+            "rtu": false
+        }
+    ],
     "portsInfo": {
         "ports": {
             "Vlan1": {
@@ -217,6 +225,7 @@
             "GigabitEthernet0/0": {
                 "operational": {
                     "status": "up",
+                    "duplex": "full",
                     "mtu": "1500",
                     "speed": "1000000 Kbit/sec",
                     "macAddress": "c8:00:84:35:63:00",
@@ -227,6 +236,7 @@
                 "phyVirt": "physical",
                 "type": "l3",
                 "configured": {
+                    "speed": "1000",
                     "ipv4Address": "10.150.1.12/27",
                     "enabled": true
                 }
@@ -407,10 +417,13 @@
                         "vlanName": "default"
                     }
                 },
-                "description": "",
+                "description": "sdwan-a iDRAC",
                 "phyVirt": "physical",
                 "mediaType": "10/100/1000BaseTX",
-                "type": "l2"
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                }
             },
             "GigabitEthernet1/0/11": {
                 "operational": {
@@ -425,10 +438,13 @@
                         "vlanName": "default"
                     }
                 },
-                "description": "",
+                "description": "r-sdwan-a TEMP INT",
                 "phyVirt": "physical",
                 "mediaType": "10/100/1000BaseTX",
-                "type": "l2"
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                }
             },
             "GigabitEthernet1/0/12": {
                 "operational": {
@@ -443,10 +459,13 @@
                         "vlanName": "default"
                     }
                 },
-                "description": "",
+                "description": "r-sdwan-a Mgt",
                 "phyVirt": "physical",
                 "mediaType": "10/100/1000BaseTX",
-                "type": "l2"
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                }
             },
             "GigabitEthernet1/0/13": {
                 "operational": {
@@ -461,10 +480,13 @@
                         "vlanName": "default"
                     }
                 },
-                "description": "",
+                "description": "sdwan-b iDRAC",
                 "phyVirt": "physical",
                 "mediaType": "10/100/1000BaseTX",
-                "type": "l2"
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                }
             },
             "GigabitEthernet1/0/14": {
                 "operational": {
@@ -479,10 +501,13 @@
                         "vlanName": "default"
                     }
                 },
-                "description": "",
+                "description": "r-sdwan-b TEMP INT",
                 "phyVirt": "physical",
                 "mediaType": "10/100/1000BaseTX",
-                "type": "l2"
+                "type": "l2",
+                "configured": {
+                    "enabled": true
+                }
             },
             "GigabitEthernet1/0/15": {
                 "operational": {
@@ -1283,6 +1308,18 @@
                 "phyVirt": "physical",
                 "type": "l2"
             },
+            "Port-channel12": {
+                "operational": {
+                    "status": "down",
+                    "mtu": "1500",
+                    "speed": "100000 Kbit/sec",
+                    "macAddress": "00:00:00:00:00:00",
+                    "phyMacAddress": "00:00:00:00:00:00"
+                },
+                "description": "",
+                "phyVirt": "virtual",
+                "type": "l2"
+            },
             "Loopback123": {
                 "operational": {
                     "status": "up",
@@ -1303,14 +1340,10 @@
         },
         "portSummary": {
             "switchports": {
-                "total": 60,
+                "total": 61,
                 "use": 0,
-                "free": 60
+                "free": 61
             }
-        },
-        "recordTime": {
-            "utcTime": 1737392890314,
-            "utcDateTime": "Mon, 20 Jan 2025 17:08:10 GMT"
         }
     }
 }

@@ -6,6 +6,9 @@
         "credentials": {
             "@ref": "/secret/sys/credentials/deviceUserPass/admin.json"
         },
+        "enablePassword": {
+            "@ref": null
+        },
         "type": "ssh",
         "port": 22,
         "terminalType": "xterm"
@@ -36,13 +39,12 @@
         "enabled": true
     },
     "site": {
-        "@ref": "/org/instance/construct/domain/location/SN001.json"
+        "@ref": "/org/instance/construct/domain/location/Romualdo.json"
     },
-    "@exportedInstanceId": "df49e815-13c9-48ce-95d0-fa465053f727",
     "@id": "df49e815-13c9-48ce-95d0-fa465053f727",
+    "@name": "TestRom",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/iosRouter.jtype"
-    },
-    "@name": "TestRom",
-    "@description": ""
+    }
 }

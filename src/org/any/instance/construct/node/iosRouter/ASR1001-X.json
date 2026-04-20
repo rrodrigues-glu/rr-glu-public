@@ -36,11 +36,13 @@
     "wanRouter": {
         "enabled": true
     },
-    "@exportedInstanceId": "05a77bc2-b385-4228-9926-eae4c36d7617",
+    "site": {
+        "@ref": "/org/instance/construct/domain/location/Romualdo.json"
+    },
     "@id": "05a77bc2-b385-4228-9926-eae4c36d7617",
+    "@name": "ASR1001-X",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/iosRouter.jtype"
-    },
-    "@name": "ASR1001-X",
-    "@description": ""
+    }
 }

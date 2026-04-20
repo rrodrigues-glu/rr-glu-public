@@ -36,11 +36,13 @@
     "dcSwitch": {
         "enabled": true
     },
-    "@exportedInstanceId": "b1398bf1-8fea-4907-a451-085fa5c1470d",
+    "site": {
+        "@ref": "/org/instance/construct/domain/location/Romualdo.json"
+    },
     "@id": "b1398bf1-8fea-4907-a451-085fa5c1470d",
+    "@name": "N7706-VDC1",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/nxosSwitch.jtype"
-    },
-    "@name": "N7706-VDC1",
-    "@description": ""
+    }
 }

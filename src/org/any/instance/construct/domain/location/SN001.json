@@ -8,11 +8,10 @@
         "contact": "",
         "techContact": ""
     },
-    "@exportedInstanceId": "0f6c659f-0cce-42d1-854a-547747c94d58",
-    "@id": "0f6c659f-0cce-42d1-854a-547747c94d58",
+    "@id": "e1c8dc25-af4c-4886-90dc-9b4d8efc0786",
+    "@name": "SN001",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/domain/location.jtype"
-    },
-    "@name": "SN001",
-    "@description": ""
+    }
 }

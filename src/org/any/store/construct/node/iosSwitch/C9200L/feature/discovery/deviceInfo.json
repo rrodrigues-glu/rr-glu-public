@@ -5,14 +5,14 @@
     "path": "/sys/jnib/features/deviceDetect/cisco/ios/",
     "sku": "C9200L-24P-4G",
     "software": {
-        "version": "16.9.5",
-        "major": "16",
-        "minor": "9",
-        "revision": "5",
+        "version": "17.4.1",
+        "major": "17",
+        "minor": "4",
+        "revision": "1",
         "train": "",
         "build": "",
         "patch": "",
-        "apiVersion": "16.9.5",
+        "apiVersion": "17.4.1",
         "image": "packages.conf",
         "drive": "flash:"
     },
@@ -22,7 +22,7 @@
         "stack": {
             "1": {
                 "sku": "C9200L-24P-4G",
-                "version": "16.9.5",
+                "version": "17.04.01",
                 "master": true,
                 "serialNumber": "JAE2250061X"
             }
@@ -30,10 +30,10 @@
         "components": {
             "powerSupplies": [
                 {
-                    "description": "Switch 1 - Power Supply B",
+                    "description": "Switch 1 - Power Supply A",
                     "label": "Power Supply",
                     "location": {
-                        "path": "B",
+                        "path": "A",
                         "type": "psu"
                     },
                     "serialNumber": "QCS22424P38",
@@ -45,11 +45,10 @@
         "series": "9200"
     },
     "detectedSerialNumber": "JAE2250061X",
-    "uptime": "32w5d1h23m",
     "stack": {
         "1": {
             "sku": "C9200L-24P-4G",
-            "version": "16.9.5",
+            "version": "17.04.01",
             "master": true,
             "serialNumber": "JAE2250061X"
         }
@@ -58,22 +57,7 @@
         "name": "iosSwitch",
         "base": "campusSwitch"
     },
-    "licenses": [
-        {
-            "name": "C9200L-DNA-E-24",
-            "alias": null,
-            "eval": true,
-            "remaining": 0,
-            "rtu": false
-        },
-        {
-            "name": "C9200L-NW-E-24",
-            "alias": null,
-            "eval": true,
-            "remaining": 0,
-            "rtu": false
-        }
-    ],
+    "licenses": [],
     "portsInfo": {
         "ports": {
             "Vlan1": {
@@ -84,6 +68,7 @@
                     "macAddress": "08:ec:f5:ad:4a:c7",
                     "phyMacAddress": "08:ec:f5:ad:4a:c7",
                     "memberInterfaces": [
+                        "GigabitEthernet1/0/1",
                         "GigabitEthernet1/0/12",
                         "GigabitEthernet1/0/13",
                         "GigabitEthernet1/0/14",
@@ -109,6 +94,7 @@
             "GigabitEthernet0/0": {
                 "operational": {
                     "status": "up",
+                    "duplex": "full",
                     "mtu": "1500",
                     "speed": "1000000 Kbit/sec",
                     "macAddress": "08:ec:f5:ad:4a:80",
@@ -125,33 +111,30 @@
             },
             "GigabitEthernet1/0/1": {
                 "operational": {
-                    "status": "down",
-                    "duplex": "auto",
+                    "status": "up",
+                    "duplex": "a-full",
                     "mtu": "1500",
                     "speed": "1000000 Kbit/sec",
                     "macAddress": "08:ec:f5:ad:4a:81",
                     "phyMacAddress": "08:ec:f5:ad:4a:81",
                     "access": {
-                        "vlanId": "150",
-                        "vlanName": "CTS"
+                        "vlanId": "1",
+                        "vlanName": "default"
                     }
                 },
-                "description": "",
+                "description": "Meraki MS225-24-02 Port 1",
                 "phyVirt": "physical",
                 "mediaType": "10/100/1000BaseTX",
                 "type": "l2",
                 "configured": {
-                    "access": {
-                        "vlanId": "150",
-                        "vlanName": "CTS"
-                    },
+                    "access": {},
                     "enabled": true
                 }
             },
             "GigabitEthernet1/0/2": {
                 "operational": {
-                    "status": "down",
-                    "duplex": "auto",
+                    "status": "up",
+                    "duplex": "a-full",
                     "mtu": "1500",
                     "speed": "1000000 Kbit/sec",
                     "macAddress": "08:ec:f5:ad:4a:82",
@@ -706,7 +689,6 @@
                 "operational": {
                     "status": "down",
                     "memberInterfaces": [
-                        "GigabitEthernet1/0/1",
                         "GigabitEthernet1/0/2",
                         "GigabitEthernet1/0/3",
                         "GigabitEthernet1/0/4",
@@ -727,10 +709,6 @@
                 "use": 10,
                 "free": 18
             }
-        },
-        "recordTime": {
-            "utcTime": 1737392880958,
-            "utcDateTime": "Mon, 20 Jan 2025 17:08:00 GMT"
         }
     }
 }

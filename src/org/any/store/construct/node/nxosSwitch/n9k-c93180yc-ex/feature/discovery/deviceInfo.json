@@ -1,18 +1,18 @@
 {
-    "hostname": "n9k-c93180yc-ex",
+    "hostname": "LCADMCC99",
     "vendor": "cisco",
     "os": "nxos",
     "path": "/sys/jnib/features/deviceDetect/cisco/nxos/",
     "sku": "N9K-C93180YC-EX",
     "software": {
-        "version": "10.1(2)",
-        "major": "10.1",
-        "minor": "2",
+        "version": "10.3(3)",
+        "major": "10.3",
+        "minor": "3",
         "revision": "",
         "patch": "",
         "build": "",
         "train": "",
-        "image": "nxos.10.1.2.bin",
+        "image": "nxos64-cs.10.3.3.F.bin",
         "drive": "bootflash:/"
     },
     "hardware": {
@@ -103,6 +103,10 @@
             "enabled": false,
             "instance": 1
         },
+        "app-hosting": {
+            "enabled": false,
+            "instance": 1
+        },
         "bash-shell": {
             "enabled": false,
             "instance": 1
@@ -187,6 +191,10 @@
             "enabled": false,
             "instance": 1
         },
+        "grpctunnel": {
+            "enabled": false,
+            "instance": 1
+        },
         "hardware-telemetry": {
             "enabled": false,
             "instance": 1
@@ -212,7 +220,7 @@
             "instance": 1
         },
         "intersight": {
-            "enabled": false,
+            "enabled": true,
             "instance": 1
         },
         "isis": {
@@ -244,14 +252,14 @@
             "instance": 1
         },
         "license-smart": {
-            "enabled": false,
-            "instance": 1
-        },
-        "license-smart-res": {
-            "enabled": false,
+            "enabled": true,
             "instance": 1
         },
         "lldp": {
+            "enabled": true,
+            "instance": 1
+        },
+        "mdns": {
             "enabled": false,
             "instance": 1
         },
@@ -455,6 +463,10 @@
             "enabled": false,
             "instance": 1
         },
+        "openconfig": {
+            "enabled": false,
+            "instance": 1
+        },
         "openflow": {
             "enabled": false,
             "instance": 1
@@ -507,6 +519,10 @@
             "enabled": false,
             "instance": 4
         },
+        "rise": {
+            "enabled": false,
+            "instance": 1
+        },
         "scheduler": {
             "enabled": false,
             "instance": 1
@@ -539,6 +555,10 @@
             "enabled": false,
             "instance": 1
         },
+        "smart-channel": {
+            "enabled": false,
+            "instance": 1
+        },
         "srte": {
             "enabled": false,
             "instance": 1
@@ -552,6 +572,10 @@
             "instance": 1
         },
         "tacacs": {
+            "enabled": false,
+            "instance": 1
+        },
+        "tap-aggregation": {
             "enabled": false,
             "instance": 1
         },
@@ -609,7 +633,6 @@
         }
     },
     "detectedSerialNumber": "FDO21280ZN6",
-    "uptime": "80d2h28m56s",
     "chassis": {
         "1": {
             "sku": "N9K-C93180YC-EX",
@@ -621,14 +644,7 @@
         "name": "nxosSwitch",
         "base": "dcSwitch"
     },
-    "licenses": [
-        {
-            "name": "LAN_ENTERPRISE_SERVICES_PKG",
-            "eval": false,
-            "rtu": false,
-            "inUse": true
-        }
-    ],
+    "licenses": [],
     "portsInfo": {
         "ports": {
             "mgmt0": {
@@ -749,22 +765,32 @@
             "Ethernet1/10": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "40:01:7a:f9:0a:97",
-                    "mtu": "1500 bytes"
+                    "macAddress": "40:01:7a:f9:0a:a1",
+                    "mtu": "1500 bytes",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
             "Ethernet1/11": {
                 "operational": {
                     "status": "down",
-                    "macAddress": "40:01:7a:f9:0a:97",
-                    "mtu": "1500 bytes"
+                    "macAddress": "40:01:7a:f9:0a:a2",
+                    "mtu": "1500 bytes",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
                 },
                 "configured": {
-                    "enabled": true
+                    "enabled": true,
+                    "access": {}
                 },
                 "type": "l2"
             },
@@ -1166,9 +1192,11 @@
             },
             "Ethernet1/48": {
                 "operational": {
-                    "status": "down",
+                    "status": "up",
                     "macAddress": "40:01:7a:f9:0a:97",
-                    "mtu": "1500 bytes"
+                    "speed": "1000 Mb/s",
+                    "mtu": "1500 bytes",
+                    "duplex": "full-duplex"
                 },
                 "configured": {
                     "enabled": true
@@ -1240,18 +1268,31 @@
                     "enabled": true
                 },
                 "type": "l2"
+            },
+            "port-channel100": {
+                "operational": {
+                    "status": "down",
+                    "macAddress": "00:00:00:00:00:00",
+                    "mtu": "1500 bytes",
+                    "access": {
+                        "vlanId": "1",
+                        "vlanName": "default"
+                    }
+                },
+                "configured": {
+                    "enabled": true,
+                    "access": {}
+                },
+                "description": "Test port-channel description",
+                "type": "l2"
             }
         },
         "portSummary": {
             "switchports": {
-                "total": 54,
-                "use": 0,
+                "total": 55,
+                "use": 1,
                 "free": 54
             }
-        },
-        "recordTime": {
-            "utcTime": 1737392833486,
-            "utcDateTime": "Mon, 20 Jan 2025 17:07:13 GMT"
         }
     }
 }

@@ -25,7 +25,6 @@
         "series": "1100"
     },
     "detectedSerialNumber": "FCW2450P430",
-    "uptime": "1y32w3d23h16m",
     "chassis": {},
     "type": {
         "name": "iosRouter",
@@ -167,10 +166,6 @@
                 "use": 1,
                 "free": 3
             }
-        },
-        "recordTime": {
-            "utcTime": 1737392921141,
-            "utcDateTime": "Mon, 20 Jan 2025 17:08:41 GMT"
         }
     }
 }

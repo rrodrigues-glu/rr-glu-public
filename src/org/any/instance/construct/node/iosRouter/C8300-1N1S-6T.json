@@ -36,11 +36,13 @@
     "wanRouter": {
         "enabled": true
     },
-    "@exportedInstanceId": "f6f8b3d0-90bf-4c10-b754-83081961071b",
+    "site": {
+        "@ref": "/org/instance/construct/domain/location/Romualdo.json"
+    },
     "@id": "f6f8b3d0-90bf-4c10-b754-83081961071b",
+    "@name": "C8300-1N1S-6T",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/iosRouter.jtype"
-    },
-    "@name": "C8300-1N1S-6T",
-    "@description": ""
+    }
 }

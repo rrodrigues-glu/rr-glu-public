@@ -5,14 +5,14 @@
     "path": "/sys/jnib/features/deviceDetect/cisco/nxos/",
     "sku": "N3K-C3048TP-1GE",
     "software": {
-        "version": "9.3(6)",
-        "major": "9.3",
-        "minor": "6",
+        "version": "9.2(4)",
+        "major": "9.2",
+        "minor": "4",
         "revision": "",
         "patch": "",
         "build": "",
         "train": "",
-        "image": "nxos.9.3.6.bin",
+        "image": "nxos.9.2.4.bin",
         "drive": "bootflash:/"
     },
     "hardware": {
@@ -77,10 +77,6 @@
             "enabled": false,
             "instance": 1
         },
-        "bluez": {
-            "enabled": false,
-            "instance": 1
-        },
         "bulkstat": {
             "enabled": false,
             "instance": 1
@@ -113,14 +109,6 @@
             "enabled": false,
             "instance": 16
         },
-        "enm": {
-            "enabled": false,
-            "instance": 1
-        },
-        "epbr": {
-            "enabled": false,
-            "instance": 1
-        },
         "eth-port-sec": {
             "enabled": false,
             "instance": 1
@@ -141,11 +129,7 @@
             "enabled": false,
             "instance": 1
         },
-        "fport-channel-trunk": {
-            "enabled": false,
-            "instance": 1
-        },
-        "fsync_mgr": {
+        "fabric_mcast": {
             "enabled": false,
             "instance": 1
         },
@@ -174,10 +158,6 @@
             "instance": 1
         },
         "interface-vlan": {
-            "enabled": false,
-            "instance": 1
-        },
-        "intersight": {
             "enabled": false,
             "instance": 1
         },
@@ -213,10 +193,6 @@
             "enabled": false,
             "instance": 1
         },
-        "license-smart-res": {
-            "enabled": false,
-            "instance": 1
-        },
         "lldp": {
             "enabled": true,
             "instance": 1
@@ -234,10 +210,6 @@
             "instance": 1
         },
         "msdp": {
-            "enabled": false,
-            "instance": 1
-        },
-        "mvpn": {
             "enabled": false,
             "instance": 1
         },
@@ -409,10 +381,6 @@
             "enabled": false,
             "instance": 1
         },
-        "ofm": {
-            "enabled": false,
-            "instance": 1
-        },
         "onep": {
             "enabled": false,
             "instance": 1
@@ -513,10 +481,6 @@
             "enabled": false,
             "instance": 1
         },
-        "srv6": {
-            "enabled": false,
-            "instance": 1
-        },
         "sshServer": {
             "enabled": true,
             "instance": 1
@@ -533,19 +497,11 @@
             "enabled": false,
             "instance": 1
         },
-        "tun_enc_mgr": {
-            "enabled": false,
-            "instance": 1
-        },
         "tunnel": {
             "enabled": false,
             "instance": 1
         },
         "udld": {
-            "enabled": false,
-            "instance": 1
-        },
-        "vmfex": {
             "enabled": false,
             "instance": 1
         },
@@ -579,7 +535,6 @@
         }
     },
     "detectedSerialNumber": "FOC1801R029",
-    "uptime": "81d3h22m31s",
     "chassis": {
         "1": {
             "sku": "N3K-C3048TP-1GE",
@@ -1407,10 +1362,6 @@
                 "use": 3,
                 "free": 48
             }
-        },
-        "recordTime": {
-            "utcTime": 1737392824275,
-            "utcDateTime": "Mon, 20 Jan 2025 17:07:04 GMT"
         }
     }
 }

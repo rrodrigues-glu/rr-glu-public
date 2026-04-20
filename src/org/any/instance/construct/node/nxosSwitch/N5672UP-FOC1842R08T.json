@@ -36,11 +36,13 @@
     "dcSwitch": {
         "enabled": true
     },
-    "@exportedInstanceId": "43c5ae52-f886-46ec-9ecd-0b68f124c277",
+    "site": {
+        "@ref": "/org/instance/construct/domain/location/Romualdo.json"
+    },
     "@id": "43c5ae52-f886-46ec-9ecd-0b68f124c277",
+    "@name": "N5672UP-FOC1842R08T",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/nxosSwitch.jtype"
-    },
-    "@name": "N5672UP-FOC1842R08T",
-    "@description": ""
+    }
 }

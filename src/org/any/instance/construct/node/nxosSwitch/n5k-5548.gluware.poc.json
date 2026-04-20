@@ -36,11 +36,13 @@
     "dcSwitch": {
         "enabled": true
     },
-    "@exportedInstanceId": "2ddf4821-f215-44cb-aac3-8cd62869942c",
+    "site": {
+        "@ref": "/org/instance/construct/domain/location/Romualdo.json"
+    },
     "@id": "2ddf4821-f215-44cb-aac3-8cd62869942c",
+    "@name": "n5k-5548.gluware.poc",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/nxosSwitch.jtype"
-    },
-    "@name": "n5k-5548.gluware.poc",
-    "@description": ""
+    }
 }

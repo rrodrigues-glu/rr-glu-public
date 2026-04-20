@@ -35,11 +35,13 @@
     "campusSwitch": {
         "enabled": true
     },
-    "@exportedInstanceId": "d5e434a0-e2ea-4825-b2d0-d9c493758246",
+    "site": {
+        "@ref": "/org/instance/construct/domain/location/Romualdo.json"
+    },
     "@id": "d5e434a0-e2ea-4825-b2d0-d9c493758246",
+    "@name": "C9200L",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/iosSwitch.jtype"
-    },
-    "@name": "C9200L",
-    "@description": ""
+    }
 }

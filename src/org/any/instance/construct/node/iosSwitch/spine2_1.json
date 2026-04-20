@@ -35,11 +35,13 @@
     "campusSwitch": {
         "enabled": true
     },
-    "@exportedInstanceId": "921da5d8-4014-4be0-b238-40cc170fd8b1",
+    "site": {
+        "@ref": "/org/instance/construct/domain/location/Romualdo.json"
+    },
     "@id": "921da5d8-4014-4be0-b238-40cc170fd8b1",
+    "@name": "spine2_1",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/iosSwitch.jtype"
-    },
-    "@name": "spine2_1",
-    "@description": ""
+    }
 }
