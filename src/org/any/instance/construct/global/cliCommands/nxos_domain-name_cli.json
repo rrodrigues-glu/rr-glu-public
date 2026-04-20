@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_DomainName.json"
+    },
     "cliCommands": [
         "ip domain-name $context.dns.domainName"
     ],
@@ -12,7 +14,6 @@
     "@source": {
         "instanceName": "nxos_domain-name_cli"
     },
-    "@exportedInstanceId": "db0f2d8e-fff0-45ab-8855-e703349640e5",
     "@id": "db0f2d8e-fff0-45ab-8855-e703349640e5",
     "@name": "nxos_domain-name_cli",
     "@description": ""

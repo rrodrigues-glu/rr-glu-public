@@ -8,18 +8,34 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portLayout": {
+            "@ref": null
+        },
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "boot": {
-        "firmware": {}
+        "firmware": {
+            "policy": {
+                "@ref": null
+            },
+            "catalog": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
     },
-    "@exportedInstanceId": "72d592be-587e-4484-bd5c-c7f6ad7da717",
     "@id": "72d592be-587e-4484-bd5c-c7f6ad7da717",
+    "@name": "iosSwitch__1665576829596",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/domain/iosSwitchAssembly.jtype"
-    },
-    "@name": "iosSwitch__1665576829596",
-    "@description": ""
+    }
 }

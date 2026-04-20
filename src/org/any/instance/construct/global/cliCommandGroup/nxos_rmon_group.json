@@ -17,7 +17,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "4b69ed92-a901-4b7c-be5d-f5022fa0e6ce",
     "@id": "4b69ed92-a901-4b7c-be5d-f5022fa0e6ce",
     "@name": "nxos_rmon_group",
     "@description": ""

@@ -3,7 +3,9 @@
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
     "@id": "36245c9b-0240-4768-b9be-a2cfc071c4b9",
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_PolicyMapQos.json"
+    },
     "cliCommands": [
         "policy-map type qos default-in-policy",
         "  class class-default",
@@ -13,7 +15,6 @@
         "    mtu 1500",
         ""
     ],
-    "@exportedInstanceId": "36245c9b-0240-4768-b9be-a2cfc071c4b9",
     "@name": "PolicyMapQos__cli__166557703130702cd",
     "@description": ""
 }

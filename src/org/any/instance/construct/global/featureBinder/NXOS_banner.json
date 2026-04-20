@@ -8,7 +8,9 @@
     "featureDisplayName": "Banner Feature",
     "renderList": [
         {
-            "item": {},
+            "item": {
+                "@ref": "/org/instance/construct/global/conceptItem/NXOS_Banner.json"
+            },
             "maskCommands": [],
             "dCli": []
         }
@@ -17,7 +19,6 @@
     "@source": {
         "instanceName": "NXOS_banner"
     },
-    "@exportedInstanceId": "f3407325-499f-447f-8ad6-0ec53b0b19f2",
     "@id": "f3407325-499f-447f-8ad6-0ec53b0b19f2",
     "@name": "NXOS_banner",
     "@description": ""

@@ -16,7 +16,6 @@
         "instanceName": "NXOS_show_vpc_role"
     },
     "privilegeMode": false,
-    "@exportedInstanceId": "b60f3c2d-7c2b-40d8-96d8-f11124e4c41f",
     "@id": "b60f3c2d-7c2b-40d8-96d8-f11124e4c41f",
     "@name": "NXOS_show_vpc_role",
     "@description": ""

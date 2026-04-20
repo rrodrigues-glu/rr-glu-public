@@ -13,12 +13,33 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portLayout": {
+            "@ref": null
+        },
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "boot": {
-        "firmware": {}
+        "firmware": {
+            "policy": {
+                "@ref": null
+            },
+            "catalog": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {
@@ -32,11 +53,10 @@
             }
         }
     },
-    "@exportedInstanceId": "abb4c03d-db51-461b-bf0a-16dbaf7f08ed",
     "@id": "abb4c03d-db51-461b-bf0a-16dbaf7f08ed",
+    "@name": "CheckState_Assembly",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/domain/iosSwitchAssembly.jtype"
-    },
-    "@name": "CheckState_Assembly",
-    "@description": ""
+    }
 }

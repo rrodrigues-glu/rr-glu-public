@@ -10,11 +10,10 @@
     "advanced": {
         "filter": null
     },
-    "@exportedInstanceId": "5eb8fe75-84f0-48e6-8b7e-c5a9c5f0fcf3",
     "@id": "5eb8fe75-84f0-48e6-8b7e-c5a9c5f0fcf3",
+    "@name": "ios_intf-mgmt_cli-ROM",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    },
-    "@name": "ios_intf-mgmt_cli-ROM",
-    "@description": ""
+    }
 }

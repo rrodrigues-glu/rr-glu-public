@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_NameServer.json"
+    },
     "cliCommands": [
         "ip name-server $context.dns.server[*].ip"
     ],
@@ -12,7 +14,6 @@
     "@source": {
         "instanceName": "nxos_name-server_cli"
     },
-    "@exportedInstanceId": "1177ff06-759f-4e54-b977-8aaf37709e11",
     "@id": "1177ff06-759f-4e54-b977-8aaf37709e11",
     "@name": "nxos_name-server_cli",
     "@description": ""

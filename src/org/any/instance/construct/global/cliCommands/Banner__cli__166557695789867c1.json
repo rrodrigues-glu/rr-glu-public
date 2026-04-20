@@ -3,7 +3,9 @@
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
     "@id": "2ec5c57a-b889-47f0-9ab3-c02ed857e678",
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Banner.json"
+    },
     "cliCommands": [
         "banner exec ^C ^C",
         "banner login ^C",
@@ -21,7 +23,6 @@
         "^C",
         "banner motd ^C welcome! ^C"
     ],
-    "@exportedInstanceId": "2ec5c57a-b889-47f0-9ab3-c02ed857e678",
     "@name": "Banner__cli__166557695789867c1",
     "@description": ""
 }

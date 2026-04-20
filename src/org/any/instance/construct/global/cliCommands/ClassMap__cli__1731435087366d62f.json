@@ -3,7 +3,9 @@
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
     "@id": "2b1cf87a-5e72-454e-a2b6-fa848cbbc6f3",
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_ClassMap.json"
+    },
     "cliCommands": [
         "class-map type qos class-fcoe",
         "class-map type qos match-any class-default",
@@ -27,7 +29,6 @@
         "  match qos-group 2",
         ""
     ],
-    "@exportedInstanceId": "2b1cf87a-5e72-454e-a2b6-fa848cbbc6f3",
     "@name": "ClassMap__cli__1731435087366d62f",
     "@description": ""
 }

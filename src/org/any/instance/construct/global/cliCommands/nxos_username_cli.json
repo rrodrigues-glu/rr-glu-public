@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Username.json"
+    },
     "cliCommands": [
         "username $context.user[*].name password $context.user[*].hash $context.user[*].password  role $context.user[*].privilege"
     ],
@@ -12,7 +14,6 @@
     "@source": {
         "instanceName": "nxos_username_cli"
     },
-    "@exportedInstanceId": "f78fc440-60ec-4b07-9252-d8d9688d5ded",
     "@id": "f78fc440-60ec-4b07-9252-d8d9688d5ded",
     "@name": "nxos_username_cli",
     "@description": ""

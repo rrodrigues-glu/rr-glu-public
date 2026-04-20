@@ -25,7 +25,6 @@
     "@source": {
         "instanceName": "NXOS_Features"
     },
-    "@exportedInstanceId": "f03144ad-7e12-41b3-9844-c52f7ffb63b2",
     "@id": "f03144ad-7e12-41b3-9844-c52f7ffb63b2",
     "@name": "NXOS_Features",
     "@description": ""

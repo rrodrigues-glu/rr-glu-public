@@ -24,7 +24,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "b9161cd2-194a-4ac8-b349-6b9ac57e04cb",
     "@id": "b9161cd2-194a-4ac8-b349-6b9ac57e04cb",
     "@name": "nxos_syslog-server-group"
 }

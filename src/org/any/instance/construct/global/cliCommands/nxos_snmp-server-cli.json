@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Snmp.json"
+    },
     "cliCommands": [
         "snmp-server contact Network@marketAxess.com 212-813-6111 299 Park Ave",
         "snmp-server source-interface trap loopback10",
@@ -52,7 +54,6 @@
     "@source": {
         "instanceName": "nxos_snmp-server-cli"
     },
-    "@exportedInstanceId": "5014a171-b075-47c5-ac81-f3659e09509f",
     "@id": "5014a171-b075-47c5-ac81-f3659e09509f",
     "@name": "nxos_snmp-server-cli",
     "@description": ""

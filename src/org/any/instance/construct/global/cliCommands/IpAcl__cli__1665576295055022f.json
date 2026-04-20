@@ -3,7 +3,9 @@
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
     "@id": "aea248fa-df77-42a6-95cf-6beaf64cc0e2",
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_IpAcl.json"
+    },
     "cliCommands": [
         "ip access-list standard 13",
         " 10 permit 54.200.78.189",
@@ -74,7 +76,6 @@
         "ip access-list extended acl-ibo-SVB_GUEST",
         " 10 permit ip 192.168.2.0 0.0.0.255 any"
     ],
-    "@exportedInstanceId": "aea248fa-df77-42a6-95cf-6beaf64cc0e2",
     "@name": "IpAcl__cli__1665576295055022f",
     "@description": ""
 }

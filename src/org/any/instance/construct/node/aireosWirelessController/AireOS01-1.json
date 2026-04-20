@@ -6,9 +6,13 @@
         "credentials": {
             "@ref": "/secret/sys/credentials/deviceUserPass/admin.json"
         },
+        "enablePassword": {
+            "@ref": null
+        },
         "type": "ssh",
         "port": 22,
-        "terminalType": "xterm"
+        "terminalType": "xterm",
+        "sshParam": ""
     },
     "associations": {
         "provider": "local"
@@ -37,11 +41,10 @@
     "site": {
         "@ref": "/org/instance/construct/domain/location/Romualdo.json"
     },
-    "@exportedInstanceId": "7ea325e8-7e0a-4f9e-a78d-a41f215026f6",
     "@id": "7ea325e8-7e0a-4f9e-a78d-a41f215026f6",
+    "@name": "AireOS01-1",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/aireosWirelessController.jtype"
-    },
-    "@name": "AireOS01-1",
-    "@description": ""
+    }
 }

@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_GratuitousArp.json"
+    },
     "cliCommands": [
         "!"
     ],
@@ -12,7 +14,6 @@
     "@source": {
         "instanceName": "ios_gratuitous-arp_cli"
     },
-    "@exportedInstanceId": "dd685bfc-9afb-4c44-b84a-72dc9869cf04",
     "@id": "dd685bfc-9afb-4c44-b84a-72dc9869cf04",
     "@name": "ios_gratuitous-arp_cli",
     "@description": ""

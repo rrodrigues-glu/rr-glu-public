@@ -16,6 +16,9 @@
     "keyLineDepth": 1,
     "keyGroup": 1,
     "regEx": "",
+    "metadata": {
+        "@ref": null
+    },
     "mode": "advanced",
     "boundaries": {
         "start": null
@@ -29,7 +32,6 @@
     "@source": {
         "instanceName": "NXOS_SSH"
     },
-    "@exportedInstanceId": "29b210a1-db7d-4226-a69a-a988c6389d5e",
     "@id": "29b210a1-db7d-4226-a69a-a988c6389d5e",
     "@name": "NXOS_SSH"
 }

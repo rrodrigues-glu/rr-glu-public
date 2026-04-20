@@ -24,7 +24,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "9f7de6fa-ca4f-40f9-95e3-a3161cfdf76e",
     "@id": "9f7de6fa-ca4f-40f9-95e3-a3161cfdf76e",
     "@name": "nxos_vpc-domain-group"
 }

@@ -10,11 +10,10 @@
     "advanced": {
         "filter": null
     },
-    "@exportedInstanceId": "afa0e0bf-6858-462e-bb85-f50c80331271",
     "@id": "afa0e0bf-6858-462e-bb85-f50c80331271",
+    "@name": "ios_intf-mgmt_cli--RRDiscov-liqJS",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    },
-    "@name": "ios_intf-mgmt_cli--RRDiscov-liqJS",
-    "@description": ""
+    }
 }

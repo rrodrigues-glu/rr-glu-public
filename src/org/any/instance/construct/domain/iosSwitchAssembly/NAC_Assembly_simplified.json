@@ -11,9 +11,23 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portLayout": {
+            "@ref": null
+        },
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -21,7 +35,6 @@
     "@source": {
         "instanceName": "NAC_Assembly_simplified"
     },
-    "@exportedInstanceId": "f4093b52-298a-44e6-8225-4bcba579524d",
     "@id": "f4093b52-298a-44e6-8225-4bcba579524d",
     "@name": "NAC_Assembly_simplified",
     "@description": ""

@@ -12,6 +12,9 @@
         }
     },
     "interfaces": {
+        "portLayout": {
+            "@ref": null
+        },
         "portMap": {
             "@ref": "/org/instance/construct/global/portMap/SVI_portMap.json"
         },
@@ -20,7 +23,11 @@
         }
     },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -28,7 +35,6 @@
     "@source": {
         "instanceName": "SVI_Assembly"
     },
-    "@exportedInstanceId": "9aa08195-ca36-4645-8824-ba8015c7e465",
     "@id": "9aa08195-ca36-4645-8824-ba8015c7e465",
     "@name": "SVI_Assembly",
     "@description": ""

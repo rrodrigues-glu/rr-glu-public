@@ -65,9 +65,26 @@
                 }
             }
         },
-        "interfaces": {},
+        "interfaces": {
+            "portLayout": {
+                "@ref": null
+            },
+            "portMap": {
+                "@ref": null
+            },
+            "ipNumbering": {
+                "@ref": null
+            }
+        },
         "boot": {
-            "firmware": {}
+            "firmware": {
+                "policy": {
+                    "@ref": null
+                },
+                "catalog": {
+                    "@ref": null
+                }
+            }
         },
         "state": {
             "assessment": {}
@@ -76,7 +93,6 @@
     "@source": {
         "instanceName": "Dc03-nx7k01-mktx-dr01"
     },
-    "@exportedInstanceId": "f5844558-1ec5-400f-9a7d-d30325e98311",
     "@id": "f5844558-1ec5-400f-9a7d-d30325e98311",
     "@name": "Dc03-nx7k01-mktx-dr01",
     "@description": ""

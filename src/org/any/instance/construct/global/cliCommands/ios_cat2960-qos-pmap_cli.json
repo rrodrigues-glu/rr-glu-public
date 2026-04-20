@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_PolicyMap.json"
+    },
     "cliCommands": [
         "policy-map CLASSIFY",
         " class voice-traffic-INBOUND",
@@ -25,7 +27,6 @@
     "@source": {
         "instanceName": "ios_cat2960-qos-pmap_cli"
     },
-    "@exportedInstanceId": "4ad48db3-21a1-4d22-aae2-5e181fc46a18",
     "@id": "4ad48db3-21a1-4d22-aae2-5e181fc46a18",
     "@name": "ios_cat2960-qos-pmap_cli",
     "@description": ""

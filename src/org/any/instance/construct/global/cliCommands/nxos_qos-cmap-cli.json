@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_ClassMapQos.json"
+    },
     "cliCommands": [
         "class-map type control-plane match-any NEW_NO_MPLS-copp-class-critical",
         " match access-group name NEW_NO_MPLS-copp-acl-bgp",
@@ -94,7 +96,6 @@
     "@source": {
         "instanceName": "nxos_qos-cmap-cli"
     },
-    "@exportedInstanceId": "3f39d5dc-e77a-4d76-95de-f9b00a88686b",
     "@id": "3f39d5dc-e77a-4d76-95de-f9b00a88686b",
     "@name": "nxos_qos-cmap-cli",
     "@description": ""

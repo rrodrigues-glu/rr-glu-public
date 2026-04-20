@@ -17,7 +17,6 @@
         "instanceName": "IOS_show_cdp_neigh"
     },
     "privilegeMode": false,
-    "@exportedInstanceId": "12ea0c1a-9546-4b41-8a87-901d35c76d75",
     "@id": "12ea0c1a-9546-4b41-8a87-901d35c76d75",
     "@name": "IOS_show_cdp_neigh",
     "@description": ""

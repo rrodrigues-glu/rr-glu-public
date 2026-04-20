@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Intf.json"
+    },
     "cliCommands": [
         "interface Ethernet1/1",
         " description VPC Peer Link to mktx-dr02 e1/1",
@@ -364,7 +366,6 @@
     "@source": {
         "instanceName": "nxos_intf-Eth-cli"
     },
-    "@exportedInstanceId": "9b5599c9-7ec4-437a-882a-3c53b2fceaf1",
     "@id": "9b5599c9-7ec4-437a-882a-3c53b2fceaf1",
     "@name": "nxos_intf-Eth-cli",
     "@description": ""

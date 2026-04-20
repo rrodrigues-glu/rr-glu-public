@@ -11,12 +11,33 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portLayout": {
+            "@ref": null
+        },
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "boot": {
-        "firmware": {}
+        "firmware": {
+            "policy": {
+                "@ref": null
+            },
+            "catalog": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -24,7 +45,6 @@
     "@source": {
         "instanceName": "Syslog_Assembly"
     },
-    "@exportedInstanceId": "57850284-0cd3-413d-a3b2-0d3d910911c5",
     "@id": "57850284-0cd3-413d-a3b2-0d3d910911c5",
     "@name": "Syslog_Assembly",
     "@description": ""

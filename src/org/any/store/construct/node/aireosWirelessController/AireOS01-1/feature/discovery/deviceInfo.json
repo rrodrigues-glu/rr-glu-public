@@ -18,6 +18,7 @@
         "sku": "AIR-CT5508-K9"
     },
     "detectedSerialNumber": "FCW1504L0H8",
+    "uptime": "144d9h47m25s",
     "type": {
         "name": "aireosWirelessController",
         "base": "baseController"
@@ -522,6 +523,11 @@
                 "use": 11,
                 "free": 0
             }
+        },
+        "recordTime": {
+            "utcTime": 1776079207424,
+            "utcDateTime": "Mon, 13 Apr 2026 11:20:07 GMT"
         }
-    }
+    },
+    "@lastCommitHash": "d1659ee6388264fb330f4ac4dd9b48eb96f83275"
 }

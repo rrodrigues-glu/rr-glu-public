@@ -3,7 +3,9 @@
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
     "@id": "0bb3caac-b53f-42b8-900d-129cd70381d7",
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Banner.json"
+    },
     "cliCommands": [
         "banner motd #Nexus 5600 Switch",
         "#",
@@ -201,7 +203,6 @@
         "",
         ""
     ],
-    "@exportedInstanceId": "0bb3caac-b53f-42b8-900d-129cd70381d7",
     "@name": "Banner__cli__17314350873666cc4",
     "@description": ""
 }

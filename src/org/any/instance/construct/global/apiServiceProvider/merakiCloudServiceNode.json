@@ -11,7 +11,6 @@
     "@source": {
         "instanceName": "merakiCloudServiceNode"
     },
-    "@exportedInstanceId": "24f6de68-0a1b-4e1f-8dc3-5250eb084cd2",
     "@id": "24f6de68-0a1b-4e1f-8dc3-5250eb084cd2",
     "@name": "merakiCloudServiceNode",
     "@description": ""

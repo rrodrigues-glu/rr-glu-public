@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Classless.json"
+    },
     "cliCommands": [
         "ip classless"
     ],
@@ -13,7 +15,6 @@
     "@source": {
         "instanceName": "ios_classless_cli"
     },
-    "@exportedInstanceId": "7d8fd924-e5ad-4360-ac80-4264934ad5ed",
     "@id": "7d8fd924-e5ad-4360-ac80-4264934ad5ed",
     "@name": "ios_classless_cli",
     "@description": ""

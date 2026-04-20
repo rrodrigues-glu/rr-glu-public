@@ -1,5 +1,7 @@
 {
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/GAIA_Expert-password.json"
+    },
     "cliCommands": [
         "expert qwerty2020L",
         "cd /var/log/download/",
@@ -11,11 +13,10 @@
     "advanced": {
         "filter": null
     },
-    "@exportedInstanceId": "07c38abd-1a68-4cc3-a45b-a50a8dec985c",
     "@id": "07c38abd-1a68-4cc3-a45b-a50a8dec985c",
+    "@name": "gaia_Username__cli",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    },
-    "@name": "gaia_Username__cli",
-    "@description": ""
+    }
 }

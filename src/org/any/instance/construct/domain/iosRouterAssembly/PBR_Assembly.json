@@ -14,10 +14,17 @@
     "interfaces": {
         "portMap": {
             "@ref": "/org/instance/construct/global/portMap/ASR1001.json"
+        },
+        "ipNumbering": {
+            "@ref": null
         }
     },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -25,7 +32,6 @@
     "@source": {
         "instanceName": "PBR_Assembly"
     },
-    "@exportedInstanceId": "bc2df4a8-a91c-49d7-b218-cfe5a9aabcd9",
     "@id": "bc2df4a8-a91c-49d7-b218-cfe5a9aabcd9",
     "@name": "PBR_Assembly",
     "@description": ""

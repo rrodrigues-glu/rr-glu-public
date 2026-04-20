@@ -8,11 +8,10 @@
     "advanced": {
         "filter": null
     },
-    "@exportedInstanceId": "484e6bdb-6dae-4668-ac97-925c0eb2e57d",
     "@id": "484e6bdb-6dae-4668-ac97-925c0eb2e57d",
+    "@name": "ios_ntp-server_cli-Romario1",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    },
-    "@name": "ios_ntp-server_cli-Romario1",
-    "@description": ""
+    }
 }

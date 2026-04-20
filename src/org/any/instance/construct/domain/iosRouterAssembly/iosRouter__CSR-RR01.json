@@ -18,15 +18,21 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "state": {
         "assessment": {}
     },
-    "@exportedInstanceId": "0fcf0f26-0c76-496c-9d9e-6e3428ab4af4",
     "@id": "0fcf0f26-0c76-496c-9d9e-6e3428ab4af4",
+    "@name": "iosRouter__CSR-RR01",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/domain/iosRouterAssembly.jtype"
-    },
-    "@name": "iosRouter__CSR-RR01",
-    "@description": ""
+    }
 }

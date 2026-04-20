@@ -11,11 +11,10 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "ed7708ac-0a5f-46f8-bb8f-4c4b8cc0bd48",
     "@id": "ed7708ac-0a5f-46f8-bb8f-4c4b8cc0bd48",
+    "@name": "ios_ntp-server_grp-RRntp",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
-    },
-    "@name": "ios_ntp-server_grp-RRntp",
-    "@description": ""
+    }
 }

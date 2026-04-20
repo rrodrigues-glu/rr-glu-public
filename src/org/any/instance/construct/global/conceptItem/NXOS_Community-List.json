@@ -25,7 +25,6 @@
     "@source": {
         "instanceName": "NXOS_Community-List"
     },
-    "@exportedInstanceId": "34f24738-61b9-49d5-b774-29a023ddbd4a",
     "@id": "34f24738-61b9-49d5-b774-29a023ddbd4a",
     "@name": "NXOS_Community-List",
     "@description": ""

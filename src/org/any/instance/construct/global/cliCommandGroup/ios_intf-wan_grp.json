@@ -13,11 +13,10 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "982dcf65-53c5-46cf-a94d-8a83fd19a28d",
     "@id": "982dcf65-53c5-46cf-a94d-8a83fd19a28d",
+    "@name": "ios_intf-wan_grp",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
-    },
-    "@name": "ios_intf-wan_grp",
-    "@description": ""
+    }
 }

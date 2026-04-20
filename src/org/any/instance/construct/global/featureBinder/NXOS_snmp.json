@@ -8,7 +8,9 @@
     "featureDisplayName": "SNMP Feature",
     "renderList": [
         {
-            "item": {},
+            "item": {
+                "@ref": "/org/instance/construct/global/conceptItem/NXOS_Snmp.json"
+            },
             "maskCommands": [],
             "dCli": []
         }
@@ -17,7 +19,6 @@
     "@source": {
         "instanceName": "NXOS_snmp"
     },
-    "@exportedInstanceId": "1c75d8ca-de7a-47e8-aeae-4eb088e026b6",
     "@id": "1c75d8ca-de7a-47e8-aeae-4eb088e026b6",
     "@name": "NXOS_snmp",
     "@description": ""

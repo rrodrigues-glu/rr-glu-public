@@ -1,5 +1,7 @@
 {
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_IpAclNumbered.json"
+    },
     "cliCommands": [
         "ip access-list standard STD_ACL",
         " 10 permit 10.20.30.2",
@@ -184,11 +186,10 @@
     "advanced": {
         "filter": null
     },
-    "@exportedInstanceId": "14c78eae-2ec9-4e14-ad9c-139431b30342",
     "@id": "14c78eae-2ec9-4e14-ad9c-139431b30342",
+    "@name": "IpAcl__cli__1665576829596f7e7-Common",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    },
-    "@name": "IpAcl__cli__1665576829596f7e7-Common",
-    "@description": ""
+    }
 }

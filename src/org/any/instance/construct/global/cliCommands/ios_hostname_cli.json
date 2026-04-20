@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Hostname-mod.json"
+    },
     "cliCommands": [
         "!"
     ],
@@ -12,7 +14,6 @@
     "@source": {
         "instanceName": "ios_hostname_cli"
     },
-    "@exportedInstanceId": "ee2ef5a1-f262-4cf6-8a22-ad8422fff769",
     "@id": "ee2ef5a1-f262-4cf6-8a22-ad8422fff769",
     "@name": "ios_hostname_cli",
     "@description": ""

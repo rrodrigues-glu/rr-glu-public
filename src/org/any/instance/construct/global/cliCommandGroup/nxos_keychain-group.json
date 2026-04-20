@@ -17,7 +17,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "33183597-c53a-4054-8e12-cf96d221c901",
     "@id": "33183597-c53a-4054-8e12-cf96d221c901",
     "@name": "nxos_keychain-group",
     "@description": ""

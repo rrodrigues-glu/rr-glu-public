@@ -23,7 +23,6 @@
     "@source": {
         "instanceName": "nxos_vrf-context-group"
     },
-    "@exportedInstanceId": "77fc5bb9-fd2a-4b66-be16-484450c05087",
     "@id": "77fc5bb9-fd2a-4b66-be16-484450c05087",
     "@name": "nxos_vrf-context-group",
     "@description": ""

@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Service2.json"
+    },
     "cliCommands": [
         "service password-encryption",
         "service sequence-numbers",
@@ -19,7 +21,6 @@
     "@source": {
         "instanceName": "ios_service_cli"
     },
-    "@exportedInstanceId": "79e1e698-401d-4955-a0cb-a7b9d5a1cbd9",
     "@id": "79e1e698-401d-4955-a0cb-a7b9d5a1cbd9",
     "@name": "ios_service_cli",
     "@description": ""

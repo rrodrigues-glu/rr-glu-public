@@ -10,13 +10,19 @@
         {
             "subnet": "10.0.0.1",
             "device": {
-                "serialNumber": "FOX2018GA37"
+                "serialNumber": "FOX2018GA37",
+                "intfName": {
+                    "@ref": null
+                }
             }
         },
         {
             "subnet": "10.0.0.2",
             "device": {
-                "serialNumber": ""
+                "serialNumber": "",
+                "intfName": {
+                    "@ref": null
+                }
             }
         }
     ],
@@ -27,7 +33,6 @@
     "@source": {
         "instanceName": "VHE-Loopback0"
     },
-    "@exportedInstanceId": "df903f58-4a17-48f1-bbe8-5ea2bde53007",
     "@id": "df903f58-4a17-48f1-bbe8-5ea2bde53007",
     "@name": "VHE-Loopback0",
     "@description": ""

@@ -17,11 +17,10 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "538534df-04b8-4913-a7c2-fe874cf44b9b",
     "@id": "538534df-04b8-4913-a7c2-fe874cf44b9b",
+    "@name": "ios_router-bgp_grp-romTest2",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
-    },
-    "@name": "ios_router-bgp_grp-romTest2",
-    "@description": ""
+    }
 }

@@ -16,11 +16,10 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "f4fadda8-31c9-4863-a289-7d5acd3ac4c6",
     "@id": "f4fadda8-31c9-4863-a289-7d5acd3ac4c6",
+    "@name": "ios_intf-mgmt_grp-TestDisc",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
-    },
-    "@name": "ios_intf-mgmt_grp-TestDisc",
-    "@description": ""
+    }
 }

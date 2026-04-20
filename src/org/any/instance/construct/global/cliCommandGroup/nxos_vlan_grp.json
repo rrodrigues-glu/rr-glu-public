@@ -17,7 +17,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "3b582712-bbcc-493d-8106-652c81d15f35",
     "@id": "3b582712-bbcc-493d-8106-652c81d15f35",
     "@name": "nxos_vlan_grp",
     "@description": ""

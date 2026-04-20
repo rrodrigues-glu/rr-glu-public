@@ -21,11 +21,10 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "45927739-433f-4052-9bc5-5d4169b69106",
     "@id": "45927739-433f-4052-9bc5-5d4169b69106",
+    "@name": "ios_ntp-server_grp-Romario1-var",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
-    },
-    "@name": "ios_ntp-server_grp-Romario1-var",
-    "@description": ""
+    }
 }

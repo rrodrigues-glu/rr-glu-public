@@ -19,7 +19,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "681f2553-1ef0-4449-9638-8e0f087d9540",
     "@id": "681f2553-1ef0-4449-9638-8e0f087d9540",
     "@name": "nxos_tacacs-server_grp",
     "@description": ""

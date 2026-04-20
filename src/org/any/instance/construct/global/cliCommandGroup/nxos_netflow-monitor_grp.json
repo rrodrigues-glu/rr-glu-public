@@ -17,7 +17,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "43696482-33f0-4386-a19e-c440e81a2ddf",
     "@id": "43696482-33f0-4386-a19e-c440e81a2ddf",
     "@name": "nxos_netflow-monitor_grp",
     "@description": ""

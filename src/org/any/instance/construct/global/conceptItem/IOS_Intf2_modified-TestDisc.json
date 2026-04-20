@@ -31,11 +31,10 @@
         }
     },
     "removeSyntax": {},
-    "@exportedInstanceId": "e4e230e5-142c-4ad9-8611-0cb5edf070e2",
     "@id": "e4e230e5-142c-4ad9-8611-0cb5edf070e2",
+    "@name": "IOS_Intf2_modified-TestDisc",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/conceptItem.jtype"
-    },
-    "@name": "IOS_Intf2_modified-TestDisc",
-    "@description": ""
+    }
 }

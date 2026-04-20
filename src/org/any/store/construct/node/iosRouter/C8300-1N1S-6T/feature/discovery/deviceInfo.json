@@ -66,6 +66,7 @@
         "series": "8300"
     },
     "detectedSerialNumber": "FLM2633116G",
+    "uptime": "32w3d17h9m",
     "chassis": {
         "R0": {
             "sku": "C8300-1N1S-6T",
@@ -154,6 +155,11 @@
                 "use": 0,
                 "free": 0
             }
+        },
+        "recordTime": {
+            "utcTime": 1776078849765,
+            "utcDateTime": "Mon, 13 Apr 2026 11:14:09 GMT"
         }
-    }
+    },
+    "@lastCommitHash": "d1659ee6388264fb330f4ac4dd9b48eb96f83275"
 }

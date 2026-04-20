@@ -13,11 +13,10 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "54476837-de1c-4cb0-85d3-70fa99936469",
     "@id": "54476837-de1c-4cb0-85d3-70fa99936469",
+    "@name": "ios_username_grp-Copy-1",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
-    },
-    "@name": "ios_username_grp-Copy-1",
-    "@description": ""
+    }
 }

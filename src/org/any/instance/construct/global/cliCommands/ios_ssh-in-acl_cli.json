@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_IpAcl.json"
+    },
     "cliCommands": [
         "ip access-list standard acl-ssh-in",
         " permit any",
@@ -14,7 +16,6 @@
     "@source": {
         "instanceName": "ios_ssh-in-acl_cli"
     },
-    "@exportedInstanceId": "340a486b-6808-4b06-a875-0d745dc4abb7",
     "@id": "340a486b-6808-4b06-a875-0d745dc4abb7",
     "@name": "ios_ssh-in-acl_cli",
     "@description": ""

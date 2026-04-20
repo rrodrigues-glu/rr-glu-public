@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_SyslogServer.json"
+    },
     "cliCommands": [
         "logging buffered 128000"
     ],
@@ -12,7 +14,6 @@
     "@source": {
         "instanceName": "ios_logging-buffered_cli"
     },
-    "@exportedInstanceId": "691a7933-640f-40d1-a677-ac3132d73801",
     "@id": "691a7933-640f-40d1-a677-ac3132d73801",
     "@name": "ios_logging-buffered_cli",
     "@description": ""

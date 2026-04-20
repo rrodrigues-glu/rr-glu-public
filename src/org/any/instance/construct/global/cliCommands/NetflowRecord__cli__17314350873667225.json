@@ -3,13 +3,14 @@
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
     "@id": "913c2bc6-2697-4870-a5ab-16a0f36df406",
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_NetflowRecord.json"
+    },
     "cliCommands": [
         "                                       ^",
         "% Invalid command at '^' marker.",
         ""
     ],
-    "@exportedInstanceId": "913c2bc6-2697-4870-a5ab-16a0f36df406",
     "@name": "NetflowRecord__cli__17314350873667225",
     "@description": ""
 }

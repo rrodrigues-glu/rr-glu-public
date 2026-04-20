@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Router.json"
+    },
     "cliCommands": [
         "router eigrp dmvpn",
         " !",
@@ -38,7 +40,6 @@
     "@source": {
         "instanceName": "ios_dmvpn-eigrp-hub_cli"
     },
-    "@exportedInstanceId": "17f6cb53-f99f-492f-8f27-ff1e7cd83bdd",
     "@id": "17f6cb53-f99f-492f-8f27-ff1e7cd83bdd",
     "@name": "ios_dmvpn-eigrp-hub_cli",
     "@description": ""

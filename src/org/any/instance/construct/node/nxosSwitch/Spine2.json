@@ -8,7 +8,9 @@
         },
         "enablePassword": null,
         "type": "ssh",
-        "port": 22
+        "port": 22,
+        "terminalType": "xterm",
+        "sshParam": ""
     },
     "associations": {
         "provider": "local"

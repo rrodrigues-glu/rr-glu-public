@@ -11,7 +11,14 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "state": {
         "assessment": {}
     },
@@ -19,7 +26,6 @@
     "@source": {
         "instanceName": "qos-mexicocity"
     },
-    "@exportedInstanceId": "e893027d-cb50-46d3-b29a-fe5abd97e6e5",
     "@id": "e893027d-cb50-46d3-b29a-fe5abd97e6e5",
     "@name": "qos-mexicocity",
     "@description": ""

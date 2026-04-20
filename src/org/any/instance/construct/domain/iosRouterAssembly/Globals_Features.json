@@ -51,12 +51,30 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "boot": {
-        "firmware": {}
+        "firmware": {
+            "policy": {
+                "@ref": null
+            },
+            "catalog": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -64,7 +82,6 @@
     "@source": {
         "instanceName": "Globals_Features"
     },
-    "@exportedInstanceId": "8551e3ed-3cc7-4d07-b5d2-91e3582860df",
     "@id": "8551e3ed-3cc7-4d07-b5d2-91e3582860df",
     "@name": "Globals_Features",
     "@description": ""

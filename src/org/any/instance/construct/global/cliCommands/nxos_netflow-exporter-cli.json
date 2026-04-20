@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_NetflowExporter.json"
+    },
     "cliCommands": [
         "flow exporter NAM2220",
         " description export netflow to NAM2220",
@@ -20,7 +22,6 @@
     "@source": {
         "instanceName": "nxos_netflow-exporter-cli"
     },
-    "@exportedInstanceId": "39efd1d5-3b5e-46d0-98bd-1251e497ebf9",
     "@id": "39efd1d5-3b5e-46d0-98bd-1251e497ebf9",
     "@name": "nxos_netflow-exporter-cli",
     "@description": ""

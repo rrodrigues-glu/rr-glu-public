@@ -11,9 +11,20 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -21,7 +32,6 @@
     "@source": {
         "instanceName": "Syslog_Assembly"
     },
-    "@exportedInstanceId": "45088199-f81f-4797-b0db-bc9c6d878c8e",
     "@id": "45088199-f81f-4797-b0db-bc9c6d878c8e",
     "@name": "Syslog_Assembly",
     "@description": ""

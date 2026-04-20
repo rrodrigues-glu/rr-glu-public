@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_IpAclRuleAndRemarks.json"
+    },
     "cliCommands": [
         "ip access-list extended Local-telephony-ACL",
         " remark Bari",
@@ -61,7 +63,6 @@
     "@source": {
         "instanceName": "ios_cat6500-qos-acl-italy_cli"
     },
-    "@exportedInstanceId": "67ca1ad9-9499-4fff-8ec6-c88721d0b89f",
     "@id": "67ca1ad9-9499-4fff-8ec6-c88721d0b89f",
     "@name": "ios_cat6500-qos-acl-italy_cli",
     "@description": ""

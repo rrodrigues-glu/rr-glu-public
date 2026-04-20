@@ -15,6 +15,9 @@
     "rootEntryFlag": false,
     "keyLineDepth": 1,
     "keyGroup": 1,
+    "metadata": {
+        "@ref": null
+    },
     "mode": "advanced",
     "boundaries": {
         "start": null
@@ -32,11 +35,10 @@
         }
     },
     "removeSyntax": {},
-    "@exportedInstanceId": "24678894-4cba-49c8-aaec-88d9dcbbf404",
     "@id": "24678894-4cba-49c8-aaec-88d9dcbbf404",
+    "@name": "IOS_Intf2_modified--RRDiscov",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/conceptItem.jtype"
-    },
-    "@name": "IOS_Intf2_modified--RRDiscov",
-    "@description": ""
+    }
 }

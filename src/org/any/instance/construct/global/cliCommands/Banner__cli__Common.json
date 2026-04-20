@@ -1,5 +1,7 @@
 {
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Banner.json"
+    },
     "cliCommands": [
         "banner login ^C",
         "Test1234",
@@ -9,11 +11,10 @@
     "advanced": {
         "filter": null
     },
-    "@exportedInstanceId": "9bd37eab-619f-4903-a8a2-cfa5cad17b6a",
     "@id": "9bd37eab-619f-4903-a8a2-cfa5cad17b6a",
+    "@name": "Banner__cli__Common",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    },
-    "@name": "Banner__cli__Common",
-    "@description": ""
+    }
 }

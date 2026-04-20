@@ -12,6 +12,9 @@
     "keyLineDepth": 1,
     "keyGroup": 1,
     "regEx": "",
+    "metadata": {
+        "@ref": null
+    },
     "boundaries": {
         "start": null
     },
@@ -28,7 +31,6 @@
     "@source": {
         "instanceName": "NXOS_CFS"
     },
-    "@exportedInstanceId": "fd08c41d-a875-48c5-99ad-bc216688f627",
     "@id": "fd08c41d-a875-48c5-99ad-bc216688f627",
     "@name": "NXOS_CFS",
     "@description": ""

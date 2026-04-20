@@ -3,7 +3,9 @@
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
     "@id": "7c1d4a68-3f8a-4974-b875-c6dd7fb6a9b2",
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Vlan.json"
+    },
     "cliCommands": [
         "vlan 2",
         " name PYTHON_VLAN_2",
@@ -111,7 +113,6 @@
         " name world",
         "vlan 222,300,444,456"
     ],
-    "@exportedInstanceId": "7c1d4a68-3f8a-4974-b875-c6dd7fb6a9b2",
     "@name": "Vlan__cli__166557682959685c5",
     "@description": ""
 }

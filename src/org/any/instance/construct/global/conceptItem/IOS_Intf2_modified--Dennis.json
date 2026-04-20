@@ -18,6 +18,9 @@
     "rootEntryFlag": false,
     "keyLineDepth": 1,
     "keyGroup": 1,
+    "metadata": {
+        "@ref": null
+    },
     "mode": "advanced",
     "boundaries": {
         "start": null
@@ -35,11 +38,10 @@
         }
     },
     "removeSyntax": {},
-    "@exportedInstanceId": "ac8ff21a-81fc-44d7-b764-184abebd0021",
     "@id": "ac8ff21a-81fc-44d7-b764-184abebd0021",
+    "@name": "IOS_Intf2_modified--Dennis",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/conceptItem.jtype"
-    },
-    "@name": "IOS_Intf2_modified--Dennis",
-    "@description": ""
+    }
 }

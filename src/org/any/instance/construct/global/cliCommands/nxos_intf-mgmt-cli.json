@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Intf.json"
+    },
     "cliCommands": [
         "interface mgmt0",
         " vrf member management",
@@ -15,7 +17,6 @@
     "@source": {
         "instanceName": "nxos_intf-mgmt-cli"
     },
-    "@exportedInstanceId": "eecc697e-0327-43ce-a443-2c08924a15ed",
     "@id": "eecc697e-0327-43ce-a443-2c08924a15ed",
     "@name": "nxos_intf-mgmt-cli",
     "@description": ""

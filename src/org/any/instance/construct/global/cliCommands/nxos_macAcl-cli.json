@@ -41,7 +41,6 @@
     "@source": {
         "instanceName": "nxos_macAcl-cli"
     },
-    "@exportedInstanceId": "595e70ee-ed27-4491-b4a9-cedb83b41d14",
     "@id": "595e70ee-ed27-4491-b4a9-cedb83b41d14",
     "@name": "nxos_macAcl-cli",
     "@description": ""

@@ -17,9 +17,13 @@
         "credentials": {
             "@ref": "/secret/sys/credentials/deviceUserPass/GlueSQA.json"
         },
+        "enablePassword": {
+            "@ref": null
+        },
         "port": 22,
         "type": "ssh",
-        "terminalType": "xterm"
+        "terminalType": "xterm",
+        "sshParam": ""
     },
     "associations": {
         "assembly": {
@@ -42,11 +46,10 @@
     "iosRouter": {
         "enabled": true
     },
-    "@exportedInstanceId": "8dcadd80-b5aa-4351-b4c2-e49163b31582",
     "@id": "8dcadd80-b5aa-4351-b4c2-e49163b31582",
+    "@name": "Cisco2911",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/iosRouter.jtype"
-    },
-    "@name": "Cisco2911",
-    "@description": ""
+    }
 }

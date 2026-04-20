@@ -17,7 +17,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "0e81f64d-b5f3-487e-8ada-5f280275bfde",
     "@id": "0e81f64d-b5f3-487e-8ada-5f280275bfde",
     "@name": "nxos_boot_group",
     "@description": ""

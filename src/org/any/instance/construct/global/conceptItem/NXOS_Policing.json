@@ -12,6 +12,9 @@
     "keyLineDepth": 1,
     "keyGroup": 1,
     "regEx": "",
+    "metadata": {
+        "@ref": null
+    },
     "boundaries": {
         "start": null
     },
@@ -28,7 +31,6 @@
     "@source": {
         "instanceName": "NXOS_Policing"
     },
-    "@exportedInstanceId": "3b257659-3ad6-4406-81f8-119c29d1ba86",
     "@id": "3b257659-3ad6-4406-81f8-119c29d1ba86",
     "@name": "NXOS_Policing",
     "@description": ""

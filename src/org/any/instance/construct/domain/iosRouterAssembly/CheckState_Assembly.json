@@ -11,9 +11,20 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {
@@ -30,7 +41,6 @@
     "@source": {
         "instanceName": "CheckState_Assembly"
     },
-    "@exportedInstanceId": "c7369e86-e4cd-4d05-8653-0d88a1cc1f62",
     "@id": "c7369e86-e4cd-4d05-8653-0d88a1cc1f62",
     "@name": "CheckState_Assembly",
     "@description": ""

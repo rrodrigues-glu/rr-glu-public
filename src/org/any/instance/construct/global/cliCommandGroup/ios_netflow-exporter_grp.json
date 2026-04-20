@@ -19,7 +19,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "304eae6b-72c7-4922-96b0-b8173e1fedd9",
     "@id": "304eae6b-72c7-4922-96b0-b8173e1fedd9",
     "@name": "ios_netflow-exporter_grp",
     "@description": ""

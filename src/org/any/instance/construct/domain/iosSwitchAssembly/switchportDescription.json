@@ -14,10 +14,20 @@
     "interfaces": {
         "portLayout": {
             "@ref": "/org/instance/construct/global/stackPortMap/stack_iosSwitch_Switchports.json"
+        },
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
         }
     },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {
@@ -33,7 +43,6 @@
     "@source": {
         "instanceName": "switchportDescription"
     },
-    "@exportedInstanceId": "5c59c8f6-346c-435b-b591-2bce3ca428f2",
     "@id": "5c59c8f6-346c-435b-b591-2bce3ca428f2",
     "@name": "switchportDescription",
     "@description": ""

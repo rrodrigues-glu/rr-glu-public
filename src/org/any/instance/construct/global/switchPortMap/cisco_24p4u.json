@@ -191,16 +191,28 @@
             "ports": "4",
             "layout": {
                 "1": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "2": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "3": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "4": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 }
             },
             "templates": [
@@ -235,13 +247,21 @@
             },
             "uplinks": {
                 "@ref": "/org/instance/construct/global/switchPortNamingProfile/uplink-3850.json"
+            },
+            "aggregated": {
+                "@ref": null
+            },
+            "module1": {
+                "@ref": null
+            },
+            "module2": {
+                "@ref": null
             }
         }
     },
     "@source": {
         "instanceName": "cisco_24p4u"
     },
-    "@exportedInstanceId": "3a0e91bf-8ddc-4f8b-9738-24b924392372",
     "@id": "3a0e91bf-8ddc-4f8b-9738-24b924392372",
     "@name": "cisco_24p4u",
     "@description": ""

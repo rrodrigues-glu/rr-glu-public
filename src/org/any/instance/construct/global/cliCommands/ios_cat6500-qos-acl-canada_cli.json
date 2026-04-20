@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_IpAclRuleAndRemarks.json"
+    },
     "cliCommands": [
         "ip access-list extended Local-telephony-ACL",
         " remark Calgary",
@@ -45,7 +47,6 @@
     "@source": {
         "instanceName": "ios_cat6500-qos-acl-canada_cli"
     },
-    "@exportedInstanceId": "6f304980-cc6d-43e6-b6f7-624e08c9ddd0",
     "@id": "6f304980-cc6d-43e6-b6f7-624e08c9ddd0",
     "@name": "ios_cat6500-qos-acl-canada_cli",
     "@description": ""

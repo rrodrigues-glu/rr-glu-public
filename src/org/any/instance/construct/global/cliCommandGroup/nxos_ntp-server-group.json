@@ -24,7 +24,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "1168f619-ad0a-4e61-820a-2bdfa9f4e3fa",
     "@id": "1168f619-ad0a-4e61-820a-2bdfa9f4e3fa",
     "@name": "nxos_ntp-server-group"
 }

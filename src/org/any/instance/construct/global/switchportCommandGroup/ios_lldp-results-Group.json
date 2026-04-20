@@ -24,7 +24,6 @@
         "instanceName": "ios_lldp-results-Group"
     },
     "ignoreDelete": true,
-    "@exportedInstanceId": "a837d8c1-7de2-4b4a-8439-80228fc12185",
     "@id": "a837d8c1-7de2-4b4a-8439-80228fc12185",
     "@name": "ios_lldp-results-Group",
     "@description": ""

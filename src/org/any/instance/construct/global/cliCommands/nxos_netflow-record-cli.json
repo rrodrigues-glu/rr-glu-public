@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_NetflowRecord.json"
+    },
     "cliCommands": [
         "flow record WATCHFUL",
         " match ipv4 source address",
@@ -27,7 +29,6 @@
     "@source": {
         "instanceName": "nxos_netflow-record-cli"
     },
-    "@exportedInstanceId": "f6f3bd1c-61d5-492b-bf3e-83df688d5ef2",
     "@id": "f6f3bd1c-61d5-492b-bf3e-83df688d5ef2",
     "@name": "nxos_netflow-record-cli",
     "@description": ""

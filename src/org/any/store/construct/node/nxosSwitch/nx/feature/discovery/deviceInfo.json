@@ -322,6 +322,7 @@
         }
     },
     "detectedSerialNumber": "FOC2210R0VR",
+    "uptime": "9d7h17m13s",
     "chassis": {
         "1": {
             "sku": "N5K-C5672UP",
@@ -1297,6 +1298,11 @@
                 "use": 3,
                 "free": 54
             }
+        },
+        "recordTime": {
+            "utcTime": 1776078874922,
+            "utcDateTime": "Mon, 13 Apr 2026 11:14:34 GMT"
         }
-    }
+    },
+    "@lastCommitHash": "d1659ee6388264fb330f4ac4dd9b48eb96f83275"
 }

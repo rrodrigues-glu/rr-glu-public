@@ -25,11 +25,10 @@
         }
     },
     "removeSyntax": {},
-    "@exportedInstanceId": "cfbc700a-7191-4230-815c-aa231097124d",
     "@id": "cfbc700a-7191-4230-815c-aa231097124d",
+    "@name": "IOS_Router-romTest-2",
+    "@description": "Displays the configuration section that shows the configured routed protocol options. Note: The ^ makes the parser display ONLY the sections whose first lines BEGIN with the word 'router'.",
     "@type": {
         "ref": "/sys/type/construct/global/conceptItem.jtype"
-    },
-    "@name": "IOS_Router-romTest-2",
-    "@description": "Displays the configuration section that shows the configured routed protocol options. Note: The ^ makes the parser display ONLY the sections whose first lines BEGIN with the word 'router'."
+    }
 }

@@ -24,7 +24,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "4e2dd801-0eca-4108-9538-2e89f80587c1",
     "@id": "4e2dd801-0eca-4108-9538-2e89f80587c1",
     "@name": "nxos_policing-group"
 }

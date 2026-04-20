@@ -50,6 +50,7 @@
         "series": "2900"
     },
     "detectedSerialNumber": "FTX1607AJTQ",
+    "uptime": "40w5d19h45m",
     "chassis": {},
     "type": {
         "name": "iosRouter",
@@ -232,6 +233,11 @@
                 "use": 0,
                 "free": 0
             }
+        },
+        "recordTime": {
+            "utcTime": 1776079082916,
+            "utcDateTime": "Mon, 13 Apr 2026 11:18:02 GMT"
         }
-    }
+    },
+    "@lastCommitHash": "d1659ee6388264fb330f4ac4dd9b48eb96f83275"
 }

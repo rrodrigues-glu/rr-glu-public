@@ -8,7 +8,9 @@
     "featureDisplayName": "NAC Feature",
     "renderList": [
         {
-            "item": {},
+            "item": {
+                "@ref": "/org/instance/construct/global/conceptItem/NXOS_Dot1x.json"
+            },
             "maskCommands": [],
             "dCli": []
         }
@@ -17,7 +19,6 @@
     "@source": {
         "instanceName": "NXOS_nac"
     },
-    "@exportedInstanceId": "a58fbc3b-0583-4766-b3f6-b0839a3bb585",
     "@id": "a58fbc3b-0583-4766-b3f6-b0839a3bb585",
     "@name": "NXOS_nac",
     "@description": ""

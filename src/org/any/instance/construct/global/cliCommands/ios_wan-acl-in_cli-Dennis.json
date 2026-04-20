@@ -11,11 +11,10 @@
     "advanced": {
         "filter": null
     },
-    "@exportedInstanceId": "d3d15e8b-607b-4968-9744-e28a60e5e002",
     "@id": "d3d15e8b-607b-4968-9744-e28a60e5e002",
+    "@name": "ios_wan-acl-in_cli-Dennis",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    },
-    "@name": "ios_wan-acl-in_cli-Dennis",
-    "@description": ""
+    }
 }

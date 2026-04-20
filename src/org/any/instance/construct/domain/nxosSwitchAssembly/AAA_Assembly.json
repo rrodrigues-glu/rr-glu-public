@@ -11,9 +11,23 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "boot": {
-        "firmware": {}
+        "firmware": {
+            "policy": {
+                "@ref": null
+            },
+            "catalog": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -21,7 +35,6 @@
     "@source": {
         "instanceName": "AAA_Assembly"
     },
-    "@exportedInstanceId": "268b53f2-442a-4ccd-b45b-1e8f31df2931",
     "@id": "268b53f2-442a-4ccd-b45b-1e8f31df2931",
     "@name": "AAA_Assembly",
     "@description": ""

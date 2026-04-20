@@ -7,76 +7,148 @@
             "ports": "24",
             "layout": {
                 "1": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "2": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "3": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "4": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "5": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "6": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "7": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "8": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "9": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "10": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "11": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "12": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "13": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "14": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "15": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "16": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "17": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "18": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "19": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "20": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "21": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "22": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "23": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "24": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 }
             },
             "templates": [
@@ -123,16 +195,28 @@
             "ports": "4",
             "layout": {
                 "1": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "2": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "3": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "4": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 }
             },
             "templates": [
@@ -156,15 +240,23 @@
             "onBoard": {
                 "@ref": "/org/instance/construct/global/switchPortNamingProfile/onboardNamingProfile.json"
             },
+            "uplinks": {
+                "@ref": null
+            },
+            "aggregated": {
+                "@ref": null
+            },
             "module1": {
                 "@ref": "/org/instance/construct/global/switchPortNamingProfile/mod1-3850.json"
+            },
+            "module2": {
+                "@ref": null
             }
         }
     },
     "@source": {
         "instanceName": "iosSwitch_NAC"
     },
-    "@exportedInstanceId": "b1b8e506-5a99-4322-868d-2181fbd12c64",
     "@id": "b1b8e506-5a99-4322-868d-2181fbd12c64",
     "@name": "iosSwitch_NAC",
     "@description": ""

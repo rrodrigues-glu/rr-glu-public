@@ -23,7 +23,6 @@
     "@source": {
         "instanceName": "nxos_keychain-cli"
     },
-    "@exportedInstanceId": "eab37ffd-8ab2-441c-ab55-b244af0a2003",
     "@id": "eab37ffd-8ab2-441c-ab55-b244af0a2003",
     "@name": "nxos_keychain-cli",
     "@description": ""

@@ -41,12 +41,33 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portLayout": {
+            "@ref": null
+        },
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "boot": {
-        "firmware": {}
+        "firmware": {
+            "policy": {
+                "@ref": null
+            },
+            "catalog": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -54,7 +75,6 @@
     "@source": {
         "instanceName": "Globals_Assembly"
     },
-    "@exportedInstanceId": "5ae54145-3b4f-4d47-a5f3-d25db1cf0e2d",
     "@id": "5ae54145-3b4f-4d47-a5f3-d25db1cf0e2d",
     "@name": "Globals_Assembly",
     "@description": ""

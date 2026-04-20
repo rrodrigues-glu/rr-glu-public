@@ -30,7 +30,6 @@
         "instanceName": "ping_tacacs-single-step"
     },
     "privilegeMode": false,
-    "@exportedInstanceId": "ee44e208-2ac0-433c-b97f-ab456d1bb869",
     "@id": "ee44e208-2ac0-433c-b97f-ab456d1bb869",
     "@name": "ping_tacacs-single-step",
     "@description": ""

@@ -24,7 +24,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "0083b3fc-95bb-4a3c-9ad9-593e7fd2c3b6",
     "@id": "0083b3fc-95bb-4a3c-9ad9-593e7fd2c3b6",
     "@name": "nxos_dns-server-group"
 }

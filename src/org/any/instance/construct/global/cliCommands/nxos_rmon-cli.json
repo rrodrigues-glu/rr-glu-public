@@ -18,7 +18,6 @@
     "@source": {
         "instanceName": "nxos_rmon-cli"
     },
-    "@exportedInstanceId": "bc0a1fa8-da3c-4711-a0ef-9d6c28c0cb3a",
     "@id": "bc0a1fa8-da3c-4711-a0ef-9d6c28c0cb3a",
     "@name": "nxos_rmon-cli",
     "@description": ""

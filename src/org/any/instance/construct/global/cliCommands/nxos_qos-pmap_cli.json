@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_IpAcl.json"
+    },
     "cliCommands": [
         "policy-map type qos qos-in-marking-5k",
         "  description inbound classification/marking policy for trust boundaries.",
@@ -48,7 +50,6 @@
     "@source": {
         "instanceName": "nxos_qos-pmap_cli"
     },
-    "@exportedInstanceId": "b09405ac-5266-4de9-99c5-28e7e84a0b92",
     "@id": "b09405ac-5266-4de9-99c5-28e7e84a0b92",
     "@name": "nxos_qos-pmap_cli",
     "@description": ""

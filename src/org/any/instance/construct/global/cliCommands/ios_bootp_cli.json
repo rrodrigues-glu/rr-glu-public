@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Bootp.json"
+    },
     "cliCommands": [
         "!"
     ],
@@ -13,7 +15,6 @@
     "@source": {
         "instanceName": "ios_bootp_cli"
     },
-    "@exportedInstanceId": "2b0131df-4e55-42ed-9c6a-a387debf317e",
     "@id": "2b0131df-4e55-42ed-9c6a-a387debf317e",
     "@name": "ios_bootp_cli",
     "@description": ""

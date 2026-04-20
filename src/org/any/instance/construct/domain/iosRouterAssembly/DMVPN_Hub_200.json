@@ -20,15 +20,25 @@
         }
     },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "boot": {
-        "firmware": {}
+        "firmware": {
+            "policy": {
+                "@ref": null
+            },
+            "catalog": {
+                "@ref": null
+            }
+        }
     },
     "@source": {
         "instanceName": "DMVPN_Hub_200"
     },
-    "@exportedInstanceId": "91c59c70-2742-42d4-81c2-caeb64292e2a",
     "@id": "91c59c70-2742-42d4-81c2-caeb64292e2a",
     "@name": "DMVPN_Hub_200",
     "@description": ""

@@ -8,7 +8,9 @@
     "featureDisplayName": "Syslog Feature",
     "renderList": [
         {
-            "item": {},
+            "item": {
+                "@ref": "/org/instance/construct/global/conceptItem/NXOS_SyslogServer.json"
+            },
             "maskCommands": [],
             "dCli": []
         }
@@ -17,7 +19,6 @@
     "@source": {
         "instanceName": "NXOS_syslog"
     },
-    "@exportedInstanceId": "fc8d1bd2-eaca-44fb-bae9-2ec3daee2049",
     "@id": "fc8d1bd2-eaca-44fb-bae9-2ec3daee2049",
     "@name": "NXOS_syslog",
     "@description": ""

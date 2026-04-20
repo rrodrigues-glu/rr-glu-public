@@ -11,11 +11,10 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "15e55028-268e-4dab-b62a-2d85873c35a7",
     "@id": "15e55028-268e-4dab-b62a-2d85873c35a7",
+    "@name": "banner__cliGrp__1665576829596a18-Third",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
-    },
-    "@name": "banner__cliGrp__1665576829596a18-Third",
-    "@description": ""
+    }
 }

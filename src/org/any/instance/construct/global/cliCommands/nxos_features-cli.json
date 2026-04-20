@@ -43,7 +43,6 @@
     "@source": {
         "instanceName": "nxos_features-cli"
     },
-    "@exportedInstanceId": "ecf774e6-c013-47b1-9366-c79fb579665f",
     "@id": "ecf774e6-c013-47b1-9366-c79fb579665f",
     "@name": "nxos_features-cli",
     "@description": ""

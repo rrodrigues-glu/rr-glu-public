@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_PolicyMapQos.json"
+    },
     "cliCommands": [
         "policy-map type control-plane NEW_NO_MPLS-copp-policy-strict",
         " class NEW_NO_MPLS-copp-class-critical",
@@ -47,7 +49,6 @@
     "@source": {
         "instanceName": "nxos_qos-pmap-cli"
     },
-    "@exportedInstanceId": "47540a9c-4b1f-4ad8-b6e5-c51f3ddb9102",
     "@id": "47540a9c-4b1f-4ad8-b6e5-c51f3ddb9102",
     "@name": "nxos_qos-pmap-cli",
     "@description": ""

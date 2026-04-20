@@ -1,5 +1,7 @@
 {
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Intf2.json"
+    },
     "cliCommands": [
         "interface $context.portMap[*].name",
         " description $context.portMap[*].description",
@@ -12,11 +14,10 @@
     "advanced": {
         "filter": null
     },
-    "@exportedInstanceId": "9fd9c15d-ca0a-4f1c-a2fa-89e410e5c180",
     "@id": "9fd9c15d-ca0a-4f1c-a2fa-89e410e5c180",
+    "@name": "ios_svi-intf_cli",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    },
-    "@name": "ios_svi-intf_cli",
-    "@description": ""
+    }
 }

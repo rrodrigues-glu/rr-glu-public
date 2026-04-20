@@ -15,7 +15,6 @@
     "@source": {
         "instanceName": "nxos_bfd-cli"
     },
-    "@exportedInstanceId": "2884eb80-4c55-4f6d-9a3a-6525503f51ed",
     "@id": "2884eb80-4c55-4f6d-9a3a-6525503f51ed",
     "@name": "nxos_bfd-cli",
     "@description": ""

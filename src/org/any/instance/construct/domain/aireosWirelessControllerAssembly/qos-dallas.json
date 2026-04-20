@@ -11,7 +11,14 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "state": {
         "assessment": {}
     },
@@ -19,7 +26,6 @@
     "@source": {
         "instanceName": "qos-dallas"
     },
-    "@exportedInstanceId": "c6a11847-458c-434a-856d-2bcd911e0d81",
     "@id": "c6a11847-458c-434a-856d-2bcd911e0d81",
     "@name": "qos-dallas",
     "@description": ""

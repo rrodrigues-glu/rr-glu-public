@@ -8,15 +8,21 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "state": {
         "assessment": {}
     },
-    "@exportedInstanceId": "a7bfbad7-d6c2-4e77-9d27-ed81c4f42eac",
     "@id": "a7bfbad7-d6c2-4e77-9d27-ed81c4f42eac",
+    "@name": "iosRouter__CSR-dup",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/domain/iosRouterAssembly.jtype"
-    },
-    "@name": "iosRouter__CSR-dup",
-    "@description": ""
+    }
 }

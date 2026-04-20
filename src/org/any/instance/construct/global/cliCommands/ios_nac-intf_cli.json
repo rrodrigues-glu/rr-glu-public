@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Intf2_modified.json"
+    },
     "cliCommands": [
         "interface $context.portMap[*].name",
         " authentication open",
@@ -29,7 +31,6 @@
     "@source": {
         "instanceName": "ios_nac-intf_cli"
     },
-    "@exportedInstanceId": "09244a88-b93c-40ff-aa8f-4b5d4652423e",
     "@id": "09244a88-b93c-40ff-aa8f-4b5d4652423e",
     "@name": "ios_nac-intf_cli",
     "@description": ""

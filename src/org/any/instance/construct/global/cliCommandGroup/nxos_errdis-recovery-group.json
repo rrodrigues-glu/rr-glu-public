@@ -24,7 +24,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "e6abc5b6-d1e4-419a-90b9-9685f9b7615c",
     "@id": "e6abc5b6-d1e4-419a-90b9-9685f9b7615c",
     "@name": "nxos_errdis-recovery-group"
 }

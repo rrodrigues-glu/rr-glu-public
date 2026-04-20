@@ -11,11 +11,10 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "6fc4a3ec-0e95-4fb1-85ad-552855718208",
     "@id": "6fc4a3ec-0e95-4fb1-85ad-552855718208",
+    "@name": "Gaia_username__cliGrp__",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
-    },
-    "@name": "Gaia_username__cliGrp__",
-    "@description": ""
+    }
 }

@@ -24,7 +24,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "2685669b-23ee-4052-8f10-56e2948015bc",
     "@id": "2685669b-23ee-4052-8f10-56e2948015bc",
     "@name": "nxos_logging-lnkStatus-group"
 }

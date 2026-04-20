@@ -9,15 +9,32 @@
         }
     },
     "interfaces": {
+        "portLayout": {
+            "@ref": null
+        },
         "portMap": {
             "@ref": "/org/instance/construct/global/portMap/nyu-switch.json"
+        },
+        "ipNumbering": {
+            "@ref": null
         }
     },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "boot": {
-        "firmware": {}
+        "firmware": {
+            "policy": {
+                "@ref": null
+            },
+            "catalog": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {
@@ -30,11 +47,10 @@
             }
         }
     },
-    "@exportedInstanceId": "3a6697a4-00cf-4267-8912-831d9330b607",
     "@id": "3a6697a4-00cf-4267-8912-831d9330b607",
+    "@name": "tacacs-migration-step2-renamed2",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/domain/iosSwitchAssembly.jtype"
-    },
-    "@name": "tacacs-migration-step2-renamed2",
-    "@description": ""
+    }
 }

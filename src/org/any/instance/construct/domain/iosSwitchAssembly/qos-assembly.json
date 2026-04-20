@@ -11,9 +11,23 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portLayout": {
+            "@ref": null
+        },
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -22,7 +36,6 @@
     "@source": {
         "instanceName": "qos-assembly"
     },
-    "@exportedInstanceId": "06cde4fd-27e2-45cd-a837-3c943513c27b",
     "@id": "06cde4fd-27e2-45cd-a837-3c943513c27b",
     "@name": "qos-assembly",
     "@description": ""

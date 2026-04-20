@@ -11,7 +11,14 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "state": {
         "assessment": {}
     },
@@ -19,7 +26,6 @@
     "@source": {
         "instanceName": "qos-auckland"
     },
-    "@exportedInstanceId": "3db368fd-a430-4f50-b26a-1301eae7d686",
     "@id": "3db368fd-a430-4f50-b26a-1301eae7d686",
     "@name": "qos-auckland",
     "@description": ""

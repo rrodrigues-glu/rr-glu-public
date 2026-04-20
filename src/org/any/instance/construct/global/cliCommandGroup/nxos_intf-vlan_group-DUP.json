@@ -11,11 +11,10 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "216549d2-53ff-4b01-9966-11ffd6e3efdb",
     "@id": "216549d2-53ff-4b01-9966-11ffd6e3efdb",
+    "@name": "nxos_intf-vlan_group-DUP",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
-    },
-    "@name": "nxos_intf-vlan_group-DUP",
-    "@description": ""
+    }
 }

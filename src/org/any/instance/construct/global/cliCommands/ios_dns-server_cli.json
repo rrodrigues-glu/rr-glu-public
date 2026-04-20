@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_DnsServer.json"
+    },
     "cliCommands": [
         "ip name-server{#context.dns.vrf} $context.dns.server.0.ip $context.dns.server.1.ip",
         "",
@@ -14,7 +16,6 @@
     "@source": {
         "instanceName": "ios_dns-server_cli"
     },
-    "@exportedInstanceId": "ab9053a8-06df-4af7-93f7-7ad464cc0c2b",
     "@id": "ab9053a8-06df-4af7-93f7-7ad464cc0c2b",
     "@name": "ios_dns-server_cli",
     "@description": ""

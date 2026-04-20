@@ -25,7 +25,6 @@
     "@source": {
         "instanceName": "NXOS_Vtp"
     },
-    "@exportedInstanceId": "16140de9-3cb4-45a1-a853-058223923bbb",
     "@id": "16140de9-3cb4-45a1-a853-058223923bbb",
     "@name": "NXOS_Vtp",
     "@description": ""

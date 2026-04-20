@@ -52,6 +52,7 @@
         "series": "5406R"
     },
     "detectedSerialNumber": "SG68G493P3",
+    "uptime": "144d8h52m53s",
     "type": {
         "name": "arubaosSwitch",
         "base": "campusSwitch"
@@ -562,6 +563,11 @@
                 "use": 10,
                 "free": 22
             }
+        },
+        "recordTime": {
+            "utcTime": 1776078853108,
+            "utcDateTime": "Mon, 13 Apr 2026 11:14:13 GMT"
         }
-    }
+    },
+    "@lastCommitHash": "d1659ee6388264fb330f4ac4dd9b48eb96f83275"
 }

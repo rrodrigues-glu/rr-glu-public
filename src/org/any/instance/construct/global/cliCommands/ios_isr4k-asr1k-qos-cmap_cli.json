@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_ClassMap.json"
+    },
     "cliCommands": [
         "class-map match-any voice-traffic-INBOUND",
         " match access-group name Lync_traffic_ACL",
@@ -49,7 +51,6 @@
     "@source": {
         "instanceName": "ios_isr4k-asr1k-qos-cmap_cli"
     },
-    "@exportedInstanceId": "0c54e411-0234-4b3e-8e51-7430fe7648ef",
     "@id": "0c54e411-0234-4b3e-8e51-7430fe7648ef",
     "@name": "ios_isr4k-asr1k-qos-cmap_cli",
     "@description": ""

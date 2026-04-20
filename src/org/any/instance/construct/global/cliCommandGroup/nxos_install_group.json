@@ -17,7 +17,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "0acd8a27-4940-4687-843f-ccefd3709c2e",
     "@id": "0acd8a27-4940-4687-843f-ccefd3709c2e",
     "@name": "nxos_install_group",
     "@description": ""

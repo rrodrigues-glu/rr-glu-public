@@ -3,7 +3,9 @@
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
     "@id": "b5bdeb52-f25b-4dd8-85ac-4bc85277ea55",
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_IpAcl.json"
+    },
     "cliCommands": [
         "ip access-list standard STD_ACL",
         " 10 permit 10.20.30.2",
@@ -185,7 +187,6 @@
         " remark DSCP_Values",
         " 20 permit ip any any dscp ef"
     ],
-    "@exportedInstanceId": "b5bdeb52-f25b-4dd8-85ac-4bc85277ea55",
     "@name": "IpAcl__cli__1665576829596f7e7",
     "@description": ""
 }

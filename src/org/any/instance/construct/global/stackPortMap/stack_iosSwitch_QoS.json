@@ -46,12 +46,15 @@
     ],
     "aggregated": {},
     "namingConventions": {
-        "portNamingPolicies": {}
+        "portNamingPolicies": {
+            "aggregated": {
+                "@ref": null
+            }
+        }
     },
     "@source": {
         "instanceName": "stack_iosSwitch_QoS"
     },
-    "@exportedInstanceId": "320e5e9d-4193-46f5-b420-632ad4358b03",
     "@id": "320e5e9d-4193-46f5-b420-632ad4358b03",
     "@name": "stack_iosSwitch_QoS",
     "@description": ""

@@ -233,13 +233,21 @@
             },
             "uplinks": {
                 "@ref": "/org/instance/construct/global/switchPortNamingProfile/uplink-3850.json"
+            },
+            "aggregated": {
+                "@ref": null
+            },
+            "module1": {
+                "@ref": null
+            },
+            "module2": {
+                "@ref": null
             }
         }
     },
     "@source": {
         "instanceName": "cisco_24p2u"
     },
-    "@exportedInstanceId": "b9454ab0-cab7-46a6-80ed-8ae9f4683575",
     "@id": "b9454ab0-cab7-46a6-80ed-8ae9f4683575",
     "@name": "cisco_24p2u",
     "@description": ""

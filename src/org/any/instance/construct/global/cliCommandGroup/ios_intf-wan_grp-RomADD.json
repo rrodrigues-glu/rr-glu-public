@@ -15,11 +15,10 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "ef63a14d-2028-44f4-b98c-12c4a8b29566",
     "@id": "ef63a14d-2028-44f4-b98c-12c4a8b29566",
+    "@name": "ios_intf-wan_grp-RomADD",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
-    },
-    "@name": "ios_intf-wan_grp-RomADD",
-    "@description": ""
+    }
 }

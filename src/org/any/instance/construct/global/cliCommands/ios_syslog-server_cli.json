@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_SyslogServer.json"
+    },
     "cliCommands": [
         "logging file flash:log-buffer.txt 40960 4096 informational",
         "logging buffered 32768 informational",
@@ -19,7 +21,6 @@
     "@source": {
         "instanceName": "ios_syslog-server_cli"
     },
-    "@exportedInstanceId": "80c500df-3cae-4625-8fda-b02889bd8356",
     "@id": "80c500df-3cae-4625-8fda-b02889bd8356",
     "@name": "ios_syslog-server_cli",
     "@description": ""

@@ -23,7 +23,6 @@
     "@source": {
         "instanceName": "vlan800_pool"
     },
-    "@exportedInstanceId": "d66dd889-b16d-4248-a226-f0e2113c1e83",
     "@id": "d66dd889-b16d-4248-a226-f0e2113c1e83",
     "@name": "vlan800_pool",
     "@description": ""

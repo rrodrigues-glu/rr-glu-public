@@ -8,11 +8,13 @@
         "contact": "",
         "techContact": ""
     },
-    "@exportedInstanceId": "65c5ad43-3fad-4e45-b3d3-88358a581111",
+    "cloud": {
+        "provider": "none"
+    },
     "@id": "65c5ad43-3fad-4e45-b3d3-88358a581111",
+    "@name": "SN002",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/domain/location.jtype"
-    },
-    "@name": "SN002",
-    "@description": ""
+    }
 }

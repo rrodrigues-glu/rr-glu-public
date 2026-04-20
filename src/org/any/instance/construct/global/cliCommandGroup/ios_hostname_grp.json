@@ -19,7 +19,6 @@
     "@source": {
         "instanceName": "ios_hostname_grp"
     },
-    "@exportedInstanceId": "d3714731-774d-4bed-a1fd-e1e702fbb274",
     "@id": "d3714731-774d-4bed-a1fd-e1e702fbb274",
     "@name": "ios_hostname_grp",
     "@description": ""

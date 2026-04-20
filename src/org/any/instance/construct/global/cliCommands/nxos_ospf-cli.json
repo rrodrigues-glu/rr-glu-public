@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Router.json"
+    },
     "cliCommands": [
         "router ospf 65103",
         " flush-routes",
@@ -27,7 +29,6 @@
     "@source": {
         "instanceName": "nxos_ospf-cli"
     },
-    "@exportedInstanceId": "8de74b96-4ded-414b-b7e6-488600dd4290",
     "@id": "8de74b96-4ded-414b-b7e6-488600dd4290",
     "@name": "nxos_ospf-cli",
     "@description": ""

@@ -19,7 +19,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "21b80a7f-1fb5-4fd0-9df5-673028b2c982",
     "@id": "21b80a7f-1fb5-4fd0-9df5-673028b2c982",
     "@name": "ios_dmvpn-ikev2-keyring_grp",
     "@description": ""

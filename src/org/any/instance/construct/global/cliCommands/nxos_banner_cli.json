@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Banner.json"
+    },
     "cliCommands": [
         "banner motd ^",
         "###################################################### ",
@@ -22,7 +24,6 @@
     "@source": {
         "instanceName": "nxos_banner_cli"
     },
-    "@exportedInstanceId": "bd847c2c-25ba-4c75-81fa-234954c01c8a",
     "@id": "bd847c2c-25ba-4c75-81fa-234954c01c8a",
     "@name": "nxos_banner_cli",
     "@description": ""

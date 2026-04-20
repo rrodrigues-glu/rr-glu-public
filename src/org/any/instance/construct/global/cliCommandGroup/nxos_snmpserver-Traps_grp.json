@@ -17,7 +17,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "7d7a4734-9386-44bc-bdf3-308307f14bbf",
     "@id": "7d7a4734-9386-44bc-bdf3-308307f14bbf",
     "@name": "nxos_snmpserver-Traps_grp",
     "@description": ""

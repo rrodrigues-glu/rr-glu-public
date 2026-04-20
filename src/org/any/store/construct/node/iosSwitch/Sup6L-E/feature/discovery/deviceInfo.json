@@ -135,6 +135,7 @@
         "series": "4507"
     },
     "detectedSerialNumber": "FOX1216G8MC",
+    "uptime": "1y50w3d17h27m",
     "chassis": {
         "3": {
             "sku": "WS-X45-SUP6L-E",
@@ -293,6 +294,11 @@
                 "use": 0,
                 "free": 6
             }
+        },
+        "recordTime": {
+            "utcTime": 1776078941078,
+            "utcDateTime": "Mon, 13 Apr 2026 11:15:41 GMT"
         }
-    }
+    },
+    "@lastCommitHash": "d1659ee6388264fb330f4ac4dd9b48eb96f83275"
 }

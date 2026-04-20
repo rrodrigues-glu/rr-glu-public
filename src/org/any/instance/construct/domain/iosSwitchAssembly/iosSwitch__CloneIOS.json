@@ -53,21 +53,41 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portLayout": {
+            "@ref": null
+        },
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "boot": {
-        "firmware": {}
+        "firmware": {
+            "policy": {
+                "@ref": null
+            },
+            "catalog": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
     },
-    "@exportedInstanceId": "bd406086-2630-4933-9e06-31213879b483",
     "@id": "bd406086-2630-4933-9e06-31213879b483",
+    "@name": "iosSwitch__CloneIOS",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/domain/iosSwitchAssembly.jtype"
-    },
-    "@name": "iosSwitch__CloneIOS",
-    "@description": ""
+    }
 }

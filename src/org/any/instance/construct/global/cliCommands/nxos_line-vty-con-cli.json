@@ -14,7 +14,6 @@
     "@source": {
         "instanceName": "nxos_line-vty-con-cli"
     },
-    "@exportedInstanceId": "c62371ee-ddaa-4081-8256-f59d4d17c1ef",
     "@id": "c62371ee-ddaa-4081-8256-f59d4d17c1ef",
     "@name": "nxos_line-vty-con-cli",
     "@description": ""

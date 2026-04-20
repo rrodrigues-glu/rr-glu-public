@@ -7,6 +7,9 @@
             "item": {
                 "@ref": "/org/instance/construct/global/cliStateItem/WLC_wlanSummary.json"
             },
+            "query": {
+                "@ref": null
+            },
             "params": "",
             "includePattern": ".+",
             "excludePattern": ""
@@ -17,7 +20,6 @@
         "instanceName": "WLC_wlanSummary"
     },
     "privilegeMode": false,
-    "@exportedInstanceId": "ceb34900-901b-44e0-b599-c70178fe70e0",
     "@id": "ceb34900-901b-44e0-b599-c70178fe70e0",
     "@name": "WLC_wlanSummary",
     "@description": ""

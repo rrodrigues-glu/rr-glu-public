@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_PolicyMap.json"
+    },
     "cliCommands": [
         "policy-map AutoQoS-Police-CiscoPhone",
         " class AutoQoS-VoIP-RTP-Trust",
@@ -21,7 +23,6 @@
     "@source": {
         "instanceName": "ios_cat3750-qos-pmap_cli"
     },
-    "@exportedInstanceId": "b48bad69-4967-482b-a91d-d6e680e23ff0",
     "@id": "b48bad69-4967-482b-a91d-d6e680e23ff0",
     "@name": "ios_cat3750-qos-pmap_cli",
     "@description": ""

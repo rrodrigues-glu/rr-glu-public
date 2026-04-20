@@ -51,7 +51,6 @@
     "@source": {
         "instanceName": "Spoke-Loopback0"
     },
-    "@exportedInstanceId": "90ce0e8b-9429-4f7d-9c7b-0644497de5ac",
     "@id": "90ce0e8b-9429-4f7d-9c7b-0644497de5ac",
     "@name": "Spoke-Loopback0",
     "@description": ""

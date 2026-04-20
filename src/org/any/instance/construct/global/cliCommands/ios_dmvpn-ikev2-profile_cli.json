@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_IkeProfileV2.json"
+    },
     "cliCommands": [
         "crypto ikev2 profile DMVPN-IKE-PROFILE-$context.networks[*].overlayNetwork.id",
         " match fvrf $context.networks[*].underlyingIntf.vrf",
@@ -18,7 +20,6 @@
     "@source": {
         "instanceName": "ios_dmvpn-ikev2-profile_cli"
     },
-    "@exportedInstanceId": "430482ab-2bfa-4c26-aec0-315ab21d3977",
     "@id": "430482ab-2bfa-4c26-aec0-315ab21d3977",
     "@name": "ios_dmvpn-ikev2-profile_cli",
     "@description": ""

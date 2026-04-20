@@ -7,148 +7,292 @@
             "ports": "48",
             "layout": {
                 "1": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "2": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "3": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "4": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "5": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "6": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "7": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "8": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "9": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "10": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "11": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "12": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "13": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "14": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "15": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "16": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "17": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "18": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "19": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "20": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "21": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "22": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "23": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "24": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "25": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "26": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "27": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "28": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "29": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "30": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "31": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "32": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "33": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "34": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "35": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "36": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "37": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "38": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "39": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "40": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "41": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "42": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "43": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "44": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "45": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "46": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "47": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "48": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 }
             },
             "templates": [
@@ -215,16 +359,28 @@
             "ports": "4",
             "layout": {
                 "1": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "2": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "3": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "4": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 }
             },
             "templates": [
@@ -259,13 +415,21 @@
             },
             "uplinks": {
                 "@ref": "/org/instance/construct/global/switchPortNamingProfile/uplink-3850.json"
+            },
+            "aggregated": {
+                "@ref": null
+            },
+            "module1": {
+                "@ref": null
+            },
+            "module2": {
+                "@ref": null
             }
         }
     },
     "@source": {
         "instanceName": "cisco_48p4u"
     },
-    "@exportedInstanceId": "e6291c3a-6108-4cf0-9885-3458d13b0438",
     "@id": "e6291c3a-6108-4cf0-9885-3458d13b0438",
     "@name": "cisco_48p4u",
     "@description": ""

@@ -24,7 +24,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "b0217b6a-ed87-4ba4-8f40-92cc1b2cfbae",
     "@id": "b0217b6a-ed87-4ba4-8f40-92cc1b2cfbae",
     "@name": "nxos_telnet-group"
 }

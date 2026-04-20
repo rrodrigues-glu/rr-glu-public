@@ -14,7 +14,6 @@
     "@source": {
         "instanceName": "nxos_community-list-cli"
     },
-    "@exportedInstanceId": "47232344-5043-4b2f-8a1d-68b8fbeb30ff",
     "@id": "47232344-5043-4b2f-8a1d-68b8fbeb30ff",
     "@name": "nxos_community-list-cli",
     "@description": ""

@@ -19,7 +19,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "dd3165d9-448a-4f98-a937-ce3fb8da9af2",
     "@id": "dd3165d9-448a-4f98-a937-ce3fb8da9af2",
     "@name": "nxos_qos-pmap_grp",
     "@description": ""

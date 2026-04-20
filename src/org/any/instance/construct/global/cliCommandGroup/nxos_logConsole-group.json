@@ -24,7 +24,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "eb54cc7d-c39e-4994-b864-f99e46e20d85",
     "@id": "eb54cc7d-c39e-4994-b864-f99e46e20d85",
     "@name": "nxos_logConsole-group"
 }

@@ -17,7 +17,6 @@
     "@source": {
         "instanceName": "ios_tacacs-remove-single-step_grp"
     },
-    "@exportedInstanceId": "d69ec879-414a-4580-a037-4382b503b1fb",
     "@id": "d69ec879-414a-4580-a037-4382b503b1fb",
     "@name": "ios_tacacs-remove-single-step_grp",
     "@description": ""

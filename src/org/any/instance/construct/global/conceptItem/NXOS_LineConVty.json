@@ -36,7 +36,6 @@
     "@source": {
         "instanceName": "NXOS_LineConVty"
     },
-    "@exportedInstanceId": "481ba53e-dfdb-475c-8523-7ef74abce702",
     "@id": "481ba53e-dfdb-475c-8523-7ef74abce702",
     "@name": "NXOS_LineConVty"
 }

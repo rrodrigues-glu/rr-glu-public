@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_IpAcl.json"
+    },
     "cliCommands": [
         "ip access-list qos-clinical-life-critical",
         "  10 remark Clinical Life Critical traffic between associated clinical subnets.",
@@ -76,7 +78,6 @@
     "@source": {
         "instanceName": "nxos_qos-acl_cli"
     },
-    "@exportedInstanceId": "1f891378-fe72-44ba-9506-01fff32087d4",
     "@id": "1f891378-fe72-44ba-9506-01fff32087d4",
     "@name": "nxos_qos-acl_cli",
     "@description": ""

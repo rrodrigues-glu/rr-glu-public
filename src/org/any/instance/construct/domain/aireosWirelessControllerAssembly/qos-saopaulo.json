@@ -11,7 +11,14 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "state": {
         "assessment": {}
     },
@@ -19,7 +26,6 @@
     "@source": {
         "instanceName": "qos-saopaulo"
     },
-    "@exportedInstanceId": "f76cb9c4-c2e0-472a-939b-30ed6c23ad52",
     "@id": "f76cb9c4-c2e0-472a-939b-30ed6c23ad52",
     "@name": "qos-saopaulo",
     "@description": ""

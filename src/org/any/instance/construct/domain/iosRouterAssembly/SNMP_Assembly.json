@@ -11,12 +11,30 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "boot": {
-        "firmware": {}
+        "firmware": {
+            "policy": {
+                "@ref": null
+            },
+            "catalog": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -24,7 +42,6 @@
     "@source": {
         "instanceName": "SNMP_Assembly"
     },
-    "@exportedInstanceId": "a3ca82d9-7e42-46aa-b5ad-8f11b66b2d65",
     "@id": "a3ca82d9-7e42-46aa-b5ad-8f11b66b2d65",
     "@name": "SNMP_Assembly",
     "@description": ""

@@ -20,7 +20,6 @@
     "@source": {
         "instanceName": "aireos_wlan-qos-3_grp"
     },
-    "@exportedInstanceId": "a11d56d5-3025-4005-b335-0a0b8175345b",
     "@id": "a11d56d5-3025-4005-b335-0a0b8175345b",
     "@name": "aireos_wlan-qos-3_grp",
     "@description": ""

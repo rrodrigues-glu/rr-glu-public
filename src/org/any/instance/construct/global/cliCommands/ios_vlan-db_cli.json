@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Vlan.json"
+    },
     "cliCommands": [
         "vlan $context.layer2[*].vlan.id",
         " name $context.layer2[*].vlan.name",
@@ -14,7 +16,6 @@
     "@source": {
         "instanceName": "ios_vlan-db_cli"
     },
-    "@exportedInstanceId": "1f231e76-f403-4b27-b233-a39016396703",
     "@id": "1f231e76-f403-4b27-b233-a39016396703",
     "@name": "ios_vlan-db_cli",
     "@description": ""

@@ -22,7 +22,6 @@
     "@source": {
         "instanceName": "nxos_spanning-tree-cli"
     },
-    "@exportedInstanceId": "f9623d1c-6ebb-432a-afda-7c40f9a2d868",
     "@id": "f9623d1c-6ebb-432a-afda-7c40f9a2d868",
     "@name": "nxos_spanning-tree-cli",
     "@description": ""

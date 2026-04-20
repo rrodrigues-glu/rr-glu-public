@@ -25,7 +25,6 @@
     "@source": {
         "instanceName": "NXOS_Boot"
     },
-    "@exportedInstanceId": "5c25828e-387f-400d-b074-5ad361d37ead",
     "@id": "5c25828e-387f-400d-b074-5ad361d37ead",
     "@name": "NXOS_Boot",
     "@description": ""

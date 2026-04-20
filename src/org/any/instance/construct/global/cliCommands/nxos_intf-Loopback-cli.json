@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Intf.json"
+    },
     "cliCommands": [
         "interface loopback0",
         " description dc03-nx7k01-mktx-dr01 LOCAL ROUTER ID",
@@ -147,7 +149,6 @@
     "@source": {
         "instanceName": "nxos_intf-Loopback-cli"
     },
-    "@exportedInstanceId": "bca9b34d-76aa-4834-b1ce-28a046bed91d",
     "@id": "bca9b34d-76aa-4834-b1ce-28a046bed91d",
     "@name": "nxos_intf-Loopback-cli",
     "@description": ""

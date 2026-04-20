@@ -19,11 +19,10 @@
     "advanced": {
         "filter": null
     },
-    "@exportedInstanceId": "71609d05-ad1f-4036-9939-74f2779c9812",
     "@id": "71609d05-ad1f-4036-9939-74f2779c9812",
+    "@name": "ios_ntp-server_cli-RRntp-liqJS",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    },
-    "@name": "ios_ntp-server_cli-RRntp-liqJS",
-    "@description": ""
+    }
 }

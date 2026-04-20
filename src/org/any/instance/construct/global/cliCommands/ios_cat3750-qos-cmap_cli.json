@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_ClassMap.json"
+    },
     "cliCommands": [
         "class-map match-all AutoQoS-VoIP-RTP-Trust",
         " match ip dscp ef",
@@ -17,7 +19,6 @@
     "@source": {
         "instanceName": "ios_cat3750-qos-cmap_cli"
     },
-    "@exportedInstanceId": "f6d88d6e-44b1-4ee9-bdcd-aa0a2c52849d",
     "@id": "f6d88d6e-44b1-4ee9-bdcd-aa0a2c52849d",
     "@name": "ios_cat3750-qos-cmap_cli",
     "@description": ""

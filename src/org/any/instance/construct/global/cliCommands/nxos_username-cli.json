@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Username.json"
+    },
     "cliCommands": [
         "username netadmin password 5 $5$BWgNj/pV$Dn0kIz2gxJlshgU44EqVq23OYpzJ3g1ATVimv2IiLD3  role vdc-admin",
         "username netadmin passphrase  lifetime 99999 warntime 7",
@@ -17,7 +19,6 @@
     "@source": {
         "instanceName": "nxos_username-cli"
     },
-    "@exportedInstanceId": "655ed35d-a129-484a-90f6-dfed15d78614",
     "@id": "655ed35d-a129-484a-90f6-dfed15d78614",
     "@name": "nxos_username-cli",
     "@description": ""

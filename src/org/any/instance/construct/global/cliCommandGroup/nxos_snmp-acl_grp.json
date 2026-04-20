@@ -19,7 +19,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "694be58e-d0c0-46b2-b330-fa4d562a3a31",
     "@id": "694be58e-d0c0-46b2-b330-fa4d562a3a31",
     "@name": "nxos_snmp-acl_grp",
     "@description": ""

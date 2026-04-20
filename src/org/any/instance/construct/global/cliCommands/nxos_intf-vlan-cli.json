@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Intf.json"
+    },
     "cliCommands": [
         "interface Vlan1",
         " no ip redirects",
@@ -2253,7 +2255,6 @@
     "@source": {
         "instanceName": "nxos_intf-vlan-cli"
     },
-    "@exportedInstanceId": "b00a5da3-50ab-4173-9409-c3d3ec77c1f5",
     "@id": "b00a5da3-50ab-4173-9409-c3d3ec77c1f5",
     "@name": "nxos_intf-vlan-cli",
     "@description": ""

@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_RouteMap.json"
+    },
     "cliCommands": [
         "route-map EXPORT_MAP_MAIN_DMZ01 permit 100",
         " match ip address prefix-list IPV4_DEFAULT_ROUTE ",
@@ -217,7 +219,6 @@
     "@source": {
         "instanceName": "nxos_route-map-cli"
     },
-    "@exportedInstanceId": "94640120-d40e-4a6e-9b44-af2ef42bda61",
     "@id": "94640120-d40e-4a6e-9b44-af2ef42bda61",
     "@name": "nxos_route-map-cli",
     "@description": ""

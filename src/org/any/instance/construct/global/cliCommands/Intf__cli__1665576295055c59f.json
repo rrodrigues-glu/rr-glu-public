@@ -3,7 +3,9 @@
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
     "@id": "7e1d3bdd-30d1-4287-a60f-60ba3f913fd5",
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Intf2.json"
+    },
     "cliCommands": [
         "interface Tunnel159001",
         " no ip address",
@@ -38,7 +40,6 @@
         " no mop enabled",
         " no mop sysid"
     ],
-    "@exportedInstanceId": "7e1d3bdd-30d1-4287-a60f-60ba3f913fd5",
     "@name": "Intf__cli__1665576295055c59f",
     "@description": ""
 }

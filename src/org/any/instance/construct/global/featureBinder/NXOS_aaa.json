@@ -8,19 +8,25 @@
     "featureDisplayName": "AAA Feature",
     "renderList": [
         {
-            "item": {},
+            "item": {
+                "@ref": "/org/instance/construct/global/conceptItem/NXOS_AAA.json"
+            },
             "maskCommands": [
                 ""
             ],
             "dCli": []
         },
         {
-            "item": {},
+            "item": {
+                "@ref": "/org/instance/construct/global/conceptItem/NXOS_AAAGroup.json"
+            },
             "maskCommands": [],
             "dCli": []
         },
         {
-            "item": {},
+            "item": {
+                "@ref": "/org/instance/construct/global/conceptItem/NXOS_AAA_Accounting.json"
+            },
             "maskCommands": [],
             "dCli": []
         }
@@ -29,7 +35,6 @@
     "@source": {
         "instanceName": "NXOS_aaa"
     },
-    "@exportedInstanceId": "fc29d06b-2cb0-401a-9058-a505a8981b0a",
     "@id": "fc29d06b-2cb0-401a-9058-a505a8981b0a",
     "@name": "NXOS_aaa",
     "@description": ""

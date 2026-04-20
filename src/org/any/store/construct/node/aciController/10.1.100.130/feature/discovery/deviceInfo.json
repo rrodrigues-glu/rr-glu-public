@@ -25,8 +25,10 @@
     "os": "aci",
     "serialNumber": "TEP-1-1",
     "macAddress": "00:22:BD:F8:19:FF",
+    "uptime": "41d09h05m32s000ms",
     "fabricId": "1",
     "fabricDomain": "ACI Fabric1",
     "clusterMembers": {},
-    "multiDeviceKey": "controller"
+    "multiDeviceKey": "controller",
+    "@lastCommitHash": "95be3e03169dd49d762cd5e5052769e42fc6a5d3"
 }

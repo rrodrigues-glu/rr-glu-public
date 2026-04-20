@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Intf2.json"
+    },
     "cliCommands": [
         "interface Tunnel$context.networks[*].overlayNetwork.id",
         " description $context.networks[*].underlyingIntf.vrf DMVPN Network",
@@ -33,7 +35,6 @@
     "@source": {
         "instanceName": "ios_dmvpn-intf-hub_cli"
     },
-    "@exportedInstanceId": "b615334e-4d35-4bd1-8974-52175d287849",
     "@id": "b615334e-4d35-4bd1-8974-52175d287849",
     "@name": "ios_dmvpn-intf-hub_cli",
     "@description": ""

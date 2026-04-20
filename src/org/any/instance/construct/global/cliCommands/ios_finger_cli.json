@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Finger.json"
+    },
     "cliCommands": [
         "!"
     ],
@@ -12,7 +14,6 @@
     "@source": {
         "instanceName": "ios_finger_cli"
     },
-    "@exportedInstanceId": "64d1cf80-7c7b-4cb9-b17a-b3d55df52e98",
     "@id": "64d1cf80-7c7b-4cb9-b17a-b3d55df52e98",
     "@name": "ios_finger_cli",
     "@description": ""

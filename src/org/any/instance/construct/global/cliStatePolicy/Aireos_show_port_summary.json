@@ -17,7 +17,6 @@
         "instanceName": "Aireos_show_port_summary"
     },
     "privilegeMode": false,
-    "@exportedInstanceId": "38b14a30-32d4-4f5d-b8e4-11d5915be36e",
     "@id": "38b14a30-32d4-4f5d-b8e4-11d5915be36e",
     "@name": "Aireos_show_port_summary",
     "@description": ""

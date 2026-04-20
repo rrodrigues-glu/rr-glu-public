@@ -15,7 +15,6 @@
     "@source": {
         "instanceName": "nxos_install-cli"
     },
-    "@exportedInstanceId": "d138e7e8-e4e2-48e0-808f-82407b1b6d72",
     "@id": "d138e7e8-e4e2-48e0-808f-82407b1b6d72",
     "@name": "nxos_install-cli",
     "@description": ""

@@ -11,12 +11,33 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portLayout": {
+            "@ref": null
+        },
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "boot": {
-        "firmware": {}
+        "firmware": {
+            "policy": {
+                "@ref": null
+            },
+            "catalog": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -24,7 +45,6 @@
     "@source": {
         "instanceName": "DNS_Assembly"
     },
-    "@exportedInstanceId": "c7137375-89ad-48d2-bbbd-5c1b51a47dd3",
     "@id": "c7137375-89ad-48d2-bbbd-5c1b51a47dd3",
     "@name": "DNS_Assembly",
     "@description": ""

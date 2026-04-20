@@ -11,7 +11,14 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "state": {
         "assessment": {}
     },
@@ -19,7 +26,6 @@
     "@source": {
         "instanceName": "qos-prague"
     },
-    "@exportedInstanceId": "be20ce0e-d179-4e18-9c4a-c927991cf0f5",
     "@id": "be20ce0e-d179-4e18-9c4a-c927991cf0f5",
     "@name": "qos-prague",
     "@description": ""

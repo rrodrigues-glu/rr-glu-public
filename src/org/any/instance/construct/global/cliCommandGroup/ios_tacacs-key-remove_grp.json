@@ -17,7 +17,6 @@
     "@source": {
         "instanceName": "ios_tacacs-key-remove_grp"
     },
-    "@exportedInstanceId": "3c81e86e-92aa-4fc4-ac3f-3ed2897d2b9e",
     "@id": "3c81e86e-92aa-4fc4-ac3f-3ed2897d2b9e",
     "@name": "ios_tacacs-key-remove_grp",
     "@description": ""

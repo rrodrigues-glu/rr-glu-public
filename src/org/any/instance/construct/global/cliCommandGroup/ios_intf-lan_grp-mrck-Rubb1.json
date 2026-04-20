@@ -13,11 +13,10 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "1a860526-c223-4957-bd73-045a873282e0",
     "@id": "1a860526-c223-4957-bd73-045a873282e0",
+    "@name": "ios_intf-lan_grp-mrck-Rubb1",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
-    },
-    "@name": "ios_intf-lan_grp-mrck-Rubb1",
-    "@description": ""
+    }
 }

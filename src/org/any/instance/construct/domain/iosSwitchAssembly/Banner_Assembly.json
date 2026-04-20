@@ -8,18 +8,34 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portLayout": {
+            "@ref": null
+        },
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "boot": {
-        "firmware": {}
+        "firmware": {
+            "policy": {
+                "@ref": null
+            },
+            "catalog": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
     },
-    "@exportedInstanceId": "eeaa6919-2446-422f-a6a8-4bd99d98a7e1",
     "@id": "eeaa6919-2446-422f-a6a8-4bd99d98a7e1",
+    "@name": "Banner_Assembly",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/domain/iosSwitchAssembly.jtype"
-    },
-    "@name": "Banner_Assembly",
-    "@description": ""
+    }
 }

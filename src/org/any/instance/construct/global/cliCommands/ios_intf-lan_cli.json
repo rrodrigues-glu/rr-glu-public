@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Intf2.json"
+    },
     "cliCommands": [
         "interface GigabitEthernet0/1",
         " description Inside Interface",
@@ -18,7 +20,6 @@
     "@source": {
         "instanceName": "ios_intf-lan_cli"
     },
-    "@exportedInstanceId": "ef9b5e51-879b-4165-98bd-0830402b4fdd",
     "@id": "ef9b5e51-879b-4165-98bd-0830402b4fdd",
     "@name": "ios_intf-lan_cli",
     "@description": ""

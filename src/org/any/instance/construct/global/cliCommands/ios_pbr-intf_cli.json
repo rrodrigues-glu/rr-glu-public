@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Intf2.json"
+    },
     "cliCommands": [
         "interface $context.portMap.DATA.name",
         " ip policy route-map rmap_pbr",
@@ -14,7 +16,6 @@
     "@source": {
         "instanceName": "ios_pbr-intf_cli"
     },
-    "@exportedInstanceId": "eb70f0b0-7bf3-4622-866c-c6770a4859c8",
     "@id": "eb70f0b0-7bf3-4622-866c-c6770a4859c8",
     "@name": "ios_pbr-intf_cli",
     "@description": ""

@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_TacacsSrcIntf.json"
+    },
     "cliCommands": [
         "ip tacacs source-interface $context.portMap.MGNT1.name"
     ],
@@ -12,7 +14,6 @@
     "@source": {
         "instanceName": "ios_aaa-tacacs-srcIntf_cli"
     },
-    "@exportedInstanceId": "74395ce7-9530-4038-a7bd-14fd1d2c8957",
     "@id": "74395ce7-9530-4038-a7bd-14fd1d2c8957",
     "@name": "ios_aaa-tacacs-srcIntf_cli",
     "@description": ""

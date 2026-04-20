@@ -11,9 +11,23 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portLayout": {
+            "@ref": null
+        },
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -21,7 +35,6 @@
     "@source": {
         "instanceName": "IP-Helper-Update"
     },
-    "@exportedInstanceId": "81c5c34b-61ad-4108-8715-726130a2b66f",
     "@id": "81c5c34b-61ad-4108-8715-726130a2b66f",
     "@name": "IP-Helper-Update",
     "@description": ""

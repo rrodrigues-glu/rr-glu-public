@@ -6,9 +6,13 @@
         "credentials": {
             "@ref": "/secret/sys/credentials/deviceUserPass/admin.json"
         },
+        "enablePassword": {
+            "@ref": null
+        },
         "type": "ssh",
         "port": 22,
-        "terminalType": "xterm"
+        "terminalType": "xterm",
+        "sshParam": ""
     },
     "associations": {
         "provider": "local",
@@ -57,10 +61,9 @@
         "instanceVersionId": "816055b7-92d7-4631-9b76-2adc3131819f",
         "instanceVersion": "1.0.0"
     },
-    "@exportedInstanceId": "02110438-1af6-484a-ad3c-ea0b7951b9d8",
+    "@name": "nexus5",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/nxosSwitch.jtype"
-    },
-    "@name": "nexus5",
-    "@description": ""
+    }
 }

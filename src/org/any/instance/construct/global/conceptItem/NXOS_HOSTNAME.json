@@ -25,7 +25,6 @@
     "@source": {
         "instanceName": "NXOS_HOSTNAME"
     },
-    "@exportedInstanceId": "768d8c32-c5f8-493a-b258-f16310c2e9ff",
     "@id": "768d8c32-c5f8-493a-b258-f16310c2e9ff",
     "@name": "NXOS_HOSTNAME",
     "@description": ""

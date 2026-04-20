@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Intf2.json"
+    },
     "cliCommands": [
         "!"
     ],
@@ -12,7 +14,6 @@
     "@source": {
         "instanceName": "ios_object-intf_cli"
     },
-    "@exportedInstanceId": "4b0e002d-a9ce-479e-84fb-9cc335602f7e",
     "@id": "4b0e002d-a9ce-479e-84fb-9cc335602f7e",
     "@name": "ios_object-intf_cli",
     "@description": ""

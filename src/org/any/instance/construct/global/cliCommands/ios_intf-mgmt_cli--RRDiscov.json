@@ -10,11 +10,10 @@
     "advanced": {
         "filter": null
     },
-    "@exportedInstanceId": "cbc3a531-fd70-4389-819c-b62b3ac7ed4a",
     "@id": "cbc3a531-fd70-4389-819c-b62b3ac7ed4a",
+    "@name": "ios_intf-mgmt_cli--RRDiscov",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    },
-    "@name": "ios_intf-mgmt_cli--RRDiscov",
-    "@description": ""
+    }
 }

@@ -10,11 +10,10 @@
     "advanced": {
         "filter": null
     },
-    "@exportedInstanceId": "12b82fae-5664-40f1-a2ff-efa50e6efe80",
     "@id": "12b82fae-5664-40f1-a2ff-efa50e6efe80",
+    "@name": "ios_ntp-server_cli-Disc",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    },
-    "@name": "ios_ntp-server_cli-Disc",
-    "@description": ""
+    }
 }

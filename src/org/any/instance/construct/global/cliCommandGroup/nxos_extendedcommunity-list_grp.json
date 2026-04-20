@@ -17,7 +17,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "bcae1607-ad76-452b-bc1d-f17f0adf145e",
     "@id": "bcae1607-ad76-452b-bc1d-f17f0adf145e",
     "@name": "nxos_extendedcommunity-list_grp",
     "@description": ""

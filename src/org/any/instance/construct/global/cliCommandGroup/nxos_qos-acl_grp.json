@@ -19,7 +19,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "7b971532-2129-4c45-95eb-9ab5cd8eddf0",
     "@id": "7b971532-2129-4c45-95eb-9ab5cd8eddf0",
     "@name": "nxos_qos-acl_grp",
     "@description": ""

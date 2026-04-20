@@ -17,7 +17,6 @@
     "@source": {
         "instanceName": "nxos_syslog-server_grp"
     },
-    "@exportedInstanceId": "ce068e9a-9d91-424d-b764-2faa8a78949e",
     "@id": "ce068e9a-9d91-424d-b764-2faa8a78949e",
     "@name": "nxos_syslog-server_grp",
     "@description": ""

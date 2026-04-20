@@ -17,7 +17,6 @@
     "@source": {
         "instanceName": "ios_syslog-server_grp"
     },
-    "@exportedInstanceId": "4fa682e4-6797-401f-b9b6-a02e7ec6e74f",
     "@id": "4fa682e4-6797-401f-b9b6-a02e7ec6e74f",
     "@name": "ios_syslog-server_grp",
     "@description": ""

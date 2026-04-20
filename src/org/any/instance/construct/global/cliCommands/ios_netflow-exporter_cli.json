@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_NetflowExporter.json"
+    },
     "cliCommands": [
         "flow exporter $context.flow.exporter[*].name",
         " description $context.flow.exporter[*].description",
@@ -19,7 +21,6 @@
     "@source": {
         "instanceName": "ios_netflow-exporter_cli"
     },
-    "@exportedInstanceId": "8703b884-1a9f-448c-9747-13563bdbb8f0",
     "@id": "8703b884-1a9f-448c-9747-13563bdbb8f0",
     "@name": "ios_netflow-exporter_cli",
     "@description": ""

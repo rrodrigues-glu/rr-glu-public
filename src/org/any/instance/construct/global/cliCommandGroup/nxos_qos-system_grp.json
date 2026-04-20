@@ -19,7 +19,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "83e36fb4-12df-44fa-9761-52bc44409c4d",
     "@id": "83e36fb4-12df-44fa-9761-52bc44409c4d",
     "@name": "nxos_qos-system_grp",
     "@description": ""

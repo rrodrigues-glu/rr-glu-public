@@ -11,9 +11,23 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portLayout": {
+            "@ref": null
+        },
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -21,7 +35,6 @@
     "@source": {
         "instanceName": "NTP_Hostname"
     },
-    "@exportedInstanceId": "bcbdcc09-c560-4d9c-b795-806a1c50199f",
     "@id": "bcbdcc09-c560-4d9c-b795-806a1c50199f",
     "@name": "NTP_Hostname",
     "@description": ""

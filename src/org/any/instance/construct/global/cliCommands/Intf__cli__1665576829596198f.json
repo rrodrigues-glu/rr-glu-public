@@ -3,7 +3,9 @@
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
     "@id": "390f2551-3415-4ff0-8557-a0bc181c307c",
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Intf2.json"
+    },
     "cliCommands": [
         "interface GigabitEthernet0/0",
         " description gw-hq-sqa-swt-5-Fa0/33",
@@ -607,7 +609,6 @@
         "interface Vlan76",
         " no ip address"
     ],
-    "@exportedInstanceId": "390f2551-3415-4ff0-8557-a0bc181c307c",
     "@name": "Intf__cli__1665576829596198f",
     "@description": ""
 }

@@ -17,7 +17,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "1a3cdebd-8b6a-4bc9-a502-c0b4b7fb1b39",
     "@id": "1a3cdebd-8b6a-4bc9-a502-c0b4b7fb1b39",
     "@name": "nxos_mpls-ldp_group",
     "@description": ""

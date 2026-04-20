@@ -16,6 +16,9 @@
     "keyLineDepth": 1,
     "keyGroup": 1,
     "regEx": "",
+    "metadata": {
+        "@ref": null
+    },
     "mode": "advanced",
     "boundaries": {
         "start": null
@@ -29,7 +32,6 @@
     "@source": {
         "instanceName": "NXOS_pwdStrength"
     },
-    "@exportedInstanceId": "3a4947a8-e281-4e57-baf4-ea7275285435",
     "@id": "3a4947a8-e281-4e57-baf4-ea7275285435",
     "@name": "NXOS_pwdStrength"
 }

@@ -19,7 +19,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "702857e6-e27b-4333-8736-63ae4517c1e9",
     "@id": "702857e6-e27b-4333-8736-63ae4517c1e9",
     "@name": "nxos_domain-name-group",
     "@description": ""

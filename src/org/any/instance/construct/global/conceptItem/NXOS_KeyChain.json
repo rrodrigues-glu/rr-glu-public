@@ -25,7 +25,6 @@
     "@source": {
         "instanceName": "NXOS_KeyChain"
     },
-    "@exportedInstanceId": "28ead341-c158-409a-b76e-92976ae8bacd",
     "@id": "28ead341-c158-409a-b76e-92976ae8bacd",
     "@name": "NXOS_KeyChain",
     "@description": ""

@@ -24,7 +24,6 @@
     "@source": {
         "instanceName": "ios_ip-helper_grp"
     },
-    "@exportedInstanceId": "d75e3733-57b5-4db4-ba15-0e2d601758d5",
     "@id": "d75e3733-57b5-4db4-ba15-0e2d601758d5",
     "@name": "ios_ip-helper_grp",
     "@description": ""

@@ -8,22 +8,30 @@
     "featureDisplayName": "Netflow Feature",
     "renderList": [
         {
-            "item": {},
+            "item": {
+                "@ref": "/org/instance/construct/global/conceptItem/NXOS_NetflowExporter.json"
+            },
             "maskCommands": [],
             "dCli": []
         },
         {
-            "item": {},
+            "item": {
+                "@ref": "/org/instance/construct/global/conceptItem/NXOS_NetflowMonitor.json"
+            },
             "maskCommands": [],
             "dCli": []
         },
         {
-            "item": {},
+            "item": {
+                "@ref": "/org/instance/construct/global/conceptItem/NXOS_NetflowRecord.json"
+            },
             "maskCommands": [],
             "dCli": []
         },
         {
-            "item": {},
+            "item": {
+                "@ref": "/org/instance/construct/global/conceptItem/NXOS_Intf.json"
+            },
             "maskCommands": [],
             "dCli": []
         }
@@ -32,7 +40,6 @@
     "@source": {
         "instanceName": "NXOS_netflow"
     },
-    "@exportedInstanceId": "bd4ebf98-c1de-486d-a008-0f959099ad07",
     "@id": "bd4ebf98-c1de-486d-a008-0f959099ad07",
     "@name": "NXOS_netflow",
     "@description": ""

@@ -32,7 +32,6 @@
     "@source": {
         "instanceName": "nxos_monitor-cli"
     },
-    "@exportedInstanceId": "59aebe68-f4d6-4c10-9cf9-11f7d3eeaec2",
     "@id": "59aebe68-f4d6-4c10-9cf9-11f7d3eeaec2",
     "@name": "nxos_monitor-cli",
     "@description": ""

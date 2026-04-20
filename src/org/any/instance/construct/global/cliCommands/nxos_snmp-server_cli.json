@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Snmp.json"
+    },
     "cliCommands": [
         "snmp-server location $context.snmp.location",
         "snmp-server contact $context.snmp.contact",
@@ -17,7 +19,6 @@
     "@source": {
         "instanceName": "nxos_snmp-server_cli"
     },
-    "@exportedInstanceId": "7b841a21-2df1-41c1-a5d0-87a7e277f99d",
     "@id": "7b841a21-2df1-41c1-a5d0-87a7e277f99d",
     "@name": "nxos_snmp-server_cli",
     "@description": ""

@@ -19,7 +19,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "cffc083f-4813-440f-855b-178344ff85c6",
     "@id": "cffc083f-4813-440f-855b-178344ff85c6",
     "@name": "nxos_qos-cmap_grp",
     "@description": ""

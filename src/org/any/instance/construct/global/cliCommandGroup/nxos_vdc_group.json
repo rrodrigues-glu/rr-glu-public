@@ -17,7 +17,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "d04b9890-16a2-4ac4-8dba-579887b3ed8f",
     "@id": "d04b9890-16a2-4ac4-8dba-579887b3ed8f",
     "@name": "nxos_vdc_group",
     "@description": ""

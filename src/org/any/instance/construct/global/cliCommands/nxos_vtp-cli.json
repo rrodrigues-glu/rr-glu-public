@@ -15,7 +15,6 @@
     "@source": {
         "instanceName": "nxos_vtp-cli"
     },
-    "@exportedInstanceId": "8e162901-2ad9-4f1d-bac9-d92d01dbb454",
     "@id": "8e162901-2ad9-4f1d-bac9-d92d01dbb454",
     "@name": "nxos_vtp-cli",
     "@description": ""

@@ -11,9 +11,20 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -21,7 +32,6 @@
     "@source": {
         "instanceName": "NTP_Assembly"
     },
-    "@exportedInstanceId": "11129837-8f65-4e18-b9d1-7ec7fe4112ec",
     "@id": "11129837-8f65-4e18-b9d1-7ec7fe4112ec",
     "@name": "NTP_Assembly",
     "@description": ""

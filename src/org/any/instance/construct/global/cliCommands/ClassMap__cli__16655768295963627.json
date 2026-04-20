@@ -3,7 +3,9 @@
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
     "@id": "84d8669c-ad91-4ac4-8702-96f5bd6c1a6c",
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_ClassMap.json"
+    },
     "cliCommands": [
         "class-map match-any AutoQos-4.0-Output-Multimedia-Conf-Queue",
         " match dscp af41  af42  af43",
@@ -94,7 +96,6 @@
         " match dscp cs2  cs3  cs6  cs7",
         " match cos  3"
     ],
-    "@exportedInstanceId": "84d8669c-ad91-4ac4-8702-96f5bd6c1a6c",
     "@name": "ClassMap__cli__16655768295963627",
     "@description": ""
 }

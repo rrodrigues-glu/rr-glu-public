@@ -8,15 +8,25 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "@type": {
         "ref": "/sys/type/construct/domain/iosSwitchAssembly.jtype"
     },
     "@id": "e3d856af-94b1-49ec-a20b-fcdb50dfc941",
-    "@exportedInstanceId": "e3d856af-94b1-49ec-a20b-fcdb50dfc941",
     "@name": "iosSwitch__1665576957898",
     "@description": ""
 }

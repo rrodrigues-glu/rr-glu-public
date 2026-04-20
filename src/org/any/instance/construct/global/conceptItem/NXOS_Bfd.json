@@ -25,7 +25,6 @@
     "@source": {
         "instanceName": "NXOS_Bfd"
     },
-    "@exportedInstanceId": "4ec16bc5-84f2-4b49-be16-a1cd0b09c588",
     "@id": "4ec16bc5-84f2-4b49-be16-a1cd0b09c588",
     "@name": "NXOS_Bfd",
     "@description": ""

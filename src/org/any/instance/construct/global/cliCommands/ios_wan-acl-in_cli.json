@@ -1,5 +1,7 @@
 {
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_IpAclRuleAndRemarks.json"
+    },
     "cliCommands": [
         "ip access-list extended copp-system-acl-ssh-WSP",
         " permit tcp host 10.1.213.20 any eq 22",
@@ -48,11 +50,10 @@
     "advanced": {
         "filter": null
     },
-    "@exportedInstanceId": "ad9dca73-b155-4b6d-b9c8-ec4d38b5f360",
     "@id": "ad9dca73-b155-4b6d-b9c8-ec4d38b5f360",
+    "@name": "ios_wan-acl-in_cli",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    },
-    "@name": "ios_wan-acl-in_cli",
-    "@description": ""
+    }
 }

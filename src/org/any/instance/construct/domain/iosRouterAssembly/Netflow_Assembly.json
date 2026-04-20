@@ -11,17 +11,34 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "boot": {
-        "firmware": {}
+        "firmware": {
+            "policy": {
+                "@ref": null
+            },
+            "catalog": {
+                "@ref": null
+            }
+        }
     },
     "@source": {
         "instanceName": "Netflow_Assembly"
     },
-    "@exportedInstanceId": "ff311d4b-64eb-4f45-9775-f80e4eb8a9d8",
     "@id": "ff311d4b-64eb-4f45-9775-f80e4eb8a9d8",
     "@name": "Netflow_Assembly",
     "@description": ""

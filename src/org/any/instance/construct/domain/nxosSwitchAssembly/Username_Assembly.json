@@ -11,9 +11,23 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "boot": {
-        "firmware": {}
+        "firmware": {
+            "policy": {
+                "@ref": null
+            },
+            "catalog": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -21,7 +35,6 @@
     "@source": {
         "instanceName": "Username_Assembly"
     },
-    "@exportedInstanceId": "009b6e5d-3616-430a-9b27-ccfd72ee5a6f",
     "@id": "009b6e5d-3616-430a-9b27-ccfd72ee5a6f",
     "@name": "Username_Assembly",
     "@description": ""

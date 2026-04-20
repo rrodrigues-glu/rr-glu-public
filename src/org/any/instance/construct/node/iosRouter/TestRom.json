@@ -11,7 +11,8 @@
         },
         "type": "ssh",
         "port": 22,
-        "terminalType": "xterm"
+        "terminalType": "xterm",
+        "sshParam": ""
     },
     "associations": {
         "provider": "local"

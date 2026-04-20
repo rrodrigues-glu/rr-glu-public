@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_ClassMap.json"
+    },
     "cliCommands": [
         "class-map match-any voice-traffic-INBOUND",
         " description COS1-RT_Vo",
@@ -53,7 +55,6 @@
     "@source": {
         "instanceName": "ios_cat2960-qos-cmap_cli"
     },
-    "@exportedInstanceId": "487559b5-9f61-45e6-85fb-ef9a1410f398",
     "@id": "487559b5-9f61-45e6-85fb-ef9a1410f398",
     "@name": "ios_cat2960-qos-cmap_cli",
     "@description": ""

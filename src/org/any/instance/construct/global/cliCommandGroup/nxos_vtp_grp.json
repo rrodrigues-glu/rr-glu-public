@@ -17,7 +17,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "df6c96b5-97d1-4566-b1fd-c6e0503ec3a0",
     "@id": "df6c96b5-97d1-4566-b1fd-c6e0503ec3a0",
     "@name": "nxos_vtp_grp",
     "@description": ""

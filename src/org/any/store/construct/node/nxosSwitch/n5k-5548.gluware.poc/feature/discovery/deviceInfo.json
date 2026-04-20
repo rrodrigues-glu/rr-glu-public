@@ -324,6 +324,7 @@
         }
     },
     "detectedSerialNumber": "SSI171100NQ",
+    "uptime": "170d19h5m29s",
     "chassis": {
         "1": {
             "sku": "N5K-C5548UP",
@@ -853,6 +854,11 @@
                 "use": 1,
                 "free": 32
             }
+        },
+        "recordTime": {
+            "utcTime": 1776078908509,
+            "utcDateTime": "Mon, 13 Apr 2026 11:15:08 GMT"
         }
-    }
+    },
+    "@lastCommitHash": "95be3e03169dd49d762cd5e5052769e42fc6a5d3"
 }

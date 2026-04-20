@@ -17,7 +17,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "80458207-a464-4c0e-9a0e-fb1e0e2b4358",
     "@id": "80458207-a464-4c0e-9a0e-fb1e0e2b4358",
     "@name": "nxos_macAcl_grp",
     "@description": ""

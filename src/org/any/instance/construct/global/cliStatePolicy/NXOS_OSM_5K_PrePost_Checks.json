@@ -224,7 +224,6 @@
         "instanceName": "NXOS_OSM_5K_PrePost_Checks"
     },
     "privilegeMode": false,
-    "@exportedInstanceId": "d42c0992-5821-4871-a2c0-1e8a5374de0a",
     "@id": "d42c0992-5821-4871-a2c0-1e8a5374de0a",
     "@name": "NXOS_OSM_5K_PrePost_Checks",
     "@description": ""

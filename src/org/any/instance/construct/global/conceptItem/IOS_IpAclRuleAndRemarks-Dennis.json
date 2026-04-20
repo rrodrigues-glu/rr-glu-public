@@ -18,18 +18,19 @@
     "rootEntryFlag": false,
     "keyLineDepth": 1,
     "keyGroup": 2,
-    "metadata": {},
+    "metadata": {
+        "@ref": "/org/instance/construct/global/cliMetadata/IOS_IpAcl_cliMetadata.json"
+    },
     "mode": "advanced",
     "boundaries": {
         "start": null
     },
     "discover": {},
     "removeSyntax": {},
-    "@exportedInstanceId": "16649980-9a10-4cc9-9b31-712bae66280e",
     "@id": "16649980-9a10-4cc9-9b31-712bae66280e",
+    "@name": "IOS_IpAclRuleAndRemarks-Dennis",
+    "@description": "Displays the configuration sections that shows all IP ACLs. Note: The ^ makes the parser ONLY display the sections that BEGIN with 'ip access-list'.",
     "@type": {
         "ref": "/sys/type/construct/global/conceptItem.jtype"
-    },
-    "@name": "IOS_IpAclRuleAndRemarks-Dennis",
-    "@description": "Displays the configuration sections that shows all IP ACLs. Note: The ^ makes the parser ONLY display the sections that BEGIN with 'ip access-list'."
+    }
 }

@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_PrefixList.json"
+    },
     "cliCommands": [
         "ip prefix-list plist-distribute-local description allow distribution of local subnets into dmvpn",
         "ip prefix-list plist-distribute-local seq 10 permit $context.portMap.DATA.ipv4.subnet.ipPrefix",
@@ -18,7 +20,6 @@
     "@source": {
         "instanceName": "ios_dmvpn-plist-spoke-routing_cli"
     },
-    "@exportedInstanceId": "7f15ffa0-6a3c-4403-beca-256d36dc4822",
     "@id": "7f15ffa0-6a3c-4403-beca-256d36dc4822",
     "@name": "ios_dmvpn-plist-spoke-routing_cli",
     "@description": ""

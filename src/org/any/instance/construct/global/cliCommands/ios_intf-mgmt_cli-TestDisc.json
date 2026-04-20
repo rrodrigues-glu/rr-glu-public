@@ -12,11 +12,10 @@
     "advanced": {
         "filter": null
     },
-    "@exportedInstanceId": "383c88c6-0ab8-4888-bf5b-64e0dc712066",
     "@id": "383c88c6-0ab8-4888-bf5b-64e0dc712066",
+    "@name": "ios_intf-mgmt_cli-TestDisc",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    },
-    "@name": "ios_intf-mgmt_cli-TestDisc",
-    "@description": ""
+    }
 }

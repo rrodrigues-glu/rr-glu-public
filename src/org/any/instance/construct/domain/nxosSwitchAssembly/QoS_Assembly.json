@@ -11,9 +11,23 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "boot": {
-        "firmware": {}
+        "firmware": {
+            "policy": {
+                "@ref": null
+            },
+            "catalog": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -21,7 +35,6 @@
     "@source": {
         "instanceName": "QoS_Assembly"
     },
-    "@exportedInstanceId": "846ce634-0144-4569-aee1-40170917cb1f",
     "@id": "846ce634-0144-4569-aee1-40170917cb1f",
     "@name": "QoS_Assembly",
     "@description": ""

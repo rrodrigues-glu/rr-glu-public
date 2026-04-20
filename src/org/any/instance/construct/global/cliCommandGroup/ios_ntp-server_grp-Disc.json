@@ -15,11 +15,10 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "ec8f00ac-190b-4fe7-80e9-06a4c8f2fbb7",
     "@id": "ec8f00ac-190b-4fe7-80e9-06a4c8f2fbb7",
+    "@name": "ios_ntp-server_grp-Disc",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
-    },
-    "@name": "ios_ntp-server_grp-Disc",
-    "@description": ""
+    }
 }

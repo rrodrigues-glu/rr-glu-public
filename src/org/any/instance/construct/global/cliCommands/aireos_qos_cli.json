@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/Aireos_Qos.json"
+    },
     "cliCommands": [
         "qos qosmap disable",
         "qos qosmap upstream trust-dscp disable",
@@ -29,7 +31,6 @@
     "@source": {
         "instanceName": "aireos_qos_cli"
     },
-    "@exportedInstanceId": "3f932181-1946-4f53-8e3b-94fd946dd0b3",
     "@id": "3f932181-1946-4f53-8e3b-94fd946dd0b3",
     "@name": "aireos_qos_cli",
     "@description": ""

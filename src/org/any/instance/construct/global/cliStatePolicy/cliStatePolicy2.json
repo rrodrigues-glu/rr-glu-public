@@ -10,11 +10,10 @@
         }
     ],
     "privilegeMode": false,
-    "@exportedInstanceId": "28a888be-4228-4a60-938c-250812f5fd8f",
     "@id": "28a888be-4228-4a60-938c-250812f5fd8f",
+    "@name": "cliStatePolicy2",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliStatePolicy.jtype"
-    },
-    "@name": "cliStatePolicy2",
-    "@description": ""
+    }
 }

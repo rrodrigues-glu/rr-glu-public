@@ -9,7 +9,8 @@
         "type": "ssh",
         "port": 22,
         "connectionMethod": "cliConnection",
-        "terminalType": "xterm"
+        "terminalType": "xterm",
+        "sshParam": ""
     },
     "associations": {
         "provider": "local"

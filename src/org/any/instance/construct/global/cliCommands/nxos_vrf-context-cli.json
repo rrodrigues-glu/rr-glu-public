@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Vrf.json"
+    },
     "cliCommands": [
         "vrf context VPC_KEEPALIVE",
         "vrf context backup",
@@ -570,7 +572,6 @@
     "@source": {
         "instanceName": "nxos_vrf-context-cli"
     },
-    "@exportedInstanceId": "24528faa-b74e-4987-a098-b37a33842512",
     "@id": "24528faa-b74e-4987-a098-b37a33842512",
     "@name": "nxos_vrf-context-cli",
     "@description": ""

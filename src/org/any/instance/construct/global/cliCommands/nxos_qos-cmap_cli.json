@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_ClassMapQos.json"
+    },
     "cliCommands": [
         "class-map type qos match-any qos-in-network-control",
         " description network control",
@@ -55,7 +57,6 @@
     "@source": {
         "instanceName": "nxos_qos-cmap_cli"
     },
-    "@exportedInstanceId": "a282357c-b58d-483c-8951-48016e55ab2e",
     "@id": "a282357c-b58d-483c-8951-48016e55ab2e",
     "@name": "nxos_qos-cmap_cli",
     "@description": ""

@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_AAAGroup.json"
+    },
     "cliCommands": [
         "aaa group server tacacs+ $context.aaa[*].name",
         " server-private $context.aaa[*].tacacs[*].ip key 7 $context.aaa[*].tacacs[*].key",
@@ -14,7 +16,6 @@
     "@source": {
         "instanceName": "ios_aaa-group-server-var_cli"
     },
-    "@exportedInstanceId": "984172d3-3a24-4d8d-9167-c0cdadf0c964",
     "@id": "984172d3-3a24-4d8d-9167-c0cdadf0c964",
     "@name": "ios_aaa-group-server-var_cli",
     "@description": ""

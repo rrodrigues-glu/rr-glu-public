@@ -11,9 +11,23 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portLayout": {
+            "@ref": null
+        },
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -21,7 +35,6 @@
     "@source": {
         "instanceName": "ios_hostname"
     },
-    "@exportedInstanceId": "0ef456cd-9175-4f5d-a7a5-82b739890f75",
     "@id": "0ef456cd-9175-4f5d-a7a5-82b739890f75",
     "@name": "ios_hostname",
     "@description": ""

@@ -24,7 +24,6 @@
         "instanceName": "ios_trunk-interface-swCliGroup"
     },
     "ignoreDelete": true,
-    "@exportedInstanceId": "b5d4f18a-636a-4ac8-b798-b3d9be4d469a",
     "@id": "b5d4f18a-636a-4ac8-b798-b3d9be4d469a",
     "@name": "ios_trunk-interface-swCliGroup",
     "@description": ""

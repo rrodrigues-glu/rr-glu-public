@@ -16,11 +16,10 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "13f991c9-7cbc-4313-8d68-8d116d0914f1",
     "@id": "13f991c9-7cbc-4313-8d68-8d116d0914f1",
+    "@name": "ios_intf-mgmt_grp--RRDiscov",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
-    },
-    "@name": "ios_intf-mgmt_grp--RRDiscov",
-    "@description": ""
+    }
 }

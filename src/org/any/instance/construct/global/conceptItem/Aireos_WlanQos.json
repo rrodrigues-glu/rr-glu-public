@@ -26,7 +26,6 @@
     "@source": {
         "instanceName": "Aireos_WlanQos"
     },
-    "@exportedInstanceId": "a4b9db64-e9b9-4332-a3cd-ecbc325b44d5",
     "@id": "a4b9db64-e9b9-4332-a3cd-ecbc325b44d5",
     "@name": "Aireos_WlanQos",
     "@description": ""

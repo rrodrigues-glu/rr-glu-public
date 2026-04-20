@@ -17,7 +17,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "7654da42-a146-4d97-bde2-43cd40f746b1",
     "@id": "7654da42-a146-4d97-bde2-43cd40f746b1",
     "@name": "nxos_monitor-group",
     "@description": ""

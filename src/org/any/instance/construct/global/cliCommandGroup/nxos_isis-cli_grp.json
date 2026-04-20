@@ -17,7 +17,6 @@
     "@source": {
         "instanceName": "nxos_isis-cli_grp"
     },
-    "@exportedInstanceId": "6004f97c-c086-4581-be55-6367051ca2fb",
     "@id": "6004f97c-c086-4581-be55-6367051ca2fb",
     "@name": "nxos_isis-cli_grp",
     "@description": ""

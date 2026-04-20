@@ -11,7 +11,14 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "state": {
         "assessment": {}
     },
@@ -19,7 +26,6 @@
     "@source": {
         "instanceName": "qos-bengaluru"
     },
-    "@exportedInstanceId": "c6350f31-290e-4c7f-b07f-19f2432ad0de",
     "@id": "c6350f31-290e-4c7f-b07f-19f2432ad0de",
     "@name": "qos-bengaluru",
     "@description": ""

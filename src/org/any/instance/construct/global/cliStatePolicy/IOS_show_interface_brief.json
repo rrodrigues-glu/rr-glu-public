@@ -10,11 +10,10 @@
         }
     ],
     "privilegeMode": false,
-    "@exportedInstanceId": "9373521c-7558-4692-a6c9-d12fae8c9668",
     "@id": "9373521c-7558-4692-a6c9-d12fae8c9668",
+    "@name": "IOS_show_interface_brief",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliStatePolicy.jtype"
-    },
-    "@name": "IOS_show_interface_brief",
-    "@description": ""
+    }
 }

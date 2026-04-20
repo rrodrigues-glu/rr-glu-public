@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_SourceRoute.json"
+    },
     "cliCommands": [
         "!"
     ],
@@ -12,7 +14,6 @@
     "@source": {
         "instanceName": "ios_source-route_cli"
     },
-    "@exportedInstanceId": "e47fb1d4-c903-4384-8fc7-4955d6ce3f10",
     "@id": "e47fb1d4-c903-4384-8fc7-4955d6ce3f10",
     "@name": "ios_source-route_cli",
     "@description": ""

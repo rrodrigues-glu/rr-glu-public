@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_IpAclRuleAndRemarks.json"
+    },
     "cliCommands": [
         "ip access-list extended bulk_traffic_ACL",
         " remark WSUS",
@@ -129,7 +131,6 @@
     "@source": {
         "instanceName": "ios_isr4k-asr1k-qos-acl_cli"
     },
-    "@exportedInstanceId": "262a531f-eb12-4405-8a78-22aabd74114c",
     "@id": "262a531f-eb12-4405-8a78-22aabd74114c",
     "@name": "ios_isr4k-asr1k-qos-acl_cli",
     "@description": ""

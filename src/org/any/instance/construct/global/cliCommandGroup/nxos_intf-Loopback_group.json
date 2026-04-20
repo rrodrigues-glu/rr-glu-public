@@ -17,7 +17,6 @@
     "@source": {
         "instanceName": "nxos_intf-Loopback_group"
     },
-    "@exportedInstanceId": "1c0bf240-1ae3-4a89-a3c1-c0cdb5f32ae4",
     "@id": "1c0bf240-1ae3-4a89-a3c1-c0cdb5f32ae4",
     "@name": "nxos_intf-Loopback_group",
     "@description": ""

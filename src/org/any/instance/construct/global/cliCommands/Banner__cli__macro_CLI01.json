@@ -10,11 +10,10 @@
     "advanced": {
         "filter": null
     },
-    "@exportedInstanceId": "318ae5b9-2693-4c54-a321-c32741dad697",
     "@id": "318ae5b9-2693-4c54-a321-c32741dad697",
+    "@name": "Banner__cli__macro_CLI01",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    },
-    "@name": "Banner__cli__macro_CLI01",
-    "@description": ""
+    }
 }

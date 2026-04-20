@@ -18,11 +18,10 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "8506e665-5200-4f93-9ce5-ac582037d2d5",
     "@id": "8506e665-5200-4f93-9ce5-ac582037d2d5",
+    "@name": "ios_intf-mgmt_grp",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
-    },
-    "@name": "ios_intf-mgmt_grp",
-    "@description": ""
+    }
 }

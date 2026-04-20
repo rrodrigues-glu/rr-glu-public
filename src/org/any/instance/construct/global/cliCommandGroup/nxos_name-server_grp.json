@@ -19,7 +19,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "aca75983-4f8a-411c-a25d-11949debbfcb",
     "@id": "aca75983-4f8a-411c-a25d-11949debbfcb",
     "@name": "nxos_name-server_grp",
     "@description": ""

@@ -26,7 +26,6 @@
     "@source": {
         "instanceName": "NXOS_Telnet"
     },
-    "@exportedInstanceId": "449553a3-73e2-4107-a64f-9234cc504d0b",
     "@id": "449553a3-73e2-4107-a64f-9234cc504d0b",
     "@name": "NXOS_Telnet"
 }

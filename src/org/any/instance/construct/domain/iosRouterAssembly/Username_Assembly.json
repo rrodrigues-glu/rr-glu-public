@@ -11,17 +11,34 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "boot": {
-        "firmware": {}
+        "firmware": {
+            "policy": {
+                "@ref": null
+            },
+            "catalog": {
+                "@ref": null
+            }
+        }
     },
     "@source": {
         "instanceName": "Username_Assembly"
     },
-    "@exportedInstanceId": "c98222a6-1fbd-431d-916b-201fccbc0d99",
     "@id": "c98222a6-1fbd-431d-916b-201fccbc0d99",
     "@name": "Username_Assembly",
     "@description": ""

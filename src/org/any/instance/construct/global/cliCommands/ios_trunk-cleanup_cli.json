@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Switch_SwitchPort.json"
+    },
     "cliCommands": [
         "interface $context.switchPorts[*].name",
         " switchport mode trunk",
@@ -17,7 +19,6 @@
     "@source": {
         "instanceName": "ios_trunk-cleanup_cli"
     },
-    "@exportedInstanceId": "d5ca01a6-9ebb-4a74-bab3-da7b5fbdb38d",
     "@id": "d5ca01a6-9ebb-4a74-bab3-da7b5fbdb38d",
     "@name": "ios_trunk-cleanup_cli",
     "@description": ""

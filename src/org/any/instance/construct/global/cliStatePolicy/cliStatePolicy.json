@@ -19,7 +19,6 @@
         "instanceName": "cliStatePolicy"
     },
     "privilegeMode": false,
-    "@exportedInstanceId": "5a239128-1cbf-40f1-b28a-66b9eb31fef5",
     "@id": "5a239128-1cbf-40f1-b28a-66b9eb31fef5",
     "@name": "cliStatePolicy",
     "@description": ""

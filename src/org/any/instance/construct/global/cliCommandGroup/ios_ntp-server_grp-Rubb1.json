@@ -17,11 +17,10 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "7d45d98f-0f71-418a-875e-132a77fc27ae",
     "@id": "7d45d98f-0f71-418a-875e-132a77fc27ae",
+    "@name": "ios_ntp-server_grp-Rubb1",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
-    },
-    "@name": "ios_ntp-server_grp-Rubb1",
-    "@description": ""
+    }
 }

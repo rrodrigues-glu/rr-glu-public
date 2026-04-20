@@ -17,7 +17,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "be8fe7e1-1d6a-4ad5-b463-9226eaa473d9",
     "@id": "be8fe7e1-1d6a-4ad5-b463-9226eaa473d9",
     "@name": "nxos_crypto_group",
     "@description": ""

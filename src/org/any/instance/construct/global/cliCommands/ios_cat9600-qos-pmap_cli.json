@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_PolicyMap.json"
+    },
     "cliCommands": [
         "policy-map QOS-OUTBOUND",
         " class VOICE",
@@ -25,7 +27,6 @@
     "@source": {
         "instanceName": "ios_cat9600-qos-pmap_cli"
     },
-    "@exportedInstanceId": "cf88d3b2-cb5c-4867-b5fb-205a2cd8a5df",
     "@id": "cf88d3b2-cb5c-4867-b5fb-205a2cd8a5df",
     "@name": "ios_cat9600-qos-pmap_cli",
     "@description": ""

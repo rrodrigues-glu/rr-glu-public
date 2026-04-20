@@ -6,9 +6,13 @@
         "credentials": {
             "@ref": "/secret/sys/credentials/deviceUserPass/root.json"
         },
+        "enablePassword": {
+            "@ref": null
+        },
         "type": "ssh",
         "port": 22,
-        "terminalType": "xterm"
+        "terminalType": "xterm",
+        "sshParam": ""
     },
     "associations": {
         "provider": "local"
@@ -37,11 +41,10 @@
     "site": {
         "@ref": "/org/instance/construct/domain/location/Romualdo.json"
     },
-    "@exportedInstanceId": "d6f7a628-8a50-4995-a541-072667731fc2",
     "@id": "d6f7a628-8a50-4995-a541-072667731fc2",
+    "@name": "JuniperE01",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/exSwitch.jtype"
-    },
-    "@name": "JuniperE01",
-    "@description": ""
+    }
 }

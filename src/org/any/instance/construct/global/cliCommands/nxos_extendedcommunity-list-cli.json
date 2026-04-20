@@ -36,7 +36,6 @@
     "@source": {
         "instanceName": "nxos_extendedcommunity-list-cli"
     },
-    "@exportedInstanceId": "dd30ff53-d9b7-477a-a4ec-1c74df1fa75e",
     "@id": "dd30ff53-d9b7-477a-a4ec-1c74df1fa75e",
     "@name": "nxos_extendedcommunity-list-cli",
     "@description": ""

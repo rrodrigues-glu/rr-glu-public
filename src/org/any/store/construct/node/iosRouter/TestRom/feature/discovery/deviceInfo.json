@@ -31,6 +31,7 @@
         "series": "1000v"
     },
     "detectedSerialNumber": "9IPT2ZFOIT9",
+    "uptime": "13w4d23h26m",
     "chassis": {
         "R0": {
             "sku": "CSR1000V",
@@ -190,6 +191,11 @@
                 "use": 0,
                 "free": 0
             }
+        },
+        "recordTime": {
+            "utcTime": 1776079208029,
+            "utcDateTime": "Mon, 13 Apr 2026 11:20:08 GMT"
         }
-    }
+    },
+    "@lastCommitHash": "d1659ee6388264fb330f4ac4dd9b48eb96f83275"
 }

@@ -17,9 +17,13 @@
         "credentials": {
             "@ref": "/secret/sys/credentials/deviceUserPass/ciscoCred.json"
         },
+        "enablePassword": {
+            "@ref": null
+        },
         "port": 22,
         "type": "ssh",
-        "terminalType": "xterm"
+        "terminalType": "xterm",
+        "sshParam": ""
     },
     "associations": {
         "assembly": {
@@ -41,11 +45,10 @@
     "iosSwitch": {
         "enabled": true
     },
-    "@exportedInstanceId": "5b39c8be-2774-470e-acb0-7f9cb45a0956",
     "@id": "5b39c8be-2774-470e-acb0-7f9cb45a0956",
+    "@name": "Cisco iosSwitch",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/iosSwitch.jtype"
-    },
-    "@name": "Cisco iosSwitch",
-    "@description": ""
+    }
 }

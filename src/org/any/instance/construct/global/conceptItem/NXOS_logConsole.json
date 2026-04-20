@@ -16,6 +16,9 @@
     "keyLineDepth": 1,
     "keyGroup": 1,
     "regEx": "",
+    "metadata": {
+        "@ref": null
+    },
     "mode": "advanced",
     "boundaries": {
         "start": null
@@ -29,7 +32,6 @@
     "@source": {
         "instanceName": "NXOS_logConsole"
     },
-    "@exportedInstanceId": "8c676eee-73e0-4bf1-8fb7-7eb1c13421ad",
     "@id": "8c676eee-73e0-4bf1-8fb7-7eb1c13421ad",
     "@name": "NXOS_logConsole"
 }

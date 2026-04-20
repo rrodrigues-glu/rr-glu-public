@@ -14,7 +14,6 @@
     "@source": {
         "instanceName": "nxos_crypto-cli"
     },
-    "@exportedInstanceId": "42d2ba2e-28ec-4c1b-bf3e-30e68afa6e5b",
     "@id": "42d2ba2e-28ec-4c1b-bf3e-30e68afa6e5b",
     "@name": "nxos_crypto-cli",
     "@description": ""

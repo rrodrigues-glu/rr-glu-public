@@ -8,11 +8,10 @@
     "advanced": {
         "filter": null
     },
-    "@exportedInstanceId": "013e1ef8-d226-48c4-95fd-21ef8c4ce1bc",
     "@id": "013e1ef8-d226-48c4-95fd-21ef8c4ce1bc",
+    "@name": "ios_ntp-server_cli-Copy-1",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    },
-    "@name": "ios_ntp-server_cli-Copy-1",
-    "@description": ""
+    }
 }

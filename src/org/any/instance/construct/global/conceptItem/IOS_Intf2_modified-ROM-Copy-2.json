@@ -25,11 +25,10 @@
         }
     },
     "removeSyntax": {},
-    "@exportedInstanceId": "610b977b-fe9c-4b7a-ae75-33fadff666c6",
     "@id": "610b977b-fe9c-4b7a-ae75-33fadff666c6",
+    "@name": "IOS_Intf2_modified-ROM-Copy-2",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/conceptItem.jtype"
-    },
-    "@name": "IOS_Intf2_modified-ROM-Copy-2",
-    "@description": ""
+    }
 }

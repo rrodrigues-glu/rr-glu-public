@@ -45,6 +45,7 @@
         "series": "9200"
     },
     "detectedSerialNumber": "JAE2250061X",
+    "uptime": "28w6d17h40m",
     "stack": {
         "1": {
             "sku": "C9200L-24P-4G",
@@ -709,6 +710,11 @@
                 "use": 10,
                 "free": 18
             }
+        },
+        "recordTime": {
+            "utcTime": 1776079018807,
+            "utcDateTime": "Mon, 13 Apr 2026 11:16:58 GMT"
         }
-    }
+    },
+    "@lastCommitHash": "d1659ee6388264fb330f4ac4dd9b48eb96f83275"
 }

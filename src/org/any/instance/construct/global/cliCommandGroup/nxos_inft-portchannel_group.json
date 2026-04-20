@@ -17,7 +17,6 @@
     "@source": {
         "instanceName": "nxos_inft-portchannel_group"
     },
-    "@exportedInstanceId": "9e27e1aa-bf59-48ed-9466-86d373c7a5fa",
     "@id": "9e27e1aa-bf59-48ed-9466-86d373c7a5fa",
     "@name": "nxos_inft-portchannel_group",
     "@description": ""

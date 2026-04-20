@@ -3,7 +3,9 @@
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
     "@id": "1e4dfb7e-7213-4858-9b22-84654588b288",
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Banner.json"
+    },
     "cliCommands": [
         "banner motd ^",
         "******************************* NOTICE ********************************",
@@ -26,7 +28,6 @@
         "***********************************************************************",
         "^"
     ],
-    "@exportedInstanceId": "1e4dfb7e-7213-4858-9b22-84654588b288",
     "@name": "Banner__cli__1665577031307fc50",
     "@description": ""
 }

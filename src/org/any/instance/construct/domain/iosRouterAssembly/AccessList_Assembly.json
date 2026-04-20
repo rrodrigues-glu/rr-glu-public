@@ -16,7 +16,11 @@
         "ipNumbering": {}
     },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -24,7 +28,6 @@
     "@source": {
         "instanceName": "AccessList_Assembly"
     },
-    "@exportedInstanceId": "1d34ba9d-fa76-4b6d-aa8a-b6ce9c300d22",
     "@id": "1d34ba9d-fa76-4b6d-aa8a-b6ce9c300d22",
     "@name": "AccessList_Assembly",
     "@description": ""

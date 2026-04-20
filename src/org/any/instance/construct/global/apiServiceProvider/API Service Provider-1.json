@@ -10,11 +10,10 @@
     },
     "_secType": "basicAuth",
     "name": "3rdPartyApi",
-    "@exportedInstanceId": "a0d1b6aa-ceca-40e2-9f72-35a011c75a6f",
     "@id": "a0d1b6aa-ceca-40e2-9f72-35a011c75a6f",
+    "@name": "API Service Provider-1",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/apiServiceProvider.jtype"
-    },
-    "@name": "API Service Provider-1",
-    "@description": ""
+    }
 }

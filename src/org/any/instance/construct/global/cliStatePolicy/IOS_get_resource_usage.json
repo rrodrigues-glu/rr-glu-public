@@ -25,7 +25,6 @@
         "instanceName": "IOS_get_resource_usage"
     },
     "privilegeMode": false,
-    "@exportedInstanceId": "1fb5a271-d738-4f73-8171-5b996755d41d",
     "@id": "1fb5a271-d738-4f73-8171-5b996755d41d",
     "@name": "IOS_get_resource_usage",
     "@description": ""

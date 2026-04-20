@@ -26,7 +26,6 @@
     "@source": {
         "instanceName": "NXOS_vpcDomain"
     },
-    "@exportedInstanceId": "615977c1-fb79-44dd-aa72-a0bacd0dbac0",
     "@id": "615977c1-fb79-44dd-aa72-a0bacd0dbac0",
     "@name": "NXOS_vpcDomain"
 }

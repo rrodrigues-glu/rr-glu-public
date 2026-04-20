@@ -11,7 +11,14 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "state": {
         "assessment": {}
     },
@@ -19,7 +26,6 @@
     "@source": {
         "instanceName": "qos-guangzhou"
     },
-    "@exportedInstanceId": "8f880138-9810-4d62-9a5c-c26274185021",
     "@id": "8f880138-9810-4d62-9a5c-c26274185021",
     "@name": "qos-guangzhou",
     "@description": ""

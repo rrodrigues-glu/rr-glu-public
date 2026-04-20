@@ -8,7 +8,9 @@
     "featureDisplayName": "UserName Feature",
     "renderList": [
         {
-            "item": {},
+            "item": {
+                "@ref": "/org/instance/construct/global/conceptItem/NXOS_Username.json"
+            },
             "maskCommands": [],
             "dCli": []
         }
@@ -17,7 +19,6 @@
     "@source": {
         "instanceName": "NXOS_username"
     },
-    "@exportedInstanceId": "69d6ee6a-6d7c-47f3-95d3-b06d92766a1e",
     "@id": "69d6ee6a-6d7c-47f3-95d3-b06d92766a1e",
     "@name": "NXOS_username",
     "@description": ""

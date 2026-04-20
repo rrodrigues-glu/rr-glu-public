@@ -15,6 +15,9 @@
     "rootEntryFlag": false,
     "keyLineDepth": 1,
     "keyGroup": 1,
+    "metadata": {
+        "@ref": null
+    },
     "mode": "advanced",
     "boundaries": {
         "start": null
@@ -46,11 +49,10 @@
         }
     },
     "removeSyntax": {},
-    "@exportedInstanceId": "65f2c07b-21fd-40ed-8a91-e1cb3866505e",
     "@id": "65f2c07b-21fd-40ed-8a91-e1cb3866505e",
+    "@name": "IOS_Intf2_modified-Copy-1",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/conceptItem.jtype"
-    },
-    "@name": "IOS_Intf2_modified-Copy-1",
-    "@description": ""
+    }
 }

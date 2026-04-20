@@ -11,7 +11,14 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "state": {
         "assessment": {}
     },
@@ -19,7 +26,6 @@
     "@source": {
         "instanceName": "qos-fukuoka"
     },
-    "@exportedInstanceId": "1c3ad159-2d0d-4b8b-b6e3-01919cce853c",
     "@id": "1c3ad159-2d0d-4b8b-b6e3-01919cce853c",
     "@name": "qos-fukuoka",
     "@description": ""

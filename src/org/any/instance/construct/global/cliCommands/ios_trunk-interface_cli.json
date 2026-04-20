@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Switch_SwitchPort.json"
+    },
     "cliCommands": [
         "interface $context.switchPorts[*].name",
         " description $context.switchPorts[*].settings.description",
@@ -19,7 +21,6 @@
     "@source": {
         "instanceName": "ios_trunk-interface_cli"
     },
-    "@exportedInstanceId": "82adceeb-8908-4e81-9abf-d9b970a58e17",
     "@id": "82adceeb-8908-4e81-9abf-d9b970a58e17",
     "@name": "ios_trunk-interface_cli",
     "@description": ""

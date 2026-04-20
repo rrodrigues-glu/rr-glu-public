@@ -633,6 +633,7 @@
         }
     },
     "detectedSerialNumber": "FDO21280ZN6",
+    "uptime": "111d16h34m57s",
     "chassis": {
         "1": {
             "sku": "N9K-C93180YC-EX",
@@ -1293,6 +1294,11 @@
                 "use": 1,
                 "free": 54
             }
+        },
+        "recordTime": {
+            "utcTime": 1776078962588,
+            "utcDateTime": "Mon, 13 Apr 2026 11:16:02 GMT"
         }
-    }
+    },
+    "@lastCommitHash": "d1659ee6388264fb330f4ac4dd9b48eb96f83275"
 }

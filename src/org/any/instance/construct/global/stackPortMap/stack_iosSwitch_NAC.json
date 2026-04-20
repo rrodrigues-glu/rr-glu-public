@@ -46,12 +46,15 @@
     ],
     "aggregated": {},
     "namingConventions": {
-        "portNamingPolicies": {}
+        "portNamingPolicies": {
+            "aggregated": {
+                "@ref": null
+            }
+        }
     },
     "@source": {
         "instanceName": "stack_iosSwitch_NAC"
     },
-    "@exportedInstanceId": "e863748a-6ccc-40bb-80c6-86118deae0bf",
     "@id": "e863748a-6ccc-40bb-80c6-86118deae0bf",
     "@name": "stack_iosSwitch_NAC",
     "@description": ""

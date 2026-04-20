@@ -24,7 +24,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "bf42fe35-9f1d-4f1d-86e5-c9142b8eb0a3",
     "@id": "bf42fe35-9f1d-4f1d-86e5-c9142b8eb0a3",
     "@name": "nxos_cfs-group"
 }

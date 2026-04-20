@@ -16,11 +16,10 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "80c4dfbd-3f4b-48df-ae4b-10f3be58d25e",
     "@id": "80c4dfbd-3f4b-48df-ae4b-10f3be58d25e",
+    "@name": "ios_wan-acl-in_grp-Dennis",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
-    },
-    "@name": "ios_wan-acl-in_grp-Dennis",
-    "@description": ""
+    }
 }

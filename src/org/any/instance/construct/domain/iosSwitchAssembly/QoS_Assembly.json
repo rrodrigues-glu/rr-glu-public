@@ -14,13 +14,30 @@
     "interfaces": {
         "portLayout": {
             "@ref": "/org/instance/construct/global/stackPortMap/stack_iosSwitch_QoS.json"
+        },
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
         }
     },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "boot": {
-        "firmware": {}
+        "firmware": {
+            "policy": {
+                "@ref": null
+            },
+            "catalog": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -28,7 +45,6 @@
     "@source": {
         "instanceName": "QoS_Assembly"
     },
-    "@exportedInstanceId": "fb17facd-b88d-45d9-af22-8f4b8db12e23",
     "@id": "fb17facd-b88d-45d9-af22-8f4b8db12e23",
     "@name": "QoS_Assembly",
     "@description": ""

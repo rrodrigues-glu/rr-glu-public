@@ -25,7 +25,6 @@
     "@source": {
         "instanceName": "NXOS_ExtComm-List"
     },
-    "@exportedInstanceId": "4ff15c35-aed4-4fd1-a33b-2f97af30fc1d",
     "@id": "4ff15c35-aed4-4fd1-a33b-2f97af30fc1d",
     "@name": "NXOS_ExtComm-List",
     "@description": ""

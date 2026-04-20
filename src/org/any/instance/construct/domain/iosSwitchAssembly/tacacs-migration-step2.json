@@ -12,12 +12,22 @@
         }
     },
     "interfaces": {
+        "portLayout": {
+            "@ref": null
+        },
         "portMap": {
             "@ref": "/org/instance/construct/global/portMap/nyu-switch.json"
+        },
+        "ipNumbering": {
+            "@ref": null
         }
     },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {
@@ -33,7 +43,6 @@
     "@source": {
         "instanceName": "tacacs-migration-step2"
     },
-    "@exportedInstanceId": "5929165a-0b68-4fd1-b821-889180cf4083",
     "@id": "5929165a-0b68-4fd1-b821-889180cf4083",
     "@name": "tacacs-migration-step2",
     "@description": ""

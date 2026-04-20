@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_PolicyMap.json"
+    },
     "cliCommands": [
         "! Change the DSCP values to match to the local provider. The examples below are the OneNet standards.",
         "",
@@ -49,7 +51,6 @@
     "@source": {
         "instanceName": "ios_isr4k-asr1k-qos-pmap_cli"
     },
-    "@exportedInstanceId": "d52b8e39-fe62-48f1-84a3-75119c7c6e8e",
     "@id": "d52b8e39-fe62-48f1-84a3-75119c7c6e8e",
     "@name": "ios_isr4k-asr1k-qos-pmap_cli",
     "@description": ""

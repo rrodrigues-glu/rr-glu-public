@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_VirtualDeviceContext.json"
+    },
     "cliCommands": [
         "vdc dc03-nx7k01 id 1",
         " cpu-share 5",
@@ -50,7 +52,6 @@
     "@source": {
         "instanceName": "nxos_vdc-cli"
     },
-    "@exportedInstanceId": "1697bb7a-bd86-4bf7-9c4f-d987b45cca28",
     "@id": "1697bb7a-bd86-4bf7-9c4f-d987b45cca28",
     "@name": "nxos_vdc-cli",
     "@description": ""

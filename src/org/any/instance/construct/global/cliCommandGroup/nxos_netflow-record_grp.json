@@ -17,7 +17,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "19fee394-e3ad-4b32-9b18-e80ba352904d",
     "@id": "19fee394-e3ad-4b32-9b18-e80ba352904d",
     "@name": "nxos_netflow-record_grp",
     "@description": ""

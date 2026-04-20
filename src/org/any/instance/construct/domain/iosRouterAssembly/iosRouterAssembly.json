@@ -8,15 +8,21 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "state": {
         "assessment": {}
     },
-    "@exportedInstanceId": "57a9aa9e-3222-4352-99ac-6dd8a9ff37aa",
     "@id": "57a9aa9e-3222-4352-99ac-6dd8a9ff37aa",
+    "@name": "iosRouterAssembly",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/domain/iosRouterAssembly.jtype"
-    },
-    "@name": "iosRouterAssembly",
-    "@description": ""
+    }
 }

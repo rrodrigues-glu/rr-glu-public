@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_NtpAgent.json"
+    },
     "cliCommands": [
         "clock timezone EST -5 0",
         "clock summer-time EDT 1 Sunday March 02:00 1 Sunday November 02:00 60",
@@ -19,7 +21,6 @@
     "@source": {
         "instanceName": "nxos_ntp-server-cli"
     },
-    "@exportedInstanceId": "2b540338-5cbe-468e-8e15-e84ff1719a59",
     "@id": "2b540338-5cbe-468e-8e15-e84ff1719a59",
     "@name": "nxos_ntp-server-cli",
     "@description": ""

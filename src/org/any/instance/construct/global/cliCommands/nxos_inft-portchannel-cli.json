@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Intf.json"
+    },
     "cliCommands": [
         "interface port-channel1",
         " description VPC Peer Link to dc03-nx7k02-mktx-dr02",
@@ -180,7 +182,6 @@
     "@source": {
         "instanceName": "nxos_inft-portchannel-cli"
     },
-    "@exportedInstanceId": "0583be68-3824-4df8-b82b-969f88b59e82",
     "@id": "0583be68-3824-4df8-b82b-969f88b59e82",
     "@name": "nxos_inft-portchannel-cli",
     "@description": ""

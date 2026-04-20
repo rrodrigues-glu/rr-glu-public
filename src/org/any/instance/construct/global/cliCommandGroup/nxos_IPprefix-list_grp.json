@@ -17,7 +17,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "7e56028a-730a-41be-96de-711c8e5c2f4d",
     "@id": "7e56028a-730a-41be-96de-711c8e5c2f4d",
     "@name": "nxos_IPprefix-list_grp",
     "@description": ""

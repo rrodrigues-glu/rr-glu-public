@@ -18,11 +18,10 @@
     },
     "discover": {},
     "removeSyntax": {},
-    "@exportedInstanceId": "0fe03e11-c659-4f6d-a15e-32bd6798c72b",
     "@id": "0fe03e11-c659-4f6d-a15e-32bd6798c72b",
+    "@name": "TMOS_SYS_Snmp-w-o_onelIne",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/conceptItem.jtype"
-    },
-    "@name": "TMOS_SYS_Snmp-w-o_onelIne",
-    "@description": ""
+    }
 }

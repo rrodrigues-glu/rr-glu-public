@@ -17,7 +17,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "ee6847e1-63a8-46b7-8f35-4ecb4026f333",
     "@id": "ee6847e1-63a8-46b7-8f35-4ecb4026f333",
     "@name": "nxos_iproute_group",
     "@description": ""

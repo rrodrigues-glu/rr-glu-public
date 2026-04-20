@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Http.json"
+    },
     "cliCommands": [
         "no ip http server",
         "no ip http secure-server"
@@ -13,7 +15,6 @@
     "@source": {
         "instanceName": "ios_http_cli"
     },
-    "@exportedInstanceId": "5e31e036-9e37-4b1f-96aa-27ed93f119cd",
     "@id": "5e31e036-9e37-4b1f-96aa-27ed93f119cd",
     "@name": "ios_http_cli",
     "@description": ""

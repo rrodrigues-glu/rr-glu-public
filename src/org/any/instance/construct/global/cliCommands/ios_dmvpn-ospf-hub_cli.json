@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Router.json"
+    },
     "cliCommands": [
         "router ospf 100",
         " redistribute eigrp 9999 metric 100 subnets route-map rmap-routing-EIGRP-TO-OSPF",
@@ -12,7 +14,6 @@
     "@source": {
         "instanceName": "ios_dmvpn-ospf-hub_cli"
     },
-    "@exportedInstanceId": "b514ce37-d443-4fa2-9cbe-9aaf36205191",
     "@id": "b514ce37-d443-4fa2-9cbe-9aaf36205191",
     "@name": "ios_dmvpn-ospf-hub_cli",
     "@description": ""

@@ -33,12 +33,18 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "@type": {
         "ref": "/sys/type/construct/domain/nxosSwitchAssembly.jtype"
     },
     "@id": "237e82f2-27bb-41b8-9429-9dc0249a2764",
-    "@exportedInstanceId": "237e82f2-27bb-41b8-9429-9dc0249a2764",
     "@name": "nxosSwitch__1665577031307",
     "@description": ""
 }

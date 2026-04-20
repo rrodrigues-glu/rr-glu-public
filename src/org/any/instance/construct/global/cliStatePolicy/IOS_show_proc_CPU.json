@@ -10,11 +10,10 @@
         }
     ],
     "privilegeMode": false,
-    "@exportedInstanceId": "fba1754b-0d09-4e35-bb0d-2cf0070f82b4",
     "@id": "fba1754b-0d09-4e35-bb0d-2cf0070f82b4",
+    "@name": "IOS_show_proc_CPU",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliStatePolicy.jtype"
-    },
-    "@name": "IOS_show_proc_CPU",
-    "@description": ""
+    }
 }

@@ -17,7 +17,6 @@
         "instanceName": "IOS_show_spanning-tree"
     },
     "privilegeMode": false,
-    "@exportedInstanceId": "3286c354-be19-404a-9be1-31e7dda3e1bc",
     "@id": "3286c354-be19-404a-9be1-31e7dda3e1bc",
     "@name": "IOS_show_spanning-tree",
     "@description": ""

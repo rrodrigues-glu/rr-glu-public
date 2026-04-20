@@ -8,17 +8,23 @@
     "featureDisplayName": "QOS Feature",
     "renderList": [
         {
-            "item": {},
+            "item": {
+                "@ref": "/org/instance/construct/global/conceptItem/NXOS_IpAcl.json"
+            },
             "maskCommands": [],
             "dCli": []
         },
         {
-            "item": {},
+            "item": {
+                "@ref": "/org/instance/construct/global/conceptItem/NXOS_ClassMap.json"
+            },
             "maskCommands": [],
             "dCli": []
         },
         {
-            "item": {},
+            "item": {
+                "@ref": "/org/instance/construct/global/conceptItem/NXOS_PolicyMapQos.json"
+            },
             "maskCommands": [],
             "dCli": []
         }
@@ -27,7 +33,6 @@
     "@source": {
         "instanceName": "NXOS_qos"
     },
-    "@exportedInstanceId": "13ccacaa-a2be-4100-a6a0-9884abd85773",
     "@id": "13ccacaa-a2be-4100-a6a0-9884abd85773",
     "@name": "NXOS_qos",
     "@description": ""

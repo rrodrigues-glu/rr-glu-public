@@ -8,7 +8,9 @@
     "featureDisplayName": "NTP Feature",
     "renderList": [
         {
-            "item": {},
+            "item": {
+                "@ref": "/org/instance/construct/global/conceptItem/NXOS_NtpAgent.json"
+            },
             "maskCommands": [],
             "dCli": []
         }
@@ -17,7 +19,6 @@
     "@source": {
         "instanceName": "NXOS_ntp"
     },
-    "@exportedInstanceId": "302b2d42-aaf0-409e-bb57-f7764a1d9739",
     "@id": "302b2d42-aaf0-409e-bb57-f7764a1d9739",
     "@name": "NXOS_ntp",
     "@description": ""

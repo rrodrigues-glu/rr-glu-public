@@ -20,7 +20,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "6ed55aec-493e-4b56-b89a-d6a710b163e2",
     "@id": "6ed55aec-493e-4b56-b89a-d6a710b163e2",
     "@name": "nxos_line-vty-con-group"
 }

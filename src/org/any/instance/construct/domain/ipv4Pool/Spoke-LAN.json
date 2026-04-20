@@ -48,7 +48,6 @@
     "@source": {
         "instanceName": "Spoke-LAN"
     },
-    "@exportedInstanceId": "c40936b5-a2a9-40b2-b801-8d9a99aec5e9",
     "@id": "c40936b5-a2a9-40b2-b801-8d9a99aec5e9",
     "@name": "Spoke-LAN",
     "@description": ""

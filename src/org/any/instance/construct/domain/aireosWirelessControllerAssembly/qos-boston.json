@@ -11,7 +11,14 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "state": {
         "assessment": {}
     },
@@ -19,7 +26,6 @@
     "@source": {
         "instanceName": "qos-boston"
     },
-    "@exportedInstanceId": "6299db04-0a43-4a5c-b549-377d857cd377",
     "@id": "6299db04-0a43-4a5c-b549-377d857cd377",
     "@name": "qos-boston",
     "@description": ""

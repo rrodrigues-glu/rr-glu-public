@@ -17,7 +17,6 @@
     "@source": {
         "instanceName": "nxos_bgp-group"
     },
-    "@exportedInstanceId": "1ee50479-2800-4f33-a06c-ffc97ef34e08",
     "@id": "1ee50479-2800-4f33-a06c-ffc97ef34e08",
     "@name": "nxos_bgp-group",
     "@description": ""

@@ -29,7 +29,6 @@
     "@source": {
         "instanceName": "NXOS_DnsServer"
     },
-    "@exportedInstanceId": "2d8431fa-890f-4965-bb59-b3e173216307",
     "@id": "2d8431fa-890f-4965-bb59-b3e173216307",
     "@name": "NXOS_DnsServer",
     "@description": ""

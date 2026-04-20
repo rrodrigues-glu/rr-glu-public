@@ -17,7 +17,11 @@
                         "@ref": "/org/instance/construct/domain/ipv4Pool/DMVPN-100.json"
                     }
                 },
-                "host": {}
+                "host": {
+                    "range": {
+                        "@ref": null
+                    }
+                }
             }
         },
         {
@@ -34,7 +38,11 @@
                         "@ref": "/org/instance/construct/domain/ipv4Pool/DMVPN-200.json"
                     }
                 },
-                "host": {}
+                "host": {
+                    "range": {
+                        "@ref": null
+                    }
+                }
             }
         },
         {
@@ -82,7 +90,6 @@
     "@source": {
         "instanceName": "DMVPN_100-200"
     },
-    "@exportedInstanceId": "be7f07c3-19e6-42ec-ab2f-14281ca1b20e",
     "@id": "be7f07c3-19e6-42ec-ab2f-14281ca1b20e",
     "@name": "DMVPN_100-200",
     "@description": ""

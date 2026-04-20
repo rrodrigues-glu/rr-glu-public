@@ -3,7 +3,9 @@
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
     "@id": "1c19ea46-1023-4d30-a66a-ae27fcaca74f",
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_PolicyMap.json"
+    },
     "cliCommands": [
         "policy-map AutoQos-4.0-Output-Policy",
         " class AutoQos-4.0-Output-Priority-Queue",
@@ -50,7 +52,6 @@
         " class non-client-nrt-class",
         "  bandwidth remaining ratio 10"
     ],
-    "@exportedInstanceId": "1c19ea46-1023-4d30-a66a-ae27fcaca74f",
     "@name": "PolicyMap__cli__1665576829596c0cf",
     "@description": ""
 }

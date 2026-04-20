@@ -35,7 +35,8 @@
         "type": "ssh",
         "port": 22,
         "connectionMethod": "cliConnection",
-        "terminalType": "xterm"
+        "terminalType": "xterm",
+        "sshParam": ""
     },
     "site": {
         "@ref": "/org/instance/construct/domain/location/Romualdo.json"

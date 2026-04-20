@@ -37,6 +37,7 @@
         "series": "3750"
     },
     "detectedSerialNumber": "CAT1040RJR0",
+    "uptime": "35w6d11h0m",
     "stack": {
         "1": {
             "sku": "WS-C3750-24P",
@@ -1344,6 +1345,11 @@
                 "use": 21,
                 "free": 30
             }
+        },
+        "recordTime": {
+            "utcTime": 1776078877521,
+            "utcDateTime": "Mon, 13 Apr 2026 11:14:37 GMT"
         }
-    }
+    },
+    "@lastCommitHash": "d1659ee6388264fb330f4ac4dd9b48eb96f83275"
 }

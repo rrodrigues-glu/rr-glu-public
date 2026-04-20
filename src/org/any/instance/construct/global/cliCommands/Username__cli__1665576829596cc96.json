@@ -3,7 +3,9 @@
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
     "@id": "e38449c4-8bfa-4847-a629-e93e069f1d6a",
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Username.json"
+    },
     "cliCommands": [
         "username test secret 5 $1$Jwa/$zxhhEa9dZKG306U7oTt4k.",
         "username testuser password 0 dskfjdkfjdklfjdskfj",
@@ -12,7 +14,6 @@
         "username glue_sqa privilege 15 secret 5 $1$8VSY$NTTC6kf0ACweeIA9/L9yJ0",
         "username mytestuser secret 5 $1$UPV/$fnr1c9Ms3pqtP9WUwtlzD."
     ],
-    "@exportedInstanceId": "e38449c4-8bfa-4847-a629-e93e069f1d6a",
     "@name": "Username__cli__1665576829596cc96",
     "@description": ""
 }

@@ -11,12 +11,33 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portLayout": {
+            "@ref": null
+        },
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "boot": {
-        "firmware": {}
+        "firmware": {
+            "policy": {
+                "@ref": null
+            },
+            "catalog": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -24,7 +45,6 @@
     "@source": {
         "instanceName": "cisco_24p2u"
     },
-    "@exportedInstanceId": "bb4ef26a-76bf-4aa3-bca0-945d4d6e4963",
     "@id": "bb4ef26a-76bf-4aa3-bca0-945d4d6e4963",
     "@name": "cisco_24p2u",
     "@description": ""

@@ -11,9 +11,23 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portLayout": {
+            "@ref": null
+        },
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {
@@ -29,7 +43,6 @@
     "@source": {
         "instanceName": "tacacs-migration-single-step"
     },
-    "@exportedInstanceId": "e8f5ab93-6a0d-481b-b7c5-f389b1f99e6f",
     "@id": "e8f5ab93-6a0d-481b-b7c5-f389b1f99e6f",
     "@name": "tacacs-migration-single-step",
     "@description": ""

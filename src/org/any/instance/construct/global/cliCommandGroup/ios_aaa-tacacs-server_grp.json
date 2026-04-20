@@ -17,7 +17,6 @@
     "@source": {
         "instanceName": "ios_aaa-tacacs-server_grp"
     },
-    "@exportedInstanceId": "c2f31e56-1efe-40d4-bfde-9aab683f4096",
     "@id": "c2f31e56-1efe-40d4-bfde-9aab683f4096",
     "@name": "ios_aaa-tacacs-server_grp",
     "@description": ""

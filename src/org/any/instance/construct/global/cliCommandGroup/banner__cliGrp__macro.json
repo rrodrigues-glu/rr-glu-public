@@ -20,11 +20,10 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "d0642b3a-18c4-4183-aea0-1a2c34bbc7b1",
     "@id": "d0642b3a-18c4-4183-aea0-1a2c34bbc7b1",
+    "@name": "banner__cliGrp__macro",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
-    },
-    "@name": "banner__cliGrp__macro",
-    "@description": ""
+    }
 }

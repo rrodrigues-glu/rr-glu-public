@@ -11,12 +11,30 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "boot": {
-        "firmware": {}
+        "firmware": {
+            "policy": {
+                "@ref": null
+            },
+            "catalog": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -24,7 +42,6 @@
     "@source": {
         "instanceName": "Banner_Assembly"
     },
-    "@exportedInstanceId": "4f76cdbf-f7cf-444b-8e42-fa6b9d04f2df",
     "@id": "4f76cdbf-f7cf-444b-8e42-fa6b9d04f2df",
     "@name": "Banner_Assembly",
     "@description": ""

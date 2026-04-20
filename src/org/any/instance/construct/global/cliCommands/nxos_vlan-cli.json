@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Vlan.json"
+    },
     "cliCommands": [
         "vlan 1",
         " name default",
@@ -403,7 +405,6 @@
     "@source": {
         "instanceName": "nxos_vlan-cli"
     },
-    "@exportedInstanceId": "dc1e221e-34bd-4992-b036-573831ee654e",
     "@id": "dc1e221e-34bd-4992-b036-573831ee654e",
     "@name": "nxos_vlan-cli",
     "@description": ""

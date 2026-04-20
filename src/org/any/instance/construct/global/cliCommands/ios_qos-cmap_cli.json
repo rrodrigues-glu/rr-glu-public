@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_ClassMap.json"
+    },
     "cliCommands": [
         "class-map match-any cmap_qos-critical",
         " match ip dscp af31",
@@ -60,7 +62,6 @@
     "@source": {
         "instanceName": "ios_qos-cmap_cli"
     },
-    "@exportedInstanceId": "5d6b69ef-4fe7-4ee2-87fa-0b348e7b7adc",
     "@id": "5d6b69ef-4fe7-4ee2-87fa-0b348e7b7adc",
     "@name": "ios_qos-cmap_cli",
     "@description": ""

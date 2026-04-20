@@ -3,7 +3,9 @@
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
     "@id": "012c8965-961d-41d0-942a-80bbc01d71ed",
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Intf2.json"
+    },
     "cliCommands": [
         "",
         "version 7.1(5)N1(1b)",
@@ -156,7 +158,6 @@
         "",
         ""
     ],
-    "@exportedInstanceId": "012c8965-961d-41d0-942a-80bbc01d71ed",
     "@name": "Intf__cli__17314350873662830",
     "@description": ""
 }

@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_BgpCommunity.json"
+    },
     "cliCommands": [
         "ip bgp-community new-format"
     ],
@@ -12,7 +14,6 @@
     "@source": {
         "instanceName": "ios_ip-bgp-new-format_cli"
     },
-    "@exportedInstanceId": "ef098fdd-95e5-42f2-ba14-4b7c4e40499f",
     "@id": "ef098fdd-95e5-42f2-ba14-4b7c4e40499f",
     "@name": "ios_ip-bgp-new-format_cli",
     "@description": ""

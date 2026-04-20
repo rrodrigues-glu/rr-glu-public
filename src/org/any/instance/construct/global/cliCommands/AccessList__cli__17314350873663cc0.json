@@ -3,12 +3,13 @@
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
     "@id": "cf8128a9-6575-4145-99fe-da58fff34d52",
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_IpAcl.json"
+    },
     "cliCommands": [
         "ip access-list foo",
         ""
     ],
-    "@exportedInstanceId": "cf8128a9-6575-4145-99fe-da58fff34d52",
     "@name": "AccessList__cli__17314350873663cc0",
     "@description": ""
 }

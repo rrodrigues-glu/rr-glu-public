@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_LineConVty.json"
+    },
     "cliCommands": [
         "line aux 0",
         " exec-timeout 15 0",
@@ -17,7 +19,6 @@
     "@source": {
         "instanceName": "ios_line-aux_cli"
     },
-    "@exportedInstanceId": "e40f4928-aa94-4219-92c3-263fc60c3e2e",
     "@id": "e40f4928-aa94-4219-92c3-263fc60c3e2e",
     "@name": "ios_line-aux_cli",
     "@description": ""

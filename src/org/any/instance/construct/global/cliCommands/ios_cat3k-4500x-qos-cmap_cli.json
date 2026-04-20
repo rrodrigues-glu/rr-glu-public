@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_ClassMap.json"
+    },
     "cliCommands": [
         "class-map match-any VOICE",
         "  description VOICE Payload Traffic",
@@ -19,7 +21,6 @@
     "@source": {
         "instanceName": "ios_cat3k-4500x-qos-cmap_cli"
     },
-    "@exportedInstanceId": "7170600c-d426-4a9e-9205-e2e978b2fb18",
     "@id": "7170600c-d426-4a9e-9205-e2e978b2fb18",
     "@name": "ios_cat3k-4500x-qos-cmap_cli",
     "@description": ""

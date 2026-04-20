@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_FtpServer.json"
+    },
     "cliCommands": [
         "!"
     ],
@@ -12,7 +14,6 @@
     "@source": {
         "instanceName": "ios_ftp-server_cli"
     },
-    "@exportedInstanceId": "de494987-b1e5-44dc-97f6-65ef6f67abe6",
     "@id": "de494987-b1e5-44dc-97f6-65ef6f67abe6",
     "@name": "ios_ftp-server_cli",
     "@description": ""

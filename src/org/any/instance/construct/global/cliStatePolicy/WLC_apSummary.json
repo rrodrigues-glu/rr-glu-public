@@ -7,6 +7,9 @@
             "item": {
                 "@ref": "/org/instance/construct/global/cliStateItem/WLC_apSummary.json"
             },
+            "query": {
+                "@ref": null
+            },
             "params": "",
             "includePattern": ".+",
             "excludePattern": ""
@@ -17,7 +20,6 @@
         "instanceName": "WLC_apSummary"
     },
     "privilegeMode": false,
-    "@exportedInstanceId": "b837b519-4cf2-460b-920f-a6b5f537f786",
     "@id": "b837b519-4cf2-460b-920f-a6b5f537f786",
     "@name": "WLC_apSummary",
     "@description": ""

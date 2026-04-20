@@ -17,7 +17,6 @@
     "@source": {
         "instanceName": "nxos_intf-Eth_group"
     },
-    "@exportedInstanceId": "69ab64d0-6957-46cc-90c8-8637517f52ab",
     "@id": "69ab64d0-6957-46cc-90c8-8637517f52ab",
     "@name": "nxos_intf-Eth_group",
     "@description": ""

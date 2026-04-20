@@ -124,6 +124,7 @@
         "series": "3850"
     },
     "detectedSerialNumber": "FOC1909X1FL",
+    "uptime": "2w3d11h45m",
     "stack": {
         "1": {
             "sku": "WS-C3850-24U-E",
@@ -1344,6 +1345,11 @@
                 "use": 0,
                 "free": 61
             }
+        },
+        "recordTime": {
+            "utcTime": 1776079084856,
+            "utcDateTime": "Mon, 13 Apr 2026 11:18:04 GMT"
         }
-    }
+    },
+    "@lastCommitHash": "d1659ee6388264fb330f4ac4dd9b48eb96f83275"
 }

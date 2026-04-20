@@ -46,7 +46,6 @@
     "@source": {
         "instanceName": "ios_cat3750-qos-mls_cli"
     },
-    "@exportedInstanceId": "3e22991d-275e-4adc-911c-d10e4840142c",
     "@id": "3e22991d-275e-4adc-911c-d10e4840142c",
     "@name": "ios_cat3750-qos-mls_cli",
     "@description": ""

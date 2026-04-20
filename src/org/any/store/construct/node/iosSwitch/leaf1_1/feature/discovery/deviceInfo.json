@@ -57,6 +57,7 @@
         "series": "9300"
     },
     "detectedSerialNumber": "FJC2337S09K",
+    "uptime": "1y3w4d6h25m",
     "stack": {
         "1": {
             "sku": "C9300-24UX",
@@ -925,6 +926,11 @@
                 "use": 1,
                 "free": 26
             }
+        },
+        "recordTime": {
+            "utcTime": 1776079030136,
+            "utcDateTime": "Mon, 13 Apr 2026 11:17:10 GMT"
         }
-    }
+    },
+    "@lastCommitHash": "d1659ee6388264fb330f4ac4dd9b48eb96f83275"
 }

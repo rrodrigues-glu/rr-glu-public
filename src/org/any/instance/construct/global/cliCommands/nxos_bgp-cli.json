@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Router.json"
+    },
     "cliCommands": [
         "router bgp 65103",
         " router-id 10.255.30.1",
@@ -264,7 +266,6 @@
     "@source": {
         "instanceName": "nxos_bgp-cli"
     },
-    "@exportedInstanceId": "34692874-eb81-4d18-b64a-61aee522ab4d",
     "@id": "34692874-eb81-4d18-b64a-61aee522ab4d",
     "@name": "nxos_bgp-cli",
     "@description": ""

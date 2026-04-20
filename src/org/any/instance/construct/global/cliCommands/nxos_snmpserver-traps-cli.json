@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Snmp.json"
+    },
     "cliCommands": [
         "snmp-server enable traps callhome event-notify",
         "snmp-server enable traps callhome smtp-send-fail",
@@ -35,7 +37,6 @@
     "@source": {
         "instanceName": "nxos_snmpserver-traps-cli"
     },
-    "@exportedInstanceId": "779c6391-5161-4651-8fdd-5b10d2becdf6",
     "@id": "779c6391-5161-4651-8fdd-5b10d2becdf6",
     "@name": "nxos_snmpserver-traps-cli",
     "@description": ""

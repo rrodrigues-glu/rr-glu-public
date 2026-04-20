@@ -11,12 +11,30 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "boot": {
-        "firmware": {}
+        "firmware": {
+            "policy": {
+                "@ref": null
+            },
+            "catalog": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -24,7 +42,6 @@
     "@source": {
         "instanceName": "QoS_Assembly"
     },
-    "@exportedInstanceId": "47a61ad2-3e34-449f-b48e-60c39dae66a2",
     "@id": "47a61ad2-3e34-449f-b48e-60c39dae66a2",
     "@name": "QoS_Assembly",
     "@description": ""

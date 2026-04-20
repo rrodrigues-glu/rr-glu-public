@@ -7,7 +7,11 @@
         "port": 22,
         "credentials": {
             "@ref": "/secret/sys/credentials/deviceUserPass/admin.json"
-        }
+        },
+        "enablePassword": {
+            "@ref": null
+        },
+        "sshParam": ""
     },
     "associations": {
         "provider": "local"
@@ -36,11 +40,10 @@
     "site": {
         "@ref": "/org/instance/construct/domain/location/Romualdo.json"
     },
-    "@exportedInstanceId": "73b4b46f-8afc-4640-a19e-7c75a32eb86b",
     "@id": "73b4b46f-8afc-4640-a19e-7c75a32eb86b",
+    "@name": "Arista01",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/eosSwitch.jtype"
-    },
-    "@name": "Arista01",
-    "@description": ""
+    }
 }

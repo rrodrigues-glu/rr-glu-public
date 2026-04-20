@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Switch_SwitchPort.json"
+    },
     "cliCommands": [
         "interface $context.switchPorts[*].name",
         " authentication open",
@@ -27,7 +29,6 @@
     "@source": {
         "instanceName": "ios_nac-interface_cli"
     },
-    "@exportedInstanceId": "a18484fa-aa04-4d09-9654-a9386abe6d9e",
     "@id": "a18484fa-aa04-4d09-9654-a9386abe6d9e",
     "@name": "ios_nac-interface_cli",
     "@description": ""

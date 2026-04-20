@@ -8,12 +8,16 @@
     "featureDisplayName": "Security feature",
     "renderList": [
         {
-            "item": {},
+            "item": {
+                "@ref": "/org/instance/construct/global/conceptItem/NXOS_IpAcl.json"
+            },
             "maskCommands": [],
             "dCli": []
         },
         {
-            "item": {},
+            "item": {
+                "@ref": "/org/instance/construct/global/conceptItem/NXOS_Intf2.json"
+            },
             "maskCommands": [],
             "dCli": []
         }
@@ -22,7 +26,6 @@
     "@source": {
         "instanceName": "NXOS_security"
     },
-    "@exportedInstanceId": "4b09fa6e-539e-4bc3-a670-ba546f6fc699",
     "@id": "4b09fa6e-539e-4bc3-a670-ba546f6fc699",
     "@name": "NXOS_security",
     "@description": ""

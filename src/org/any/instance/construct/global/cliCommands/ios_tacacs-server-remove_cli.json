@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_TacacsServer.json"
+    },
     "cliCommands": [
         "!"
     ],
@@ -12,7 +14,6 @@
     "@source": {
         "instanceName": "ios_tacacs-server-remove_cli"
     },
-    "@exportedInstanceId": "deb5431a-c6ef-4e3f-800a-9ace2a0d7bca",
     "@id": "deb5431a-c6ef-4e3f-800a-9ace2a0d7bca",
     "@name": "ios_tacacs-server-remove_cli",
     "@description": ""

@@ -1,5 +1,7 @@
 {
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Banner.json"
+    },
     "cliCommands": [
         "banner login ^",
         "  ######################################################",
@@ -18,11 +20,10 @@
     "advanced": {
         "filter": null
     },
-    "@exportedInstanceId": "f07da3c7-9d16-4039-80ff-76b4c3440262",
     "@id": "f07da3c7-9d16-4039-80ff-76b4c3440262",
+    "@name": "ios_banner_cli",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    },
-    "@name": "ios_banner_cli",
-    "@description": ""
+    }
 }

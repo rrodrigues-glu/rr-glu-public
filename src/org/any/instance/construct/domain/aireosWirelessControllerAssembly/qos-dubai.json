@@ -11,7 +11,14 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "state": {
         "assessment": {}
     },
@@ -19,7 +26,6 @@
     "@source": {
         "instanceName": "qos-dubai"
     },
-    "@exportedInstanceId": "addb60c2-0522-49a8-8137-8912a88b0668",
     "@id": "addb60c2-0522-49a8-8137-8912a88b0668",
     "@name": "qos-dubai",
     "@description": ""

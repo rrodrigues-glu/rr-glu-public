@@ -17,7 +17,6 @@
         "instanceName": "IOS_show_logging"
     },
     "privilegeMode": false,
-    "@exportedInstanceId": "a0f9a3ef-020e-42d0-b0b2-ab382d58385a",
     "@id": "a0f9a3ef-020e-42d0-b0b2-ab382d58385a",
     "@name": "IOS_show_logging",
     "@description": ""

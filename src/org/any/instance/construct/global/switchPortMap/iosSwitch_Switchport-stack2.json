@@ -247,15 +247,23 @@
             "onBoard": {
                 "@ref": "/org/instance/construct/global/switchPortNamingProfile/onboardNamingProfile.json"
             },
+            "uplinks": {
+                "@ref": null
+            },
+            "aggregated": {
+                "@ref": null
+            },
             "module1": {
                 "@ref": "/org/instance/construct/global/switchPortNamingProfile/mod1-3850.json"
+            },
+            "module2": {
+                "@ref": null
             }
         }
     },
     "@source": {
         "instanceName": "iosSwitch_Switchport-stack2"
     },
-    "@exportedInstanceId": "79c046bd-6277-438b-8f1c-a28e9fb8cffd",
     "@id": "79c046bd-6277-438b-8f1c-a28e9fb8cffd",
     "@name": "iosSwitch_Switchport-stack2",
     "@description": ""

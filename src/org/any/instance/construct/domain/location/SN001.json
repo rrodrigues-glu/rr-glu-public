@@ -8,6 +8,9 @@
         "contact": "",
         "techContact": ""
     },
+    "cloud": {
+        "provider": "none"
+    },
     "@id": "e1c8dc25-af4c-4886-90dc-9b4d8efc0786",
     "@name": "SN001",
     "@description": "",

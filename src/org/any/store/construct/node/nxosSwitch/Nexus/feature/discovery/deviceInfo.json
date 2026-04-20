@@ -535,6 +535,7 @@
         }
     },
     "detectedSerialNumber": "FOC1801R029",
+    "uptime": "9d16h27m50s",
     "chassis": {
         "1": {
             "sku": "N3K-C3048TP-1GE",
@@ -1362,6 +1363,11 @@
                 "use": 3,
                 "free": 48
             }
+        },
+        "recordTime": {
+            "utcTime": 1776078862910,
+            "utcDateTime": "Mon, 13 Apr 2026 11:14:22 GMT"
         }
-    }
+    },
+    "@lastCommitHash": "d1659ee6388264fb330f4ac4dd9b48eb96f83275"
 }

@@ -7,76 +7,148 @@
             "ports": "24",
             "layout": {
                 "1": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "2": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "3": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "4": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "5": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "6": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "7": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "8": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "9": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "10": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "11": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "12": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "13": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "14": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "15": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "16": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "17": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "18": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "19": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "20": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "21": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "22": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "23": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "24": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 }
             },
             "templates": []
@@ -85,10 +157,16 @@
             "ports": "2",
             "layout": {
                 "1": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 },
                 "2": {
-                    "description": ""
+                    "description": "",
+                    "settings": {
+                        "@ref": null
+                    }
                 }
             },
             "templates": [
@@ -163,15 +241,20 @@
             "uplinks": {
                 "@ref": "/org/instance/construct/global/switchPortNamingProfile/uplink-3850.json"
             },
+            "aggregated": {
+                "@ref": null
+            },
             "module1": {
                 "@ref": "/org/instance/construct/global/switchPortNamingProfile/mod1-3850.json"
+            },
+            "module2": {
+                "@ref": null
             }
         }
     },
     "@source": {
         "instanceName": "iosSwitch_Switchport-stack1"
     },
-    "@exportedInstanceId": "40f79f07-8d3f-4ae5-9343-f6edc34324d1",
     "@id": "40f79f07-8d3f-4ae5-9343-f6edc34324d1",
     "@name": "iosSwitch_Switchport-stack1",
     "@description": ""

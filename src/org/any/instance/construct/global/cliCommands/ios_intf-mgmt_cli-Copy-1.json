@@ -10,11 +10,10 @@
     "advanced": {
         "filter": null
     },
-    "@exportedInstanceId": "0e8b231b-9d40-4b29-8a06-a47c662c005e",
     "@id": "0e8b231b-9d40-4b29-8a06-a47c662c005e",
+    "@name": "ios_intf-mgmt_cli-Copy-1",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    },
-    "@name": "ios_intf-mgmt_cli-Copy-1",
-    "@description": ""
+    }
 }

@@ -20,10 +20,21 @@
         }
     },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "boot": {
-        "firmware": {}
+        "firmware": {
+            "policy": {
+                "@ref": null
+            },
+            "catalog": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -31,7 +42,6 @@
     "@source": {
         "instanceName": "DMVPN_Spoke_DualTunnel"
     },
-    "@exportedInstanceId": "10183599-c363-43b2-a2a3-fcbbd0d046ee",
     "@id": "10183599-c363-43b2-a2a3-fcbbd0d046ee",
     "@name": "DMVPN_Spoke_DualTunnel",
     "@description": ""

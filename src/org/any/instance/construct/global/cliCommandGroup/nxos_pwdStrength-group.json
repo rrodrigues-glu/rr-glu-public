@@ -24,7 +24,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "f1c2bf50-ce14-449a-a566-ed387fb3c92a",
     "@id": "f1c2bf50-ce14-449a-a566-ed387fb3c92a",
     "@name": "nxos_pwdStrength-group"
 }

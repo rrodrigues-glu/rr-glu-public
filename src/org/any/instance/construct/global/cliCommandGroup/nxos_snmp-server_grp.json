@@ -24,7 +24,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "d40dc311-291d-450d-bd5c-f919e2040181",
     "@id": "d40dc311-291d-450d-bd5c-f919e2040181",
     "@name": "nxos_snmp-server_grp",
     "@description": ""

@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_PrefixList.json"
+    },
     "cliCommands": [
         "ip prefix-list DC03-REMOTEOFFICE-PREFIX-LIST seq 1000 permit 10.80.0.0/16 ",
         "ip prefix-list DC03-REMOTEOFFICE-PREFIX-LIST seq 1010 permit 10.8.0.0/16 ",
@@ -176,7 +178,6 @@
     "@source": {
         "instanceName": "nxos_ipprefix-list-cli"
     },
-    "@exportedInstanceId": "eef87a95-9b03-4614-8284-6d7d3d8ac641",
     "@id": "eef87a95-9b03-4614-8284-6d7d3d8ac641",
     "@name": "nxos_ipprefix-list-cli",
     "@description": ""

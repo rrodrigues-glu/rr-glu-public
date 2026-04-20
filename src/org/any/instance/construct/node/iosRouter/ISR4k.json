@@ -6,9 +6,13 @@
         "credentials": {
             "@ref": "/secret/sys/credentials/deviceUserPass/GlueSQA.json"
         },
+        "enablePassword": {
+            "@ref": null
+        },
         "type": "ssh",
         "port": 22,
-        "terminalType": "xterm"
+        "terminalType": "xterm",
+        "sshParam": ""
     },
     "associations": {
         "provider": "local"
@@ -38,11 +42,10 @@
     "site": {
         "@ref": "/org/instance/construct/domain/location/Romualdo.json"
     },
-    "@exportedInstanceId": "64c88944-25c2-4603-a1a9-553aa13f1bcd",
     "@id": "64c88944-25c2-4603-a1a9-553aa13f1bcd",
+    "@name": "ISR4k",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/iosRouter.jtype"
-    },
-    "@name": "ISR4k",
-    "@description": ""
+    }
 }

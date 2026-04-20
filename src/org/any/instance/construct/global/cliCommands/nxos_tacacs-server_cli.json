@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_TacacsServer.json"
+    },
     "cliCommands": [
         "tacacs-server key 0 $context.aaa[*].tacacs[*].key",
         "tacacs-server host $context.aaa[*].tacacs[*].ip"
@@ -13,7 +15,6 @@
     "@source": {
         "instanceName": "nxos_tacacs-server_cli"
     },
-    "@exportedInstanceId": "fa1ca725-d2a6-4bab-9a26-6541040d14fa",
     "@id": "fa1ca725-d2a6-4bab-9a26-6541040d14fa",
     "@name": "nxos_tacacs-server_cli",
     "@description": ""

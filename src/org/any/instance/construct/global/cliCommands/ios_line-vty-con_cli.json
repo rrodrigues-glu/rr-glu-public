@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_LineConVty.json"
+    },
     "cliCommands": [
         "line con 0",
         " exec-timeout 15 0",
@@ -31,7 +33,6 @@
     "@source": {
         "instanceName": "ios_line-vty-con_cli"
     },
-    "@exportedInstanceId": "838e3fa6-16d4-4502-99ae-8c8645a6bddc",
     "@id": "838e3fa6-16d4-4502-99ae-8c8645a6bddc",
     "@name": "ios_line-vty-con_cli",
     "@description": ""

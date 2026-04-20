@@ -8,11 +8,10 @@
     "advanced": {
         "filter": null
     },
-    "@exportedInstanceId": "09c020ae-e750-4e30-af99-1c7c4bf2c51b",
     "@id": "09c020ae-e750-4e30-af99-1c7c4bf2c51b",
+    "@name": "ios_ntp-server_cli-_Rubb1",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    },
-    "@name": "ios_ntp-server_cli-_Rubb1",
-    "@description": ""
+    }
 }

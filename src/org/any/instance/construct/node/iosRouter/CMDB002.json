@@ -22,7 +22,8 @@
         },
         "port": 22,
         "type": "ssh",
-        "terminalType": "xterm"
+        "terminalType": "xterm",
+        "sshParam": ""
     },
     "associations": {
         "assembly": {

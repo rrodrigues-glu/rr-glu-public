@@ -11,12 +11,33 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portLayout": {
+            "@ref": null
+        },
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "boot": {
-        "firmware": {}
+        "firmware": {
+            "policy": {
+                "@ref": null
+            },
+            "catalog": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -24,7 +45,6 @@
     "@source": {
         "instanceName": "NTP_Assembly"
     },
-    "@exportedInstanceId": "cbd821bd-9a38-4b1c-a7f4-dbaec1305d86",
     "@id": "cbd821bd-9a38-4b1c-a7f4-dbaec1305d86",
     "@name": "NTP_Assembly",
     "@description": ""

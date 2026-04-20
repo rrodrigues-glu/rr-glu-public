@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Router.json"
+    },
     "cliCommands": [
         "router bgp 64629",
         " bgp log-neighbor-changes",
@@ -20,7 +22,6 @@
     "@source": {
         "instanceName": "ios_router-bgp_cli"
     },
-    "@exportedInstanceId": "07612c67-936d-4909-9102-fe0e8170ceb3",
     "@id": "07612c67-936d-4909-9102-fe0e8170ceb3",
     "@name": "ios_router-bgp_cli",
     "@description": ""

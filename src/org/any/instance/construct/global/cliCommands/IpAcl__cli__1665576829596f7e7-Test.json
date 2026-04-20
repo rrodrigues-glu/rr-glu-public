@@ -1,5 +1,7 @@
 {
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_IpAclNumbered.json"
+    },
     "cliCommands": [
         "ip access-list extended acl-qos-SCAVENGER",
         " remark Proxy",
@@ -49,11 +51,10 @@
     "advanced": {
         "filter": null
     },
-    "@exportedInstanceId": "7299dbd0-e4f0-4528-9be2-d8fb4ff795d6",
     "@id": "7299dbd0-e4f0-4528-9be2-d8fb4ff795d6",
+    "@name": "IpAcl__cli__1665576829596f7e7-Test",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    },
-    "@name": "IpAcl__cli__1665576829596f7e7-Test",
-    "@description": ""
+    }
 }

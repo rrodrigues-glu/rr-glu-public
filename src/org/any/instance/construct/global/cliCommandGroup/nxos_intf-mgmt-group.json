@@ -24,7 +24,6 @@
     "@source": {
         "instanceName": "nxos_intf-mgmt-group"
     },
-    "@exportedInstanceId": "6f902d01-aa06-409f-900d-cbf6942ee03a",
     "@id": "6f902d01-aa06-409f-900d-cbf6942ee03a",
     "@name": "nxos_intf-mgmt-group",
     "@description": ""

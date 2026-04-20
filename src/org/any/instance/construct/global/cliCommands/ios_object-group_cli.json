@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_ObjGroup.json"
+    },
     "cliCommands": [
         "object-group network DC1_VPN",
         " 10.192.{$context.portMap[*].ipv4.subnet.octet3}.0 255.255.255.0",
@@ -14,7 +16,6 @@
     "@source": {
         "instanceName": "ios_object-group_cli"
     },
-    "@exportedInstanceId": "ef035952-2a23-49fe-9fa5-db8efb468e97",
     "@id": "ef035952-2a23-49fe-9fa5-db8efb468e97",
     "@name": "ios_object-group_cli",
     "@description": ""

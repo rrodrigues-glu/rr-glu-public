@@ -11,11 +11,10 @@
     "advanced": {
         "filter": null
     },
-    "@exportedInstanceId": "b1df2543-c31c-428f-a8ce-6b0b2965510c",
     "@id": "b1df2543-c31c-428f-a8ce-6b0b2965510c",
+    "@name": "ios_router-bgp_cli-romTest",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    },
-    "@name": "ios_router-bgp_cli-romTest",
-    "@description": ""
+    }
 }

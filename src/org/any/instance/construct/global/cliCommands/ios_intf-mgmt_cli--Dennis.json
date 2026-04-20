@@ -8,11 +8,10 @@
     "advanced": {
         "filter": null
     },
-    "@exportedInstanceId": "f103d4a0-75f7-4c4a-873c-9478074f160a",
     "@id": "f103d4a0-75f7-4c4a-873c-9478074f160a",
+    "@name": "ios_intf-mgmt_cli--Dennis",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    },
-    "@name": "ios_intf-mgmt_cli--Dennis",
-    "@description": ""
+    }
 }

@@ -39,7 +39,6 @@
     "@source": {
         "instanceName": "nxos_mpls-ldp-cli"
     },
-    "@exportedInstanceId": "589db06e-cfb5-49df-937f-1b076cd79b74",
     "@id": "589db06e-cfb5-49df-937f-1b076cd79b74",
     "@name": "nxos_mpls-ldp-cli",
     "@description": ""

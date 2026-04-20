@@ -26,9 +26,20 @@
             }
         }
     },
-    "interfaces": {},
+    "interfaces": {
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
+        }
+    },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -36,7 +47,6 @@
     "@source": {
         "instanceName": "ZeroDay_Assembly"
     },
-    "@exportedInstanceId": "ca02f177-963c-42c0-bc87-d430f20a5bdd",
     "@id": "ca02f177-963c-42c0-bc87-d430f20a5bdd",
     "@name": "ZeroDay_Assembly",
     "@description": ""

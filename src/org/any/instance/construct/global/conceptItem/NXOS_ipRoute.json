@@ -25,7 +25,6 @@
     "@source": {
         "instanceName": "NXOS_ipRoute"
     },
-    "@exportedInstanceId": "c532ef82-00b4-4b27-b237-5b380f66b22b",
     "@id": "c532ef82-00b4-4b27-b237-5b380f66b22b",
     "@name": "NXOS_ipRoute",
     "@description": ""

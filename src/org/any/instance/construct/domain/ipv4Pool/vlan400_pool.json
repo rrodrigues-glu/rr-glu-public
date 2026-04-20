@@ -23,7 +23,6 @@
     "@source": {
         "instanceName": "vlan400_pool"
     },
-    "@exportedInstanceId": "5da1dee2-707e-4a9a-bbf2-5eb1e1bb6c71",
     "@id": "5da1dee2-707e-4a9a-bbf2-5eb1e1bb6c71",
     "@name": "vlan400_pool",
     "@description": ""

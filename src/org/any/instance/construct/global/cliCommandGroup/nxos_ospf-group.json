@@ -17,7 +17,6 @@
     "@source": {
         "instanceName": "nxos_ospf-group"
     },
-    "@exportedInstanceId": "41f19051-1c3c-42c7-8587-066a7d832b15",
     "@id": "41f19051-1c3c-42c7-8587-066a7d832b15",
     "@name": "nxos_ospf-group",
     "@description": ""

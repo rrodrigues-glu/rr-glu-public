@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_NtpAgent.json"
+    },
     "cliCommands": [
         "ntp server $context.ntp.server[*].ip prefer use-vrf management",
         "ntp source $context.portMap.MGNT1.name"
@@ -13,7 +15,6 @@
     "@source": {
         "instanceName": "nxos_ntp-server_cli"
     },
-    "@exportedInstanceId": "a9ec8580-389a-41ca-b7f8-ce35985a7455",
     "@id": "a9ec8580-389a-41ca-b7f8-ce35985a7455",
     "@name": "nxos_ntp-server_cli",
     "@description": ""

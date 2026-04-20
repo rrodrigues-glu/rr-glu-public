@@ -14,13 +14,30 @@
     "interfaces": {
         "portLayout": {
             "@ref": "/org/instance/construct/global/stackPortMap/stack_iosSwitch_NAC.json"
+        },
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
         }
     },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "boot": {
-        "firmware": {}
+        "firmware": {
+            "policy": {
+                "@ref": null
+            },
+            "catalog": {
+                "@ref": null
+            }
+        }
     },
     "state": {
         "assessment": {}
@@ -28,7 +45,6 @@
     "@source": {
         "instanceName": "NAC_Assembly"
     },
-    "@exportedInstanceId": "108e3cfd-0199-4b1a-9663-b557aa2a5145",
     "@id": "108e3cfd-0199-4b1a-9663-b557aa2a5145",
     "@name": "NAC_Assembly",
     "@description": ""

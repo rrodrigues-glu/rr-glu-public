@@ -17,7 +17,6 @@
     "@source": {
         "instanceName": "ios_dns-server_grp"
     },
-    "@exportedInstanceId": "db1bf715-8d63-4d85-9733-60c3ea8aab69",
     "@id": "db1bf715-8d63-4d85-9733-60c3ea8aab69",
     "@name": "ios_dns-server_grp",
     "@description": ""

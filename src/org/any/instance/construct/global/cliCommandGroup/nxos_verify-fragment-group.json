@@ -24,7 +24,6 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "aa676ead-4df2-4caf-8d30-d0aba0026777",
     "@id": "aa676ead-4df2-4caf-8d30-d0aba0026777",
     "@name": "nxos_verify-fragment-group"
 }

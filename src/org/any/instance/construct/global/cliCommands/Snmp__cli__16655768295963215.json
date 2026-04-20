@@ -3,7 +3,9 @@
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
     "@id": "6454f876-a391-4183-932e-cd103fc44081",
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_Snmp.json"
+    },
     "cliCommands": [
         "snmp-server community BkyX4t3np2rkVsdf RO 5",
         "snmp-server community H3x4Tgr8rwn104qf RW 6",
@@ -19,7 +21,6 @@
         "snmp-server host 10.154.20.22 version 2c BkyX4t3np2rkVsdf",
         "snmp ifmib ifindex persist"
     ],
-    "@exportedInstanceId": "6454f876-a391-4183-932e-cd103fc44081",
     "@name": "Snmp__cli__16655768295963215",
     "@description": ""
 }

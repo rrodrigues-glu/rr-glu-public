@@ -19,11 +19,10 @@
     "removeSyntax": {
         "list": []
     },
-    "@exportedInstanceId": "4f709b52-c227-44dc-b9f5-de09b24afeb2",
     "@id": "4f709b52-c227-44dc-b9f5-de09b24afeb2",
+    "@name": "ios_snmp-server_grp",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommandGroup.jtype"
-    },
-    "@name": "ios_snmp-server_grp",
-    "@description": ""
+    }
 }

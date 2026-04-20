@@ -17,7 +17,6 @@
     "@source": {
         "instanceName": "nxos_boot-cli"
     },
-    "@exportedInstanceId": "4e241c41-2eb2-4c31-9a00-84b762bec497",
     "@id": "4e241c41-2eb2-4c31-9a00-84b762bec497",
     "@name": "nxos_boot-cli",
     "@description": ""

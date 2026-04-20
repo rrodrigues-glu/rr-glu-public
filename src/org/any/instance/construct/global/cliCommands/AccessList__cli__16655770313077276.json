@@ -3,7 +3,9 @@
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
     "@id": "1d84af99-9eae-42f6-ba78-3d7136a2588c",
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_IpAcl.json"
+    },
     "cliCommands": [
         "ip access-list copp-system-acl-eigrp",
         "  10 permit eigrp any 224.0.0.10/32 ",
@@ -76,7 +78,6 @@
         "  10 permit udp any any eq 32003 ",
         ""
     ],
-    "@exportedInstanceId": "1d84af99-9eae-42f6-ba78-3d7136a2588c",
     "@name": "AccessList__cli__16655770313077276",
     "@description": ""
 }

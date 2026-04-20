@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/NXOS_Router.json"
+    },
     "cliCommands": [
         "router isis DC03-CORE",
         " bfd",
@@ -40,7 +42,6 @@
     "@source": {
         "instanceName": "nxos_isis-cli"
     },
-    "@exportedInstanceId": "a8b886bb-3eea-4796-b9ac-8d912f9373ff",
     "@id": "a8b886bb-3eea-4796-b9ac-8d912f9373ff",
     "@name": "nxos_isis-cli",
     "@description": ""

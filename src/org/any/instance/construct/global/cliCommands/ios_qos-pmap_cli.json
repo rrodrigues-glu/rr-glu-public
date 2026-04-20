@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_PolicyMap.json"
+    },
     "cliCommands": [
         "policy-map pmap_qos-wan-counting-in",
         " class cmap_qos-wan-class1_rt",
@@ -89,7 +91,6 @@
     "@source": {
         "instanceName": "ios_qos-pmap_cli"
     },
-    "@exportedInstanceId": "69cc25be-664e-4950-a025-148e07d4c732",
     "@id": "69cc25be-664e-4950-a025-148e07d4c732",
     "@name": "ios_qos-pmap_cli",
     "@description": ""

@@ -14,18 +14,34 @@
     "interfaces": {
         "portLayout": {
             "@ref": "/org/instance/construct/global/switchPortMap/cisco_48p2u.json"
+        },
+        "portMap": {
+            "@ref": null
+        },
+        "ipNumbering": {
+            "@ref": null
         }
     },
     "agents": {
-        "watchdog": {}
+        "watchdog": {
+            "policy": {
+                "@ref": null
+            }
+        }
     },
     "boot": {
-        "firmware": {}
+        "firmware": {
+            "policy": {
+                "@ref": null
+            },
+            "catalog": {
+                "@ref": null
+            }
+        }
     },
     "@source": {
         "instanceName": "cisco_48p2u"
     },
-    "@exportedInstanceId": "e7d70f0b-215a-4cad-8300-4472e7002911",
     "@id": "e7d70f0b-215a-4cad-8300-4472e7002911",
     "@name": "cisco_48p2u",
     "@description": ""

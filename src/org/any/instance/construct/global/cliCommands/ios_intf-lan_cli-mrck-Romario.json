@@ -8,11 +8,10 @@
     "advanced": {
         "filter": null
     },
-    "@exportedInstanceId": "b647639f-2da8-4468-bc2a-03e234512752",
     "@id": "b647639f-2da8-4468-bc2a-03e234512752",
+    "@name": "ios_intf-lan_cli-mrck-Romario",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    },
-    "@name": "ios_intf-lan_cli-mrck-Romario",
-    "@description": ""
+    }
 }

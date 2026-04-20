@@ -25,7 +25,6 @@
     "@source": {
         "instanceName": "NXOS_MacAccessLists"
     },
-    "@exportedInstanceId": "3d80cd79-294f-4953-b81f-f9151ebfacbf",
     "@id": "3d80cd79-294f-4953-b81f-f9151ebfacbf",
     "@name": "NXOS_MacAccessLists",
     "@description": ""

@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_NetflowRecord.json"
+    },
     "cliCommands": [
         "flow record $context.flow.record.name",
         " match ipv4 tos",
@@ -30,7 +32,6 @@
     "@source": {
         "instanceName": "ios_netflow-record_cli"
     },
-    "@exportedInstanceId": "6024a417-c682-411c-8fda-4bbb4746994a",
     "@id": "6024a417-c682-411c-8fda-4bbb4746994a",
     "@name": "ios_netflow-record_cli",
     "@description": ""

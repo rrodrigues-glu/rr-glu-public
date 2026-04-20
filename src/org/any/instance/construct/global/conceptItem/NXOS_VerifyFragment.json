@@ -25,7 +25,6 @@
     "@source": {
         "instanceName": "NXOS_VerifyFragment"
     },
-    "@exportedInstanceId": "ff45ded8-d799-42f0-a865-01155878909e",
     "@id": "ff45ded8-d799-42f0-a865-01155878909e",
     "@name": "NXOS_VerifyFragment",
     "@description": ""

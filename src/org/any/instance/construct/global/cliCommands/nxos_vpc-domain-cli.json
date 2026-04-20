@@ -21,7 +21,6 @@
     "@source": {
         "instanceName": "nxos_vpc-domain-cli"
     },
-    "@exportedInstanceId": "b068f5b5-831b-4934-99a2-ec7983b68fa4",
     "@id": "b068f5b5-831b-4934-99a2-ec7983b68fa4",
     "@name": "nxos_vpc-domain-cli",
     "@description": ""

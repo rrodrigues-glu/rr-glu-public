@@ -22,7 +22,8 @@
         },
         "port": 22,
         "type": "ssh",
-        "terminalType": "xterm"
+        "terminalType": "xterm",
+        "sshParam": ""
     },
     "associations": {
         "assembly": {
@@ -45,11 +46,10 @@
     "iosRouter": {
         "enabled": true
     },
-    "@exportedInstanceId": "48685f83-7a65-4df7-87fe-06717d6f784b",
     "@id": "48685f83-7a65-4df7-87fe-06717d6f784b",
+    "@name": "ISR4331",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/node/iosRouter.jtype"
-    },
-    "@name": "ISR4331",
-    "@description": ""
+    }
 }

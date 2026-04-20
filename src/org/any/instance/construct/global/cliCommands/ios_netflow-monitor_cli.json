@@ -2,7 +2,9 @@
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
     },
-    "item": {},
+    "item": {
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_NetflowMonitor.json"
+    },
     "cliCommands": [
         "flow monitor $context.flow.monitor.name",
         " description $context.flow.monitor.description",
@@ -19,7 +21,6 @@
     "@source": {
         "instanceName": "ios_netflow-monitor_cli"
     },
-    "@exportedInstanceId": "96f7d84e-4722-4a54-85e7-f897b22c8a8d",
     "@id": "96f7d84e-4722-4a54-85e7-f897b22c8a8d",
     "@name": "ios_netflow-monitor_cli",
     "@description": ""

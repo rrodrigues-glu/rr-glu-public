@@ -9,11 +9,10 @@
     "advanced": {
         "filter": null
     },
-    "@exportedInstanceId": "4cbdfd3e-0da5-457f-92de-1497ccb2c8b3",
     "@id": "4cbdfd3e-0da5-457f-92de-1497ccb2c8b3",
+    "@name": "ios_intf-wan_cli",
+    "@description": "",
     "@type": {
         "ref": "/sys/type/construct/global/cliCommands.jtype"
-    },
-    "@name": "ios_intf-wan_cli",
-    "@description": ""
+    }
 }
