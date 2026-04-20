@@ -24,10 +24,9 @@
     "hostname": "apic1",
     "os": "aci",
     "serialNumber": "TEP-1-1",
-    "macAddress": "",
-    "uptime": "",
-    "fabricId": "",
-    "fabricDomain": "",
+    "macAddress": "00:22:BD:F8:19:FF",
+    "fabricId": "1",
+    "fabricDomain": "ACI Fabric1",
     "clusterMembers": {},
     "multiDeviceKey": "controller"
 }

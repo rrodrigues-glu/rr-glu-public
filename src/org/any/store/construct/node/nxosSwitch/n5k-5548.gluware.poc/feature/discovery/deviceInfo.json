@@ -1,20 +1,20 @@
 {
-    "hostname": "n5k-5548.gluware.poc",
+    "hostname": "n5k-5548",
     "vendor": "cisco",
     "os": "nxos",
     "path": "/sys/jnib/features/deviceDetect/cisco/nxos/",
     "sku": "N5K-C5548UP",
     "software": {
-        "version": "7.3(6)N1(1)",
+        "version": "7.3(3)N1(1)",
         "major": "7.3",
-        "minor": "6",
+        "minor": "3",
         "revision": "N1",
         "patch": "1",
         "build": "",
         "train": "",
-        "image": "n5000-uk9.7.3.6.N1.1.bin",
-        "kickstart": "n5000-uk9-kickstart.7.3.6.N1.1.bin",
-        "drive": "bootflash:/"
+        "image": "n5000-uk9.7.3.3.N1.1.bin",
+        "drive": "bootflash:/",
+        "kickstart": "n5000-uk9-kickstart.7.3.3.N1.1.bin"
     },
     "hardware": {
         "serialNumber": "SSI171100NQ",
@@ -90,10 +90,6 @@
         "series": "5548"
     },
     "features": {
-        "Flexlink": {
-            "enabled": false,
-            "instance": 1
-        },
         "amt": {
             "enabled": false,
             "instance": 1
@@ -164,6 +160,10 @@
         },
         "fex": {
             "enabled": true,
+            "instance": 1
+        },
+        "flexlink": {
+            "enabled": false,
             "instance": 1
         },
         "glbp": {
@@ -324,7 +324,6 @@
         }
     },
     "detectedSerialNumber": "SSI171100NQ",
-    "uptime": "168d3h23m24s",
     "chassis": {
         "1": {
             "sku": "N5K-C5548UP",
@@ -337,7 +336,7 @@
         "name": "nxosSwitch",
         "base": "dcSwitch"
     },
-    "licenses": [],
+    "licenses": {},
     "portsInfo": {
         "ports": {
             "Ethernet1/1": {
@@ -854,10 +853,6 @@
                 "use": 1,
                 "free": 32
             }
-        },
-        "recordTime": {
-            "utcTime": 1737392808452,
-            "utcDateTime": "Mon, 20 Jan 2025 17:06:48 GMT"
         }
     }
 }
