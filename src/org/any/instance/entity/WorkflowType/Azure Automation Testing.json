@@ -1,0 +1,71 @@
+{
+    "name": "Azure Automation Testing",
+    "actionAuth": "Level1",
+    "description": "",
+    "bpmnJSON": {
+        "name": "Azure Automation Testing",
+        "elements": [
+            {
+                "id": "start",
+                "type": "startEvent",
+                "name": "start",
+                "fields": {
+                    "jtype": {}
+                },
+                "connectTo": "wt-e5922c0a-325b-4fda-a05f-63552627f227"
+            },
+            {
+                "id": "end",
+                "type": "endEvent",
+                "name": "end"
+            },
+            {
+                "id": "wt-23c4511d-44bb-4d04-9b06-1334ba4d2faa",
+                "type": "serviceTask",
+                "action": "setExitStatus",
+                "name": "setExitStatus",
+                "connectTo": "end",
+                "fields": {
+                    "status": "ok"
+                }
+            },
+            {
+                "id": "wt-4ffbc72b-c1b8-4485-b66f-789f4ab7558d",
+                "type": "serviceTask",
+                "action": "jnib",
+                "name": "External API call",
+                "pack": "general",
+                "displayName": "External API call",
+                "uniqueName": "/sys/jnib/rpa/tasks/externalApiCall.rpaTask.jnib_general_externalApiCall-0",
+                "connectTo": "wt-23c4511d-44bb-4d04-9b06-1334ba4d2faa",
+                "fields": {
+                    "action": "/sys/jnib/rpa/tasks/externalApiCall.rpaTask.jnib",
+                    "executionMode": "taskOnly",
+                    "targetsRequired": true
+                },
+                "properties": {
+                    "request": {
+                        "path": "",
+                        "headers": [],
+                        "queryParams": [],
+                        "body": "{\r\n    \"Name\": \"Nathan\",\r\n    \"Test\": \"Whoa\"\r\n}",
+                        "method": "POST"
+                    },
+                    "connInfo": null,
+                    "referencedFields": {}
+                }
+            },
+            {
+                "id": "wt-e5922c0a-325b-4fda-a05f-63552627f227",
+                "type": "serviceTask",
+                "action": "selectDevices",
+                "name": "Select targets",
+                "pack": "deviceManager",
+                "uniqueName": "deviceManager_selectDevices-0",
+                "connectTo": "wt-4ffbc72b-c1b8-4485-b66f-789f4ab7558d"
+            }
+        ]
+    },
+    "variables": [],
+    "references": []
+}
