@@ -1,0 +1,45 @@
+{
+    "name": "Test888",
+    "actionAuth": "Level1",
+    "description": "",
+    "bpmnJSON": {
+        "name": "Test888",
+        "elements": [
+            {
+                "id": "start",
+                "type": "startEvent",
+                "name": "start",
+                "fields": {
+                    "jtype": {}
+                },
+                "connectTo": "wt-85eb7be3-146f-43c5-9076-a2333893266e"
+            },
+            {
+                "id": "end",
+                "type": "endEvent",
+                "name": "end"
+            },
+            {
+                "id": "wt-85eb7be3-146f-43c5-9076-a2333893266e",
+                "type": "serviceTask",
+                "action": "selectDevices",
+                "name": "Select targets",
+                "pack": "deviceManager",
+                "uniqueName": "deviceManager_selectDevices-0",
+                "connectTo": "wt-1bc43750-5760-4f43-8c29-0f5c601690f1"
+            },
+            {
+                "id": "wt-1bc43750-5760-4f43-8c29-0f5c601690f1",
+                "type": "serviceTask",
+                "action": "setExitStatus",
+                "name": "setExitStatus",
+                "connectTo": "end",
+                "fields": {
+                    "status": "ok"
+                }
+            }
+        ]
+    },
+    "variables": [],
+    "references": []
+}
