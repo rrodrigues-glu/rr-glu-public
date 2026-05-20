@@ -1,0 +1,123 @@
+{
+    "name": "Franck5831-1",
+    "actionAuth": "Level1",
+    "description": "",
+    "bpmnJSON": {
+        "name": "Franck5831-1",
+        "elements": [
+            {
+                "id": "start",
+                "type": "startEvent",
+                "name": "start",
+                "fields": {
+                    "jtype": {}
+                },
+                "connectTo": "wt-22afb182-1540-49a0-9b0e-637c1cfef4b6"
+            },
+            {
+                "id": "end",
+                "type": "endEvent",
+                "name": "end"
+            },
+            {
+                "id": "wt-22afb182-1540-49a0-9b0e-637c1cfef4b6",
+                "type": "serviceTask",
+                "action": "selectDevices",
+                "name": "Select targets",
+                "pack": "deviceManager",
+                "uniqueName": "deviceManager_selectDevices-0",
+                "connectTo": "wt-4c4425bc-f2da-43ba-a73f-8eb65c4aa6b4"
+            },
+            {
+                "id": "wt-39ec6cdd-2883-471e-8dd0-cfaa3562d15c",
+                "type": "serviceTask",
+                "action": "setExitStatus",
+                "name": "setExitStatus",
+                "connectTo": "end",
+                "fields": {
+                    "status": "ok"
+                }
+            },
+            {
+                "id": "wt-4c4425bc-f2da-43ba-a73f-8eb65c4aa6b4",
+                "type": "inclusiveGateway",
+                "name": "IF condition-1",
+                "conditions": [
+                    {
+                        "name": "Then",
+                        "expression": {
+                            "logic": "and",
+                            "filters": [
+                                {
+                                    "logic": "and",
+                                    "filters": [
+                                        {
+                                            "logic": "and",
+                                            "filters": [
+                                                {
+                                                    "field": "detectedSku",
+                                                    "operator": "equal",
+                                                    "value": "N9k",
+                                                    "variableId": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "connectTo": "wt-1e095eef-96a6-48f2-b434-deb2b066ac79"
+                    },
+                    {
+                        "name": "Else",
+                        "expression": "ELSE",
+                        "connectTo": "wt-2ada3207-df7d-434a-a157-7c77e1f28f6d"
+                    }
+                ]
+            },
+            {
+                "id": "wt-8bb916a5-cb0f-44e8-82b5-c4577d22a4f9",
+                "type": "inclusiveGateway",
+                "connectTo": "wt-39ec6cdd-2883-471e-8dd0-cfaa3562d15c",
+                "connectionGroupId": "wt-4c4425bc-f2da-43ba-a73f-8eb65c4aa6b4"
+            },
+            {
+                "id": "wt-1e095eef-96a6-48f2-b434-deb2b066ac79",
+                "type": "serviceTask",
+                "action": "notificationViaEmail",
+                "name": "Send email",
+                "pack": "notification",
+                "displayName": "Send email",
+                "uniqueName": "notification_notificationViaEmail-0",
+                "connectTo": "wt-8bb916a5-cb0f-44e8-82b5-c4577d22a4f9",
+                "fields": {
+                    "title": "Test00000",
+                    "notifyJobRunner": true,
+                    "otherRecipients": [],
+                    "perTargetMessage": true,
+                    "notifyRoles": []
+                }
+            },
+            {
+                "id": "wt-2ada3207-df7d-434a-a157-7c77e1f28f6d",
+                "type": "serviceTask",
+                "action": "notificationViaEmail",
+                "name": "Send email",
+                "pack": "notification",
+                "displayName": "Send email - 1",
+                "uniqueName": "notification_notificationViaEmail-1",
+                "connectTo": "wt-8bb916a5-cb0f-44e8-82b5-c4577d22a4f9",
+                "fields": {
+                    "title": "Output",
+                    "notifyJobRunner": true,
+                    "otherRecipients": [],
+                    "perTargetMessage": true,
+                    "notifyRoles": []
+                }
+            }
+        ]
+    },
+    "variables": [],
+    "references": [],
+    "isCommitted": false
+}

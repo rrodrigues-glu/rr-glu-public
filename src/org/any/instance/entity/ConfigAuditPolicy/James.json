@@ -1,0 +1,48 @@
+{
+  "tid": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+  "id": "350ff57f-5ebe-4889-b486-8ddcb52ad7ef",
+  "createdOn": 1779271633742,
+  "createdBy": "admin",
+  "createdIp": "172.16.0.57",
+  "updatedOn": 1779271886213,
+  "updatedBy": "admin",
+  "updatedIp": "172.16.0.57",
+  "description": "",
+  "name": "James",
+  "permissionLevel": "auditManageLevel1",
+  "rules": [
+    {
+      "severity": "INFO",
+      "name": "New rule",
+      "os": "ios",
+      "source": "LATEST",
+      "commandSet": "all",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "type": "SIMPLE",
+      "description": "",
+      "enable": true,
+      "scope": ".+",
+      "scopeSeparateResults": false,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "description 2000"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "conceptItem": "IOS_Intf2_modified"
+    }
+  ],
+  "runLevel": "auditRunLevel1"
+}

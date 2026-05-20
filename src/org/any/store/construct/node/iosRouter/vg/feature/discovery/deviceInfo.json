@@ -1,0 +1,170 @@
+{
+    "hostname": "vg310",
+    "vendor": "cisco",
+    "os": "ios",
+    "path": "/sys/jnib/features/deviceDetect/cisco/ios/",
+    "sku": "VG310",
+    "software": {
+        "version": "15.8(3)M6",
+        "major": "15",
+        "minor": "8",
+        "revision": "3",
+        "train": "M",
+        "build": "6",
+        "patch": "",
+        "apiVersion": "15.8(3)M6",
+        "image": "vg3x0-universalk9-mz.SPA.158-3.M6.bin",
+        "drive": "flash0:"
+    },
+    "hardware": {
+        "serialNumber": "FJC1947D080",
+        "sku": "VG310",
+        "chassis": {},
+        "components": {
+            "dsp": [
+                {
+                    "description": "PVDM3 DSP DIMM with 64 Channels",
+                    "label": "PVDM DSP",
+                    "location": {
+                        "path": "0/4",
+                        "type": "slot"
+                    },
+                    "serialNumber": "FOC19440EW1",
+                    "sku": "PVDM3-64"
+                }
+            ],
+            "powerSupplies": [
+                {
+                    "description": "VG3X0 AC Power Supply",
+                    "label": "Power Supply",
+                    "location": {
+                        "path": 0,
+                        "type": "psu"
+                    },
+                    "serialNumber": "none",
+                    "sku": "PWR-VG3X0-AC"
+                }
+            ]
+        }
+    },
+    "detectedSerialNumber": "FJC1947D080",
+    "chassis": {},
+    "type": {
+        "name": "iosRouter",
+        "base": "wanRouter"
+    },
+    "licenses": [
+        {
+            "name": "ipbase",
+            "k9": true,
+            "inUse": false
+        },
+        {
+            "name": "security",
+            "k9": true,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "uc",
+            "k9": true,
+            "inUse": true,
+            "eval": false,
+            "rtu": true
+        },
+        {
+            "name": "data",
+            "k9": true,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "ios-ips-update",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "SNASw",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "hsec",
+            "k9": true,
+            "inUse": false
+        },
+        {
+            "name": "cme-srst",
+            "k9": false,
+            "inUse": false,
+            "eval": true,
+            "rtu": true,
+            "eulaAccepted": false
+        },
+        {
+            "name": "mgmt-plug-and-play",
+            "k9": false,
+            "inUse": false
+        },
+        {
+            "name": "mgmt-lifecycle",
+            "k9": false,
+            "inUse": false
+        },
+        {
+            "name": "mgmt-assurance",
+            "k9": false,
+            "inUse": false
+        },
+        {
+            "name": "mgmt-onplus",
+            "k9": false,
+            "inUse": false
+        },
+        {
+            "name": "mgmt-compliance",
+            "k9": false,
+            "inUse": false
+        }
+    ],
+    "portsInfo": {
+        "ports": {
+            "GigabitEthernet0/0": {
+                "operational": {
+                    "status": "up",
+                    "mtu": "1500",
+                    "speed": "1000000 Kbit/sec",
+                    "macAddress": "70:e4:22:b1:e9:c0",
+                    "phyMacAddress": "70:e4:22:b1:e9:c0",
+                    "ipv4Address": "10.150.1.39/27"
+                },
+                "description": "",
+                "phyVirt": "physical",
+                "type": "l3",
+                "configured": {
+                    "speed": "auto",
+                    "duplex": "auto",
+                    "ipv4Address": "10.150.1.39/27",
+                    "enabled": true
+                }
+            }
+        },
+        "portSummary": {
+            "switchports": {
+                "total": 0,
+                "use": 0,
+                "free": 0
+            }
+        }
+    }
+}
