@@ -1,0 +1,3488 @@
+{
+  "tid": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+  "id": "a7cb9ad9-48ec-4fbc-bac7-bbdf1e88c88e",
+  "createdOn": 1779372630137,
+  "createdBy": "admin",
+  "createdIp": "172.16.0.57",
+  "updatedOn": 1779374715428,
+  "updatedBy": "admin",
+  "updatedIp": "172.16.0.57",
+  "description": "Compliance audit policy from KP C9500-40X Server Access - Special Use template.",
+  "name": "KP C9500 Server Access Compliance Baseline",
+  "permissionLevel": "auditManageLevel1",
+  "rules": [
+    {
+      "name": "no service pad",
+      "description": "C9500 Server Access - Special Use - ",
+      "severity": "INFO",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "no service pad"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "AAA",
+      "description": "C9500 Server Access - Special Use - AAA",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^tacacs\\ server\\ .*$"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "!aaa authentication login default group tacacs+ local"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "!aaa authentication enable default group tacacs+ enable"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "!aaa accounting exec default start-stop group tacacs+"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "!aaa accounting commands 1 default start-stop group tacacs+"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "!aaa accounting commands 15 default start-stop group tacacs+"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "!aaa accounting system default start-stop group tacacs+"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "!aaa authorization exec default group tacacs+ local if-authenticated"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "!aaa authorization commands 1 default group tacacs+ local if-authenticated"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "!aaa authorization commands 15 default group tacacs+ local if-authenticated"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "!aaa authorization config-commands"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "!aaa session-id common"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "ACL-Allowed / Info ACL - Requirement",
+      "description": "C9500 Server Access - Special Use - ACL-Allowed / Info ACL - Requirement",
+      "severity": "INFO",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "ip access-list extended INFORMATION"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "ACL-Allowed / QoS ACL - BULK-DATA-IN",
+      "description": "C9500 Server Access - Special Use - ACL-Allowed / QoS ACL - BULK-DATA-IN",
+      "severity": "INFO",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "ip access-list extended BULK-DATA-IN"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "ACL-Allowed / QoS ACL - CALL-SIGNALING-IN",
+      "description": "C9500 Server Access - Special Use - ACL-Allowed / QoS ACL - CALL-SIGNALING-IN",
+      "severity": "INFO",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "ip access-list extended CALL-SIGNALING-IN"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "ACL-Allowed / QoS ACL - CRITICAL-DATA-IN",
+      "description": "C9500 Server Access - Special Use - ACL-Allowed / QoS ACL - CRITICAL-DATA-IN",
+      "severity": "INFO",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "ip access-list extended CRITICAL-DATA-IN"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "ACL-Allowed / QoS ACL - SCAVENGER-IN",
+      "description": "C9500 Server Access - Special Use - ACL-Allowed / QoS ACL - SCAVENGER-IN",
+      "severity": "INFO",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "ip access-list extended SCAVENGER-IN"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "ACL-Allowed / QoS ACL - VIDEO-IN",
+      "description": "C9500 Server Access - Special Use - ACL-Allowed / QoS ACL - VIDEO-IN",
+      "severity": "INFO",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "ip access-list extended VIDEO-IN"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "ACL-Allowed / QoS ACL - VOICE-IN",
+      "description": "C9500 Server Access - Special Use - ACL-Allowed / QoS ACL - VOICE-IN",
+      "severity": "INFO",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "ip access-list extended VOICE-IN"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "Access Password",
+      "description": "C9500 Server Access - Special Use - Access Password",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "service password-encryption"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "enable secret 5 $1$bq8w$.rPsspF42tw8/rrOVDHn./"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "no username cisco"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "username oops privilege 15 secret 5 $1$uyuE$MwS/Sp0BZXbJ11cXS0/GN0"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "Banner Motd",
+      "description": "C9500 Server Access - Special Use - Banner Motd",
+      "severity": "INFO",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "========================================="
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "YOU ARE ACCESSING A MONITORED RESOURCE"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "WITHIN THE KAISER PERMANENTE NETWORK."
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "ANY UNAUTHORIZED USE OF THIS RESOURCE"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "WILL RESULT IN PROSECUTION TO THE FULLEST"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "EXTENT OF FEDERAL and/or STATE LAW."
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "========================================="
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "Boot System",
+      "description": "C9500 Server Access - Special Use - Boot System",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "boot system switch all flash:packages.conf"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "DNS",
+      "description": "C9500 Server Access - Special Use - DNS",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "no ip domain lookup"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "ip domain name ntwk.kp.org"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "Errdisable",
+      "description": "C9500 Server Access - Special Use - Errdisable",
+      "severity": "INFO",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "errdisable recovery cause udld"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "errdisable recovery cause link-flap"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "errdisable recovery interval 30"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "File Transfer Server",
+      "description": "C9500 Server Access - Special Use - File Transfer Server",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "no ip tftp source-interface GigabitEthernet0/0"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "no ip ftp source-interface GigabitEthernet0/0"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "Global",
+      "description": "C9500 Server Access - Special Use - Global",
+      "severity": "INFO",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "no login on-success log"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "mac address-table notification mac-move"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "HTTP",
+      "description": "C9500 Server Access - Special Use - HTTP",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "no ip http server"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "no ip http authentication local"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "no ip http secure-server"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "no ip http client source-interface GigabitEthernet0/0"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "Info ACL - Requirement",
+      "description": "C9500 Server Access - Special Use - Info ACL - Requirement",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark DEVICE TIER Access"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^remark\\ DEVICE\\ ROLE\\ .*$"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit ip any any"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "Interface - uplink",
+      "description": "C9500 Server Access - Special Use - Interface - uplink",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^description\\ SU10\\ .*\\ .*.*$"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^description\\ SU10\\ .*\\ .*.*$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "Interface - uplink not allowed",
+      "description": "C9500 Server Access - Special Use - Interface - uplink not allowed",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "shutdown"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "shutdown"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "shutdown"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "shutdown"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "shutdown"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "shutdown"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "shutdown"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "shutdown"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "shutdown"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "shutdown"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "shutdown"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "shutdown"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "Interface Mgmt-vrf",
+      "description": "C9500 Server Access - Special Use - Interface Mgmt-vrf",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "interface GigabitEthernet0/0"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "vrf forwarding Mgmt-vrf"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "no ip address"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "shutdown"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "speed 1000"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "negotiation auto"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "LLDP",
+      "description": "C9500 Server Access - Special Use - LLDP",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "lldp run"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "Lines",
+      "description": "C9500 Server Access - Special Use - Lines",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "line con 0"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "session-timeout 15"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "exec-timeout 15 0"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "password 7 10450810161200"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "logging synchronous"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "stopbits 1"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "line vty 0 4"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "session-timeout 15"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "exec-timeout 15 0"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "password 7 10450810161200"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "login local"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "transport input ssh"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "session-timeout 15"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "exec-timeout 15 0"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "password 7 10450810161200"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "login local"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "transport input ssh"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "LogLogic-[Region] (IOS)",
+      "description": "C9500 Server Access - Special Use - LogLogic-[Region] (IOS)",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^logging\\ host\\ .*$"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^logging\\ host\\ .*$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "Logging",
+      "description": "C9500 Server Access - Special Use - Logging",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "logging discriminator SYSLOG mnemonics drops DUP_TIMER|RANDOM|RESPONSE_DELAYED"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "logging buffered discriminator SYSLOG 51200 informational"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "no logging console"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "logging monitor discriminator SYSLOG"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "logging trap informational"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^logging\\ source\\-interface\\ Vlan.*$"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "logging trap informational"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "logging source-interface Loopback0"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "QoS ACL - BULK-DATA-IN",
+      "description": "C9500 Server Access - Special Use - QoS ACL - BULK-DATA-IN",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---FTP---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any eq ftp any"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any any eq ftp"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any eq ftp-data any"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any any eq ftp-data"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---Tanium---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any eq 17472 any"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any any eq 17472"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---DICOM---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any eq 104 any"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any any eq 104"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any eq 105 any"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any any eq 105"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any eq 12000 any"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any any eq 12000"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any eq 12100 any"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any any eq 12100"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---NETBIOS---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any eq 139 any"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any any eq 139"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---SMB---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any eq 445 any"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any any eq 445"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---RPC---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any eq 1025 any"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any any eq 1025"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---Phillips Imaging (PACS)---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any any eq 6464"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any eq 6464 any"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---Tivoli---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any eq 1500 any"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any any eq 1500"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---sFTP transfers---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp 10.0.0.0 0.255.255.255 eq 22 10.0.0.0 0.255.255.255"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp 10.0.0.0 0.255.255.255 10.0.0.0 0.255.255.255 eq 22"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp 10.0.0.0 0.255.255.255 eq 22 172.16.0.0 0.15.255.255"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp 10.0.0.0 0.255.255.255 172.16.0.0 0.15.255.255 eq 22"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "QoS ACL - CALL-SIGNALING-IN",
+      "description": "C9500 Server Access - Special Use - QoS ACL - CALL-SIGNALING-IN",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---SCCP---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any any range 2000 2002"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---SIP---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any range 5060 5061 any"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any any range 5060 5061"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any range 5060 5061 any"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any any range 5060 5061"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---Tanberg Legacy Video Signaling---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any any range 5555 5574"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---Gatekeeper RAS Corona---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any host 10.210.1.210 range 1719 1721"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any host 10.210.1.210 range 1719 1721"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---Gatekeeper RAS Napa---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any host 10.233.15.210 range 1719 1721"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any host 10.233.15.210 range 1719 1721"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---TCP VoIP Encryption Signaling PCI"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any host 162.119.148.20 eq 443"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any host 162.119.196.20 eq 443"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any 10.10.0.0 0.0.15.255 eq 443"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "QoS ACL - CRITICAL-DATA-IN",
+      "description": "C9500 Server Access - Special Use - QoS ACL - CRITICAL-DATA-IN",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---Telnet---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any eq telnet any"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any any eq telnet"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---SSH---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any 192.168.0.0 0.0.255.255 eq 22"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp 192.168.0.0 0.0.255.255 eq 22 any"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---Verizon Agent Desktop (VAD) Screen Pop---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any 172.20.74.0 0.0.0.255 range 4000 4002"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any 172.18.58.0 0.0.0.255 range 4000 4002"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---Citrix---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any 172.16.0.0 0.15.255.255 eq 1494"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any 172.16.0.0 0.15.255.255 eq 2598"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any 172.16.0.0 0.15.255.255 eq 1494"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any 172.16.0.0 0.15.255.255 eq 2598"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---OPDR---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any host 172.18.207.241 eq 443"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any host 172.20.129.190 eq 443"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any host 172.27.198.67 eq 443"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit tcp any host 172.30.216.132 eq 443"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "QoS ACL - SCAVENGER-IN",
+      "description": "C9500 Server Access - Special Use - QoS ACL - SCAVENGER-IN",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---Non-Business---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit gre any 10.0.40.48 0.0.0.15"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit gre any 10.0.40.112 0.0.0.15"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit gre any 10.0.40.176 0.0.0.15"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit 97 any 10.0.40.48 0.0.0.15"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit 97 any 10.0.40.112 0.0.0.15"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit 97 any 10.0.40.176 0.0.0.15"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "QoS ACL - VIDEO-IN",
+      "description": "C9500 Server Access - Special Use - QoS ACL - VIDEO-IN",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---Interactive Video Bearer---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any host 172.30.196.56"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any host 172.22.111.41"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any host 172.22.111.42"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any host 172.30.195.81"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any host 172.30.195.82"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any host 172.18.26.88"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any host 172.18.26.87"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any host 172.18.26.171"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any host 10.153.45.215"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any host 10.153.45.216"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any any range 2326 2485"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---Skype Video---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any range 50020 50039 any range 50000 59999"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any range 50020 50039 any range 3478 3481"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "QoS ACL - VOICE-IN",
+      "description": "C9500 Server Access - Special Use - QoS ACL - VOICE-IN",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---VoIP Bearer---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any range 16384 32767 any range 16384 32767"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---Skype Voice---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any range 50000 50019 any range 50000 59999"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any range 50000 50019 any range 3478 3481"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---NICE call recording to Irvine---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any 172.20.72.0 0.0.0.255 range 42000 44000"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any 172.20.74.0 0.0.1.255 range 42000 44000"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any 172.20.76.0 0.0.0.255 range 42000 44000"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---NICE call recording to Napa---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any 172.18.56.0 0.0.0.255 range 42000 44000"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any 172.18.58.0 0.0.1.255 range 42000 44000"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any 172.18.60.0 0.0.0.255 range 42000 44000"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---NICE call recording to Corona---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any 172.20.160.0 0.0.0.255 range 42000 44000"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any 172.22.160.0 0.0.0.255 range 42000 44000"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "remark ---UDP VoIP Encryption Media PCI---"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any host 162.119.148.20 eq 443"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any host 162.119.196.20 eq 443"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "permit udp any 10.10.0.0 0.0.15.255 eq 443"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "SNMP-HPNA",
+      "description": "C9500 Server Access - Special Use - SNMP-HPNA",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "ip access-list standard 48"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "SNMP-NOC",
+      "description": "C9500 Server Access - Special Use - SNMP-NOC",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "ip access-list standard 54"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "SNMP-Verizon",
+      "description": "C9500 Server Access - Special Use - SNMP-Verizon",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "ip access-list standard 56"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "SSH",
+      "description": "C9500 Server Access - Special Use - SSH",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "ip tcp synwait-time 5"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "ip ssh time-out 30"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "ip ssh authentication-retries 2"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "ip ssh version 2"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "STP",
+      "description": "C9500 Server Access - Special Use - STP",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "udld aggressive"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "SVI",
+      "description": "C9500 Server Access - Special Use - SVI",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "interface Vlan1"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "no ip address"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "shutdown"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^description\\ \\ Management\\ Vlan\\ .*$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "Services",
+      "description": "C9500 Server Access - Special Use - Services",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "service tcp-keepalives-in"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "service tcp-keepalives-out"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "service timestamps debug datetime msec localtime show-timezone"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "service timestamps log datetime msec localtime show-timezone"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "TACACS",
+      "description": "C9500 Server Access - Special Use - TACACS",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ip\\ tacacs\\ source\\-interface\\ Vlan.*$"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "tacacs-server timeout 7"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "tacacs-server directed-request"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "aaa new-model"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "VLAN - Allowed Names / VLAN - Native",
+      "description": "C9500 Server Access - Special Use - VLAN - Allowed Names / VLAN - Native",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "name Native_Vlan"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "VLAN - Mgmt",
+      "description": "C9500 Server Access - Special Use - VLAN - Mgmt",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^name\\ LAN\\-Mgmt_.*.*$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "VTP",
+      "description": "C9500 Server Access - Special Use - VTP",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "vtp domain KPNET"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "vtp mode off"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "[Region] IOS TACACS Servers / TACACS",
+      "description": "C9500 Server Access - Special Use - [Region] IOS TACACS Servers / TACACS",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^address\\ ipv4\\ .*$"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "key 7 070B2B454000485744"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^tacacs\\ server\\ .*$"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^address\\ ipv4\\ .*$"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "key 7 070B2B454000485744"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^tacacs\\ server\\ .*$"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^address\\ ipv4\\ .*$"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain",
+            "value": [
+              "key 7 070B2B454000485744"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    },
+    {
+      "name": "[Region] Region NameServer",
+      "description": "C9500 Server Access - Special Use - [Region] Region NameServer",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ip\\ name\\-server\\ {{device.dnsServer1}}\\ {{device.dnsServer2}}$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all",
+      "conceptItemId": null
+    }
+  ],
+  "runLevel": "auditRunLevel1"
+}
