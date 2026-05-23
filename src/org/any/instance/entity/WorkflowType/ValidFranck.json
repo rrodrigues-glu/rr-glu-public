@@ -1,0 +1,117 @@
+{
+    "name": "ValidFranck",
+    "actionAuth": "Level1",
+    "description": "Try to do an IF comparing \"Assembly1\" to \"TargetAssembly1\"\n==> even if the 2 match the \"IF\" is not matching and the ELSE is executed <==",
+    "bpmnJSON": {
+        "name": "ValidFranck",
+        "elements": [
+            {
+                "id": "start",
+                "type": "startEvent",
+                "name": "start",
+                "fields": {
+                    "jtype": {}
+                },
+                "connectTo": "wt-535a4279-a79f-49ac-96b6-97a252f48f4e"
+            },
+            {
+                "id": "end",
+                "type": "endEvent",
+                "name": "end"
+            },
+            {
+                "id": "wt-8d8dce8e-0e37-4ac7-a4c2-88e73f148b65",
+                "type": "serviceTask",
+                "name": "setExitStatus",
+                "action": "setExitStatus",
+                "connectTo": "end",
+                "fields": {
+                    "status": "ok"
+                }
+            },
+            {
+                "id": "wt-60ff5341-9306-418c-9eb0-8e58aaec520f",
+                "type": "inclusiveGateway",
+                "name": "IF condition-1",
+                "conditions": [
+                    {
+                        "name": "Then",
+                        "expression": {
+                            "logic": "and",
+                            "filters": [
+                                {
+                                    "field": {
+                                        "@ref": "/org/instance/entity/CustomFields/Assembly1@String"
+                                    },
+                                    "operator": "equal",
+                                    "value": "{{ device.Assembly2 }}",
+                                    "variableId": null
+                                }
+                            ]
+                        },
+                        "connectTo": "wt-a4b55120-05ea-4b51-87de-fff479de202a"
+                    },
+                    {
+                        "name": "Else",
+                        "expression": "ELSE",
+                        "connectTo": "wt-224a2a22-c3e9-4a2b-9392-b4d8ae4a18df"
+                    }
+                ]
+            },
+            {
+                "id": "wt-fa0e2c81-afb8-4994-aa24-041f5461e02c",
+                "type": "inclusiveGateway",
+                "connectTo": "wt-8d8dce8e-0e37-4ac7-a4c2-88e73f148b65",
+                "connectionGroupId": "wt-60ff5341-9306-418c-9eb0-8e58aaec520f"
+            },
+            {
+                "id": "wt-a4b55120-05ea-4b51-87de-fff479de202a",
+                "type": "serviceTask",
+                "action": "notificationViaEmail",
+                "name": "Send email",
+                "pack": "notification",
+                "displayName": "Send email",
+                "uniqueName": "notification_notificationViaEmail-0",
+                "connectTo": "wt-fa0e2c81-afb8-4994-aa24-041f5461e02c",
+                "fields": {
+                    "title": "Pass",
+                    "notifyJobRunner": true,
+                    "otherRecipients": [],
+                    "perTargetMessage": true,
+                    "notifyRoles": [],
+                    "message": "{{ device.Assembly1 }}"
+                }
+            },
+            {
+                "id": "wt-224a2a22-c3e9-4a2b-9392-b4d8ae4a18df",
+                "type": "serviceTask",
+                "action": "notificationViaEmail",
+                "name": "Send email",
+                "pack": "notification",
+                "displayName": "Send email - 1",
+                "uniqueName": "notification_notificationViaEmail-1",
+                "connectTo": "wt-fa0e2c81-afb8-4994-aa24-041f5461e02c",
+                "fields": {
+                    "title": "Fail",
+                    "notifyJobRunner": true,
+                    "otherRecipients": [],
+                    "perTargetMessage": true,
+                    "notifyRoles": [],
+                    "message": "{{ device.Assembly1 }}"
+                }
+            },
+            {
+                "id": "wt-535a4279-a79f-49ac-96b6-97a252f48f4e",
+                "type": "serviceTask",
+                "action": "selectDevices",
+                "name": "Select targets",
+                "pack": "deviceManager",
+                "uniqueName": "deviceManager_selectDevices-0",
+                "connectTo": "wt-60ff5341-9306-418c-9eb0-8e58aaec520f"
+            }
+        ]
+    },
+    "variables": [],
+    "references": [],
+    "isCommitted": false
+}
