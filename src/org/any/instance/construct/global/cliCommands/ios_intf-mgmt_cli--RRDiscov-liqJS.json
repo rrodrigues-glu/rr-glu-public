@@ -4,7 +4,7 @@
     },
     "cliCommands": [
         "interface $context.portMap[*].name",
-        " description {{device.hardware.serialNumber}}",
+        " description {{device.Assembly1}}",
         "!"
     ],
     "advanced": {

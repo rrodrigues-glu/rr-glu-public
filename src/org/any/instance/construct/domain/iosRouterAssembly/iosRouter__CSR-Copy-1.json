@@ -1,9 +1,9 @@
 {
     "domains": {
         "modules": {
-            "ntp": {
+            "interface": {
                 "policy": {
-                    "@ref": "/org/instance/construct/feature/ntp/ios_ntp-Merck-Romario.json"
+                    "@ref": "/org/instance/construct/feature/interface/ios_interface-Copy-1.json"
                 }
             }
         }

@@ -12,7 +12,7 @@
                 "fields": {
                     "jtype": {}
                 },
-                "connectTo": "wt-535a4279-a79f-49ac-96b6-97a252f48f4e"
+                "connectTo": "wt-60ff5341-9306-418c-9eb0-8e58aaec520f"
             },
             {
                 "id": "end",
@@ -44,7 +44,7 @@
                                         "@ref": "/org/instance/entity/CustomFields/Assembly1@String"
                                     },
                                     "operator": "equal",
-                                    "value": "{{ device.Assembly2 }}",
+                                    "value": "{{device.customFieldValues['Assembly1']}}",
                                     "variableId": null
                                 }
                             ]
@@ -79,7 +79,7 @@
                     "otherRecipients": [],
                     "perTargetMessage": true,
                     "notifyRoles": [],
-                    "message": "{{ device.Assembly1 }}"
+                    "message": "{{device.customFieldValues['Assembly1']}}\n"
                 }
             },
             {
@@ -97,21 +97,13 @@
                     "otherRecipients": [],
                     "perTargetMessage": true,
                     "notifyRoles": [],
-                    "message": "{{ device.Assembly1 }}"
+                    "message": "{{device.customFieldValues['Assembly1']}}\n\n"
                 }
-            },
-            {
-                "id": "wt-535a4279-a79f-49ac-96b6-97a252f48f4e",
-                "type": "serviceTask",
-                "action": "selectDevices",
-                "name": "Select targets",
-                "pack": "deviceManager",
-                "uniqueName": "deviceManager_selectDevices-0",
-                "connectTo": "wt-60ff5341-9306-418c-9eb0-8e58aaec520f"
             }
         ]
     },
     "variables": [],
     "references": [],
+    "lastCommitHash": "3dfc319d429363fc6f944bf3da459610a94e61f6",
     "isCommitted": false
 }
