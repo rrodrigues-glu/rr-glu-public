@@ -12,7 +12,7 @@
                 "fields": {
                     "jtype": {}
                 },
-                "connectTo": "wt-60ff5341-9306-418c-9eb0-8e58aaec520f"
+                "connectTo": "wt-1b212ca0-82d2-43d2-9a43-8fc962877d1b"
             },
             {
                 "id": "end",
@@ -44,7 +44,7 @@
                                         "@ref": "/org/instance/entity/CustomFields/Assembly1@String"
                                     },
                                     "operator": "equal",
-                                    "value": "{{device.customFieldValues['Assembly1']}}",
+                                    "value": "{{tips}}",
                                     "variableId": null
                                 }
                             ]
@@ -99,11 +99,44 @@
                     "notifyRoles": [],
                     "message": "{{device.customFieldValues['Assembly1']}}\n\n"
                 }
+            },
+            {
+                "id": "wt-1b212ca0-82d2-43d2-9a43-8fc962877d1b",
+                "type": "serviceTask",
+                "action": "changeDeviceInfo",
+                "name": "Change device details",
+                "pack": "deviceManager",
+                "displayName": "Change device details",
+                "uniqueName": "deviceManager_changeDeviceInfo-0",
+                "connectTo": "wt-60ff5341-9306-418c-9eb0-8e58aaec520f",
+                "fields": {
+                    "deviceProperties": {
+                        "properties": [
+                            "CUSTOM_FIELDS"
+                        ],
+                        "connectionInformation": {},
+                        "customFieldValues": {
+                            "inherited": [],
+                            "/org/instance/entity/CustomFields/Assembly1@String": "{{device.customFieldValues.Assembly2}}"
+                        },
+                        "edpValues": []
+                    }
+                }
             }
         ]
     },
-    "variables": [],
+    "variables": [
+        {
+            "id": "45d5cd9d-9742-4b5f-a116-74bc41956e3d",
+            "dataType": "string",
+            "name": "tips",
+            "value": "{{ device.customFieldValues.TargetAssembly1 }}",
+            "tasks": {
+                "undefined": "{{ device.customFieldValues.TargetAssembly1 }}"
+            }
+        }
+    ],
     "references": [],
-    "lastCommitHash": "3dfc319d429363fc6f944bf3da459610a94e61f6",
+    "lastCommitHash": "b06aa110c2d6d8b8fdae6b8db186a7e9fb9b24c6",
     "isCommitted": false
 }
