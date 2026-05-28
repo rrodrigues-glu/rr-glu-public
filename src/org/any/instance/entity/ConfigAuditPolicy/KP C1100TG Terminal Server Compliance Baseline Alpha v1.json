@@ -1,0 +1,3614 @@
+{
+  "tid": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+  "id": "78af7ae7-6c5d-45e8-b9be-5d76a02a2b0c",
+  "createdOn": 1779879852267,
+  "createdBy": "admin",
+  "createdIp": "172.16.0.57",
+  "updatedOn": 1779879852267,
+  "updatedBy": "admin",
+  "updatedIp": "172.16.0.57",
+  "description": "Compliance audit for KP Cisco C1100TG Alpha v1",
+  "name": "KP C1100TG Terminal Server Compliance Baseline Alpha v1",
+  "permissionLevel": "auditManageLevel1",
+  "rules": [
+    {
+      "name": "AAA-tacacs-server",
+      "description": "AAA (line 1)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^tacacs server {{device.tacacsServer1Name}}$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "AAA-aaa-authentication-login-default-group-tacacs",
+      "description": "AAA (line 2)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^aaa authentication login default group tacacs\\+ local$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "AAA-aaa-authentication-enable-default-group-tacacs",
+      "description": "AAA (line 3)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^aaa authentication enable default group tacacs\\+ enable$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "AAA-aaa-accounting-exec-default-start-stop-group",
+      "description": "AAA (line 4)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^aaa accounting exec default start-stop group tacacs\\+$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "AAA-aaa-accounting-commands-1-default-start-stop-or-aaa-accounting-commands-15",
+      "description": "AAA (line 5)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "condition": "OR",
+            "rules": [
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^aaa accounting commands 1 default start-stop group tacacs\\+$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^aaa accounting commands 15 default start-stop group tacacs\\+$"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "AAA-aaa-accounting-system-default-start-stop-group",
+      "description": "AAA (line 6)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^aaa accounting system default start-stop group tacacs\\+$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "AAA-aaa-authorization-exec-default-group-tacacs",
+      "description": "AAA (line 7)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^aaa authorization exec default group tacacs\\+( local)? if-authenticated"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "AAA-aaa-authorization-commands-1-default-group-or-aaa-authorization-commands-15",
+      "description": "AAA (line 8)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "condition": "OR",
+            "rules": [
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^aaa authorization commands 1 default group tacacs\\+( local)? if-authenticated"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^aaa authorization commands 15 default group tacacs\\+( local)? if-authenticated"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "AAA-aaa-authorization-config-commands",
+      "description": "AAA (line 9)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^aaa authorization config-commands$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Access-Passwords-no-username-cisco",
+      "description": "Access Passwords (line 1)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "^username cisco "
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Access-Passwords-username-oops-privilege-15-secret",
+      "description": "Access Passwords (line 2)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^username oops privilege 15 secret \\d+ \\S+$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "ACL-Allowed-ip-ssh-time-out-30",
+      "description": "ACL-Allowed (line 1)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ip ssh time-out 30$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "ACL-Allowed-ip-access-list-extended-BULK-DATA-IN-or-6-more",
+      "description": "ACL-Allowed (line 2)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "condition": "OR",
+            "rules": [
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^ip access-list extended BULK-DATA-IN$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^ip access-list extended CALL-SIGNALING-IN$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^ip access-list extended CRITICAL-DATA-IN$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^ip access-list extended INFORMATION$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^ip access-list extended SCAVENGER-IN$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^ip access-list extended VIDEO-IN$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^ip access-list extended VOICE-IN$"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Banner-Motd-equals-41",
+      "description": "Banner Motd (line 1)",
+      "severity": "INFO",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER Access)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^=========================================$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Banner-Motd-YOU-ARE-ACCESSING-A-MONITORED-RESOURCE",
+      "description": "Banner Motd (line 2)",
+      "severity": "INFO",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER Access)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^YOU ARE ACCESSING A MONITORED RESOURCE$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Banner-Motd-WITHIN-THE-KAISER-PERMANENTE-NETWORK",
+      "description": "Banner Motd (line 3)",
+      "severity": "INFO",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER Access)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^WITHIN THE KAISER PERMANENTE NETWORK\\.$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Banner-Motd-ANY-UNAUTHORIZED-USE-OF-THIS-RESOURCE",
+      "description": "Banner Motd (line 4)",
+      "severity": "INFO",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER Access)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ANY UNAUTHORIZED USE OF THIS RESOURCE$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Banner-Motd-WILL-RESULT-IN-PROSECUTION-TO-THE",
+      "description": "Banner Motd (line 5)",
+      "severity": "INFO",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER Access)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^WILL RESULT IN PROSECUTION TO THE FULLEST$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Banner-Motd-EXTENT-OF-FEDERAL-and-or-STATE",
+      "description": "Banner Motd (line 6)",
+      "severity": "INFO",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER Access)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^EXTENT OF FEDERAL and/or STATE LAW\\.$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "DNS-ip-domain-lookup",
+      "description": "DNS (line 1)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "^no ip domain lookup$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "DNS-ip-domain-name-ntwk-kp-org",
+      "description": "DNS (line 2)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ip domain name ntwk\\.kp\\.org$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "File-Transfer-Server-no-ip-tftp-source-interface-GigabitEthernet0-0",
+      "description": "File Transfer Server (line 1)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "^ip tftp source-interface .+$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "File-Transfer-Server-no-ip-ftp-source-interface-GigabitEthernet0-0",
+      "description": "File Transfer Server (line 2)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "^ip ftp source-interface .+$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Fwd-Protocol-no-ip-forward-protocol-nd-or-7-more",
+      "description": "Fwd-Protocol (line 1)",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "^ip forward-protocol nd$",
+              "^ip forward-protocol udp domain$",
+              "^ip forward-protocol udp nameserver$",
+              "^ip forward-protocol udp netbios-dgm$",
+              "^ip forward-protocol udp netbios-ns$",
+              "^ip forward-protocol udp tacacs$",
+              "^ip forward-protocol udp tftp$",
+              "^ip forward-protocol udp time$"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER CollapsedCore)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Global-no-ip-source-route",
+      "description": "Global (line 2)",
+      "severity": "INFO",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "condition": "OR",
+            "rules": [
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^no ip source-route$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_not_contain_regex",
+                "value": [
+                  "^ip source-route$"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "HTTP-no-ip-http-authentication-local-or-3-more",
+      "description": "HTTP (line 1)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "condition": "OR",
+            "rules": [
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^no ip http authentication local$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^no ip http client source-interface GigabitEthernet0/0$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^no ip http secure-server$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^no ip http server$"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Info-ACL-Requirement",
+      "description": "Info ACL INFORMATION body (section-extracted, multi-tier)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": true,
+      "startRegex": "^ip access-list extended INFORMATION$",
+      "endRegex": "^(!|ip access-list)",
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN_ELSE",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER Access)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "condition": "OR",
+            "rules": [
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^(\\d+ )?remark DEVICE TIER Access$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^(\\d+ )?remark DEVICE TIER CollapsedCore$"
+                ]
+              }
+            ]
+          },
+          {
+            "condition": "OR",
+            "rules": [
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^(\\d+ )?remark DEVICE ROLE Data$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^(\\d+ )?remark DEVICE ROLE Primary$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^(\\d+ )?remark DEVICE ROLE Secondary$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^(\\d+ )?remark DEVICE ROLE Server$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^(\\d+ )?remark DEVICE ROLE Standard$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^(\\d+ )?remark DEVICE ROLE Voice Server$"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^(\\d+ )?permit ip any any$"
+            ]
+          }
+        ]
+      },
+      "elseExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "condition": "OR",
+            "rules": [
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^(\\d+ )?remark DEVICE TIER Access$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^(\\d+ )?remark DEVICE TIER CollapsedCore$"
+                ]
+              }
+            ]
+          },
+          {
+            "condition": "OR",
+            "rules": [
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^(\\d+ )?remark DEVICE ROLE Data$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^(\\d+ )?remark DEVICE ROLE Primary$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^(\\d+ )?remark DEVICE ROLE Secondary$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^(\\d+ )?remark DEVICE ROLE Server$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^(\\d+ )?remark DEVICE ROLE Standard$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^(\\d+ )?remark DEVICE ROLE Voice Server$"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^(\\d+ )?permit ip any any$"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^(\\d+ )?remark SITE SIZE Small$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Interface-Mgmt-vrf-interface-GigabitEthernet0-0",
+      "description": "Interface Mgmt-vrf (line 1)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^interface GigabitEthernet0/0$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Interface-Mgmt-vrf-vrf-forwarding-Mgmt-vrf",
+      "description": "Interface Mgmt-vrf (line 2)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER CollapsedCore)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ vrf forwarding Mgmt-vrf$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Interface-Mgmt-vrf-no-ip-address",
+      "description": "Interface Mgmt-vrf (line 3)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER CollapsedCore)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ no ip address$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Interface-Mgmt-vrf-shutdown",
+      "description": "Interface Mgmt-vrf (line 4)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER CollapsedCore)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ shutdown$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Interface-Mgmt-vrf-speed-1000",
+      "description": "Interface Mgmt-vrf (line 5)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER CollapsedCore)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ speed 1000$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Interface-Mgmt-vrf-negotiation-auto",
+      "description": "Interface Mgmt-vrf (line 6)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER CollapsedCore)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ negotiation auto$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Interface-uplink-not-allowed-shutdown",
+      "description": "Interface - uplink not allowed (line 1)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ shutdown$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Line-Console",
+      "description": "Line Console — line con 0 (section-extracted)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": true,
+      "startRegex": "^line con 0$",
+      "endRegex": "^(!|line)",
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER Access)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^(\\d+ )?session-timeout 15$"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^(\\d+ )?exec-timeout 15 0$"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^(\\d+ )?password \\d+ \\S+$"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^(\\d+ )?logging synchronous$"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^(\\d+ )?stopbits 1$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Line-VTY",
+      "description": "Line VTY — line vty 0 4 (section-extracted)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": true,
+      "startRegex": "^line vty 0 4$",
+      "endRegex": "^(!|line)",
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER Access)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^(\\d+ )?session-timeout 15$"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^(\\d+ )?exec-timeout 15 0$"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^(\\d+ )?password \\d+ \\S+$"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "^login( local)?$"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^(\\d+ )?transport input ssh$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Logging-logging-discriminator-SYSLOG-mnemonics-drops-DUP",
+      "description": "Logging (line 1)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER Access)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^logging discriminator SYSLOG mnemonics drops DUP_TIMER\\|RANDOM\\|RESPONSE_DELAYED"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Logging-logging-buffered-discriminator-SYSLOG-51200-informational",
+      "description": "Logging (line 2)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER Access)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^logging buffered discriminator SYSLOG 51200 informational$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Logging-no-logging-console",
+      "description": "Logging (line 3)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER Access)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^no logging console$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Logging-logging-monitor-discriminator-SYSLOG",
+      "description": "Logging (line 4)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER Access)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^logging monitor discriminator SYSLOG$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Logging-logging-trap-informational",
+      "description": "Logging (line 5)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_not_contain_regex",
+            "value": [
+              "^logging trap .+$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "LogLogic-Region-IOS-logging",
+      "description": "LogLogic-[Region] (IOS) (line 1)",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER Access)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^logging {{device.syslogServer1}}$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "LogLogic-Region-IOS-logging-host",
+      "description": "LogLogic-[Region] (IOS) (line 2)",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER CollapsedCore)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^logging host {{device.syslogServer1}}$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Region-IOS-TACACS-Servers-address-ipv4-or-2-more",
+      "description": "[Region] IOS TACACS Servers (line 1)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "condition": "OR",
+            "rules": [
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^ address ipv4 {{device.tacacsServer1Ip}}$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^ address ipv4 {{device.tacacsServer2Ip}}$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^ address ipv4 {{device.tacacsServer3Ip}}$"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Region-IOS-TACACS-Servers-key",
+      "description": "[Region] IOS TACACS Servers (line 2)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ key \\d+ \\S+$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Region-IOS-TACACS-Servers-tacacs-server-or-tacacs-server",
+      "description": "[Region] IOS TACACS Servers (line 3)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "condition": "OR",
+            "rules": [
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^tacacs server {{device.tacacsServer2Name}}$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^tacacs server {{device.tacacsServer3Name}}$"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Region-Region-NameServer-ip-name-server-or-ip-name-server",
+      "description": "[Region] Region NameServer (line 1)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "condition": "OR",
+            "rules": [
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^ip name-server {{device.dnsServer1}} {{device.dnsServer2}}$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^ip name-server {{device.dnsServer1}} {{device.dnsServer2}}$"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Services-service-tcp-keepalives-in",
+      "description": "Services (line 1)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER Access)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^service tcp-keepalives-in$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Services-service-tcp-keepalives-out",
+      "description": "Services (line 2)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER Access)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^service tcp-keepalives-out$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Services-service-timestamps-debug-datetime-msec-localtime",
+      "description": "Services (line 3)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER Access)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^service timestamps debug datetime msec localtime show-timezone$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Services-service-timestamps-log-datetime-msec-localtime",
+      "description": "Services (line 4)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "IF_THEN",
+      "ifExpression": {
+        "$and": [
+          {
+            "latestConfig": {
+              "$regex": "(((remark DEVICE TIER Access)))",
+              "$options": "mi"
+            }
+          }
+        ]
+      },
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^service timestamps log datetime msec localtime show-timezone$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "SNMP-CounterAct-ip-ssh-time-out-30",
+      "description": "SNMP-CounterAct (line 1)",
+      "severity": "INFO",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ip ssh time-out 30$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "SNMP-CounterAct-ip-ssh-authentication-retries-2",
+      "description": "SNMP-CounterAct (line 2)",
+      "severity": "INFO",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ip ssh authentication-retries 2$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "SNMP-CounterAct-ip-ssh-version-2",
+      "description": "SNMP-CounterAct (line 3)",
+      "severity": "INFO",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "condition": "OR",
+            "rules": [
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^ip ssh version 2$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_not_contain_regex",
+                "value": [
+                  "^ip ssh version 1$"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "SNMP-NOC-ip-access-list-standard-54",
+      "description": "SNMP-NOC (line 1)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ip access-list standard 54$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "SSH-ip-tcp-synwait-time-5",
+      "description": "SSH (line 1)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ip tcp synwait-time 5$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "TACACS-tacacs-server-timeout-7",
+      "description": "TACACS (line 2)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^tacacs-server timeout 7$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "TACACS-tacacs-server-directed-request",
+      "description": "TACACS (line 3)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^tacacs-server directed-request$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "TACACS-aaa-new-model",
+      "description": "TACACS (line 4)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^aaa new-model$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "TACACS-address-ipv4-or-2-more",
+      "description": "TACACS (line 5)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "condition": "OR",
+            "rules": [
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^ address ipv4 {{device.tacacsServer1Ip}}$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^ address ipv4 {{device.tacacsServer2Ip}}$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^ address ipv4 {{device.tacacsServer3Ip}}$"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "TACACS-key",
+      "description": "TACACS (line 6)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ key \\d+ \\S+$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "TACACS-tacacs-server-or-tacacs-server",
+      "description": "TACACS (line 7)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "condition": "OR",
+            "rules": [
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^tacacs server {{device.tacacsServer2Name}}$"
+                ]
+              },
+              {
+                "id": "latestConfig",
+                "field": "latestConfig",
+                "type": "string",
+                "input": "textarea",
+                "operator": "must_contain_regex",
+                "value": [
+                  "^tacacs server {{device.tacacsServer3Name}}$"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Extra-service-tcp-keepalives-in",
+      "description": "service tcp-keepalives-in must be configured",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^service tcp-keepalives-in$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Extra-service-tcp-keepalives-out",
+      "description": "service tcp-keepalives-out must be configured",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^service tcp-keepalives-out$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Extra-service-timestamps-debug",
+      "description": "service timestamps debug datetime msec localtime show-timezone",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^service timestamps debug datetime msec localtime show-timezone$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Extra-service-timestamps-log",
+      "description": "service timestamps log datetime msec localtime show-timezone",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^service timestamps log datetime msec localtime show-timezone$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Extra-service-password-encryption",
+      "description": "service password-encryption must be configured",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^service password-encryption$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Extra-hostname-set",
+      "description": "hostname must be configured (any non-empty value)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^hostname \\S+$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Extra-no-login-on-success-log",
+      "description": "no login on-success log must be configured",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^no login on-success log$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Extra-ip-tcp-synwait-time-5",
+      "description": "ip tcp synwait-time 5 must be configured",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ip tcp synwait-time 5$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Boot-System-bootflash-packages",
+      "description": "C1100TG boot system bootflash:packages.conf",
+      "severity": "CRITICAL",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^boot system bootflash:packages\\.conf$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Access-Passwords-service-password-encryption",
+      "description": "service password-encryption",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^service password-encryption$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Access-Passwords-enable-secret",
+      "description": "enable secret required",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^enable secret \\d+ \\S+$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Access-Passwords-username-oops",
+      "description": "username oops privilege 15 (password or secret)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^username oops privilege 15 (secret|password) \\S+"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "AAA-OBM-no-tacacs-login",
+      "description": "AAA login no_tacacs none for OBM async lines",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^aaa authentication login no_tacacs none$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Banner-Incoming-OBM",
+      "description": "Banner incoming required for OBM term server",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^banner incoming"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "NTP-authentication",
+      "description": "NTP auth configured",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ntp authenticate$"
+            ]
+          },
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ntp trusted-key 3$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "NTP-server-configured",
+      "description": "At least one NTP server configured",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ntp server \\S+ key 3$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Interface-Async-no-ip-address",
+      "description": "Async interfaces no ip address",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^interface Async"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Line-Async-no-motd-banner",
+      "description": "Async lines - no motd-banner",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ no motd-banner$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Line-Async-login-no-tacacs",
+      "description": "Async lines - login authentication no_tacacs",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ login authentication no_tacacs$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Lines-vty-transport-ssh",
+      "description": "VTY lines transport input ssh",
+      "severity": "CRITICAL",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ transport input ssh$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Lines-exec-timeout-15",
+      "description": "exec-timeout 15 0 required",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ exec-timeout 15 0$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "TACACS-source-interface-OBM",
+      "description": "ip tacacs source-interface (OBM management interface)",
+      "severity": "MAJOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ip tacacs source-interface \\S+$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "EEM-INFORMATION-applet",
+      "description": "EEM INFORMATION applet configured",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^event manager applet INFORMATION$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "EEM-DEVICE-TIER-comment",
+      "description": "EEM DEVICE TIER comment present",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^ action \\d+ comment DEVICE TIER "
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    },
+    {
+      "name": "Fwd-Protocol-nd-disabled",
+      "description": "no ip forward-protocol nd",
+      "severity": "MINOR",
+      "source": "LATEST",
+      "os": "ios",
+      "scope": "",
+      "scopeSeparateResults": false,
+      "enable": true,
+      "conceptItem": null,
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "commandSetName": "All",
+      "type": "SIMPLE",
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "^no ip forward-protocol nd$"
+            ]
+          }
+        ]
+      },
+      "commandSet": "all"
+    }
+  ],
+  "runLevel": "auditRunLevel1"
+}
