@@ -1,0 +1,48 @@
+{
+  "tid": "aa7ab8bd-870b-431f-bbb2-7dddb2919a2b",
+  "id": "66459af1-21a0-4119-bc95-880f99b3e65e",
+  "createdOn": 1779978517863,
+  "createdBy": "admin",
+  "createdIp": "172.16.0.57",
+  "updatedOn": 1779978540248,
+  "updatedBy": "admin",
+  "updatedIp": "172.16.0.57",
+  "description": "",
+  "name": "Test_SDWAN",
+  "permissionLevel": "auditManageLevel1",
+  "rules": [
+    {
+      "severity": "INFO",
+      "name": "New rule",
+      "os": "ucm",
+      "source": "LATEST",
+      "commandSet": "all",
+      "commandSetResult": {
+        "type": "basicMode"
+      },
+      "type": "SIMPLE",
+      "description": "",
+      "enable": true,
+      "scope": "",
+      "scopeSeparateResults": false,
+      "thenExpression": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "latestConfig",
+            "field": "latestConfig",
+            "type": "string",
+            "input": "textarea",
+            "operator": "must_contain_regex",
+            "value": [
+              "Test"
+            ]
+          }
+        ],
+        "valid": true
+      },
+      "conceptItemId": null
+    }
+  ],
+  "runLevel": "auditRunLevel1"
+}
