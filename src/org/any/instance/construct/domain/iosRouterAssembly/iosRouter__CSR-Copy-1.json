@@ -3,7 +3,7 @@
         "modules": {
             "interface": {
                 "policy": {
-                    "@ref": "/org/instance/construct/feature/interface/ios_interface-Copy-1.json"
+                    "@ref": "/org/instance/construct/feature/interface/ios_interface-RRDisc.json"
                 }
             }
         }

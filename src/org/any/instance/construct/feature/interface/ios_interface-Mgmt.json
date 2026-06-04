@@ -3,15 +3,15 @@
         "name": "Interface",
         "cliCommandGroups": {
             "@ref": [
-                "/org/instance/construct/global/cliCommandGroup/ios_intf-mgmt_grp--RRDiscov.json"
+                "/org/instance/construct/global/cliCommandGroup/ios_intf-mgmt_grp-Copy-1.json"
             ]
         }
     },
     "form": {
         "intf": {}
     },
-    "@id": "ff6a445b-3d72-4cb5-a7a3-731297476786",
-    "@name": "ios_interface-Copy-1",
+    "@id": "1ec00238-f2cc-45e5-b56b-3caf865816f9",
+    "@name": "ios_interface-Mgmt",
     "@description": "",
     "@type": {
         "ref": "/sys/type/construct/feature/interface.jtype"

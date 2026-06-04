@@ -1,0 +1,164 @@
+{
+    "name": "Demo01-1",
+    "actionAuth": "Level1",
+    "description": "",
+    "bpmnJSON": {
+        "name": "Demo01-1",
+        "elements": [
+            {
+                "id": "start",
+                "type": "startEvent",
+                "name": "start",
+                "fields": {
+                    "jtype": {}
+                },
+                "connectTo": "wt-cc05474c-bc48-4f3c-8917-815091c96c10"
+            },
+            {
+                "id": "end",
+                "type": "endEvent",
+                "name": "end"
+            },
+            {
+                "id": "wt-cc05474c-bc48-4f3c-8917-815091c96c10",
+                "type": "serviceTask",
+                "action": "assignAssemblyPolicy",
+                "name": "Associate an assembly with a node",
+                "pack": "configModeling",
+                "displayName": "Associate an assembly with a node - 1",
+                "uniqueName": "configModeling_assignAssemblyPolicy-1",
+                "connectTo": "wt-ce06f241-7add-4c00-8c11-91cfd1af8eb6",
+                "fields": {
+                    "assemblyPolicyAssignments": [
+                        {
+                            "nodeType": "IOS Router",
+                            "assemblyPolicyId": {
+                                "@ref": "/org/instance/construct/domain/iosRouterAssembly/iosRouter__CSR-Copy-1.json"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "wt-76c2d1e7-c5df-4f04-b141-dba7125cd580",
+                "type": "serviceTask",
+                "action": "setExitStatus",
+                "name": "setExitStatus",
+                "connectTo": "end",
+                "fields": {
+                    "status": "ok"
+                }
+            },
+            {
+                "id": "wt-ce06f241-7add-4c00-8c11-91cfd1af8eb6",
+                "type": "serviceTask",
+                "action": "configModelingPreviewDevice",
+                "name": "Preview feature",
+                "pack": "configModeling",
+                "uniqueName": "configModeling_configModelingPreviewDevice-1",
+                "connectTo": "wt-cb09f5b9-6b82-4260-9ead-b421205bde7e",
+                "displayName": "Preview feature - 1",
+                "fields": {
+                    "connected": true,
+                    "initial": false,
+                    "logComment": "",
+                    "summaryDescription": "Test",
+                    "createOutputInProcessFormat": false
+                }
+            },
+            {
+                "id": "wt-cb09f5b9-6b82-4260-9ead-b421205bde7e",
+                "type": "inclusiveGateway",
+                "name": "IF condition-1",
+                "conditions": [
+                    {
+                        "name": "Then",
+                        "expression": {
+                            "logic": "and",
+                            "filters": [
+                                {
+                                    "field": "success",
+                                    "operator": "equal",
+                                    "value": "true",
+                                    "variableId": "2679470a-2fe1-459c-8118-d0fdfed76f3e"
+                                }
+                            ]
+                        },
+                        "connectTo": "wt-95333ef9-1540-423e-a41f-f4030bb46d04"
+                    },
+                    {
+                        "name": "Else",
+                        "expression": "ELSE",
+                        "connectTo": "wt-946ccb37-1fed-4c05-94dc-6eb4c2fa4207"
+                    }
+                ]
+            },
+            {
+                "id": "wt-b06afaa7-d959-4428-bb82-b71f69d64cac",
+                "type": "inclusiveGateway",
+                "connectTo": "wt-76c2d1e7-c5df-4f04-b141-dba7125cd580",
+                "connectionGroupId": "wt-cb09f5b9-6b82-4260-9ead-b421205bde7e"
+            },
+            {
+                "id": "wt-95333ef9-1540-423e-a41f-f4030bb46d04",
+                "type": "serviceTask",
+                "action": "notificationViaEmail",
+                "name": "Send email",
+                "pack": "notification",
+                "displayName": "Send email",
+                "uniqueName": "notification_notificationViaEmail-0",
+                "connectTo": "wt-b06afaa7-d959-4428-bb82-b71f69d64cac",
+                "fields": {
+                    "title": "Pass",
+                    "notifyJobRunner": true,
+                    "otherRecipients": [],
+                    "perTargetMessage": true,
+                    "notifyRoles": []
+                }
+            },
+            {
+                "id": "wt-946ccb37-1fed-4c05-94dc-6eb4c2fa4207",
+                "type": "serviceTask",
+                "action": "notificationViaEmail",
+                "name": "Send email",
+                "pack": "notification",
+                "displayName": "Send email - 1",
+                "uniqueName": "notification_notificationViaEmail-1",
+                "connectTo": "wt-b06afaa7-d959-4428-bb82-b71f69d64cac",
+                "fields": {
+                    "title": "Fail",
+                    "notifyJobRunner": true,
+                    "otherRecipients": [],
+                    "perTargetMessage": true,
+                    "notifyRoles": []
+                }
+            }
+        ]
+    },
+    "variables": [
+        {
+            "id": "2c3b73f6-7038-4a98-b4fa-c3742a021e54",
+            "dataType": "string",
+            "name": "pre",
+            "value": "{{targetResponse}}",
+            "initialTask": "wt-ce06f241-7add-4c00-8c11-91cfd1af8eb6",
+            "tasks": {
+                "wt-ce06f241-7add-4c00-8c11-91cfd1af8eb6": "{{targetResponse}}"
+            },
+            "targetVariable": true
+        },
+        {
+            "id": "2679470a-2fe1-459c-8118-d0fdfed76f3e",
+            "dataType": "string",
+            "name": "success",
+            "value": "{{targetResponse.successful}}",
+            "initialTask": "wt-ce06f241-7add-4c00-8c11-91cfd1af8eb6",
+            "tasks": {
+                "wt-ce06f241-7add-4c00-8c11-91cfd1af8eb6": "{{targetResponse.successful}}"
+            },
+            "targetVariable": true
+        }
+    ],
+    "references": [],
+    "isCommitted": false
+}

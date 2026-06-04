@@ -87,8 +87,11 @@
                     "macAddress": "",
                     "phyMacAddress": ""
                 },
-                "description": "",
-                "phyVirt": "virtual"
+                "description": ":N1:Test",
+                "phyVirt": "virtual",
+                "configured": {
+                    "enabled": true
+                }
             },
             "Loopback44": {
                 "operational": {

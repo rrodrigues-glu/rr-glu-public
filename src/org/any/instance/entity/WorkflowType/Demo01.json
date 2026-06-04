@@ -1,0 +1,335 @@
+{
+    "name": "Demo01",
+    "actionAuth": "Level1",
+    "description": "",
+    "bpmnJSON": {
+        "name": "Demo01",
+        "elements": [
+            {
+                "id": "start",
+                "type": "startEvent",
+                "name": "start",
+                "fields": {
+                    "jtype": {}
+                },
+                "connectTo": "wt-1a3537fb-f764-48c7-b702-8e0f780a4e09"
+            },
+            {
+                "id": "end",
+                "type": "endEvent",
+                "name": "end"
+            },
+            {
+                "id": "wt-1a3537fb-f764-48c7-b702-8e0f780a4e09",
+                "type": "serviceTask",
+                "action": "filterDevices",
+                "name": "Filter targets",
+                "pack": "deviceManager",
+                "displayName": "Filter targets",
+                "uniqueName": "deviceManager_filterDevices-0",
+                "connectTo": "wt-9ca75d7a-036b-4cc4-822d-778b218756f6",
+                "fields": {
+                    "deviceFilter": {
+                        "logic": "and",
+                        "filters": [
+                            {
+                                "field": "detectedOs",
+                                "operator": "equal",
+                                "value": "IOS/IOS XE",
+                                "variableId": null
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "id": "wt-a0ac10e7-9272-4fef-967d-40cb9048ad9b",
+                "type": "serviceTask",
+                "action": "setExitStatus",
+                "name": "setExitStatus",
+                "connectTo": "end",
+                "fields": {
+                    "status": "ok"
+                }
+            },
+            {
+                "id": "wt-9ca75d7a-036b-4cc4-822d-778b218756f6",
+                "type": "serviceTask",
+                "action": "runCapture",
+                "name": "Capture configuration",
+                "pack": "configDrift",
+                "uniqueName": "configDrift_runCapture-0",
+                "connectTo": "wt-26788665-1e56-42b7-8530-98d03ecb8087"
+            },
+            {
+                "id": "wt-26788665-1e56-42b7-8530-98d03ecb8087",
+                "type": "serviceTask",
+                "action": "runCompare",
+                "name": "Compare configuration snapshots",
+                "pack": "configDrift",
+                "uniqueName": "configDrift_runCompare-0",
+                "connectTo": "wt-1ce8a899-b905-42fd-b72a-e84e0e2351e9"
+            },
+            {
+                "id": "wt-1ce8a899-b905-42fd-b72a-e84e0e2351e9",
+                "type": "inclusiveGateway",
+                "name": "IF condition-1",
+                "conditions": [
+                    {
+                        "name": "Then",
+                        "expression": {
+                            "logic": "and",
+                            "filters": [
+                                {
+                                    "field": "configDrifted",
+                                    "operator": "equal",
+                                    "value": true,
+                                    "variableId": null
+                                }
+                            ]
+                        },
+                        "connectTo": "wt-6e2ed9b0-9875-4e66-a131-b34acee1ee5e"
+                    },
+                    {
+                        "name": "Else",
+                        "expression": "ELSE",
+                        "connectTo": "wt-9662b69d-7339-479c-a733-57721e3f9d85"
+                    }
+                ]
+            },
+            {
+                "id": "wt-dbca3977-d4c5-4e42-811e-5aec94837f3f",
+                "type": "inclusiveGateway",
+                "connectTo": "wt-a0ac10e7-9272-4fef-967d-40cb9048ad9b",
+                "connectionGroupId": "wt-1ce8a899-b905-42fd-b72a-e84e0e2351e9"
+            },
+            {
+                "id": "wt-6e2ed9b0-9875-4e66-a131-b34acee1ee5e",
+                "type": "serviceTask",
+                "action": "configDriftSetDefaultSnapshot",
+                "name": "Set default snapshot",
+                "pack": "configDrift",
+                "uniqueName": "configDrift_configDriftSetDefaultSnapshot-0",
+                "connectTo": "wt-ee8dd107-8ae4-4ae4-8e14-1c8d3ae2f616"
+            },
+            {
+                "id": "wt-1d5003ac-15ed-4ed8-8277-cd0007333294",
+                "name": "wt-1d5003ac-15ed-4ed8-8277-cd0007333294",
+                "type": "endEvent",
+                "connectionGroupId": "wt-1ce8a899-b905-42fd-b72a-e84e0e2351e9"
+            },
+            {
+                "id": "wt-3920be41-c8c9-4e08-b38a-bc9a01b66519",
+                "type": "serviceTask",
+                "action": "setExitStatus",
+                "name": "setExitStatus",
+                "connectTo": "wt-1d5003ac-15ed-4ed8-8277-cd0007333294",
+                "fields": {
+                    "status": "ok"
+                }
+            },
+            {
+                "id": "wt-9662b69d-7339-479c-a733-57721e3f9d85",
+                "type": "serviceTask",
+                "action": "notificationViaEmail",
+                "name": "Send email",
+                "pack": "notification",
+                "displayName": "Send email",
+                "uniqueName": "notification_notificationViaEmail-0",
+                "connectTo": "wt-3920be41-c8c9-4e08-b38a-bc9a01b66519",
+                "fields": {
+                    "title": "No Drift",
+                    "notifyJobRunner": true,
+                    "otherRecipients": [],
+                    "perTargetMessage": true,
+                    "notifyRoles": [],
+                    "message": "{{device.name}}"
+                }
+            },
+            {
+                "id": "wt-c198671c-b589-4e92-a651-bd06d664002d",
+                "type": "serviceTask",
+                "action": "configModelingPreviewDevice",
+                "name": "Preview feature",
+                "pack": "configModeling",
+                "displayName": "Preview feature",
+                "uniqueName": "configModeling_configModelingPreviewDevice-0",
+                "connectTo": "wt-fb73305e-cf3a-4c40-83a0-c1615ea82f30",
+                "fields": {
+                    "connected": true,
+                    "initial": false,
+                    "logComment": "",
+                    "summaryDescription": "Interface Des",
+                    "createOutputInProcessFormat": false
+                }
+            },
+            {
+                "id": "wt-ee8dd107-8ae4-4ae4-8e14-1c8d3ae2f616",
+                "type": "serviceTask",
+                "action": "assignAssemblyPolicy",
+                "name": "Associate an assembly with a node",
+                "pack": "configModeling",
+                "displayName": "Associate an assembly with a node",
+                "uniqueName": "configModeling_assignAssemblyPolicy-0",
+                "connectTo": "wt-c198671c-b589-4e92-a651-bd06d664002d",
+                "fields": {
+                    "assemblyPolicyAssignments": [
+                        {
+                            "nodeType": "IOS Router",
+                            "assemblyPolicyId": {
+                                "@ref": "/org/instance/construct/domain/iosRouterAssembly/iosRouter__CSR-Copy-1.json"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "wt-fb73305e-cf3a-4c40-83a0-c1615ea82f30",
+                "type": "inclusiveGateway",
+                "name": "IF condition-1",
+                "conditions": [
+                    {
+                        "name": "Then",
+                        "expression": {
+                            "logic": "and",
+                            "filters": [
+                                {
+                                    "field": "success",
+                                    "operator": "equal",
+                                    "value": "true",
+                                    "variableId": "c388da24-a85b-4eb8-ab77-f8bfcdfce335"
+                                }
+                            ]
+                        },
+                        "connectTo": "wt-36117717-6523-4d53-a74a-ef133a366dd7"
+                    },
+                    {
+                        "name": "Else",
+                        "expression": "ELSE",
+                        "connectTo": "wt-cae2aa0f-99b8-4242-8c2a-6a20ca11d10a"
+                    }
+                ]
+            },
+            {
+                "id": "wt-eeb5ba13-4cb6-4711-b08b-e47d43971991",
+                "type": "inclusiveGateway",
+                "connectTo": "wt-089cf871-6062-455f-b5c1-7b985f80ae6d",
+                "connectionGroupId": "wt-fb73305e-cf3a-4c40-83a0-c1615ea82f30"
+            },
+            {
+                "id": "wt-36117717-6523-4d53-a74a-ef133a366dd7",
+                "type": "serviceTask",
+                "action": "configModelingProvisionDevice",
+                "name": "Provision device",
+                "pack": "configModeling",
+                "displayName": "Provision device",
+                "uniqueName": "configModeling_configModelingProvisionDevice-0",
+                "connectTo": "wt-eeb5ba13-4cb6-4711-b08b-e47d43971991",
+                "fields": {
+                    "logComment": "",
+                    "summaryDescription": "ChangeReqNO123"
+                }
+            },
+            {
+                "id": "wt-cae2aa0f-99b8-4242-8c2a-6a20ca11d10a",
+                "type": "serviceTask",
+                "action": "notificationViaEmail",
+                "name": "Send email",
+                "pack": "notification",
+                "displayName": "Send email - 1",
+                "uniqueName": "notification_notificationViaEmail-1",
+                "connectTo": "wt-66c79bd7-a178-467e-83e6-2ed7513d68b3",
+                "fields": {
+                    "title": "Preview Failed",
+                    "notifyJobRunner": true,
+                    "otherRecipients": [],
+                    "perTargetMessage": true,
+                    "notifyRoles": []
+                }
+            },
+            {
+                "id": "wt-833f84a6-4b07-4335-88b2-2235d8491bf4",
+                "name": "wt-833f84a6-4b07-4335-88b2-2235d8491bf4",
+                "type": "endEvent",
+                "connectionGroupId": "wt-fb73305e-cf3a-4c40-83a0-c1615ea82f30"
+            },
+            {
+                "id": "wt-66c79bd7-a178-467e-83e6-2ed7513d68b3",
+                "type": "serviceTask",
+                "action": "setExitStatus",
+                "name": "setExitStatus",
+                "connectTo": "wt-833f84a6-4b07-4335-88b2-2235d8491bf4",
+                "fields": {
+                    "status": "ok"
+                }
+            },
+            {
+                "id": "wt-089cf871-6062-455f-b5c1-7b985f80ae6d",
+                "type": "serviceTask",
+                "action": "runCapture",
+                "name": "Capture configuration",
+                "pack": "configDrift",
+                "uniqueName": "configDrift_runCapture-1",
+                "connectTo": "wt-ce226823-29e5-4660-a634-92a7d58eeca9"
+            },
+            {
+                "id": "wt-ce226823-29e5-4660-a634-92a7d58eeca9",
+                "type": "serviceTask",
+                "action": "runCompare",
+                "name": "Compare configuration snapshots",
+                "pack": "configDrift",
+                "displayName": "Compare configuration snapshots - 1",
+                "uniqueName": "configDrift_runCompare-1",
+                "connectTo": "wt-dbca3977-d4c5-4e42-811e-5aec94837f3f"
+            }
+        ]
+    },
+    "variables": [
+        {
+            "id": "8cf6c7b4-d6e2-4fb0-8dfc-34a273f05818",
+            "dataType": "string",
+            "name": "preview",
+            "value": "{{targetResponse}}",
+            "initialTask": "wt-c198671c-b589-4e92-a651-bd06d664002d",
+            "tasks": {
+                "wt-c198671c-b589-4e92-a651-bd06d664002d": "{{targetResponse}}"
+            },
+            "targetVariable": true
+        },
+        {
+            "id": "c388da24-a85b-4eb8-ab77-f8bfcdfce335",
+            "dataType": "string",
+            "name": "success",
+            "value": "{{targetResponse.successful}}",
+            "initialTask": "wt-c198671c-b589-4e92-a651-bd06d664002d",
+            "tasks": {
+                "wt-c198671c-b589-4e92-a651-bd06d664002d": "{{targetResponse.successful}}"
+            },
+            "targetVariable": true
+        },
+        {
+            "id": "a79096b3-fb18-415c-b58f-da387506ce15",
+            "dataType": "string",
+            "name": "def",
+            "value": "{{targetResponse}}",
+            "initialTask": "wt-6e2ed9b0-9875-4e66-a131-b34acee1ee5e",
+            "tasks": {
+                "wt-6e2ed9b0-9875-4e66-a131-b34acee1ee5e": "{{targetResponse}}"
+            },
+            "targetVariable": true
+        },
+        {
+            "id": "ebb58142-1c54-456a-9ce8-55959ffcf588",
+            "dataType": "string",
+            "name": "Provision",
+            "value": "{{targetResponse}}",
+            "initialTask": "wt-36117717-6523-4d53-a74a-ef133a366dd7",
+            "tasks": {
+                "wt-36117717-6523-4d53-a74a-ef133a366dd7": "{{targetResponse}}"
+            },
+            "targetVariable": true
+        }
+    ],
+    "references": [],
+    "isCommitted": false
+}

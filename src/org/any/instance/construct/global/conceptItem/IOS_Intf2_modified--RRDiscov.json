@@ -5,9 +5,11 @@
             "type": [
                 "ios"
             ],
-            "level": null
+            "level": null,
+            "note": null
         }
     },
+    "cliMode": {},
     "showCmds": [
         "sh run | sec interface"
     ],
