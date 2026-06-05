@@ -1,5 +1,5 @@
 {
-    "regEx": "GigabitEthernet2.10",
+    "regEx": ".+",
     "ignoreDelete": true,
     "cliBlocks": {
         "@ref": [

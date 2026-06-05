@@ -1,6 +1,6 @@
 {
     "item": {
-        "@ref": "/org/instance/construct/global/conceptItem/IOS_NtpAgent-RRntp.json"
+        "@ref": "/org/instance/construct/global/conceptItem/IOS_NtpAgent-Franck.json"
     },
     "cliCommands": [
         "ntp server {{device.hardware.serialNumber}}",

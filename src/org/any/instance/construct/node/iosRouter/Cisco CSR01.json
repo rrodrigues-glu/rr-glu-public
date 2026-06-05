@@ -1,18 +1,7 @@
 {
-    "options": {
-        "connectionEnabled": true,
-        "previewMode": false,
-        "forcedAttachedStorage": false
-    },
-    "wanRouter": {
-        "enabled": true
-    },
-    "site": {
-        "@ref": "/org/instance/construct/domain/location/Romualdo.json"
-    },
-    "configState": "managed",
     "entryConnection": {
         "connectionMethod": "cliConnection",
+        "terminalType": "xterm",
         "ip": "10.1.100.155",
         "credentials": {
             "@ref": "/secret/sys/credentials/deviceUserPass/admin.json"
@@ -21,13 +10,12 @@
             "@ref": null
         },
         "port": 22,
-        "type": "ssh",
-        "terminalType": "xterm",
-        "sshParam": ""
+        "sshParam": "",
+        "type": "ssh"
     },
     "associations": {
         "assembly": {
-            "@ref": "/org/instance/construct/domain/iosRouterAssembly/iosRouter__CSR-Copy-1.json"
+            "@ref": null
         },
         "provider": "local"
     },
@@ -44,6 +32,18 @@
         "type": "none"
     },
     "iosRouter": {
+        "enabled": true
+    },
+    "site": {
+        "@ref": "/org/instance/construct/domain/location/Romualdo.json"
+    },
+    "configState": "managed",
+    "options": {
+        "connectionEnabled": true,
+        "previewMode": false,
+        "forcedAttachedStorage": false
+    },
+    "wanRouter": {
         "enabled": true
     },
     "@id": "8cda406d-36d3-4b3a-9753-9acde72f66c0",

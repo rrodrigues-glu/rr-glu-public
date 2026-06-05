@@ -5,6 +5,11 @@
                 "policy": {
                     "@ref": "/org/instance/construct/feature/interface/ios_interface-RRDisc.json"
                 }
+            },
+            "security": {
+                "policy": {
+                    "@ref": "/org/instance/construct/feature/security/security__1665576295055.json"
+                }
             }
         }
     },
