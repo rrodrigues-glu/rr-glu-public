@@ -34,7 +34,6 @@
     "@source": {
         "instanceName": "bgpNeighborsQuery"
     },
-    "@exportedInstanceId": "12cfddfb-0ac8-4ba5-af8b-35396bf9b3e1",
     "@id": "12cfddfb-0ac8-4ba5-af8b-35396bf9b3e1",
     "@name": "bgpNeighborsQuery",
     "@description": ""
