@@ -1,0 +1,59 @@
+{
+    "name": "assess",
+    "actionAuth": "Level1",
+    "description": "",
+    "bpmnJSON": {
+        "name": "assess",
+        "elements": [
+            {
+                "id": "start",
+                "type": "startEvent",
+                "name": "start",
+                "fields": {
+                    "jtype": {}
+                },
+                "connectTo": "wt-1451529c-3802-4037-95bd-02e9a7adb84c"
+            },
+            {
+                "id": "end",
+                "type": "endEvent",
+                "name": "end"
+            },
+            {
+                "id": "wt-1451529c-3802-4037-95bd-02e9a7adb84c",
+                "type": "serviceTask",
+                "action": "filterDevices",
+                "name": "Filter targets",
+                "pack": "deviceManager",
+                "displayName": "Filter targets",
+                "uniqueName": "deviceManager_filterDevices-0",
+                "connectTo": "wt-8ff536b8-e97f-4ec6-ab4b-9c932bc9a263",
+                "fields": {
+                    "deviceFilter": {
+                        "logic": "and",
+                        "filters": [
+                            {
+                                "field": "discoveryStatus",
+                                "operator": "equal",
+                                "value": "UNKNOWN",
+                                "variableId": null
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "id": "wt-8ff536b8-e97f-4ec6-ab4b-9c932bc9a263",
+                "type": "serviceTask",
+                "action": "setExitStatus",
+                "name": "setExitStatus",
+                "connectTo": "end",
+                "fields": {
+                    "status": "ok"
+                }
+            }
+        ]
+    },
+    "variables": [],
+    "references": []
+}
