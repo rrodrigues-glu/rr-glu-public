@@ -1,0 +1,20 @@
+{
+    "featureConcept": {
+        "name": "Security Feature",
+        "cliCommandGroups": {
+            "@ref": [
+                "/org/instance/construct/global/cliCommandGroup/security__cliGrp__1665576295055c80.json",
+                "/org/instance/construct/global/cliCommandGroup/security__cliGrp__16655762950559b0.json"
+            ]
+        }
+    },
+    "form": {
+        "comment": null
+    },
+    "@id": "db5051e8-c362-47f1-bbac-f69b87ed021d",
+    "@name": "security__1665576295055_pppppp",
+    "@description": "",
+    "@type": {
+        "ref": "/sys/type/construct/feature/security.jtype"
+    }
+}
