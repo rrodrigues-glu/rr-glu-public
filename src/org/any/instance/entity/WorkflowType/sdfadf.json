@@ -1,0 +1,45 @@
+{
+    "name": "sdfadf",
+    "actionAuth": "Level1",
+    "description": "",
+    "bpmnJSON": {
+        "name": "sdfadf",
+        "elements": [
+            {
+                "id": "start",
+                "type": "startEvent",
+                "name": "start",
+                "fields": {
+                    "jtype": {}
+                },
+                "connectTo": "wt-206b6755-e489-4c85-9b4f-443f9669ae5c"
+            },
+            {
+                "id": "end",
+                "type": "endEvent",
+                "name": "end"
+            },
+            {
+                "id": "wt-206b6755-e489-4c85-9b4f-443f9669ae5c",
+                "type": "serviceTask",
+                "action": "selectDevices",
+                "name": "Select targets",
+                "pack": "deviceManager",
+                "uniqueName": "deviceManager_selectDevices-0",
+                "connectTo": "wt-4d999096-faae-4516-9bb5-b9b8817d9ef9"
+            },
+            {
+                "id": "wt-4d999096-faae-4516-9bb5-b9b8817d9ef9",
+                "type": "serviceTask",
+                "action": "setExitStatus",
+                "name": "setExitStatus",
+                "connectTo": "end",
+                "fields": {
+                    "status": "ok"
+                }
+            }
+        ]
+    },
+    "variables": [],
+    "references": []
+}

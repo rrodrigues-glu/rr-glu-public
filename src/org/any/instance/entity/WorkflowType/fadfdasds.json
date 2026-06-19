@@ -1,0 +1,45 @@
+{
+    "name": "fadfdasds",
+    "actionAuth": "Level1",
+    "description": "",
+    "bpmnJSON": {
+        "name": "fadfdasds",
+        "elements": [
+            {
+                "id": "start",
+                "type": "startEvent",
+                "name": "start",
+                "fields": {
+                    "jtype": {}
+                },
+                "connectTo": "wt-770535eb-c0ef-4fbe-8632-61a7d259ff4f"
+            },
+            {
+                "id": "end",
+                "type": "endEvent",
+                "name": "end"
+            },
+            {
+                "id": "wt-770535eb-c0ef-4fbe-8632-61a7d259ff4f",
+                "type": "serviceTask",
+                "action": "selectDevices",
+                "name": "Select targets",
+                "pack": "deviceManager",
+                "uniqueName": "deviceManager_selectDevices-0",
+                "connectTo": "wt-61ea109f-f745-43b4-9f53-9fec18ab56d7"
+            },
+            {
+                "id": "wt-61ea109f-f745-43b4-9f53-9fec18ab56d7",
+                "type": "serviceTask",
+                "action": "setExitStatus",
+                "name": "setExitStatus",
+                "connectTo": "end",
+                "fields": {
+                    "status": "ok"
+                }
+            }
+        ]
+    },
+    "variables": [],
+    "references": []
+}

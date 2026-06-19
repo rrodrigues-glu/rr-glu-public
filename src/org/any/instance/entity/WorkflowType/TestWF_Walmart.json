@@ -1,0 +1,45 @@
+{
+    "name": "TestWF_Walmart",
+    "actionAuth": "Level1",
+    "description": "",
+    "bpmnJSON": {
+        "name": "TestWF_Walmart",
+        "elements": [
+            {
+                "id": "start",
+                "type": "startEvent",
+                "name": "start",
+                "fields": {
+                    "jtype": {}
+                },
+                "connectTo": "wt-753965cc-7749-47e2-92fd-97d47f2dc788"
+            },
+            {
+                "id": "end",
+                "type": "endEvent",
+                "name": "end"
+            },
+            {
+                "id": "wt-753965cc-7749-47e2-92fd-97d47f2dc788",
+                "type": "serviceTask",
+                "action": "selectDevices",
+                "name": "Select targets",
+                "pack": "deviceManager",
+                "uniqueName": "deviceManager_selectDevices-0",
+                "connectTo": "wt-8d15e5c0-307f-4228-bd37-ba7b9af5a7cb"
+            },
+            {
+                "id": "wt-8d15e5c0-307f-4228-bd37-ba7b9af5a7cb",
+                "type": "serviceTask",
+                "action": "setExitStatus",
+                "name": "setExitStatus",
+                "connectTo": "end",
+                "fields": {
+                    "status": "ok"
+                }
+            }
+        ]
+    },
+    "variables": [],
+    "references": []
+}
