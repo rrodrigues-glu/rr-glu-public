@@ -45,7 +45,6 @@
         "series": "9300"
     },
     "detectedSerialNumber": "FJC2543299V",
-    "uptime": "17w5d17h21m",
     "stack": {
         "1": {
             "sku": "C9300-48UXM",
@@ -1198,11 +1197,6 @@
                 "use": 7,
                 "free": 42
             }
-        },
-        "recordTime": {
-            "utcTime": 1776079181562,
-            "utcDateTime": "Mon, 13 Apr 2026 11:19:41 GMT"
         }
-    },
-    "@lastCommitHash": "d1659ee6388264fb330f4ac4dd9b48eb96f83275"
+    }
 }
