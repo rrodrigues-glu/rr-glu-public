@@ -1,0 +1,97 @@
+{
+    "name": "SiteLo",
+    "actionAuth": "Level1",
+    "description": "",
+    "bpmnJSON": {
+        "name": "SiteLo",
+        "elements": [
+            {
+                "id": "start",
+                "type": "startEvent",
+                "name": "start",
+                "fields": {
+                    "jtype": {}
+                },
+                "connectTo": "wt-fd011f77-3236-4c23-9df5-4d8c59ddda7d"
+            },
+            {
+                "id": "end",
+                "type": "endEvent",
+                "name": "end"
+            },
+            {
+                "id": "wt-775ebab2-6719-4930-9fe5-86616835740f",
+                "type": "serviceTask",
+                "action": "setExitStatus",
+                "name": "setExitStatus",
+                "connectTo": "end",
+                "fields": {
+                    "status": "ok"
+                }
+            },
+            {
+                "id": "wt-c8e0c81b-5fad-4182-83ba-2ac2584dfe5a",
+                "type": "serviceTask",
+                "action": "configModelingQuery",
+                "name": "Config modeling filter",
+                "connectTo": "wt-8f0cbc3e-3179-4141-bb04-e4e6326e6b25",
+                "fields": {
+                    "construct": "domain",
+                    "type": {
+                        "@ref": "/sys/type/construct/domain/location.jtype"
+                    },
+                    "instance": {
+                        "@ref": "/org/instance/construct/domain/location/SN003.json"
+                    }
+                },
+                "pack": "configModeling",
+                "displayName": "Config modeling filter",
+                "uniqueName": "configModeling_configModelingQuery-0"
+            },
+            {
+                "id": "wt-8f0cbc3e-3179-4141-bb04-e4e6326e6b25",
+                "type": "serviceTask",
+                "action": "notificationViaEmail",
+                "name": "Send email",
+                "pack": "notification",
+                "displayName": "Send email",
+                "uniqueName": "notification_notificationViaEmail-0",
+                "connectTo": "wt-775ebab2-6719-4930-9fe5-86616835740f",
+                "fields": {
+                    "title": "Output",
+                    "notifyJobRunner": true,
+                    "otherRecipients": [],
+                    "perTargetMessage": true,
+                    "notifyRoles": [],
+                    "message": "{{device.name}}"
+                }
+            },
+            {
+                "id": "wt-fd011f77-3236-4c23-9df5-4d8c59ddda7d",
+                "type": "serviceTask",
+                "action": "filterDevices",
+                "name": "Filter targets",
+                "pack": "deviceManager",
+                "displayName": "Filter targets",
+                "uniqueName": "deviceManager_filterDevices-0",
+                "connectTo": "wt-c8e0c81b-5fad-4182-83ba-2ac2584dfe5a",
+                "fields": {
+                    "deviceFilter": {
+                        "logic": "and",
+                        "filters": [
+                            {
+                                "field": "detectedOs",
+                                "operator": "equal",
+                                "value": "IOS/IOS XE",
+                                "variableId": null
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    "variables": [],
+    "references": [],
+    "isCommitted": false
+}
