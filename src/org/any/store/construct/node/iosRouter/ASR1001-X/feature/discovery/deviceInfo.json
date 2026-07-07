@@ -67,7 +67,6 @@
         "series": "1000"
     },
     "detectedSerialNumber": "FXS1943Q0CG",
-    "uptime": "1y28w2d21h51m",
     "chassis": {
         "R0": {
             "sku": "ASR1001-X",
@@ -79,124 +78,13 @@
         "name": "iosRouter",
         "base": "wanRouter"
     },
-    "licenses": [
-        {
-            "name": "advipservices",
-            "k9": false,
-            "inUse": false,
-            "eval": true,
-            "rtu": true
-        },
-        {
-            "name": "adventerprise",
-            "k9": false,
-            "inUse": false,
-            "eval": true,
-            "rtu": true,
-            "eulaAccepted": false
-        },
-        {
-            "name": "avc",
-            "k9": false,
-            "inUse": false,
-            "eval": true,
-            "rtu": true,
-            "eulaAccepted": false
-        },
-        {
-            "name": "fwnat_red",
-            "k9": false,
-            "inUse": false,
-            "eval": true,
-            "rtu": true,
-            "eulaAccepted": false
-        },
-        {
-            "name": "ipsec",
-            "k9": false,
-            "inUse": false,
-            "eval": true,
-            "rtu": true,
-            "eulaAccepted": false
-        },
-        {
-            "name": "lawful_intr",
-            "k9": false,
-            "inUse": false,
-            "eval": true,
-            "rtu": true,
-            "eulaAccepted": false
-        },
-        {
-            "name": "lisp",
-            "k9": false,
-            "inUse": false,
-            "eval": true,
-            "rtu": true,
-            "eulaAccepted": false
-        },
-        {
-            "name": "otv",
-            "k9": false,
-            "inUse": false,
-            "eval": true,
-            "rtu": true,
-            "eulaAccepted": false
-        },
-        {
-            "name": "sw_redundancy",
-            "k9": false,
-            "inUse": false,
-            "eval": true,
-            "rtu": true,
-            "eulaAccepted": false
-        },
-        {
-            "name": "throughput_5g",
-            "k9": false,
-            "inUse": false,
-            "eval": true,
-            "rtu": true,
-            "eulaAccepted": false
-        },
-        {
-            "name": "throughput_10g",
-            "k9": false,
-            "inUse": false,
-            "eval": true,
-            "rtu": true,
-            "eulaAccepted": false
-        },
-        {
-            "name": "throughput_20g",
-            "k9": false,
-            "inUse": false,
-            "eval": true,
-            "rtu": true,
-            "eulaAccepted": false
-        },
-        {
-            "name": "vpls",
-            "k9": false,
-            "inUse": false,
-            "eval": true,
-            "rtu": true,
-            "eulaAccepted": false
-        },
-        {
-            "name": "interface_10g",
-            "k9": false,
-            "inUse": false,
-            "eval": true,
-            "rtu": true,
-            "eulaAccepted": false
-        }
-    ],
+    "licenses": {},
     "portsInfo": {
         "ports": {
             "GigabitEthernet0": {
                 "operational": {
                     "status": "up",
+                    "duplex": "full",
                     "mtu": "1500",
                     "speed": "1000000 Kbit/sec",
                     "macAddress": "00:a2:ee:48:e3:40",
@@ -218,11 +106,6 @@
                 "use": 0,
                 "free": 0
             }
-        },
-        "recordTime": {
-            "utcTime": 1737392833064,
-            "utcDateTime": "Mon, 20 Jan 2025 17:07:13 GMT"
         }
-    },
-    "@lastCommitHash": "38957f9e9ed294e1b2714defa2701fb3aece4359"
+    }
 }

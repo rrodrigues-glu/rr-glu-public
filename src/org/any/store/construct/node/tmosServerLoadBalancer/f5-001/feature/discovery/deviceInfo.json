@@ -19,7 +19,6 @@
         "sku": "BIG-IP 4200"
     },
     "detectedSerialNumber": "F5-PFDG-TWZL",
-    "uptime": "21645140s",
     "type": {
         "name": "tmosServerLoadBalancer",
         "base": "baseServerLoadBalancer"
@@ -155,11 +154,6 @@
                 "use": 1,
                 "free": 10
             }
-        },
-        "recordTime": {
-            "utcTime": 1776079164854,
-            "utcDateTime": "Mon, 13 Apr 2026 11:19:24 GMT"
         }
-    },
-    "@lastCommitHash": "d1659ee6388264fb330f4ac4dd9b48eb96f83275"
+    }
 }

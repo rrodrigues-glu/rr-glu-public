@@ -1,0 +1,55 @@
+{
+    "name": "def snap",
+    "actionAuth": "Level1",
+    "description": "",
+    "bpmnJSON": {
+        "name": "def snap",
+        "elements": [
+            {
+                "id": "start",
+                "type": "startEvent",
+                "name": "start",
+                "fields": {
+                    "jtype": {}
+                },
+                "connectTo": "wt-36339d14-3ae7-4985-8d48-f62ff6695256"
+            },
+            {
+                "id": "end",
+                "type": "endEvent",
+                "name": "end"
+            },
+            {
+                "id": "wt-36339d14-3ae7-4985-8d48-f62ff6695256",
+                "type": "serviceTask",
+                "action": "selectDevices",
+                "name": "Select targets",
+                "pack": "deviceManager",
+                "uniqueName": "deviceManager_selectDevices-0",
+                "connectTo": "wt-3ca6deaf-e014-4a88-a7fc-0e7ca99f97de"
+            },
+            {
+                "id": "wt-dc72fae0-be64-4c7a-bd21-96224a5b680b",
+                "type": "serviceTask",
+                "action": "setExitStatus",
+                "name": "setExitStatus",
+                "connectTo": "end",
+                "fields": {
+                    "status": "ok"
+                }
+            },
+            {
+                "id": "wt-3ca6deaf-e014-4a88-a7fc-0e7ca99f97de",
+                "type": "serviceTask",
+                "action": "configDriftSetDefaultSnapshot",
+                "name": "Set default snapshot",
+                "pack": "configDrift",
+                "uniqueName": "configDrift_configDriftSetDefaultSnapshot-0",
+                "connectTo": "wt-dc72fae0-be64-4c7a-bd21-96224a5b680b"
+            }
+        ]
+    },
+    "variables": [],
+    "references": [],
+    "isCommitted": false
+}

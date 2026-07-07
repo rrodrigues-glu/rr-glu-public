@@ -5,14 +5,14 @@
     "path": "/sys/jnib/features/deviceDetect/cisco/ios/",
     "sku": "WS-C3850-24U-E",
     "software": {
-        "version": "16.9.3",
+        "version": "16.12.6",
         "major": "16",
-        "minor": "9",
-        "revision": "3",
+        "minor": "12",
+        "revision": "6",
         "train": "",
         "build": "",
         "patch": "",
-        "apiVersion": "16.9.3",
+        "apiVersion": "16.12.6",
         "image": "packages.conf",
         "drive": "flash:"
     },
@@ -22,13 +22,13 @@
         "stack": {
             "1": {
                 "sku": "WS-C3850-24U-E",
-                "version": "16.9.3",
+                "version": "16.12.06",
                 "master": true,
                 "serialNumber": "FOC1909X1FL"
             },
             "2": {
                 "sku": "WS-C3850-24T-E",
-                "version": "16.9.3",
+                "version": "16.12.06",
                 "serialNumber": "FCW2140C07F"
             }
         },
@@ -124,17 +124,16 @@
         "series": "3850"
     },
     "detectedSerialNumber": "FOC1909X1FL",
-    "uptime": "2w3d11h42m",
     "stack": {
         "1": {
             "sku": "WS-C3850-24U-E",
-            "version": "16.9.3",
+            "version": "16.12.06",
             "master": true,
             "serialNumber": "FOC1909X1FL"
         },
         "2": {
             "sku": "WS-C3850-24T-E",
-            "version": "16.9.3",
+            "version": "16.12.06",
             "serialNumber": "FCW2140C07F"
         }
     },
@@ -146,10 +145,7 @@
         {
             "name": "C3850-24 IP Services",
             "alias": null,
-            "count": "2",
-            "eval": true,
-            "remaining": 0,
-            "rtu": false
+            "count": "2"
         }
     ],
     "portsInfo": {
@@ -237,7 +233,6 @@
                 "phyVirt": "physical",
                 "type": "l3",
                 "configured": {
-                    "speed": "1000",
                     "ipv4Address": "10.150.1.12/27",
                     "enabled": true
                 }
@@ -1227,54 +1222,6 @@
                 "phyVirt": "physical",
                 "type": "l2"
             },
-            "GigabitEthernet2/1/3": {
-                "operational": {
-                    "status": "down",
-                    "mtu": "1500",
-                    "speed": "1000000 Kbit/sec",
-                    "macAddress": "6c:dd:30:99:2a:1b",
-                    "phyMacAddress": "6c:dd:30:99:2a:1b"
-                },
-                "description": "",
-                "phyVirt": "physical",
-                "type": "l2"
-            },
-            "GigabitEthernet2/1/4": {
-                "operational": {
-                    "status": "down",
-                    "mtu": "1500",
-                    "speed": "1000000 Kbit/sec",
-                    "macAddress": "6c:dd:30:99:2a:1c",
-                    "phyMacAddress": "6c:dd:30:99:2a:1c"
-                },
-                "description": "",
-                "phyVirt": "physical",
-                "type": "l2"
-            },
-            "TenGigabitEthernet2/1/1": {
-                "operational": {
-                    "status": "down",
-                    "mtu": "1500",
-                    "speed": "10000000 Kbit/sec",
-                    "macAddress": "6c:dd:30:99:2a:1d",
-                    "phyMacAddress": "6c:dd:30:99:2a:1d"
-                },
-                "description": "",
-                "phyVirt": "physical",
-                "type": "l2"
-            },
-            "TenGigabitEthernet2/1/2": {
-                "operational": {
-                    "status": "down",
-                    "mtu": "1500",
-                    "speed": "10000000 Kbit/sec",
-                    "macAddress": "6c:dd:30:99:2a:1e",
-                    "phyMacAddress": "6c:dd:30:99:2a:1e"
-                },
-                "description": "",
-                "phyVirt": "physical",
-                "type": "l2"
-            },
             "TenGigabitEthernet2/1/3": {
                 "operational": {
                     "status": "down",
@@ -1341,15 +1288,10 @@
         },
         "portSummary": {
             "switchports": {
-                "total": 61,
+                "total": 57,
                 "use": 0,
-                "free": 61
+                "free": 57
             }
-        },
-        "recordTime": {
-            "utcTime": 1776078924939,
-            "utcDateTime": "Mon, 13 Apr 2026 11:15:24 GMT"
         }
-    },
-    "@lastCommitHash": "d1659ee6388264fb330f4ac4dd9b48eb96f83275"
+    }
 }
