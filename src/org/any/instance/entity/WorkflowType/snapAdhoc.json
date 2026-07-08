@@ -1,0 +1,74 @@
+{
+    "name": "snapAdhoc",
+    "actionAuth": "Level1",
+    "description": "",
+    "bpmnJSON": {
+        "name": "snapAdhoc",
+        "elements": [
+            {
+                "id": "start",
+                "type": "startEvent",
+                "name": "start",
+                "fields": {
+                    "jtype": {}
+                },
+                "connectTo": "wt-6067c3ce-5e17-43b1-9949-0b5573c51328"
+            },
+            {
+                "id": "end",
+                "type": "endEvent",
+                "name": "end"
+            },
+            {
+                "id": "wt-6067c3ce-5e17-43b1-9949-0b5573c51328",
+                "type": "serviceTask",
+                "action": "selectDevices",
+                "name": "Select targets",
+                "pack": "deviceManager",
+                "uniqueName": "deviceManager_selectDevices-0",
+                "connectTo": "wt-d9163a10-5048-44c7-92d0-50801d86d095"
+            },
+            {
+                "id": "wt-12e74d3e-e8d7-4afb-9a66-8ddcd931c8f6",
+                "type": "serviceTask",
+                "action": "setExitStatus",
+                "name": "setExitStatus",
+                "connectTo": "end",
+                "fields": {
+                    "status": "ok"
+                }
+            },
+            {
+                "id": "wt-d9163a10-5048-44c7-92d0-50801d86d095",
+                "type": "serviceTask",
+                "action": "publicAdHocQuery",
+                "name": "Run ad hoc query",
+                "pack": "deviceExplorer",
+                "displayName": "Run ad hoc query",
+                "uniqueName": "deviceExplorer_publicAdHocQuery-0",
+                "connectTo": "wt-12e74d3e-e8d7-4afb-9a66-8ddcd931c8f6",
+                "fields": {
+                    "source": "DEFAULT",
+                    "filter": "NONE",
+                    "query": "ntp .+",
+                    "showCommands": []
+                }
+            }
+        ]
+    },
+    "variables": [
+        {
+            "id": "7f094734-8a1a-4208-8868-1517fa16b48e",
+            "dataType": "string",
+            "name": "assess",
+            "value": "{{targetResponse}}",
+            "initialTask": "wt-d9163a10-5048-44c7-92d0-50801d86d095",
+            "tasks": {
+                "wt-d9163a10-5048-44c7-92d0-50801d86d095": "{{targetResponse}}"
+            },
+            "targetVariable": true
+        }
+    ],
+    "references": [],
+    "isCommitted": false
+}
